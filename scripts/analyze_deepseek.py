@@ -15,6 +15,7 @@ import re
 from copy import deepcopy
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 import requests
 import yaml
@@ -33,6 +34,13 @@ DEFAULT_MAX_AI_ANALYSIS = 8
 DEFAULT_TEMPERATURE = 0.2
 DEFAULT_MAX_TOKENS = 1200
 REQUEST_TIMEOUT_SECONDS = 45
+RETRYABLE_STATUSES = {
+    "failed_api",
+    "skipped_no_api_key",
+    "failed_json_parse",
+    "fallback",
+    "",
+}
 
 ALLOWED_MATURITY = {"lab", "pilot", "production", "policy", "market", "unknown"}
 ALLOWED_PRIORITY = {"P0", "P1", "P2", "P3"}
@@ -119,7 +127,34 @@ def save_json(items: list[dict[str, Any]], path: Path) -> None:
 def load_env(env_path: Path = ENV_PATH) -> dict[str, str]:
     """Load environment variables from .env and process environment."""
     load_dotenv(env_path)
-    return {"DEEPSEEK_API_KEY": os.getenv("DEEPSEEK_API_KEY", "").strip()}
+    return {
+        "DEEPSEEK_API_KEY": os.getenv("DEEPSEEK_API_KEY", "").strip(),
+        "FORCE_REANALYZE_FAILED": os.getenv("FORCE_REANALYZE_FAILED", "").strip().lower(),
+    }
+
+
+def normalize_url(url: str | None) -> str:
+    """Normalize URL for matching existing analyses."""
+    if not url:
+        return ""
+    parsed = urlparse(str(url).strip())
+    if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+        return ""
+    query = [
+        (key, value)
+        for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+        if not key.lower().startswith("utm_")
+    ]
+    return urlunparse(
+        (
+            parsed.scheme.lower(),
+            parsed.netloc.lower(),
+            parsed.path,
+            parsed.params,
+            urlencode(query, doseq=True),
+            "",
+        )
+    )
 
 
 def _prompt_payload(item: dict[str, Any]) -> dict[str, Any]:
@@ -299,25 +334,37 @@ def _normalize_analysis(parsed: dict[str, Any], item: dict[str, Any]) -> dict[st
 
 
 def merge_existing_analysis(
-    filtered_items: list[dict[str, Any]], existing_items: list[dict[str, Any]]
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]], int]:
-    """Reuse existing success analyses by URL and return pending candidates."""
+    filtered_items: list[dict[str, Any]],
+    existing_items: list[dict[str, Any]],
+    force_reanalyze_failed: bool = False,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], int, int]:
+    """Reuse only successful analyses by URL and return pending candidates."""
     success_by_url = {
-        item.get("url"): item
+        normalize_url(item.get("url")): item
         for item in existing_items
-        if item.get("url") and item.get("analysis_status") == "success"
+        if normalize_url(item.get("url")) and item.get("analysis_status") == "success"
+    }
+    retryable_by_url = {
+        normalize_url(item.get("url")): item
+        for item in existing_items
+        if normalize_url(item.get("url"))
+        and item.get("analysis_status", "") in RETRYABLE_STATUSES
     }
 
     reused: list[dict[str, Any]] = []
     pending: list[dict[str, Any]] = []
+    retryable_count = 0
     for item in filtered_items:
-        existing = success_by_url.get(item.get("url"))
+        normalized_url = normalize_url(item.get("url"))
+        existing = success_by_url.get(normalized_url)
         if existing:
             reused.append(existing)
         else:
+            if normalized_url in retryable_by_url or force_reanalyze_failed:
+                retryable_count += 1
             pending.append(item)
 
-    return reused, pending, len(reused)
+    return reused, pending, len(reused), retryable_count
 
 
 def analyze_news_items(
@@ -325,6 +372,7 @@ def analyze_news_items(
     existing_items: list[dict[str, Any]],
     config: dict[str, Any],
     api_key: str,
+    force_reanalyze_failed: bool = False,
 ) -> tuple[list[dict[str, Any]], dict[str, int | bool]]:
     """Analyze top filtered items within API budget, reusing prior successes."""
     max_ai_analysis = int(
@@ -341,7 +389,11 @@ def analyze_news_items(
     )
     selected_items = sorted_items[:max_ai_analysis]
 
-    reused, pending, reused_count = merge_existing_analysis(selected_items, existing_items)
+    reused, pending, reused_count, retryable_count = merge_existing_analysis(
+        selected_items,
+        existing_items,
+        force_reanalyze_failed,
+    )
 
     analyzed: list[dict[str, Any]] = list(reused)
     api_calls = 0
@@ -388,6 +440,7 @@ def analyze_news_items(
         "filtered_count": len(filtered_items),
         "selected_count": len(selected_items),
         "reused_count": reused_count,
+        "retryable_count": retryable_count,
         "api_calls": api_calls,
         "fallback_count": fallback_count,
         "skipped_no_api_key": skipped_no_api_key,
@@ -407,15 +460,23 @@ def main() -> None:
     config = load_config()
     env = load_env()
     api_key = env.get("DEEPSEEK_API_KEY", "")
+    force_reanalyze_failed = env.get("FORCE_REANALYZE_FAILED") == "true"
 
     filtered_items = load_json(FILTERED_NEWS_PATH)
     existing_items = load_json(ANALYZED_NEWS_PATH)
     logging.info("news_filtered.json loaded: %s items.", len(filtered_items))
 
-    analyzed_items, stats = analyze_news_items(filtered_items, existing_items, config, api_key)
+    analyzed_items, stats = analyze_news_items(
+        filtered_items,
+        existing_items,
+        config,
+        api_key,
+        force_reanalyze_failed,
+    )
     save_json(analyzed_items, ANALYZED_NEWS_PATH)
 
     logging.info("Existing successful analyses reused: %s.", stats["reused_count"])
+    logging.info("Failed or missing analyses scheduled for retry: %s.", stats["retryable_count"])
     logging.info("Actual DeepSeek API calls this run: %s.", stats["api_calls"])
     logging.info("Fallback analyses generated: %s.", stats["fallback_count"])
     logging.info("Saved news_analyzed.json items: %s.", len(analyzed_items))
