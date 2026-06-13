@@ -317,6 +317,7 @@ def remove_published_items(
         normalize_url(record.get("url"))
         for record in _extract_published_records(published_data)
         if normalize_url(record.get("url"))
+        and record.get("selected_date")
         and (not current_date or record.get("selected_date") != current_date)
     }
 
@@ -621,6 +622,11 @@ def main() -> None:
     logging.info("Already published items removed: %s.", removed_published)
 
     selected_items, backlog_candidates, selection_stats = select_today_items(unpublished_items, config)
+    if not selected_items and merged_items:
+        logging.warning(
+            "No items selected after published URL filtering; retrying from analyzed/backlog candidates without published filtering."
+        )
+        selected_items, backlog_candidates, selection_stats = select_today_items(merged_items, config)
     logging.info("Non-current-month or invalid items removed: %s.", selection_stats["removed_non_current"])
     logging.info("Candidates after deduplication: %s.", selection_stats["deduped_count"])
     logging.info("Today selected items: %s.", len(selected_items))

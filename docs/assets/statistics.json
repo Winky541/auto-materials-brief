@@ -1,15 +1,15 @@
 {
   "category_counts": {
     "电池与储能材料": 6,
-    "其他": 1,
-    "电驱与电子材料": 1
+    "电驱与电子材料": 1,
+    "其他": 1
   },
   "source_counts": {
     "Bing News": 8
   },
   "company_counts": {
-    "CATL": 3,
-    "GM": 3
+    "GM": 3,
+    "CATL": 3
   },
   "keyword_counts": {
     "battery": 5,

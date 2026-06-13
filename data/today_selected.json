@@ -31,7 +31,7 @@
       "source_type": "bing_news",
       "filter_reason": "source=18; automotive=10 (EV, vehicle); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=3 (plant); current_month=5",
       "final_score": 35,
-      "selected_at": "2026-06-13T22:21:00+08:00"
+      "selected_at": "2026-06-13T22:28:27+08:00"
     },
     {
       "title": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
@@ -62,7 +62,7 @@
       "source_type": "bing_news",
       "filter_reason": "source=18; automotive=10 (electric vehicle, vehicle); materials=8 (battery, sodium-ion battery); companies=5 (CATL); industrial=3 (mass production); current_month=5",
       "final_score": 30,
-      "selected_at": "2026-06-13T22:21:00+08:00"
+      "selected_at": "2026-06-13T22:28:27+08:00"
     },
     {
       "title": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
@@ -94,7 +94,7 @@
       "source_type": "bing_news",
       "filter_reason": "source=18; automotive=10 (electric vehicle, vehicle); materials=12 (battery, sodium-ion battery, lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
       "final_score": 29,
-      "selected_at": "2026-06-13T22:21:00+08:00"
+      "selected_at": "2026-06-13T22:28:27+08:00"
     }
   ]
 }
