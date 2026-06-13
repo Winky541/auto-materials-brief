@@ -37,6 +37,20 @@ DEFAULT_BACKLOG_MAX_SIZE = 300
 DEFAULT_MAX_TITLE_SIMILARITY = 0.88
 DEFAULT_MIN_FINAL_SCORE = 35
 RELAXED_MIN_FINAL_SCORE = 25
+REFRESH_ANALYSIS_FIELDS = [
+    "summary",
+    "technical_points",
+    "materials_involved",
+    "companies_or_institutions",
+    "impact_assessment",
+    "research_value",
+    "industrial_maturity",
+    "priority",
+    "confidence",
+    "follow_up",
+    "one_sentence",
+    "analysis_status",
+]
 
 DIVERSITY_CATEGORIES = [
     "电池与储能材料",
@@ -592,6 +606,35 @@ def _selection_url_set(selection: dict[str, Any] | None) -> set[str]:
     }
 
 
+def refresh_existing_selection_with_success_analysis(
+    selection: dict[str, Any], analyzed_data: Any
+) -> tuple[dict[str, Any], int]:
+    """Refresh locked selections with newer successful analysis by URL."""
+    analyzed_items = [item for item in analyzed_data if isinstance(item, dict)] if isinstance(analyzed_data, list) else []
+    success_by_url = {
+        normalize_url(item.get("url")): item
+        for item in analyzed_items
+        if normalize_url(item.get("url")) and item.get("analysis_status") == "success"
+    }
+
+    refreshed = deepcopy(selection)
+    refreshed_items: list[dict[str, Any]] = []
+    refreshed_count = 0
+    for original in selection.get("items", []):
+        item = deepcopy(original)
+        latest = success_by_url.get(normalize_url(item.get("url")))
+        if latest and item.get("analysis_status") != "success":
+            for field in REFRESH_ANALYSIS_FIELDS:
+                if field in latest:
+                    item[field] = latest[field]
+            refreshed_count += 1
+        refreshed_items.append(item)
+
+    refreshed["items"] = refreshed_items
+    refreshed["count"] = len(refreshed_items)
+    return refreshed, refreshed_count
+
+
 def main() -> None:
     """Run ranking and daily publication selection."""
     logging.basicConfig(
@@ -608,7 +651,19 @@ def main() -> None:
     existing_today = _existing_today_selection(existing_today_data, today, timezone_name)
     force_refresh = os.getenv("FORCE_REFRESH_TODAY", "").strip().lower() == "true"
     if existing_today and not force_refresh:
-        logging.info("Today brief already exists; reuse existing selection.")
+        analyzed_data = load_json(ANALYZED_NEWS_PATH)
+        refreshed_today, refreshed_count = refresh_existing_selection_with_success_analysis(
+            existing_today,
+            analyzed_data,
+        )
+        if refreshed_count:
+            save_json(refreshed_today, TODAY_SELECTED_PATH)
+            logging.info(
+                "Today brief already exists; refreshed %s locked items with latest success analysis.",
+                refreshed_count,
+            )
+        else:
+            logging.info("Today brief already exists; reuse existing selection.")
         return
     if existing_today and force_refresh:
         logging.warning("FORCE_REFRESH_TODAY=true; regenerating today's locked brief.")
