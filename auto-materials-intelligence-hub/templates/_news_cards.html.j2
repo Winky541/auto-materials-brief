@@ -1,0 +1,72 @@
+{% for item in items %}
+<article class="news-card" style="--category-color: {{ category_colors.get(item.category, '#6B7280') }}">
+  <div class="category-line"></div>
+  <div class="card-meta">
+    <span>{{ item.source }}</span>
+    <span>{{ item.published_date }}</span>
+    <span>{{ item.category }}</span>
+    {% if item.subcategory %}<span>{{ item.subcategory }}</span>{% endif %}
+  </div>
+  <h3>{{ item.title }}</h3>
+  <p class="summary">{{ item.summary }}</p>
+
+  <div class="detail-grid">
+    <div>
+      <h4>技术要点</h4>
+      <ul>
+        {% for point in item.technical_points %}
+        <li>{{ point }}</li>
+        {% else %}
+        <li>信息不足</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h4>涉及材料</h4>
+      <div class="mini-tags">
+        {% for material in item.materials_involved %}
+        <span>{{ material }}</span>
+        {% else %}
+        <span>unknown</span>
+        {% endfor %}
+      </div>
+    </div>
+    <div>
+      <h4>企业/机构</h4>
+      <div class="mini-tags">
+        {% for company in item.companies_or_institutions %}
+        <span>{{ company }}</span>
+        {% else %}
+        <span>unknown</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="assessment">
+    <div>
+      <h4>影响评估</h4>
+      <p>{{ item.impact_assessment }}</p>
+    </div>
+    <div>
+      <h4>研究价值</h4>
+      <p>{{ item.research_value }}</p>
+    </div>
+  </div>
+
+  <footer class="card-footer">
+    <div class="score-row">
+      <span>成熟度 {{ item.industrial_maturity }}</span>
+      <span>优先级 {{ item.priority }}</span>
+      <span>可信度 {{ item.confidence }}</span>
+      {% if item.final_score is defined %}<span>Final {{ item.final_score }}</span>{% endif %}
+    </div>
+    <a class="read-more" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">阅读全文</a>
+  </footer>
+</article>
+{% else %}
+<article class="empty-state">
+  <h3>今日暂无可发布新闻</h3>
+  <p>当前没有达到发布条件的真实新闻。系统不会为了填充版面而编造内容。</p>
+</article>
+{% endfor %}

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ brand_en }} | {{ brand_cn }}</title>
+    <link rel="stylesheet" href="{{ asset_prefix }}/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ root_prefix }}/index.html">
+        <span>{{ brand_en }}</span>
+        <small>{{ brand_cn }}</small>
+      </a>
+      <nav class="top-nav">
+        <a href="#brief">今日精选</a>
+        <a href="#signals">统计信号</a>
+        <a href="#archives">归档</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">{{ date }}</p>
+          <h1>{{ brand_en }}</h1>
+          <p class="subtitle">{{ brand_cn }}</p>
+        </div>
+        <div class="hero-note">
+          <span>今日研究判断</span>
+          <p>{{ insight }}</p>
+        </div>
+      </section>
+
+      <section class="palette-strip" aria-label="分类调色盘">
+        {% for category, color in category_colors.items() %}
+        <span style="--swatch: {{ color }}">{{ category }}</span>
+        {% endfor %}
+      </section>
+
+      <section id="signals" class="layout">
+        <aside class="sidebar">
+          <div class="side-block">
+            <h2>分类分布</h2>
+            <canvas id="categoryChart" height="220"></canvas>
+          </div>
+          <div class="side-block">
+            <h2>来源分布</h2>
+            <ul class="metric-list">
+              {% for name, value in statistics.source_counts.items() %}
+              <li><span>{{ name }}</span><strong>{{ value }}</strong></li>
+              {% else %}
+              <li><span>暂无来源数据</span><strong>0</strong></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="side-block">
+            <h2>企业 TOP10</h2>
+            <div class="tag-cloud">
+              {% for name, value in statistics.company_counts.items() %}
+              <span>{{ name }} <b>{{ value }}</b></span>
+              {% else %}
+              <span>暂无企业数据</span>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="side-block">
+            <h2>高频材料关键词</h2>
+            <div class="tag-cloud">
+              {% for name, value in statistics.keyword_counts.items() %}
+              <span>{{ name }} <b>{{ value }}</b></span>
+              {% else %}
+              <span>暂无关键词数据</span>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="side-block">
+            <h2>研究员关注方向</h2>
+            <ol class="focus-list">
+              {% for name, value in statistics.category_counts.items() %}
+              <li>{{ name }} <small>{{ value }} 条</small></li>
+              {% else %}
+              <li>等待更多真实新闻进入候选池</li>
+              {% endfor %}
+            </ol>
+          </div>
+        </aside>
+
+        <section id="brief" class="content">
+          <div class="section-heading">
+            <p class="eyebrow">Daily Selection</p>
+            <h2>今日精选 {{ count }} 条</h2>
+          </div>
+          {% include "_news_cards.html.j2" %}
+        </section>
+      </section>
+
+      <section id="archives" class="archive-grid">
+        <div>
+          <p class="eyebrow">Last 30 Days</p>
+          <h2>最近 30 天归档</h2>
+          <div class="archive-links">
+            {% for item in archives.daily %}
+            <a href="{{ item.href }}">{{ item.date }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow">Last 12 Months</p>
+          <h2>最近 12 个月归档</h2>
+          <div class="archive-links">
+            {% for item in archives.monthly %}
+            <a href="{{ item.href }}">{{ item.month }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const categoryData = {{ statistics.category_counts | json }};
+      const categoryColors = {{ category_colors | json }};
+      const labels = Object.keys(categoryData);
+      const values = Object.values(categoryData);
+      const ctx = document.getElementById("categoryChart");
+      if (ctx && labels.length) {
+        new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            labels,
+            datasets: [{
+              data: values,
+              backgroundColor: labels.map(label => categoryColors[label] || "#6B7280"),
+              borderColor: "#FAFAF8",
+              borderWidth: 3
+            }]
+          },
+          options: {
+            plugins: { legend: { position: "bottom", labels: { boxWidth: 10, color: "#1F2933" } } },
+            cutout: "68%"
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

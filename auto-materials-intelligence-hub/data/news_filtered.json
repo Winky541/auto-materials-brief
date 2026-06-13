@@ -1,0 +1,419 @@
+[
+  {
+    "title": "PCIM 2026: Overcoming thermal warping in direct-cooled EV power modules",
+    "source": "Bing News",
+    "published_date": "2026-06-12",
+    "url": "https://www.digitimes.com/news/a20260609VL218/semiconductors-2026-sic-gan-electronics.html",
+    "summary": "As wide-bandgap (WBG) semiconductors like silicon carbide (SiC) and gallium nitride (GaN) take the lead in electric vehicle (EV) powertrains, electronics packaging engineers are facing a thermodynamic ...",
+    "collected_at": "2026-06-13T16:39:42+08:00",
+    "source_type": "bing_news",
+    "source_score": 75,
+    "rule_score": 52,
+    "category": "电驱与电子材料",
+    "subcategory": "SiC",
+    "detected_companies": [],
+    "detected_material_keywords": [
+      "SiC",
+      "GaN"
+    ],
+    "filter_reason": "source=19; automotive=20 (EV, electric vehicle, vehicle, car); materials=8 (SiC, GaN); companies=0 (none); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "东丽，发布新款消费后回收碳纤维产品，性能直逼原生",
+    "source": "Bing News",
+    "published_date": "2026-06-11",
+    "url": "https://www.sohu.com/a/1035371669_121124370",
+    "summary": "6月1日，全球复合材料巨头东丽性能材料公司（Toray Performance Materials Corporation，PMC）发布全新产品：Stratex™ 2300r 单向碳纤维复合材料。 这款正在申请专利的产品首次实现消费后回收成分与原生PET单向复合材料性能1:1对等，彻底打破了行业内“回收材料必然牺牲性能”的固有认知，为全球制造业可持续转型提供了全新解决方案。 传统碳纤维复合材料依赖 ...",
+    "collected_at": "2026-06-13T16:39:45+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 51,
+    "category": "复合材料",
+    "subcategory": "碳纤维",
+    "detected_companies": [
+      "Toray",
+      "东丽"
+    ],
+    "detected_material_keywords": [
+      "碳纤维",
+      "复合材料",
+      "回收"
+    ],
+    "filter_reason": "source=18; automotive=0 (none); materials=12 (碳纤维, 复合材料, 回收); companies=10 (Toray, 东丽); industrial=6 (发布, 专利); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
+    "source": "Bing News",
+    "published_date": "2026-06-09",
+    "url": "https://www.aol.com/lifestyle/chinese-battery-giant-catl-plans-230016306.html",
+    "summary": "For years, lithium-ion batteries have dominated the electric vehicle industry almost uncontested. Now, China’s largest battery manufacturers are preparing to push an alternative chemistry into the ...",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 50,
+    "category": "电池与储能材料",
+    "subcategory": "钠离子电池",
+    "detected_companies": [
+      "CATL"
+    ],
+    "detected_material_keywords": [
+      "battery",
+      "sodium-ion battery",
+      "lithium-ion"
+    ],
+    "filter_reason": "source=18; automotive=10 (electric vehicle, vehicle); materials=12 (battery, sodium-ion battery, lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "GM Activates 250,000 EVs for Vehicle-to-Grid: Sodium-Ion Batteries Target Grid-Peaker Replacement",
+    "source": "Bing News",
+    "published_date": "2026-06-11",
+    "url": "https://www.techtimes.com/articles/318197/20260611/gm-activates-250000-evs-vehicle-grid-sodium-ion-batteries-target-grid-peaker-replacement.htm",
+    "summary": "GM vehicle-to-grid activation at GM Empower 2026 turns 250,000 existing bidirectional EVs into a virtual power plant via software alone, with no new hardware required. A sodium-ion battery R&D partner ...",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 49,
+    "category": "电池与储能材料",
+    "subcategory": "钠离子电池",
+    "detected_companies": [
+      "GM"
+    ],
+    "detected_material_keywords": [
+      "battery",
+      "sodium-ion battery"
+    ],
+    "filter_reason": "source=18; automotive=10 (EV, vehicle); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=3 (plant); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
+    "source": "Bing News",
+    "published_date": "2026-06-10",
+    "url": "https://www.msn.com/en-us/autos/news/catl-says-its-next-sodium-ion-battery-clears-500-kilometers-and-is-ready-for-mass-production/ar-AA25iOtc",
+    "summary": "CATL, the world’s largest electric vehicle battery maker, announced that its new sodium-ion battery pack called Naxtra can deliver a 500-kilometer driving range at an energy density of 175 watt-hours ...",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 49,
+    "category": "电池与储能材料",
+    "subcategory": "钠离子电池",
+    "detected_companies": [
+      "CATL"
+    ],
+    "detected_material_keywords": [
+      "battery",
+      "sodium-ion battery"
+    ],
+    "filter_reason": "source=18; automotive=10 (electric vehicle, vehicle); materials=8 (battery, sodium-ion battery); companies=5 (CATL); industrial=3 (mass production); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
+    "source": "Bing News",
+    "published_date": "2026-06-01",
+    "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
+    "summary": "The race to develop the next generation of electric vehicle batteries is heating up, and CATL believes it may have found one of the industry’s most promising alternatives to lithium-ion technology.",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 47,
+    "category": "电池与储能材料",
+    "subcategory": "锂离子电池",
+    "detected_companies": [
+      "CATL"
+    ],
+    "detected_material_keywords": [
+      "lithium-ion"
+    ],
+    "filter_reason": "source=18; automotive=15 (EV, electric vehicle, vehicle); materials=4 (lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "GM to Develop Sodium-Ion Battery Cells—for Energy Storage, Not EVs",
+    "source": "Bing News",
+    "published_date": "2026-06-09",
+    "url": "https://www.msn.com/en-us/autos/news/gm-to-develop-sodium-ion-battery-cells-for-energy-storage-not-evs/ar-AA25dSdc",
+    "summary": "A new prototype cell production lab will let GM develop cheaper cells faster, expanding its battery business to boost its future EVs and potentially lower their batteries' cost.",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 44,
+    "category": "电池与储能材料",
+    "subcategory": "钠离子电池",
+    "detected_companies": [
+      "GM"
+    ],
+    "detected_material_keywords": [
+      "battery",
+      "sodium-ion battery"
+    ],
+    "filter_reason": "source=18; automotive=5 (EV); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=3 (prototype); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "2026电动车车架不锈钢管厂家深度测评与采购指南",
+    "source": "Bing News",
+    "published_date": "2026-06-07",
+    "url": "https://www.sohu.com/a/1033476159_122603286",
+    "summary": "进入2026年，全球汽车产业向电动化转型的步伐愈发坚定。根据Research and Markets等机构发布的最新数据，全球汽车不锈钢市场规模在2026年预计达到1372亿美元，其中不锈钢管材作为关键部件，其细分市场在电动车结构件、热管理系统等领域的带动下，正以超过5%的年复合增长率稳步扩张。特别是中国作为全球最大的新能源汽车生产基地，对高性能、轻量化的电动车车架不锈钢管需求持续井喷。 然而，在 ...",
+    "collected_at": "2026-06-13T16:39:45+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 44,
+    "category": "热管理与安全材料",
+    "subcategory": "热管理材料",
+    "detected_companies": [],
+    "detected_material_keywords": [
+      "热管理",
+      "轻量化"
+    ],
+    "filter_reason": "source=18; automotive=10 (新能源汽车, 汽车); materials=8 (热管理, 轻量化); companies=0 (none); industrial=3 (发布); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "广东亚太复合材料二季度产销两旺，强势领跑新能源轻量化赛道",
+    "source": "Bing News",
+    "published_date": "2026-06-05",
+    "url": "https://www.sohu.com/a/1032648918_121124370",
+    "summary": "随着新能源汽车产业步入高质量发展新阶段，轻量化与高安全性已成为行业竞逐的核心高地。近日，广东亚太新材料科技有限公司（以下简称“亚太新材料”）发布二季度经营业绩，复合材料事业部（即“广东亚新非金属材料科技有限公司”）产销数据连续刷新历史纪录，订单量实现跨越式增长，标志着企业在车用高性能复合材料领域迈入规模化高速发展的快车道。 最新运营数据显示，2026年4月至5月，亚太新材料复合材料事业部出货量持续 ...",
+    "collected_at": "2026-06-13T16:39:43+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 44,
+    "category": "复合材料",
+    "subcategory": "复合材料",
+    "detected_companies": [],
+    "detected_material_keywords": [
+      "轻量化",
+      "复合材料"
+    ],
+    "filter_reason": "source=18; automotive=10 (新能源汽车, 汽车); materials=8 (轻量化, 复合材料); companies=0 (none); industrial=3 (发布); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "GM is becoming an energy company—and betting on sodium-ion batteries",
+    "source": "Bing News",
+    "published_date": "2026-06-11",
+    "url": "https://www.msn.com/en-us/news/technology/gm-is-becoming-an-energy-company-and-betting-on-sodium-ion-batteries/ar-AA25kwdh",
+    "summary": "Automaker expands beyond vehicles with grid storage, bidirectional charging, and energy-management tools, expanding the company’s role beyond EVs.",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 43,
+    "category": "其他",
+    "subcategory": "",
+    "detected_companies": [
+      "GM"
+    ],
+    "detected_material_keywords": [],
+    "filter_reason": "source=18; automotive=15 (EV, vehicle, automaker); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "3500Wh/kg！不是固态！宁德时代揭秘下一代电池竞争焦点",
+    "source": "Bing News",
+    "published_date": "2026-06-09",
+    "url": "https://www.itdcw.com/news/ycnews/06091559622026.html",
+    "summary": "时至今日，锂离子电池已高度成熟，并在全球能源转型中占据核心地位，固态电池正在开启“小批量量产”和“工程化验证”的关键窗口期。而更远期的锂空气电池，则仍大多停留在实验室的前沿探索阶段，整体定位依然是“研发储备、战略布局”。 图片由AI生成 在不久前举行的2026装备强国论坛上，中国工程院院士、宁德时代（300750）首席科学家吴凯抛出了一条重磅信息：电池技术持续多元化发展，钠离子电池今年有望大规模量 ...",
+    "collected_at": "2026-06-13T16:39:44+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 43,
+    "category": "电池与储能材料",
+    "subcategory": "固态电池",
+    "detected_companies": [
+      "宁德时代"
+    ],
+    "detected_material_keywords": [
+      "固态电池",
+      "钠离子电池",
+      "锂离子电池"
+    ],
+    "filter_reason": "source=18; automotive=0 (none); materials=12 (固态电池, 钠离子电池, 锂离子电池); companies=5 (宁德时代); industrial=3 (量产); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "工程师如何监测并抑制大电流电动汽车连接器接触电阻升高问题",
+    "source": "Bing News",
+    "published_date": "2026-06-12",
+    "url": "https://finance.sina.com.cn/tech/roll/2026-06-12/doc-iniccwvt2186179.shtml",
+    "summary": "大电流电动汽车（EV）牵引系统、电池包以及直流快充接口所用连接器长期承受持续电应力、机械载荷与温度循环作用。高压功率回路设计目标是将接触电阻控制在毫欧级低位，数百安培工况下单触点接触电阻通常设定在 1–2 mΩ 区间；即便电阻小幅上升，也会在紧凑壳体内部引发触点局部温度急剧攀升。 想要在全使用寿命周期内维持接触电阻稳定，就必须厘清电阻劣化的形成机理，并掌握对应的劣化检测手段；再通过结构设计、选材方 ...",
+    "collected_at": "2026-06-13T16:39:45+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 42,
+    "category": "电池与储能材料",
+    "subcategory": "快充技术",
+    "detected_companies": [],
+    "detected_material_keywords": [
+      "快充"
+    ],
+    "filter_reason": "source=18; automotive=15 (EV, 电动汽车, 汽车); materials=4 (快充); companies=0 (none); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "GM bets on energy storage business, following rival Ford in EV battery pivot",
+    "source": "Bing News",
+    "published_date": "2026-06-10",
+    "url": "https://finance.yahoo.com/sectors/technology/article/gm-bets-on-energy-storage-business-following-rival-ford-in-ev-battery-pivot-143755011.html",
+    "summary": "GM announced a new stationary battery initiative for grid-scale energy storage, following rival Ford in a pivot of its battery outlays meant for EVs.",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 42,
+    "category": "电池与储能材料",
+    "subcategory": "",
+    "detected_companies": [
+      "GM",
+      "Ford"
+    ],
+    "detected_material_keywords": [
+      "battery"
+    ],
+    "filter_reason": "source=18; automotive=5 (EV); materials=4 (battery); companies=10 (GM, Ford); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "加固安全防线 电动汽车两项新国标将落地",
+    "source": "Bing News",
+    "published_date": "2026-06-11",
+    "url": "https://news.qq.com/rain/a/20260611A02UHJ00",
+    "summary": "随着普及程度日益提高，新能源汽车的安全问题也愈发受到关注。7月1日起，两项强制性国家标准《电动汽车安全要求》（GB18384—2025）（简称“电动汽车安全新国标”）和《电动汽车用动力蓄电池安全要求》（GB38031—2025）（简称“电池新国标”）将正式实施。业内人士表示，一个聚焦电池、一个统领整车，两项新规直指新能源车 ...",
+    "collected_at": "2026-06-13T16:39:45+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 41,
+    "category": "政策法规与标准",
+    "subcategory": "",
+    "detected_companies": [],
+    "detected_material_keywords": [],
+    "filter_reason": "source=18; automotive=15 (新能源汽车, 电动汽车, 汽车); materials=0 (none); companies=0 (none); industrial=3 (标准); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "GM to manufacture sodium-ion cells for grid-scale battery storage",
+    "source": "Bing News",
+    "published_date": "2026-06-10",
+    "url": "https://www.bestmag.co.uk/gm-sodium-ion-grid-scale-storage/",
+    "summary": "General Motors (GM) is entering the sodium-ion battery market after announcing plans to develop and manufacture sodium-ion cells for stationary energy storage ...",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 41,
+    "category": "电池与储能材料",
+    "subcategory": "钠离子电池",
+    "detected_companies": [
+      "GM"
+    ],
+    "detected_material_keywords": [
+      "battery",
+      "sodium-ion battery"
+    ],
+    "filter_reason": "source=18; automotive=5 (EV); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "GM Working On Sodium-Ion Batteries For Energy Storage Solutions",
+    "source": "Bing News",
+    "published_date": "2026-06-10",
+    "url": "https://gmauthority.com/blog/2026/06/gm-working-on-sodium-ion-batteries-for-energy-storage-solutions/",
+    "summary": "GM is developing sodium-ion battery technology for grid-scale energy storage, targeting lower costs, greater reliability, and improved energy resilience.",
+    "collected_at": "2026-06-13T16:39:41+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 41,
+    "category": "电池与储能材料",
+    "subcategory": "钠离子电池",
+    "detected_companies": [
+      "GM"
+    ],
+    "detected_material_keywords": [
+      "battery",
+      "sodium-ion battery"
+    ],
+    "filter_reason": "source=18; automotive=5 (EV); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "新能源汽车越来越重，“黑黄金”如何为电车“瘦身”？",
+    "source": "Bing News",
+    "published_date": "2026-06-03",
+    "url": "https://tech.gmw.cn/2026-06/03/content_38808989.htm",
+    "summary": "在倪庆清看来，未来5到10年，轻量化一定会成为全球汽车产业的重要趋势。“新能源汽车不仅要智能化，更要绿色化。”他说，随着国产碳纤维产能与技术水平不断提升，中国如今已经能够实现90%以上碳纤维自主生产，材料成本也在快速下降，产业化前景正越来越广阔。",
+    "collected_at": "2026-06-13T16:39:45+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 41,
+    "category": "复合材料",
+    "subcategory": "碳纤维",
+    "detected_companies": [],
+    "detected_material_keywords": [
+      "轻量化",
+      "碳纤维"
+    ],
+    "filter_reason": "source=18; automotive=10 (新能源汽车, 汽车); materials=8 (轻量化, 碳纤维); companies=0 (none); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "新材料风口来袭！2026复合材料展会/武汉汽车塑料展会",
+    "source": "Bing News",
+    "published_date": "2026-06-01",
+    "url": "http://www.cnena.com/zt/bencandy-htm-fid-130-id-25801.html",
+    "summary": "解码汽车轻量化密码：2026武汉复合材料展前瞻 当一辆新能源汽车驶过街头，车身轻盈如羽翼，能耗却比传统车型降低30%——这背后，是汽车塑料与复合材料的悄然变革。2026年9月22-24日，武汉国际博览中心即将成为全球新材料行业的焦点舞台。这场为期三天的盛会，将如何重塑汽车制造的未来？ 一、为何这场展会值得深度关注？ 在全球碳中和目标驱动下，汽车轻量化已成为不可逆的趋势。数据显示，每减少10%的车身 ...",
+    "collected_at": "2026-06-13T16:39:43+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 41,
+    "category": "复合材料",
+    "subcategory": "复合材料",
+    "detected_companies": [],
+    "detected_material_keywords": [
+      "轻量化",
+      "复合材料"
+    ],
+    "filter_reason": "source=18; automotive=10 (新能源汽车, 汽车); materials=8 (轻量化, 复合材料); companies=0 (none); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "芬兰Donut Lab“固态电池”被证实为普通锂电池",
+    "source": "Bing News",
+    "published_date": "2026-06-09",
+    "url": "https://auto.gasgoo.com/news/202606/9I70461137C501.shtml",
+    "summary": "盖世汽车讯 一项由电池研究员Ziroth主导、联合20余位独立电池专家的调查证实，芬兰公司Donut Lab所宣称的“革命性”固态电池实为普通锂离子电池。该公司此前基于相关技术主张，从1,300余名以散户为主的投资者处募集约2,500万美元资金，而现有证据表明其核心宣传内容存在严重失实。 该调查通过电化学分析手段，包括电压曲线与电池膨胀数据，明确指出经测试的Donut Lab电池属于高镍三元（NC ...",
+    "collected_at": "2026-06-13T16:39:44+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 39,
+    "category": "电池与储能材料",
+    "subcategory": "固态电池",
+    "detected_companies": [],
+    "detected_material_keywords": [
+      "固态电池",
+      "锂离子电池"
+    ],
+    "filter_reason": "source=18; automotive=5 (汽车); materials=8 (固态电池, 锂离子电池); companies=0 (none); industrial=3 (投资); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
+    "title": "新能源车“瘦身”，轻量化是趋势",
+    "source": "Bing News",
+    "published_date": "2026-06-08",
+    "url": "https://news.qq.com/rain/a/20260608A043NM00",
+    "summary": "新能源汽车在“变大增重”的路上狂飙，一个不容回避的问题也浮出水面：电池自重的增加导致商用车“亏吨”（装货能力下降），城市道路与停车设施的承载能力面临新考验。工业和信息化部（简称“工信部”）近期刚征集结束的《汽车、挂车及汽车列车外廓尺寸、轴荷及质量限值》意见稿提到，不放宽新能源商用车的总质量限值。这也 ...",
+    "collected_at": "2026-06-13T16:39:43+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 37,
+    "category": "轻量化与结构材料",
+    "subcategory": "",
+    "detected_companies": [],
+    "detected_material_keywords": [
+      "轻量化"
+    ],
+    "filter_reason": "source=18; automotive=10 (新能源汽车, 汽车); materials=4 (轻量化); companies=0 (none); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  }
+]

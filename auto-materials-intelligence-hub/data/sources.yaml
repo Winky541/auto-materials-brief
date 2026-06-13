@@ -1,0 +1,30 @@
+# Source registry for Automotive Materials Intelligence Hub.
+# Stage 2 supports RSS sources and Bing News RSS queries only.
+
+sources:
+  - name: Green Car Congress
+    type: rss
+    url: https://www.greencarcongress.com/atom.xml
+    source_score: 85
+
+bing_news_queries:
+  - query: automotive materials battery fast charging
+    source_score: 70
+  - query: solid state battery Toyota Nissan Honda
+    source_score: 75
+  - query: sodium ion battery vehicle
+    source_score: 70
+  - query: carbon fiber automotive lightweight
+    source_score: 70
+  - query: SiC GaN power semiconductor electric vehicle
+    source_score: 75
+  - query: battery thermal management aerogel EV
+    source_score: 70
+  - query: 汽车 新材料 轻量化
+    source_score: 70
+  - query: 汽车 固态电池 钠离子电池
+    source_score: 70
+  - query: 汽车 碳纤维 复合材料
+    source_score: 70
+  - query: 电动汽车 热管理 材料
+    source_score: 70

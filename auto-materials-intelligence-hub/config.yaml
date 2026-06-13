@@ -1,0 +1,34 @@
+limits:
+  max_news_candidates: 150
+  max_filtered_news: 20
+  max_ai_analysis: 8
+  daily_publish_min: 5
+  daily_publish_max: 8
+  backlog_max_size: 300
+  min_rule_score: 35
+  max_title_similarity: 0.88
+
+timezone: Asia/Shanghai
+
+deepseek_model: deepseek-chat
+deepseek_temperature: 0.2
+deepseek_max_tokens: 1200
+
+site:
+  title: Automotive Materials Intelligence Hub
+  language: zh-CN
+  output_dir: docs
+
+categories:
+  - 电池与储能材料
+  - 轻量化与结构材料
+  - 复合材料
+  - 智能与功能材料
+  - 热管理与安全材料
+  - 电驱与电子材料
+  - 可持续与循环材料
+  - 先进制造工艺
+  - 专利情报
+  - 学术论文
+  - 政策法规与标准
+  - 企业技术动态

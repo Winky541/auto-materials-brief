@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ month }} | {{ brand_en }}</title>
+    <link rel="stylesheet" href="{{ asset_prefix }}/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ root_prefix }}/index.html">
+        <span>{{ brand_en }}</span>
+        <small>{{ brand_cn }}</small>
+      </a>
+      <nav class="top-nav">
+        <a href="{{ root_prefix }}/index.html">首页</a>
+      </nav>
+    </header>
+
+    <main class="page narrow-page">
+      <section class="archive-hero">
+        <p class="eyebrow">Monthly Archive</p>
+        <h1>{{ month }} 月度归档</h1>
+        <p>本页汇总当前已发布到网站的当月汽车新材料与前沿技术新闻。</p>
+      </section>
+
+      <section class="month-summary">
+        <div>
+          <strong>{{ count }}</strong>
+          <span>当月条目</span>
+        </div>
+        <div>
+          <strong>{{ statistics.category_counts | length }}</strong>
+          <span>覆盖分类</span>
+        </div>
+        <div>
+          <strong>{{ statistics.company_counts | length }}</strong>
+          <span>涉及企业/机构</span>
+        </div>
+      </section>
+
+      <section class="content single-column">
+        {% include "_news_cards.html.j2" %}
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+{
+  "date": "2026-06-13",
+  "count": 5,
+  "items": [
+    {
+      "title": "东丽，发布新款消费后回收碳纤维产品，性能直逼原生",
+      "source": "Bing News",
+      "published_date": "2026-06-11",
+      "url": "https://www.sohu.com/a/1035371669_121124370",
+      "category": "复合材料",
+      "subcategory": "碳纤维",
+      "summary": "6月1日，全球复合材料巨头东丽性能材料公司（Toray Performance Materials Corporation，PMC）发布全新产品：Stratex™ 2300r 单向碳纤维复合材料。 这款正在申请专利的产品首次实现消费后回收成分与原生PET单向复合材料性能1:1对等，彻底打破了行业内“回收材料必然牺牲性能”的固有认知，为全球制造业可持续转型提供了全新解决方案。 传统碳纤维复合材料依赖 ...",
+      "technical_points": [],
+      "materials_involved": [
+        "碳纤维",
+        "复合材料",
+        "回收"
+      ],
+      "companies_or_institutions": [
+        "Toray",
+        "东丽"
+      ],
+      "impact_assessment": "未配置 DeepSeek API Key，暂未生成影响评估。",
+      "research_value": "未配置 DeepSeek API Key，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "东丽，发布新款消费后回收碳纤维产品，性能直逼原生",
+      "analysis_status": "skipped_no_api_key",
+      "final_score": 41,
+      "selected_at": "2026-06-13T17:45:59+08:00"
+    },
+    {
+      "title": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
+      "source": "Bing News",
+      "published_date": "2026-06-09",
+      "url": "https://www.aol.com/lifestyle/chinese-battery-giant-catl-plans-230016306.html",
+      "category": "电池与储能材料",
+      "subcategory": "钠离子电池",
+      "summary": "For years, lithium-ion batteries have dominated the electric vehicle industry almost uncontested. Now, China’s largest battery manufacturers are preparing to push an alternative chemistry into the ...",
+      "technical_points": [],
+      "materials_involved": [
+        "battery",
+        "sodium-ion battery",
+        "lithium-ion"
+      ],
+      "companies_or_institutions": [
+        "CATL"
+      ],
+      "impact_assessment": "未配置 DeepSeek API Key，暂未生成影响评估。",
+      "research_value": "未配置 DeepSeek API Key，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
+      "analysis_status": "skipped_no_api_key",
+      "final_score": 36,
+      "selected_at": "2026-06-13T17:45:59+08:00"
+    },
+    {
+      "title": "GM Activates 250,000 EVs for Vehicle-to-Grid: Sodium-Ion Batteries Target Grid-Peaker Replacement",
+      "source": "Bing News",
+      "published_date": "2026-06-11",
+      "url": "https://www.techtimes.com/articles/318197/20260611/gm-activates-250000-evs-vehicle-grid-sodium-ion-batteries-target-grid-peaker-replacement.htm",
+      "category": "电池与储能材料",
+      "subcategory": "钠离子电池",
+      "summary": "GM vehicle-to-grid activation at GM Empower 2026 turns 250,000 existing bidirectional EVs into a virtual power plant via software alone, with no new hardware required. A sodium-ion battery R&D partner ...",
+      "technical_points": [],
+      "materials_involved": [
+        "battery",
+        "sodium-ion battery"
+      ],
+      "companies_or_institutions": [
+        "GM"
+      ],
+      "impact_assessment": "未配置 DeepSeek API Key，暂未生成影响评估。",
+      "research_value": "未配置 DeepSeek API Key，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "GM Activates 250,000 EVs for Vehicle-to-Grid: Sodium-Ion Batteries Target Grid-Peaker Replacement",
+      "analysis_status": "skipped_no_api_key",
+      "final_score": 29,
+      "selected_at": "2026-06-13T17:45:59+08:00"
+    },
+    {
+      "title": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
+      "source": "Bing News",
+      "published_date": "2026-06-10",
+      "url": "https://www.msn.com/en-us/autos/news/catl-says-its-next-sodium-ion-battery-clears-500-kilometers-and-is-ready-for-mass-production/ar-AA25iOtc",
+      "category": "电池与储能材料",
+      "subcategory": "钠离子电池",
+      "summary": "CATL, the world’s largest electric vehicle battery maker, announced that its new sodium-ion battery pack called Naxtra can deliver a 500-kilometer driving range at an energy density of 175 watt-hours ...",
+      "technical_points": [],
+      "materials_involved": [
+        "battery",
+        "sodium-ion battery"
+      ],
+      "companies_or_institutions": [
+        "CATL"
+      ],
+      "impact_assessment": "未配置 DeepSeek API Key，暂未生成影响评估。",
+      "research_value": "未配置 DeepSeek API Key，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
+      "analysis_status": "skipped_no_api_key",
+      "final_score": 29,
+      "selected_at": "2026-06-13T17:45:59+08:00"
+    },
+    {
+      "title": "GM to Develop Sodium-Ion Battery Cells—for Energy Storage, Not EVs",
+      "source": "Bing News",
+      "published_date": "2026-06-09",
+      "url": "https://www.msn.com/en-us/autos/news/gm-to-develop-sodium-ion-battery-cells-for-energy-storage-not-evs/ar-AA25dSdc",
+      "category": "电池与储能材料",
+      "subcategory": "钠离子电池",
+      "summary": "A new prototype cell production lab will let GM develop cheaper cells faster, expanding its battery business to boost its future EVs and potentially lower their batteries' cost.",
+      "technical_points": [],
+      "materials_involved": [
+        "battery",
+        "sodium-ion battery"
+      ],
+      "companies_or_institutions": [
+        "GM"
+      ],
+      "impact_assessment": "未配置 DeepSeek API Key，暂未生成影响评估。",
+      "research_value": "未配置 DeepSeek API Key，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "GM to Develop Sodium-Ion Battery Cells—for Energy Storage, Not EVs",
+      "analysis_status": "skipped_no_api_key",
+      "final_score": 29,
+      "selected_at": "2026-06-13T17:45:59+08:00"
+    }
+  ]
+}
