@@ -1,23 +1,20 @@
 {
   "category_counts": {
-    "电池与储能材料": 4,
-    "复合材料": 1
+    "电池与储能材料": 6,
+    "其他": 1,
+    "电驱与电子材料": 1
   },
   "source_counts": {
-    "Bing News": 5
+    "Bing News": 8
   },
   "company_counts": {
-    "CATL": 2,
-    "GM": 2,
-    "Toray": 1,
-    "东丽": 1
+    "CATL": 3,
+    "GM": 3
   },
   "keyword_counts": {
-    "battery": 4,
-    "sodium-ion battery": 4,
-    "碳纤维": 1,
-    "复合材料": 1,
-    "回收": 1,
-    "lithium-ion": 1
+    "battery": 5,
+    "sodium-ion battery": 5,
+    "lithium-ion": 2,
+    "SiC": 1
   }
 }
