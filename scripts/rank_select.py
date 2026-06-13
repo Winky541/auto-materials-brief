@@ -343,6 +343,7 @@ def deduplicate_items(
     ranked = sorted(
         items,
         key=lambda item: (
+            item.get("analysis_status") == "success",
             int(item.get("final_score", 0) or 0),
             int(item.get("rule_score", 0) or 0),
             item.get("published_date", ""),
@@ -471,7 +472,13 @@ def select_today_items(
             daily_min,
         )
 
-    selected.sort(key=lambda item: int(item.get("final_score", 0)), reverse=True)
+    selected.sort(
+        key=lambda item: (
+            item.get("analysis_status") == "success",
+            int(item.get("final_score", 0)),
+        ),
+        reverse=True,
+    )
 
     selected_at = datetime.now(ZoneInfo(timezone_name)).isoformat(timespec="seconds")
     for item in selected:
@@ -544,6 +551,13 @@ def _existing_today_selection(today_data: Any, today: str, timezone_name: str) -
     """Return today's existing selection when it is still usable."""
     if not isinstance(today_data, dict) or today_data.get("date") != today:
         return None
+    try:
+        count = int(today_data.get("count", 0) or 0)
+    except (TypeError, ValueError):
+        count = 0
+    if count <= 0:
+        logging.warning("Existing today_selected.json has count=0; treating it as invalid.")
+        return None
 
     items = [
         item
@@ -551,6 +565,7 @@ def _existing_today_selection(today_data: Any, today: str, timezone_name: str) -
         if isinstance(item, dict) and _valid_item(item, timezone_name)
     ]
     if not items:
+        logging.warning("Existing today_selected.json has no valid items; treating it as invalid.")
         return None
 
     payload = deepcopy(today_data)
