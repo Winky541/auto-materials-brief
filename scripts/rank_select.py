@@ -273,13 +273,18 @@ def merge_analyzed_and_backlog(
 
 
 def remove_published_items(
-    items: list[dict[str, Any]], published_data: Any
+    items: list[dict[str, Any]], published_data: Any, current_date: str | None = None
 ) -> tuple[list[dict[str, Any]], int]:
-    """Remove items whose URL has already been published."""
+    """Remove items whose URL was published before the current run date.
+
+    Same-day records are intentionally allowed so repeated workflow runs do not
+    clear today's already selected page.
+    """
     published_urls = {
         normalize_url(record.get("url"))
         for record in _extract_published_records(published_data)
         if normalize_url(record.get("url"))
+        and (not current_date or record.get("selected_date") != current_date)
     }
 
     remaining: list[dict[str, Any]] = []
@@ -484,6 +489,32 @@ def update_published_urls(
     return {"published_urls": records}
 
 
+def _existing_today_selection(today_data: Any, today: str, timezone_name: str) -> dict[str, Any] | None:
+    """Return today's existing selection when it is still usable."""
+    if not isinstance(today_data, dict) or today_data.get("date") != today:
+        return None
+
+    items = [
+        item
+        for item in today_data.get("items", [])
+        if isinstance(item, dict) and _valid_item(item, timezone_name)
+    ]
+    if not items:
+        return None
+
+    payload = deepcopy(today_data)
+    payload["items"] = items
+    payload["count"] = len(items)
+    return payload
+
+
+def _same_selected_urls(left: list[dict[str, Any]], right: list[dict[str, Any]]) -> bool:
+    """Return True when two selections contain the same URLs in the same order."""
+    left_urls = [normalize_url(item.get("url")) for item in left]
+    right_urls = [normalize_url(item.get("url")) for item in right]
+    return bool(left_urls) and left_urls == right_urls
+
+
 def main() -> None:
     """Run ranking and daily publication selection."""
     logging.basicConfig(
@@ -499,6 +530,10 @@ def main() -> None:
     analyzed_data = load_json(ANALYZED_NEWS_PATH)
     backlog_data = load_json(BACKLOG_PATH)
     published_data = load_json(PUBLISHED_URLS_PATH)
+    existing_today_data = load_json(TODAY_SELECTED_PATH)
+    existing_today = _existing_today_selection(existing_today_data, today, timezone_name)
+    if existing_today:
+        logging.info("Existing today_selected.json found for %s with %s items.", today, existing_today["count"])
 
     analyzed_items = [item for item in analyzed_data if isinstance(item, dict)]
     logging.info("Analyzed items read: %s.", len(analyzed_items))
@@ -506,7 +541,7 @@ def main() -> None:
     merged_items, backlog_count = merge_analyzed_and_backlog(analyzed_items, backlog_data)
     logging.info("Backlog items read: %s.", backlog_count)
 
-    unpublished_items, removed_published = remove_published_items(merged_items, published_data)
+    unpublished_items, removed_published = remove_published_items(merged_items, published_data, today)
     logging.info("Already published items removed: %s.", removed_published)
 
     selected_items, backlog_candidates, selection_stats = select_today_items(unpublished_items, config)
@@ -514,21 +549,50 @@ def main() -> None:
     logging.info("Candidates after deduplication: %s.", selection_stats["deduped_count"])
     logging.info("Today selected items: %s.", len(selected_items))
 
-    today_payload = {
-        "date": today,
-        "count": len(selected_items),
-        "items": selected_items,
-    }
-    published_payload = update_published_urls(published_data, selected_items, today)
+    if selected_items and existing_today and _same_selected_urls(selected_items, existing_today["items"]):
+        logging.info("Reusing existing today_selected.json because today's selected URLs are unchanged.")
+        today_payload = existing_today
+        published_items = existing_today["items"]
+        save_today = False
+    elif selected_items:
+        today_payload = {
+            "date": today,
+            "count": len(selected_items),
+            "items": selected_items,
+        }
+        published_items = selected_items
+        save_today = True
+    elif existing_today:
+        logging.warning(
+            "No new selected items generated; preserving existing today_selected.json for %s.",
+            today,
+        )
+        today_payload = existing_today
+        published_items = existing_today["items"]
+        save_today = False
+    else:
+        today_payload = {
+            "date": today,
+            "count": 0,
+            "items": [],
+        }
+        published_items = []
+        save_today = True
+
+    published_payload = update_published_urls(published_data, published_items, today)
     backlog_payload = update_backlog(backlog_candidates, config)
 
-    save_json(today_payload, TODAY_SELECTED_PATH)
+    if save_today:
+        save_json(today_payload, TODAY_SELECTED_PATH)
     save_json(backlog_payload, BACKLOG_PATH)
     save_json(published_payload, PUBLISHED_URLS_PATH)
 
     logging.info("New backlog size: %s.", len(backlog_payload["items"]))
     logging.info("published_urls updated size: %s.", len(published_payload["published_urls"]))
-    logging.info("Saved today selection to %s.", TODAY_SELECTED_PATH)
+    if save_today:
+        logging.info("Saved today selection to %s.", TODAY_SELECTED_PATH)
+    else:
+        logging.info("Preserved existing today selection at %s.", TODAY_SELECTED_PATH)
 
 
 if __name__ == "__main__":
