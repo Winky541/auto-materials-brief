@@ -6,8 +6,12 @@
     "url": "https://www.aol.com/lifestyle/chinese-battery-giant-catl-plans-230016306.html",
     "category": "电池与储能材料",
     "subcategory": "钠离子电池",
-    "summary": "For years, lithium-ion batteries have dominated the electric vehicle industry almost uncontested. Now, China’s largest battery manufacturers are preparing to push an alternative chemistry into the ...",
-    "technical_points": [],
+    "summary": "多年来，锂离子电池几乎在电动汽车行业占据主导地位。如今，中国最大的电池制造商正准备在数月内推出钠离子电池，推动替代化学体系的应用。",
+    "technical_points": [
+      "CATL计划在数月内推出钠离子电池",
+      "钠离子电池作为锂离子电池的替代方案",
+      "该技术可能降低对锂资源的依赖"
+    ],
     "materials_involved": [
       "battery",
       "sodium-ion battery",
@@ -16,14 +20,14 @@
     "companies_or_institutions": [
       "CATL"
     ],
-    "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-    "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-    "industrial_maturity": "unknown",
-    "priority": "P3",
-    "confidence": 0,
-    "follow_up": false,
-    "one_sentence": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
-    "analysis_status": "failed_api"
+    "impact_assessment": "CATL的钠离子电池量产计划将推动电动汽车电池技术多元化，降低对锂资源的依赖，可能改变电池供应链格局，加速钠离子电池在低端电动车和储能领域的应用。",
+    "research_value": "对汽车材料研究员而言，该新闻表明钠离子电池产业化进程加速，需关注其能量密度、循环寿命等性能指标与锂离子电池的差距，以及正负极材料、电解液等关键材料的技术突破。",
+    "industrial_maturity": "production",
+    "priority": "P0",
+    "confidence": 90,
+    "follow_up": true,
+    "one_sentence": "CATL计划在数月内推出钠离子电池，标志着钠离子电池产业化迈出关键一步。",
+    "analysis_status": "success"
   },
   {
     "title": "GM Activates 250,000 EVs for Vehicle-to-Grid: Sodium-Ion Batteries Target Grid-Peaker Replacement",
@@ -32,8 +36,12 @@
     "url": "https://www.techtimes.com/articles/318197/20260611/gm-activates-250000-evs-vehicle-grid-sodium-ion-batteries-target-grid-peaker-replacement.htm",
     "category": "电池与储能材料",
     "subcategory": "钠离子电池",
-    "summary": "GM vehicle-to-grid activation at GM Empower 2026 turns 250,000 existing bidirectional EVs into a virtual power plant via software alone, with no new hardware required. A sodium-ion battery R&D partner ...",
-    "technical_points": [],
+    "summary": "通用汽车在GM Empower 2026上宣布，通过纯软件方式激活25万辆现有双向充电电动汽车，无需新硬件即可组成虚拟电厂。同时，通用汽车披露其钠离子电池研发合作伙伴，目标是用钠离子电池替代电网调峰电站。",
+    "technical_points": [
+      "通过软件激活25万辆现有双向充电电动汽车组成虚拟电厂，无需新硬件",
+      "钠离子电池研发合作伙伴关系，目标替代电网调峰电站",
+      "车辆到电网（V2G）技术实现大规模分布式储能"
+    ],
     "materials_involved": [
       "battery",
       "sodium-ion battery"
@@ -41,14 +49,14 @@
     "companies_or_institutions": [
       "GM"
     ],
-    "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-    "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-    "industrial_maturity": "unknown",
-    "priority": "P3",
-    "confidence": 0,
-    "follow_up": false,
-    "one_sentence": "GM Activates 250,000 EVs for Vehicle-to-Grid: Sodium-Ion Batteries Target Grid-Peaker Replacement",
-    "analysis_status": "failed_api"
+    "impact_assessment": "通用汽车将V2G与钠离子电池结合，可能推动钠离子电池在储能领域的规模化应用，并加速V2G技术普及，对电网级储能和电动汽车双向充电产业链产生重要影响。",
+    "research_value": "钠离子电池在电网调峰中的应用方向值得关注，V2G软件激活方式降低了硬件成本，为材料研究提供了新的应用场景。",
+    "industrial_maturity": "production",
+    "priority": "P1",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "通用汽车通过软件激活25万辆电动汽车组成虚拟电厂，并推进钠离子电池替代电网调峰电站。",
+    "analysis_status": "success"
   },
   {
     "title": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
@@ -57,23 +65,28 @@
     "url": "https://www.msn.com/en-us/autos/news/catl-says-its-next-sodium-ion-battery-clears-500-kilometers-and-is-ready-for-mass-production/ar-AA25iOtc",
     "category": "电池与储能材料",
     "subcategory": "钠离子电池",
-    "summary": "CATL, the world’s largest electric vehicle battery maker, announced that its new sodium-ion battery pack called Naxtra can deliver a 500-kilometer driving range at an energy density of 175 watt-hours ...",
-    "technical_points": [],
+    "summary": "全球最大电动汽车电池制造商CATL宣布，其新一代钠离子电池组Naxtra可实现500公里续航里程，能量密度达175瓦时/千克，并已准备量产。",
+    "technical_points": [
+      "钠离子电池组Naxtra实现500公里续航",
+      "能量密度达到175 Wh/kg",
+      "已准备大规模生产"
+    ],
     "materials_involved": [
+      "钠离子电池",
       "battery",
       "sodium-ion battery"
     ],
     "companies_or_institutions": [
       "CATL"
     ],
-    "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-    "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-    "industrial_maturity": "unknown",
-    "priority": "P3",
-    "confidence": 0,
-    "follow_up": false,
-    "one_sentence": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
-    "analysis_status": "failed_api"
+    "impact_assessment": "CATL的钠离子电池量产将推动电动汽车成本下降，减少对锂资源的依赖，可能改变电池产业格局，加速钠离子电池在低端车型和储能领域的应用。",
+    "research_value": "该进展表明钠离子电池技术已成熟，能量密度接近磷酸铁锂，为材料研究员提供了钠离子正极、负极和电解液优化的参考方向。",
+    "industrial_maturity": "production",
+    "priority": "P0",
+    "confidence": 90,
+    "follow_up": true,
+    "one_sentence": "CATL新一代钠离子电池Naxtra实现500公里续航并准备量产，标志着钠离子电池产业化重大突破。",
+    "analysis_status": "success"
   },
   {
     "title": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
@@ -82,22 +95,27 @@
     "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
     "category": "电池与储能材料",
     "subcategory": "锂离子电池",
-    "summary": "The race to develop the next generation of electric vehicle batteries is heating up, and CATL believes it may have found one of the industry’s most promising alternatives to lithium-ion technology.",
-    "technical_points": [],
+    "summary": "CATL计划于2026年量产钠离子电池，目标续航超过370英里。这被视为锂离子电池的有前景替代方案，下一代电动汽车电池竞争升温。",
+    "technical_points": [
+      "CATL计划2026年量产钠离子电池",
+      "目标续航里程超过370英里",
+      "钠离子电池被视为锂离子电池的替代方案"
+    ],
     "materials_involved": [
+      "sodium-ion",
       "lithium-ion"
     ],
     "companies_or_institutions": [
       "CATL"
     ],
-    "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-    "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-    "industrial_maturity": "unknown",
-    "priority": "P3",
-    "confidence": 0,
-    "follow_up": false,
-    "one_sentence": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
-    "analysis_status": "failed_api"
+    "impact_assessment": "若量产成功，将降低对锂资源的依赖，可能推动电动汽车成本下降，并影响电池供应链格局。",
+    "research_value": "为钠离子电池产业化提供重要参考，关注其能量密度和成本优势。",
+    "industrial_maturity": "production",
+    "priority": "P0",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "CATL计划2026年量产钠离子电池，目标续航超370英里，有望成为锂离子电池的重要替代方案。",
+    "analysis_status": "success"
   },
   {
     "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
@@ -106,21 +124,57 @@
     "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
     "category": "电池与储能材料",
     "subcategory": "钠离子电池",
-    "summary": "General Motors is teaming up with U.S. startup Peak Energy to deploy sodium-ion batteries for energy storage systems, the automaker announced on Tuesday. As electric vehicle sales ...",
-    "technical_points": [],
-    "materials_involved": [
-      "battery",
-      "sodium-ion battery"
+    "summary": "通用汽车宣布与美国初创公司Peak Energy合作，在美国部署钠离子电池用于储能系统。此举旨在降低对锂资源的依赖，并推动钠离子电池技术的商业化。",
+    "technical_points": [
+      "通用汽车与Peak Energy合作部署钠离子电池储能系统",
+      "钠离子电池作为锂离子电池的替代方案，成本更低且资源丰富",
+      "该合作聚焦于储能领域，而非电动汽车动力电池"
     ],
-    "companies_or_institutions": [],
-    "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-    "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-    "industrial_maturity": "unknown",
+    "materials_involved": [
+      "sodium-ion battery",
+      "battery"
+    ],
+    "companies_or_institutions": [
+      "General Motors",
+      "Peak Energy"
+    ],
+    "impact_assessment": "通用汽车布局钠离子电池储能系统，表明头部车企正积极拓展低成本、资源友好的电池技术路线，可能推动钠离子电池在储能领域的产业化进程，并间接影响电动汽车电池供应链的多元化发展。",
+    "research_value": "对汽车材料研究员而言，该新闻提示钠离子电池技术已进入产业化部署阶段，值得关注其材料体系（如正极、负极、电解液）的进展及与锂离子电池的性能对比。",
+    "industrial_maturity": "pilot",
+    "priority": "P1",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "通用汽车联手Peak Energy在美国部署钠离子电池储能系统，推动低成本电池技术商业化。",
+    "analysis_status": "success"
+  },
+  {
+    "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
+    "source": "Bing News",
+    "published_date": "2026-06-04",
+    "url": "https://www.msn.com/en-us/autos/performance-cars/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
+    "category": "复合材料",
+    "subcategory": "碳纤维",
+    "summary": "该新闻展示了一辆采用碳纤维车身打造的日产240SX漂移赛车。视频重点介绍了这款定制JDM项目，通过轻量化碳纤维部件与激进造型的结合，提升车辆在漂移运动中的性能表现。",
+    "technical_points": [
+      "碳纤维车身轻量化技术",
+      "漂移赛车的定制化改装",
+      "JDM车型的碳纤维应用"
+    ],
+    "materials_involved": [
+      "碳纤维",
+      "轻量化材料"
+    ],
+    "companies_or_institutions": [
+      "Nissan"
+    ],
+    "impact_assessment": "该案例展示了碳纤维在漂移赛车领域的应用，可能推动碳纤维在改装车市场的普及，但对主流汽车产业链影响有限。",
+    "research_value": "为汽车材料研究员提供碳纤维在极端工况（漂移）下的应用参考，但缺乏具体技术参数，参考价值中等。",
+    "industrial_maturity": "market",
     "priority": "P3",
-    "confidence": 0,
-    "follow_up": false,
-    "one_sentence": "General Motors Is Bringing Sodium-Ion Battery Production To America",
-    "analysis_status": "failed_api"
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "日产240SX漂移赛车采用碳纤维车身，展示轻量化材料在改装车领域的应用。",
+    "analysis_status": "success"
   },
   {
     "title": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
@@ -129,23 +183,28 @@
     "url": "https://www.msn.com/en-us/autos/news/gm-to-develop-sodium-ion-battery-cells-for-energy-storage-not-evs/ar-AA25dSdc",
     "category": "电池与储能材料",
     "subcategory": "钠离子电池",
-    "summary": "A new prototype cell production lab will let GM develop cheaper cells faster, expanding its battery business to boost its future EVs and potentially lower their batteries' cost.",
-    "technical_points": [],
+    "summary": "通用汽车（GM）将建立原型电池生产实验室，开发钠离子电池，初期用于储能而非电动汽车。此举旨在以更低成本、更快速度开发电池，拓展电池业务，为未来电动汽车降低成本。",
+    "technical_points": [
+      "GM建立原型电池生产实验室，开发钠离子电池。",
+      "钠离子电池初期用于储能领域，而非电动汽车。",
+      "目标是以更低成本、更快速度开发电池。",
+      "该实验室将拓展GM的电池业务。",
+      "未来可能降低电动汽车电池成本。"
+    ],
     "materials_involved": [
-      "battery",
-      "sodium-ion battery"
+      "钠离子电池"
     ],
     "companies_or_institutions": [
       "GM"
     ],
-    "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-    "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-    "industrial_maturity": "unknown",
-    "priority": "P3",
-    "confidence": 0,
-    "follow_up": false,
-    "one_sentence": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
-    "analysis_status": "failed_api"
+    "impact_assessment": "GM布局钠离子电池储能应用，可能推动钠离子电池在汽车储能领域的产业化，长期有望降低电动汽车电池成本，但初期不直接用于电动车。",
+    "research_value": "对汽车材料研究员而言，关注钠离子电池在储能领域的应用进展，以及未来向电动汽车转移的可能性。",
+    "industrial_maturity": "pilot",
+    "priority": "P1",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "通用汽车将开发钠离子电池用于储能，以降低成本并拓展电池业务。",
+    "analysis_status": "success"
   },
   {
     "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
@@ -154,41 +213,25 @@
     "url": "https://insideevs.com/news/798630/gm-sodium-ion-battery-vehicle-to-grid-tech/",
     "category": "其他",
     "subcategory": "",
-    "summary": "With sodium-ion batteries and vehicle-to-grid technology, General Motors' growth ambitions extend far beyond cars.",
-    "technical_points": [],
-    "materials_involved": [],
+    "summary": "通用汽车（GM）正在推动钠离子电池和车网互联（V2G）技术，其增长野心远超汽车本身。钠离子电池作为锂离子电池的潜在替代品，具有成本低、资源丰富的优势；V2G技术则使电动汽车能够与电网双向互动，参与能源管理。GM此举旨在拓展能源领域，实现从汽车制造商向能源服务商的转型。",
+    "technical_points": [
+      "钠离子电池技术：替代锂离子电池，降低成本，利用丰富资源。",
+      "车网互联（V2G）技术：电动汽车与电网双向能量交换。",
+      "通用汽车能源战略：从汽车制造向能源服务延伸。"
+    ],
+    "materials_involved": [
+      "钠离子电池"
+    ],
     "companies_or_institutions": [
       "GM"
     ],
-    "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-    "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-    "industrial_maturity": "unknown",
-    "priority": "P3",
-    "confidence": 0,
-    "follow_up": false,
-    "one_sentence": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
-    "analysis_status": "failed_api"
-  },
-  {
-    "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
-    "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
-    "category": "电驱与电子材料",
-    "subcategory": "SiC",
-    "summary": "Collaboration focused on silicon carbide (SiC)-based power modules for automotive traction inverter applications.",
-    "technical_points": [],
-    "materials_involved": [
-      "SiC"
-    ],
-    "companies_or_institutions": [],
-    "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-    "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-    "industrial_maturity": "unknown",
-    "priority": "P3",
-    "confidence": 0,
-    "follow_up": false,
-    "one_sentence": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
-    "analysis_status": "failed_api"
+    "impact_assessment": "通用汽车布局钠离子电池和V2G技术，将推动电动汽车与能源系统的深度融合，可能改变汽车产业链的价值分配，促使更多企业关注电池材料替代和能源服务模式。",
+    "research_value": "对汽车材料研究员而言，钠离子电池的进展提供了新的研究方向，尤其是在正负极材料、电解液等方面的创新机会。同时，V2G技术对电池循环寿命和安全性提出更高要求，值得关注。",
+    "industrial_maturity": "pilot",
+    "priority": "P1",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "通用汽车推进钠离子电池与V2G技术，拓展能源领域布局。",
+    "analysis_status": "success"
   }
 ]
