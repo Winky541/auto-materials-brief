@@ -1,3 +1,145 @@
 {
-  "items": []
+  "items": [
+    {
+      "title": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
+      "source": "Bing News",
+      "published_date": "2026-06-09",
+      "url": "https://www.msn.com/en-us/autos/news/gm-to-develop-sodium-ion-battery-cells-for-energy-storage-not-evs/ar-AA25dSdc",
+      "category": "电池与储能材料",
+      "subcategory": "钠离子电池",
+      "summary": "A new prototype cell production lab will let GM develop cheaper cells faster, expanding its battery business to boost its future EVs and potentially lower their batteries' cost.",
+      "technical_points": [],
+      "materials_involved": [
+        "battery",
+        "sodium-ion battery"
+      ],
+      "companies_or_institutions": [
+        "GM"
+      ],
+      "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
+      "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
+      "analysis_status": "failed_api",
+      "rule_score": 44,
+      "source_score": 70,
+      "source_type": "bing_news",
+      "filter_reason": "source=18; automotive=5 (EV); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=3 (prototype); current_month=5",
+      "final_score": 28
+    },
+    {
+      "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
+      "source": "Bing News",
+      "published_date": "2026-06-09",
+      "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
+      "category": "电池与储能材料",
+      "subcategory": "钠离子电池",
+      "summary": "General Motors is teaming up with U.S. startup Peak Energy to deploy sodium-ion batteries for energy storage systems, the automaker announced on Tuesday. As electric vehicle sales ...",
+      "technical_points": [],
+      "materials_involved": [
+        "battery",
+        "sodium-ion battery"
+      ],
+      "companies_or_institutions": [],
+      "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
+      "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "General Motors Is Bringing Sodium-Ion Battery Production To America",
+      "analysis_status": "failed_api",
+      "rule_score": 46,
+      "source_score": 70,
+      "source_type": "bing_news",
+      "filter_reason": "source=18; automotive=15 (electric vehicle, vehicle, automaker); materials=8 (battery, sodium-ion battery); companies=0 (none); industrial=0 (none); current_month=5",
+      "final_score": 27
+    },
+    {
+      "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
+      "source": "Bing News",
+      "published_date": "2026-06-09",
+      "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
+      "category": "电驱与电子材料",
+      "subcategory": "SiC",
+      "summary": "Collaboration focused on silicon carbide (SiC)-based power modules for automotive traction inverter applications.",
+      "technical_points": [],
+      "materials_involved": [
+        "SiC"
+      ],
+      "companies_or_institutions": [],
+      "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
+      "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
+      "analysis_status": "failed_api",
+      "rule_score": 43,
+      "source_score": 75,
+      "source_type": "bing_news",
+      "filter_reason": "source=19; automotive=15 (EV, automotive, car); materials=4 (SiC); companies=0 (none); industrial=0 (none); current_month=5",
+      "final_score": 27
+    },
+    {
+      "title": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
+      "source": "Bing News",
+      "published_date": "2026-06-01",
+      "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
+      "category": "电池与储能材料",
+      "subcategory": "锂离子电池",
+      "summary": "The race to develop the next generation of electric vehicle batteries is heating up, and CATL believes it may have found one of the industry’s most promising alternatives to lithium-ion technology.",
+      "technical_points": [],
+      "materials_involved": [
+        "lithium-ion"
+      ],
+      "companies_or_institutions": [
+        "CATL"
+      ],
+      "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
+      "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
+      "analysis_status": "failed_api",
+      "rule_score": 47,
+      "source_score": 70,
+      "source_type": "bing_news",
+      "filter_reason": "source=18; automotive=15 (EV, electric vehicle, vehicle); materials=4 (lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
+      "final_score": 27
+    },
+    {
+      "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
+      "source": "Bing News",
+      "published_date": "2026-06-13",
+      "url": "https://insideevs.com/news/798630/gm-sodium-ion-battery-vehicle-to-grid-tech/",
+      "category": "其他",
+      "subcategory": "",
+      "summary": "With sodium-ion batteries and vehicle-to-grid technology, General Motors' growth ambitions extend far beyond cars.",
+      "technical_points": [],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "GM"
+      ],
+      "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
+      "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 0,
+      "follow_up": false,
+      "one_sentence": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
+      "analysis_status": "failed_api",
+      "rule_score": 43,
+      "source_score": 70,
+      "source_type": "bing_news",
+      "filter_reason": "source=18; automotive=15 (EV, vehicle, car); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
+      "final_score": 26
+    }
+  ]
 }

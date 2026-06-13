@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 from copy import deepcopy
 from datetime import datetime
@@ -25,11 +26,12 @@ import yaml
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = PROJECT_ROOT / "config.yaml"
 ANALYZED_NEWS_PATH = PROJECT_ROOT / "data" / "news_analyzed.json"
+FILTERED_NEWS_PATH = PROJECT_ROOT / "data" / "news_filtered.json"
 TODAY_SELECTED_PATH = PROJECT_ROOT / "data" / "today_selected.json"
 BACKLOG_PATH = PROJECT_ROOT / "data" / "backlog.json"
 PUBLISHED_URLS_PATH = PROJECT_ROOT / "data" / "published_urls.json"
 
-DEFAULT_DAILY_PUBLISH_MIN = 5
+DEFAULT_DAILY_PUBLISH_MIN = 3
 DEFAULT_DAILY_PUBLISH_MAX = 8
 DEFAULT_BACKLOG_MAX_SIZE = 300
 DEFAULT_MAX_TITLE_SIMILARITY = 0.88
@@ -272,6 +274,34 @@ def merge_analyzed_and_backlog(
     return merged, len(backlog_items)
 
 
+def enrich_with_filtered_metadata(
+    analyzed_items: list[dict[str, Any]], filtered_data: Any
+) -> list[dict[str, Any]]:
+    """Backfill rule/source metadata that DeepSeek fallback output may omit."""
+    filtered_items = [item for item in filtered_data if isinstance(item, dict)] if isinstance(filtered_data, list) else []
+    filtered_by_url = {
+        normalize_url(item.get("url")): item
+        for item in filtered_items
+        if normalize_url(item.get("url"))
+    }
+
+    enriched: list[dict[str, Any]] = []
+    for analyzed in analyzed_items:
+        item = deepcopy(analyzed)
+        filtered = filtered_by_url.get(normalize_url(item.get("url")))
+        if filtered:
+            for key in ("rule_score", "source_score", "source_type", "filter_reason"):
+                if item.get(key) is None and filtered.get(key) is not None:
+                    item[key] = filtered[key]
+            if not item.get("materials_involved") and filtered.get("detected_material_keywords"):
+                item["materials_involved"] = filtered["detected_material_keywords"]
+            if not item.get("companies_or_institutions") and filtered.get("detected_companies"):
+                item["companies_or_institutions"] = filtered["detected_companies"]
+        enriched.append(item)
+
+    return enriched
+
+
 def remove_published_items(
     items: list[dict[str, Any]],
     published_data: Any,
@@ -407,6 +437,7 @@ def select_today_items(
             add_item(item)
 
     relaxed_used = 0
+    forced_used = 0
     if len(selected) < daily_min:
         logging.warning(
             "High-quality news below daily_publish_min=%s; relaxing final_score threshold from %s to %s.",
@@ -420,6 +451,17 @@ def select_today_items(
             if item.get("url") not in selected_urls:
                 add_item(item)
                 relaxed_used += 1
+
+    if len(selected) < daily_min and deduped:
+        logging.warning(
+            "Candidate news exists but score thresholds are still too strict; selecting top-ranked candidates as fallback."
+        )
+        for item in deduped:
+            if len(selected) >= daily_min or len(selected) >= daily_max:
+                break
+            if item.get("url") not in selected_urls:
+                add_item(item)
+                forced_used += 1
 
     if len(selected) < daily_min:
         logging.warning(
@@ -446,6 +488,7 @@ def select_today_items(
         "removed_non_current": removed_non_current,
         "deduped_count": deduped_count,
         "relaxed_used": relaxed_used,
+        "forced_used": forced_used,
     }
     return selected, backlog_candidates, stats
 
@@ -545,15 +588,25 @@ def main() -> None:
     timezone_name = config.get("timezone", "Asia/Shanghai")
     today = datetime.now(ZoneInfo(timezone_name)).date().isoformat()
 
-    analyzed_data = load_json(ANALYZED_NEWS_PATH)
-    backlog_data = load_json(BACKLOG_PATH)
-    published_data = load_json(PUBLISHED_URLS_PATH)
     existing_today_data = load_json(TODAY_SELECTED_PATH)
     existing_today = _existing_today_selection(existing_today_data, today, timezone_name)
-    if existing_today:
-        logging.info("Existing today_selected.json found for %s with %s items.", today, existing_today["count"])
+    force_refresh = os.getenv("FORCE_REFRESH_TODAY", "").strip().lower() == "true"
+    if existing_today and not force_refresh:
+        logging.info("Today brief already exists; reuse existing selection.")
+        return
+    if existing_today and force_refresh:
+        logging.warning("FORCE_REFRESH_TODAY=true; regenerating today's locked brief.")
+        existing_today = None
 
-    analyzed_items = [item for item in analyzed_data if isinstance(item, dict)]
+    analyzed_data = load_json(ANALYZED_NEWS_PATH)
+    filtered_data = load_json(FILTERED_NEWS_PATH)
+    backlog_data = load_json(BACKLOG_PATH)
+    published_data = load_json(PUBLISHED_URLS_PATH)
+
+    analyzed_items = enrich_with_filtered_metadata(
+        [item for item in analyzed_data if isinstance(item, dict)],
+        filtered_data,
+    )
     logging.info("Analyzed items read: %s.", len(analyzed_items))
 
     merged_items, backlog_count = merge_analyzed_and_backlog(analyzed_items, backlog_data)

@@ -2,7 +2,7 @@ limits:
   max_news_candidates: 150
   max_filtered_news: 20
   max_ai_analysis: 8
-  daily_publish_min: 5
+  daily_publish_min: 3
   daily_publish_max: 8
   backlog_max_size: 300
   min_rule_score: 35
