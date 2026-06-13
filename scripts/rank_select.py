@@ -273,7 +273,10 @@ def merge_analyzed_and_backlog(
 
 
 def remove_published_items(
-    items: list[dict[str, Any]], published_data: Any, current_date: str | None = None
+    items: list[dict[str, Any]],
+    published_data: Any,
+    current_date: str | None = None,
+    same_day_allowed_urls: set[str] | None = None,
 ) -> tuple[list[dict[str, Any]], int]:
     """Remove items whose URL was published before the current run date.
 
@@ -289,8 +292,12 @@ def remove_published_items(
 
     remaining: list[dict[str, Any]] = []
     removed = 0
+    same_day_allowed_urls = same_day_allowed_urls or set()
     for item in items:
         url = normalize_url(item.get("url"))
+        if url in same_day_allowed_urls:
+            remaining.append(item)
+            continue
         if url and url in published_urls:
             removed += 1
             continue
@@ -515,6 +522,17 @@ def _same_selected_urls(left: list[dict[str, Any]], right: list[dict[str, Any]])
     return bool(left_urls) and left_urls == right_urls
 
 
+def _selection_url_set(selection: dict[str, Any] | None) -> set[str]:
+    """Return normalized URLs from an existing today selection."""
+    if not selection:
+        return set()
+    return {
+        normalize_url(item.get("url"))
+        for item in selection.get("items", [])
+        if normalize_url(item.get("url"))
+    }
+
+
 def main() -> None:
     """Run ranking and daily publication selection."""
     logging.basicConfig(
@@ -541,7 +559,12 @@ def main() -> None:
     merged_items, backlog_count = merge_analyzed_and_backlog(analyzed_items, backlog_data)
     logging.info("Backlog items read: %s.", backlog_count)
 
-    unpublished_items, removed_published = remove_published_items(merged_items, published_data, today)
+    unpublished_items, removed_published = remove_published_items(
+        merged_items,
+        published_data,
+        today,
+        _selection_url_set(existing_today),
+    )
     logging.info("Already published items removed: %s.", removed_published)
 
     selected_items, backlog_candidates, selection_stats = select_today_items(unpublished_items, config)
