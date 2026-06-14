@@ -118,65 +118,6 @@
     "analysis_status": "success"
   },
   {
-    "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
-    "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
-    "category": "电池与储能材料",
-    "subcategory": "钠离子电池",
-    "summary": "通用汽车宣布与美国初创公司Peak Energy合作，在美国部署钠离子电池用于储能系统。此举旨在降低对锂资源的依赖，并推动钠离子电池技术的商业化。",
-    "technical_points": [
-      "通用汽车与Peak Energy合作部署钠离子电池储能系统",
-      "钠离子电池作为锂离子电池的替代方案，成本更低且资源丰富",
-      "该合作聚焦于储能领域，而非电动汽车动力电池"
-    ],
-    "materials_involved": [
-      "sodium-ion battery",
-      "battery"
-    ],
-    "companies_or_institutions": [
-      "General Motors",
-      "Peak Energy"
-    ],
-    "impact_assessment": "通用汽车布局钠离子电池储能系统，表明头部车企正积极拓展低成本、资源友好的电池技术路线，可能推动钠离子电池在储能领域的产业化进程，并间接影响电动汽车电池供应链的多元化发展。",
-    "research_value": "对汽车材料研究员而言，该新闻提示钠离子电池技术已进入产业化部署阶段，值得关注其材料体系（如正极、负极、电解液）的进展及与锂离子电池的性能对比。",
-    "industrial_maturity": "pilot",
-    "priority": "P1",
-    "confidence": 80,
-    "follow_up": true,
-    "one_sentence": "通用汽车联手Peak Energy在美国部署钠离子电池储能系统，推动低成本电池技术商业化。",
-    "analysis_status": "success"
-  },
-  {
-    "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
-    "source": "Bing News",
-    "published_date": "2026-06-04",
-    "url": "https://www.msn.com/en-us/autos/performance-cars/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
-    "category": "复合材料",
-    "subcategory": "碳纤维",
-    "summary": "该新闻展示了一辆采用碳纤维车身打造的日产240SX漂移赛车。视频重点介绍了这款定制JDM项目，通过轻量化碳纤维部件与激进造型的结合，提升车辆在漂移运动中的性能表现。",
-    "technical_points": [
-      "碳纤维车身轻量化技术",
-      "漂移赛车的定制化改装",
-      "JDM车型的碳纤维应用"
-    ],
-    "materials_involved": [
-      "碳纤维",
-      "轻量化材料"
-    ],
-    "companies_or_institutions": [
-      "Nissan"
-    ],
-    "impact_assessment": "该案例展示了碳纤维在漂移赛车领域的应用，可能推动碳纤维在改装车市场的普及，但对主流汽车产业链影响有限。",
-    "research_value": "为汽车材料研究员提供碳纤维在极端工况（漂移）下的应用参考，但缺乏具体技术参数，参考价值中等。",
-    "industrial_maturity": "market",
-    "priority": "P3",
-    "confidence": 80,
-    "follow_up": true,
-    "one_sentence": "日产240SX漂移赛车采用碳纤维车身，展示轻量化材料在改装车领域的应用。",
-    "analysis_status": "success"
-  },
-  {
     "title": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
     "source": "Bing News",
     "published_date": "2026-06-09",
@@ -207,6 +148,35 @@
     "analysis_status": "success"
   },
   {
+    "title": "IAV and Nexperia explore software-defined battery architecture for electric vehicles",
+    "source": "Bing News",
+    "published_date": "2026-06-14",
+    "url": "https://www.newelectronics.co.uk/content/news/iav-and-nexperia-explore-software-defined-battery-architecture-for-electric-vehicles",
+    "category": "电池与储能材料",
+    "subcategory": "",
+    "summary": "工程公司IAV与半导体企业Nexperia合作，提出了一种软件定义电池架构概念，旨在优化电动汽车电池的使用方式，最大化现有电芯的价值。该概念通过软件控制电池的充放电策略，提升电池性能和寿命。",
+    "technical_points": [
+      "软件定义电池架构通过软件控制电池充放电策略",
+      "旨在最大化现有电芯的价值",
+      "提升电池性能和寿命"
+    ],
+    "materials_involved": [
+      "battery"
+    ],
+    "companies_or_institutions": [
+      "IAV",
+      "Nexperia"
+    ],
+    "impact_assessment": "该概念可能推动电池管理系统向软件定义方向发展，提升电池利用效率，对电动汽车电池产业链的智能化管理有潜在影响。",
+    "research_value": "为电池材料研究人员提供了新的系统级优化思路，关注软件与硬件的协同设计，可能启发新型电池管理算法和材料适配研究。",
+    "industrial_maturity": "lab",
+    "priority": "P2",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "IAV与Nexperia提出软件定义电池架构，通过软件优化电动汽车电池使用，最大化电芯价值。",
+    "analysis_status": "success"
+  },
+  {
     "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
     "source": "Bing News",
     "published_date": "2026-06-13",
@@ -232,6 +202,35 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "通用汽车推进钠离子电池与V2G技术，拓展能源领域布局。",
+    "analysis_status": "success"
+  },
+  {
+    "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
+    "source": "Bing News",
+    "published_date": "2026-06-09",
+    "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
+    "category": "电驱与电子材料",
+    "subcategory": "SiC",
+    "summary": "Nexperia与Semikron Danfoss正在考虑合作，共同开发用于电动汽车牵引逆变器的碳化硅（SiC）功率模块。该合作聚焦于SiC基功率模块在汽车牵引逆变器中的应用，旨在提升电动汽车电驱系统的效率和性能。",
+    "technical_points": [
+      "合作开发SiC功率模块，用于电动汽车牵引逆变器",
+      "SiC材料相比传统硅基器件具有更高耐压、更低损耗和更高开关频率",
+      "牵引逆变器是电动汽车电驱系统的核心部件，直接影响车辆续航和动力性能"
+    ],
+    "materials_involved": [
+      "SiC"
+    ],
+    "companies_or_institutions": [
+      "Nexperia",
+      "Semikron Danfoss"
+    ],
+    "impact_assessment": "该合作可能加速SiC功率模块在电动汽车领域的产业化进程，推动电驱系统向更高效率、更小体积方向发展，对整车续航和成本控制产生积极影响。",
+    "research_value": "为汽车材料研究员提供了SiC功率模块在牵引逆变器应用中的合作案例，可关注其技术路线和产业化进展，作为材料选型和系统集成的参考。",
+    "industrial_maturity": "pilot",
+    "priority": "P1",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "Nexperia与Semikron Danfoss考虑合作开发电动汽车SiC功率模块，聚焦牵引逆变器应用。",
     "analysis_status": "success"
   }
 ]

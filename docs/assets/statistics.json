@@ -1,21 +1,25 @@
 {
   "category_counts": {
-    "电池与储能材料": 6,
+    "电池与储能材料": 3,
     "电驱与电子材料": 1,
     "其他": 1
   },
   "source_counts": {
-    "Bing News": 8
+    "Bing News": 5
   },
   "company_counts": {
-    "GM": 3,
-    "CATL": 3
+    "Nexperia": 2,
+    "CATL": 1,
+    "Semikron Danfoss": 1,
+    "GM": 1,
+    "IAV": 1
   },
   "keyword_counts": {
-    "battery": 5,
-    "sodium-ion battery": 5,
-    "lithium-ion": 2,
+    "battery": 2,
+    "sodium-ion": 1,
+    "lithium-ion": 1,
+    "SiC": 1,
     "钠离子电池": 1,
-    "SiC": 1
+    "sodium-ion battery": 1
   }
 }

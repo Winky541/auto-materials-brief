@@ -34,6 +34,34 @@
       "published_date": "2026-06-09",
       "selected_date": "2026-06-13",
       "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
+      "title": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
+      "published_date": "2026-06-01",
+      "selected_date": "2026-06-14",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
+      "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
+      "published_date": "2026-06-09",
+      "selected_date": "2026-06-14",
+      "category": "电驱与电子材料"
+    },
+    {
+      "url": "https://insideevs.com/news/798630/gm-sodium-ion-battery-vehicle-to-grid-tech/",
+      "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
+      "published_date": "2026-06-13",
+      "selected_date": "2026-06-14",
+      "category": "其他"
+    },
+    {
+      "url": "https://www.newelectronics.co.uk/content/news/iav-and-nexperia-explore-software-defined-battery-architecture-for-electric-vehicles",
+      "title": "IAV and Nexperia explore software-defined battery architecture for electric vehicles",
+      "published_date": "2026-06-14",
+      "selected_date": "2026-06-14",
+      "category": "电池与储能材料"
     }
   ]
 }
