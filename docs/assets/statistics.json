@@ -1,31 +1,5 @@
 {
   "category_counts": {
-<<<<<<< HEAD
-    "电池与储能材料": 6,
-    "复合材料": 1,
-    "其他": 1,
-    "电驱与电子材料": 1
-  },
-  "source_counts": {
-    "Bing News": 9
-  },
-  "company_counts": {
-    "CATL": 3,
-    "GM": 3,
-    "General Motors": 1,
-    "Peak Energy": 1,
-    "Nissan": 1
-  },
-  "keyword_counts": {
-    "battery": 4,
-    "sodium-ion battery": 4,
-    "钠离子电池": 3,
-    "lithium-ion": 2,
-    "sodium-ion": 1,
-    "碳纤维": 1,
-    "轻量化材料": 1,
-    "SiC": 1
-=======
     "电池与储能材料": 3,
     "电驱与电子材料": 1,
     "其他": 1
@@ -47,6 +21,5 @@
     "SiC": 1,
     "钠离子电池": 1,
     "sodium-ion battery": 1
->>>>>>> a92c2053a86c5e85c1f2001a00ed96ebc50309ed
   }
 }

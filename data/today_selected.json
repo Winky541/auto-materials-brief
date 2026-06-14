@@ -1,61 +1,4 @@
 {
-<<<<<<< HEAD
-  "date": "2026-06-13",
-  "count": 5,
-  "items": [
-    {
-      "title": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
-      "source": "Bing News",
-      "published_date": "2026-06-10",
-      "url": "https://www.msn.com/en-us/autos/news/catl-says-its-next-sodium-ion-battery-clears-500-kilometers-and-is-ready-for-mass-production/ar-AA25iOtc",
-      "category": "电池与储能材料",
-      "subcategory": "钠离子电池",
-      "summary": "全球最大电动汽车电池制造商CATL宣布，其新一代钠离子电池组Naxtra可实现500公里续航里程，能量密度达175瓦时/千克，并已准备量产。",
-      "technical_points": [
-        "钠离子电池组Naxtra实现500公里续航",
-        "能量密度达到175 Wh/kg",
-        "已准备大规模生产"
-      ],
-      "materials_involved": [
-        "钠离子电池",
-        "battery",
-        "sodium-ion battery"
-      ],
-      "companies_or_institutions": [
-        "CATL"
-      ],
-      "impact_assessment": "CATL的钠离子电池量产将推动电动汽车成本下降，减少对锂资源的依赖，可能改变电池产业格局，加速钠离子电池在低端车型和储能领域的应用。",
-      "research_value": "该进展表明钠离子电池技术已成熟，能量密度接近磷酸铁锂，为材料研究员提供了钠离子正极、负极和电解液优化的参考方向。",
-      "industrial_maturity": "production",
-      "priority": "P0",
-      "confidence": 90,
-      "follow_up": true,
-      "one_sentence": "CATL新一代钠离子电池Naxtra实现500公里续航并准备量产，标志着钠离子电池产业化重大突破。",
-      "analysis_status": "success",
-      "rule_score": 49,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=10 (electric vehicle, vehicle); materials=8 (battery, sodium-ion battery); companies=5 (CATL); industrial=3 (mass production); current_month=5",
-      "final_score": 75,
-      "selected_at": "2026-06-13T23:04:14+08:00"
-    },
-    {
-      "title": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
-      "source": "Bing News",
-      "published_date": "2026-06-09",
-      "url": "https://www.aol.com/lifestyle/chinese-battery-giant-catl-plans-230016306.html",
-      "category": "电池与储能材料",
-      "subcategory": "钠离子电池",
-      "summary": "多年来，锂离子电池几乎在电动汽车行业占据主导地位。如今，中国最大的电池制造商正准备在数月内推出钠离子电池，推动替代化学体系的应用。",
-      "technical_points": [
-        "CATL计划在数月内推出钠离子电池",
-        "钠离子电池作为锂离子电池的替代方案",
-        "该技术可能降低对锂资源的依赖"
-      ],
-      "materials_involved": [
-        "battery",
-        "sodium-ion battery",
-=======
   "date": "2026-06-14",
   "count": 4,
   "items": [
@@ -74,7 +17,6 @@
       ],
       "materials_involved": [
         "sodium-ion",
->>>>>>> a92c2053a86c5e85c1f2001a00ed96ebc50309ed
         "lithium-ion"
       ],
       "companies_or_institutions": [
@@ -91,73 +33,9 @@
       "rule_score": 47,
       "source_score": 70,
       "source_type": "bing_news",
-<<<<<<< HEAD
-      "filter_reason": "source=18; automotive=10 (electric vehicle, vehicle); materials=12 (battery, sodium-ion battery, lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
-      "final_score": 69,
-      "selected_at": "2026-06-13T23:04:14+08:00"
-    },
-    {
-      "title": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
-      "source": "Bing News",
-      "published_date": "2026-06-01",
-      "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
-      "category": "电池与储能材料",
-      "subcategory": "锂离子电池",
-      "summary": "CATL计划于2026年量产钠离子电池，目标续航超过370英里。这被视为锂离子电池的有前景替代方案，下一代电动汽车电池竞争升温。",
-      "technical_points": [
-        "CATL计划2026年量产钠离子电池",
-        "目标续航里程超过370英里",
-        "钠离子电池被视为锂离子电池的替代方案"
-      ],
-      "materials_involved": [
-        "sodium-ion",
-        "lithium-ion"
-      ],
-      "companies_or_institutions": [
-        "CATL"
-      ],
-      "impact_assessment": "若量产成功，将降低对锂资源的依赖，可能推动电动汽车成本下降，并影响电池供应链格局。",
-      "research_value": "为钠离子电池产业化提供重要参考，关注其能量密度和成本优势。",
-      "industrial_maturity": "production",
-      "priority": "P0",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "CATL计划2026年量产钠离子电池，目标续航超370英里，有望成为锂离子电池的重要替代方案。",
-      "analysis_status": "success",
-      "rule_score": 47,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=15 (EV, electric vehicle, vehicle); materials=4 (lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
-      "final_score": 66,
-      "selected_at": "2026-06-13T23:04:14+08:00"
-    },
-    {
-      "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
-      "source": "Bing News",
-      "published_date": "2026-06-09",
-      "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
-      "category": "电池与储能材料",
-      "subcategory": "钠离子电池",
-      "summary": "通用汽车宣布与美国初创公司Peak Energy合作，在美国部署钠离子电池用于储能系统。此举旨在降低对锂资源的依赖，并推动钠离子电池技术的商业化。",
-      "technical_points": [
-        "通用汽车与Peak Energy合作部署钠离子电池储能系统",
-        "钠离子电池作为锂离子电池的替代方案，成本更低且资源丰富",
-        "该合作聚焦于储能领域，而非电动汽车动力电池"
-      ],
-      "materials_involved": [
-        "sodium-ion battery",
-        "battery"
-      ],
-      "companies_or_institutions": [
-        "General Motors",
-        "Peak Energy"
-      ],
-      "impact_assessment": "通用汽车布局钠离子电池储能系统，表明头部车企正积极拓展低成本、资源友好的电池技术路线，可能推动钠离子电池在储能领域的产业化进程，并间接影响电动汽车电池供应链的多元化发展。",
-      "research_value": "对汽车材料研究员而言，该新闻提示钠离子电池技术已进入产业化部署阶段，值得关注其材料体系（如正极、负极、电解液）的进展及与锂离子电池的性能对比。",
-=======
       "filter_reason": "source=18; automotive=15 (EV, electric vehicle, vehicle); materials=4 (lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
       "final_score": 71,
-      "selected_at": "2026-06-14T19:15:53+08:00"
+      "selected_at": "2026-06-14T20:50:25+08:00"
     },
     {
       "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
@@ -181,56 +59,10 @@
       ],
       "impact_assessment": "该合作可能加速SiC功率模块在电动汽车领域的产业化进程，推动电驱系统向更高效率、更小体积方向发展，对整车续航和成本控制产生积极影响。",
       "research_value": "为汽车材料研究员提供了SiC功率模块在牵引逆变器应用中的合作案例，可关注其技术路线和产业化进展，作为材料选型和系统集成的参考。",
->>>>>>> a92c2053a86c5e85c1f2001a00ed96ebc50309ed
       "industrial_maturity": "pilot",
       "priority": "P1",
       "confidence": 80,
       "follow_up": true,
-<<<<<<< HEAD
-      "one_sentence": "通用汽车联手Peak Energy在美国部署钠离子电池储能系统，推动低成本电池技术商业化。",
-      "analysis_status": "success",
-      "rule_score": 46,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=15 (electric vehicle, vehicle, automaker); materials=8 (battery, sodium-ion battery); companies=0 (none); industrial=0 (none); current_month=5",
-      "final_score": 59,
-      "selected_at": "2026-06-13T23:04:14+08:00"
-    },
-    {
-      "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
-      "source": "Bing News",
-      "published_date": "2026-06-04",
-      "url": "https://www.msn.com/en-us/autos/performance-cars/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
-      "category": "复合材料",
-      "subcategory": "碳纤维",
-      "summary": "该新闻展示了一辆采用碳纤维车身打造的日产240SX漂移赛车。视频重点介绍了这款定制JDM项目，通过轻量化碳纤维部件与激进造型的结合，提升车辆在漂移运动中的性能表现。",
-      "technical_points": [
-        "碳纤维车身轻量化技术",
-        "漂移赛车的定制化改装",
-        "JDM车型的碳纤维应用"
-      ],
-      "materials_involved": [
-        "碳纤维",
-        "轻量化材料"
-      ],
-      "companies_or_institutions": [
-        "Nissan"
-      ],
-      "impact_assessment": "该案例展示了碳纤维在漂移赛车领域的应用，可能推动碳纤维在改装车市场的普及，但对主流汽车产业链影响有限。",
-      "research_value": "为汽车材料研究员提供碳纤维在极端工况（漂移）下的应用参考，但缺乏具体技术参数，参考价值中等。",
-      "industrial_maturity": "market",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "日产240SX漂移赛车采用碳纤维车身，展示轻量化材料在改装车领域的应用。",
-      "analysis_status": "success",
-      "rule_score": 46,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=10 (automotive, car); materials=8 (lightweight, carbon fiber); companies=5 (Nissan); industrial=0 (none); current_month=5",
-      "final_score": 48,
-      "selected_at": "2026-06-13T23:04:14+08:00"
-=======
       "one_sentence": "Nexperia与Semikron Danfoss考虑合作开发电动汽车SiC功率模块，聚焦牵引逆变器应用。",
       "analysis_status": "success",
       "rule_score": 43,
@@ -238,7 +70,7 @@
       "source_type": "bing_news",
       "filter_reason": "source=19; automotive=15 (EV, automotive, car); materials=4 (SiC); companies=0 (none); industrial=0 (none); current_month=5",
       "final_score": 62,
-      "selected_at": "2026-06-14T19:15:53+08:00"
+      "selected_at": "2026-06-14T20:50:25+08:00"
     },
     {
       "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
@@ -272,7 +104,7 @@
       "source_type": "bing_news",
       "filter_reason": "source=18; automotive=15 (EV, vehicle, car); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
       "final_score": 56,
-      "selected_at": "2026-06-14T19:15:53+08:00"
+      "selected_at": "2026-06-14T20:50:25+08:00"
     },
     {
       "title": "IAV and Nexperia explore software-defined battery architecture for electric vehicles",
@@ -307,8 +139,7 @@
       "source_type": "bing_news",
       "filter_reason": "source=19; automotive=15 (EV, electric vehicle, vehicle); materials=4 (battery); companies=0 (none); industrial=0 (none); current_month=5",
       "final_score": 49,
-      "selected_at": "2026-06-14T19:15:53+08:00"
->>>>>>> a92c2053a86c5e85c1f2001a00ed96ebc50309ed
+      "selected_at": "2026-06-14T20:50:25+08:00"
     }
   ]
 }

@@ -1,123 +1,17 @@
 {
   "items": [
     {
-<<<<<<< HEAD
-      "title": "GM Activates 250,000 EVs for Vehicle-to-Grid: Sodium-Ion Batteries Target Grid-Peaker Replacement",
+      "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
       "source": "Bing News",
-      "published_date": "2026-06-11",
-      "url": "https://www.techtimes.com/articles/318197/20260611/gm-activates-250000-evs-vehicle-grid-sodium-ion-batteries-target-grid-peaker-replacement.htm",
+      "published_date": "2026-06-09",
+      "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
       "category": "电池与储能材料",
       "subcategory": "钠离子电池",
-      "summary": "通用汽车在GM Empower 2026上宣布，通过纯软件方式激活25万辆现有双向充电电动汽车，无需新硬件即可组成虚拟电厂。同时，通用汽车披露其钠离子电池研发合作伙伴，目标是用钠离子电池替代电网调峰电站。",
-      "technical_points": [
-        "通过软件激活25万辆现有双向充电电动汽车组成虚拟电厂，无需新硬件",
-        "钠离子电池研发合作伙伴关系，目标替代电网调峰电站",
-        "车辆到电网（V2G）技术实现大规模分布式储能"
-      ],
+      "summary": "General Motors is teaming up with U.S. startup Peak Energy to deploy sodium-ion batteries for energy storage systems, the automaker announced on Tuesday. As electric vehicle sales ...",
+      "technical_points": [],
       "materials_involved": [
         "battery",
         "sodium-ion battery"
-      ],
-      "companies_or_institutions": [
-        "GM"
-      ],
-      "impact_assessment": "通用汽车将V2G与钠离子电池结合，可能推动钠离子电池在储能领域的规模化应用，并加速V2G技术普及，对电网级储能和电动汽车双向充电产业链产生重要影响。",
-      "research_value": "钠离子电池在电网调峰中的应用方向值得关注，V2G软件激活方式降低了硬件成本，为材料研究提供了新的应用场景。",
-      "industrial_maturity": "production",
-      "priority": "P1",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "通用汽车通过软件激活25万辆电动汽车组成虚拟电厂，并推进钠离子电池替代电网调峰电站。",
-      "analysis_status": "success",
-      "rule_score": 49,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=10 (EV, vehicle); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=3 (plant); current_month=5",
-      "final_score": 58
-    },
-    {
-      "title": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
-      "source": "Bing News",
-      "published_date": "2026-06-09",
-      "url": "https://www.msn.com/en-us/autos/news/gm-to-develop-sodium-ion-battery-cells-for-energy-storage-not-evs/ar-AA25dSdc",
-      "category": "电池与储能材料",
-      "subcategory": "钠离子电池",
-      "summary": "通用汽车（GM）将建立原型电池生产实验室，开发钠离子电池，初期用于储能而非电动汽车。此举旨在以更低成本、更快速度开发电池，拓展电池业务，为未来电动汽车降低成本。",
-      "technical_points": [
-        "GM建立原型电池生产实验室，开发钠离子电池。",
-        "钠离子电池初期用于储能领域，而非电动汽车。",
-        "目标是以更低成本、更快速度开发电池。",
-        "该实验室将拓展GM的电池业务。",
-        "未来可能降低电动汽车电池成本。"
-      ],
-      "materials_involved": [
-        "钠离子电池"
-      ],
-      "companies_or_institutions": [
-        "GM"
-      ],
-      "impact_assessment": "GM布局钠离子电池储能应用，可能推动钠离子电池在汽车储能领域的产业化，长期有望降低电动汽车电池成本，但初期不直接用于电动车。",
-      "research_value": "对汽车材料研究员而言，关注钠离子电池在储能领域的应用进展，以及未来向电动汽车转移的可能性。",
-      "industrial_maturity": "pilot",
-      "priority": "P1",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "通用汽车将开发钠离子电池用于储能，以降低成本并拓展电池业务。",
-      "analysis_status": "success",
-      "rule_score": 44,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=5 (EV); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=3 (prototype); current_month=5",
-      "final_score": 58
-    },
-    {
-      "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
-=======
-      "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
->>>>>>> a92c2053a86c5e85c1f2001a00ed96ebc50309ed
-      "source": "Bing News",
-      "published_date": "2026-06-13",
-      "url": "https://insideevs.com/news/798630/gm-sodium-ion-battery-vehicle-to-grid-tech/",
-      "category": "其他",
-      "subcategory": "",
-      "summary": "通用汽车（GM）正在推动钠离子电池和车网互联（V2G）技术，其增长野心远超汽车本身。钠离子电池作为锂离子电池的潜在替代品，具有成本低、资源丰富的优势；V2G技术则使电动汽车能够与电网双向互动，参与能源管理。GM此举旨在拓展能源领域，实现从汽车制造商向能源服务商的转型。",
-      "technical_points": [
-        "钠离子电池技术：替代锂离子电池，降低成本，利用丰富资源。",
-        "车网互联（V2G）技术：电动汽车与电网双向能量交换。",
-        "通用汽车能源战略：从汽车制造向能源服务延伸。"
-      ],
-      "materials_involved": [
-        "钠离子电池"
-      ],
-      "companies_or_institutions": [
-        "GM"
-      ],
-      "impact_assessment": "通用汽车布局钠离子电池和V2G技术，将推动电动汽车与能源系统的深度融合，可能改变汽车产业链的价值分配，促使更多企业关注电池材料替代和能源服务模式。",
-      "research_value": "对汽车材料研究员而言，钠离子电池的进展提供了新的研究方向，尤其是在正负极材料、电解液等方面的创新机会。同时，V2G技术对电池循环寿命和安全性提出更高要求，值得关注。",
-      "industrial_maturity": "pilot",
-      "priority": "P1",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "通用汽车推进钠离子电池与V2G技术，拓展能源领域布局。",
-      "analysis_status": "success",
-      "rule_score": 43,
-      "source_score": 70,
-      "source_type": "bing_news",
-<<<<<<< HEAD
-      "filter_reason": "source=18; automotive=15 (EV, vehicle, car); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
-      "final_score": 56
-    },
-    {
-      "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
-      "source": "Bing News",
-      "published_date": "2026-06-09",
-      "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
-      "category": "电驱与电子材料",
-      "subcategory": "SiC",
-      "summary": "Collaboration focused on silicon carbide (SiC)-based power modules for automotive traction inverter applications.",
-      "technical_points": [],
-      "materials_involved": [
-        "SiC"
       ],
       "companies_or_institutions": [],
       "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
@@ -126,15 +20,12 @@
       "priority": "P3",
       "confidence": 0,
       "follow_up": false,
-      "one_sentence": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
+      "one_sentence": "General Motors Is Bringing Sodium-Ion Battery Production To America",
       "analysis_status": "failed_api",
-      "rule_score": 43,
-      "source_score": 75,
+      "rule_score": 46,
+      "source_score": 70,
       "source_type": "bing_news",
-      "filter_reason": "source=19; automotive=15 (EV, automotive, car); materials=4 (SiC); companies=0 (none); industrial=0 (none); current_month=5",
-=======
       "filter_reason": "source=18; automotive=15 (electric vehicle, vehicle, automaker); materials=8 (battery, sodium-ion battery); companies=0 (none); industrial=0 (none); current_month=5",
->>>>>>> a92c2053a86c5e85c1f2001a00ed96ebc50309ed
       "final_score": 27
     }
   ]
