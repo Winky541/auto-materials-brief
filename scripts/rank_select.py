@@ -32,7 +32,7 @@ BACKLOG_PATH = PROJECT_ROOT / "data" / "backlog.json"
 PUBLISHED_URLS_PATH = PROJECT_ROOT / "data" / "published_urls.json"
 
 DEFAULT_DAILY_PUBLISH_MIN = 3
-DEFAULT_DAILY_PUBLISH_MAX = 8
+DEFAULT_DAILY_PUBLISH_MAX = 5
 DEFAULT_BACKLOG_MAX_SIZE = 300
 DEFAULT_MAX_TITLE_SIMILARITY = 0.88
 DEFAULT_MIN_FINAL_SCORE = 35
@@ -606,6 +606,15 @@ def _selection_url_set(selection: dict[str, Any] | None) -> set[str]:
     }
 
 
+def _success_current_month_items(items: list[dict[str, Any]], timezone_name: str) -> list[dict[str, Any]]:
+    """Return current-month items that already have successful analysis."""
+    return [
+        item
+        for item in items
+        if item.get("analysis_status") == "success" and _valid_item(item, timezone_name)
+    ]
+
+
 def refresh_existing_selection_with_success_analysis(
     selection: dict[str, Any], analyzed_data: Any
 ) -> tuple[dict[str, Any], int]:
@@ -650,37 +659,53 @@ def main() -> None:
     existing_today_data = load_json(TODAY_SELECTED_PATH)
     existing_today = _existing_today_selection(existing_today_data, today, timezone_name)
     force_refresh = os.getenv("FORCE_REFRESH_TODAY", "").strip().lower() == "true"
-    if existing_today and not force_refresh:
-        analyzed_data = load_json(ANALYZED_NEWS_PATH)
-        refreshed_today, refreshed_count = refresh_existing_selection_with_success_analysis(
-            existing_today,
-            analyzed_data,
-        )
-        if refreshed_count:
-            save_json(refreshed_today, TODAY_SELECTED_PATH)
-            logging.info(
-                "Today brief already exists; refreshed %s locked items with latest success analysis.",
-                refreshed_count,
-            )
-        else:
-            logging.info("Today brief already exists; reuse existing selection.")
-        return
-    if existing_today and force_refresh:
-        logging.warning("FORCE_REFRESH_TODAY=true; regenerating today's locked brief.")
-        existing_today = None
-
     analyzed_data = load_json(ANALYZED_NEWS_PATH)
     filtered_data = load_json(FILTERED_NEWS_PATH)
-    backlog_data = load_json(BACKLOG_PATH)
-    published_data = load_json(PUBLISHED_URLS_PATH)
-
     analyzed_items = enrich_with_filtered_metadata(
         [item for item in analyzed_data if isinstance(item, dict)],
         filtered_data,
     )
+    success_items = _success_current_month_items(analyzed_items, timezone_name)
+
+    if existing_today and not force_refresh:
+        refreshed_today, refreshed_count = refresh_existing_selection_with_success_analysis(
+            existing_today,
+            analyzed_data,
+        )
+        daily_max = int(config.get("limits", {}).get("daily_publish_max", DEFAULT_DAILY_PUBLISH_MAX))
+        should_expand_from_success = (
+            len(success_items) >= daily_max
+            and len(refreshed_today.get("items", [])) < daily_max
+        )
+        still_has_non_success = any(
+            item.get("analysis_status") != "success"
+            for item in refreshed_today.get("items", [])
+        )
+        if not should_expand_from_success and not still_has_non_success:
+            if refreshed_count:
+                save_json(refreshed_today, TODAY_SELECTED_PATH)
+                logging.info(
+                    "Today brief already exists; refreshed %s locked items with latest success analysis.",
+                    refreshed_count,
+                )
+            else:
+                logging.info("Today brief already exists; reuse existing selection.")
+            return
+        logging.info(
+            "Success analyses are available; regenerating locked brief from success items to reach daily_publish_max=%s.",
+            daily_max,
+        )
+        existing_today = None
+    if existing_today and force_refresh:
+        logging.warning("FORCE_REFRESH_TODAY=true; regenerating today's locked brief.")
+        existing_today = None
+
+    backlog_data = load_json(BACKLOG_PATH)
+    published_data = load_json(PUBLISHED_URLS_PATH)
     logging.info("Analyzed items read: %s.", len(analyzed_items))
 
-    merged_items, backlog_count = merge_analyzed_and_backlog(analyzed_items, backlog_data)
+    selection_source_items = success_items if len(success_items) >= int(config.get("limits", {}).get("daily_publish_max", DEFAULT_DAILY_PUBLISH_MAX)) else analyzed_items
+    merged_items, backlog_count = merge_analyzed_and_backlog(selection_source_items, backlog_data)
     logging.info("Backlog items read: %s.", backlog_count)
 
     unpublished_items, removed_published = remove_published_items(

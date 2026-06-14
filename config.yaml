@@ -3,7 +3,7 @@ limits:
   max_filtered_news: 20
   max_ai_analysis: 8
   daily_publish_min: 3
-  daily_publish_max: 8
+  daily_publish_max: 5
   backlog_max_size: 300
   min_rule_score: 35
   max_title_similarity: 0.88
