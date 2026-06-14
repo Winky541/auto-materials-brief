@@ -26,7 +26,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 TODAY_SELECTED_PATH = PROJECT_ROOT / "data" / "today_selected.json"
 ENV_PATH = PROJECT_ROOT / ".env"
 
-MESSAGE_TITLE = "今日汽车新材料与前沿技术热点"
+# Keep this exact phrase in every DingTalk message body for keyword validation.
+MESSAGE_TITLE = "汽车新材料与前沿技术简报"
 REQUEST_TIMEOUT_SECONDS = 20
 
 CATEGORY_ORDER = [
