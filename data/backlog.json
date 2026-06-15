@@ -1,32 +1,3 @@
 {
-  "items": [
-    {
-      "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
-      "source": "Bing News",
-      "published_date": "2026-06-09",
-      "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
-      "category": "电池与储能材料",
-      "subcategory": "钠离子电池",
-      "summary": "General Motors is teaming up with U.S. startup Peak Energy to deploy sodium-ion batteries for energy storage systems, the automaker announced on Tuesday. As electric vehicle sales ...",
-      "technical_points": [],
-      "materials_involved": [
-        "battery",
-        "sodium-ion battery"
-      ],
-      "companies_or_institutions": [],
-      "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-      "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 0,
-      "follow_up": false,
-      "one_sentence": "General Motors Is Bringing Sodium-Ion Battery Production To America",
-      "analysis_status": "failed_api",
-      "rule_score": 46,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=15 (electric vehicle, vehicle, automaker); materials=8 (battery, sodium-ion battery); companies=0 (none); industrial=0 (none); current_month=5",
-      "final_score": 27
-    }
-  ]
+  "items": []
 }

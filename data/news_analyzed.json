@@ -1,5 +1,37 @@
 [
   {
+    "title": "Forget solid-state batteries, the future is sodium-ion and lithium-air cells according to CATL, the world's largest battery maker that supplies Tesla, Toyota",
+    "source": "Bing News",
+    "published_date": "2026-06-01",
+    "url": "https://www.carsguide.com.au/car-news/forget-solid-state-batteries-the-future-is-sodium-ion-and-lithium-air-cells-according-to",
+    "category": "电池与储能材料",
+    "subcategory": "",
+    "summary": "全球最大电池制造商CATL（供应特斯拉、丰田等）表示，未来将聚焦钠离子电池和锂空气电池，而非固态电池。CATL将开始推进这些颠覆性技术。",
+    "technical_points": [
+      "CATL认为钠离子和锂空气电池是未来方向",
+      "钠离子电池可能替代部分锂离子电池应用",
+      "锂空气电池具有更高能量密度潜力",
+      "CATL作为行业龙头，其技术路线选择影响行业方向"
+    ],
+    "materials_involved": [
+      "钠离子电池",
+      "锂空气电池"
+    ],
+    "companies_or_institutions": [
+      "CATL",
+      "Tesla",
+      "Toyota"
+    ],
+    "impact_assessment": "CATL的技术路线转向可能引导全球电池研发资源从固态电池转向钠离子和锂空气电池，影响电动汽车电池供应链和下一代电池投资方向。",
+    "research_value": "为电池材料研究员提供技术路线参考，提示关注钠离子和锂空气电池的关键材料突破，如钠离子正极、电解质及锂空气电池的催化剂和空气电极。",
+    "industrial_maturity": "unknown",
+    "priority": "P0",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "CATL称未来电池方向是钠离子和锂空气电池，而非固态电池。",
+    "analysis_status": "success"
+  },
+  {
     "title": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
     "source": "Bing News",
     "published_date": "2026-06-09",
@@ -177,60 +209,31 @@
     "analysis_status": "success"
   },
   {
-    "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
+    "title": "BMW’s Electric M3 May Ditch Carbon Fiber For Something Greener",
     "source": "Bing News",
-    "published_date": "2026-06-13",
-    "url": "https://insideevs.com/news/798630/gm-sodium-ion-battery-vehicle-to-grid-tech/",
-    "category": "其他",
-    "subcategory": "",
-    "summary": "通用汽车（GM）正在推动钠离子电池和车网互联（V2G）技术，其增长野心远超汽车本身。钠离子电池作为锂离子电池的潜在替代品，具有成本低、资源丰富的优势；V2G技术则使电动汽车能够与电网双向互动，参与能源管理。GM此举旨在拓展能源领域，实现从汽车制造商向能源服务商的转型。",
+    "published_date": "2026-06-15",
+    "url": "https://www.msn.com/en-us/autos/news/bmw-s-electric-m3-may-ditch-carbon-fiber-for-something-greener/ar-AA25GZVv",
+    "category": "复合材料",
+    "subcategory": "碳纤维",
+    "summary": "宝马在M Neue Klasse概念车上展示了首款电动M3的雏形。该概念车可能放弃碳纤维材料，转而采用更环保的替代方案。目前仍处于概念阶段，具体材料细节尚未公布。",
     "technical_points": [
-      "钠离子电池技术：替代锂离子电池，降低成本，利用丰富资源。",
-      "车网互联（V2G）技术：电动汽车与电网双向能量交换。",
-      "通用汽车能源战略：从汽车制造向能源服务延伸。"
+      "宝马电动M3概念车可能放弃碳纤维材料",
+      "转向更环保的材料方案",
+      "仍处于概念阶段，具体材料未披露"
     ],
     "materials_involved": [
-      "钠离子电池"
+      "carbon fiber"
     ],
     "companies_or_institutions": [
-      "GM"
+      "BMW"
     ],
-    "impact_assessment": "通用汽车布局钠离子电池和V2G技术，将推动电动汽车与能源系统的深度融合，可能改变汽车产业链的价值分配，促使更多企业关注电池材料替代和能源服务模式。",
-    "research_value": "对汽车材料研究员而言，钠离子电池的进展提供了新的研究方向，尤其是在正负极材料、电解液等方面的创新机会。同时，V2G技术对电池循环寿命和安全性提出更高要求，值得关注。",
-    "industrial_maturity": "pilot",
-    "priority": "P1",
-    "confidence": 80,
+    "impact_assessment": "若宝马在电动M3上放弃碳纤维，可能推动汽车行业探索更可持续的轻量化材料，影响碳纤维在高端电动车中的应用趋势。",
+    "research_value": "提示研究人员关注宝马在环保材料替代碳纤维方面的动向，可能涉及生物基或可回收复合材料。",
+    "industrial_maturity": "unknown",
+    "priority": "P2",
+    "confidence": 70,
     "follow_up": true,
-    "one_sentence": "通用汽车推进钠离子电池与V2G技术，拓展能源领域布局。",
-    "analysis_status": "success"
-  },
-  {
-    "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
-    "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
-    "category": "电驱与电子材料",
-    "subcategory": "SiC",
-    "summary": "Nexperia与Semikron Danfoss正在考虑合作，共同开发用于电动汽车牵引逆变器的碳化硅（SiC）功率模块。该合作聚焦于SiC基功率模块在汽车牵引逆变器中的应用，旨在提升电动汽车电驱系统的效率和性能。",
-    "technical_points": [
-      "合作开发SiC功率模块，用于电动汽车牵引逆变器",
-      "SiC材料相比传统硅基器件具有更高耐压、更低损耗和更高开关频率",
-      "牵引逆变器是电动汽车电驱系统的核心部件，直接影响车辆续航和动力性能"
-    ],
-    "materials_involved": [
-      "SiC"
-    ],
-    "companies_or_institutions": [
-      "Nexperia",
-      "Semikron Danfoss"
-    ],
-    "impact_assessment": "该合作可能加速SiC功率模块在电动汽车领域的产业化进程，推动电驱系统向更高效率、更小体积方向发展，对整车续航和成本控制产生积极影响。",
-    "research_value": "为汽车材料研究员提供了SiC功率模块在牵引逆变器应用中的合作案例，可关注其技术路线和产业化进展，作为材料选型和系统集成的参考。",
-    "industrial_maturity": "pilot",
-    "priority": "P1",
-    "confidence": 80,
-    "follow_up": true,
-    "one_sentence": "Nexperia与Semikron Danfoss考虑合作开发电动汽车SiC功率模块，聚焦牵引逆变器应用。",
+    "one_sentence": "宝马电动M3概念车可能弃用碳纤维，转向更环保材料。",
     "analysis_status": "success"
   }
 ]
