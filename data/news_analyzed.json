@@ -1,37 +1,5 @@
 [
   {
-    "title": "Forget solid-state batteries, the future is sodium-ion and lithium-air cells according to CATL, the world's largest battery maker that supplies Tesla, Toyota",
-    "source": "Bing News",
-    "published_date": "2026-06-01",
-    "url": "https://www.carsguide.com.au/car-news/forget-solid-state-batteries-the-future-is-sodium-ion-and-lithium-air-cells-according-to",
-    "category": "电池与储能材料",
-    "subcategory": "",
-    "summary": "全球最大电池制造商CATL（供应特斯拉、丰田等）表示，未来将聚焦钠离子电池和锂空气电池，而非固态电池。CATL将开始推进这些颠覆性技术。",
-    "technical_points": [
-      "CATL认为钠离子和锂空气电池是未来方向",
-      "钠离子电池可能替代部分锂离子电池应用",
-      "锂空气电池具有更高能量密度潜力",
-      "CATL作为行业龙头，其技术路线选择影响行业方向"
-    ],
-    "materials_involved": [
-      "钠离子电池",
-      "锂空气电池"
-    ],
-    "companies_or_institutions": [
-      "CATL",
-      "Tesla",
-      "Toyota"
-    ],
-    "impact_assessment": "CATL的技术路线转向可能引导全球电池研发资源从固态电池转向钠离子和锂空气电池，影响电动汽车电池供应链和下一代电池投资方向。",
-    "research_value": "为电池材料研究员提供技术路线参考，提示关注钠离子和锂空气电池的关键材料突破，如钠离子正极、电解质及锂空气电池的催化剂和空气电极。",
-    "industrial_maturity": "unknown",
-    "priority": "P0",
-    "confidence": 80,
-    "follow_up": true,
-    "one_sentence": "CATL称未来电池方向是钠离子和锂空气电池，而非固态电池。",
-    "analysis_status": "success"
-  },
-  {
     "title": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
     "source": "Bing News",
     "published_date": "2026-06-09",
@@ -206,6 +174,32 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "IAV与Nexperia提出软件定义电池架构，通过软件优化电动汽车电池使用，最大化电芯价值。",
+    "analysis_status": "success"
+  },
+  {
+    "title": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
+    "source": "Bing News",
+    "published_date": "2026-06-10",
+    "url": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
+    "category": "其他",
+    "subcategory": "",
+    "summary": "通用汽车计划利用数十万辆电动汽车的电池能量来帮助稳定电网，以应对人工智能带来的巨大能源消耗。该技术通过车到电网（V2G）实现，将电动汽车作为分布式储能单元。",
+    "technical_points": [
+      "利用电动汽车电池作为分布式储能单元",
+      "通过车到电网（V2G）技术实现能量双向流动",
+      "旨在平衡电网负荷，应对AI等高能耗场景"
+    ],
+    "materials_involved": [],
+    "companies_or_institutions": [
+      "GM"
+    ],
+    "impact_assessment": "该技术可能推动电动汽车与能源网络的深度融合，促进V2G基础设施和电池管理系统的发展，对汽车产业链的能源服务模式产生变革性影响。",
+    "research_value": "对汽车材料研究员而言，该技术强调电池的循环寿命、能量密度和成本优化，可能引导材料研发方向，如长寿命正极材料、低成本钠离子电池等。",
+    "industrial_maturity": "policy",
+    "priority": "P1",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "通用汽车计划利用电动汽车电池的V2G技术来稳定电网，以应对AI的能源消耗。",
     "analysis_status": "success"
   },
   {

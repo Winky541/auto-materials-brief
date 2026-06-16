@@ -1,107 +1,38 @@
 {
-  "date": "2026-06-16",
-  "count": 3,
+  "date": "2026-06-17",
+  "count": 1,
   "items": [
     {
-      "title": "Forget solid-state batteries, the future is sodium-ion and lithium-air cells according to CATL, the world's largest battery maker that supplies Tesla, Toyota",
+      "title": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
       "source": "Bing News",
-      "published_date": "2026-06-01",
-      "url": "https://www.carsguide.com.au/car-news/forget-solid-state-batteries-the-future-is-sodium-ion-and-lithium-air-cells-according-to",
-      "category": "电池与储能材料",
+      "published_date": "2026-06-10",
+      "url": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
+      "category": "其他",
       "subcategory": "",
-      "summary": "全球最大电池制造商CATL（供应特斯拉、丰田等）表示，未来将聚焦钠离子电池和锂空气电池，而非固态电池。CATL将开始推进这些颠覆性技术。",
+      "summary": "通用汽车计划利用数十万辆电动汽车的电池能量来帮助稳定电网，以应对人工智能带来的巨大能源消耗。该技术通过车到电网（V2G）实现，将电动汽车作为分布式储能单元。",
       "technical_points": [
-        "CATL认为钠离子和锂空气电池是未来方向",
-        "钠离子电池可能替代部分锂离子电池应用",
-        "锂空气电池具有更高能量密度潜力",
-        "CATL作为行业龙头，其技术路线选择影响行业方向"
+        "利用电动汽车电池作为分布式储能单元",
+        "通过车到电网（V2G）技术实现能量双向流动",
+        "旨在平衡电网负荷，应对AI等高能耗场景"
       ],
-      "materials_involved": [
-        "钠离子电池",
-        "锂空气电池"
-      ],
+      "materials_involved": [],
       "companies_or_institutions": [
-        "CATL",
-        "Tesla",
-        "Toyota"
+        "GM"
       ],
-      "impact_assessment": "CATL的技术路线转向可能引导全球电池研发资源从固态电池转向钠离子和锂空气电池，影响电动汽车电池供应链和下一代电池投资方向。",
-      "research_value": "为电池材料研究员提供技术路线参考，提示关注钠离子和锂空气电池的关键材料突破，如钠离子正极、电解质及锂空气电池的催化剂和空气电极。",
-      "industrial_maturity": "unknown",
-      "priority": "P0",
+      "impact_assessment": "该技术可能推动电动汽车与能源网络的深度融合，促进V2G基础设施和电池管理系统的发展，对汽车产业链的能源服务模式产生变革性影响。",
+      "research_value": "对汽车材料研究员而言，该技术强调电池的循环寿命、能量密度和成本优化，可能引导材料研发方向，如长寿命正极材料、低成本钠离子电池等。",
+      "industrial_maturity": "policy",
+      "priority": "P1",
       "confidence": 80,
       "follow_up": true,
-      "one_sentence": "CATL称未来电池方向是钠离子和锂空气电池，而非固态电池。",
+      "one_sentence": "通用汽车计划利用电动汽车电池的V2G技术来稳定电网，以应对AI的能源消耗。",
       "analysis_status": "success",
-      "rule_score": 57,
+      "rule_score": 43,
       "source_score": 70,
       "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=15 (electric vehicle, vehicle, car); materials=4 (battery); companies=15 (Toyota, CATL, Tesla); industrial=0 (none); current_month=5",
-      "final_score": 75,
-      "selected_at": "2026-06-16T02:19:32+08:00"
-    },
-    {
-      "title": "BMW’s Electric M3 May Ditch Carbon Fiber For Something Greener",
-      "source": "Bing News",
-      "published_date": "2026-06-15",
-      "url": "https://www.msn.com/en-us/autos/news/bmw-s-electric-m3-may-ditch-carbon-fiber-for-something-greener/ar-AA25GZVv",
-      "category": "复合材料",
-      "subcategory": "碳纤维",
-      "summary": "宝马在M Neue Klasse概念车上展示了首款电动M3的雏形。该概念车可能放弃碳纤维材料，转而采用更环保的替代方案。目前仍处于概念阶段，具体材料细节尚未公布。",
-      "technical_points": [
-        "宝马电动M3概念车可能放弃碳纤维材料",
-        "转向更环保的材料方案",
-        "仍处于概念阶段，具体材料未披露"
-      ],
-      "materials_involved": [
-        "carbon fiber"
-      ],
-      "companies_or_institutions": [
-        "BMW"
-      ],
-      "impact_assessment": "若宝马在电动M3上放弃碳纤维，可能推动汽车行业探索更可持续的轻量化材料，影响碳纤维在高端电动车中的应用趋势。",
-      "research_value": "提示研究人员关注宝马在环保材料替代碳纤维方面的动向，可能涉及生物基或可回收复合材料。",
-      "industrial_maturity": "unknown",
-      "priority": "P2",
-      "confidence": 70,
-      "follow_up": true,
-      "one_sentence": "宝马电动M3概念车可能弃用碳纤维，转向更环保材料。",
-      "analysis_status": "success",
-      "rule_score": 42,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=10 (EV, car); materials=4 (carbon fiber); companies=5 (BMW); industrial=0 (none); current_month=5",
-      "final_score": 52,
-      "selected_at": "2026-06-16T02:19:32+08:00"
-    },
-    {
-      "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
-      "source": "Bing News",
-      "published_date": "2026-06-09",
-      "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
-      "category": "电池与储能材料",
-      "subcategory": "钠离子电池",
-      "summary": "General Motors is teaming up with U.S. startup Peak Energy to deploy sodium-ion batteries for energy storage systems, the automaker announced on Tuesday. As electric vehicle sales ...",
-      "technical_points": [],
-      "materials_involved": [
-        "battery",
-        "sodium-ion battery"
-      ],
-      "companies_or_institutions": [],
-      "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-      "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 0,
-      "follow_up": false,
-      "one_sentence": "General Motors Is Bringing Sodium-Ion Battery Production To America",
-      "analysis_status": "failed_api",
-      "rule_score": 46,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=15 (electric vehicle, vehicle, automaker); materials=8 (battery, sodium-ion battery); companies=0 (none); industrial=0 (none); current_month=5",
-      "final_score": 27,
-      "selected_at": "2026-06-16T02:19:32+08:00"
+      "filter_reason": "source=18; automotive=15 (EV, vehicle, automaker); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
+      "final_score": 56,
+      "selected_at": "2026-06-17T02:27:21+08:00"
     }
   ]
 }

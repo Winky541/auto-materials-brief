@@ -1,22 +1,12 @@
 {
   "category_counts": {
-    "电池与储能材料": 2,
-    "复合材料": 1
+    "其他": 1
   },
   "source_counts": {
-    "Bing News": 3
+    "Bing News": 1
   },
   "company_counts": {
-    "CATL": 1,
-    "Tesla": 1,
-    "Toyota": 1,
-    "BMW": 1
+    "GM": 1
   },
-  "keyword_counts": {
-    "钠离子电池": 1,
-    "锂空气电池": 1,
-    "carbon fiber": 1,
-    "battery": 1,
-    "sodium-ion battery": 1
-  }
+  "keyword_counts": {}
 }
