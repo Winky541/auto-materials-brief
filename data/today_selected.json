@@ -3,36 +3,39 @@
   "count": 1,
   "items": [
     {
-      "title": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
+      "title": "BMW's Electric M3 Will Replace Carbon Fiber With Natural Fiber Materials For Sustainability",
       "source": "Bing News",
-      "published_date": "2026-06-10",
-      "url": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
-      "category": "其他",
-      "subcategory": "",
-      "summary": "通用汽车计划利用数十万辆电动汽车的电池能量来帮助稳定电网，以应对人工智能带来的巨大能源消耗。该技术通过车到电网（V2G）实现，将电动汽车作为分布式储能单元。",
+      "published_date": "2026-06-17",
+      "url": "https://www.aol.com/articles/bmws-electric-m3-replace-carbon-193002000.html",
+      "category": "复合材料",
+      "subcategory": "碳纤维",
+      "summary": "宝马首款电动M3将采用天然纤维材料替代碳纤维，以提升可持续性。该车型基于Neue Klasse平台，配备四电机电驱动系统，同时引入新型天然纤维复合材料，旨在减少碳足迹并保持高性能。",
       "technical_points": [
-        "利用电动汽车电池作为分布式储能单元",
-        "通过车到电网（V2G）技术实现能量双向流动",
-        "旨在平衡电网负荷，应对AI等高能耗场景"
+        "天然纤维材料替代碳纤维用于车身部件",
+        "Neue Klasse平台集成四电机电驱动系统",
+        "可持续材料应用与高性能兼顾的设计理念"
       ],
-      "materials_involved": [],
+      "materials_involved": [
+        "天然纤维材料",
+        "碳纤维"
+      ],
       "companies_or_institutions": [
-        "GM"
+        "BMW"
       ],
-      "impact_assessment": "该技术可能推动电动汽车与能源网络的深度融合，促进V2G基础设施和电池管理系统的发展，对汽车产业链的能源服务模式产生变革性影响。",
-      "research_value": "对汽车材料研究员而言，该技术强调电池的循环寿命、能量密度和成本优化，可能引导材料研发方向，如长寿命正极材料、低成本钠离子电池等。",
-      "industrial_maturity": "policy",
+      "impact_assessment": "该技术方向可能推动汽车行业在轻量化材料领域向更环保的天然纤维复合材料转型，影响碳纤维在高端车型中的主导地位。",
+      "research_value": "为汽车材料研究员提供天然纤维替代碳纤维的产业化案例，需关注其力学性能、工艺适配性及成本效益。",
+      "industrial_maturity": "production",
       "priority": "P1",
-      "confidence": 80,
+      "confidence": 70,
       "follow_up": true,
-      "one_sentence": "通用汽车计划利用电动汽车电池的V2G技术来稳定电网，以应对AI的能源消耗。",
+      "one_sentence": "宝马电动M3将用天然纤维替代碳纤维，推动可持续高性能材料应用。",
       "analysis_status": "success",
-      "rule_score": 43,
+      "rule_score": 42,
       "source_score": 70,
       "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=15 (EV, vehicle, automaker); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
-      "final_score": 56,
-      "selected_at": "2026-06-17T02:27:21+08:00"
+      "filter_reason": "source=18; automotive=10 (EV, car); materials=4 (carbon fiber); companies=5 (BMW); industrial=0 (none); current_month=5",
+      "final_score": 60,
+      "selected_at": "2026-06-17T22:21:43+08:00"
     }
   ]
 }

@@ -118,36 +118,6 @@
     "analysis_status": "success"
   },
   {
-    "title": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
-    "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.msn.com/en-us/autos/news/gm-to-develop-sodium-ion-battery-cells-for-energy-storage-not-evs/ar-AA25dSdc",
-    "category": "电池与储能材料",
-    "subcategory": "钠离子电池",
-    "summary": "通用汽车（GM）将建立原型电池生产实验室，开发钠离子电池，初期用于储能而非电动汽车。此举旨在以更低成本、更快速度开发电池，拓展电池业务，为未来电动汽车降低成本。",
-    "technical_points": [
-      "GM建立原型电池生产实验室，开发钠离子电池。",
-      "钠离子电池初期用于储能领域，而非电动汽车。",
-      "目标是以更低成本、更快速度开发电池。",
-      "该实验室将拓展GM的电池业务。",
-      "未来可能降低电动汽车电池成本。"
-    ],
-    "materials_involved": [
-      "钠离子电池"
-    ],
-    "companies_or_institutions": [
-      "GM"
-    ],
-    "impact_assessment": "GM布局钠离子电池储能应用，可能推动钠离子电池在汽车储能领域的产业化，长期有望降低电动汽车电池成本，但初期不直接用于电动车。",
-    "research_value": "对汽车材料研究员而言，关注钠离子电池在储能领域的应用进展，以及未来向电动汽车转移的可能性。",
-    "industrial_maturity": "pilot",
-    "priority": "P1",
-    "confidence": 80,
-    "follow_up": true,
-    "one_sentence": "通用汽车将开发钠离子电池用于储能，以降低成本并拓展电池业务。",
-    "analysis_status": "success"
-  },
-  {
     "title": "IAV and Nexperia explore software-defined battery architecture for electric vehicles",
     "source": "Bing News",
     "published_date": "2026-06-14",
@@ -177,29 +147,61 @@
     "analysis_status": "success"
   },
   {
-    "title": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
+    "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
     "source": "Bing News",
-    "published_date": "2026-06-10",
-    "url": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
-    "category": "其他",
-    "subcategory": "",
-    "summary": "通用汽车计划利用数十万辆电动汽车的电池能量来帮助稳定电网，以应对人工智能带来的巨大能源消耗。该技术通过车到电网（V2G）实现，将电动汽车作为分布式储能单元。",
+    "published_date": "2026-06-09",
+    "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
+    "category": "电驱与电子材料",
+    "subcategory": "SiC",
+    "summary": "Nexperia与Semikron Danfoss正考虑合作开发基于碳化硅（SiC）的功率模块，用于电动汽车牵引逆变器应用。该合作聚焦于提升SiC功率模块的性能与可靠性，以应对电动汽车市场对高效能电驱系统的需求。",
     "technical_points": [
-      "利用电动汽车电池作为分布式储能单元",
-      "通过车到电网（V2G）技术实现能量双向流动",
-      "旨在平衡电网负荷，应对AI等高能耗场景"
+      "合作开发SiC功率模块用于电动汽车牵引逆变器",
+      "SiC材料可提升功率模块的开关频率和耐压能力",
+      "牵引逆变器是电动汽车电驱系统的核心部件"
     ],
-    "materials_involved": [],
+    "materials_involved": [
+      "SiC"
+    ],
     "companies_or_institutions": [
-      "GM"
+      "Nexperia",
+      "Semikron Danfoss"
     ],
-    "impact_assessment": "该技术可能推动电动汽车与能源网络的深度融合，促进V2G基础设施和电池管理系统的发展，对汽车产业链的能源服务模式产生变革性影响。",
-    "research_value": "对汽车材料研究员而言，该技术强调电池的循环寿命、能量密度和成本优化，可能引导材料研发方向，如长寿命正极材料、低成本钠离子电池等。",
-    "industrial_maturity": "policy",
+    "impact_assessment": "该合作可能加速SiC功率模块在电动汽车领域的产业化进程，推动电驱系统向更高效率、更小体积发展，对整车续航和性能提升有积极影响。",
+    "research_value": "为汽车材料研究员提供了SiC功率模块合作研发的行业动态，可关注其技术路线和性能指标，作为自身研发方向的参考。",
+    "industrial_maturity": "pilot",
     "priority": "P1",
     "confidence": 80,
     "follow_up": true,
-    "one_sentence": "通用汽车计划利用电动汽车电池的V2G技术来稳定电网，以应对AI的能源消耗。",
+    "one_sentence": "Nexperia与Semikron Danfoss拟合作开发电动汽车用SiC功率模块，聚焦牵引逆变器应用。",
+    "analysis_status": "success"
+  },
+  {
+    "title": "BMW's Electric M3 Will Replace Carbon Fiber With Natural Fiber Materials For Sustainability",
+    "source": "Bing News",
+    "published_date": "2026-06-17",
+    "url": "https://www.aol.com/articles/bmws-electric-m3-replace-carbon-193002000.html",
+    "category": "复合材料",
+    "subcategory": "碳纤维",
+    "summary": "宝马首款电动M3将采用天然纤维材料替代碳纤维，以提升可持续性。该车型基于Neue Klasse平台，配备四电机电驱动系统，同时引入新型天然纤维复合材料，旨在减少碳足迹并保持高性能。",
+    "technical_points": [
+      "天然纤维材料替代碳纤维用于车身部件",
+      "Neue Klasse平台集成四电机电驱动系统",
+      "可持续材料应用与高性能兼顾的设计理念"
+    ],
+    "materials_involved": [
+      "天然纤维材料",
+      "碳纤维"
+    ],
+    "companies_or_institutions": [
+      "BMW"
+    ],
+    "impact_assessment": "该技术方向可能推动汽车行业在轻量化材料领域向更环保的天然纤维复合材料转型，影响碳纤维在高端车型中的主导地位。",
+    "research_value": "为汽车材料研究员提供天然纤维替代碳纤维的产业化案例，需关注其力学性能、工艺适配性及成本效益。",
+    "industrial_maturity": "production",
+    "priority": "P1",
+    "confidence": 70,
+    "follow_up": true,
+    "one_sentence": "宝马电动M3将用天然纤维替代碳纤维，推动可持续高性能材料应用。",
     "analysis_status": "success"
   },
   {

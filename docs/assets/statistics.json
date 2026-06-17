@@ -1,12 +1,15 @@
 {
   "category_counts": {
-    "其他": 1
+    "复合材料": 1
   },
   "source_counts": {
     "Bing News": 1
   },
   "company_counts": {
-    "GM": 1
+    "BMW": 1
   },
-  "keyword_counts": {}
+  "keyword_counts": {
+    "天然纤维材料": 1,
+    "碳纤维": 1
+  }
 }
