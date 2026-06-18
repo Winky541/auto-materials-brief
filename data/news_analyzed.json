@@ -147,61 +147,31 @@
     "analysis_status": "success"
   },
   {
-    "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
+    "title": "GM Doubles Down On Energy Business To Serve Data Center Electricity Demand",
     "source": "Bing News",
     "published_date": "2026-06-09",
-    "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
-    "category": "电驱与电子材料",
-    "subcategory": "SiC",
-    "summary": "Nexperia与Semikron Danfoss正考虑合作开发基于碳化硅（SiC）的功率模块，用于电动汽车牵引逆变器应用。该合作聚焦于提升SiC功率模块的性能与可靠性，以应对电动汽车市场对高效能电驱系统的需求。",
+    "url": "https://www.forbes.com/sites/alanohnsman/2026/06/09/gm-doubles-down-on-energy-business-to-serve-data-center-electricity-demand/",
+    "category": "其他",
+    "subcategory": "",
+    "summary": "通用汽车缩减电动汽车计划，但全力投入先进电池业务，包括一种用于大规模电力存储的新型钠离子化学电池，以服务数据中心电力需求。",
     "technical_points": [
-      "合作开发SiC功率模块用于电动汽车牵引逆变器",
-      "SiC材料可提升功率模块的开关频率和耐压能力",
-      "牵引逆变器是电动汽车电驱系统的核心部件"
+      "通用汽车开发新型钠离子化学电池，用于大规模电力存储",
+      "通用汽车缩减电动汽车计划，但加大能源业务投入",
+      "新型电池旨在满足数据中心电力需求"
     ],
     "materials_involved": [
-      "SiC"
+      "钠离子电池"
     ],
     "companies_or_institutions": [
-      "Nexperia",
-      "Semikron Danfoss"
+      "GM"
     ],
-    "impact_assessment": "该合作可能加速SiC功率模块在电动汽车领域的产业化进程，推动电驱系统向更高效率、更小体积发展，对整车续航和性能提升有积极影响。",
-    "research_value": "为汽车材料研究员提供了SiC功率模块合作研发的行业动态，可关注其技术路线和性能指标，作为自身研发方向的参考。",
+    "impact_assessment": "通用汽车将电池技术从电动汽车转向储能领域，可能推动钠离子电池在数据中心等固定式储能场景的产业化，对汽车产业链中电池材料供应商产生新需求。",
+    "research_value": "钠离子电池作为储能方案的研究进展值得关注，尤其是其在大规模电力存储中的性能与成本优势，可为汽车材料研究员提供跨领域应用参考。",
     "industrial_maturity": "pilot",
     "priority": "P1",
     "confidence": 80,
     "follow_up": true,
-    "one_sentence": "Nexperia与Semikron Danfoss拟合作开发电动汽车用SiC功率模块，聚焦牵引逆变器应用。",
-    "analysis_status": "success"
-  },
-  {
-    "title": "BMW's Electric M3 Will Replace Carbon Fiber With Natural Fiber Materials For Sustainability",
-    "source": "Bing News",
-    "published_date": "2026-06-17",
-    "url": "https://www.aol.com/articles/bmws-electric-m3-replace-carbon-193002000.html",
-    "category": "复合材料",
-    "subcategory": "碳纤维",
-    "summary": "宝马首款电动M3将采用天然纤维材料替代碳纤维，以提升可持续性。该车型基于Neue Klasse平台，配备四电机电驱动系统，同时引入新型天然纤维复合材料，旨在减少碳足迹并保持高性能。",
-    "technical_points": [
-      "天然纤维材料替代碳纤维用于车身部件",
-      "Neue Klasse平台集成四电机电驱动系统",
-      "可持续材料应用与高性能兼顾的设计理念"
-    ],
-    "materials_involved": [
-      "天然纤维材料",
-      "碳纤维"
-    ],
-    "companies_or_institutions": [
-      "BMW"
-    ],
-    "impact_assessment": "该技术方向可能推动汽车行业在轻量化材料领域向更环保的天然纤维复合材料转型，影响碳纤维在高端车型中的主导地位。",
-    "research_value": "为汽车材料研究员提供天然纤维替代碳纤维的产业化案例，需关注其力学性能、工艺适配性及成本效益。",
-    "industrial_maturity": "production",
-    "priority": "P1",
-    "confidence": 70,
-    "follow_up": true,
-    "one_sentence": "宝马电动M3将用天然纤维替代碳纤维，推动可持续高性能材料应用。",
+    "one_sentence": "通用汽车开发新型钠离子电池用于数据中心储能，缩减电动汽车计划但加码能源业务。",
     "analysis_status": "success"
   },
   {
@@ -230,6 +200,36 @@
     "confidence": 70,
     "follow_up": true,
     "one_sentence": "宝马电动M3概念车可能弃用碳纤维，转向更环保材料。",
+    "analysis_status": "success"
+  },
+  {
+    "title": "GM to develop sodium-ion batteries for data center energy storage",
+    "source": "Bing News",
+    "published_date": "2026-06-16",
+    "url": "https://www.msn.com/en-us/news/technology/gm-to-develop-sodium-ion-batteries-for-data-center-energy-storage/ar-AA25Psmb",
+    "category": "电池与储能材料",
+    "subcategory": "钠离子电池",
+    "summary": "通用汽车与Peak Energy合作，开发用于数据中心储能的钠离子电池。该合作旨在利用钠离子电池的低成本和资源丰富优势，为数据中心提供更经济的储能解决方案。",
+    "technical_points": [
+      "钠离子电池作为锂离子电池的替代方案，具有成本低、资源丰富的特点。",
+      "通用汽车与Peak Energy合作，专注于数据中心储能应用。",
+      "钠离子电池在储能领域的应用拓展，可能降低对锂资源的依赖。"
+    ],
+    "materials_involved": [
+      "钠离子电池",
+      "电池"
+    ],
+    "companies_or_institutions": [
+      "GM",
+      "Peak Energy"
+    ],
+    "impact_assessment": "该合作表明钠离子电池技术正从实验室走向特定应用场景（如数据中心储能），可能为汽车动力电池领域提供技术借鉴，但短期内对汽车产业链直接影响有限。",
+    "research_value": "对汽车材料研究员而言，钠离子电池在储能领域的进展可提供成本控制和资源替代的参考，但需关注其能量密度和循环寿命是否满足车用要求。",
+    "industrial_maturity": "pilot",
+    "priority": "P1",
+    "confidence": 80,
+    "follow_up": true,
+    "one_sentence": "通用汽车与Peak Energy合作开发用于数据中心储能的钠离子电池，拓展了钠离子电池的应用场景。",
     "analysis_status": "success"
   }
 ]

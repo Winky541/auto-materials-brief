@@ -97,6 +97,20 @@
       "published_date": "2026-06-17",
       "selected_date": "2026-06-17",
       "category": "复合材料"
+    },
+    {
+      "url": "https://www.msn.com/en-us/news/technology/gm-to-develop-sodium-ion-batteries-for-data-center-energy-storage/ar-AA25Psmb",
+      "title": "GM to develop sodium-ion batteries for data center energy storage",
+      "published_date": "2026-06-16",
+      "selected_date": "2026-06-18",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.forbes.com/sites/alanohnsman/2026/06/09/gm-doubles-down-on-energy-business-to-serve-data-center-electricity-demand/",
+      "title": "GM Doubles Down On Energy Business To Serve Data Center Electricity Demand",
+      "published_date": "2026-06-09",
+      "selected_date": "2026-06-18",
+      "category": "其他"
     }
   ]
 }

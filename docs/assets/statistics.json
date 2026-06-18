@@ -1,15 +1,17 @@
 {
   "category_counts": {
-    "复合材料": 1
+    "电池与储能材料": 1,
+    "其他": 1
   },
   "source_counts": {
-    "Bing News": 1
+    "Bing News": 2
   },
   "company_counts": {
-    "BMW": 1
+    "GM": 2,
+    "Peak Energy": 1
   },
   "keyword_counts": {
-    "天然纤维材料": 1,
-    "碳纤维": 1
+    "钠离子电池": 2,
+    "电池": 1
   }
 }
