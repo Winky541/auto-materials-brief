@@ -147,34 +147,6 @@
     "analysis_status": "success"
   },
   {
-    "title": "GM Doubles Down On Energy Business To Serve Data Center Electricity Demand",
-    "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.forbes.com/sites/alanohnsman/2026/06/09/gm-doubles-down-on-energy-business-to-serve-data-center-electricity-demand/",
-    "category": "其他",
-    "subcategory": "",
-    "summary": "通用汽车缩减电动汽车计划，但全力投入先进电池业务，包括一种用于大规模电力存储的新型钠离子化学电池，以服务数据中心电力需求。",
-    "technical_points": [
-      "通用汽车开发新型钠离子化学电池，用于大规模电力存储",
-      "通用汽车缩减电动汽车计划，但加大能源业务投入",
-      "新型电池旨在满足数据中心电力需求"
-    ],
-    "materials_involved": [
-      "钠离子电池"
-    ],
-    "companies_or_institutions": [
-      "GM"
-    ],
-    "impact_assessment": "通用汽车将电池技术从电动汽车转向储能领域，可能推动钠离子电池在数据中心等固定式储能场景的产业化，对汽车产业链中电池材料供应商产生新需求。",
-    "research_value": "钠离子电池作为储能方案的研究进展值得关注，尤其是其在大规模电力存储中的性能与成本优势，可为汽车材料研究员提供跨领域应用参考。",
-    "industrial_maturity": "pilot",
-    "priority": "P1",
-    "confidence": 80,
-    "follow_up": true,
-    "one_sentence": "通用汽车开发新型钠离子电池用于数据中心储能，缩减电动汽车计划但加码能源业务。",
-    "analysis_status": "success"
-  },
-  {
     "title": "BMW’s Electric M3 May Ditch Carbon Fiber For Something Greener",
     "source": "Bing News",
     "published_date": "2026-06-15",
@@ -203,33 +175,60 @@
     "analysis_status": "success"
   },
   {
-    "title": "GM to develop sodium-ion batteries for data center energy storage",
+    "title": "GM Energy introduces V2G support and new energy storage battery chemistry",
     "source": "Bing News",
-    "published_date": "2026-06-16",
-    "url": "https://www.msn.com/en-us/news/technology/gm-to-develop-sodium-ion-batteries-for-data-center-energy-storage/ar-AA25Psmb",
+    "published_date": "2026-06-10",
+    "url": "https://arstechnica.com/cars/2026/06/gm-energy-introduces-v2g-support-and-new-energy-storage-battery-chemistry/",
     "category": "电池与储能材料",
-    "subcategory": "钠离子电池",
-    "summary": "通用汽车与Peak Energy合作，开发用于数据中心储能的钠离子电池。该合作旨在利用钠离子电池的低成本和资源丰富优势，为数据中心提供更经济的储能解决方案。",
+    "subcategory": "",
+    "summary": "通用汽车旗下GM Energy在旧金山活动中宣布推出车到电网（V2G）支持及新型储能电池化学体系。公司继续坚持其多品牌电动车阵容，并透露在电池技术方面取得进展。",
     "technical_points": [
-      "钠离子电池作为锂离子电池的替代方案，具有成本低、资源丰富的特点。",
-      "通用汽车与Peak Energy合作，专注于数据中心储能应用。",
-      "钠离子电池在储能领域的应用拓展，可能降低对锂资源的依赖。"
+      "推出车到电网（V2G）支持功能",
+      "引入新型储能电池化学体系",
+      "通用汽车坚持多品牌电动车战略"
     ],
     "materials_involved": [
-      "钠离子电池",
-      "电池"
+      "battery"
+    ],
+    "companies_or_institutions": [
+      "GM"
+    ],
+    "impact_assessment": "通用汽车在V2G和新型电池化学上的布局将推动电动车与电网互动技术发展，可能影响储能材料研发方向，促进车网融合产业链成熟。",
+    "research_value": "新型电池化学体系的具体成分未披露，但表明通用在储能材料上的创新方向，值得关注后续技术细节。",
+    "industrial_maturity": "production",
+    "priority": "P1",
+    "confidence": 70,
+    "follow_up": true,
+    "one_sentence": "通用汽车推出V2G支持及新型储能电池化学，持续布局电动车与电网互动技术。",
+    "analysis_status": "success"
+  },
+  {
+    "title": "GM partners with Peak Energy on sodium-ion grid storage batteries",
+    "source": "Bing News",
+    "published_date": "2026-06-10",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/gm-partners-peak-energy-sodium-115423229.html",
+    "category": "电池与储能材料",
+    "subcategory": "",
+    "summary": "通用汽车旗下风投部门GM Ventures投资Peak Energy，双方合作开发用于大规模储能的钠离子电池。此举表明通用汽车在动力电池之外，开始布局电网级储能领域，钠离子电池因其低成本和高安全性成为储能领域的重要方向。",
+    "technical_points": [
+      "通用汽车与Peak Energy合作开发钠离子电池，用于大规模储能。",
+      "GM Ventures对Peak Energy进行股权投资。",
+      "钠离子电池具有低成本和高安全性优势，适合储能应用。"
+    ],
+    "materials_involved": [
+      "钠离子电池"
     ],
     "companies_or_institutions": [
       "GM",
       "Peak Energy"
     ],
-    "impact_assessment": "该合作表明钠离子电池技术正从实验室走向特定应用场景（如数据中心储能），可能为汽车动力电池领域提供技术借鉴，但短期内对汽车产业链直接影响有限。",
-    "research_value": "对汽车材料研究员而言，钠离子电池在储能领域的进展可提供成本控制和资源替代的参考，但需关注其能量密度和循环寿命是否满足车用要求。",
+    "impact_assessment": "通用汽车布局钠离子储能电池，可能推动钠离子电池在汽车储能领域的应用，降低储能成本，并促进钠离子电池技术的产业化进程。",
+    "research_value": "钠离子电池作为锂离子电池的潜在替代方案，在储能领域具有重要研究价值，尤其对于降低电池成本和资源依赖有参考意义。",
     "industrial_maturity": "pilot",
     "priority": "P1",
     "confidence": 80,
     "follow_up": true,
-    "one_sentence": "通用汽车与Peak Energy合作开发用于数据中心储能的钠离子电池，拓展了钠离子电池的应用场景。",
+    "one_sentence": "通用汽车投资Peak Energy，合作开发钠离子电池用于大规模储能。",
     "analysis_status": "success"
   }
 ]

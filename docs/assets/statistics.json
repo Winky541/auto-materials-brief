@@ -1,7 +1,6 @@
 {
   "category_counts": {
-    "电池与储能材料": 1,
-    "其他": 1
+    "电池与储能材料": 2
   },
   "source_counts": {
     "Bing News": 2
@@ -11,7 +10,7 @@
     "Peak Energy": 1
   },
   "keyword_counts": {
-    "钠离子电池": 2,
-    "电池": 1
+    "钠离子电池": 1,
+    "battery": 1
   }
 }

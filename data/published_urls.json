@@ -111,6 +111,20 @@
       "published_date": "2026-06-09",
       "selected_date": "2026-06-18",
       "category": "其他"
+    },
+    {
+      "url": "https://finance.yahoo.com/sectors/energy/articles/gm-partners-peak-energy-sodium-115423229.html",
+      "title": "GM partners with Peak Energy on sodium-ion grid storage batteries",
+      "published_date": "2026-06-10",
+      "selected_date": "2026-06-19",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://arstechnica.com/cars/2026/06/gm-energy-introduces-v2g-support-and-new-energy-storage-battery-chemistry/",
+      "title": "GM Energy introduces V2G support and new energy storage battery chemistry",
+      "published_date": "2026-06-10",
+      "selected_date": "2026-06-19",
+      "category": "电池与储能材料"
     }
   ]
 }
