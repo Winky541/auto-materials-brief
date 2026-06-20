@@ -1,16 +1,18 @@
 {
   "category_counts": {
-    "电池与储能材料": 2
+    "其他": 1,
+    "复合材料": 1
   },
   "source_counts": {
     "Bing News": 2
   },
   "company_counts": {
-    "GM": 2,
-    "Peak Energy": 1
+    "GM": 1,
+    "Nissan": 1
   },
   "keyword_counts": {
     "钠离子电池": 1,
-    "battery": 1
+    "碳纤维": 1,
+    "轻量化材料": 1
   }
 }

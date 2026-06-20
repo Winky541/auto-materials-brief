@@ -1,75 +1,76 @@
 {
-  "date": "2026-06-19",
+  "date": "2026-06-20",
   "count": 2,
   "items": [
     {
-      "title": "GM partners with Peak Energy on sodium-ion grid storage batteries",
+      "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
       "source": "Bing News",
-      "published_date": "2026-06-10",
-      "url": "https://finance.yahoo.com/sectors/energy/articles/gm-partners-peak-energy-sodium-115423229.html",
-      "category": "电池与储能材料",
+      "published_date": "2026-06-13",
+      "url": "https://www.msn.com/en-us/news/technology/sodium-batteries-and-evs-that-power-the-grid-inside-gms-big-energy-push/ar-AA25CHtV",
+      "category": "其他",
       "subcategory": "",
-      "summary": "通用汽车旗下风投部门GM Ventures投资Peak Energy，双方合作开发用于大规模储能的钠离子电池。此举表明通用汽车在动力电池之外，开始布局电网级储能领域，钠离子电池因其低成本和高安全性成为储能领域的重要方向。",
+      "summary": "通用汽车（GM）宣布在钠离子电池和车网互联（V2G）技术方面取得进展，旨在将电动汽车业务扩展至能源领域。钠离子电池作为锂离子电池的低成本替代方案，有望降低电动汽车成本；V2G技术则允许电动汽车将电力回馈电网，实现车辆与电网的双向互动。GM的能源战略不仅限于汽车制造，还涉及储能和电网服务，体现了其向综合能源公司转型的野心。",
       "technical_points": [
-        "通用汽车与Peak Energy合作开发钠离子电池，用于大规模储能。",
-        "GM Ventures对Peak Energy进行股权投资。",
-        "钠离子电池具有低成本和高安全性优势，适合储能应用。"
+        "钠离子电池技术：作为锂离子电池的低成本替代方案，钠资源丰富，成本更低。",
+        "车网互联（V2G）技术：电动汽车可向电网反向供电，实现车辆与电网的双向能量流动。",
+        "电动汽车作为分布式储能单元：利用电动汽车电池组参与电网调峰调频。",
+        "GM的能源生态系统整合：将汽车制造与能源服务结合，拓展业务边界。"
       ],
       "materials_involved": [
         "钠离子电池"
       ],
       "companies_or_institutions": [
-        "GM",
-        "Peak Energy"
-      ],
-      "impact_assessment": "通用汽车布局钠离子储能电池，可能推动钠离子电池在汽车储能领域的应用，降低储能成本，并促进钠离子电池技术的产业化进程。",
-      "research_value": "钠离子电池作为锂离子电池的潜在替代方案，在储能领域具有重要研究价值，尤其对于降低电池成本和资源依赖有参考意义。",
-      "industrial_maturity": "pilot",
-      "priority": "P1",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "通用汽车投资Peak Energy，合作开发钠离子电池用于大规模储能。",
-      "analysis_status": "success",
-      "rule_score": 42,
-      "source_score": 70,
-      "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=10 (EV, automaker); materials=4 (battery); companies=5 (GM); industrial=0 (none); current_month=5",
-      "final_score": 63,
-      "selected_at": "2026-06-19T21:55:28+08:00"
-    },
-    {
-      "title": "GM Energy introduces V2G support and new energy storage battery chemistry",
-      "source": "Bing News",
-      "published_date": "2026-06-10",
-      "url": "https://arstechnica.com/cars/2026/06/gm-energy-introduces-v2g-support-and-new-energy-storage-battery-chemistry/",
-      "category": "电池与储能材料",
-      "subcategory": "",
-      "summary": "通用汽车旗下GM Energy在旧金山活动中宣布推出车到电网（V2G）支持及新型储能电池化学体系。公司继续坚持其多品牌电动车阵容，并透露在电池技术方面取得进展。",
-      "technical_points": [
-        "推出车到电网（V2G）支持功能",
-        "引入新型储能电池化学体系",
-        "通用汽车坚持多品牌电动车战略"
-      ],
-      "materials_involved": [
-        "battery"
-      ],
-      "companies_or_institutions": [
         "GM"
       ],
-      "impact_assessment": "通用汽车在V2G和新型电池化学上的布局将推动电动车与电网互动技术发展，可能影响储能材料研发方向，促进车网融合产业链成熟。",
-      "research_value": "新型电池化学体系的具体成分未披露，但表明通用在储能材料上的创新方向，值得关注后续技术细节。",
-      "industrial_maturity": "production",
+      "impact_assessment": "钠离子电池的推进可能降低电动汽车成本，加速电动化普及；V2G技术将电动汽车从单纯交通工具转变为能源基础设施的一部分，推动车网融合。对汽车产业链而言，电池材料体系可能多元化，充电设施需支持双向充放电，电网运营商需开发新的调度策略。",
+      "research_value": "钠离子电池作为新兴电池技术，其材料体系（如正极、负极、电解液）的研发仍处于活跃期，值得关注其产业化进展。V2G技术涉及电池寿命管理、充放电控制策略等研究，对电池循环寿命和系统集成提出新要求。",
+      "industrial_maturity": "pilot",
       "priority": "P1",
       "confidence": 70,
       "follow_up": true,
-      "one_sentence": "通用汽车推出V2G支持及新型储能电池化学，持续布局电动车与电网互动技术。",
+      "one_sentence": "通用汽车推进钠离子电池与V2G技术，旨在将电动汽车融入能源网络，降低电池成本并拓展能源业务。",
       "analysis_status": "success",
-      "rule_score": 42,
+      "rule_score": 43,
       "source_score": 70,
       "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=10 (EV, automaker); materials=4 (battery); companies=5 (GM); industrial=0 (none); current_month=5",
+      "filter_reason": "source=18; automotive=15 (EV, vehicle, car); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
       "final_score": 55,
-      "selected_at": "2026-06-19T21:55:28+08:00"
+      "selected_at": "2026-06-20T18:40:15+08:00"
+    },
+    {
+      "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
+      "source": "Bing News",
+      "published_date": "2026-06-04",
+      "url": "https://www.msn.com/en-us/autos/news/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
+      "category": "复合材料",
+      "subcategory": "碳纤维",
+      "summary": "该新闻展示了一辆采用碳纤维车身打造的日产240SX漂移车，强调轻量化与激进造型的结合。这是一款定制JDM项目，主要面向漂移赛事，体现了碳纤维在汽车改装领域的应用。",
+      "technical_points": [
+        "碳纤维车身实现轻量化",
+        "针对漂移赛事的定制化设计",
+        "JDM改装风格与碳纤维结合"
+      ],
+      "materials_involved": [
+        "碳纤维",
+        "轻量化材料"
+      ],
+      "companies_or_institutions": [
+        "Nissan"
+      ],
+      "impact_assessment": "该案例展示了碳纤维在改装车领域的应用，但属于小众市场，对主流汽车产业链影响有限。可能推动碳纤维在赛车和高端改装件的普及。",
+      "research_value": "对汽车材料研究员而言，该新闻提供了碳纤维在极端工况（漂移）下的应用实例，但缺乏技术细节，参考价值一般。",
+      "industrial_maturity": "market",
+      "priority": "P3",
+      "confidence": 80,
+      "follow_up": false,
+      "one_sentence": "日产240SX漂移车采用碳纤维车身实现轻量化，展示碳纤维在改装领域的应用。",
+      "analysis_status": "success",
+      "rule_score": 46,
+      "source_score": 70,
+      "source_type": "bing_news",
+      "filter_reason": "source=18; automotive=10 (automotive, car); materials=8 (lightweight, carbon fiber); companies=5 (Nissan); industrial=0 (none); current_month=5",
+      "final_score": 40,
+      "selected_at": "2026-06-20T18:40:15+08:00"
     }
   ]
 }

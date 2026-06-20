@@ -5,7 +5,7 @@
     "published_date": "2026-06-09",
     "url": "https://www.aol.com/lifestyle/chinese-battery-giant-catl-plans-230016306.html",
     "summary": "For years, lithium-ion batteries have dominated the electric vehicle industry almost uncontested. Now, China’s largest battery manufacturers are preparing to push an alternative chemistry into the ...",
-    "collected_at": "2026-06-19T21:55:17+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
     "rule_score": 50,
@@ -28,7 +28,7 @@
     "published_date": "2026-06-11",
     "url": "https://www.techtimes.com/articles/318197/20260611/gm-activates-250000-evs-vehicle-grid-sodium-ion-batteries-target-grid-peaker-replacement.htm",
     "summary": "GM vehicle-to-grid activation at GM Empower 2026 turns 250,000 existing bidirectional EVs into a virtual power plant via software alone, with no new hardware required. A sodium-ion battery R&D partner ...",
-    "collected_at": "2026-06-19T21:55:17+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
     "rule_score": 49,
@@ -50,7 +50,7 @@
     "published_date": "2026-06-10",
     "url": "https://www.msn.com/en-us/autos/news/catl-says-its-next-sodium-ion-battery-clears-500-kilometers-and-is-ready-for-mass-production/ar-AA25iOtc",
     "summary": "CATL, the world’s largest electric vehicle battery maker, announced that its new sodium-ion battery pack called Naxtra can deliver a 500-kilometer driving range at an energy density of 175 watt-hours ...",
-    "collected_at": "2026-06-19T21:55:17+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
     "rule_score": 49,
@@ -72,7 +72,7 @@
     "published_date": "2026-06-01",
     "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
     "summary": "The race to develop the next generation of electric vehicle batteries is heating up, and CATL believes it may have found one of the industry’s most promising alternatives to lithium-ion technology.",
-    "collected_at": "2026-06-19T21:55:17+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
     "rule_score": 47,
@@ -88,12 +88,34 @@
     "needs_ai_analysis": true
   },
   {
+    "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
+    "source": "Bing News",
+    "published_date": "2026-06-04",
+    "url": "https://www.msn.com/en-us/autos/news/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
+    "summary": "A Nissan 240SX built as a carbon fiber drift car takes the spotlight in this automotive clip. The title highlights a custom JDM project that blends lightweight bodywork with the aggressive styling ...",
+    "collected_at": "2026-06-20T18:40:02+08:00",
+    "source_type": "bing_news",
+    "source_score": 70,
+    "rule_score": 46,
+    "category": "复合材料",
+    "subcategory": "碳纤维",
+    "detected_companies": [
+      "Nissan"
+    ],
+    "detected_material_keywords": [
+      "lightweight",
+      "carbon fiber"
+    ],
+    "filter_reason": "source=18; automotive=10 (automotive, car); materials=8 (lightweight, carbon fiber); companies=5 (Nissan); industrial=0 (none); current_month=5",
+    "needs_ai_analysis": true
+  },
+  {
     "title": "IAV and Nexperia explore software-defined battery architecture for electric vehicles",
     "source": "Bing News",
     "published_date": "2026-06-14",
     "url": "https://www.newelectronics.co.uk/content/news/iav-and-nexperia-explore-software-defined-battery-architecture-for-electric-vehicles",
     "summary": "Engineering firm IAV and semiconductor company Nexperia have developed a new concept aimed at improving how electric vehicle (EV) batteries are used, focusing on maximising value from existing cells ...",
-    "collected_at": "2026-06-19T21:55:18+08:00",
+    "collected_at": "2026-06-20T18:40:03+08:00",
     "source_type": "bing_news",
     "source_score": 75,
     "rule_score": 43,
@@ -107,45 +129,22 @@
     "needs_ai_analysis": true
   },
   {
-    "title": "BMW’s Electric M3 May Ditch Carbon Fiber For Something Greener",
+    "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
     "source": "Bing News",
-    "published_date": "2026-06-15",
-    "url": "https://www.msn.com/en-us/autos/news/bmw-s-electric-m3-may-ditch-carbon-fiber-for-something-greener/ar-AA25GZVv",
-    "summary": "While it's still a concept, BMW just showed the world what to expect from the first-ever electric M3. Officially known as the M Neue Klasse Concept, it made its premiere during the recently concluded ...",
-    "collected_at": "2026-06-19T21:55:17+08:00",
+    "published_date": "2026-06-13",
+    "url": "https://www.msn.com/en-us/news/technology/sodium-batteries-and-evs-that-power-the-grid-inside-gms-big-energy-push/ar-AA25CHtV",
+    "summary": "With sodium-ion batteries and vehicle-to-grid technology, General Motors' growth ambitions extend far beyond cars.",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
-    "rule_score": 42,
-    "category": "复合材料",
-    "subcategory": "碳纤维",
-    "detected_companies": [
-      "BMW"
-    ],
-    "detected_material_keywords": [
-      "carbon fiber"
-    ],
-    "filter_reason": "source=18; automotive=10 (EV, car); materials=4 (carbon fiber); companies=5 (BMW); industrial=0 (none); current_month=5",
-    "needs_ai_analysis": true
-  },
-  {
-    "title": "GM Energy introduces V2G support and new energy storage battery chemistry",
-    "source": "Bing News",
-    "published_date": "2026-06-10",
-    "url": "https://arstechnica.com/cars/2026/06/gm-energy-introduces-v2g-support-and-new-energy-storage-battery-chemistry/",
-    "summary": "Still, at a GM event Ars attended in San Francisco this week, the company continues to stick to its guns with an EV lineup spanning its brands. The automaker shared that it has also been working ...",
-    "collected_at": "2026-06-19T21:55:17+08:00",
-    "source_type": "bing_news",
-    "source_score": 70,
-    "rule_score": 42,
-    "category": "电池与储能材料",
+    "rule_score": 43,
+    "category": "其他",
     "subcategory": "",
     "detected_companies": [
       "GM"
     ],
-    "detected_material_keywords": [
-      "battery"
-    ],
-    "filter_reason": "source=18; automotive=10 (EV, automaker); materials=4 (battery); companies=5 (GM); industrial=0 (none); current_month=5",
+    "detected_material_keywords": [],
+    "filter_reason": "source=18; automotive=15 (EV, vehicle, car); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
   {
@@ -154,7 +153,7 @@
     "published_date": "2026-06-10",
     "url": "https://finance.yahoo.com/sectors/energy/articles/gm-partners-peak-energy-sodium-115423229.html",
     "summary": "The automaker's GM Ventures arm is taking an equity stake in Peak Energy as the two companies develop battery cells for large-scale energy storage ...",
-    "collected_at": "2026-06-19T21:55:17+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
     "rule_score": 42,
@@ -175,7 +174,7 @@
     "published_date": "2026-06-16",
     "url": "https://www.msn.com/en-us/news/technology/gm-to-develop-sodium-ion-batteries-for-data-center-energy-storage/ar-AA25Psmb",
     "summary": "General Motors partners with Peak Energy on sodium-ion battery storage ...",
-    "collected_at": "2026-06-19T21:55:17+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
     "rule_score": 41,
@@ -192,34 +191,12 @@
     "needs_ai_analysis": true
   },
   {
-    "title": "GM bets the house on new sodium-ion battery technology in major push into grid-scale storage",
-    "source": "Bing News",
-    "published_date": "2026-06-15",
-    "url": "https://reneweconomy.com.au/gm-bets-the-house-on-new-sodium-ion-battery-technology-in-major-push-into-grid-scale-storage/",
-    "summary": "GM follows other car makers into grid scale storage, but it has chosen to focus on sodium-ion technology, which it argues is lower cost and safer.",
-    "collected_at": "2026-06-19T21:55:17+08:00",
-    "source_type": "bing_news",
-    "source_score": 70,
-    "rule_score": 41,
-    "category": "电池与储能材料",
-    "subcategory": "钠离子电池",
-    "detected_companies": [
-      "GM"
-    ],
-    "detected_material_keywords": [
-      "battery",
-      "sodium-ion battery"
-    ],
-    "filter_reason": "source=18; automotive=5 (car); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=0 (none); current_month=5",
-    "needs_ai_analysis": true
-  },
-  {
     "title": "TIM requirements in EVs vs. EV charging infrastructure",
     "source": "Bing News",
     "published_date": "2026-06-11",
     "url": "https://www.eeworldonline.com/tim-requirements-in-evs-vs-ev-charging-infrastructure-2/",
     "summary": "Thermal interface materials (TIMs), adhesives, and sealants operate within fundamentally different constraints in electric vehicles (EVs) and high-power charging infrastructure.",
-    "collected_at": "2026-06-19T21:55:16+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
     "rule_score": 38,
@@ -236,7 +213,7 @@
     "published_date": "2026-06-10",
     "url": "https://finance.yahoo.com/sectors/energy/articles/gm-expands-grid-storage-vehicle-054132104.html",
     "summary": "GM unveiled new initiatives linking electric vehicles, batteries, and power grids to support growing electricity demand.",
-    "collected_at": "2026-06-19T21:55:17+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70,
     "rule_score": 38,
@@ -250,24 +227,23 @@
     "needs_ai_analysis": true
   },
   {
-    "title": "Nissan joins new ‘Cheaper Than China’ solid-state EV battery project",
+    "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
     "source": "Bing News",
-    "published_date": "2026-06-04",
-    "url": "https://electrek.co/2026/06/04/nissan-solid-state-ev-battery-project-aims-for-cheaper-than-china/",
-    "summary": "After announcing a new three-year collaboration with Nissan to advance low-cost, solid-state EV batteries, Gelion’s tech may be the secret to leveling the playing field with China. Nissan takes aim at ...",
-    "collected_at": "2026-06-19T21:55:16+08:00",
+    "published_date": "2026-06-09",
+    "url": "https://www.msn.com/en-nz/news/other/general-motors-is-bringing-sodium-ion-battery-production-to-america/ar-AA25klkk",
+    "summary": "After LFP and LMR, the automaker is betting on yet another battery chemistry type.",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
-    "source_score": 75,
-    "rule_score": 38,
+    "source_score": 70,
+    "rule_score": 36,
     "category": "电池与储能材料",
-    "subcategory": "",
-    "detected_companies": [
-      "Nissan"
-    ],
+    "subcategory": "钠离子电池",
+    "detected_companies": [],
     "detected_material_keywords": [
-      "battery"
+      "battery",
+      "sodium-ion battery"
     ],
-    "filter_reason": "source=19; automotive=5 (EV); materials=4 (battery); companies=5 (Nissan); industrial=0 (none); current_month=5",
+    "filter_reason": "source=18; automotive=5 (automaker); materials=8 (battery, sodium-ion battery); companies=0 (none); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   }
 ]
