@@ -49,11 +49,14 @@ REFRESH_ANALYSIS_FIELDS = [
     "confidence",
     "follow_up",
     "one_sentence",
+    "why_it_matters",
     "technology_driver",
     "material_relevance",
+    "material_opportunity",
     "validation_opportunity",
     "suggested_action",
     "trend_potential",
+    "future_signal",
     "future_signal_score",
     "material_opportunity_score",
     "material_validation_score",
@@ -152,16 +155,29 @@ def fallback_future_signal_score(item: dict[str, Any]) -> int:
 def ensure_material_opportunity_fields(item: dict[str, Any]) -> dict[str, Any]:
     """Ensure V2 technology-driver/material-opportunity fields exist."""
     current = deepcopy(item)
+    if not str(current.get("why_it_matters") or "").strip():
+        current["why_it_matters"] = str(
+            current.get("impact_assessment")
+            or current.get("research_value")
+            or "信息不足，暂无法判断其产业或材料意义。"
+        )
     if not str(current.get("technology_driver") or "").strip():
         current["technology_driver"] = "其他"
     if not str(current.get("material_relevance") or "").strip():
         current["material_relevance"] = "材料相关性较弱，暂不优先。"
+    if not str(current.get("material_opportunity") or "").strip():
+        current["material_opportunity"] = str(current.get("material_relevance") or "材料相关性较弱，暂不优先。")
     if not str(current.get("validation_opportunity") or "").strip():
         current["validation_opportunity"] = "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。"
     if current.get("suggested_action") not in ALLOWED_SUGGESTED_ACTION:
         current["suggested_action"] = "暂不优先"
     if current.get("trend_potential") not in ALLOWED_TREND_POTENTIAL:
         current["trend_potential"] = "不确定"
+    if not str(current.get("future_signal") or "").strip():
+        current["future_signal"] = (
+            f"{current.get('technology_driver', '其他')}方向释放{current.get('trend_potential', '不确定')}潜力信号，"
+            "需继续观察产业化进展、标准政策和供应链投入。"
+        )
     if current.get("future_signal_score") is None:
         current["future_signal_score"] = fallback_future_signal_score(current)
     else:
@@ -367,6 +383,11 @@ def enrich_with_filtered_metadata(
     }
 
     enriched: list[dict[str, Any]] = []
+    weak_values = {
+        "信息不足，暂无法判断其产业或材料意义。",
+        "材料相关性较弱，暂不优先。",
+        "未来信号不明确，建议仅作为背景观察。",
+    }
     for analyzed in analyzed_items:
         item = deepcopy(analyzed)
         filtered = filtered_by_url.get(normalize_url(item.get("url")))
@@ -376,17 +397,34 @@ def enrich_with_filtered_metadata(
                 "source_score",
                 "source_type",
                 "filter_reason",
+                "why_it_matters",
                 "technology_driver",
                 "material_relevance",
+                "material_opportunity",
                 "validation_opportunity",
                 "suggested_action",
                 "trend_potential",
+                "future_signal",
                 "future_signal_score",
                 "material_opportunity_score",
                 "material_validation_score",
             ):
                 if item.get(key) is None and filtered.get(key) is not None:
                     item[key] = filtered[key]
+                elif key == "technology_driver" and item.get(key) == "其他" and filtered.get(key) not in (None, "", "其他"):
+                    item[key] = filtered[key]
+                elif key in {"why_it_matters", "material_relevance", "material_opportunity", "validation_opportunity", "future_signal"}:
+                    if str(item.get(key) or "").strip() in weak_values and filtered.get(key):
+                        item[key] = filtered[key]
+                elif key in {"future_signal_score", "material_opportunity_score", "material_validation_score"}:
+                    try:
+                        current_score = int(float(item.get(key, 0) or 0))
+                        filtered_score = int(float(filtered.get(key, 0) or 0))
+                    except (TypeError, ValueError):
+                        current_score = 0
+                        filtered_score = 0
+                    if current_score == 0 and filtered_score > 0:
+                        item[key] = filtered_score
             if not item.get("materials_involved") and filtered.get("detected_material_keywords"):
                 item["materials_involved"] = filtered["detected_material_keywords"]
             if not item.get("companies_or_institutions") and filtered.get("detected_companies"):
@@ -729,7 +767,11 @@ def refresh_existing_selection_with_success_analysis(
         item = deepcopy(original)
         latest = success_by_url.get(normalize_url(item.get("url")))
         missing_refresh_field = any(item.get(field) in (None, "") for field in REFRESH_ANALYSIS_FIELDS)
-        if latest and (item.get("analysis_status") != "success" or missing_refresh_field):
+        changed_refresh_field = latest and any(
+            field in latest and item.get(field) != latest.get(field)
+            for field in REFRESH_ANALYSIS_FIELDS
+        )
+        if latest and (item.get("analysis_status") != "success" or missing_refresh_field or changed_refresh_field):
             for field in REFRESH_ANALYSIS_FIELDS:
                 if field in latest:
                     item[field] = latest[field]

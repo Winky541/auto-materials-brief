@@ -77,11 +77,14 @@ OUTPUT_FIELDS = [
     "confidence",
     "follow_up",
     "one_sentence",
+    "why_it_matters",
     "technology_driver",
     "material_relevance",
+    "material_opportunity",
     "validation_opportunity",
     "suggested_action",
     "trend_potential",
+    "future_signal",
     "future_signal_score",
     "material_opportunity_score",
     "material_validation_score",
@@ -204,11 +207,14 @@ def build_prompt(item: dict[str, Any]) -> list[dict[str, str]]:
             "confidence": "0-100",
             "follow_up": "true/false",
             "one_sentence": "用于机器人推送的一句话概括",
+            "why_it_matters": "为什么这条新闻值得研发人员关注，1-2句话，必须回到产业变化、技术演进或材料需求",
             "technology_driver": "新技术牵引方向，如机器人与具身智能、低空经济/eVTOL、自动驾驶、智能座舱、红外/短波感知、热成像、AI硬件、氢能、储能、车路协同、智能制造、航空航天轻量化、未来交通、其他",
             "material_relevance": "该技术可能牵引的材料方向，如轻量化复合材料、热管理材料、光学材料、导热材料、结构胶、阻燃材料、传感材料、固态电解质、硅碳负极、SiC/GaN封装材料、低成本高强材料等",
+            "material_opportunity": "材料机会层判断，说明可能形成哪些材料需求、替代机会、供应链机会或长期储备方向，1-3句话",
             "validation_opportunity": "1-3句话，判断是否有样件验证价值、是否值得供应商调研、是否适合前瞻储备、是否距离量产太远",
             "suggested_action": "启动验证/供应商调研/持续跟踪/前瞻储备/暂不优先",
             "trend_potential": "高/中/低/不确定",
+            "future_signal": "未来信号层判断，说明这条新闻释放了什么产业或技术趋势信号，1-2句话",
             "future_signal_score": "0-100，衡量未来产业影响力，参考技术突破、产业化进展、政策推动、资本投入、标准制定和供应链变化",
             "material_opportunity_score": "0-100，衡量对材料团队的价值，重点看是否可能形成材料需求、是否值得验证、是否值得供应商调研、是否值得长期储备",
             "material_validation_score": "0-100，兼容字段，数值应与 material_opportunity_score 保持一致或接近",
@@ -318,14 +324,26 @@ def fallback_analysis(item: dict[str, Any], status: str) -> dict[str, Any]:
         "confidence": 0,
         "follow_up": False,
         "one_sentence": title,
+        "why_it_matters": item.get(
+            "why_it_matters",
+            item.get("impact_assessment", "信息不足，暂无法判断其产业或材料意义。"),
+        ),
         "technology_driver": item.get("technology_driver", "其他"),
         "material_relevance": item.get("material_relevance", "材料相关性较弱，暂不优先。"),
+        "material_opportunity": item.get(
+            "material_opportunity",
+            item.get("material_relevance", "材料相关性较弱，暂不优先。"),
+        ),
         "validation_opportunity": item.get(
             "validation_opportunity",
             "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
         ),
         "suggested_action": item.get("suggested_action", "暂不优先"),
         "trend_potential": item.get("trend_potential", "不确定"),
+        "future_signal": item.get(
+            "future_signal",
+            f"{item.get('technology_driver', '其他')}方向释放弱信号，需结合更多来源持续观察。",
+        ),
         "future_signal_score": item.get("future_signal_score", 0),
         "material_opportunity_score": item.get(
             "material_opportunity_score",
@@ -372,12 +390,19 @@ def _normalize_analysis(parsed: dict[str, Any], item: dict[str, Any]) -> dict[st
     normalized["trend_potential"] = trend if trend in ALLOWED_TREND_POTENTIAL else "不确定"
 
     for key, default in (
+        ("why_it_matters", "信息不足，暂无法判断其产业或材料意义。"),
         ("technology_driver", "其他"),
         ("material_relevance", "材料相关性较弱，暂不优先。"),
+        ("material_opportunity", "材料相关性较弱，暂不优先。"),
         ("validation_opportunity", "材料相关性较弱，暂不优先。"),
+        ("future_signal", "未来信号不明确，建议仅作为背景观察。"),
     ):
         if not str(normalized.get(key) or "").strip():
             normalized[key] = item.get(key, default)
+    if not str(normalized.get("material_opportunity") or "").strip():
+        normalized["material_opportunity"] = normalized.get("material_relevance", "材料相关性较弱，暂不优先。")
+    if not str(normalized.get("why_it_matters") or "").strip():
+        normalized["why_it_matters"] = normalized.get("impact_assessment", "信息不足，暂无法判断其产业或材料意义。")
 
     try:
         future_score = int(float(normalized.get("future_signal_score", item.get("future_signal_score", 0))))
@@ -404,18 +429,41 @@ def _ensure_analysis_fields(existing: dict[str, Any], item: dict[str, Any]) -> d
     """Backfill newly required fields on reused successful analyses."""
     normalized = fallback_analysis(item, "success")
     normalized.update(existing)
+    weak_values = {
+        "信息不足，暂无法判断其产业或材料意义。",
+        "材料相关性较弱，暂不优先。",
+        "未来信号不明确，建议仅作为背景观察。",
+    }
     for key in (
         "technology_driver",
         "material_relevance",
+        "material_opportunity",
         "validation_opportunity",
         "suggested_action",
         "trend_potential",
+        "why_it_matters",
+        "future_signal",
         "future_signal_score",
         "material_opportunity_score",
         "material_validation_score",
     ):
         if normalized.get(key) in (None, ""):
             normalized[key] = item.get(key, fallback_analysis(item, "success").get(key))
+        elif key == "technology_driver" and normalized.get(key) == "其他" and item.get(key) not in (None, "", "其他"):
+            normalized[key] = item[key]
+        elif key in {"why_it_matters", "material_relevance", "material_opportunity", "validation_opportunity", "future_signal"}:
+            item_value = item.get(key)
+            if str(normalized.get(key)).strip() in weak_values and item_value:
+                normalized[key] = item_value
+        elif key in {"future_signal_score", "material_opportunity_score", "material_validation_score"}:
+            try:
+                current_score = int(float(normalized.get(key, 0) or 0))
+                item_score = int(float(item.get(key, 0) or 0))
+            except (TypeError, ValueError):
+                current_score = 0
+                item_score = 0
+            if current_score == 0 and item_score > 0:
+                normalized[key] = item_score
     return _normalize_analysis(normalized, item)
 
 

@@ -143,11 +143,14 @@ MATERIAL_TRACKS = [
     ("可持续材料", ["recycling", "回收", "低碳", "sustainable"]),
 ]
 DEFAULT_OPPORTUNITY_FIELDS = {
+    "why_it_matters": "信息不足，暂无法判断其产业或材料意义。",
     "technology_driver": "其他",
     "material_relevance": "材料相关性较弱，暂不优先。",
+    "material_opportunity": "材料相关性较弱，暂不优先。",
     "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
     "suggested_action": "暂不优先",
     "trend_potential": "不确定",
+    "future_signal": "未来信号不明确，建议仅作为背景观察。",
     "future_signal_score": 0,
     "material_opportunity_score": 0,
     "material_validation_score": 0,
@@ -405,6 +408,15 @@ def prepare_display_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         for key, value in DEFAULT_OPPORTUNITY_FIELDS.items():
             if current.get(key) in (None, ""):
                 current[key] = value
+        if not str(current.get("material_opportunity") or "").strip():
+            current["material_opportunity"] = current.get("material_relevance", "材料相关性较弱，暂不优先。")
+        if not str(current.get("why_it_matters") or "").strip():
+            current["why_it_matters"] = current.get("impact_assessment", "信息不足，暂无法判断其产业或材料意义。")
+        if not str(current.get("future_signal") or "").strip():
+            current["future_signal"] = (
+                f"{current.get('technology_driver', '其他')}方向释放{current.get('trend_potential', '不确定')}潜力信号，"
+                "需继续观察产业化进展、标准政策和供应链投入。"
+            )
         try:
             current["material_validation_score"] = max(0, min(100, int(float(current.get("material_validation_score", 0)))))
         except (TypeError, ValueError):

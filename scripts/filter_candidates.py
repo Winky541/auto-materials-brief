@@ -433,11 +433,14 @@ def infer_material_opportunity(item: dict[str, Any]) -> dict[str, Any]:
         score = min(45, round(rule_score * 0.45 + source_score * 0.2))
         future_score = min(40, round(rule_score * 0.35 + source_score * 0.2))
         return {
+            "why_it_matters": "该信息暂未显示明确的产业变化或材料导入信号，仅适合作为背景观察。",
             "technology_driver": "其他",
             "material_relevance": "材料相关性较弱，暂不优先。",
+            "material_opportunity": "材料相关性较弱，暂不优先。",
             "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
             "suggested_action": "暂不优先",
             "trend_potential": "不确定",
+            "future_signal": "未来信号不明确，建议等待更多原始来源或产业化证据。",
             "future_signal_score": max(0, future_score),
             "material_opportunity_score": max(0, score),
             "material_validation_score": max(0, score),
@@ -477,12 +480,21 @@ def infer_material_opportunity(item: dict[str, Any]) -> dict[str, Any]:
         f"当前材料验证分为 {score}，"
         f"{'具备样件验证或供应商调研价值。' if score >= 60 else '更适合作为前瞻储备或持续跟踪。'}"
     )
+    why_it_matters = (
+        f"这条信息指向{matched_rule['driver']}方向的变化，可能从技术演进进一步传导到材料选型、供应链调研和验证储备。"
+    )
+    future_signal = (
+        f"{matched_rule['driver']}呈现{matched_rule['trend']}潜力信号，需观察头部企业、量产节奏、政策标准和供应链投入是否继续强化。"
+    )
     return {
+        "why_it_matters": why_it_matters,
         "technology_driver": matched_rule["driver"],
         "material_relevance": matched_rule["materials"],
+        "material_opportunity": f"潜在材料机会包括{matched_rule['materials']}。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
         "validation_opportunity": opportunity,
         "suggested_action": action,
         "trend_potential": matched_rule["trend"],
+        "future_signal": future_signal,
         "future_signal_score": future_score,
         "material_opportunity_score": score,
         "material_validation_score": score,

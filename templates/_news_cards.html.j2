@@ -26,16 +26,28 @@
     </div>
   </section>
 
-  <div class="material-opportunity">
+  <section class="opportunity-layer" aria-label="Opportunity Layer">
+    <div class="opportunity-layer-heading">
+      <p class="eyebrow">Opportunity Layer</p>
+      <h4>机会层判断</h4>
+    </div>
     <div>
-      <h4>材料相关性</h4>
-      <p>{{ item.material_relevance }}</p>
+      <h4>为什么重要</h4>
+      <p>{{ item.why_it_matters }}</p>
+    </div>
+    <div>
+      <h4>材料机会</h4>
+      <p>{{ item.material_opportunity }}</p>
     </div>
     <div>
       <h4>验证机会</h4>
       <p>{{ item.validation_opportunity }}</p>
     </div>
-  </div>
+    <div>
+      <h4>未来信号</h4>
+      <p>{{ item.future_signal }}</p>
+    </div>
+  </section>
 
   <div class="detail-grid">
     <div>

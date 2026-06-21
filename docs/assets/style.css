@@ -542,13 +542,38 @@ a {
 
 .detail-grid,
 .assessment,
-.material-opportunity {
+.material-opportunity,
+.opportunity-layer {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   border-top: 1px solid var(--border);
   padding-top: 18px;
   margin-top: 18px;
+}
+
+.opportunity-layer {
+  background: rgba(250, 250, 248, 0.74);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 16px;
+}
+
+.opportunity-layer-heading {
+  grid-column: 1 / -1;
+}
+
+.opportunity-layer-heading .eyebrow {
+  margin-bottom: 4px;
+}
+
+.opportunity-layer-heading h4 {
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .research-eval {
@@ -656,7 +681,8 @@ a {
 
 .news-card li,
 .assessment p,
-.material-opportunity p {
+.material-opportunity p,
+.opportunity-layer p {
   color: var(--muted);
   font-size: 14px;
   margin: 0;
@@ -889,7 +915,8 @@ a {
   .detail-grid,
   .assessment,
   .material-opportunity,
-    .hotspot-grid,
+  .opportunity-layer,
+  .hotspot-grid,
     .validation-pool,
     .opportunity-list,
     .highlight-list,
