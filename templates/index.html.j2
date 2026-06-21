@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ brand_en }} | {{ brand_cn }}</title>
     <link rel="stylesheet" href="/auto-materials-brief/assets/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -14,92 +13,203 @@
         <small>{{ brand_cn }}</small>
       </a>
       <nav class="top-nav">
-        <a href="#brief">今日精选</a>
-        <a href="#signals">统计信号</a>
-        <a href="#archives">归档</a>
+        <a href="#judgement">研究判断</a>
+        <a href="#brief">重点观察</a>
+        <a href="#auto-materials">汽车产业与先进材料</a>
+        <a href="#company-intelligence">企业动态</a>
+        <a href="#patents-research">专利与论文</a>
+        <a href="#future-radar">未来技术雷达</a>
+        <a href="#validation-pool">验证储备池</a>
+        <a href="#insights">Insights</a>
+        <a href="#archives">历史归档</a>
       </nav>
     </header>
 
     <main class="page">
-      <section class="hero">
+      <section id="judgement" class="hero">
         <div>
           <p class="eyebrow">{{ date }}</p>
           <h1>{{ brand_en }}</h1>
           <p class="subtitle">{{ brand_cn }}</p>
+          <p class="subtitle small-subtitle">{{ brand_full_en }}</p>
+          <p class="motto">帮助研发人员理解变化、发现机会、建立储备。当未来到来的时候，我们已经准备好了。</p>
         </div>
         <div class="hero-note">
-          <span>今日研究判断</span>
+          <span>Today Research Insight</span>
           <p>{{ insight }}</p>
         </div>
       </section>
 
-      <section class="palette-strip" aria-label="分类调色盘">
-        {% for category, color in category_colors.items() %}
-        <span style="--swatch: {{ color }}">{{ category }}</span>
-        {% endfor %}
+      <section id="brief" class="opportunity-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Today Highlights</p>
+          <h2>今日重点观察</h2>
+        </div>
+        <div class="highlight-list">
+          {% for item in items[:5] %}
+          <article>
+            <span>{{ item.source }} · {{ item.published_date }}</span>
+            <h3>{{ item.title }}</h3>
+            <p>技术牵引：{{ item.technology_driver }}</p>
+            <p>材料相关性：{{ item.material_relevance }}</p>
+            <strong>建议动作：{{ item.suggested_action }}</strong>
+            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">原文链接</a>
+          </article>
+          {% endfor %}
+        </div>
       </section>
 
-      <section id="signals" class="layout">
-        <aside class="sidebar">
-          <div class="side-block">
-            <h2>分类分布</h2>
-            <canvas id="categoryChart" height="220"></canvas>
-          </div>
-          <div class="side-block">
-            <h2>来源分布</h2>
-            <ul class="metric-list">
-              {% for name, value in statistics.source_counts.items() %}
-              <li><span>{{ name }}</span><strong>{{ value }}</strong></li>
+      <section id="auto-materials" class="opportunity-panel priority-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Automotive Industry & Advanced Materials</p>
+          <h2>汽车产业与先进材料</h2>
+          <p class="section-note">首页最高权重板块。AURA 优先识别汽车产业链和新能源汽车方向正在形成的材料需求、验证机会和供应商调研入口。</p>
+        </div>
+        <div class="material-track-grid">
+          {% for track in material_tracks %}
+          <article>
+            <strong>{{ track.name }}</strong>
+            <span>{{ track.count }} 条新闻 · {{ track.validation_count }} 个验证机会</span>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="technology-hotspots" class="opportunity-panel compact-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Technology Drivers</p>
+          <h2>今日技术牵引热点</h2>
+        </div>
+        <div class="hotspot-grid">
+          {% for hotspot in technology_hotspots[:5] %}
+          <article>
+            <strong>{{ hotspot.driver }}</strong>
+            <span>{{ hotspot.count }} 条 · Material Opportunity {{ hotspot.avg_material_opportunity_score }}</span>
+          </article>
+          {% else %}
+          <article>
+            <strong>暂无热点</strong>
+            <span>等待更多有效情报进入今日选择</span>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="company-intelligence" class="opportunity-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Company Intelligence</p>
+          <h2>企业技术动态</h2>
+        </div>
+        <div class="hotspot-grid">
+          {% for row in company_intelligence %}
+          <article>
+            <strong>{{ row.company }}</strong>
+            <span>{{ row.count }} 条相关情报</span>
+          </article>
+          {% else %}
+          <article>
+            <strong>暂无重点企业信号</strong>
+            <span>等待更多真实来源进入候选池</span>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="patents-research" class="opportunity-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Patents & Research</p>
+          <h2>专利与论文</h2>
+        </div>
+        <div class="validation-pool">
+          {% for label, group_items in patents_research.items() %}
+          <article>
+            <h3>{{ label }}</h3>
+            <span>{{ group_items | length }} 条</span>
+            <ul>
+              {% for item in group_items[:3] %}
+              <li>{{ item.title }}</li>
               {% else %}
-              <li><span>暂无来源数据</span><strong>0</strong></li>
+              <li>暂无</li>
               {% endfor %}
             </ul>
-          </div>
-          <div class="side-block">
-            <h2>企业 TOP10</h2>
-            <div class="tag-cloud">
-              {% for name, value in statistics.company_counts.items() %}
-              <span>{{ name }} <b>{{ value }}</b></span>
-              {% else %}
-              <span>暂无企业数据</span>
-              {% endfor %}
-            </div>
-          </div>
-          <div class="side-block">
-            <h2>高频材料关键词</h2>
-            <div class="tag-cloud">
-              {% for name, value in statistics.keyword_counts.items() %}
-              <span>{{ name }} <b>{{ value }}</b></span>
-              {% else %}
-              <span>暂无关键词数据</span>
-              {% endfor %}
-            </div>
-          </div>
-          <div class="side-block">
-            <h2>研究员关注方向</h2>
-            <ol class="focus-list">
-              {% for name, value in statistics.category_counts.items() %}
-              <li>{{ name }} <small>{{ value }} 条</small></li>
-              {% else %}
-              <li>等待更多真实新闻进入候选池</li>
-              {% endfor %}
-            </ol>
-          </div>
-        </aside>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
 
-        <section id="brief" class="content">
-          <div class="section-heading">
-            <p class="eyebrow">Daily Selection</p>
-            <h2>今日精选 {{ count }} 条</h2>
-          </div>
-          {% include "_news_cards.html.j2" %}
-        </section>
+      <section id="future-radar" class="opportunity-panel radar-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Future Technology Radar</p>
+          <h2>未来技术雷达</h2>
+          <p class="section-note">未来技术仅作为雷达信号，只有当它能回到汽车产业意义、先进材料意义和验证机会时才进入页面展示。</p>
+        </div>
+        <div class="hotspot-grid">
+          {% for radar in future_radar %}
+          <article>
+            <strong>{{ radar.driver }}</strong>
+            <span>{{ radar.count }} 条 · Future Signal {{ radar.avg_future_signal_score }}</span>
+          </article>
+          {% else %}
+          <article>
+            <strong>暂无独立未来技术信号</strong>
+            <span>未来技术模块只在能回答材料机会时展示</span>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="validation-pool" class="opportunity-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Validation Pipeline</p>
+          <h2>验证储备池</h2>
+        </div>
+        <div class="validation-pool">
+          {% for group in validation_pool %}
+          <article>
+            <h3>{{ group.action }}</h3>
+            <span>{{ group.count }} 条</span>
+            <ul>
+              {% for item in group["items"][:4] %}
+              <li>{{ item.title }}</li>
+              {% else %}
+              <li>暂无</li>
+              {% endfor %}
+            </ul>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="insights" class="opportunity-panel insights-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Insights</p>
+          <h2>Insights</h2>
+          <p class="section-note">帮助理解变化背后的原因。这里先展示人工精选深度文章，后续可接入自动化采集与筛选。</p>
+        </div>
+        <div class="insights-grid">
+          {% for article in insights %}
+          <article>
+            <div class="insight-meta">{{ article.reading_time }}</div>
+            <h3>{{ article.title }}</h3>
+            <p><strong>为什么值得读：</strong>{{ article.why_read }}</p>
+            <p><strong>建议关注：</strong>{{ article.focus }}</p>
+            <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">阅读原文</a>
+          </article>
+          {% else %}
+          <article>
+            <div class="insight-meta">待补充</div>
+            <h3>Insights 内容池尚未配置</h3>
+            <p><strong>为什么值得读：</strong>该模块用于沉淀帮助研发人员理解变化背后原因的深度文章。</p>
+            <p><strong>建议关注：</strong>后续可从本地 JSON 或自动化来源补充精选内容。</p>
+          </article>
+          {% endfor %}
+        </div>
       </section>
 
       <section id="archives" class="archive-grid">
         <div>
-          <p class="eyebrow">Last 30 Days</p>
-          <h2>最近 30 天归档</h2>
+          <p class="eyebrow">Archive</p>
+          <h2>历史归档</h2>
           <div class="archive-links">
             {% for item in archives.daily %}
             <a href="{{ item.href }}">{{ item.date }}</a>
@@ -107,8 +217,8 @@
           </div>
         </div>
         <div>
-          <p class="eyebrow">Last 12 Months</p>
-          <h2>最近 12 个月归档</h2>
+          <p class="eyebrow">Monthly</p>
+          <h2>月度归档</h2>
           <div class="archive-links">
             {% for item in archives.monthly %}
             <a href="{{ item.href }}">{{ item.month }}</a>
@@ -118,30 +228,14 @@
       </section>
     </main>
 
+    <footer class="site-footer">
+      <strong>{{ brand_en }}</strong>
+      <span>{{ brand_full_en }}</span>
+    </footer>
+
     <script>
-      const categoryData = {{ statistics.category_counts | json }};
-      const categoryColors = {{ category_colors | json }};
-      const labels = Object.keys(categoryData);
-      const values = Object.values(categoryData);
-      const ctx = document.getElementById("categoryChart");
-      if (ctx && labels.length) {
-        new Chart(ctx, {
-          type: "doughnut",
-          data: {
-            labels,
-            datasets: [{
-              data: values,
-              backgroundColor: labels.map(label => categoryColors[label] || "#6B7280"),
-              borderColor: "#FAFAF8",
-              borderWidth: 3
-            }]
-          },
-          options: {
-            plugins: { legend: { position: "bottom", labels: { boxWidth: 10, color: "#1F2933" } } },
-            cutout: "68%"
-          }
-        });
-      }
+      window.AURA = { generatedAt: "{{ date }}" };
     </script>
+    {% include "_metric_modal.html.j2" %}
   </body>
 </html>

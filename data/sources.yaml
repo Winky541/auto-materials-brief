@@ -1,30 +1,431 @@
-# Source registry for Automotive Materials Intelligence Hub.
-# Stage 2 supports RSS sources and Bing News RSS queries only.
+# Source registry for AURA.
+# V2-2 prioritizes original and authoritative sources. Bing News remains a
+# supplemental discovery channel, not the main source of truth.
 
-sources:
-  - name: Green Car Congress
-    type: rss
-    url: https://www.greencarcongress.com/atom.xml
-    source_score: 85
+source_groups:
+  china:
+    - name: 工信部
+      source_type: government_policy
+      url: https://www.miit.gov.cn/xwdt/gxdt/index.html
+      source_score: 92
+      credibility_level: high
+      original_source_preferred: true
+      item_selector: "li"
+      title_selector: "a"
+      date_selector: ".date, span"
+      link_selector: "a"
+
+    - name: 中国汽车工程学会
+      source_type: professional_media
+      url: https://www.sae-china.org/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: 中国汽车报
+      source_type: professional_media
+      url: https://www.cnautonews.com/
+      source_score: 76
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 盖世汽车
+      source_type: professional_media
+      url: https://auto.gasgoo.com/
+      source_score: 74
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 高工锂电
+      source_type: professional_media
+      url: https://www.gg-lb.com/
+      source_score: 74
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: NE时代
+      source_type: professional_media
+      url: https://www.ne-time.cn/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 宁德时代
+      source_type: company_news_page
+      url: https://www.catl.com/news/
+      source_score: 90
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: 比亚迪
+      source_type: company_news_page
+      url: https://www.bydglobal.com/en/news
+      source_score: 90
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: 国轩高科
+      source_type: company_news_page
+      url: https://www.gotion.com.cn/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: 亿纬锂能
+      source_type: company_news_page
+      url: https://www.evebattery.com/news
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: 华为智能汽车
+      source_type: company_news_page
+      url: https://consumer.huawei.com/cn/mobileservices/hima/news/
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: 小鹏
+      source_type: company_news_page
+      url: https://www.xiaopeng.com/news
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: 蔚来
+      source_type: company_news_page
+      url: https://www.nio.com/news
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: 理想
+      source_type: company_news_page
+      url: https://www.lixiang.com/news
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+
+  japan:
+    - name: Toyota Global Newsroom
+      source_type: rss
+      url: https://global.toyota/en/rss/newsroom.xml
+      source_score: 92
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Nissan Global Newsroom
+      source_type: company_news_page
+      url: https://global.nissannews.com/en
+      source_score: 90
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Honda Global Newsroom
+      source_type: company_news_page
+      url: https://global.honda/en/newsroom/
+      source_score: 90
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Panasonic Energy
+      source_type: company_news_page
+      url: https://www.panasonic-energy.com/en/news
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Denso
+      source_type: company_news_page
+      url: https://www.denso.com/global/en/news/newsroom/
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Aisin
+      source_type: company_news_page
+      url: https://www.aisin.com/en/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Toray
+      source_type: company_news_page
+      url: https://www.toray.com/global/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Asahi Kasei
+      source_type: company_news_page
+      url: https://www.asahi-kasei.com/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+  korea:
+    - name: Hyundai Motor Group
+      source_type: company_news_page
+      url: https://www.hyundaimotorgroup.com/news/CONT0000000000000000
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Kia
+      source_type: company_news_page
+      url: https://worldwide.kia.com/int/company/newsroom
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: LG Energy Solution
+      source_type: company_news_page
+      url: https://www.lgensol.com/en/newsroom
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Samsung SDI
+      source_type: company_news_page
+      url: https://www.samsungsdi.com/sdi-news.html
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: SK On
+      source_type: company_news_page
+      url: https://sk-on.com/en/news/
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: POSCO Future M
+      source_type: company_news_page
+      url: https://www.poscofuturem.com/en/pr/newsroom.do
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+  europe_us:
+    - name: Tesla
+      source_type: company_news_page
+      url: https://www.tesla.com/blog
+      source_score: 90
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: GM
+      source_type: company_news_page
+      url: https://news.gm.com/newsroom.detail.html/Pages/news/us/en.html
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Ford
+      source_type: company_news_page
+      url: https://media.ford.com/content/fordmedia/fna/us/en/news.html
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: BMW
+      source_type: company_news_page
+      url: https://www.press.bmwgroup.com/global
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Mercedes-Benz
+      source_type: company_news_page
+      url: https://group.mercedes-benz.com/company/news/
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Volkswagen
+      source_type: company_news_page
+      url: https://www.volkswagen-newsroom.com/en
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Bosch
+      source_type: company_news_page
+      url: https://www.bosch-presse.de/pressportal/de/en/news.html
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: BASF
+      source_type: company_news_page
+      url: https://www.basf.com/global/en/media/news-releases
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Umicore
+      source_type: company_news_page
+      url: https://www.umicore.com/en/newsroom/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: QuantumScape
+      source_type: company_news_page
+      url: https://www.quantumscape.com/newsroom/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Solid Power
+      source_type: company_news_page
+      url: https://solidpowerbattery.com/newsroom/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: SAE
+      source_type: professional_media
+      url: https://www.sae.org/news/
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: IEEE Spectrum
+      source_type: rss
+      url: https://spectrum.ieee.org/feeds/feed.rss
+      source_score: 82
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Nature Energy
+      source_type: journal_rss
+      url: https://www.nature.com/nenergy.rss
+      source_score: 94
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Nature Materials
+      source_type: journal_rss
+      url: https://www.nature.com/nmat.rss
+      source_score: 94
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Advanced Materials
+      source_type: journal_rss
+      url: https://advanced.onlinelibrary.wiley.com/action/showFeed?jc=15214095&type=etoc&feed=rss
+      source_score: 92
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Joule
+      source_type: journal_rss
+      url: https://www.cell.com/joule/current.rss
+      source_score: 92
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Energy Storage Materials
+      source_type: journal_rss
+      url: https://www.sciencedirect.com/journal/energy-storage-materials/rss
+      source_score: 90
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: Green Car Congress
+      source_type: rss
+      url: https://www.greencarcongress.com/atom.xml
+      source_score: 82
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: Electrive
+      source_type: rss
+      url: https://www.electrive.com/feed/
+      source_score: 78
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: InsideEVs
+      source_type: rss
+      url: https://insideevs.com/rss/news/all/
+      source_score: 70
+      credibility_level: medium
+      original_source_preferred: false
+
+  clue_platforms:
+    - name: 今日头条
+      source_type: clue_platform
+      url: https://www.toutiao.com/
+      source_score: 30
+      credibility_level: clue
+      original_source_preferred: false
+
+    - name: 百家号
+      source_type: clue_platform
+      url: https://baijiahao.baidu.com/
+      source_score: 30
+      credibility_level: clue
+      original_source_preferred: false
+
+    - name: 知乎
+      source_type: clue_platform
+      url: https://www.zhihu.com/
+      source_score: 30
+      credibility_level: clue
+      original_source_preferred: false
+
+    - name: 微信公众号
+      source_type: clue_platform
+      url: https://mp.weixin.qq.com/
+      source_score: 30
+      credibility_level: clue
+      original_source_preferred: false
 
 bing_news_queries:
   - query: automotive materials battery fast charging
-    source_score: 70
+    source_group: future_trends
+    source_score: 62
   - query: solid state battery Toyota Nissan Honda
-    source_score: 75
+    source_group: future_trends
+    source_score: 65
   - query: sodium ion battery vehicle
-    source_score: 70
+    source_group: future_trends
+    source_score: 62
   - query: carbon fiber automotive lightweight
-    source_score: 70
+    source_group: future_trends
+    source_score: 62
   - query: SiC GaN power semiconductor electric vehicle
-    source_score: 75
+    source_group: future_trends
+    source_score: 65
   - query: battery thermal management aerogel EV
-    source_score: 70
+    source_group: future_trends
+    source_score: 62
+  - query: robotics humanoid robot embodied AI mobility
+    source_group: future_trends
+    source_score: 60
+  - query: eVTOL flying car low altitude economy
+    source_group: future_trends
+    source_score: 60
+  - query: smart manufacturing automotive materials
+    source_group: future_trends
+    source_score: 60
+  - query: future mobility autonomous driving vehicle sensor
+    source_group: future_trends
+    source_score: 60
+  - query: hydrogen mobility fuel cell vehicle
+    source_group: future_trends
+    source_score: 60
   - query: 汽车 新材料 轻量化
-    source_score: 70
+    source_group: future_trends
+    source_score: 60
   - query: 汽车 固态电池 钠离子电池
-    source_score: 70
-  - query: 汽车 碳纤维 复合材料
-    source_score: 70
-  - query: 电动汽车 热管理 材料
-    source_score: 70
+    source_group: future_trends
+    source_score: 60
+  - query: 低空经济 eVTOL 飞行汽车
+    source_group: future_trends
+    source_score: 58
+  - query: 人形机器人 具身智能 汽车 制造
+    source_group: future_trends
+    source_score: 58

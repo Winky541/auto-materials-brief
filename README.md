@@ -1,6 +1,8 @@
-# Automotive Materials Intelligence Hub
+# AURA
 
-汽车新材料与前沿技术情报平台是一个面向汽车新材料研究人员的每日情报简报网站。系统目标是每天采集当月汽车新材料、先进制造、前沿技术、专利、论文、企业技术动态等信息，经过规则筛选和 DeepSeek API 结构化分析后，生成 GitHub Pages 静态网站，并通过钉钉/咚咚群机器人推送摘要。
+AURA，未来产业、技术与材料情报平台，是面向汽车材料研发工程师、材料科室、前瞻技术研究人员和技术管理者的研究员工作台。它不是新闻门户、媒体网站或投资资讯站，而是围绕“产业变化 → 技术演进 → 材料需求 → 验证机会”的每日技术情报平台。
+
+系统目标是每天采集当月汽车新材料、先进制造、前沿技术、专利、论文、企业技术动态等信息，经过规则筛选和 DeepSeek API 结构化分析后，生成 GitHub Pages 静态网站，并通过钉钉/咚咚群机器人推送摘要。汽车产业、新能源汽车产业链和先进材料机会始终保持最高优先级。
 
 ## Core Rules
 
@@ -161,7 +163,7 @@ Use these settings:
 
 Go to:
 
-`Actions → Daily Auto Materials Brief → Run workflow`
+`Actions → Daily AURA Brief → Run workflow`
 
 This manually starts the same pipeline used by the daily schedule.
 

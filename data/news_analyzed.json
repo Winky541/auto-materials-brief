@@ -27,6 +27,14 @@
     "confidence": 90,
     "follow_up": true,
     "one_sentence": "CATL计划在数月内推出钠离子电池，标志着钠离子电池产业化迈出关键一步。",
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
+    "suggested_action": "供应商调研",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 68,
+    "material_validation_score": 68,
     "analysis_status": "success"
   },
   {
@@ -56,6 +64,14 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "通用汽车通过软件激活25万辆电动汽车组成虚拟电厂，并推进钠离子电池替代电网调峰电站。",
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
+    "suggested_action": "供应商调研",
+    "trend_potential": "高",
+    "future_signal_score": 70,
+    "material_opportunity_score": 68,
+    "material_validation_score": 68,
     "analysis_status": "success"
   },
   {
@@ -86,6 +102,14 @@
     "confidence": 90,
     "follow_up": true,
     "one_sentence": "CATL新一代钠离子电池Naxtra实现500公里续航并准备量产，标志着钠离子电池产业化重大突破。",
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
+    "suggested_action": "供应商调研",
+    "trend_potential": "高",
+    "future_signal_score": 70,
+    "material_opportunity_score": 68,
+    "material_validation_score": 68,
     "analysis_status": "success"
   },
   {
@@ -115,6 +139,14 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "CATL计划2026年量产钠离子电池，目标续航超370英里，有望成为锂离子电池的重要替代方案。",
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 58，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 58,
+    "material_validation_score": 58,
     "analysis_status": "success"
   },
   {
@@ -145,6 +177,14 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "通用汽车将开发钠离子电池用于储能，以降低成本并拓展电池业务。",
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
+    "suggested_action": "供应商调研",
+    "trend_potential": "高",
+    "future_signal_score": 70,
+    "material_opportunity_score": 68,
+    "material_validation_score": 68,
     "analysis_status": "success"
   },
   {
@@ -174,6 +214,14 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "IAV与Nexperia提出软件定义电池架构，通过软件优化电动汽车电池使用，最大化电芯价值。",
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 54，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 60,
+    "material_opportunity_score": 54,
+    "material_validation_score": 54,
     "analysis_status": "success"
   },
   {
@@ -202,6 +250,14 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "通用汽车推进钠离子电池与V2G技术，拓展能源领域布局。",
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 53，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 53,
+    "material_validation_score": 53,
     "analysis_status": "success"
   },
   {
@@ -231,6 +287,14 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "Nexperia与Semikron Danfoss考虑合作开发电动汽车SiC功率模块，聚焦牵引逆变器应用。",
+    "technology_driver": "功率半导体",
+    "material_relevance": "封装材料、导热材料、绝缘材料、银烧结材料",
+    "validation_opportunity": "该技术动向可能牵引封装材料、导热材料、绝缘材料、银烧结材料需求。当前材料验证分为 54，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 60,
+    "material_opportunity_score": 54,
+    "material_validation_score": 54,
     "analysis_status": "success"
   }
 ]

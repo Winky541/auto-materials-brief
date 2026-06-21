@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "title": "Global EV Outlook 2024",
+      "why_read": "这份报告帮助判断新能源汽车产业链的长期扩张速度，以及电池、功率电子、轻量化和充电基础设施需求的变化。",
+      "focus": "关注电动车渗透率、区域市场差异、供应链瓶颈和政策信号如何传导为材料验证机会。",
+      "reading_time": "约 25 分钟",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2024"
+    },
+    {
+      "title": "Batteries and Secure Energy Transitions",
+      "why_read": "电池不只是车辆零部件，也正在成为能源系统的一部分。理解储能需求有助于判断电池材料、热管理和回收技术的中长期空间。",
+      "focus": "关注电池需求增长、供应链安全、材料约束、储能场景和回收体系对材料团队的牵引。",
+      "reading_time": "约 20 分钟",
+      "url": "https://www.iea.org/reports/batteries-and-secure-energy-transitions"
+    },
+    {
+      "title": "Global Critical Minerals Outlook 2024",
+      "why_read": "关键矿物供需变化会影响电池、电驱、功率半导体和轻量化材料路线，是材料替代、回收和供应商调研的重要背景。",
+      "focus": "关注锂、镍、钴、石墨、稀土等材料的供应风险，以及低用量、替代材料和循环材料机会。",
+      "reading_time": "约 20 分钟",
+      "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2024"
+    }
+  ]
+}

@@ -44,6 +44,8 @@ RETRYABLE_STATUSES = {
 
 ALLOWED_MATURITY = {"lab", "pilot", "production", "policy", "market", "unknown"}
 ALLOWED_PRIORITY = {"P0", "P1", "P2", "P3"}
+ALLOWED_SUGGESTED_ACTION = {"启动验证", "供应商调研", "持续跟踪", "前瞻储备", "暂不优先"}
+ALLOWED_TREND_POTENTIAL = {"高", "中", "低", "不确定"}
 
 PROMPT_FIELDS = [
     "title",
@@ -75,6 +77,14 @@ OUTPUT_FIELDS = [
     "confidence",
     "follow_up",
     "one_sentence",
+    "technology_driver",
+    "material_relevance",
+    "validation_opportunity",
+    "suggested_action",
+    "trend_potential",
+    "future_signal_score",
+    "material_opportunity_score",
+    "material_validation_score",
     "analysis_status",
 ]
 
@@ -165,8 +175,12 @@ def _prompt_payload(item: dict[str, Any]) -> dict[str, Any]:
 def build_prompt(item: dict[str, Any]) -> list[dict[str, str]]:
     """Build strict JSON-only chat messages for one news item."""
     system_prompt = (
-        "你是汽车新材料与前沿技术研究员。你只能基于用户提供的新闻元数据进行分析。"
+        "你不是普通新闻编辑。你是汽车新材料研究员和技术情报分析员。"
+        "你的任务不是判断新闻是否热门，而是判断它是否可能带来材料导入、材料验证、供应链调研或技术储备机会。"
+        "分析时必须回答：1. 这是什么技术动向？2. 它可能牵引哪些材料需求？"
+        "3. 这些材料是否接近可验证？4. 对材料科室建议采取什么动作？"
         "不得编造未提供的新闻事实、日期、来源、企业、参数或链接。"
+        "如果新闻与材料关系弱，必须明确写“材料相关性较弱，暂不优先。”"
         "如果信息不足，请写“信息不足”或“unknown”。必须输出严格 JSON。所有字段必须完整。"
     )
     user_prompt = {
@@ -190,6 +204,14 @@ def build_prompt(item: dict[str, Any]) -> list[dict[str, str]]:
             "confidence": "0-100",
             "follow_up": "true/false",
             "one_sentence": "用于机器人推送的一句话概括",
+            "technology_driver": "新技术牵引方向，如机器人与具身智能、低空经济/eVTOL、自动驾驶、智能座舱、红外/短波感知、热成像、AI硬件、氢能、储能、车路协同、智能制造、航空航天轻量化、未来交通、其他",
+            "material_relevance": "该技术可能牵引的材料方向，如轻量化复合材料、热管理材料、光学材料、导热材料、结构胶、阻燃材料、传感材料、固态电解质、硅碳负极、SiC/GaN封装材料、低成本高强材料等",
+            "validation_opportunity": "1-3句话，判断是否有样件验证价值、是否值得供应商调研、是否适合前瞻储备、是否距离量产太远",
+            "suggested_action": "启动验证/供应商调研/持续跟踪/前瞻储备/暂不优先",
+            "trend_potential": "高/中/低/不确定",
+            "future_signal_score": "0-100，衡量未来产业影响力，参考技术突破、产业化进展、政策推动、资本投入、标准制定和供应链变化",
+            "material_opportunity_score": "0-100，衡量对材料团队的价值，重点看是否可能形成材料需求、是否值得验证、是否值得供应商调研、是否值得长期储备",
+            "material_validation_score": "0-100，兼容字段，数值应与 material_opportunity_score 保持一致或接近",
             "analysis_status": "success",
         },
         "priority_rules": {
@@ -296,6 +318,20 @@ def fallback_analysis(item: dict[str, Any], status: str) -> dict[str, Any]:
         "confidence": 0,
         "follow_up": False,
         "one_sentence": title,
+        "technology_driver": item.get("technology_driver", "其他"),
+        "material_relevance": item.get("material_relevance", "材料相关性较弱，暂不优先。"),
+        "validation_opportunity": item.get(
+            "validation_opportunity",
+            "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
+        ),
+        "suggested_action": item.get("suggested_action", "暂不优先"),
+        "trend_potential": item.get("trend_potential", "不确定"),
+        "future_signal_score": item.get("future_signal_score", 0),
+        "material_opportunity_score": item.get(
+            "material_opportunity_score",
+            item.get("material_validation_score", 0),
+        ),
+        "material_validation_score": item.get("material_validation_score", 0),
         "analysis_status": status,
     }
 
@@ -329,8 +365,58 @@ def _normalize_analysis(parsed: dict[str, Any], item: dict[str, Any]) -> dict[st
     normalized["confidence"] = max(0, min(100, confidence))
 
     normalized["follow_up"] = bool(normalized.get("follow_up", False))
+    action = str(normalized.get("suggested_action") or item.get("suggested_action") or "暂不优先")
+    normalized["suggested_action"] = action if action in ALLOWED_SUGGESTED_ACTION else "暂不优先"
+
+    trend = str(normalized.get("trend_potential") or item.get("trend_potential") or "不确定")
+    normalized["trend_potential"] = trend if trend in ALLOWED_TREND_POTENTIAL else "不确定"
+
+    for key, default in (
+        ("technology_driver", "其他"),
+        ("material_relevance", "材料相关性较弱，暂不优先。"),
+        ("validation_opportunity", "材料相关性较弱，暂不优先。"),
+    ):
+        if not str(normalized.get(key) or "").strip():
+            normalized[key] = item.get(key, default)
+
+    try:
+        future_score = int(float(normalized.get("future_signal_score", item.get("future_signal_score", 0))))
+    except (TypeError, ValueError):
+        future_score = int(item.get("future_signal_score", 0) or 0)
+    normalized["future_signal_score"] = max(0, min(100, future_score))
+
+    try:
+        opportunity_score = int(float(normalized.get("material_opportunity_score", item.get("material_opportunity_score", item.get("material_validation_score", 0)))))
+    except (TypeError, ValueError):
+        opportunity_score = int(item.get("material_opportunity_score", item.get("material_validation_score", 0)) or 0)
+    normalized["material_opportunity_score"] = max(0, min(100, opportunity_score))
+
+    try:
+        material_score = int(float(normalized.get("material_validation_score", normalized["material_opportunity_score"])))
+    except (TypeError, ValueError):
+        material_score = normalized["material_opportunity_score"]
+    normalized["material_validation_score"] = max(0, min(100, material_score))
     normalized["analysis_status"] = "success"
     return {field: normalized.get(field) for field in OUTPUT_FIELDS}
+
+
+def _ensure_analysis_fields(existing: dict[str, Any], item: dict[str, Any]) -> dict[str, Any]:
+    """Backfill newly required fields on reused successful analyses."""
+    normalized = fallback_analysis(item, "success")
+    normalized.update(existing)
+    for key in (
+        "technology_driver",
+        "material_relevance",
+        "validation_opportunity",
+        "suggested_action",
+        "trend_potential",
+        "future_signal_score",
+        "material_opportunity_score",
+        "material_validation_score",
+    ):
+        if normalized.get(key) in (None, ""):
+            normalized[key] = item.get(key, fallback_analysis(item, "success").get(key))
+    return _normalize_analysis(normalized, item)
 
 
 def merge_existing_analysis(
@@ -358,7 +444,7 @@ def merge_existing_analysis(
         normalized_url = normalize_url(item.get("url"))
         existing = success_by_url.get(normalized_url)
         if existing:
-            reused.append(existing)
+            reused.append(_ensure_analysis_fields(existing, item))
         else:
             if normalized_url in retryable_by_url or force_reanalyze_failed:
                 retryable_count += 1

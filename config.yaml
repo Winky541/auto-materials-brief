@@ -15,7 +15,7 @@ deepseek_temperature: 0.2
 deepseek_max_tokens: 1200
 
 site:
-  title: Automotive Materials Intelligence Hub
+  title: AURA
   language: zh-CN
   output_dir: docs
 

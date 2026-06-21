@@ -14,6 +14,7 @@
       </a>
       <nav class="top-nav">
         <a href="{{ root_prefix }}/index.html">首页</a>
+        <a href="{{ root_prefix }}/about-methodology.html">方法说明</a>
       </nav>
     </header>
 
@@ -43,5 +44,10 @@
         {% include "_news_cards.html.j2" %}
       </section>
     </main>
+    <footer class="site-footer">
+      <strong>{{ brand_en }}</strong>
+      <span>{{ brand_full_en }}</span>
+    </footer>
+    {% include "_metric_modal.html.j2" %}
   </body>
 </html>

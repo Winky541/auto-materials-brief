@@ -49,6 +49,14 @@ REFRESH_ANALYSIS_FIELDS = [
     "confidence",
     "follow_up",
     "one_sentence",
+    "technology_driver",
+    "material_relevance",
+    "validation_opportunity",
+    "suggested_action",
+    "trend_potential",
+    "future_signal_score",
+    "material_opportunity_score",
+    "material_validation_score",
     "analysis_status",
 ]
 
@@ -95,6 +103,79 @@ SIGNAL_KEYWORDS = [
     "论文",
     "期刊",
 ]
+
+ALLOWED_SUGGESTED_ACTION = {"启动验证", "供应商调研", "持续跟踪", "前瞻储备", "暂不优先"}
+ALLOWED_TREND_POTENTIAL = {"高", "中", "低", "不确定"}
+
+
+def _int_0_100(value: Any, default: int = 0) -> int:
+    try:
+        number = int(float(value))
+    except (TypeError, ValueError):
+        number = default
+    return max(0, min(100, number))
+
+
+def trend_to_score(trend: str | None) -> int:
+    """Map trend potential to 0-100 scale for ranking."""
+    return {"高": 100, "中": 70, "低": 35, "不确定": 45}.get(str(trend or "不确定"), 45)
+
+
+def fallback_material_validation_score(item: dict[str, Any]) -> int:
+    """Create a conservative material validation score if analysis omitted it."""
+    score = 20
+    score += min(25, len(item.get("materials_involved", []) or []) * 5)
+    score += min(15, len(item.get("companies_or_institutions", []) or []) * 5)
+    score += min(20, int(item.get("rule_score", 0) or 0) // 5)
+    score += min(15, int(item.get("source_score", 0) or 0) // 7)
+    if item.get("follow_up"):
+        score += 10
+    return max(0, min(100, score))
+
+
+def fallback_future_signal_score(item: dict[str, Any]) -> int:
+    """Create a conservative future-industry signal score if analysis omitted it."""
+    score = 20
+    score += min(20, int(item.get("source_score", 0) or 0) // 5)
+    score += min(20, int(item.get("rule_score", 0) or 0) // 5)
+    if item.get("trend_potential") == "高":
+        score += 25
+    elif item.get("trend_potential") == "中":
+        score += 14
+    elif item.get("trend_potential") == "低":
+        score += 5
+    if item.get("priority") in {"P0", "P1"}:
+        score += 10
+    return max(0, min(100, score))
+
+
+def ensure_material_opportunity_fields(item: dict[str, Any]) -> dict[str, Any]:
+    """Ensure V2 technology-driver/material-opportunity fields exist."""
+    current = deepcopy(item)
+    if not str(current.get("technology_driver") or "").strip():
+        current["technology_driver"] = "其他"
+    if not str(current.get("material_relevance") or "").strip():
+        current["material_relevance"] = "材料相关性较弱，暂不优先。"
+    if not str(current.get("validation_opportunity") or "").strip():
+        current["validation_opportunity"] = "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。"
+    if current.get("suggested_action") not in ALLOWED_SUGGESTED_ACTION:
+        current["suggested_action"] = "暂不优先"
+    if current.get("trend_potential") not in ALLOWED_TREND_POTENTIAL:
+        current["trend_potential"] = "不确定"
+    if current.get("future_signal_score") is None:
+        current["future_signal_score"] = fallback_future_signal_score(current)
+    else:
+        current["future_signal_score"] = _int_0_100(current.get("future_signal_score"))
+    if current.get("material_opportunity_score") is None:
+        current["material_opportunity_score"] = current.get("material_validation_score")
+    if current.get("material_validation_score") is None:
+        current["material_validation_score"] = fallback_material_validation_score(current)
+    else:
+        current["material_validation_score"] = _int_0_100(current.get("material_validation_score"))
+    current["material_opportunity_score"] = _int_0_100(
+        current.get("material_opportunity_score", current["material_validation_score"])
+    )
+    return current
 
 
 def load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
@@ -211,47 +292,33 @@ def _signal_score(item: dict[str, Any]) -> int:
 
 
 def calculate_final_score(item: dict[str, Any], seen_categories: set[str] | None = None) -> int:
-    """Calculate final_score in the 0-100 range."""
+    """Calculate final_score in the 0-100 range with material-validation value."""
     raw_rule_score = item.get("rule_score")
-    confidence = int(item.get("confidence", 0) or 0)
-    source_score = int(item.get("source_score", 0) or 0)
-    category = str(item.get("category") or "")
+    confidence = _int_0_100(item.get("confidence", 0))
+    source_score = _int_0_100(item.get("source_score", 0))
+    material_score = _int_0_100(
+        item.get("material_opportunity_score", item.get("material_validation_score", fallback_material_validation_score(item)))
+    )
+    trend_score = _int_0_100(item.get("future_signal_score", trend_to_score(item.get("trend_potential"))))
 
     if raw_rule_score is None:
-        # Some fallback analyses intentionally contain only the required analysis
-        # schema. In that case, derive a conservative ranking signal from
-        # existing metadata instead of dropping every valid item to zero.
-        materials = item.get("materials_involved", []) or []
-        companies = item.get("companies_or_institutions", []) or []
-        rule_points = 0
-        if category and category != "其他":
-            rule_points += 12
-        rule_points += min(16, len(materials) * 4)
-        rule_points += min(7, len(companies) * 3)
-        rule_points = min(35, rule_points)
+        rule_score = fallback_material_validation_score(item)
     else:
-        rule_score = int(raw_rule_score or 0)
-        rule_points = min(35, round(rule_score / 100 * 35))
-    priority_points = priority_to_score(item.get("priority"))
-    confidence_points = min(10, round(confidence / 100 * 10))
-    follow_up_points = 8 if item.get("follow_up") else 0
-    source_points = min(10, round(source_score / 100 * 10))
-    signal_points = _signal_score(item)
+        rule_score = _int_0_100(raw_rule_score)
 
-    diversity_points = 0
-    if seen_categories is not None and category in DIVERSITY_CATEGORIES and category not in seen_categories:
-        diversity_points = 5
-
-    return min(
-        100,
-        rule_points
-        + priority_points
-        + confidence_points
-        + follow_up_points
-        + source_points
-        + signal_points
-        + diversity_points,
+    priority_score = min(100, round(priority_to_score(item.get("priority")) / 25 * 100))
+    total = (
+        rule_score * 0.25
+        + source_score * 0.15
+        + priority_score * 0.15
+        + confidence * 0.10
+        + material_score * 0.25
+        + trend_score * 0.10
     )
+
+    if seen_categories is not None and item.get("category") in DIVERSITY_CATEGORIES and item.get("category") not in seen_categories:
+        total += 3
+    return min(100, round(total))
 
 
 def _extract_backlog_items(backlog_data: Any) -> list[dict[str, Any]]:
@@ -304,14 +371,27 @@ def enrich_with_filtered_metadata(
         item = deepcopy(analyzed)
         filtered = filtered_by_url.get(normalize_url(item.get("url")))
         if filtered:
-            for key in ("rule_score", "source_score", "source_type", "filter_reason"):
+            for key in (
+                "rule_score",
+                "source_score",
+                "source_type",
+                "filter_reason",
+                "technology_driver",
+                "material_relevance",
+                "validation_opportunity",
+                "suggested_action",
+                "trend_potential",
+                "future_signal_score",
+                "material_opportunity_score",
+                "material_validation_score",
+            ):
                 if item.get(key) is None and filtered.get(key) is not None:
                     item[key] = filtered[key]
             if not item.get("materials_involved") and filtered.get("detected_material_keywords"):
                 item["materials_involved"] = filtered["detected_material_keywords"]
             if not item.get("companies_or_institutions") and filtered.get("detected_companies"):
                 item["companies_or_institutions"] = filtered["detected_companies"]
-        enriched.append(item)
+        enriched.append(ensure_material_opportunity_fields(item))
 
     return enriched
 
@@ -410,7 +490,7 @@ def select_today_items(
         if not _valid_item(item, timezone_name):
             removed_non_current += 1
             continue
-        item = deepcopy(item)
+        item = ensure_material_opportunity_fields(item)
         item["url"] = normalize_url(item.get("url"))
         item["final_score"] = calculate_final_score(item)
         valid.append(item)
@@ -561,10 +641,24 @@ def update_published_urls(
     return {"published_urls": records}
 
 
-def _existing_today_selection(today_data: Any, today: str, timezone_name: str) -> dict[str, Any] | None:
-    """Return today's existing selection when it is still usable."""
-    if not isinstance(today_data, dict) or today_data.get("date") != today:
+def _existing_today_selection(
+    today_data: Any,
+    today: str,
+    timezone_name: str,
+    allow_previous: bool = False,
+) -> dict[str, Any] | None:
+    """Return an existing selection when it is still usable.
+
+    Normal runs lock today's selection. When no fresh candidates are available,
+    allow_previous=True lets the workflow reuse an earlier same-month selection
+    instead of clearing the brief.
+    """
+    if not isinstance(today_data, dict):
         return None
+    selected_date = str(today_data.get("date") or "")
+    if selected_date != today:
+        if not allow_previous or not is_current_month(selected_date, timezone_name):
+            return None
     try:
         count = int(today_data.get("count", 0) or 0)
     except (TypeError, ValueError):
@@ -585,6 +679,8 @@ def _existing_today_selection(today_data: Any, today: str, timezone_name: str) -
     payload = deepcopy(today_data)
     payload["items"] = items
     payload["count"] = len(items)
+    if selected_date != today:
+        payload["reused_from_date"] = selected_date
     return payload
 
 
@@ -632,7 +728,8 @@ def refresh_existing_selection_with_success_analysis(
     for original in selection.get("items", []):
         item = deepcopy(original)
         latest = success_by_url.get(normalize_url(item.get("url")))
-        if latest and item.get("analysis_status") != "success":
+        missing_refresh_field = any(item.get(field) in (None, "") for field in REFRESH_ANALYSIS_FIELDS)
+        if latest and (item.get("analysis_status") != "success" or missing_refresh_field):
             for field in REFRESH_ANALYSIS_FIELDS:
                 if field in latest:
                     item[field] = latest[field]
@@ -658,6 +755,12 @@ def main() -> None:
 
     existing_today_data = load_json(TODAY_SELECTED_PATH)
     existing_today = _existing_today_selection(existing_today_data, today, timezone_name)
+    reusable_previous_selection = _existing_today_selection(
+        existing_today_data,
+        today,
+        timezone_name,
+        allow_previous=True,
+    )
     force_refresh = os.getenv("FORCE_REFRESH_TODAY", "").strip().lower() == "true"
     analyzed_data = load_json(ANALYZED_NEWS_PATH)
     filtered_data = load_json(FILTERED_NEWS_PATH)
@@ -666,6 +769,11 @@ def main() -> None:
         filtered_data,
     )
     success_items = _success_current_month_items(analyzed_items, timezone_name)
+    if reusable_previous_selection:
+        reusable_previous_selection, _ = refresh_existing_selection_with_success_analysis(
+            reusable_previous_selection,
+            analyzed_data,
+        )
 
     if existing_today and not force_refresh:
         refreshed_today, refreshed_count = refresh_existing_selection_with_success_analysis(
@@ -726,6 +834,23 @@ def main() -> None:
     logging.info("Candidates after deduplication: %s.", selection_stats["deduped_count"])
     logging.info("Today selected items: %s.", len(selected_items))
 
+    daily_min = int(config.get("limits", {}).get("daily_publish_min", DEFAULT_DAILY_PUBLISH_MIN))
+    if (
+        selected_items
+        and len(selected_items) < daily_min
+        and reusable_previous_selection
+        and len(reusable_previous_selection.get("items", [])) >= len(selected_items)
+    ):
+        logging.warning(
+            "Only %s new items selected, below daily_publish_min=%s; reusing previous selection from %s.",
+            len(selected_items),
+            daily_min,
+            reusable_previous_selection.get("date", "unknown"),
+        )
+        selected_items = []
+
+    preserve_auxiliary_state = False
+
     if selected_items and existing_today and _same_selected_urls(selected_items, existing_today["items"]):
         logging.info("Reusing existing today_selected.json because today's selected URLs are unchanged.")
         today_payload = existing_today
@@ -747,7 +872,20 @@ def main() -> None:
         today_payload = existing_today
         published_items = existing_today["items"]
         save_today = False
+        preserve_auxiliary_state = True
+    elif reusable_previous_selection:
+        logging.warning(
+            "No new selected items generated; reusing previous selection from %s.",
+            reusable_previous_selection.get("date", "unknown"),
+        )
+        today_payload = reusable_previous_selection
+        published_items = reusable_previous_selection["items"]
+        save_today = True
+        preserve_auxiliary_state = True
     else:
+        logging.warning(
+            "No selected items and no reusable previous today_selected.json; writing empty selection as last resort."
+        )
         today_payload = {
             "date": today,
             "count": 0,
@@ -756,16 +894,22 @@ def main() -> None:
         published_items = []
         save_today = True
 
-    published_payload = update_published_urls(published_data, published_items, today)
-    backlog_payload = update_backlog(backlog_candidates, config)
+    if preserve_auxiliary_state:
+        logging.warning("Preserving backlog.json and published_urls.json while reusing an existing selection.")
+        published_payload = published_data
+        backlog_payload = backlog_data
+    else:
+        published_payload = update_published_urls(published_data, published_items, today)
+        backlog_payload = update_backlog(backlog_candidates, config)
 
     if save_today:
         save_json(today_payload, TODAY_SELECTED_PATH)
-    save_json(backlog_payload, BACKLOG_PATH)
-    save_json(published_payload, PUBLISHED_URLS_PATH)
+    if not preserve_auxiliary_state:
+        save_json(backlog_payload, BACKLOG_PATH)
+        save_json(published_payload, PUBLISHED_URLS_PATH)
 
-    logging.info("New backlog size: %s.", len(backlog_payload["items"]))
-    logging.info("published_urls updated size: %s.", len(published_payload["published_urls"]))
+    logging.info("Backlog size: %s.", len(_extract_backlog_items(backlog_payload)))
+    logging.info("published_urls size: %s.", len(_extract_published_records(published_payload)))
     if save_today:
         logging.info("Saved today selection to %s.", TODAY_SELECTED_PATH)
     else:

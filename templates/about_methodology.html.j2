@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>材料情报评估方法说明 | AURA</title>
+    <link rel="stylesheet" href="/auto-materials-brief/assets/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ root_prefix }}/index.html">
+        <span>{{ brand_en }}</span>
+        <small>{{ brand_cn }}</small>
+      </a>
+      <nav class="top-nav">
+        <a href="{{ root_prefix }}/index.html">首页</a>
+        <a href="{{ root_prefix }}/daily/">每日归档</a>
+      </nav>
+    </header>
+
+    <main class="page narrow-page methodology-page">
+      <section class="archive-hero">
+        <p class="eyebrow">Methodology</p>
+        <h1>材料情报评估方法说明</h1>
+        <p>AURA 的核心理念是：产业变化，技术演进，材料需求，验证机会。本页说明平台如何从未来产业与汽车产业变化中识别先进材料需求、验证机会和长期储备方向。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>1. 数据来源原则</h2>
+        <p>系统优先采集企业官网、政府/协会官网、学术期刊、标准组织和权威专业媒体。Bing News 仅作为补充发现渠道，今日头条、百家号、知乎、微信公众号等平台只作为线索来源。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>2. 新闻真实性要求</h2>
+        <p>每条新闻必须有真实可打开 URL、来源名称、标题和发布日期。系统不允许编造新闻、日期、来源、链接或企业信息。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>3. 去重原则</h2>
+        <p>同一事件尽量只展示一条。若存在企业原文、权威媒体和转载源，系统优先保留原始来源或高可信来源，转载与线索来源保存在 related_sources 中供后续核验。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>4. 可信度说明</h2>
+        <p>可信度用于衡量信息来源与内容可靠程度。主要参考来源权威性、是否来自原始发布方、是否有发布日期、是否有可打开原文链接、是否为转载或线索来源。80-100 映射为高，60-79 映射为中，低于 60 映射为低，缺失时标记为待验证。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>5. 来源等级说明</h2>
+        <p>Tier A 包括企业官网、政府、协会和期刊；Tier B 为专业媒体；Tier C 为聚合平台或转载源；Tier D 为线索来源，需要进一步核验。页面主链接会优先保留更接近原始发布方的来源。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>6. TRL 说明</h2>
+        <p>TRL 是 Technology Readiness Level，技术成熟度等级。1-3 通常代表实验室研究，4-6 代表工程验证，7-8 代表装车或量产前验证，9 代表已量产应用。缺少明确 TRL 时，系统根据 industrial_maturity 做粗略映射。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>7. 导入难度说明</h2>
+        <p>导入难度用于判断该技术进入企业内部验证流程的难易程度。低表示已有成熟供应链或量产案例；中表示已有样件或中试；高表示仍处于实验室或早期概念阶段。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>8. 验证价值说明</h2>
+        <p>验证价值用于判断是否值得材料科室关注、样件评估或供应商调研。星级越高，越值得进入跟踪或验证列表。当前星级由 Final Score、follow_up、priority 和分类相关性共同粗略生成。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>9. Final Score 说明</h2>
+        <p>Final Score 是综合推荐指数，由规则评分、来源权威性、优先级、可信度、技术新颖性和产业化信号综合得到，用于排序，不代表绝对结论。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>10. DeepSeek 使用边界</h2>
+        <p>DeepSeek 只用于摘要、分类、技术要点和影响评估，不作为新闻来源。系统不允许 DeepSeek 补造事实、日期、链接、来源或企业信息。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>11. 什么是技术牵引</h2>
+        <p>技术牵引指新闻背后的新技术方向可能带来的材料需求变化。例如机器人、低空经济、智能制造、氢能、储能、感知系统或功率半导体等方向，都可能牵引结构材料、热管理材料、传感材料、封装材料或电池材料需求。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>12. 什么是材料相关性</h2>
+        <p>材料相关性用于说明某项技术可能关联哪些材料方向。它不等同于新闻已经宣布使用某种材料，而是帮助材料科室识别潜在样件验证、供应商调研或前瞻储备空间。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>13. 什么是材料验证分</h2>
+        <p>V3 使用 Material Opportunity Score，0-100 分，衡量新闻对材料团队的价值。它优先考虑是否可能形成材料需求、是否值得验证、是否值得供应商调研、是否值得长期储备，而不是普通新闻热度。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>13.1 什么是 Future Signal Score</h2>
+        <p>Future Signal Score 衡量未来产业影响力，参考技术突破、产业化进展、政策推动、资本投入、标准制定和供应链变化。它帮助判断某个方向是否可能从趋势变成真实产业牵引。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>14. 什么是验证储备池</h2>
+        <p>验证储备池按建议动作分组，包括启动验证、供应商调研、持续跟踪、前瞻储备和暂不优先。它帮助研究员把每日情报转化为可执行的验证或调研清单。</p>
+      </section>
+
+      <section class="method-section">
+        <h2>15. 为什么新闻热度不等于材料导入价值</h2>
+        <p>热门新闻可能只是资本、品牌或市场事件，未必能形成明确材料需求。材料导入价值更关注是否存在可验证样件、供应链入口、性能痛点、法规或量产牵引，以及是否适合材料科室开展验证、储备或供应商调研。</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <strong>{{ brand_en }}</strong>
+      <span>{{ brand_full_en }}</span>
+    </footer>
+  </body>
+</html>

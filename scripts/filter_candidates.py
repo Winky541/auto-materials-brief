@@ -357,6 +357,137 @@ SUBCATEGORY_RULES: dict[str, list[str]] = {
     "低碳材料": ["low-carbon steel", "low-carbon aluminum", "低碳钢", "低碳铝"],
 }
 
+TECHNOLOGY_DRIVER_RULES: list[dict[str, Any]] = [
+    {
+        "driver": "机器人与具身智能",
+        "keywords": ["robot", "humanoid", "embodied ai", "automation", "robotics", "机器人", "人形机器人", "具身智能"],
+        "materials": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+        "action": "供应商调研",
+        "trend": "高",
+    },
+    {
+        "driver": "低空经济/eVTOL",
+        "keywords": ["evtol", "flying car", "low altitude", "低空经济", "飞行汽车", "小鹏汇天", "亿航"],
+        "materials": "碳纤维复合材料、轻量化合金、阻燃材料、电池材料、热管理材料",
+        "action": "前瞻储备",
+        "trend": "高",
+    },
+    {
+        "driver": "红外/短波感知",
+        "keywords": ["lidar", "sensor", "infrared", "swir", "thermal imaging", "激光雷达", "红外", "热成像", "感知"],
+        "materials": "光学材料、红外探测材料、封装材料、热管理材料",
+        "action": "供应商调研",
+        "trend": "中",
+    },
+    {
+        "driver": "氢能/燃料电池",
+        "keywords": ["hydrogen", "fuel cell", "氢能", "燃料电池"],
+        "materials": "膜电极、催化剂、储氢材料、密封材料",
+        "action": "持续跟踪",
+        "trend": "中",
+    },
+    {
+        "driver": "智能制造",
+        "keywords": ["smart manufacturing", "additive manufacturing", "3d printing", "智能制造", "增材制造", "3d打印"],
+        "materials": "金属粉末、增材制造材料、涂层材料、结构胶",
+        "action": "供应商调研",
+        "trend": "中",
+    },
+    {
+        "driver": "自动驾驶/智能驾驶",
+        "keywords": ["autonomous driving", "adas", "自动驾驶", "智能驾驶"],
+        "materials": "传感材料、光学材料、封装材料、导热材料",
+        "action": "持续跟踪",
+        "trend": "中",
+    },
+    {
+        "driver": "电池与储能",
+        "keywords": ["battery", "energy storage", "solid-state", "sodium-ion", "固态电池", "钠离子", "储能", "电池"],
+        "materials": "正负极材料、电解质、隔膜、集流体、热管理材料",
+        "action": "启动验证",
+        "trend": "高",
+    },
+    {
+        "driver": "功率半导体",
+        "keywords": ["sic", "gan", "power module", "power semiconductor", "碳化硅", "氮化镓", "功率模块", "功率半导体"],
+        "materials": "封装材料、导热材料、绝缘材料、银烧结材料",
+        "action": "供应商调研",
+        "trend": "高",
+    },
+]
+
+
+def infer_material_opportunity(item: dict[str, Any]) -> dict[str, Any]:
+    """Infer technology-driver and material-validation fields by rules."""
+    text = _text_for_item(item)
+    rule_score = int(item.get("rule_score", 0) or 0)
+    source_score = int(item.get("source_score", 0) or 0)
+    matched_rule: dict[str, Any] | None = None
+
+    for rule in TECHNOLOGY_DRIVER_RULES:
+        if _matched_keywords(text, rule["keywords"]):
+            matched_rule = rule
+            break
+
+    if not matched_rule:
+        score = min(45, round(rule_score * 0.45 + source_score * 0.2))
+        future_score = min(40, round(rule_score * 0.35 + source_score * 0.2))
+        return {
+            "technology_driver": "其他",
+            "material_relevance": "材料相关性较弱，暂不优先。",
+            "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
+            "suggested_action": "暂不优先",
+            "trend_potential": "不确定",
+            "future_signal_score": max(0, future_score),
+            "material_opportunity_score": max(0, score),
+            "material_validation_score": max(0, score),
+        }
+
+    industrial_matches = _matched_keywords(text, INDUSTRIALIZATION_KEYWORDS)
+    material_matches = detect_material_keywords(item)
+    company_matches = detect_companies(item)
+    score = 30
+    score += min(25, len(material_matches) * 5)
+    score += min(15, len(company_matches) * 5)
+    score += min(15, len(industrial_matches) * 5)
+    score += min(15, round(source_score / 100 * 15))
+    if matched_rule["trend"] == "高":
+        score += 8
+    elif matched_rule["trend"] == "中":
+        score += 4
+    score = max(0, min(100, score))
+    future_score = 25
+    future_score += min(20, len(industrial_matches) * 6)
+    future_score += min(15, len(company_matches) * 5)
+    future_score += min(20, round(source_score / 100 * 20))
+    future_score += 20 if matched_rule["trend"] == "高" else 10 if matched_rule["trend"] == "中" else 4
+    future_score = max(0, min(100, future_score))
+
+    if score >= 78 and matched_rule["action"] in {"启动验证", "供应商调研"}:
+        action = matched_rule["action"]
+    elif score >= 62:
+        action = "供应商调研" if matched_rule["action"] == "启动验证" else matched_rule["action"]
+    elif score >= 45:
+        action = "持续跟踪"
+    else:
+        action = "前瞻储备"
+
+    opportunity = (
+        f"该技术动向可能牵引{matched_rule['materials']}需求。"
+        f"当前材料验证分为 {score}，"
+        f"{'具备样件验证或供应商调研价值。' if score >= 60 else '更适合作为前瞻储备或持续跟踪。'}"
+    )
+    return {
+        "technology_driver": matched_rule["driver"],
+        "material_relevance": matched_rule["materials"],
+        "validation_opportunity": opportunity,
+        "suggested_action": action,
+        "trend_potential": matched_rule["trend"],
+        "future_signal_score": future_score,
+        "material_opportunity_score": score,
+        "material_validation_score": score,
+    }
+
 
 def load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
     """Load configuration and fill stage-3 defaults."""
@@ -599,6 +730,7 @@ def filter_and_rank_candidates(
         item["subcategory"] = detect_subcategory(item)
         item["detected_companies"] = detect_companies(item)
         item["detected_material_keywords"] = detect_material_keywords(item)
+        item.update(infer_material_opportunity(item))
         item["filter_reason"] = filter_reason
         item["needs_ai_analysis"] = True
         item["_normalized_title"] = normalize_text(title)

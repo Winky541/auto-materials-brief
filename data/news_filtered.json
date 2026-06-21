@@ -19,6 +19,14 @@
       "sodium-ion battery",
       "lithium-ion"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
+    "suggested_action": "供应商调研",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 68,
+    "material_validation_score": 68,
     "filter_reason": "source=18; automotive=10 (electric vehicle, vehicle); materials=12 (battery, sodium-ion battery, lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -41,6 +49,14 @@
       "battery",
       "sodium-ion battery"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
+    "suggested_action": "供应商调研",
+    "trend_potential": "高",
+    "future_signal_score": 70,
+    "material_opportunity_score": 68,
+    "material_validation_score": 68,
     "filter_reason": "source=18; automotive=10 (EV, vehicle); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=3 (plant); current_month=5",
     "needs_ai_analysis": true
   },
@@ -63,6 +79,14 @@
       "battery",
       "sodium-ion battery"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
+    "suggested_action": "供应商调研",
+    "trend_potential": "高",
+    "future_signal_score": 70,
+    "material_opportunity_score": 68,
+    "material_validation_score": 68,
     "filter_reason": "source=18; automotive=10 (electric vehicle, vehicle); materials=8 (battery, sodium-ion battery); companies=5 (CATL); industrial=3 (mass production); current_month=5",
     "needs_ai_analysis": true
   },
@@ -84,6 +108,14 @@
     "detected_material_keywords": [
       "lithium-ion"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 58，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 58,
+    "material_validation_score": 58,
     "filter_reason": "source=18; automotive=15 (EV, electric vehicle, vehicle); materials=4 (lithium-ion); companies=5 (CATL); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -106,6 +138,14 @@
       "battery",
       "sodium-ion battery"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
+    "suggested_action": "供应商调研",
+    "trend_potential": "高",
+    "future_signal_score": 70,
+    "material_opportunity_score": 68,
+    "material_validation_score": 68,
     "filter_reason": "source=18; automotive=5 (EV); materials=8 (battery, sodium-ion battery); companies=5 (GM); industrial=3 (prototype); current_month=5",
     "needs_ai_analysis": true
   },
@@ -125,6 +165,14 @@
     "detected_material_keywords": [
       "battery"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 54，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 60,
+    "material_opportunity_score": 54,
+    "material_validation_score": 54,
     "filter_reason": "source=19; automotive=15 (EV, electric vehicle, vehicle); materials=4 (battery); companies=0 (none); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -144,6 +192,14 @@
       "GM"
     ],
     "detected_material_keywords": [],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 53，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 53,
+    "material_validation_score": 53,
     "filter_reason": "source=18; automotive=15 (EV, vehicle, car); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -163,6 +219,14 @@
     "detected_material_keywords": [
       "SiC"
     ],
+    "technology_driver": "功率半导体",
+    "material_relevance": "封装材料、导热材料、绝缘材料、银烧结材料",
+    "validation_opportunity": "该技术动向可能牵引封装材料、导热材料、绝缘材料、银烧结材料需求。当前材料验证分为 54，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 60,
+    "material_opportunity_score": 54,
+    "material_validation_score": 54,
     "filter_reason": "source=19; automotive=15 (EV, automotive, car); materials=4 (SiC); companies=0 (none); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -182,6 +246,14 @@
       "GM"
     ],
     "detected_material_keywords": [],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 53，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 53,
+    "material_validation_score": 53,
     "filter_reason": "source=18; automotive=15 (electric vehicle, vehicle, car); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -203,6 +275,14 @@
     "detected_material_keywords": [
       "battery"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 58，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 58,
+    "material_validation_score": 58,
     "filter_reason": "source=18; automotive=10 (EV, automaker); materials=4 (battery); companies=5 (GM); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -224,6 +304,14 @@
     "detected_material_keywords": [
       "battery"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 58，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 58,
+    "material_validation_score": 58,
     "filter_reason": "source=18; automotive=10 (EV, automaker); materials=4 (battery); companies=5 (GM); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -241,6 +329,14 @@
     "subcategory": "",
     "detected_companies": [],
     "detected_material_keywords": [],
+    "technology_driver": "其他",
+    "material_relevance": "材料相关性较弱，暂不优先。",
+    "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
+    "suggested_action": "暂不优先",
+    "trend_potential": "不确定",
+    "future_signal_score": 27,
+    "material_opportunity_score": 31,
+    "material_validation_score": 31,
     "filter_reason": "source=18; automotive=15 (EV, electric vehicle, vehicle); materials=0 (none); companies=0 (none); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -262,6 +358,14 @@
     "detected_material_keywords": [
       "battery"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 58，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 64,
+    "material_opportunity_score": 58,
+    "material_validation_score": 58,
     "filter_reason": "source=18; automotive=5 (EV); materials=4 (battery); companies=5 (GM); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   },
@@ -282,6 +386,14 @@
       "battery",
       "sodium-ion battery"
     ],
+    "technology_driver": "电池与储能",
+    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
+    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 58，更适合作为前瞻储备或持续跟踪。",
+    "suggested_action": "持续跟踪",
+    "trend_potential": "高",
+    "future_signal_score": 59,
+    "material_opportunity_score": 58,
+    "material_validation_score": 58,
     "filter_reason": "source=18; automotive=5 (automaker); materials=8 (battery, sodium-ion battery); companies=0 (none); industrial=0 (none); current_month=5",
     "needs_ai_analysis": true
   }

@@ -1,4 +1,4 @@
-"""Push today's Auto Materials Brief summary to DingTalk.
+"""Push today's AURA summary to DingTalk.
 
 This stage reads data/today_selected.json and formats a Markdown group message.
 If DINGTALK_WEBHOOK is not configured, it runs in dry-run mode and prints the
@@ -27,7 +27,7 @@ TODAY_SELECTED_PATH = PROJECT_ROOT / "data" / "today_selected.json"
 ENV_PATH = PROJECT_ROOT / ".env"
 
 # Keep this exact phrase in every DingTalk message body for keyword validation.
-MESSAGE_TITLE = "汽车新材料与前沿技术简报"
+MESSAGE_TITLE = "AURA｜未来产业、技术与材料情报平台"
 REQUEST_TIMEOUT_SECONDS = 20
 
 CATEGORY_ORDER = [

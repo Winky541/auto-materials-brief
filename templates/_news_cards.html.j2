@@ -1,14 +1,41 @@
 {% for item in items %}
-<article class="news-card" style="--category-color: {{ category_colors.get(item.category, '#6B7280') }}">
+<article class="news-card" data-research-card data-research-directions="{{ item.research_direction_attr }}" style="--category-color: {{ category_colors.get(item.category, '#6B7280') }}">
   <div class="category-line"></div>
   <div class="card-meta">
     <span>{{ item.source }}</span>
     <span>{{ item.published_date }}</span>
     <span>{{ item.category }}</span>
+    <span>来源等级 {{ item.source_tier }} <button class="info-button compact" type="button" data-metric="source_tier" aria-label="查看来源等级说明">ⓘ</button></span>
     {% if item.subcategory %}<span>{{ item.subcategory }}</span>{% endif %}
   </div>
   <h3>{{ item.title }}</h3>
   <p class="summary">{{ item.summary }}</p>
+
+  <section class="research-eval" aria-label="研究员评估">
+    <div class="eval-heading">研究员评估</div>
+    <div class="eval-metrics">
+      <span>技术牵引：<strong>{{ item.technology_driver }}</strong></span>
+      <span>趋势潜力：<strong>{{ item.trend_potential }}</strong></span>
+      <span>Future Signal：<strong>{{ item.future_signal_score }}</strong> <button class="info-button" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+      <span>Material Opportunity：<strong>{{ item.material_opportunity_score }}</strong> <button class="info-button" type="button" data-metric="material_validation_score" aria-label="查看材料机会分说明">ⓘ</button></span>
+      <span>建议动作：<strong>{{ item.suggested_action }}</strong></span>
+      <span>可信度：<strong>{{ item.research_eval.credibility }}</strong> <button class="info-button" type="button" data-metric="credibility" aria-label="查看可信度说明">ⓘ</button></span>
+      <span>TRL：<strong>{{ item.research_eval.trl }}</strong> <button class="info-button" type="button" data-metric="trl" aria-label="查看TRL说明">ⓘ</button></span>
+      <span>导入难度：<strong>{{ item.research_eval.import_difficulty }}</strong> <button class="info-button" type="button" data-metric="import_difficulty" aria-label="查看导入难度说明">ⓘ</button></span>
+      <span>验证价值：<strong class="stars">{{ item.research_eval.validation_value }}</strong> <button class="info-button" type="button" data-metric="validation_value" aria-label="查看验证价值说明">ⓘ</button></span>
+    </div>
+  </section>
+
+  <div class="material-opportunity">
+    <div>
+      <h4>材料相关性</h4>
+      <p>{{ item.material_relevance }}</p>
+    </div>
+    <div>
+      <h4>验证机会</h4>
+      <p>{{ item.validation_opportunity }}</p>
+    </div>
+  </div>
 
   <div class="detail-grid">
     <div>
@@ -54,14 +81,25 @@
     </div>
   </div>
 
+  <div class="related-sources">
+    <h4>相关报道</h4>
+    <div>
+      {% for related in item.related_sources %}
+      <a href="{{ related.url }}" target="_blank" rel="noopener noreferrer">{{ related.source }}</a>
+      {% else %}
+      <span>暂无合并报道</span>
+      {% endfor %}
+    </div>
+  </div>
+
   <footer class="card-footer">
     <div class="score-row">
       <span>成熟度 {{ item.industrial_maturity }}</span>
-      <span>优先级 {{ item.priority }}</span>
-      <span>可信度 {{ item.confidence }}</span>
-      {% if item.final_score is defined %}<span>Final {{ item.final_score }}</span>{% endif %}
+      <span>优先级 {{ item.priority }} <button class="info-button compact" type="button" data-metric="priority" aria-label="查看优先级说明">ⓘ</button></span>
+      <span>可信度 {{ item.research_eval.credibility }}</span>
+      {% if item.final_score is defined %}<span>Final Score {{ item.final_score }} <button class="info-button compact" type="button" data-metric="final_score" aria-label="查看Final Score说明">ⓘ</button></span>{% endif %}
     </div>
-    <a class="read-more" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">阅读全文</a>
+    <a class="read-more" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">阅读原文</a>
   </footer>
 </article>
 {% else %}

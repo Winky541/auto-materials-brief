@@ -1,0 +1,44 @@
+<div class="metric-modal" id="metricModal" aria-hidden="true">
+  <div class="metric-modal-backdrop" data-close-modal></div>
+  <section class="metric-modal-panel" role="dialog" aria-modal="true" aria-labelledby="metricModalTitle">
+    <button class="metric-modal-close" type="button" data-close-modal aria-label="关闭说明">×</button>
+    <p class="eyebrow">Metric Notes</p>
+    <h2 id="metricModalTitle">指标说明</h2>
+    <p id="metricModalBody"></p>
+    <a class="method-link" href="{{ methodology_href }}">查看完整方法说明</a>
+  </section>
+</div>
+
+<script>
+  (() => {
+    const explanations = {{ metric_explanations | json }};
+    const modal = document.getElementById("metricModal");
+    const title = document.getElementById("metricModalTitle");
+    const body = document.getElementById("metricModalBody");
+    if (!modal || !title || !body) return;
+
+    const openModal = (key) => {
+      const note = explanations[key];
+      if (!note) return;
+      title.textContent = note.title;
+      body.textContent = note.body;
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+    };
+
+    const closeModal = () => {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+    };
+
+    document.querySelectorAll("[data-metric]").forEach((button) => {
+      button.addEventListener("click", () => openModal(button.dataset.metric));
+    });
+    document.querySelectorAll("[data-close-modal]").forEach((button) => {
+      button.addEventListener("click", closeModal);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeModal();
+    });
+  })();
+</script>
