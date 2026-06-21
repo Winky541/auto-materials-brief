@@ -274,6 +274,22 @@ METRIC_EXPLANATIONS = {
         "title": "Material Opportunity Score",
         "body": "材料机会分衡量这条新闻对材料团队的价值，重点看是否可能形成材料需求、是否值得验证、是否值得供应商调研或长期储备。它不是新闻热度分。",
     },
+    "material_value": {
+        "title": "Material Value",
+        "body": "Material Value 是某个材料机会主题的综合价值分，来自相关新闻中的 Material Opportunity Score。它用于判断这个主题是否值得材料团队投入注意力、供应商调研或样件验证，不代表商业成功概率。",
+    },
+    "validation_priority": {
+        "title": "Validation Priority",
+        "body": "Validation Priority 是材料机会主题的验证优先级。High 通常表示近期值得进入验证或供应商调研；Medium 表示需要持续跟踪并等待更多产业化信号；Low 表示仍偏早期或证据不足。",
+    },
+    "suggested_action": {
+        "title": "Suggested Action",
+        "body": "Suggested Action 是给材料科室的下一步动作建议。Technology Watch 表示持续观察；Supplier Research 表示调研供应商和样件可得性；Lab Evaluation 表示可考虑实验验证；Joint Development 表示适合联合开发；Strategic Reserve 表示适合前瞻储备。",
+    },
+    "material_opportunity": {
+        "title": "Material Opportunity",
+        "body": "Material Opportunity 说明这条产业或技术信号可能牵引出的材料需求，例如电池材料、热管理材料、复合材料、功能材料、封装材料或可持续材料。它强调材料团队能否从新闻中找到可行动的机会。",
+    },
     "future_signal_score": {
         "title": "Future Signal Score",
         "body": "Future Signal Score 衡量未来产业影响力，参考技术突破、产业化进展、政策推动、资本投入、标准制定和供应链变化。它用于判断某个方向是否可能从趋势变成真实产业牵引。",

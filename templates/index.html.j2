@@ -57,8 +57,8 @@
           <article>
             <span>{{ item.source }} · {{ item.published_date }}</span>
             <h3><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h3>
-            <p>Material Opportunity: {{ item.material_opportunity }}</p>
-            <strong>Suggested Action: {{ item.suggested_action_en }} / {{ item.suggested_action_zh }}</strong>
+            <p>Material Opportunity <button class="info-button compact" type="button" data-metric="material_opportunity" aria-label="查看Material Opportunity说明">ⓘ</button>: {{ item.material_opportunity }}</p>
+            <strong>Suggested Action <button class="info-button compact" type="button" data-metric="suggested_action" aria-label="查看Suggested Action说明">ⓘ</button>: {{ item.suggested_action_en }} / {{ item.suggested_action_zh }}</strong>
             <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">阅读原文</a>
           </article>
           {% endfor %}
@@ -85,10 +85,15 @@
           <article>
             <div class="topic-topline">
               <span>{{ topic.domain }}</span>
-              <b>{{ topic.validation_priority }}</b>
+              <b>{{ topic.validation_priority }} <button class="info-button compact" type="button" data-metric="validation_priority" aria-label="查看Validation Priority说明">ⓘ</button></b>
             </div>
             <h3>{{ topic.topic }}</h3>
-            <p>Material Value {{ topic.material_value }} · {{ topic.suggested_action }}</p>
+            <p>
+              Material Value {{ topic.material_value }}
+              <button class="info-button compact" type="button" data-metric="material_value" aria-label="查看Material Value说明">ⓘ</button>
+              · {{ topic.suggested_action }}
+              <button class="info-button compact" type="button" data-metric="suggested_action" aria-label="查看Suggested Action说明">ⓘ</button>
+            </p>
             <div class="related-signal-list">
               {% for signal in topic.related_signals %}
               <a href="{{ signal.url }}" target="_blank" rel="noopener noreferrer">{{ signal.title }}</a>
@@ -109,7 +114,7 @@
           <article>
             <span class="new-pill">NEW</span>
             <strong>{{ topic.topic }}</strong>
-            <span>{{ topic.domain }} · {{ topic.suggested_action }}</span>
+            <span>{{ topic.domain }} · {{ topic.suggested_action }} <button class="info-button compact" type="button" data-metric="suggested_action" aria-label="查看Suggested Action说明">ⓘ</button></span>
           </article>
           {% endfor %}
         </div>
@@ -167,7 +172,7 @@
           {% for radar in future_radar %}
           <article>
             <strong>{{ radar.category }}</strong>
-            <span>{{ radar.count }} 条 · Future Signal {{ radar.avg_future_signal_score }}</span>
+            <span>{{ radar.count }} 条 · Future Signal {{ radar.avg_future_signal_score }} <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
           </article>
           {% else %}
           <article>
