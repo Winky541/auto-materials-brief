@@ -253,6 +253,48 @@ a {
   text-align: center;
 }
 
+.material-canvas {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1.05fr 0.95fr 1.25fr 1fr;
+  margin-top: 14px;
+  max-width: 760px;
+}
+
+.material-canvas span {
+  align-items: end;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.20), rgba(255,255,255,0)),
+    var(--tile);
+  border: 1px solid rgba(255,255,255,0.38);
+  border-radius: 16px;
+  box-shadow: 0 16px 32px rgba(31, 41, 51, 0.09);
+  color: #fff;
+  display: flex;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  min-height: 112px;
+  padding: 14px;
+}
+
+.material-canvas span:nth-child(1) {
+  --tile: #6B8E6E;
+}
+
+.material-canvas span:nth-child(2) {
+  --tile: #C8A45A;
+  margin-top: 20px;
+}
+
+.material-canvas span:nth-child(3) {
+  --tile: #C97B63;
+}
+
+.material-canvas span:nth-child(4) {
+  --tile: #4A6FA5;
+  margin-top: 20px;
+}
+
 .palette-strip {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -588,6 +630,18 @@ a {
     linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.58)),
     linear-gradient(135deg, rgba(74, 111, 165, 0.08), rgba(141, 122, 184, 0.08));
   min-height: 220px;
+  overflow: hidden;
+}
+
+.topic-grid article::after {
+  background:
+    linear-gradient(90deg, rgba(107, 142, 110, 0.82), rgba(200, 164, 90, 0.74), rgba(201, 123, 99, 0.78));
+  bottom: 0;
+  content: "";
+  height: 6px;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .topic-topline {
@@ -1298,6 +1352,17 @@ a {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .material-canvas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .material-canvas span,
+  .material-canvas span:nth-child(2),
+  .material-canvas span:nth-child(4) {
+    margin-top: 0;
+    min-height: 86px;
+  }
+
   .detail-grid,
   .assessment,
   .material-opportunity,
@@ -1344,6 +1409,10 @@ a {
 
   .aura-palette {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .material-canvas {
+    grid-template-columns: 1fr;
   }
 
   .news-card {
