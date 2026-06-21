@@ -62,6 +62,83 @@
       "published_date": "2026-06-14",
       "selected_date": "2026-06-14",
       "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.carsguide.com.au/car-news/forget-solid-state-batteries-the-future-is-sodium-ion-and-lithium-air-cells-according-to",
+      "title": "Forget solid-state batteries, the future is sodium-ion and lithium-air cells according to CATL, the world's largest battery maker that supplies Tesla, Toyota",
+      "published_date": "2026-06-01",
+      "selected_date": "2026-06-16",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.msn.com/en-us/autos/news/bmw-s-electric-m3-may-ditch-carbon-fiber-for-something-greener/ar-AA25GZVv",
+      "title": "BMW’s Electric M3 May Ditch Carbon Fiber For Something Greener",
+      "published_date": "2026-06-15",
+      "selected_date": "2026-06-16",
+      "category": "复合材料"
+    },
+    {
+      "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
+      "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
+      "published_date": "2026-06-09",
+      "selected_date": "2026-06-16",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.theverge.com/transportation/946820/gm-energy-ev-v2g-storage-sodium-ion",
+      "title": "GM thinks EVs can help offset AI’s energy suck with vehicle-to-grid tech",
+      "published_date": "2026-06-10",
+      "selected_date": "2026-06-17",
+      "category": "其他"
+    },
+    {
+      "url": "https://www.aol.com/articles/bmws-electric-m3-replace-carbon-193002000.html",
+      "title": "BMW's Electric M3 Will Replace Carbon Fiber With Natural Fiber Materials For Sustainability",
+      "published_date": "2026-06-17",
+      "selected_date": "2026-06-17",
+      "category": "复合材料"
+    },
+    {
+      "url": "https://www.msn.com/en-us/news/technology/gm-to-develop-sodium-ion-batteries-for-data-center-energy-storage/ar-AA25Psmb",
+      "title": "GM to develop sodium-ion batteries for data center energy storage",
+      "published_date": "2026-06-16",
+      "selected_date": "2026-06-18",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.forbes.com/sites/alanohnsman/2026/06/09/gm-doubles-down-on-energy-business-to-serve-data-center-electricity-demand/",
+      "title": "GM Doubles Down On Energy Business To Serve Data Center Electricity Demand",
+      "published_date": "2026-06-09",
+      "selected_date": "2026-06-18",
+      "category": "其他"
+    },
+    {
+      "url": "https://finance.yahoo.com/sectors/energy/articles/gm-partners-peak-energy-sodium-115423229.html",
+      "title": "GM partners with Peak Energy on sodium-ion grid storage batteries",
+      "published_date": "2026-06-10",
+      "selected_date": "2026-06-19",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://arstechnica.com/cars/2026/06/gm-energy-introduces-v2g-support-and-new-energy-storage-battery-chemistry/",
+      "title": "GM Energy introduces V2G support and new energy storage battery chemistry",
+      "published_date": "2026-06-10",
+      "selected_date": "2026-06-19",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.msn.com/en-us/news/technology/sodium-batteries-and-evs-that-power-the-grid-inside-gms-big-energy-push/ar-AA25CHtV",
+      "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
+      "published_date": "2026-06-13",
+      "selected_date": "2026-06-20",
+      "category": "其他"
+    },
+    {
+      "url": "https://www.msn.com/en-us/autos/news/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
+      "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
+      "published_date": "2026-06-04",
+      "selected_date": "2026-06-20",
+      "category": "复合材料"
     }
   ]
 }

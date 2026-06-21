@@ -1,11 +1,41 @@
 [
   {
+    "title": "Why General Motors Is Betting on Sodium-Ion Batteries",
+    "source": "Bing News",
+    "published_date": "2026-06-18",
+    "url": "https://insideclimatenews.org/news/18062026/inside-clean-energy-general-motors-sodium-ion-batteries/",
+    "summary": "Peak Energy announced last week that it has entered a new partnership with General Motors to manufacture sodium-ion batteries for energy storage systems. The deal marks a pivotal moment for Peak, a ...",
+    "collected_at": "2026-06-20T18:40:02+08:00",
+    "source_type": "bing_news",
+    "source_score": 70
+  },
+  {
+    "title": "Hybrid composites surge toward 2031 with aerospace, automotive, and defense gains",
+    "source": "Bing News",
+    "published_date": "2026-06-17",
+    "url": "https://www.msn.com/en-us/travel/news/hybrid-composites-surge-toward-2031-with-aerospace-automotive-and-defense-gains/ar-AA25QFnC",
+    "summary": "The needle on the radar screen indicating the composites hybrids market no longer moves with gentle, measured steps but instead with rapid strides. Industry statistics forecast healthy growth into ...",
+    "collected_at": "2026-06-20T18:40:02+08:00",
+    "source_type": "bing_news",
+    "source_score": 70
+  },
+  {
+    "title": "GM to develop sodium-ion batteries for data center energy storage",
+    "source": "Bing News",
+    "published_date": "2026-06-16",
+    "url": "https://www.msn.com/en-us/news/technology/gm-to-develop-sodium-ion-batteries-for-data-center-energy-storage/ar-AA25Psmb",
+    "summary": "General Motors partners with Peak Energy on sodium-ion battery storage ...",
+    "collected_at": "2026-06-20T18:40:02+08:00",
+    "source_type": "bing_news",
+    "source_score": 70
+  },
+  {
     "title": "IAV and Nexperia explore software-defined battery architecture for electric vehicles",
     "source": "Bing News",
     "published_date": "2026-06-14",
     "url": "https://www.newelectronics.co.uk/content/news/iav-and-nexperia-explore-software-defined-battery-architecture-for-electric-vehicles",
     "summary": "Engineering firm IAV and semiconductor company Nexperia have developed a new concept aimed at improving how electric vehicle (EV) batteries are used, focusing on maximising value from existing cells ...",
-    "collected_at": "2026-06-14T19:15:42+08:00",
+    "collected_at": "2026-06-20T18:40:03+08:00",
     "source_type": "bing_news",
     "source_score": 75
   },
@@ -13,11 +43,21 @@
     "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
     "source": "Bing News",
     "published_date": "2026-06-13",
-    "url": "https://insideevs.com/news/798630/gm-sodium-ion-battery-vehicle-to-grid-tech/",
+    "url": "https://www.msn.com/en-us/news/technology/sodium-batteries-and-evs-that-power-the-grid-inside-gms-big-energy-push/ar-AA25CHtV",
     "summary": "With sodium-ion batteries and vehicle-to-grid technology, General Motors' growth ambitions extend far beyond cars.",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
+  },
+  {
+    "title": "How EV power electronics are shaping the next AI data centre",
+    "source": "Bing News",
+    "published_date": "2026-06-11",
+    "url": "https://www.dqindia.com/semiconductors/how-800v-ev-innovations-are-redefining-ai-data-centers-12004399",
+    "summary": "AI has become increasingly mainstream, and leading AI software players, especially across the USA and China, have invested US$ billions of capital ...",
+    "collected_at": "2026-06-20T18:40:03+08:00",
+    "source_type": "bing_news",
+    "source_score": 75
   },
   {
     "title": "TIM requirements in EVs vs. EV charging infrastructure",
@@ -25,7 +65,7 @@
     "published_date": "2026-06-11",
     "url": "https://www.eeworldonline.com/tim-requirements-in-evs-vs-ev-charging-infrastructure-2/",
     "summary": "Thermal interface materials (TIMs), adhesives, and sealants operate within fundamentally different constraints in electric vehicles (EVs) and high-power charging infrastructure.",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   },
@@ -35,7 +75,7 @@
     "published_date": "2026-06-11",
     "url": "https://www.techtimes.com/articles/318197/20260611/gm-activates-250000-evs-vehicle-grid-sodium-ion-batteries-target-grid-peaker-replacement.htm",
     "summary": "GM vehicle-to-grid activation at GM Empower 2026 turns 250,000 existing bidirectional EVs into a virtual power plant via software alone, with no new hardware required. A sodium-ion battery R&D partner ...",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   },
@@ -45,27 +85,17 @@
     "published_date": "2026-06-10",
     "url": "https://www.msn.com/en-us/autos/news/catl-says-its-next-sodium-ion-battery-clears-500-kilometers-and-is-ready-for-mass-production/ar-AA25iOtc",
     "summary": "CATL, the world’s largest electric vehicle battery maker, announced that its new sodium-ion battery pack called Naxtra can deliver a 500-kilometer driving range at an energy density of 175 watt-hours ...",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   },
   {
-    "title": "GM Energy introduces V2G support and new energy storage battery chemistry",
+    "title": "GM Expands Into Grid Storage and Vehicle-to-Grid Energy Networks",
     "source": "Bing News",
     "published_date": "2026-06-10",
-    "url": "https://arstechnica.com/cars/2026/06/gm-energy-introduces-v2g-support-and-new-energy-storage-battery-chemistry/",
-    "summary": "Still, at a GM event Ars attended in San Francisco this week, the company continues to stick to its guns with an EV lineup spanning its brands. The automaker shared that it has also been working ...",
-    "collected_at": "2026-06-14T19:15:41+08:00",
-    "source_type": "bing_news",
-    "source_score": 70
-  },
-  {
-    "title": "GM's New Plug: Sodium-ion Batteries and Energy Transfer",
-    "source": "Bing News",
-    "published_date": "2026-06-10",
-    "url": "https://finance.yahoo.com/sectors/energy/articles/gms-plug-sodium-ion-batteries-170230247.html",
-    "summary": "General Motors is making a two-pronged push into the energy business: a software update that lets EV owners sell power back to the grid, and a new partnership with startup Peak Energy to develop ...",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/gm-expands-grid-storage-vehicle-054132104.html",
+    "summary": "GM unveiled new initiatives linking electric vehicles, batteries, and power grids to support growing electricity demand.",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   },
@@ -75,37 +105,7 @@
     "published_date": "2026-06-10",
     "url": "https://finance.yahoo.com/sectors/energy/articles/gm-partners-peak-energy-sodium-115423229.html",
     "summary": "The automaker's GM Ventures arm is taking an equity stake in Peak Energy as the two companies develop battery cells for large-scale energy storage ...",
-    "collected_at": "2026-06-14T19:15:41+08:00",
-    "source_type": "bing_news",
-    "source_score": 70
-  },
-  {
-    "title": "GM gets datacenter fever, decides to build grid-scale sodium-ion batteries",
-    "source": "Bing News",
-    "published_date": "2026-06-10",
-    "url": "https://www.theregister.com/on-prem/2026/06/10/gm-gets-datacenter-fever-turns-to-grid-scale-sodium-ion-batteries/5253699",
-    "summary": "The lure of datacenter dollars is a strong one for America’s mega corporations - so strong that even automobile giant General Motors is getting in on the game by turning its battery research efforts ...",
-    "collected_at": "2026-06-14T19:15:41+08:00",
-    "source_type": "bing_news",
-    "source_score": 70
-  },
-  {
-    "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
-    "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
-    "summary": "Collaboration focused on silicon carbide (SiC)-based power modules for automotive traction inverter applications.",
-    "collected_at": "2026-06-14T19:15:42+08:00",
-    "source_type": "bing_news",
-    "source_score": 75
-  },
-  {
-    "title": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
-    "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.msn.com/en-us/autos/news/gm-to-develop-sodium-ion-battery-cells-for-energy-storage-not-evs/ar-AA25dSdc",
-    "summary": "A new prototype cell production lab will let GM develop cheaper cells faster, expanding its battery business to boost its future EVs and potentially lower their batteries' cost.",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   },
@@ -115,7 +115,7 @@
     "published_date": "2026-06-09",
     "url": "https://www.aol.com/lifestyle/chinese-battery-giant-catl-plans-230016306.html",
     "summary": "For years, lithium-ion batteries have dominated the electric vehicle industry almost uncontested. Now, China’s largest battery manufacturers are preparing to push an alternative chemistry into the ...",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   },
@@ -125,17 +125,17 @@
     "published_date": "2026-06-09",
     "url": "https://www.msn.com/en-nz/news/other/general-motors-is-bringing-sodium-ion-battery-production-to-america/ar-AA25klkk",
     "summary": "After LFP and LMR, the automaker is betting on yet another battery chemistry type.",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   },
   {
-    "title": "GM Doubles Down On Energy Business To Serve Data Center Electricity Demand",
+    "title": "Op-Ed: Sodium-ion batteries are not the end of lithium, but they may be the end of something else",
     "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.forbes.com/sites/alanohnsman/2026/06/09/gm-doubles-down-on-energy-business-to-serve-data-center-electricity-demand/",
-    "summary": "The carmaker scaled back electric vehicle plans, but is going all in on advanced batteries, including a new sodium-ion chemistry designed for large-scale power storage.",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "published_date": "2026-06-07",
+    "url": "https://www.mining.com/op-ed-sodium-ion-batteries-are-not-the-end-of-lithium-but-they-may-be-the-end-of-something-else/",
+    "summary": "Lithium solved a very real problem, offering energy density high enough to make modern portable electronics and electric vehicles commercially viable.",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   },
@@ -145,9 +145,19 @@
     "published_date": "2026-06-05",
     "url": "https://electronics360.globalspec.com/article/23865/cosmic-brings-its-latest-high-power-semiconductor-testing-platforms-to-pcim-europe-2026",
     "summary": "Semiconductor testing solutions developer Cosmic is making its global debut at PCIM Expo. The company will showcase its latest innovations at the Nuremberg Exhibition Centre in Germany from June 9 to ...",
-    "collected_at": "2026-06-14T19:15:42+08:00",
+    "collected_at": "2026-06-20T18:40:03+08:00",
     "source_type": "bing_news",
     "source_score": 75
+  },
+  {
+    "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
+    "source": "Bing News",
+    "published_date": "2026-06-04",
+    "url": "https://www.msn.com/en-us/autos/news/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
+    "summary": "A Nissan 240SX built as a carbon fiber drift car takes the spotlight in this automotive clip. The title highlights a custom JDM project that blends lightweight bodywork with the aggressive styling ...",
+    "collected_at": "2026-06-20T18:40:02+08:00",
+    "source_type": "bing_news",
+    "source_score": 70
   },
   {
     "title": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
@@ -155,7 +165,7 @@
     "published_date": "2026-06-01",
     "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
     "summary": "The race to develop the next generation of electric vehicle batteries is heating up, and CATL believes it may have found one of the industry’s most promising alternatives to lithium-ion technology.",
-    "collected_at": "2026-06-14T19:15:41+08:00",
+    "collected_at": "2026-06-20T18:40:02+08:00",
     "source_type": "bing_news",
     "source_score": 70
   }

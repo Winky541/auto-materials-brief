@@ -27,14 +27,6 @@
     "confidence": 90,
     "follow_up": true,
     "one_sentence": "CATL计划在数月内推出钠离子电池，标志着钠离子电池产业化迈出关键一步。",
-    "technology_driver": "电池与储能",
-    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
-    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
-    "suggested_action": "供应商调研",
-    "trend_potential": "高",
-    "future_signal_score": 64,
-    "material_opportunity_score": 68,
-    "material_validation_score": 68,
     "analysis_status": "success"
   },
   {
@@ -64,14 +56,6 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "通用汽车通过软件激活25万辆电动汽车组成虚拟电厂，并推进钠离子电池替代电网调峰电站。",
-    "technology_driver": "电池与储能",
-    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
-    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
-    "suggested_action": "供应商调研",
-    "trend_potential": "高",
-    "future_signal_score": 70,
-    "material_opportunity_score": 68,
-    "material_validation_score": 68,
     "analysis_status": "success"
   },
   {
@@ -102,14 +86,6 @@
     "confidence": 90,
     "follow_up": true,
     "one_sentence": "CATL新一代钠离子电池Naxtra实现500公里续航并准备量产，标志着钠离子电池产业化重大突破。",
-    "technology_driver": "电池与储能",
-    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
-    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
-    "suggested_action": "供应商调研",
-    "trend_potential": "高",
-    "future_signal_score": 70,
-    "material_opportunity_score": 68,
-    "material_validation_score": 68,
     "analysis_status": "success"
   },
   {
@@ -139,52 +115,35 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "CATL计划2026年量产钠离子电池，目标续航超370英里，有望成为锂离子电池的重要替代方案。",
-    "technology_driver": "电池与储能",
-    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
-    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 58，更适合作为前瞻储备或持续跟踪。",
-    "suggested_action": "持续跟踪",
-    "trend_potential": "高",
-    "future_signal_score": 64,
-    "material_opportunity_score": 58,
-    "material_validation_score": 58,
     "analysis_status": "success"
   },
   {
-    "title": "GM to develop sodium-ion battery cells—for energy storage, not EVs",
+    "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
     "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.msn.com/en-us/autos/news/gm-to-develop-sodium-ion-battery-cells-for-energy-storage-not-evs/ar-AA25dSdc",
-    "category": "电池与储能材料",
-    "subcategory": "钠离子电池",
-    "summary": "通用汽车（GM）将建立原型电池生产实验室，开发钠离子电池，初期用于储能而非电动汽车。此举旨在以更低成本、更快速度开发电池，拓展电池业务，为未来电动汽车降低成本。",
+    "published_date": "2026-06-04",
+    "url": "https://www.msn.com/en-us/autos/news/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
+    "category": "复合材料",
+    "subcategory": "碳纤维",
+    "summary": "该新闻展示了一辆采用碳纤维车身打造的日产240SX漂移车，强调轻量化与激进造型的结合。这是一款定制JDM项目，主要面向漂移赛事，体现了碳纤维在汽车改装领域的应用。",
     "technical_points": [
-      "GM建立原型电池生产实验室，开发钠离子电池。",
-      "钠离子电池初期用于储能领域，而非电动汽车。",
-      "目标是以更低成本、更快速度开发电池。",
-      "该实验室将拓展GM的电池业务。",
-      "未来可能降低电动汽车电池成本。"
+      "碳纤维车身实现轻量化",
+      "针对漂移赛事的定制化设计",
+      "JDM改装风格与碳纤维结合"
     ],
     "materials_involved": [
-      "钠离子电池"
+      "碳纤维",
+      "轻量化材料"
     ],
     "companies_or_institutions": [
-      "GM"
+      "Nissan"
     ],
-    "impact_assessment": "GM布局钠离子电池储能应用，可能推动钠离子电池在汽车储能领域的产业化，长期有望降低电动汽车电池成本，但初期不直接用于电动车。",
-    "research_value": "对汽车材料研究员而言，关注钠离子电池在储能领域的应用进展，以及未来向电动汽车转移的可能性。",
-    "industrial_maturity": "pilot",
-    "priority": "P1",
+    "impact_assessment": "该案例展示了碳纤维在改装车领域的应用，但属于小众市场，对主流汽车产业链影响有限。可能推动碳纤维在赛车和高端改装件的普及。",
+    "research_value": "对汽车材料研究员而言，该新闻提供了碳纤维在极端工况（漂移）下的应用实例，但缺乏技术细节，参考价值一般。",
+    "industrial_maturity": "market",
+    "priority": "P3",
     "confidence": 80,
-    "follow_up": true,
-    "one_sentence": "通用汽车将开发钠离子电池用于储能，以降低成本并拓展电池业务。",
-    "technology_driver": "电池与储能",
-    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
-    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 68，具备样件验证或供应商调研价值。",
-    "suggested_action": "供应商调研",
-    "trend_potential": "高",
-    "future_signal_score": 70,
-    "material_opportunity_score": 68,
-    "material_validation_score": 68,
+    "follow_up": false,
+    "one_sentence": "日产240SX漂移车采用碳纤维车身实现轻量化，展示碳纤维在改装领域的应用。",
     "analysis_status": "success"
   },
   {
@@ -214,28 +173,21 @@
     "confidence": 80,
     "follow_up": true,
     "one_sentence": "IAV与Nexperia提出软件定义电池架构，通过软件优化电动汽车电池使用，最大化电芯价值。",
-    "technology_driver": "电池与储能",
-    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
-    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 54，更适合作为前瞻储备或持续跟踪。",
-    "suggested_action": "持续跟踪",
-    "trend_potential": "高",
-    "future_signal_score": 60,
-    "material_opportunity_score": 54,
-    "material_validation_score": 54,
     "analysis_status": "success"
   },
   {
     "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
     "source": "Bing News",
     "published_date": "2026-06-13",
-    "url": "https://insideevs.com/news/798630/gm-sodium-ion-battery-vehicle-to-grid-tech/",
+    "url": "https://www.msn.com/en-us/news/technology/sodium-batteries-and-evs-that-power-the-grid-inside-gms-big-energy-push/ar-AA25CHtV",
     "category": "其他",
     "subcategory": "",
-    "summary": "通用汽车（GM）正在推动钠离子电池和车网互联（V2G）技术，其增长野心远超汽车本身。钠离子电池作为锂离子电池的潜在替代品，具有成本低、资源丰富的优势；V2G技术则使电动汽车能够与电网双向互动，参与能源管理。GM此举旨在拓展能源领域，实现从汽车制造商向能源服务商的转型。",
+    "summary": "通用汽车（GM）宣布在钠离子电池和车网互联（V2G）技术方面取得进展，旨在将电动汽车业务扩展至能源领域。钠离子电池作为锂离子电池的低成本替代方案，有望降低电动汽车成本；V2G技术则允许电动汽车将电力回馈电网，实现车辆与电网的双向互动。GM的能源战略不仅限于汽车制造，还涉及储能和电网服务，体现了其向综合能源公司转型的野心。",
     "technical_points": [
-      "钠离子电池技术：替代锂离子电池，降低成本，利用丰富资源。",
-      "车网互联（V2G）技术：电动汽车与电网双向能量交换。",
-      "通用汽车能源战略：从汽车制造向能源服务延伸。"
+      "钠离子电池技术：作为锂离子电池的低成本替代方案，钠资源丰富，成本更低。",
+      "车网互联（V2G）技术：电动汽车可向电网反向供电，实现车辆与电网的双向能量流动。",
+      "电动汽车作为分布式储能单元：利用电动汽车电池组参与电网调峰调频。",
+      "GM的能源生态系统整合：将汽车制造与能源服务结合，拓展业务边界。"
     ],
     "materials_involved": [
       "钠离子电池"
@@ -243,58 +195,42 @@
     "companies_or_institutions": [
       "GM"
     ],
-    "impact_assessment": "通用汽车布局钠离子电池和V2G技术，将推动电动汽车与能源系统的深度融合，可能改变汽车产业链的价值分配，促使更多企业关注电池材料替代和能源服务模式。",
-    "research_value": "对汽车材料研究员而言，钠离子电池的进展提供了新的研究方向，尤其是在正负极材料、电解液等方面的创新机会。同时，V2G技术对电池循环寿命和安全性提出更高要求，值得关注。",
+    "impact_assessment": "钠离子电池的推进可能降低电动汽车成本，加速电动化普及；V2G技术将电动汽车从单纯交通工具转变为能源基础设施的一部分，推动车网融合。对汽车产业链而言，电池材料体系可能多元化，充电设施需支持双向充放电，电网运营商需开发新的调度策略。",
+    "research_value": "钠离子电池作为新兴电池技术，其材料体系（如正极、负极、电解液）的研发仍处于活跃期，值得关注其产业化进展。V2G技术涉及电池寿命管理、充放电控制策略等研究，对电池循环寿命和系统集成提出新要求。",
     "industrial_maturity": "pilot",
     "priority": "P1",
-    "confidence": 80,
+    "confidence": 70,
     "follow_up": true,
-    "one_sentence": "通用汽车推进钠离子电池与V2G技术，拓展能源领域布局。",
-    "technology_driver": "电池与储能",
-    "material_relevance": "正负极材料、电解质、隔膜、集流体、热管理材料",
-    "validation_opportunity": "该技术动向可能牵引正负极材料、电解质、隔膜、集流体、热管理材料需求。当前材料验证分为 53，更适合作为前瞻储备或持续跟踪。",
-    "suggested_action": "持续跟踪",
-    "trend_potential": "高",
-    "future_signal_score": 64,
-    "material_opportunity_score": 53,
-    "material_validation_score": 53,
+    "one_sentence": "通用汽车推进钠离子电池与V2G技术，旨在将电动汽车融入能源网络，降低电池成本并拓展能源业务。",
     "analysis_status": "success"
   },
   {
-    "title": "Nexperia and Semikron Danfoss consider partnership on EV SiC power modules",
+    "title": "GM partners with Peak Energy on sodium-ion grid storage batteries",
     "source": "Bing News",
-    "published_date": "2026-06-09",
-    "url": "https://www.newelectronics.co.uk/content/news/nexperia-and-semikron-danfoss-consider-partnership-on-ev-sic-power-modules",
-    "category": "电驱与电子材料",
-    "subcategory": "SiC",
-    "summary": "Nexperia与Semikron Danfoss正在考虑合作，共同开发用于电动汽车牵引逆变器的碳化硅（SiC）功率模块。该合作聚焦于SiC基功率模块在汽车牵引逆变器中的应用，旨在提升电动汽车电驱系统的效率和性能。",
+    "published_date": "2026-06-10",
+    "url": "https://finance.yahoo.com/sectors/energy/articles/gm-partners-peak-energy-sodium-115423229.html",
+    "category": "电池与储能材料",
+    "subcategory": "",
+    "summary": "通用汽车旗下风投部门GM Ventures投资Peak Energy，双方合作开发用于大规模储能的钠离子电池。此举表明通用汽车在动力电池之外，开始布局电网级储能领域，钠离子电池因其低成本和高安全性成为储能领域的重要方向。",
     "technical_points": [
-      "合作开发SiC功率模块，用于电动汽车牵引逆变器",
-      "SiC材料相比传统硅基器件具有更高耐压、更低损耗和更高开关频率",
-      "牵引逆变器是电动汽车电驱系统的核心部件，直接影响车辆续航和动力性能"
+      "通用汽车与Peak Energy合作开发钠离子电池，用于大规模储能。",
+      "GM Ventures对Peak Energy进行股权投资。",
+      "钠离子电池具有低成本和高安全性优势，适合储能应用。"
     ],
     "materials_involved": [
-      "SiC"
+      "钠离子电池"
     ],
     "companies_or_institutions": [
-      "Nexperia",
-      "Semikron Danfoss"
+      "GM",
+      "Peak Energy"
     ],
-    "impact_assessment": "该合作可能加速SiC功率模块在电动汽车领域的产业化进程，推动电驱系统向更高效率、更小体积方向发展，对整车续航和成本控制产生积极影响。",
-    "research_value": "为汽车材料研究员提供了SiC功率模块在牵引逆变器应用中的合作案例，可关注其技术路线和产业化进展，作为材料选型和系统集成的参考。",
+    "impact_assessment": "通用汽车布局钠离子储能电池，可能推动钠离子电池在汽车储能领域的应用，降低储能成本，并促进钠离子电池技术的产业化进程。",
+    "research_value": "钠离子电池作为锂离子电池的潜在替代方案，在储能领域具有重要研究价值，尤其对于降低电池成本和资源依赖有参考意义。",
     "industrial_maturity": "pilot",
     "priority": "P1",
     "confidence": 80,
     "follow_up": true,
-    "one_sentence": "Nexperia与Semikron Danfoss考虑合作开发电动汽车SiC功率模块，聚焦牵引逆变器应用。",
-    "technology_driver": "功率半导体",
-    "material_relevance": "封装材料、导热材料、绝缘材料、银烧结材料",
-    "validation_opportunity": "该技术动向可能牵引封装材料、导热材料、绝缘材料、银烧结材料需求。当前材料验证分为 54，更适合作为前瞻储备或持续跟踪。",
-    "suggested_action": "持续跟踪",
-    "trend_potential": "高",
-    "future_signal_score": 60,
-    "material_opportunity_score": 54,
-    "material_validation_score": 54,
+    "one_sentence": "通用汽车投资Peak Energy，合作开发钠离子电池用于大规模储能。",
     "analysis_status": "success"
   }
 ]

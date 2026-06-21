@@ -1,25 +1,27 @@
 {
   "category_counts": {
-    "汽车新材料": 3,
-    "电池与储能": 1,
-    "电池与储能材料": 1
+    "汽车新材料": 5,
+    "电池与储能材料": 2,
+    "其他": 1
   },
   "source_counts": {
-    "Bing News": 5
+    "Bing News": 8
   },
   "company_counts": {
-    "Nexperia": 2,
-    "CATL": 1,
-    "Semikron Danfoss": 1,
-    "GM": 1,
-    "IAV": 1
+    "CATL": 3,
+    "GM": 3,
+    "Nissan": 1,
+    "Peak Energy": 1,
+    "IAV": 1,
+    "Nexperia": 1
   },
   "keyword_counts": {
-    "battery": 2,
+    "battery": 4,
+    "sodium-ion battery": 3,
+    "钠离子电池": 3,
+    "lithium-ion": 2,
     "sodium-ion": 1,
-    "lithium-ion": 1,
-    "SiC": 1,
-    "钠离子电池": 1,
-    "sodium-ion battery": 1
+    "碳纤维": 1,
+    "轻量化材料": 1
   }
 }

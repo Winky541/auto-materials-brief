@@ -1,32 +1,130 @@
 {
   "items": [
     {
-      "title": "General Motors Is Bringing Sodium-Ion Battery Production To America",
+      "title": "GM partners with Peak Energy on sodium-ion grid storage batteries",
       "source": "Bing News",
-      "published_date": "2026-06-09",
-      "url": "https://insideevs.com/news/798154/general-motors-sodium-ion-battery-production/",
+      "published_date": "2026-06-10",
+      "url": "https://finance.yahoo.com/sectors/energy/articles/gm-partners-peak-energy-sodium-115423229.html",
       "category": "电池与储能材料",
-      "subcategory": "钠离子电池",
-      "summary": "General Motors is teaming up with U.S. startup Peak Energy to deploy sodium-ion batteries for energy storage systems, the automaker announced on Tuesday. As electric vehicle sales ...",
-      "technical_points": [],
-      "materials_involved": [
-        "battery",
-        "sodium-ion battery"
+      "subcategory": "",
+      "summary": "通用汽车旗下风投部门GM Ventures投资Peak Energy，双方合作开发用于大规模储能的钠离子电池。此举表明通用汽车在动力电池之外，开始布局电网级储能领域，钠离子电池因其低成本和高安全性成为储能领域的重要方向。",
+      "technical_points": [
+        "通用汽车与Peak Energy合作开发钠离子电池，用于大规模储能。",
+        "GM Ventures对Peak Energy进行股权投资。",
+        "钠离子电池具有低成本和高安全性优势，适合储能应用。"
       ],
-      "companies_or_institutions": [],
-      "impact_assessment": "DeepSeek API 调用失败，暂未生成影响评估。",
-      "research_value": "DeepSeek API 调用失败，暂未生成研究价值判断。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 0,
-      "follow_up": false,
-      "one_sentence": "General Motors Is Bringing Sodium-Ion Battery Production To America",
-      "analysis_status": "failed_api",
-      "rule_score": 46,
+      "materials_involved": [
+        "钠离子电池"
+      ],
+      "companies_or_institutions": [
+        "GM",
+        "Peak Energy"
+      ],
+      "impact_assessment": "通用汽车布局钠离子储能电池，可能推动钠离子电池在汽车储能领域的应用，降低储能成本，并促进钠离子电池技术的产业化进程。",
+      "research_value": "钠离子电池作为锂离子电池的潜在替代方案，在储能领域具有重要研究价值，尤其对于降低电池成本和资源依赖有参考意义。",
+      "industrial_maturity": "pilot",
+      "priority": "P1",
+      "confidence": 80,
+      "follow_up": true,
+      "one_sentence": "通用汽车投资Peak Energy，合作开发钠离子电池用于大规模储能。",
+      "analysis_status": "success",
+      "rule_score": 42,
       "source_score": 70,
       "source_type": "bing_news",
-      "filter_reason": "source=18; automotive=15 (electric vehicle, vehicle, automaker); materials=8 (battery, sodium-ion battery); companies=0 (none); industrial=0 (none); current_month=5",
-      "final_score": 27
+      "filter_reason": "source=18; automotive=10 (EV, automaker); materials=4 (battery); companies=5 (GM); industrial=0 (none); current_month=5",
+      "technology_driver": "其他",
+      "material_relevance": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "不确定",
+      "future_signal_score": 52,
+      "material_opportunity_score": 0,
+      "material_validation_score": 63,
+      "final_score": 45
+    },
+    {
+      "title": "Sodium Batteries And EVs That Power The Grid: Inside GM's Big Energy Push",
+      "source": "Bing News",
+      "published_date": "2026-06-13",
+      "url": "https://www.msn.com/en-us/news/technology/sodium-batteries-and-evs-that-power-the-grid-inside-gms-big-energy-push/ar-AA25CHtV",
+      "category": "其他",
+      "subcategory": "",
+      "summary": "通用汽车（GM）宣布在钠离子电池和车网互联（V2G）技术方面取得进展，旨在将电动汽车业务扩展至能源领域。钠离子电池作为锂离子电池的低成本替代方案，有望降低电动汽车成本；V2G技术则允许电动汽车将电力回馈电网，实现车辆与电网的双向互动。GM的能源战略不仅限于汽车制造，还涉及储能和电网服务，体现了其向综合能源公司转型的野心。",
+      "technical_points": [
+        "钠离子电池技术：作为锂离子电池的低成本替代方案，钠资源丰富，成本更低。",
+        "车网互联（V2G）技术：电动汽车可向电网反向供电，实现车辆与电网的双向能量流动。",
+        "电动汽车作为分布式储能单元：利用电动汽车电池组参与电网调峰调频。",
+        "GM的能源生态系统整合：将汽车制造与能源服务结合，拓展业务边界。"
+      ],
+      "materials_involved": [
+        "钠离子电池"
+      ],
+      "companies_or_institutions": [
+        "GM"
+      ],
+      "impact_assessment": "钠离子电池的推进可能降低电动汽车成本，加速电动化普及；V2G技术将电动汽车从单纯交通工具转变为能源基础设施的一部分，推动车网融合。对汽车产业链而言，电池材料体系可能多元化，充电设施需支持双向充放电，电网运营商需开发新的调度策略。",
+      "research_value": "钠离子电池作为新兴电池技术，其材料体系（如正极、负极、电解液）的研发仍处于活跃期，值得关注其产业化进展。V2G技术涉及电池寿命管理、充放电控制策略等研究，对电池循环寿命和系统集成提出新要求。",
+      "industrial_maturity": "pilot",
+      "priority": "P1",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "通用汽车推进钠离子电池与V2G技术，旨在将电动汽车融入能源网络，降低电池成本并拓展能源业务。",
+      "analysis_status": "success",
+      "rule_score": 43,
+      "source_score": 70,
+      "source_type": "bing_news",
+      "filter_reason": "source=18; automotive=15 (EV, vehicle, car); materials=0 (none); companies=5 (GM); industrial=0 (none); current_month=5",
+      "technology_driver": "其他",
+      "material_relevance": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "不确定",
+      "future_signal_score": 52,
+      "material_opportunity_score": 0,
+      "material_validation_score": 58,
+      "final_score": 44
+    },
+    {
+      "title": "IAV and Nexperia explore software-defined battery architecture for electric vehicles",
+      "source": "Bing News",
+      "published_date": "2026-06-14",
+      "url": "https://www.newelectronics.co.uk/content/news/iav-and-nexperia-explore-software-defined-battery-architecture-for-electric-vehicles",
+      "category": "电池与储能材料",
+      "subcategory": "",
+      "summary": "工程公司IAV与半导体企业Nexperia合作，提出了一种软件定义电池架构概念，旨在优化电动汽车电池的使用方式，最大化现有电芯的价值。该概念通过软件控制电池的充放电策略，提升电池性能和寿命。",
+      "technical_points": [
+        "软件定义电池架构通过软件控制电池充放电策略",
+        "旨在最大化现有电芯的价值",
+        "提升电池性能和寿命"
+      ],
+      "materials_involved": [
+        "battery"
+      ],
+      "companies_or_institutions": [
+        "IAV",
+        "Nexperia"
+      ],
+      "impact_assessment": "该概念可能推动电池管理系统向软件定义方向发展，提升电池利用效率，对电动汽车电池产业链的智能化管理有潜在影响。",
+      "research_value": "为电池材料研究人员提供了新的系统级优化思路，关注软件与硬件的协同设计，可能启发新型电池管理算法和材料适配研究。",
+      "industrial_maturity": "lab",
+      "priority": "P2",
+      "confidence": 80,
+      "follow_up": true,
+      "one_sentence": "IAV与Nexperia提出软件定义电池架构，通过软件优化电动汽车电池使用，最大化电芯价值。",
+      "analysis_status": "success",
+      "rule_score": 43,
+      "source_score": 75,
+      "source_type": "bing_news",
+      "filter_reason": "source=19; automotive=15 (EV, electric vehicle, vehicle); materials=4 (battery); companies=0 (none); industrial=0 (none); current_month=5",
+      "technology_driver": "其他",
+      "material_relevance": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "不确定",
+      "future_signal_score": 43,
+      "material_opportunity_score": 0,
+      "material_validation_score": 63,
+      "final_score": 40
     }
   ]
 }
