@@ -32,6 +32,7 @@ ANALYZED_NEWS_PATH = DATA_DIR / "news_analyzed.json"
 BACKLOG_PATH = DATA_DIR / "backlog.json"
 INSIGHTS_PATH = DATA_DIR / "insights.json"
 STATISTICS_PATH = ASSETS_DIR / "statistics.json"
+OPPORTUNITIES_PATH = ASSETS_DIR / "opportunities.json"
 METHODOLOGY_PATH = DOCS_DIR / "about-methodology.html"
 BRAND_EN = "AURA"
 BRAND_CN = "未来产业、技术与材料情报平台"
@@ -113,7 +114,23 @@ RESEARCH_DIRECTIONS = [
     {"name": "低空飞行材料", "key": "low-altitude-materials", "keywords": ["evtol", "flying car", "低空", "飞行汽车", "航空"]},
 ]
 
-ACTION_ORDER = ["启动验证", "供应商调研", "持续跟踪", "前瞻储备", "暂不优先"]
+ACTION_ORDER = ["启动验证", "供应商调研", "持续跟踪", "联合开发", "前瞻储备", "暂不优先"]
+ACTION_LABELS = {
+    "持续跟踪": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Technology Watch"},
+    "供应商调研": {"en": "Supplier Research", "zh": "供应商调研", "pipeline": "Supplier Research"},
+    "启动验证": {"en": "Lab Evaluation", "zh": "实验验证", "pipeline": "Lab Evaluation"},
+    "联合开发": {"en": "Joint Development", "zh": "联合开发", "pipeline": "Joint Development"},
+    "前瞻储备": {"en": "Strategic Reserve", "zh": "战略储备", "pipeline": "Strategic Reserve"},
+    "暂不优先": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Early Exploration"},
+}
+PIPELINE_ORDER = [
+    "Early Exploration",
+    "Technology Watch",
+    "Supplier Research",
+    "Lab Evaluation",
+    "Joint Development",
+    "Strategic Reserve",
+]
 STRATEGIC_COMPANIES = [
     "Toyota",
     "Honda",
@@ -131,16 +148,61 @@ STRATEGIC_COMPANIES = [
     "Volkswagen",
     "Hyundai",
     "Kia",
+    "SK On",
+    "GM",
+    "Ford",
 ]
-MATERIAL_TRACKS = [
-    ("电池与储能材料", ["battery", "电池", "储能", "钠离子", "固态", "电解质", "隔膜", "负极"]),
-    ("热管理材料", ["thermal", "热管理", "导热", "气凝胶"]),
-    ("轻量化材料", ["lightweight", "轻量化", "铝合金", "镁合金", "高强钢"]),
-    ("复合材料", ["composite", "复合材料", "碳纤维", "cfrp"]),
-    ("功率半导体材料", ["sic", "gan", "power semiconductor", "功率半导体"]),
-    ("电驱材料", ["motor", "电驱", "永磁", "rare earth"]),
-    ("光学与感知材料", ["optical", "lidar", "infrared", "红外", "感知"]),
-    ("可持续材料", ["recycling", "回收", "低碳", "sustainable"]),
+OPPORTUNITY_DOMAINS = [
+    {
+        "domain": "Energy Systems",
+        "zh": "电池、储能、氢能与车网互动材料机会",
+        "keywords": ["battery", "电池", "储能", "钠离子", "固态", "电解质", "隔膜", "负极", "hydrogen", "燃料电池", "v2g"],
+    },
+    {
+        "domain": "Structural Materials",
+        "zh": "轻量化、复合材料、车身与飞行结构材料机会",
+        "keywords": ["lightweight", "轻量化", "铝合金", "镁合金", "高强钢", "composite", "复合材料", "碳纤维", "cfrp", "结构材料"],
+    },
+    {
+        "domain": "Thermal & Safety",
+        "zh": "热管理、阻燃、防火隔热与安全防护材料机会",
+        "keywords": ["thermal", "热管理", "导热", "气凝胶", "阻燃", "thermal runaway", "安全", "防火"],
+    },
+    {
+        "domain": "Sensing & Functional Materials",
+        "zh": "传感、光学、红外、智能与功能材料机会",
+        "keywords": ["sensor", "传感", "optical", "lidar", "infrared", "红外", "swir", "感知", "functional", "柔性"],
+    },
+    {
+        "domain": "Electronics & Power",
+        "zh": "SiC/GaN、封装、绝缘、功率模块与电驱材料机会",
+        "keywords": ["sic", "gan", "power semiconductor", "功率半导体", "封装", "绝缘", "银烧结", "电驱", "motor"],
+    },
+    {
+        "domain": "Manufacturing & Process",
+        "zh": "增材制造、连接、涂层、表面工程与工艺材料机会",
+        "keywords": ["manufacturing", "制造", "3d printing", "增材", "coating", "涂层", "焊接", "结构胶"],
+    },
+    {
+        "domain": "Sustainability",
+        "zh": "回收、低碳、替代材料与循环材料机会",
+        "keywords": ["recycling", "回收", "低碳", "sustainable", "bio-based", "生物基", "替代", "循环"],
+    },
+]
+OPPORTUNITY_TOPIC_RULES = [
+    ("Solid-State Electrolytes", "Energy Systems", ["solid-state", "固态", "electrolyte", "电解质"]),
+    ("Sodium-Ion Battery Materials", "Energy Systems", ["sodium-ion", "钠离子", "sodium battery"]),
+    ("Battery Thermal Management Materials", "Thermal & Safety", ["battery", "电池", "thermal", "热管理", "导热"]),
+    ("Thermal Runaway Protection", "Thermal & Safety", ["thermal runaway", "热失控", "阻燃", "防火"]),
+    ("Advanced Packaging Materials", "Electronics & Power", ["sic", "gan", "封装", "银烧结", "power module"]),
+    ("Power Semiconductor Substrates", "Electronics & Power", ["sic", "gan", "功率半导体", "substrate"]),
+    ("Robot Structural Materials", "Structural Materials", ["robot", "humanoid", "机器人", "具身", "结构材料"]),
+    ("Flexible Sensing Materials", "Sensing & Functional Materials", ["flexible", "柔性", "sensor", "传感"]),
+    ("Low-cost SWIR Materials", "Sensing & Functional Materials", ["swir", "infrared", "红外", "短波"]),
+    ("eVTOL Composites", "Structural Materials", ["evtol", "flying car", "低空", "飞行汽车", "carbon fiber", "碳纤维"]),
+    ("Advanced Coating Materials", "Manufacturing & Process", ["coating", "涂层", "surface", "表面"]),
+    ("Bio-based Interior Materials", "Sustainability", ["bio-based", "生物基", "interior", "内饰"]),
+    ("Recycling & Circular Battery Materials", "Sustainability", ["recycling", "回收", "battery", "电池"]),
 ]
 DEFAULT_OPPORTUNITY_FIELDS = {
     "why_it_matters": "信息不足，暂无法判断其产业或材料意义。",
@@ -288,6 +350,8 @@ def _combined_item_text(item: dict[str, Any]) -> str:
     ]
     for key in ("materials_involved", "companies_or_institutions", "technical_points"):
         values.extend(str(value) for value in item.get(key, []) or [])
+    for key in ("technology_driver", "material_relevance", "material_opportunity", "validation_opportunity", "future_signal"):
+        values.append(str(item.get(key) or ""))
     return " ".join(values).casefold()
 
 
@@ -433,6 +497,10 @@ def prepare_display_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
             current["suggested_action"] = "前瞻储备"
         if current.get("suggested_action") not in ACTION_ORDER:
             current["suggested_action"] = "暂不优先"
+        action_meta = action_label(current.get("suggested_action"))
+        current["suggested_action_en"] = action_meta["en"]
+        current["suggested_action_zh"] = action_meta["zh"]
+        current["pipeline_status"] = action_meta["pipeline"]
         if current.get("trend_potential") not in {"高", "中", "低", "不确定"}:
             current["trend_potential"] = "不确定"
         current["original_category"] = current.get("category", "")
@@ -449,17 +517,147 @@ def _item_text_for_tracks(item: dict[str, Any]) -> str:
     return _combined_item_text(item)
 
 
-def build_material_track_summary(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Build Automotive & Advanced Materials track counts."""
+def action_label(action: str | None) -> dict[str, str]:
+    """Return normalized bilingual suggested action metadata."""
+    return ACTION_LABELS.get(str(action or ""), ACTION_LABELS["暂不优先"])
+
+
+def validation_priority(score: int) -> str:
+    """Map material value score to validation priority."""
+    if score >= 70:
+        return "High"
+    if score >= 45:
+        return "Medium"
+    return "Low"
+
+
+def domain_for_text(text: str) -> str:
+    """Map combined text to one of the fixed opportunity domains."""
+    folded = text.casefold()
+    for domain in OPPORTUNITY_DOMAINS:
+        if any(keyword.casefold() in folded for keyword in domain["keywords"]):
+            return domain["domain"]
+    return "Energy Systems"
+
+
+def topic_for_item(item: dict[str, Any]) -> tuple[str, str]:
+    """Generate a material-opportunity-first topic for an item."""
+    text = _combined_item_text(item)
+    for topic, domain, keywords in OPPORTUNITY_TOPIC_RULES:
+        if any(keyword.casefold() in text for keyword in keywords):
+            return topic, domain
+
+    materials = [str(value) for value in item.get("materials_involved", []) or [] if value]
+    if materials:
+        material = materials[0].strip()
+        if material:
+            return f"{material.title()} Materials", domain_for_text(text)
+
+    return "Emerging Material Opportunity", domain_for_text(text)
+
+
+def _related_signal(item: dict[str, Any]) -> dict[str, str]:
+    return {
+        "title": str(item.get("title") or "Untitled"),
+        "url": str(item.get("url") or ""),
+        "source": str(item.get("source") or ""),
+        "published_date": str(item.get("published_date") or ""),
+    }
+
+
+def build_opportunity_topics(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Build dynamic material opportunity topics from selected items."""
+    topic_map: dict[str, dict[str, Any]] = {}
+    for item in items:
+        topic, domain = topic_for_item(item)
+        score = int(item.get("material_opportunity_score", item.get("material_validation_score", 0)) or 0)
+        entry = topic_map.setdefault(
+            topic,
+            {
+                "topic": topic,
+                "domain": domain,
+                "material_value": 0,
+                "validation_priority": "Low",
+                "suggested_action": action_label(item.get("suggested_action"))["en"],
+                "suggested_action_zh": action_label(item.get("suggested_action"))["zh"],
+                "related_signals": [],
+                "news_count": 0,
+            },
+        )
+        entry["material_value"] = max(entry["material_value"], score)
+        if score >= entry["material_value"]:
+            entry["suggested_action"] = action_label(item.get("suggested_action"))["en"]
+            entry["suggested_action_zh"] = action_label(item.get("suggested_action"))["zh"]
+        entry["related_signals"].append(_related_signal(item))
+        entry["news_count"] += 1
+
+    topics = list(topic_map.values())
+    for topic in topics:
+        topic["validation_priority"] = validation_priority(int(topic["material_value"] or 0))
+        topic["related_signals"] = topic["related_signals"][:4]
+    topics.sort(key=lambda row: (int(row["material_value"]), row["news_count"]), reverse=True)
+    return topics
+
+
+def build_opportunity_domains(items: list[dict[str, Any]], topics: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Build fixed opportunity domain summary for the homepage."""
     summary = []
-    for name, keywords in MATERIAL_TRACKS:
-        matched = [
-            item for item in items
-            if any(keyword.casefold() in _item_text_for_tracks(item) for keyword in keywords)
-        ]
-        validation_count = sum(1 for item in matched if item.get("suggested_action") in {"启动验证", "供应商调研"})
-        summary.append({"name": name, "count": len(matched), "validation_count": validation_count})
+    topic_counts = Counter(topic["domain"] for topic in topics)
+    for domain in OPPORTUNITY_DOMAINS:
+        matched = [item for item in items if any(keyword.casefold() in _item_text_for_tracks(item) for keyword in domain["keywords"])]
+        summary.append(
+            {
+                "domain": domain["domain"],
+                "zh": domain["zh"],
+                "news_count": len(matched),
+                "topic_count": topic_counts.get(domain["domain"], 0),
+            }
+        )
     return summary
+
+
+def build_emerging_topics(
+    topics: list[dict[str, Any]],
+    existing_archive: dict[str, Any],
+    current_date: str,
+) -> list[dict[str, Any]]:
+    """Return topics that first appear today or do not exist in the archive yet."""
+    previous = existing_archive.get("topics", []) if isinstance(existing_archive, dict) else []
+    previous_by_topic = {str(item.get("topic")): item for item in previous if isinstance(item, dict)}
+    emerging = []
+    for topic in topics:
+        archived = previous_by_topic.get(topic["topic"])
+        if not archived or archived.get("first_seen") == current_date:
+            emerging.append({**topic, "is_new": True})
+    return emerging[:6]
+
+
+def build_opportunity_archive(
+    topics: list[dict[str, Any]],
+    existing_archive: dict[str, Any],
+    current_date: str,
+) -> dict[str, Any]:
+    """Build docs/assets/opportunities.json while preserving first_seen dates."""
+    previous = existing_archive.get("topics", []) if isinstance(existing_archive, dict) else []
+    previous_by_topic = {str(item.get("topic")): item for item in previous if isinstance(item, dict)}
+    archived_topics = []
+    for topic in topics:
+        previous_topic = previous_by_topic.get(topic["topic"], {})
+        archived_topics.append(
+            {
+                "domain": topic["domain"],
+                "topic": topic["topic"],
+                "material_value": topic["material_value"],
+                "validation_priority": topic["validation_priority"],
+                "suggested_action": topic["suggested_action"],
+                "suggested_action_zh": topic["suggested_action_zh"],
+                "related_signals": topic["related_signals"],
+                "news_count": topic["news_count"],
+                "first_seen": previous_topic.get("first_seen", current_date),
+                "updated_at": current_date,
+            }
+        )
+    return {"updated_at": current_date, "topics": archived_topics}
 
 
 def build_company_intelligence(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -478,11 +676,10 @@ def build_company_intelligence(items: list[dict[str, Any]]) -> list[dict[str, An
 def build_patents_research(items: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
     """Group patents, papers, standards, roadmaps, and industrialization progress."""
     groups = {
-        "论文": ["paper", "journal", "nature", "science", "论文", "期刊"],
-        "专利": ["patent", "专利"],
-        "标准": ["standard", "sae", "ieee", "标准"],
-        "技术路线": ["roadmap", "路线图", "architecture", "platform"],
-        "产业化进展": ["production", "commercialization", "量产", "商业化", "pilot"],
+        "Patents": ["patent", "专利"],
+        "Research Papers": ["paper", "journal", "nature", "science", "论文", "期刊"],
+        "Standards": ["standard", "sae", "ieee", "标准"],
+        "Roadmaps": ["roadmap", "路线图", "architecture", "platform"],
     }
     result: dict[str, list[dict[str, Any]]] = {}
     for label, keywords in groups.items():
@@ -494,54 +691,44 @@ def build_patents_research(items: list[dict[str, Any]]) -> dict[str, list[dict[s
 
 
 def build_future_radar(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Build dynamic future technology radar, capped as a supporting module."""
-    future_items = [
-        item for item in items
-        if item.get("technology_driver") not in {"电池与储能", "功率半导体"}
-        or int(item.get("future_signal_score", 0) or 0) >= 65
+    """Build future technology radar as signal categories, not opportunity topics."""
+    rules = [
+        ("Humanoid Robotics", ["humanoid", "robot", "机器人", "具身"]),
+        ("Low-altitude Economy", ["evtol", "flying car", "低空", "飞行汽车"]),
+        ("AI Hardware", ["ai hardware", "chip", "算力", "硬件"]),
+        ("Autonomous Driving", ["autonomous", "adas", "自动驾驶", "智能驾驶"]),
+        ("Smart Manufacturing", ["manufacturing", "制造", "3d printing", "增材"]),
+        ("Hydrogen Systems", ["hydrogen", "fuel cell", "氢能", "燃料电池"]),
+        ("Advanced Sensing", ["sensor", "lidar", "infrared", "swir", "感知", "红外"]),
     ]
-    counter: Counter[str] = Counter(item.get("technology_driver", "其他") for item in future_items)
-    return [
-        {
-            "driver": driver,
-            "count": count,
-            "avg_future_signal_score": round(
-                sum(int(item.get("future_signal_score", 0) or 0) for item in future_items if item.get("technology_driver") == driver) / count
-            ) if count else 0,
-        }
-        for driver, count in counter.most_common()
-    ][:6]
-
-
-def build_technology_hotspots(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Build dynamic technology-driver hotspots from today's selected items."""
-    counter: Counter[str] = Counter()
-    score_totals: Counter[str] = Counter()
-    for item in items:
-        driver = str(item.get("technology_driver") or "其他")
-        counter[driver] += 1
-        score_totals[driver] += int(item.get("material_opportunity_score", item.get("material_validation_score", 0)) or 0)
-
-    hotspots = []
-    for driver, count in counter.most_common():
-        hotspots.append(
-            {
-                "driver": driver,
-                "count": count,
-                "avg_material_opportunity_score": round(score_totals[driver] / count) if count else 0,
-            }
-        )
-    return hotspots
+    rows = []
+    for category, keywords in rules:
+        matched = [item for item in items if any(keyword.casefold() in _combined_item_text(item) for keyword in keywords)]
+        if matched:
+            rows.append(
+                {
+                    "category": category,
+                    "count": len(matched),
+                    "avg_future_signal_score": round(
+                        sum(int(item.get("future_signal_score", 0) or 0) for item in matched) / len(matched)
+                    ),
+                }
+            )
+    rows.sort(key=lambda row: (row["avg_future_signal_score"], row["count"]), reverse=True)
+    return rows[:7]
 
 
 def build_validation_pool(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Group items by suggested material-team action."""
+    grouped: dict[str, list[dict[str, Any]]] = {status: [] for status in PIPELINE_ORDER}
+    for item in items:
+        grouped[action_label(item.get("suggested_action"))["pipeline"]].append(item)
+
     groups = []
-    for action in ACTION_ORDER:
+    for action in PIPELINE_ORDER:
         action_items = [
             item
-            for item in items
-            if item.get("suggested_action") == action
+            for item in grouped[action]
         ]
         action_items.sort(
             key=lambda item: int(item.get("material_opportunity_score", item.get("material_validation_score", 0)) or 0),
@@ -630,6 +817,29 @@ def build_research_insight(items: list[dict[str, Any]], statistics: dict[str, di
         sentences.append(f"涉及企业/机构以{'、'.join(companies)}等为主，后续应重点跟踪其量产、合作、专利、标准化或供应链变化。")
 
     return "".join(sentences[:5])
+
+
+def build_research_insight_cards(items: list[dict[str, Any]], statistics: dict[str, dict[str, int]]) -> list[dict[str, str]]:
+    """Build structured Research Insight blocks for the homepage."""
+    if not items:
+        return [
+            {"label": "What Changed", "text": "No publishable intelligence item is available today."},
+            {"label": "Why It Matters", "text": "AURA will not invent signals when source evidence is insufficient."},
+            {"label": "Material Opportunity", "text": "Keep watching the monthly candidate pool and strengthen authoritative sources."},
+            {"label": "Suggested Action", "text": "Technology Watch"},
+        ]
+
+    drivers = Counter(str(item.get("technology_driver") or "Other") for item in items)
+    top_driver = drivers.most_common(1)[0][0]
+    top_item = max(items, key=lambda item: int(item.get("material_opportunity_score", 0) or 0))
+    action = action_label(top_item.get("suggested_action"))
+    categories = " / ".join(list(statistics.get("category_counts", {}).keys())[:3]) or "current selected signals"
+    return [
+        {"label": "What Changed", "text": f"Signals are concentrated in {categories}, with {top_driver} as the strongest technology driver."},
+        {"label": "Why It Matters", "text": str(top_item.get("why_it_matters") or top_item.get("impact_assessment") or "This signal may affect material selection and validation planning.")},
+        {"label": "Material Opportunity", "text": str(top_item.get("material_opportunity") or top_item.get("material_relevance") or "Material opportunity is still weak and should be watched conservatively.")},
+        {"label": "Suggested Action", "text": f"{action['en']} / {action['zh']}"},
+    ]
 
 
 def credibility_label(item: dict[str, Any]) -> str:
@@ -821,15 +1031,17 @@ def generate_index_page(
     today_payload: dict[str, Any],
     display_items: list[dict[str, Any]],
     category_sections: list[dict[str, Any]],
-    technology_hotspots: list[dict[str, Any]],
     validation_pool: list[dict[str, Any]],
-    material_tracks: list[dict[str, Any]],
+    opportunity_domains: list[dict[str, Any]],
+    opportunity_topics: list[dict[str, Any]],
+    emerging_topics: list[dict[str, Any]],
     company_intelligence: list[dict[str, Any]],
     patents_research: dict[str, list[dict[str, Any]]],
     future_radar: list[dict[str, Any]],
     insights: list[dict[str, str]],
     statistics: dict[str, dict[str, int]],
     insight: str,
+    research_insight_cards: list[dict[str, str]],
     archives: dict[str, list[dict[str, str]]],
 ) -> None:
     """Render docs/index.html."""
@@ -843,9 +1055,10 @@ def generate_index_page(
         category_sections=category_sections,
         nav_categories=NAV_CATEGORIES,
         research_directions=RESEARCH_DIRECTIONS,
-        technology_hotspots=technology_hotspots,
         validation_pool=validation_pool,
-        material_tracks=material_tracks,
+        opportunity_domains=opportunity_domains,
+        opportunity_topics=opportunity_topics,
+        emerging_topics=emerging_topics,
         company_intelligence=company_intelligence,
         patents_research=patents_research,
         future_radar=future_radar,
@@ -853,6 +1066,7 @@ def generate_index_page(
         count=len(display_items),
         statistics=statistics,
         insight=insight,
+        research_insight_cards=research_insight_cards,
         archives=archives,
         category_colors=CATEGORY_COLORS,
         metric_explanations=METRIC_EXPLANATIONS,
@@ -963,16 +1177,22 @@ def main() -> None:
 
     display_items = prepare_display_items(today_items)
     category_sections = build_category_sections(display_items)
-    technology_hotspots = build_technology_hotspots(display_items)
+    existing_opportunities = load_json(OPPORTUNITIES_PATH, {"topics": []})
+    opportunity_topics = build_opportunity_topics(display_items)
+    opportunity_domains = build_opportunity_domains(display_items, opportunity_topics)
+    current_date = today_payload.get("date") or datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+    emerging_topics = build_emerging_topics(opportunity_topics, existing_opportunities, current_date)
+    opportunity_archive = build_opportunity_archive(opportunity_topics, existing_opportunities, current_date)
     validation_pool = build_validation_pool(display_items)
-    material_tracks = build_material_track_summary(display_items)
     company_intelligence = build_company_intelligence(display_items)
     patents_research = build_patents_research(display_items)
     future_radar = build_future_radar(display_items)
     statistics = build_statistics(display_items, analyzed_items, backlog_items)
     insight = build_research_insight(display_items, statistics)
+    research_insight_cards = build_research_insight_cards(display_items, statistics)
     archives = collect_archive_data(today_payload, published_data)
     save_json(statistics, STATISTICS_PATH)
+    save_json(opportunity_archive, OPPORTUNITIES_PATH)
 
     env = _env()
     generate_index_page(
@@ -980,15 +1200,17 @@ def main() -> None:
         today_payload,
         display_items,
         category_sections,
-        technology_hotspots,
         validation_pool,
-        material_tracks,
+        opportunity_domains,
+        opportunity_topics,
+        emerging_topics,
         company_intelligence,
         patents_research,
         future_radar,
         insights,
         statistics,
         insight,
+        research_insight_cards,
         archives,
     )
     daily_path = generate_daily_page(env, today_payload, display_items, statistics, insight, archives)
@@ -999,6 +1221,7 @@ def main() -> None:
     logging.info("Generated %s.", daily_path)
     logging.info("Generated %s.", monthly_path)
     logging.info("Generated %s.", STATISTICS_PATH)
+    logging.info("Generated %s.", OPPORTUNITIES_PATH)
     logging.info("Generated %s.", methodology_path)
 
 

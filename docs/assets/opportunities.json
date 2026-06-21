@@ -1,0 +1,61 @@
+{
+  "updated_at": "2026-06-21",
+  "topics": [
+    {
+      "domain": "Energy Systems",
+      "topic": "Solid-State Electrolytes",
+      "material_value": 68,
+      "validation_priority": "Medium",
+      "suggested_action": "Technology Watch",
+      "suggested_action_zh": "持续观察",
+      "related_signals": [
+        {
+          "title": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
+          "url": "https://www.aol.com/lifestyle/chinese-battery-giant-catl-plans-230016306.html",
+          "source": "Bing News",
+          "published_date": "2026-06-09"
+        },
+        {
+          "title": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
+          "url": "https://www.msn.com/en-us/autos/news/catl-says-its-next-sodium-ion-battery-clears-500-kilometers-and-is-ready-for-mass-production/ar-AA25iOtc",
+          "source": "Bing News",
+          "published_date": "2026-06-10"
+        },
+        {
+          "title": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
+          "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
+          "source": "Bing News",
+          "published_date": "2026-06-01"
+        },
+        {
+          "title": "GM Activates 250,000 EVs for Vehicle-to-Grid: Sodium-Ion Batteries Target Grid-Peaker Replacement",
+          "url": "https://www.techtimes.com/articles/318197/20260611/gm-activates-250000-evs-vehicle-grid-sodium-ion-batteries-target-grid-peaker-replacement.htm",
+          "source": "Bing News",
+          "published_date": "2026-06-11"
+        }
+      ],
+      "news_count": 4,
+      "first_seen": "2026-06-21",
+      "updated_at": "2026-06-21"
+    },
+    {
+      "domain": "Structural Materials",
+      "topic": "eVTOL Composites",
+      "material_value": 35,
+      "validation_priority": "Low",
+      "suggested_action": "Technology Watch",
+      "suggested_action_zh": "持续观察",
+      "related_signals": [
+        {
+          "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
+          "url": "https://www.msn.com/en-us/autos/news/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
+          "source": "Bing News",
+          "published_date": "2026-06-04"
+        }
+      ],
+      "news_count": 1,
+      "first_seen": "2026-06-21",
+      "updated_at": "2026-06-21"
+    }
+  ]
+}

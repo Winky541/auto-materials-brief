@@ -130,6 +130,33 @@ a {
   margin: 8px 0 0;
 }
 
+.insight-stack {
+  display: grid;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.insight-stack article {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.insight-stack article:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.insight-stack strong {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.insight-stack p {
+  font-size: 17px;
+}
+
 .palette-strip {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -224,7 +251,8 @@ a {
 .validation-pool,
 .opportunity-list,
 .highlight-list,
-.material-track-grid {
+.domain-grid,
+.topic-grid {
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -240,7 +268,8 @@ a {
 .validation-pool article,
 .opportunity-list article,
 .highlight-list article,
-.material-track-grid article {
+.domain-grid article,
+.topic-grid article {
   background: rgba(255, 255, 255, 0.62);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -250,7 +279,7 @@ a {
 .hotspot-grid strong,
 .opportunity-list strong,
 .highlight-list strong,
-.material-track-grid strong {
+.domain-grid strong {
   color: var(--text);
   display: block;
 }
@@ -259,9 +288,12 @@ a {
 .validation-pool span,
 .opportunity-list span,
 .highlight-list span,
-.material-track-grid span,
+.domain-grid span,
+.topic-grid span,
 .opportunity-list p,
 .highlight-list p,
+.domain-grid p,
+.topic-grid p,
 .validation-pool li {
   color: var(--muted);
   font-size: 13px;
@@ -269,7 +301,8 @@ a {
 
 .opportunity-list h3,
 .highlight-list h3,
-.validation-pool h3 {
+.validation-pool h3,
+.topic-grid h3 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 20px;
   font-weight: 400;
@@ -285,6 +318,88 @@ a {
   font-size: 13px;
   margin-top: 10px;
   padding: 6px 10px;
+}
+
+.highlight-list h3 a,
+.insights-grid h3 a {
+  border: 0;
+  border-radius: 0;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.domain-grid {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.domain-grid article {
+  min-height: 156px;
+}
+
+.domain-grid strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.1;
+}
+
+.topic-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 22px;
+}
+
+.topic-grid article {
+  min-height: 220px;
+}
+
+.topic-topline {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.topic-topline b {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 650;
+  padding: 3px 8px;
+}
+
+.related-signal-list {
+  display: grid;
+  gap: 7px;
+  margin-top: 14px;
+}
+
+.related-signal-list a {
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.35;
+  padding-top: 7px;
+}
+
+.related-signal-list a:hover,
+.highlight-list h3 a:hover,
+.insights-grid h3 a:hover,
+.validation-pool a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.new-pill {
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  color: var(--text);
+  display: inline-flex;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+  padding: 2px 7px;
+  width: fit-content;
 }
 
 .insights-panel {
@@ -454,14 +569,6 @@ a {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(32px, 4vw, 54px);
   font-weight: 400;
-}
-
-.priority-panel .material-track-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.priority-panel .material-track-grid article {
-  min-height: 118px;
 }
 
 .compact-panel {
@@ -920,7 +1027,8 @@ a {
     .validation-pool,
     .opportunity-list,
     .highlight-list,
-    .material-track-grid,
+    .domain-grid,
+    .topic-grid,
     .insights-grid,
     .month-summary {
     grid-template-columns: 1fr;

@@ -13,15 +13,15 @@
         <small>{{ brand_cn }}</small>
       </a>
       <nav class="top-nav">
-        <a href="#judgement">研究判断</a>
-        <a href="#brief">重点观察</a>
-        <a href="#auto-materials">汽车产业与先进材料</a>
-        <a href="#company-intelligence">企业动态</a>
-        <a href="#patents-research">专利与论文</a>
-        <a href="#future-radar">未来技术雷达</a>
-        <a href="#validation-pool">验证储备池</a>
+        <a href="#judgement">Research Insight</a>
+        <a href="#brief">Highlights</a>
+        <a href="#opportunity-graph">Material Opportunity Graph</a>
+        <a href="#company-intelligence">Company Intelligence</a>
+        <a href="#patents-research">Patents & Research</a>
+        <a href="#future-radar">Future Technology Radar</a>
+        <a href="#validation-pool">Validation Pipeline</a>
         <a href="#insights">Insights</a>
-        <a href="#archives">历史归档</a>
+        <a href="#archives">Archive</a>
       </nav>
     </header>
 
@@ -35,8 +35,15 @@
           <p class="motto">帮助研发人员理解变化、发现机会、建立储备。当未来到来的时候，我们已经准备好了。</p>
         </div>
         <div class="hero-note">
-          <span>Today Research Insight</span>
-          <p>{{ insight }}</p>
+          <span>Today’s Key Insight</span>
+          <div class="insight-stack">
+            {% for row in research_insight_cards %}
+            <article>
+              <strong>{{ row.label }}</strong>
+              <p>{{ row.text }}</p>
+            </article>
+            {% endfor %}
+          </div>
         </div>
       </section>
 
@@ -49,48 +56,60 @@
           {% for item in items[:5] %}
           <article>
             <span>{{ item.source }} · {{ item.published_date }}</span>
-            <h3>{{ item.title }}</h3>
-            <p>为什么重要：{{ item.why_it_matters }}</p>
-            <p>材料机会：{{ item.material_opportunity }}</p>
-            <p>未来信号：{{ item.future_signal }}</p>
-            <strong>建议动作：{{ item.suggested_action }}</strong>
-            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">原文链接</a>
+            <h3><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h3>
+            <p>Material Opportunity: {{ item.material_opportunity }}</p>
+            <strong>Suggested Action: {{ item.suggested_action_en }} / {{ item.suggested_action_zh }}</strong>
+            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">阅读原文</a>
           </article>
           {% endfor %}
         </div>
       </section>
 
-      <section id="auto-materials" class="opportunity-panel priority-panel">
+      <section id="opportunity-graph" class="opportunity-panel priority-panel">
         <div class="section-heading">
-          <p class="eyebrow">Automotive Industry & Advanced Materials</p>
-          <h2>汽车产业与先进材料</h2>
-          <p class="section-note">首页最高权重板块。AURA 优先识别汽车产业链和新能源汽车方向正在形成的材料需求、验证机会和供应商调研入口。</p>
+          <p class="eyebrow">Material Opportunity Graph</p>
+          <h2>Material Opportunity Graph</h2>
+          <p class="section-note">AURA 的核心资产。产业和技术只是信号，材料机会才是最终沉淀。</p>
         </div>
-        <div class="material-track-grid">
-          {% for track in material_tracks %}
+        <div class="domain-grid">
+          {% for domain in opportunity_domains %}
           <article>
-            <strong>{{ track.name }}</strong>
-            <span>{{ track.count }} 条新闻 · {{ track.validation_count }} 个验证机会</span>
+            <strong>{{ domain.domain }}</strong>
+            <p>{{ domain.zh }}</p>
+            <span>{{ domain.news_count }} signals · {{ domain.topic_count }} topics</span>
+          </article>
+          {% endfor %}
+        </div>
+        <div class="topic-grid">
+          {% for topic in opportunity_topics[:8] %}
+          <article>
+            <div class="topic-topline">
+              <span>{{ topic.domain }}</span>
+              <b>{{ topic.validation_priority }}</b>
+            </div>
+            <h3>{{ topic.topic }}</h3>
+            <p>Material Value {{ topic.material_value }} · {{ topic.suggested_action }}</p>
+            <div class="related-signal-list">
+              {% for signal in topic.related_signals %}
+              <a href="{{ signal.url }}" target="_blank" rel="noopener noreferrer">{{ signal.title }}</a>
+              {% endfor %}
+            </div>
           </article>
           {% endfor %}
         </div>
       </section>
 
-      <section id="technology-hotspots" class="opportunity-panel compact-panel">
+      <section id="emerging-opportunities" class="opportunity-panel compact-panel">
         <div class="section-heading">
-          <p class="eyebrow">Technology Drivers</p>
-          <h2>今日技术牵引热点</h2>
+          <p class="eyebrow">Emerging Material Opportunities</p>
+          <h2>Emerging Material Opportunities</h2>
         </div>
         <div class="hotspot-grid">
-          {% for hotspot in technology_hotspots[:5] %}
+          {% for topic in emerging_topics %}
           <article>
-            <strong>{{ hotspot.driver }}</strong>
-            <span>{{ hotspot.count }} 条 · Material Opportunity {{ hotspot.avg_material_opportunity_score }}</span>
-          </article>
-          {% else %}
-          <article>
-            <strong>暂无热点</strong>
-            <span>等待更多有效情报进入今日选择</span>
+            <span class="new-pill">NEW</span>
+            <strong>{{ topic.topic }}</strong>
+            <span>{{ topic.domain }} · {{ topic.suggested_action }}</span>
           </article>
           {% endfor %}
         </div>
@@ -128,7 +147,7 @@
             <span>{{ group_items | length }} 条</span>
             <ul>
               {% for item in group_items[:3] %}
-              <li>{{ item.title }}</li>
+              <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></li>
               {% else %}
               <li>暂无</li>
               {% endfor %}
@@ -147,7 +166,7 @@
         <div class="hotspot-grid">
           {% for radar in future_radar %}
           <article>
-            <strong>{{ radar.driver }}</strong>
+            <strong>{{ radar.category }}</strong>
             <span>{{ radar.count }} 条 · Future Signal {{ radar.avg_future_signal_score }}</span>
           </article>
           {% else %}
@@ -171,7 +190,7 @@
             <span>{{ group.count }} 条</span>
             <ul>
               {% for item in group["items"][:4] %}
-              <li>{{ item.title }}</li>
+              <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></li>
               {% else %}
               <li>暂无</li>
               {% endfor %}
@@ -191,10 +210,10 @@
           {% for article in insights %}
           <article>
             <div class="insight-meta">{{ article.reading_time }}</div>
-            <h3>{{ article.title }}</h3>
+            <h3><a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a></h3>
             <p><strong>为什么值得读：</strong>{{ article.why_read }}</p>
             <p><strong>建议关注：</strong>{{ article.focus }}</p>
-            <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">阅读原文</a>
+            <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">阅读全文</a>
           </article>
           {% else %}
           <article>
