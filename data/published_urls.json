@@ -139,6 +139,41 @@
       "published_date": "2026-06-04",
       "selected_date": "2026-06-20",
       "category": "复合材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/06/18/ford-to-produce-first-lfp-cells-this-year-thanks-to-catl/",
+      "title": "Ford to produce first LFP cells this year – thanks to CATL",
+      "published_date": "2026-06-18",
+      "selected_date": "2026-06-22",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/06/19/quantumscape-signs-honda-as-solid-state-battery-partner/",
+      "title": "QuantumScape signs Honda as solid-state battery partner",
+      "published_date": "2026-06-19",
+      "selected_date": "2026-06-22",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://spectrum.ieee.org/orbital-data-centers-heat",
+      "title": "Why Orbital Data Centers Are Harder Than Silicon Valley Thinks",
+      "published_date": "2026-06-11",
+      "selected_date": "2026-06-22",
+      "category": "政策法规与标准"
+    },
+    {
+      "url": "https://spectrum.ieee.org/ieee-celebrates-honors-ceremony-2026",
+      "title": "IEEE Celebrates Technology’s Brightest Minds at Annual Event",
+      "published_date": "2026-06-09",
+      "selected_date": "2026-06-22",
+      "category": "电驱与电子材料"
+    },
+    {
+      "url": "https://spectrum.ieee.org/researcher-trains-robots-to-guess",
+      "title": "Award-Winning Researcher Trains Robots to Make Educated Guesses",
+      "published_date": "2026-06-13",
+      "selected_date": "2026-06-22",
+      "category": "学术论文"
     }
   ]
 }
