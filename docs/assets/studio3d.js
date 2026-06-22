@@ -25,6 +25,11 @@ renderer.toneMappingExposure = 1.05;
 container.appendChild(renderer.domElement);
 
 const interactive = [];
+const outdoorFoliage = [];
+let catGroup;
+let catBody;
+let catTail;
+const catEars = [];
 const pointer = new THREE.Vector2();
 const raycaster = new THREE.Raycaster();
 let hovered = null;
@@ -45,6 +50,35 @@ const colors = {
 
 function material(color, roughness = 0.62, metalness = 0.02) {
   return new THREE.MeshStandardMaterial({ color, roughness, metalness });
+}
+
+function glassMaterial() {
+  return new THREE.MeshPhysicalMaterial({
+    color: 0xf7fbff,
+    roughness: 0.04,
+    metalness: 0,
+    transmission: 0.52,
+    transparent: true,
+    opacity: 0.28,
+    clearcoat: 1,
+    clearcoatRoughness: 0.05,
+  });
+}
+
+function flatMaterial(color, opacity = 1) {
+  return new THREE.MeshBasicMaterial({
+    color,
+    transparent: opacity < 1,
+    opacity,
+    side: THREE.DoubleSide,
+  });
+}
+
+function createSoftBlob(color, x, y, z, scale, opacity = 0.42) {
+  const blob = new THREE.Mesh(new THREE.CircleGeometry(0.5, 28), flatMaterial(color, opacity));
+  blob.position.set(x, y, z);
+  blob.scale.set(scale[0], scale[1], 1);
+  return blob;
 }
 
 function mesh(geometry, mat, position, rotation = [0, 0, 0], cast = true, receive = true) {
@@ -99,9 +133,55 @@ mesh(new THREE.BoxGeometry(0.26, 1.25, 0.26), material(colors.darkWood, 0.7), [3
 
 const windowGroup = createGroup("future-signals", "Window · Future Signals");
 windowGroup.position.set(2.45, 2.9, -2.92);
-windowGroup.add(new THREE.Mesh(new THREE.BoxGeometry(2.3, 1.55, 0.08), material(0xeaf3f1, 0.2, 0.0)));
-windowGroup.add(new THREE.Mesh(new THREE.BoxGeometry(2.48, 0.08, 0.14), material(0xffffff, 0.45)));
-windowGroup.children[1].position.y = 0.8;
+const outsideSky = new THREE.Mesh(new THREE.PlaneGeometry(2.18, 1.42), flatMaterial(0xbfd8df, 1));
+outsideSky.position.z = -0.085;
+windowGroup.add(outsideSky);
+const skyGlow = createSoftBlob(0xf7f0d7, 0.62, 0.43, -0.079, [0.55, 0.32], 0.34);
+windowGroup.add(skyGlow);
+const distantHills = new THREE.Mesh(new THREE.PlaneGeometry(2.18, 0.32), flatMaterial(0x9fb49b, 0.42));
+distantHills.position.set(0, -0.22, -0.081);
+windowGroup.add(distantHills);
+const outsideGround = new THREE.Mesh(new THREE.PlaneGeometry(2.18, 0.46), flatMaterial(0x8da877, 1));
+outsideGround.position.set(0, -0.48, -0.08);
+windowGroup.add(outsideGround);
+[-0.9, -0.48, 0.05, 0.58, 0.96].forEach((x, index) => {
+  const farCrown = createSoftBlob(index % 2 ? 0x5f815d : 0x78996d, x, -0.18 + (index % 2) * 0.035, -0.074 - index * 0.002, [0.34, 0.22], 0.46);
+  farCrown.userData.wave = index * 0.7;
+  farCrown.userData.baseScale = farCrown.scale.clone();
+  outdoorFoliage.push(farCrown);
+  windowGroup.add(farCrown);
+});
+[-0.62, -0.18, 0.38, 0.78].forEach((x, index) => {
+  const tree = new THREE.Group();
+  tree.position.set(x, -0.38 + (index % 2) * 0.04, -0.055 - index * 0.004);
+  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.022, 0.032, 0.48, 10), flatMaterial(0x80664a, 0.9));
+  trunk.position.y = 0.08;
+  const crown = new THREE.Mesh(new THREE.SphereGeometry(0.22 + index * 0.015, 18, 12), flatMaterial(index % 2 ? 0x6f9367 : 0x557d5b, 0.92));
+  crown.scale.set(1.05, 1.22, 0.72);
+  crown.position.y = 0.39;
+  crown.userData.wave = index;
+  crown.userData.baseScale = crown.scale.clone();
+  outdoorFoliage.push(crown);
+  tree.add(trunk, crown);
+  windowGroup.add(tree);
+});
+const distantTrees = new THREE.Mesh(new THREE.PlaneGeometry(2.0, 0.28), flatMaterial(0x6f8f6c, 0.36));
+distantTrees.position.set(0.04, -0.1, -0.09);
+windowGroup.add(distantTrees);
+const glass = new THREE.Mesh(new THREE.BoxGeometry(2.3, 1.55, 0.045), glassMaterial());
+windowGroup.add(glass);
+const glassHighlight = new THREE.Mesh(new THREE.PlaneGeometry(0.16, 1.42), flatMaterial(0xffffff, 0.18));
+glassHighlight.position.set(-0.48, 0.02, 0.035);
+glassHighlight.rotation.z = -0.22;
+windowGroup.add(glassHighlight);
+const windowSill = new THREE.Mesh(new THREE.BoxGeometry(2.7, 0.12, 0.38), material(0xf3efe7, 0.62));
+windowSill.position.set(0, -0.93, 0.12);
+windowSill.castShadow = true;
+windowSill.receiveShadow = true;
+windowGroup.add(windowSill);
+const topFrame = new THREE.Mesh(new THREE.BoxGeometry(2.48, 0.08, 0.14), material(0xffffff, 0.45));
+topFrame.position.y = 0.8;
+windowGroup.add(topFrame);
 const frameH = new THREE.Mesh(new THREE.BoxGeometry(2.48, 0.08, 0.14), material(0xffffff, 0.45));
 frameH.position.y = -0.8;
 windowGroup.add(frameH);
@@ -113,6 +193,15 @@ windowGroup.add(frameV1, frameV2);
 const centerV = new THREE.Mesh(new THREE.BoxGeometry(0.055, 1.6, 0.15), material(0xffffff, 0.45));
 windowGroup.add(centerV);
 addInteractive(windowGroup, "future-signals", "Window · Future Signals");
+
+const sunPatch = new THREE.Mesh(new THREE.PlaneGeometry(2.25, 1.18), flatMaterial(0xf5e8c7, 0.18));
+sunPatch.position.set(1.9, 0.012, -0.1);
+sunPatch.rotation.set(-Math.PI / 2, 0, -0.28);
+scene.add(sunPatch);
+const windowLight = new THREE.RectAreaLight(0xfff0d0, 2.6, 2.2, 1.35);
+windowLight.position.set(2.45, 2.65, -2.45);
+windowLight.lookAt(0.6, 1.1, 0.8);
+scene.add(windowLight);
 
 const shelfGroup = createGroup("opportunity-graph", "Bookshelf · Material Opportunity Graph");
 shelfGroup.position.set(-3.35, 2.05, -2.75);
@@ -166,6 +255,56 @@ lid.userData.isLid = true;
 archiveGroup.add(lid);
 addInteractive(archiveGroup, "archives", "Archive Box · Archive");
 
+catGroup = new THREE.Group();
+catGroup.position.set(0.28, 1.16, -0.2);
+catGroup.rotation.y = -0.18;
+scene.add(catGroup);
+const catFur = material(0xb8afa3, 0.82);
+const catWarmFur = material(0xd8cbb9, 0.82);
+const catDark = material(0x4b423b, 0.76);
+catBody = new THREE.Mesh(new THREE.SphereGeometry(0.34, 24, 16), catFur);
+catBody.scale.set(1.45, 0.52, 0.72);
+catBody.position.set(0, 0.12, 0);
+catBody.castShadow = true;
+catBody.receiveShadow = true;
+catGroup.add(catBody);
+const catHead = new THREE.Mesh(new THREE.SphereGeometry(0.18, 20, 14), catWarmFur);
+catHead.scale.set(1.04, 0.92, 0.94);
+catHead.position.set(-0.43, 0.23, 0.03);
+catHead.castShadow = true;
+catGroup.add(catHead);
+[-0.52, -0.36].forEach((x, index) => {
+  const ear = new THREE.Mesh(new THREE.ConeGeometry(0.065, 0.14, 3), catFur);
+  ear.position.set(x, 0.39, 0.03 + (index ? 0.08 : -0.08));
+  ear.rotation.set(index ? 0.25 : -0.25, 0, Math.PI);
+  ear.userData.baseRotation = ear.rotation.clone();
+  ear.castShadow = true;
+  catEars.push(ear);
+  catGroup.add(ear);
+});
+[-0.49, -0.49].forEach((x, index) => {
+  const eye = new THREE.Mesh(new THREE.BoxGeometry(0.055, 0.006, 0.012), catDark);
+  eye.position.set(x, 0.25, index ? 0.105 : -0.045);
+  eye.rotation.x = index ? 0.18 : -0.18;
+  catGroup.add(eye);
+});
+catTail = new THREE.Mesh(new THREE.TorusGeometry(0.22, 0.035, 10, 28, Math.PI * 1.25), catFur);
+catTail.position.set(0.43, 0.22, -0.02);
+catTail.rotation.set(1.16, 0.18, -0.42);
+catTail.castShadow = true;
+catGroup.add(catTail);
+[-0.2, 0.18].forEach((x) => {
+  const paw = new THREE.Mesh(new THREE.SphereGeometry(0.07, 12, 8), catWarmFur);
+  paw.scale.set(1.4, 0.28, 0.72);
+  paw.position.set(x, -0.05, 0.22);
+  paw.castShadow = true;
+  catGroup.add(paw);
+});
+const catShadow = new THREE.Mesh(new THREE.CircleGeometry(0.48, 32), flatMaterial(0x3a2f24, 0.10));
+catShadow.position.set(0.1, -0.085, 0.02);
+catShadow.rotation.x = -Math.PI / 2;
+catGroup.add(catShadow);
+
 const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup];
 objectGroups.forEach((group) => {
   group.userData.baseY = group.position.y;
@@ -214,6 +353,25 @@ function animate(time) {
     const archiveLid = archiveGroup.children.find((child) => child.userData.isLid);
     if (archiveLid) {
       archiveLid.rotation.x += ((hovered === archiveGroup ? -0.22 : 0) - archiveLid.rotation.x) * 0.12;
+    }
+    outdoorFoliage.forEach((leaf, index) => {
+      leaf.rotation.z = Math.sin(t * 0.85 + leaf.userData.wave) * 0.018;
+      const base = leaf.userData.baseScale;
+      const pulse = 1 + Math.sin(t * 0.6 + index) * 0.012;
+      leaf.scale.set(base.x * pulse, base.y, base.z);
+    });
+    if (catBody && catTail) {
+      catBody.scale.y = 0.52 + Math.sin(t * 1.2) * 0.012;
+      catTail.rotation.z = -0.42 + Math.sin(t * 0.8) * 0.045;
+      const earTwitch = Math.max(0, Math.sin(t * 0.72 - 1.4)) ** 14;
+      catEars.forEach((ear, index) => {
+        const base = ear.userData.baseRotation;
+        ear.rotation.set(
+          base.x + earTwitch * (index ? 0.1 : -0.08),
+          base.y,
+          base.z + earTwitch * (index ? -0.12 : 0.12)
+        );
+      });
     }
   }
   renderer.render(scene, camera);
