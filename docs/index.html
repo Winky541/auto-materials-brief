@@ -18,44 +18,59 @@
     </header>
 
     <main class="page">
-      <section id="studio" class="studio-hero" aria-labelledby="studio-title">
+      <section id="studio" class="studio-hero is-3d" aria-labelledby="studio-title">
+        <div
+          id="auraStudio3d"
+          class="studio-3d"
+          data-root-prefix="."
+          aria-label="AURA realistic 3D researcher's workspace"
+        >
+          <div class="studio-3d-loading">
+            <span>AURA Studio</span>
+            <small>Entering the researcher's workspace</small>
+          </div>
+        </div>
         <div class="studio-copy">
           <p class="eyebrow">2026-06-22</p>
           <h1 id="studio-title">AURA Studio</h1>
-          <p>未来产业、技术与材料情报平台</p>
+          <p>Researcher's Workspace</p>
         </div>
-        <div class="studio-light" aria-hidden="true"></div>
-        <div class="studio-wall-note" aria-hidden="true">observe · interpret · prepare</div>
-        <div class="research-desk" aria-label="Researcher's desk navigation">
-          <a class="desk-object desk-window" href="#future-signals" aria-label="Open Future Signals">
+        <div class="studio-hint">Click objects in the room</div>
+        <div class="studio-object-label" id="studioObjectLabel" aria-hidden="true"></div>
+        <div class="studio-panel" id="studioPanel" aria-live="polite" aria-hidden="true">
+          <button class="studio-panel-close" type="button" data-close-studio-panel aria-label="Close studio panel">×</button>
+          <div class="studio-panel-content" id="studioPanelContent"></div>
+        </div>
+        <div class="research-desk studio-fallback" aria-label="Researcher's desk fallback navigation">
+          <button class="desk-object desk-window" type="button" data-studio-target="future-signals" aria-label="Open Future Signals">
             <span class="window-frame"><i></i><i></i></span>
             <strong>Window</strong>
             <em>Future Signals</em>
-          </a>
-          <a class="desk-object desk-notebook" href="#key-insight" aria-label="Open Today's Key Insight">
+          </button>
+          <button class="desk-object desk-notebook" type="button" data-studio-target="key-insight" aria-label="Open Today's Key Insight">
             <span class="notebook-shape"><i></i></span>
             <strong>Notebook</strong>
             <em>Today's Key Insight</em>
-          </a>
-          <a class="desk-object desk-bookshelf" href="#opportunity-graph" aria-label="Open Material Opportunity Graph">
+          </button>
+          <button class="desk-object desk-bookshelf" type="button" data-studio-target="opportunity-graph" aria-label="Open Material Opportunity Graph">
             <span class="bookshelf-shape"><i></i><i></i><i></i><i></i></span>
             <strong>Bookshelf</strong>
             <em>Material Opportunity Graph</em>
-          </a>
-          <a class="desk-object desk-palette" href="#suggested-actions" aria-label="Open Suggested Actions">
+          </button>
+          <button class="desk-object desk-palette" type="button" data-studio-target="suggested-actions" aria-label="Open Suggested Actions">
             <span class="palette-shape"><i></i><i></i><i></i><i></i></span>
             <strong>Palette</strong>
             <em>Suggested Actions</em>
-          </a>
-          <a class="desk-object desk-archive" href="#archives" aria-label="Open Archive">
+          </button>
+          <button class="desk-object desk-archive" type="button" data-studio-target="archives" aria-label="Open Archive">
             <span class="archive-shape"><i></i></span>
             <strong>Archive Box</strong>
             <em>Archive</em>
-          </a>
+          </button>
         </div>
       </section>
 
-      <section id="future-signals" class="opportunity-panel radar-panel">
+      <section id="future-signals" class="opportunity-panel radar-panel studio-content-source">
         <div class="section-heading">
           <p class="eyebrow">Window</p>
           <h2>Future Signals</h2>
@@ -76,7 +91,7 @@
         </div>
       </section>
 
-      <section id="key-insight" class="opportunity-panel">
+      <section id="key-insight" class="opportunity-panel studio-content-source">
         <div class="section-heading">
           <p class="eyebrow">Notebook</p>
           <h2>Today's Key Insight</h2>
@@ -138,7 +153,7 @@
         </div>
       </section>
 
-      <section id="opportunity-graph" class="opportunity-panel priority-panel">
+      <section id="opportunity-graph" class="opportunity-panel priority-panel studio-content-source">
         <div class="section-heading">
           <p class="eyebrow">Bookshelf</p>
           <h2>Material Opportunity Graph</h2>
@@ -219,7 +234,7 @@
         </div>
       </section>
 
-      <section id="suggested-actions" class="opportunity-panel">
+      <section id="suggested-actions" class="opportunity-panel studio-content-source">
         <div class="section-heading">
           <p class="eyebrow">Palette</p>
           <h2>Suggested Actions</h2>
@@ -273,7 +288,7 @@
         </div>
       </section>
 
-      <section id="insights" class="opportunity-panel insights-panel">
+      <section id="insights" class="opportunity-panel insights-panel studio-content-source">
         <div class="section-heading">
           <p class="eyebrow">Insights</p>
           <h2>Insights</h2>
@@ -303,7 +318,7 @@
         </div>
       </section>
 
-      <section id="archives" class="archive-grid">
+      <section id="archives" class="archive-grid studio-content-source">
         <div>
           <p class="eyebrow">Archive</p>
           <h2>历史归档</h2>
@@ -336,6 +351,40 @@
     <script>
       window.AURA = { generatedAt: "2026-06-22" };
     </script>
+    <script>
+      (() => {
+        const panel = document.getElementById("studioPanel");
+        const panelContent = document.getElementById("studioPanelContent");
+        const sources = new Map(
+          [...document.querySelectorAll(".studio-content-source")].map((node) => [node.id, node])
+        );
+        if (!panel || !panelContent) return;
+
+        const openPanel = (target) => {
+          const source = sources.get(target);
+          if (!source) return;
+          panelContent.innerHTML = source.innerHTML;
+          panel.dataset.source = target;
+          panel.classList.add("is-open");
+          panel.setAttribute("aria-hidden", "false");
+        };
+
+        const closePanel = () => {
+          panel.classList.remove("is-open");
+          panel.setAttribute("aria-hidden", "true");
+        };
+
+        window.AURAStudioOpenPanel = openPanel;
+        document.querySelectorAll("[data-studio-target]").forEach((button) => {
+          button.addEventListener("click", () => openPanel(button.dataset.studioTarget));
+        });
+        document.querySelector("[data-close-studio-panel]")?.addEventListener("click", closePanel);
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") closePanel();
+        });
+      })();
+    </script>
+    <script type="module" src="assets/studio3d.js"></script>
 <div class="metric-modal" id="metricModal" aria-hidden="true">
   <div class="metric-modal-backdrop" data-close-modal></div>
   <section class="metric-modal-panel" role="dialog" aria-modal="true" aria-labelledby="metricModalTitle">
@@ -369,8 +418,10 @@
       modal.setAttribute("aria-hidden", "true");
     };
 
-    document.querySelectorAll("[data-metric]").forEach((button) => {
-      button.addEventListener("click", () => openModal(button.dataset.metric));
+    document.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-metric]");
+      if (!button) return;
+      openModal(button.dataset.metric);
     });
     document.querySelectorAll("[data-close-modal]").forEach((button) => {
       button.addEventListener("click", closeModal);

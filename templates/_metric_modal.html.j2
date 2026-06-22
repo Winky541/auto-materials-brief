@@ -31,8 +31,10 @@
       modal.setAttribute("aria-hidden", "true");
     };
 
-    document.querySelectorAll("[data-metric]").forEach((button) => {
-      button.addEventListener("click", () => openModal(button.dataset.metric));
+    document.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-metric]");
+      if (!button) return;
+      openModal(button.dataset.metric);
     });
     document.querySelectorAll("[data-close-modal]").forEach((button) => {
       button.addEventListener("click", closeModal);
