@@ -75,6 +75,7 @@ a {
 
 .brand small,
 .top-nav a,
+.top-nav span,
 .eyebrow {
   color: var(--muted);
   font-size: 13px;
@@ -84,6 +85,13 @@ a {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.top-nav span {
+  border: 1px solid rgba(229, 226, 218, 0.86);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.5);
+  padding: 6px 10px;
 }
 
 .top-nav a {
@@ -106,17 +114,17 @@ a {
 
 .studio-hero {
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.74), rgba(255,255,255,0.38)),
+    linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,255,255,0.42)),
     radial-gradient(circle at 18% 24%, rgba(107, 142, 110, 0.13), transparent 24%),
     radial-gradient(circle at 82% 18%, rgba(201, 123, 99, 0.12), transparent 24%),
     linear-gradient(135deg, rgba(242, 239, 232, 0.88), rgba(250, 250, 248, 0.62));
   border: 1px solid rgba(229, 226, 218, 0.88);
-  border-radius: 26px;
+  border-radius: 30px;
   box-shadow: var(--soft-shadow);
   display: grid;
   gap: 30px;
   margin-bottom: 52px;
-  min-height: 620px;
+  min-height: min(780px, calc(100vh - 150px));
   overflow: hidden;
   padding: 38px;
   position: relative;
@@ -135,10 +143,21 @@ a {
   width: 100%;
 }
 
+.studio-hero::after {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.18), rgba(176,137,104,0.10), rgba(255,255,255,0.10));
+  bottom: 0;
+  content: "";
+  height: 14px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
 .studio-copy {
   max-width: 720px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .studio-copy h1 {
@@ -156,14 +175,60 @@ a {
   margin: 16px 0 0;
 }
 
-.research-desk {
-  align-items: end;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr 1.15fr 0.95fr 0.85fr;
-  gap: 22px;
-  min-height: 360px;
-  position: relative;
+.studio-light {
+  background:
+    linear-gradient(125deg, rgba(255,255,255,0.70), rgba(255,255,255,0.28) 42%, transparent 43%);
+  filter: blur(0.2px);
+  height: 62%;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 58%;
   z-index: 1;
+}
+
+.studio-wall-note {
+  color: rgba(107, 114, 128, 0.42);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  position: absolute;
+  right: 42px;
+  text-transform: lowercase;
+  top: 42px;
+  z-index: 2;
+}
+
+.research-desk {
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.research-desk::before {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0)),
+    linear-gradient(90deg, rgba(176, 137, 104, 0.24), rgba(200, 164, 90, 0.12), rgba(176, 137, 104, 0.18));
+  border-top: 1px solid rgba(176, 137, 104, 0.22);
+  bottom: 0;
+  content: "";
+  height: 31%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.research-desk::after {
+  background: rgba(31, 41, 51, 0.055);
+  border-radius: 999px;
+  bottom: 22%;
+  content: "";
+  filter: blur(18px);
+  height: 38px;
+  left: 10%;
+  position: absolute;
+  right: 10%;
 }
 
 .desk-object {
@@ -172,10 +237,11 @@ a {
   justify-items: center;
   min-width: 0;
   outline: none;
-  position: relative;
+  position: absolute;
   text-align: center;
   transform-origin: center bottom;
   transition: transform 180ms ease, filter 180ms ease;
+  z-index: 2;
 }
 
 .desk-object:hover,
@@ -193,12 +259,26 @@ a {
   font-size: 20px;
   font-weight: 400;
   margin-top: 12px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 160ms ease, transform 160ms ease;
 }
 
 .desk-object em {
   color: var(--muted);
   font-size: 12px;
   font-style: normal;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.desk-object:hover strong,
+.desk-object:hover em,
+.desk-object:focus-visible strong,
+.desk-object:focus-visible em {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .window-frame,
@@ -221,6 +301,12 @@ a {
   height: 174px;
   overflow: hidden;
   width: min(100%, 230px);
+}
+
+.desk-window {
+  right: 9%;
+  top: 18%;
+  width: 230px;
 }
 
 .window-frame::before,
@@ -277,6 +363,12 @@ a {
   width: min(100%, 176px);
 }
 
+.desk-notebook {
+  bottom: 15%;
+  left: 34%;
+  width: 176px;
+}
+
 .notebook-shape i {
   border-top: 1px solid rgba(107, 142, 110, 0.18);
   display: block;
@@ -318,6 +410,12 @@ a {
   justify-content: center;
   padding: 22px 18px;
   width: min(100%, 220px);
+}
+
+.desk-bookshelf {
+  left: 8%;
+  top: 31%;
+  width: 220px;
 }
 
 .bookshelf-shape::after {
@@ -377,6 +475,12 @@ a {
   width: min(100%, 184px);
 }
 
+.desk-palette {
+  bottom: 15%;
+  left: 52%;
+  width: 184px;
+}
+
 .palette-shape::after {
   background: var(--bg);
   border: 1px solid rgba(229, 226, 218, 0.95);
@@ -432,6 +536,12 @@ a {
   height: 118px;
   margin-bottom: 18px;
   width: min(100%, 172px);
+}
+
+.desk-archive {
+  bottom: 14%;
+  right: 13%;
+  width: 172px;
 }
 
 .archive-shape::before {
@@ -1709,12 +1819,34 @@ a {
   }
 
   .research-desk {
+    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     min-height: auto;
+    position: relative;
+    inset: auto;
+    margin-top: 24px;
+  }
+
+  .research-desk::before,
+  .research-desk::after,
+  .studio-light {
+    display: none;
   }
 
   .desk-object {
     min-height: 220px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: auto;
+  }
+
+  .desk-object strong,
+  .desk-object em {
+    opacity: 1;
+    transform: none;
   }
 
   .desk-archive {
