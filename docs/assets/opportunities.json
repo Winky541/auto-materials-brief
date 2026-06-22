@@ -1,61 +1,61 @@
 {
-  "updated_at": "2026-06-21",
+  "updated_at": "2026-06-22",
   "topics": [
+    {
+      "domain": "Thermal & Safety",
+      "topic": "Battery Thermal Management Materials",
+      "material_value": 70,
+      "validation_priority": "High",
+      "suggested_action": "Technology Watch",
+      "suggested_action_zh": "持续观察",
+      "related_signals": [
+        {
+          "title": "Ford to produce first LFP cells this year – thanks to CATL",
+          "url": "https://www.electrive.com/2026/06/18/ford-to-produce-first-lfp-cells-this-year-thanks-to-catl/",
+          "source": "Electrive",
+          "published_date": "2026-06-18"
+        },
+        {
+          "title": "Why Orbital Data Centers Are Harder Than Silicon Valley Thinks",
+          "url": "https://spectrum.ieee.org/orbital-data-centers-heat",
+          "source": "IEEE Spectrum",
+          "published_date": "2026-06-11"
+        },
+        {
+          "title": "IEEE Celebrates Technology’s Brightest Minds at Annual Event",
+          "url": "https://spectrum.ieee.org/ieee-celebrates-honors-ceremony-2026",
+          "source": "IEEE Spectrum",
+          "published_date": "2026-06-09"
+        },
+        {
+          "title": "Award-Winning Researcher Trains Robots to Make Educated Guesses",
+          "url": "https://spectrum.ieee.org/researcher-trains-robots-to-guess",
+          "source": "IEEE Spectrum",
+          "published_date": "2026-06-13"
+        }
+      ],
+      "news_count": 4,
+      "first_seen": "2026-06-22",
+      "updated_at": "2026-06-22"
+    },
     {
       "domain": "Energy Systems",
       "topic": "Solid-State Electrolytes",
-      "material_value": 68,
+      "material_value": 60,
       "validation_priority": "Medium",
       "suggested_action": "Technology Watch",
       "suggested_action_zh": "持续观察",
       "related_signals": [
         {
-          "title": "Chinese Battery Giant CATL Plans Sodium-Ion Battery Rollout Within Months",
-          "url": "https://www.aol.com/lifestyle/chinese-battery-giant-catl-plans-230016306.html",
-          "source": "Bing News",
-          "published_date": "2026-06-09"
-        },
-        {
-          "title": "CATL says its next sodium-ion battery clears 500 kilometers and is ready for mass production",
-          "url": "https://www.msn.com/en-us/autos/news/catl-says-its-next-sodium-ion-battery-clears-500-kilometers-and-is-ready-for-mass-production/ar-AA25iOtc",
-          "source": "Bing News",
-          "published_date": "2026-06-10"
-        },
-        {
-          "title": "CATL To Mass-Produce Sodium-Ion Batteries In 2026 — Targets 370+ Miles Range",
-          "url": "https://www.aol.com/articles/catl-mass-produce-sodium-ion-170003000.html",
-          "source": "Bing News",
-          "published_date": "2026-06-01"
-        },
-        {
-          "title": "GM Activates 250,000 EVs for Vehicle-to-Grid: Sodium-Ion Batteries Target Grid-Peaker Replacement",
-          "url": "https://www.techtimes.com/articles/318197/20260611/gm-activates-250000-evs-vehicle-grid-sodium-ion-batteries-target-grid-peaker-replacement.htm",
-          "source": "Bing News",
-          "published_date": "2026-06-11"
-        }
-      ],
-      "news_count": 4,
-      "first_seen": "2026-06-21",
-      "updated_at": "2026-06-21"
-    },
-    {
-      "domain": "Structural Materials",
-      "topic": "eVTOL Composites",
-      "material_value": 35,
-      "validation_priority": "Low",
-      "suggested_action": "Technology Watch",
-      "suggested_action_zh": "持续观察",
-      "related_signals": [
-        {
-          "title": "A Look At Carbon Fiber 240SX That Built for Drifting",
-          "url": "https://www.msn.com/en-us/autos/news/a-look-at-carbon-fiber-240sx-that-built-for-drifting/vi-AA24PIcK",
-          "source": "Bing News",
-          "published_date": "2026-06-04"
+          "title": "QuantumScape signs Honda as solid-state battery partner",
+          "url": "https://www.electrive.com/2026/06/19/quantumscape-signs-honda-as-solid-state-battery-partner/",
+          "source": "Electrive",
+          "published_date": "2026-06-19"
         }
       ],
       "news_count": 1,
       "first_seen": "2026-06-21",
-      "updated_at": "2026-06-21"
+      "updated_at": "2026-06-22"
     }
   ]
 }
