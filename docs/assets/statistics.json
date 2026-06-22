@@ -1,45 +1,40 @@
 {
   "category_counts": {
-    "汽车新材料": 5,
-    "企业技术动态": 2,
-    "学术论文": 1
+    "汽车新材料": 4,
+    "企业技术动态": 3,
+    "电池与储能": 1,
+    "学术论文": 1,
+    "电驱与电子材料": 1
   },
   "source_counts": {
     "IEEE Spectrum": 6,
-    "Electrive": 2
+    "Electrive": 3,
+    "Bing News": 1
   },
   "company_counts": {
-    "Ford": 4,
-    "Nvidia": 2,
-    "Google": 2,
+    "Ford": 5,
     "IEEE": 2,
-    "CATL": 1,
-    "Honda": 1,
-    "QuantumScape": 1,
-    "SpaceX": 1,
-    "xAI": 1,
-    "Planet": 1
+    "GM": 2,
+    "Stellantis": 1,
+    "BYD": 1,
+    "Bosch": 1,
+    "Michigan State University": 1,
+    "Prince Mohammad Bin Fahd University": 1,
+    "Saudi Aramco": 1,
+    "Chonnam National University": 1
   },
   "keyword_counts": {
-    "GaN": 4,
-    "SiC": 2,
-    "LFP正极材料": 1,
-    "电池电芯": 1,
-    "固态电解质": 1,
-    "固态电池": 1,
-    "热管理材料": 1,
-    "轻量化复合材料": 1,
-    "散热涂层": 1,
-    "辐射屏蔽材料": 1,
-    "太阳能电池材料（钙钛矿）": 1,
-    "CMOS图像传感器材料": 1,
-    "氮化镓微LED材料": 1,
+    "GaN": 5,
+    "SiC": 3,
+    "电池材料": 1,
+    "battery": 1,
     "轻量化材料": 1,
+    "传感器材料": 1,
+    "低功耗通信材料": 1,
+    "软体机器人材料": 1,
     "玻璃纤维复合材料": 1,
     "钢": 1,
     "铸铁（卡车后轴）": 1,
-    "铜（发电机绕组）": 1,
-    "传感器材料": 1,
-    "低功耗通信材料": 1
+    "铜（发电机绕组）": 1
   }
 }
