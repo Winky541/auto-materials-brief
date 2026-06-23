@@ -12,7 +12,7 @@ import json
 import logging
 import re
 from collections import Counter
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
@@ -183,11 +183,17 @@ def clean_url(url: str | None, base_url: str | None = None) -> str | None:
             continue
         cleaned_query.append((key, value))
 
+    host = parsed.netloc.lower()
+    if host.startswith("m."):
+        host = host[2:]
+    path = re.sub(r"/+$", "", parsed.path or "")
+    if not path:
+        path = "/"
     return urlunparse(
         (
             parsed.scheme.lower(),
-            parsed.netloc.lower(),
-            parsed.path or "/",
+            host,
+            path,
             parsed.params,
             urlencode(cleaned_query, doseq=True),
             "",
@@ -233,6 +239,27 @@ def is_current_month(date_value: str, timezone_name: str = "Asia/Shanghai") -> b
         return False
 
     now = datetime.now(ZoneInfo(timezone_name)).date()
+    return published.year == now.year and published.month == now.month
+
+
+def is_allowed_date_for_source(
+    date_value: str,
+    source: dict[str, Any],
+    timezone_name: str = "Asia/Shanghai",
+) -> bool:
+    """Default to current month; papers, patents, and standards may use 90 days."""
+    try:
+        published = datetime.strptime(date_value, "%Y-%m-%d").date()
+    except ValueError:
+        return False
+    now = datetime.now(ZoneInfo(timezone_name)).date()
+    source_text = f"{source.get('name', '')} {source.get('source_type', '')}".casefold()
+    long_window = any(
+        keyword in source_text
+        for keyword in ("journal", "nature", "ieee", "sae", "wipo", "cnipa", "patent", "standard", "论文", "专利", "标准")
+    )
+    if long_window:
+        return now - timedelta(days=90) <= published <= now
     return published.year == now.year and published.month == now.month
 
 
@@ -363,7 +390,7 @@ def fetch_rss_source(
         if not title or not entry_url or not published_date:
             skipped += 1
             continue
-        if not is_current_month(published_date, timezone_name):
+        if not is_allowed_date_for_source(published_date, source, timezone_name):
             skipped += 1
             continue
 
@@ -487,7 +514,7 @@ def fetch_html_source(
         if not title or not link or not published_date:
             skipped += 1
             continue
-        if not is_current_month(published_date, timezone_name):
+        if not is_allowed_date_for_source(published_date, source, timezone_name):
             skipped += 1
             continue
 
@@ -560,7 +587,7 @@ def fetch_bing_news_rss(
         if not title or not entry_url or not published_date:
             skipped += 1
             continue
-        if not is_current_month(published_date, timezone_name):
+        if not is_allowed_date_for_source(published_date, source_template, timezone_name):
             skipped += 1
             continue
 

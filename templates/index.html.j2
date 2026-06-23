@@ -133,35 +133,89 @@
           <p class="eyebrow">Bookshelf</p>
           <h2>Material Opportunity Graph</h2>
         </div>
-        <div class="domain-grid">
-          {% for domain in opportunity_domains %}
-          <article>
-            <strong>{{ domain.domain }}</strong>
-            <p>{{ domain.zh }}</p>
-            <span>{{ domain.news_count }} signals · {{ domain.topic_count }} topics</span>
-          </article>
-          {% endfor %}
-        </div>
-        <div class="topic-grid">
-          {% for topic in opportunity_topics[:8] %}
-          <article>
-            <div class="topic-topline">
-              <span>{{ topic.domain }}</span>
-              <b>{{ topic.validation_priority }} <button class="info-button compact" type="button" data-metric="validation_priority" aria-label="查看Validation Priority说明">ⓘ</button></b>
-            </div>
-            <h3>{{ topic.topic }}</h3>
-            <p>
-              Material Value {{ topic.material_value }}
-              <button class="info-button compact" type="button" data-metric="material_value" aria-label="查看Material Value说明">ⓘ</button>
-              · {{ topic.suggested_action }}
-              <button class="info-button compact" type="button" data-metric="suggested_action" aria-label="查看Suggested Action说明">ⓘ</button>
-            </p>
-            <div class="related-signal-list">
-              {% for signal in topic.related_signals %}
-              <a href="{{ signal.url }}" target="_blank" rel="noopener noreferrer">{{ signal.title }}</a>
+        <div class="bookshelf-library" aria-label="Opportunity library">
+          {% for domain in opportunity_library %}
+          <details class="bookshelf-domain" {% if domain.is_default_open %}open{% endif %}>
+            <summary>
+              <span>
+                <strong>{{ domain.domain }}</strong>
+                <em>{{ domain.zh }}</em>
+              </span>
+              <b>{{ domain.active_count }} Active{% if domain.dormant_count %} · {{ domain.dormant_count }} Dormant{% endif %}</b>
+            </summary>
+            <div class="opportunity-books">
+              {% for opportunity in domain.opportunities %}
+              <details class="opportunity-book">
+                <summary>
+                  <span>{{ opportunity.topic }}</span>
+                  <b>{{ opportunity.current_stage }}</b>
+                </summary>
+                <div class="opportunity-profile">
+                  <dl>
+                    <div><dt>Domain</dt><dd>{{ opportunity.domain }}</dd></div>
+                    <div><dt>First Seen</dt><dd>{{ opportunity.first_seen }}</dd></div>
+                    <div><dt>Updated</dt><dd>{{ opportunity.updated_at }}</dd></div>
+                    <div><dt>Status</dt><dd>{{ opportunity.status }}</dd></div>
+                    <div><dt>Material Value <button class="info-button compact" type="button" data-metric="material_value" aria-label="查看Material Value说明">ⓘ</button></dt><dd>{{ opportunity.material_value }}</dd></div>
+                    <div><dt>Suggested Action <button class="info-button compact" type="button" data-metric="suggested_action" aria-label="查看Suggested Action说明">ⓘ</button></dt><dd>{{ opportunity.suggested_action }} / {{ opportunity.suggested_action_zh }}</dd></div>
+                  </dl>
+                  <div class="profile-tags">
+                    <strong>涉及企业</strong>
+                    {% for company in opportunity.companies %}
+                    <span>{{ company }}</span>
+                    {% else %}
+                    <span>待核验</span>
+                    {% endfor %}
+                  </div>
+                  <div class="profile-tags">
+                    <strong>涉及材料</strong>
+                    {% for material in opportunity.materials %}
+                    <span>{{ material }}</span>
+                    {% else %}
+                    <span>待识别</span>
+                    {% endfor %}
+                  </div>
+                  <div class="evidence-list">
+                    <strong>相关新闻 / 来源</strong>
+                    {% for signal in opportunity.related_signals %}
+                    <a href="{{ signal.url }}" target="_blank" rel="noopener noreferrer">
+                      <span>{{ signal.source }} · {{ signal.published_date }}</span>
+                      {{ signal.title }}
+                    </a>
+                    {% else %}
+                    <p>暂无新增证据来源。</p>
+                    {% endfor %}
+                  </div>
+                </div>
+              </details>
+              {% else %}
+              <p class="empty-library">本周期暂无 Active Opportunity。</p>
               {% endfor %}
             </div>
-          </article>
+            {% if domain.dormant_opportunities %}
+            <details class="dormant-shelf">
+              <summary>Dormant Opportunities</summary>
+              <div class="opportunity-books">
+                {% for opportunity in domain.dormant_opportunities %}
+                <details class="opportunity-book is-dormant">
+                  <summary>
+                    <span>{{ opportunity.topic }}</span>
+                    <b>{{ opportunity.updated_at }}</b>
+                  </summary>
+                  <div class="opportunity-profile">
+                    <dl>
+                      <div><dt>First Seen</dt><dd>{{ opportunity.first_seen }}</dd></div>
+                      <div><dt>Updated</dt><dd>{{ opportunity.updated_at }}</dd></div>
+                      <div><dt>Material Value</dt><dd>{{ opportunity.material_value }}</dd></div>
+                      <div><dt>Suggested Action</dt><dd>{{ opportunity.suggested_action }}</dd></div>
+                    </dl>
+                  </div>
+                </details>
+                {% endfor %}
+              </div>
+            </details>
+            {% endif %}
+          </details>
           {% endfor %}
         </div>
       </section>
@@ -178,7 +232,10 @@
             <span>{% if group.has_new %}<i class="action-dot" aria-label="本周期有新增内容"></i>{% endif %}{{ group.meaning }} · {{ group.count }} 条</span>
             <ul>
               {% for item in group["items"][:4] %}
-              <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></li>
+              <li>
+                <strong>{{ item.title }}</strong>
+                <small>{{ item.domain }} · Material Value {{ item.material_value }}{% if item.is_new %} · 本周期更新{% endif %}</small>
+              </li>
               {% else %}
               <li>暂无</li>
               {% endfor %}
@@ -214,6 +271,41 @@
       </section>
 
       <section id="archives" class="archive-grid studio-content-source">
+        <div class="workspace-history">
+          <p class="eyebrow">Dynamic Workspace</p>
+          <h2>Workspace Archive</h2>
+          {% for cycle in archives.workspace %}
+          <details class="workspace-cycle" {% if loop.first %}open{% endif %}>
+            <summary>{{ cycle.date }}</summary>
+            <div class="workspace-cycle-grid">
+              <article>
+                <strong>Window / Future Signals</strong>
+                {% for signal in cycle.window %}
+                <span>{{ signal.category }} · {{ signal.count }} · Future Signal {{ signal.avg_future_signal_score }}</span>
+                {% else %}
+                <span>本周期暂无未来信号。</span>
+                {% endfor %}
+              </article>
+              <article>
+                <strong>Notebook / Today's Key Insight</strong>
+                {% for row in cycle.notebook %}
+                <span>{{ row.label }}：{{ row.text }}</span>
+                {% endfor %}
+              </article>
+              <article>
+                <strong>Cat / Weekly Insights</strong>
+                {% for article in cycle.cat %}
+                <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
+                {% else %}
+                <span>本周期暂无精选长读。</span>
+                {% endfor %}
+              </article>
+            </div>
+          </details>
+          {% else %}
+          <p class="empty-library">暂无历史工作区快照。</p>
+          {% endfor %}
+        </div>
         <div>
           <p class="eyebrow">Archive</p>
           <h2>Daily Archive</h2>

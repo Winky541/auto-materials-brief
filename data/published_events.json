@@ -1,0 +1,200 @@
+{
+  "events": [
+    {
+      "event_id": "6cc88754ea651cbf",
+      "canonical_title": "AI Is Learning to Read the Room",
+      "canonical_url": "https://spectrum.ieee.org/emotion-ai-context",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://spectrum.ieee.org/emotion-ai-context"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "SiC",
+        "智能座舱"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "7885a1d9d7c177c4",
+      "canonical_title": "QuantumScape signs Honda as solid-state battery partner",
+      "canonical_url": "https://www.electrive.com/2026/06/19/quantumscape-signs-honda-as-solid-state-battery-partner",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://www.electrive.com/2026/06/19/quantumscape-signs-honda-as-solid-state-battery-partner"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "固态电池",
+        "储能"
+      ],
+      "material_opportunities": [
+        "固态电解质材料（如LLZO、LGPS等）的研发和验证需求将增加，可能形成新的供应链机会。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "0692d44d57e17740",
+      "canonical_title": "Commemorating 70 Years of Artificial Intelligence",
+      "canonical_url": "https://spectrum.ieee.org/70-years-of-artificial-intelligence",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://spectrum.ieee.org/70-years-of-artificial-intelligence"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "SiC",
+        "功率半导体"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括封装材料、导热材料、绝缘材料、银烧结材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "5072f016b1e3d1ba",
+      "canonical_title": "War Taught this Ukrainian Entrepreneur the Value of Resilience",
+      "canonical_url": "https://spectrum.ieee.org/mikadze-struk-resilience-in-entrepreneurship",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://spectrum.ieee.org/mikadze-struk-resilience-in-entrepreneurship"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "GaN",
+        "功率半导体"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括封装材料、导热材料、绝缘材料、银烧结材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "90b206fa608de659",
+      "canonical_title": "How is EMI testing evolving for wide-bandgap EV architectures?",
+      "canonical_url": "https://www.eeworldonline.com/how-is-emi-testing-evolving-for-wide-bandgap-ev-architectures",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://www.eeworldonline.com/how-is-emi-testing-evolving-for-wide-bandgap-ev-architectures"
+      ],
+      "source_names": [
+        "Bing News"
+      ],
+      "topic_tags": [
+        "电驱与电子材料",
+        "SiC",
+        "功率半导体"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括封装材料、导热材料、绝缘材料、银烧结材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "05447035643ca6e7",
+      "canonical_title": "Stellantis rules out alternative powertrains for small-car platform",
+      "canonical_url": "https://www.electrive.com/2026/06/19/stellantis-rules-out-alternative-powertrains-for-small-car-platform",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://www.electrive.com/2026/06/19/stellantis-rules-out-alternative-powertrains-for-small-car-platform"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "可能增加对动力电池材料（如正极、负极、电解液、隔膜）的需求，但未指明具体材料类型，机会较为泛化。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "cc228f85fe554079",
+      "canonical_title": "‘Neue Klasse’ upgrades for BMW’s Leipzig plant",
+      "canonical_url": "https://www.electrive.com/2026/06/22/neue-klasse-upgrades-for-bmws-leipzig-plant",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://www.electrive.com/2026/06/22/neue-klasse-upgrades-for-bmws-leipzig-plant"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "其他"
+      ],
+      "material_opportunities": [
+        "信息不足，无法判断材料机会。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "3670aaa6e2ed177d",
+      "canonical_title": "ICCT rankings reveal EU’s bestselling commercial EV manufacturers",
+      "canonical_url": "https://www.electrive.com/2026/06/23/icct-rankings-reveal-eus-bestselling-commercial-ev-manufacturers",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://www.electrive.com/2026/06/23/icct-rankings-reveal-eus-bestselling-commercial-ev-manufacturers"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "topic_tags": [
+        "其他",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "28e04ab490cfba78",
+      "canonical_title": "This 1976 University Experiment Spun Up the U.S. Wind Industry",
+      "canonical_url": "https://spectrum.ieee.org/william-heronemus-wind-energy",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "source_urls": [
+        "https://spectrum.ieee.org/william-heronemus-wind-energy"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "燃料电池",
+        "氢能/燃料电池"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括膜电极、催化剂、储氢材料、密封材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    }
+  ]
+}

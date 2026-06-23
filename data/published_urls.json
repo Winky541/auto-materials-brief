@@ -209,6 +209,48 @@
       "published_date": "2026-06-11",
       "selected_date": "2026-06-23",
       "category": "学术论文"
+    },
+    {
+      "url": "https://spectrum.ieee.org/william-heronemus-wind-energy",
+      "title": "This 1976 University Experiment Spun Up the U.S. Wind Industry",
+      "published_date": "2026-06-15",
+      "selected_date": "2026-06-24",
+      "category": "企业技术动态"
+    },
+    {
+      "url": "https://spectrum.ieee.org/70-years-of-artificial-intelligence",
+      "title": "Commemorating 70 Years of Artificial Intelligence",
+      "published_date": "2026-06-23",
+      "selected_date": "2026-06-24",
+      "category": "学术论文"
+    },
+    {
+      "url": "https://www.eeworldonline.com/how-is-emi-testing-evolving-for-wide-bandgap-ev-architectures",
+      "title": "How is EMI testing evolving for wide-bandgap EV architectures?",
+      "published_date": "2026-06-22",
+      "selected_date": "2026-06-24",
+      "category": "电驱与电子材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/06/23/icct-rankings-reveal-eus-bestselling-commercial-ev-manufacturers",
+      "title": "ICCT rankings reveal EU’s bestselling commercial EV manufacturers",
+      "published_date": "2026-06-23",
+      "selected_date": "2026-06-24",
+      "category": "其他"
+    },
+    {
+      "url": "https://www.electrive.com/2026/06/22/neue-klasse-upgrades-for-bmws-leipzig-plant",
+      "title": "‘Neue Klasse’ upgrades for BMW’s Leipzig plant",
+      "published_date": "2026-06-22",
+      "selected_date": "2026-06-24",
+      "category": "企业技术动态"
+    },
+    {
+      "url": "https://spectrum.ieee.org/emotion-ai-context",
+      "title": "AI Is Learning to Read the Room",
+      "published_date": "2026-06-23",
+      "selected_date": "2026-06-24",
+      "category": "学术论文"
     }
   ]
 }

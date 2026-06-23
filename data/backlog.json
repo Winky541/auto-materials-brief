@@ -1,194 +1,6 @@
 {
   "items": [
     {
-      "title": "This 1976 University Experiment Spun Up the U.S. Wind Industry",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-06-15",
-      "url": "https://spectrum.ieee.org/william-heronemus-wind-energy",
-      "category": "企业技术动态",
-      "subcategory": "燃料电池",
-      "summary": "1976年，马萨诸塞大学阿默斯特分校团队用福特卡车后轴、捐赠发电机等材料建造了25千瓦“Wind Furnace”风力发电机，证明了风能供暖的可行性。该项目催生了美国现代风电产业，培养了被称为“UMass Mafia”的工程师群体，并间接推动了海上风电、多转子风机等概念的发展。",
-      "technical_points": [
-        "1976年建成25千瓦风力发电机，采用变桨距控制、变速运行，效率高于同期设计",
-        "叶片采用手工制作的玻璃纤维复合材料，借鉴直升机旋翼技术",
-        "发电机通过卡车后轴与转子机械耦合，控制系统基于计算机实现风速跟踪和功率调节",
-        "项目验证了风能直接供暖的可行性，并催生了全球首个并网风电场（1980年）",
-        "Heronemus教授早在1972年就提出了海上浮动风电、多转子风机和风电制氢的构想"
-      ],
-      "materials_involved": [
-        "玻璃纤维复合材料",
-        "钢",
-        "铸铁（卡车后轴）",
-        "铜（发电机绕组）"
-      ],
-      "companies_or_institutions": [
-        "University of Massachusetts Amherst",
-        "Ford",
-        "US Windpower",
-        "National Renewable Energy Laboratory (NREL)",
-        "GE Vernova",
-        "Ming Yang Smart Energy Group"
-      ],
-      "impact_assessment": "该新闻回顾了风电技术起源，对汽车产业链直接影响有限，但间接提示了复合材料在可再生能源装备中的应用潜力，以及高校-产业协同创新模式。",
-      "research_value": "对汽车材料研究员参考价值较低，主要作为技术史案例，但玻璃纤维叶片制造工艺对复合材料成型有借鉴意义。",
-      "industrial_maturity": "production",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "1976年UMass团队用卡车零件和玻璃纤维造出首台现代风机，点燃美国风电产业。",
-      "why_it_matters": "虽然新闻聚焦历史，但展示了复合材料在风电领域的早期应用，以及高校创新对产业化的推动作用，对理解材料技术从实验室到市场的路径有参考价值。",
-      "technology_driver": "氢能/燃料电池",
-      "material_relevance": "轻量化复合材料",
-      "material_opportunity": "潜在材料机会包括膜电极、催化剂、储氢材料、密封材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "信息不足",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "信息不足",
-      "future_signal_score": 10,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 67,
-      "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=15 (EV, vehicle, car); materials=12 (fuel cell, composite, GaN); companies=5 (Ford); industrial=10 (commercialization, launch, plant, investment); current_month=5",
-      "final_score": 44
-    },
-    {
-      "title": "Commemorating 70 Years of Artificial Intelligence",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-06-23",
-      "url": "https://spectrum.ieee.org/70-years-of-artificial-intelligence",
-      "category": "学术论文",
-      "subcategory": "SiC",
-      "summary": "本文回顾了人工智能70年的发展历程，从1956年达特茅斯会议正式确立AI领域，到深度学习、Transformer架构、生成式AI及代理式AI的兴起。文章讨论了AI的优势（如数据处理、模式识别、自动化）与风险（如偏见、幻觉、隐私问题），并介绍了IEEE在AI标准化、出版和会议方面的贡献。",
-      "technical_points": [
-        "AI作为独立领域始于1956年达特茅斯会议",
-        "Transformer架构（2017年）推动了生成式AI革命",
-        "代理式AI系统正实现自主规划与行动",
-        "AI在医疗、金融、工业等领域广泛应用"
-      ],
-      "materials_involved": [
-        "SiC"
-      ],
-      "companies_or_institutions": [
-        "GM",
-        "Ford",
-        "IEEE",
-        "OpenAI",
-        "Google"
-      ],
-      "impact_assessment": "本文为AI技术综述，未直接涉及汽车产业链具体变化，但AI在自动驾驶、智能制造等领域的应用可能间接推动相关材料需求。",
-      "research_value": "对汽车材料研究员而言，本文提供了AI技术背景，但缺乏与材料直接相关的技术细节，参考价值有限。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "AI七十年综述，回顾技术演进与IEEE贡献，但未涉及具体材料进展。",
-      "why_it_matters": "本文为AI技术综述，未直接指向汽车材料需求，但AI在汽车智能化中的应用可能间接影响材料选择。",
-      "technology_driver": "功率半导体",
-      "material_relevance": "封装材料、导热材料、绝缘材料、银烧结材料",
-      "material_opportunity": "潜在材料机会包括封装材料、导热材料、绝缘材料、银烧结材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "该技术动向可能牵引封装材料、导热材料、绝缘材料、银烧结材料需求。当前材料验证分为 70，具备样件验证或供应商调研价值。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "不确定",
-      "future_signal": "AI技术持续演进，但本文未释放与汽车材料直接相关的产业信号。",
-      "future_signal_score": 20,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 52,
-      "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=10 (EV, car); materials=4 (SiC); companies=10 (GM, Ford); industrial=3 (standard); current_month=5",
-      "final_score": 40
-    },
-    {
-      "title": "‘Neue Klasse’ upgrades for BMW’s Leipzig plant",
-      "source": "Electrive",
-      "published_date": "2026-06-22",
-      "url": "https://www.electrive.com/2026/06/22/neue-klasse-upgrades-for-bmws-leipzig-plant/",
-      "category": "企业技术动态",
-      "subcategory": "",
-      "summary": "宝马莱比锡工厂将在夏季停产五周半进行大规模改造，为生产‘Neue Klasse’平台电动车做准备。目前尚未公布具体车型。",
-      "technical_points": [
-        "宝马莱比锡工厂为Neue Klasse平台进行产线改造",
-        "停产周期五周半，改造规模较大",
-        "具体电动车型未公布"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [
-        "BMW"
-      ],
-      "impact_assessment": "该产线改造表明宝马加速推进Neue Klasse平台量产，可能带动新一代电动车相关材料需求，但具体材料方向未明确。",
-      "research_value": "信息不足，无法评估具体材料参考价值。",
-      "industrial_maturity": "production",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "宝马莱比锡工厂将停产改造以生产Neue Klasse电动车，但未透露具体车型和材料信息。",
-      "why_it_matters": "该新闻仅涉及产线改造，未提及具体材料或技术细节，对材料研发人员直接参考价值有限。",
-      "technology_driver": "其他",
-      "material_relevance": "材料相关性较弱，暂不优先。",
-      "material_opportunity": "信息不足，无法判断材料机会。",
-      "validation_opportunity": "信息不足，无法判断验证机会。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "不确定",
-      "future_signal": "宝马Neue Klasse平台量产准备信号，但缺乏具体材料信息。",
-      "future_signal_score": 30,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 46,
-      "source_score": 78,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=10 (EV, automotive); materials=0 (none); companies=5 (BMW); industrial=6 (factory, plant); current_month=5",
-      "final_score": 39
-    },
-    {
-      "title": "How is EMI testing evolving for wide-bandgap EV architectures?",
-      "source": "Bing News",
-      "published_date": "2026-06-22",
-      "url": "https://www.eeworldonline.com/how-is-emi-testing-evolving-for-wide-bandgap-ev-architectures/",
-      "category": "电驱与电子材料",
-      "subcategory": "SiC",
-      "summary": "电动汽车功率电子系统越来越多采用SiC和GaN等宽禁带半导体，这些器件开关频率更高，带来电磁干扰（EMI）测试挑战。文章探讨了EMI测试方法如何演进以适应宽禁带架构，包括测试标准、设备和方法的变化。",
-      "technical_points": [
-        "SiC和GaN器件开关频率更高，导致EMI特性与传统硅器件不同。",
-        "EMI测试方法需要适应更高的频率和更快的开关瞬态。",
-        "可能涉及新的测试标准或设备升级。"
-      ],
-      "materials_involved": [
-        "SiC",
-        "GaN"
-      ],
-      "companies_or_institutions": [],
-      "impact_assessment": "推动宽禁带半导体在EV中的更广泛应用，但主要影响测试环节，对材料本身需求影响间接。",
-      "research_value": "对材料研究员参考价值有限，主要涉及测试技术而非新材料开发。",
-      "industrial_maturity": "production",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "宽禁带EV架构推动EMI测试演进，但材料相关性较弱。",
-      "why_it_matters": "宽禁带半导体在EV中普及带来EMI测试新需求，但材料研发人员更应关注器件封装和热管理等材料问题。",
-      "technology_driver": "功率半导体",
-      "material_relevance": "封装材料、导热材料、绝缘材料、银烧结材料",
-      "material_opportunity": "潜在材料机会包括封装材料、导热材料、绝缘材料、银烧结材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "该技术动向可能牵引封装材料、导热材料、绝缘材料、银烧结材料需求。当前材料验证分为 58，更适合作为前瞻储备或持续跟踪。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "宽禁带半导体在EV中应用深化，但测试演进对材料需求牵引有限。",
-      "future_signal_score": 30,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 49,
-      "source_score": 65,
-      "source_type": "bing_news",
-      "filter_reason": "source=16; automotive=20 (EV, electric vehicle, vehicle, car); materials=8 (SiC, GaN); companies=0 (none); industrial=0 (none); current_month=5",
-      "final_score": 38
-    },
-    {
       "title": "War Taught this Ukrainian Entrepreneur the Value of Resilience",
       "source": "IEEE Spectrum",
       "published_date": "2026-06-20",
@@ -230,7 +42,25 @@
       "source_score": 82,
       "source_type": "rss",
       "filter_reason": "source=20; automotive=10 (EV, car); materials=4 (GaN); companies=5 (Ford); industrial=6 (launch, investment); current_month=5",
-      "final_score": 30
+      "stage": "Technology Watch",
+      "stage_reason": "根据当前产业化、合作、验证和供应链信号进行生命周期阶段兜底判断。",
+      "canonical_url": "https://spectrum.ieee.org/mikadze-struk-resilience-in-entrepreneurship",
+      "normalized_title": "war taught this ukrainian entrepreneur value resilience",
+      "event_id": "5072f016b1e3d1ba",
+      "final_score": 30,
+      "related_sources": [
+        {
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/mikadze-struk-resilience-in-entrepreneurship",
+          "published_date": "2026-06-20"
+        }
+      ],
+      "source_urls": [
+        "https://spectrum.ieee.org/mikadze-struk-resilience-in-entrepreneurship"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ]
     }
   ]
 }

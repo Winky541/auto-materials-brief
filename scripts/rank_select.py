@@ -12,8 +12,9 @@ import json
 import logging
 import os
 import re
+import hashlib
 from copy import deepcopy
-from datetime import datetime
+from datetime import date, datetime
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
@@ -30,13 +31,15 @@ FILTERED_NEWS_PATH = PROJECT_ROOT / "data" / "news_filtered.json"
 TODAY_SELECTED_PATH = PROJECT_ROOT / "data" / "today_selected.json"
 BACKLOG_PATH = PROJECT_ROOT / "data" / "backlog.json"
 PUBLISHED_URLS_PATH = PROJECT_ROOT / "data" / "published_urls.json"
+PUBLISHED_EVENTS_PATH = PROJECT_ROOT / "data" / "published_events.json"
 
-DEFAULT_DAILY_PUBLISH_MIN = 3
-DEFAULT_DAILY_PUBLISH_MAX = 5
+DEFAULT_DAILY_PUBLISH_MIN = 5
+DEFAULT_DAILY_PUBLISH_MAX = 10
 DEFAULT_BACKLOG_MAX_SIZE = 300
 DEFAULT_MAX_TITLE_SIMILARITY = 0.88
 DEFAULT_MIN_FINAL_SCORE = 35
 RELAXED_MIN_FINAL_SCORE = 25
+DEFAULT_RECENT_PRIORITY_DAYS = 14
 REFRESH_ANALYSIS_FIELDS = [
     "summary",
     "technical_points",
@@ -60,6 +63,8 @@ REFRESH_ANALYSIS_FIELDS = [
     "future_signal_score",
     "material_opportunity_score",
     "material_validation_score",
+    "stage",
+    "stage_reason",
     "analysis_status",
 ]
 
@@ -107,8 +112,31 @@ SIGNAL_KEYWORDS = [
     "期刊",
 ]
 
-ALLOWED_SUGGESTED_ACTION = {"启动验证", "供应商调研", "持续跟踪", "前瞻储备", "暂不优先"}
+ALLOWED_SUGGESTED_ACTION = {
+    "启动验证",
+    "供应商调研",
+    "持续跟踪",
+    "前瞻储备",
+    "暂不优先",
+    "Technology Watch",
+    "Supplier Research",
+    "Joint Development",
+    "Validation",
+    "Strategic Reserve",
+}
 ALLOWED_TREND_POTENTIAL = {"高", "中", "低", "不确定"}
+STAGE_MAP = {
+    "持续跟踪": "Technology Watch",
+    "暂不优先": "Technology Watch",
+    "供应商调研": "Supplier Research",
+    "联合开发": "Joint Development",
+    "启动验证": "Validation",
+    "前瞻储备": "Strategic Reserve",
+}
+TITLE_SUFFIX_PATTERN = re.compile(
+    r"\s*[-_|]\s*(?:Yahoo|MSN|AOL|Reuters|Bloomberg|36Kr|36氪|盖世汽车|汽车之家|财联社|界面新闻|澎湃新闻|钛媒体)\s*$",
+    re.IGNORECASE,
+)
 
 
 def _int_0_100(value: Any, default: int = 0) -> int:
@@ -171,6 +199,13 @@ def ensure_material_opportunity_fields(item: dict[str, Any]) -> dict[str, Any]:
         current["validation_opportunity"] = "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。"
     if current.get("suggested_action") not in ALLOWED_SUGGESTED_ACTION:
         current["suggested_action"] = "暂不优先"
+    if not str(current.get("stage") or "").strip():
+        current["stage"] = STAGE_MAP.get(str(current.get("suggested_action")), current.get("suggested_action", "Technology Watch"))
+    current["stage"] = STAGE_MAP.get(str(current.get("stage")), current.get("stage"))
+    if current.get("stage") not in ALLOWED_SUGGESTED_ACTION:
+        current["stage"] = "Technology Watch"
+    if not str(current.get("stage_reason") or "").strip():
+        current["stage_reason"] = "根据当前产业化、合作、验证和供应链信号进行生命周期阶段兜底判断。"
     if current.get("trend_potential") not in ALLOWED_TREND_POTENTIAL:
         current["trend_potential"] = "不确定"
     if not str(current.get("future_signal") or "").strip():
@@ -217,6 +252,7 @@ def load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
     config["limits"].setdefault("daily_publish_max", DEFAULT_DAILY_PUBLISH_MAX)
     config["limits"].setdefault("backlog_max_size", DEFAULT_BACKLOG_MAX_SIZE)
     config["limits"].setdefault("max_title_similarity", DEFAULT_MAX_TITLE_SIMILARITY)
+    config["limits"].setdefault("recent_priority_days", DEFAULT_RECENT_PRIORITY_DAYS)
     return config
 
 
@@ -247,6 +283,22 @@ def is_current_month(date_value: str, timezone_name: str = "Asia/Shanghai") -> b
     return published.year == now.year and published.month == now.month
 
 
+def days_since_published(date_value: str, timezone_name: str = "Asia/Shanghai") -> int | None:
+    """Return age in days for YYYY-MM-DD, or None if parsing fails."""
+    try:
+        published = datetime.strptime(str(date_value), "%Y-%m-%d").date()
+    except ValueError:
+        return None
+    now = datetime.now(ZoneInfo(timezone_name)).date()
+    return (now - published).days
+
+
+def is_recent_item(item: dict[str, Any], recent_days: int, timezone_name: str) -> bool:
+    """Return True if item is within the preferred recent update window."""
+    age = days_since_published(str(item.get("published_date") or ""), timezone_name)
+    return age is not None and 0 <= age <= recent_days
+
+
 def normalize_url(url: str | None) -> str:
     """Normalize URL for publication deduplication."""
     if not url:
@@ -259,12 +311,18 @@ def normalize_url(url: str | None) -> str:
         for key, value in parse_qsl(parsed.query, keep_blank_values=True)
         if not key.lower().startswith("utm_")
     ]
+    host = parsed.netloc.lower()
+    if host.startswith("m."):
+        host = host[2:]
+    path = re.sub(r"/+$", "", parsed.path or "")
+    if not path:
+        path = "/"
     return urlunparse(
         (
             parsed.scheme.lower(),
-            parsed.netloc.lower(),
-            parsed.path,
-            parsed.params,
+            host,
+            path,
+            "",
             urlencode(query, doseq=True),
             "",
         )
@@ -275,9 +333,32 @@ def normalize_title(title: str | None) -> str:
     """Normalize title for similarity matching."""
     if not title:
         return ""
-    text = str(title).casefold()
+    text = TITLE_SUFFIX_PATTERN.sub("", str(title)).casefold()
     text = re.sub(r"[^\w\u4e00-\u9fff]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+    stopwords = {"the", "a", "an", "to", "of", "and", "for", "in", "on", "with", "as"}
+    tokens = [token for token in re.sub(r"\s+", " ", text).strip().split() if token not in stopwords]
+    return " ".join(tokens)
+
+
+def event_id_for_item(item: dict[str, Any]) -> str:
+    """Create stable event id from normalized title and material/company context."""
+    if item.get("event_id"):
+        return str(item["event_id"])
+    companies = sorted(str(value).casefold() for value in item.get("companies_or_institutions", [])[:4])
+    if not companies:
+        companies = sorted(str(value).casefold() for value in item.get("detected_companies", [])[:4])
+    materials = sorted(str(value).casefold() for value in item.get("materials_involved", [])[:5])
+    if not materials:
+        materials = sorted(str(value).casefold() for value in item.get("detected_material_keywords", [])[:5])
+    base = "|".join(
+        [
+            normalize_title(item.get("title")),
+            str(item.get("category") or ""),
+            ",".join(companies),
+            ",".join(materials),
+        ]
+    )
+    return hashlib.sha1(base.encode("utf-8")).hexdigest()[:16]
 
 
 def priority_to_score(priority: str | None) -> int:
@@ -361,6 +442,162 @@ def _extract_published_records(published_data: Any) -> list[dict[str, Any]]:
     return normalized_records
 
 
+def _extract_published_events(events_data: Any) -> list[dict[str, Any]]:
+    if isinstance(events_data, dict):
+        events = events_data.get("events", [])
+    else:
+        events = events_data
+    return [event for event in events if isinstance(event, dict)]
+
+
+def _source_record(item: dict[str, Any]) -> dict[str, str]:
+    return {
+        "source": str(item.get("source") or ""),
+        "url": normalize_url(item.get("url")),
+        "published_date": str(item.get("published_date") or ""),
+    }
+
+
+def _is_similar_title(title_a: str, title_b: str, threshold: float) -> bool:
+    if not title_a or not title_b:
+        return False
+    return SequenceMatcher(None, title_a, title_b).ratio() >= threshold
+
+
+def cluster_events(items: list[dict[str, Any]], max_title_similarity: float) -> list[dict[str, Any]]:
+    """Cluster same event across URLs/titles and keep the strongest primary item."""
+    clusters: list[dict[str, Any]] = []
+    for raw in items:
+        item = deepcopy(raw)
+        item["canonical_url"] = normalize_url(item.get("canonical_url") or item.get("url"))
+        item["normalized_title"] = normalize_title(item.get("normalized_title") or item.get("title"))
+        item["event_id"] = event_id_for_item(item)
+        matched = None
+        for cluster in clusters:
+            if item["event_id"] == cluster["event_id"]:
+                matched = cluster
+                break
+            if item["canonical_url"] and item["canonical_url"] in cluster["source_urls"]:
+                matched = cluster
+                break
+            if _is_similar_title(item["normalized_title"], cluster["normalized_title"], max_title_similarity):
+                matched = cluster
+                break
+        if not matched:
+            clusters.append(
+                {
+                    "event_id": item["event_id"],
+                    "normalized_title": item["normalized_title"],
+                    "primary": item,
+                    "items": [item],
+                    "source_urls": {item["canonical_url"]},
+                    "source_names": {str(item.get("source") or "")},
+                }
+            )
+            continue
+        matched["items"].append(item)
+        matched["source_urls"].add(item["canonical_url"])
+        matched["source_names"].add(str(item.get("source") or ""))
+        if (
+            int(item.get("source_score", 0) or 0),
+            int(item.get("final_score", 0) or 0),
+            str(item.get("published_date", "")),
+        ) > (
+            int(matched["primary"].get("source_score", 0) or 0),
+            int(matched["primary"].get("final_score", 0) or 0),
+            str(matched["primary"].get("published_date", "")),
+        ):
+            matched["primary"] = item
+
+    merged = []
+    for cluster in clusters:
+        primary = deepcopy(cluster["primary"])
+        related_sources = []
+        for item in cluster["items"]:
+            source = _source_record(item)
+            if source["url"] and source not in related_sources:
+                related_sources.append(source)
+        primary["event_id"] = cluster["event_id"]
+        primary["canonical_url"] = primary.get("canonical_url") or normalize_url(primary.get("url"))
+        primary["normalized_title"] = cluster["normalized_title"]
+        primary["related_sources"] = related_sources
+        primary["source_urls"] = sorted(url for url in cluster["source_urls"] if url)
+        primary["source_names"] = sorted(name for name in cluster["source_names"] if name)
+        merged.append(primary)
+    return merged
+
+
+def update_published_events(
+    events_data: Any,
+    candidates: list[dict[str, Any]],
+    selected_items: list[dict[str, Any]],
+    current_date: str,
+) -> dict[str, list[dict[str, Any]]]:
+    """Maintain event-level publication state and source accumulation."""
+    events = _extract_published_events(events_data)
+    by_id = {str(event.get("event_id")): deepcopy(event) for event in events if event.get("event_id")}
+    selected_ids = {event_id_for_item(item) for item in selected_items}
+    for item in candidates:
+        event_id = event_id_for_item(item)
+        event = by_id.setdefault(
+            event_id,
+            {
+                "event_id": event_id,
+                "canonical_title": item.get("title", ""),
+                "canonical_url": normalize_url(item.get("url")),
+                "first_seen": current_date,
+                "last_seen": current_date,
+                "source_urls": [],
+                "source_names": [],
+                "topic_tags": [],
+                "material_opportunities": [],
+                "published": False,
+            },
+        )
+        event["last_seen"] = current_date
+        for url in [normalize_url(item.get("url")), *(item.get("source_urls", []) or [])]:
+            if url and url not in event["source_urls"]:
+                event["source_urls"].append(url)
+        for name in [item.get("source"), *(item.get("source_names", []) or [])]:
+            name = str(name or "")
+            if name and name not in event["source_names"]:
+                event["source_names"].append(name)
+        for tag in [item.get("category"), item.get("subcategory"), item.get("technology_driver")]:
+            tag = str(tag or "")
+            if tag and tag not in event["topic_tags"]:
+                event["topic_tags"].append(tag)
+        opportunity = str(item.get("material_opportunity") or item.get("material_relevance") or "")
+        if opportunity and opportunity not in event["material_opportunities"]:
+            event["material_opportunities"].append(opportunity)
+        if event_id in selected_ids:
+            event["published"] = True
+            event["canonical_title"] = item.get("title", event["canonical_title"])
+            event["canonical_url"] = normalize_url(item.get("url")) or event["canonical_url"]
+
+    ordered = sorted(by_id.values(), key=lambda event: str(event.get("last_seen", "")), reverse=True)
+    return {"events": ordered}
+
+
+def remove_published_event_items(
+    items: list[dict[str, Any]],
+    events_data: Any,
+) -> tuple[list[dict[str, Any]], int]:
+    """Remove candidates whose event has already been published before."""
+    published_ids = {
+        str(event.get("event_id"))
+        for event in _extract_published_events(events_data)
+        if event.get("event_id") and event.get("published", True)
+    }
+    remaining = []
+    removed = 0
+    for item in items:
+        if event_id_for_item(item) in published_ids:
+            removed += 1
+            continue
+        remaining.append(item)
+    return remaining, removed
+
+
 def merge_analyzed_and_backlog(
     analyzed_items: list[dict[str, Any]], backlog_data: Any
 ) -> tuple[list[dict[str, Any]], int]:
@@ -408,6 +645,11 @@ def enrich_with_filtered_metadata(
                 "future_signal_score",
                 "material_opportunity_score",
                 "material_validation_score",
+                "stage",
+                "stage_reason",
+                "canonical_url",
+                "normalized_title",
+                "event_id",
             ):
                 if item.get(key) is None and filtered.get(key) is not None:
                     item[key] = filtered[key]
@@ -520,6 +762,7 @@ def select_today_items(
     timezone_name = config.get("timezone", "Asia/Shanghai")
     daily_min = int(limits.get("daily_publish_min", DEFAULT_DAILY_PUBLISH_MIN))
     daily_max = int(limits.get("daily_publish_max", DEFAULT_DAILY_PUBLISH_MAX))
+    recent_days = int(limits.get("recent_priority_days", DEFAULT_RECENT_PRIORITY_DAYS))
     max_title_similarity = float(limits.get("max_title_similarity", DEFAULT_MAX_TITLE_SIMILARITY))
 
     valid: list[dict[str, Any]] = []
@@ -530,10 +773,14 @@ def select_today_items(
             continue
         item = ensure_material_opportunity_fields(item)
         item["url"] = normalize_url(item.get("url"))
+        item["canonical_url"] = normalize_url(item.get("canonical_url") or item.get("url"))
+        item["normalized_title"] = normalize_title(item.get("normalized_title") or item.get("title"))
+        item["event_id"] = event_id_for_item(item)
         item["final_score"] = calculate_final_score(item)
         valid.append(item)
 
-    deduped = deduplicate_items(valid, max_title_similarity)
+    clustered = cluster_events(valid, max_title_similarity)
+    deduped = deduplicate_items(clustered, max_title_similarity)
     deduped_count = len(deduped)
 
     strong = [item for item in deduped if int(item.get("final_score", 0)) >= DEFAULT_MIN_FINAL_SCORE]
@@ -542,6 +789,9 @@ def select_today_items(
         for item in deduped
         if RELAXED_MIN_FINAL_SCORE <= int(item.get("final_score", 0)) < DEFAULT_MIN_FINAL_SCORE
     ]
+    strong_recent = [item for item in strong if is_recent_item(item, recent_days, timezone_name)]
+    strong_older = [item for item in strong if not is_recent_item(item, recent_days, timezone_name)]
+    relaxed_recent = [item for item in relaxed if is_recent_item(item, recent_days, timezone_name)]
 
     selected: list[dict[str, Any]] = []
     selected_urls: set[str] = set()
@@ -559,47 +809,40 @@ def select_today_items(
         if len(selected) >= daily_max:
             break
         category_items = [
-            item for item in strong if item.get("category") == category and item.get("url") not in selected_urls
+            item for item in strong_recent if item.get("category") == category and item.get("url") not in selected_urls
         ]
         if category_items:
             add_item(category_items[0])
 
-    for item in strong:
+    for item in strong_recent:
+        if len(selected) >= daily_max:
+            break
+        if item.get("url") not in selected_urls:
+            add_item(item)
+
+    for item in strong_older:
         if len(selected) >= daily_max:
             break
         if item.get("url") not in selected_urls:
             add_item(item)
 
     relaxed_used = 0
-    forced_used = 0
     if len(selected) < daily_min:
         logging.warning(
-            "High-quality news below daily_publish_min=%s; relaxing final_score threshold from %s to %s.",
+            "High-quality news below daily_publish_min=%s; relaxing only recent candidates to threshold %s.",
             daily_min,
-            DEFAULT_MIN_FINAL_SCORE,
             RELAXED_MIN_FINAL_SCORE,
         )
-        for item in relaxed:
+        for item in relaxed_recent:
             if len(selected) >= daily_min or len(selected) >= daily_max:
                 break
             if item.get("url") not in selected_urls:
                 add_item(item)
                 relaxed_used += 1
 
-    if len(selected) < daily_min and deduped:
-        logging.warning(
-            "Candidate news exists but score thresholds are still too strict; selecting top-ranked candidates as fallback."
-        )
-        for item in deduped:
-            if len(selected) >= daily_min or len(selected) >= daily_max:
-                break
-            if item.get("url") not in selected_urls:
-                add_item(item)
-                forced_used += 1
-
     if len(selected) < daily_min:
         logging.warning(
-            "Only %s items selected, below daily_publish_min=%s because not enough valuable current-month news is available.",
+            "Only %s items selected, below daily_publish_min=%s; not filling with low-quality old news.",
             len(selected),
             daily_min,
         )
@@ -628,7 +871,10 @@ def select_today_items(
         "removed_non_current": removed_non_current,
         "deduped_count": deduped_count,
         "relaxed_used": relaxed_used,
-        "forced_used": forced_used,
+        "forced_used": 0,
+        "recent_priority_days": recent_days,
+        "strong_recent_candidates": len(strong_recent),
+        "strong_older_candidates": len(strong_older),
     }
     return selected, backlog_candidates, stats
 
@@ -806,6 +1052,7 @@ def main() -> None:
     force_refresh = os.getenv("FORCE_REFRESH_TODAY", "").strip().lower() == "true"
     analyzed_data = load_json(ANALYZED_NEWS_PATH)
     filtered_data = load_json(FILTERED_NEWS_PATH)
+    published_events_data = load_json(PUBLISHED_EVENTS_PATH)
     analyzed_items = enrich_with_filtered_metadata(
         [item for item in analyzed_data if isinstance(item, dict)],
         filtered_data,
@@ -832,6 +1079,13 @@ def main() -> None:
             for item in refreshed_today.get("items", [])
         )
         if not should_expand_from_success and not still_has_non_success:
+            published_events_payload = update_published_events(
+                published_events_data,
+                refreshed_today.get("items", []),
+                refreshed_today.get("items", []),
+                today,
+            )
+            save_json(published_events_payload, PUBLISHED_EVENTS_PATH)
             if refreshed_count:
                 save_json(refreshed_today, TODAY_SELECTED_PATH)
                 logging.info(
@@ -865,13 +1119,17 @@ def main() -> None:
         _selection_url_set(existing_today),
     )
     logging.info("Already published items removed: %s.", removed_published)
+    unpublished_items, removed_events = remove_published_event_items(unpublished_items, published_events_data)
+    logging.info("Already published event items removed: %s.", removed_events)
 
     selected_items, backlog_candidates, selection_stats = select_today_items(unpublished_items, config)
     if not selected_items and merged_items:
         logging.warning(
-            "No items selected after published URL filtering; retrying from analyzed/backlog candidates without published filtering."
+            "No items selected after published URL filtering; retrying from analyzed/backlog candidates while preserving event filtering."
         )
-        selected_items, backlog_candidates, selection_stats = select_today_items(merged_items, config)
+        retry_items, retry_removed_events = remove_published_event_items(merged_items, published_events_data)
+        logging.info("Already published event items removed during retry: %s.", retry_removed_events)
+        selected_items, backlog_candidates, selection_stats = select_today_items(retry_items, config)
     logging.info("Non-current-month or invalid items removed: %s.", selection_stats["removed_non_current"])
     logging.info("Candidates after deduplication: %s.", selection_stats["deduped_count"])
     logging.info("Today selected items: %s.", len(selected_items))
@@ -939,9 +1197,20 @@ def main() -> None:
     if preserve_auxiliary_state:
         logging.warning("Preserving backlog.json and published_urls.json while reusing an existing selection.")
         published_payload = published_data
+        published_events_payload = published_events_data
         backlog_payload = backlog_data
     else:
         published_payload = update_published_urls(published_data, published_items, today)
+        event_candidates = cluster_events(
+            [item for item in analyzed_items if _valid_item(item, timezone_name)],
+            float(config.get("limits", {}).get("max_title_similarity", DEFAULT_MAX_TITLE_SIMILARITY)),
+        )
+        published_events_payload = update_published_events(
+            published_events_data,
+            event_candidates,
+            published_items,
+            today,
+        )
         backlog_payload = update_backlog(backlog_candidates, config)
 
     if save_today:
@@ -949,9 +1218,11 @@ def main() -> None:
     if not preserve_auxiliary_state:
         save_json(backlog_payload, BACKLOG_PATH)
         save_json(published_payload, PUBLISHED_URLS_PATH)
+        save_json(published_events_payload, PUBLISHED_EVENTS_PATH)
 
     logging.info("Backlog size: %s.", len(_extract_backlog_items(backlog_payload)))
     logging.info("published_urls size: %s.", len(_extract_published_records(published_payload)))
+    logging.info("published_events size: %s.", len(_extract_published_events(published_events_payload)))
     if save_today:
         logging.info("Saved today selection to %s.", TODAY_SELECTED_PATH)
     else:

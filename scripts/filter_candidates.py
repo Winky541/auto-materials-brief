@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+import hashlib
 from copy import deepcopy
 from datetime import datetime
 from difflib import SequenceMatcher
@@ -30,6 +31,11 @@ FILTERED_NEWS_PATH = PROJECT_ROOT / "data" / "news_filtered.json"
 DEFAULT_MIN_RULE_SCORE = 35
 DEFAULT_MAX_FILTERED_NEWS = 20
 DEFAULT_MAX_TITLE_SIMILARITY = 0.88
+REPOST_DOMAINS = {"yahoo.com", "msn.com", "aol.com"}
+TITLE_SUFFIX_PATTERN = re.compile(
+    r"\s*[-_|]\s*(?:Yahoo|MSN|AOL|Reuters|Bloomberg|36Kr|36氪|盖世汽车|汽车之家|财联社|界面新闻|澎湃新闻|钛媒体)\s*$",
+    re.IGNORECASE,
+)
 
 AUTOMOTIVE_KEYWORDS = [
     "EV",
@@ -416,6 +422,115 @@ TECHNOLOGY_DRIVER_RULES: list[dict[str, Any]] = [
     },
 ]
 
+STAGE_RULES = [
+    (
+        "Validation",
+        [
+            "validation",
+            "validated",
+            "testing",
+            "test",
+            "certification",
+            "certified",
+            "road test",
+            "reliability",
+            "customer validation",
+            "验证",
+            "测试",
+            "认证",
+            "可靠性",
+            "路试",
+            "客户验证",
+            "场景验证",
+        ],
+        "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。",
+    ),
+    (
+        "Joint Development",
+        [
+            "joint development",
+            "co-development",
+            "pilot project",
+            "pilot production",
+            "sample",
+            "sampling",
+            "supply agreement",
+            "oem",
+            "collaboration",
+            "partnership",
+            "送样",
+            "联合开发",
+            "合作开发",
+            "试点项目",
+            "中试",
+            "供应协议",
+            "主机厂项目",
+            "定点",
+            "配套",
+            "供货",
+        ],
+        "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。",
+    ),
+    (
+        "Supplier Research",
+        [
+            "supplier",
+            "startup",
+            "vendor",
+            "research institute",
+            "university",
+            "spin-off",
+            "company",
+            "供应商",
+            "初创",
+            "研究机构",
+            "高校",
+            "产业链玩家",
+            "谁能做",
+        ],
+        "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。",
+    ),
+    (
+        "Strategic Reserve",
+        [
+            "roadmap",
+            "strategy",
+            "long-term",
+            "standard",
+            "policy",
+            "regulation",
+            "investment",
+            "路线图",
+            "战略",
+            "长期",
+            "标准",
+            "政策",
+            "法规",
+            "投资",
+            "储备",
+        ],
+        "技术已有战略价值但导入节奏较长，适合形成长期储备。",
+    ),
+]
+
+
+def infer_lifecycle_stage(item: dict[str, Any]) -> dict[str, str]:
+    """Infer Material Opportunity Lifecycle stage from maturity signals."""
+    text = _text_for_item(item)
+    for stage, keywords, reason in STAGE_RULES:
+        matches = _matched_keywords(text, keywords)
+        if matches:
+            return {"stage": stage, "stage_reason": f"{reason} 命中信号：{', '.join(matches[:4])}。"}
+    if item.get("material_opportunity_score", 0) >= 60:
+        return {
+            "stage": "Strategic Reserve",
+            "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+        }
+    return {
+        "stage": "Technology Watch",
+        "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+    }
+
 
 def infer_material_opportunity(item: dict[str, Any]) -> dict[str, Any]:
     """Infer technology-driver and material-validation fields by rules."""
@@ -593,6 +708,45 @@ def _clean_url(url: str | None) -> str:
     )
 
 
+def canonical_url(url: str | None) -> str:
+    """Canonicalize URLs across tracking, mobile host, and trailing slash variants."""
+    cleaned = _clean_url(url)
+    if not cleaned:
+        return ""
+    parsed = urlparse(cleaned)
+    host = parsed.netloc.lower()
+    if host.startswith("m."):
+        host = host[2:]
+    path = re.sub(r"/+$", "", parsed.path or "")
+    if not path:
+        path = "/"
+    return urlunparse((parsed.scheme.lower(), host, path, "", parsed.query, ""))
+
+
+def normalized_title(title: str | None) -> str:
+    """Normalize titles for cross-source event matching."""
+    text = TITLE_SUFFIX_PATTERN.sub("", str(title or "")).casefold()
+    text = re.sub(r"[\W_]+", " ", text, flags=re.UNICODE)
+    stopwords = {"the", "a", "an", "to", "of", "and", "for", "in", "on", "with", "as"}
+    tokens = [token for token in text.split() if token and token not in stopwords]
+    return " ".join(tokens)
+
+
+def event_id_for_item(item: dict[str, Any]) -> str:
+    """Create stable event id from title plus material/company context."""
+    companies = sorted(str(value).casefold() for value in item.get("detected_companies", [])[:4])
+    materials = sorted(str(value).casefold() for value in item.get("detected_material_keywords", [])[:5])
+    base = "|".join(
+        [
+            normalized_title(item.get("title")),
+            str(item.get("category") or ""),
+            ",".join(companies),
+            ",".join(materials),
+        ]
+    )
+    return hashlib.sha1(base.encode("utf-8")).hexdigest()[:16]
+
+
 def _text_for_item(item: dict[str, Any]) -> str:
     """Combine title and summary for deterministic rule matching."""
     return f"{item.get('title', '')} {item.get('summary', '')}"
@@ -743,9 +897,15 @@ def filter_and_rank_candidates(
         item["detected_companies"] = detect_companies(item)
         item["detected_material_keywords"] = detect_material_keywords(item)
         item.update(infer_material_opportunity(item))
+        lifecycle = infer_lifecycle_stage(item)
+        item.update(lifecycle)
+        item["suggested_action"] = item["stage"]
         item["filter_reason"] = filter_reason
         item["needs_ai_analysis"] = True
-        item["_normalized_title"] = normalize_text(title)
+        item["canonical_url"] = canonical_url(url)
+        item["normalized_title"] = normalized_title(title)
+        item["event_id"] = event_id_for_item(item)
+        item["_normalized_title"] = item["normalized_title"]
         valid_items.append(item)
 
     valid_items.sort(
@@ -760,20 +920,24 @@ def filter_and_rank_candidates(
     deduplicated: list[dict[str, Any]] = []
     seen_urls: set[str] = set()
     seen_titles: list[str] = []
+    seen_events: set[str] = set()
     skipped_duplicates = 0
 
     for item in valid_items:
-        url = item.get("url", "")
-        normalized_title = item.get("_normalized_title", "")
-        if url in seen_urls or any(
-            _is_similar_title(normalized_title, seen_title, max_title_similarity)
+        url = item.get("canonical_url") or item.get("url", "")
+        title_key = item.get("_normalized_title", "")
+        event_id = item.get("event_id", "")
+        if event_id in seen_events or url in seen_urls or any(
+            _is_similar_title(title_key, seen_title, max_title_similarity)
             for seen_title in seen_titles
         ):
             skipped_duplicates += 1
             continue
 
         seen_urls.add(url)
-        seen_titles.append(normalized_title)
+        if event_id:
+            seen_events.add(event_id)
+        seen_titles.append(title_key)
         item.pop("_normalized_title", None)
         deduplicated.append(item)
 

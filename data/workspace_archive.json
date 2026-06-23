@@ -1,0 +1,118 @@
+{
+  "updated_at": "2026-06-24",
+  "items": [
+    {
+      "date": "2026-06-24",
+      "window": [
+        {
+          "category": "Smart Manufacturing",
+          "count": 1,
+          "avg_future_signal_score": 30
+        },
+        {
+          "category": "Advanced Sensing",
+          "count": 1,
+          "avg_future_signal_score": 20
+        },
+        {
+          "category": "New Energy Systems",
+          "count": 1,
+          "avg_future_signal_score": 10
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "今日信号主要集中在汽车新材料、企业技术动态方向，最明显的技术牵引来自功率半导体。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "虽然新闻聚焦历史，但展示了复合材料在风电领域的早期应用，以及高校创新对产业化的推动作用，对理解材料技术从实验室到市场的路径有参考价值。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "潜在材料机会包括膜电极、催化剂、储氢材料、密封材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+        },
+        {
+          "label": "Suggested Action",
+          "text": "建议进入“持续观察”阶段。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "Global EV Outlook 2024",
+          "why_read": "这份报告帮助判断新能源汽车产业链的长期扩张速度，以及电池、功率电子、轻量化和充电基础设施需求的变化。",
+          "focus": "关注电动车渗透率、区域市场差异、供应链瓶颈和政策信号如何传导为材料验证机会。",
+          "reading_time": "约 25 分钟",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2024"
+        },
+        {
+          "title": "Batteries and Secure Energy Transitions",
+          "why_read": "电池不只是车辆零部件，也正在成为能源系统的一部分。理解储能需求有助于判断电池材料、热管理和回收技术的中长期空间。",
+          "focus": "关注电池需求增长、供应链安全、材料约束、储能场景和回收体系对材料团队的牵引。",
+          "reading_time": "约 20 分钟",
+          "url": "https://www.iea.org/reports/batteries-and-secure-energy-transitions"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-23",
+      "window": [
+        {
+          "category": "Supply Chain Migration",
+          "count": 2,
+          "avg_future_signal_score": 64
+        },
+        {
+          "category": "Smart Manufacturing",
+          "count": 1,
+          "avg_future_signal_score": 60
+        },
+        {
+          "category": "New Energy Systems",
+          "count": 1,
+          "avg_future_signal_score": 60
+        },
+        {
+          "category": "Humanoid Robotics",
+          "count": 2,
+          "avg_future_signal_score": 25
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "今日信号主要集中在汽车新材料、企业技术动态、电池与储能方向，最明显的技术牵引来自机器人与具身智能。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "这条信息指向功率半导体方向的变化，可能从技术演进进一步传导到材料选型、供应链调研和验证储备。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "潜在材料机会包括封装材料、导热材料、绝缘材料、银烧结材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+        },
+        {
+          "label": "Suggested Action",
+          "text": "建议进入“持续观察”阶段。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "Global EV Outlook 2024",
+          "why_read": "这份报告帮助判断新能源汽车产业链的长期扩张速度，以及电池、功率电子、轻量化和充电基础设施需求的变化。",
+          "focus": "关注电动车渗透率、区域市场差异、供应链瓶颈和政策信号如何传导为材料验证机会。",
+          "reading_time": "约 25 分钟",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2024"
+        },
+        {
+          "title": "Batteries and Secure Energy Transitions",
+          "why_read": "电池不只是车辆零部件，也正在成为能源系统的一部分。理解储能需求有助于判断电池材料、热管理和回收技术的中长期空间。",
+          "focus": "关注电池需求增长、供应链安全、材料约束、储能场景和回收体系对材料团队的牵引。",
+          "reading_time": "约 20 分钟",
+          "url": "https://www.iea.org/reports/batteries-and-secure-energy-transitions"
+        }
+      ]
+    }
+  ]
+}

@@ -1,40 +1,32 @@
 {
   "category_counts": {
     "汽车新材料": 4,
-    "企业技术动态": 3,
-    "电池与储能": 1,
-    "学术论文": 1,
-    "电驱与电子材料": 1
+    "企业技术动态": 3
   },
   "source_counts": {
-    "IEEE Spectrum": 6,
-    "Electrive": 3,
+    "IEEE Spectrum": 4,
+    "Electrive": 2,
     "Bing News": 1
   },
   "company_counts": {
-    "Ford": 5,
-    "IEEE": 2,
-    "GM": 2,
-    "Stellantis": 1,
-    "BYD": 1,
-    "Bosch": 1,
-    "Michigan State University": 1,
-    "Prince Mohammad Bin Fahd University": 1,
-    "Saudi Aramco": 1,
-    "Chonnam National University": 1
+    "Ford": 4,
+    "GM": 3,
+    "University of Massachusetts Amherst": 1,
+    "US Windpower": 1,
+    "National Renewable Energy Laboratory (NREL)": 1,
+    "GE Vernova": 1,
+    "Ming Yang Smart Energy Group": 1,
+    "IEEE": 1,
+    "OpenAI": 1,
+    "Google": 1
   },
   "keyword_counts": {
-    "GaN": 5,
     "SiC": 3,
-    "电池材料": 1,
-    "battery": 1,
-    "轻量化材料": 1,
-    "传感器材料": 1,
-    "低功耗通信材料": 1,
-    "软体机器人材料": 1,
+    "GaN": 3,
     "玻璃纤维复合材料": 1,
     "钢": 1,
     "铸铁（卡车后轴）": 1,
-    "铜（发电机绕组）": 1
+    "铜（发电机绕组）": 1,
+    "轻量化材料": 1
   }
 }

@@ -36,10 +36,136 @@ source_groups:
       credibility_level: medium
       original_source_preferred: false
 
+    - name: 汽车之家行业新闻
+      source_type: professional_media
+      url: https://www.autohome.com.cn/news/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 新材料在线
+      source_type: professional_media
+      url: https://www.xincailiao.com/news/
+      source_score: 74
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 材料牛
+      source_type: professional_media
+      url: https://www.cailiaoniu.com/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+
     - name: 高工锂电
       source_type: professional_media
       url: https://www.gg-lb.com/
       source_score: 74
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 起点锂电
+      source_type: professional_media
+      url: https://www.qdlib.com/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 电池中国
+      source_type: professional_media
+      url: https://www.cbea.com/
+      source_score: 74
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 北极星储能网
+      source_type: professional_media
+      url: https://chuneng.bjx.com.cn/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 中国储能网
+      source_type: professional_media
+      url: https://www.escn.com.cn/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 高工机器人
+      source_type: professional_media
+      url: https://www.gg-robot.com/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 机器之心
+      source_type: professional_media
+      url: https://www.jiqizhixin.com/
+      source_score: 70
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 智东西
+      source_type: professional_media
+      url: https://zhidx.com/
+      source_score: 70
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 雷峰网
+      source_type: professional_media
+      url: https://www.leiphone.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 量子位
+      source_type: professional_media
+      url: https://www.qbitai.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 财联社
+      source_type: professional_media
+      url: https://www.cls.cn/
+      source_score: 70
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 第一财经
+      source_type: professional_media
+      url: https://www.yicai.com/
+      source_score: 70
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 界面新闻
+      source_type: professional_media
+      url: https://www.jiemian.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 澎湃新闻
+      source_type: professional_media
+      url: https://www.thepaper.cn/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 36氪
+      source_type: professional_media
+      url: https://36kr.com/
+      source_score: 66
+      credibility_level: medium
+      original_source_preferred: false
+
+    - name: 钛媒体
+      source_type: professional_media
+      url: https://www.tmtpost.com/
+      source_score: 66
       credibility_level: medium
       original_source_preferred: false
 
@@ -298,6 +424,13 @@ source_groups:
       credibility_level: high
       original_source_preferred: true
 
+    - name: arXiv
+      source_type: journal_rss
+      url: https://export.arxiv.org/rss/cs.RO
+      source_score: 82
+      credibility_level: high
+      original_source_preferred: true
+
     - name: Nature Energy
       source_type: journal_rss
       url: https://www.nature.com/nenergy.rss
@@ -330,6 +463,20 @@ source_groups:
       source_type: journal_rss
       url: https://www.sciencedirect.com/journal/energy-storage-materials/rss
       source_score: 90
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: WIPO Patentscope
+      source_type: professional_media
+      url: https://patentscope.wipo.int/
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+
+    - name: CNIPA
+      source_type: government_policy
+      url: https://www.cnipa.gov.cn/
+      source_score: 86
       credibility_level: high
       original_source_preferred: true
 

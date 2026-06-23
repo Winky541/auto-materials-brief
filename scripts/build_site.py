@@ -10,7 +10,7 @@ import json
 import logging
 import re
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -33,6 +33,7 @@ BACKLOG_PATH = DATA_DIR / "backlog.json"
 INSIGHTS_PATH = DATA_DIR / "insights.json"
 STATISTICS_PATH = ASSETS_DIR / "statistics.json"
 OPPORTUNITIES_PATH = ASSETS_DIR / "opportunities.json"
+WORKSPACE_ARCHIVE_PATH = DATA_DIR / "workspace_archive.json"
 METHODOLOGY_PATH = DOCS_DIR / "about-methodology.html"
 BRAND_EN = "AURA"
 BRAND_CN = "未来产业、技术与材料情报平台"
@@ -117,10 +118,14 @@ RESEARCH_DIRECTIONS = [
 ACTION_ORDER = ["持续跟踪", "供应商调研", "联合开发", "启动验证", "前瞻储备", "暂不优先"]
 ACTION_LABELS = {
     "持续跟踪": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Technology Watch"},
+    "Technology Watch": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Technology Watch"},
     "供应商调研": {"en": "Supplier Research", "zh": "供应商调研", "pipeline": "Supplier Research"},
+    "Supplier Research": {"en": "Supplier Research", "zh": "供应商调研", "pipeline": "Supplier Research"},
     "启动验证": {"en": "Validation", "zh": "验证价值", "pipeline": "Validation"},
     "联合开发": {"en": "Joint Development", "zh": "联合开发", "pipeline": "Joint Development"},
+    "Joint Development": {"en": "Joint Development", "zh": "联合开发", "pipeline": "Joint Development"},
     "前瞻储备": {"en": "Strategic Reserve", "zh": "战略储备", "pipeline": "Strategic Reserve"},
+    "Strategic Reserve": {"en": "Strategic Reserve", "zh": "战略储备", "pipeline": "Strategic Reserve"},
     "暂不优先": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Technology Watch"},
     "Early Exploration": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Technology Watch"},
     "Lab Evaluation": {"en": "Validation", "zh": "验证价值", "pipeline": "Validation"},
@@ -362,7 +367,7 @@ def load_insights(path: Path = INSIGHTS_PATH) -> list[dict[str, str]]:
                 "url": url,
             }
         )
-    return normalized[:6]
+    return normalized[:2]
 
 
 def _combined_item_text(item: dict[str, Any]) -> str:
@@ -520,7 +525,9 @@ def prepare_display_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
             current["future_signal_score"] = 0
         if current.get("suggested_action") == "观察储备":
             current["suggested_action"] = "前瞻储备"
-        if current.get("suggested_action") not in ACTION_ORDER:
+        if current.get("stage") and current.get("stage") in PIPELINE_ORDER:
+            current["suggested_action"] = current["stage"]
+        if current.get("suggested_action") not in ACTION_ORDER and current.get("suggested_action") not in ACTION_LABELS:
             current["suggested_action"] = "暂不优先"
         action_meta = action_label(current.get("suggested_action"))
         current["suggested_action_en"] = action_meta["en"]
@@ -590,6 +597,22 @@ def _related_signal(item: dict[str, Any]) -> dict[str, str]:
     }
 
 
+def _iso_date(value: Any, fallback: str = "") -> str:
+    text = str(value or "").strip()
+    if len(text) >= 10:
+        return text[:10]
+    return fallback
+
+
+def _days_since(date_text: str, current_date: str) -> int | None:
+    try:
+        current = date.fromisoformat(current_date[:10])
+        target = date.fromisoformat(date_text[:10])
+    except ValueError:
+        return None
+    return (current - target).days
+
+
 def build_opportunity_topics(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Build dynamic material opportunity topics from selected items."""
     topic_map: dict[str, dict[str, Any]] = {}
@@ -603,23 +626,31 @@ def build_opportunity_topics(items: list[dict[str, Any]]) -> list[dict[str, Any]
                 "domain": domain,
                 "material_value": 0,
                 "validation_priority": "Low",
-                "suggested_action": action_label(item.get("suggested_action"))["en"],
-                "suggested_action_zh": action_label(item.get("suggested_action"))["zh"],
+                "suggested_action": action_label(item.get("stage") or item.get("suggested_action"))["en"],
+                "suggested_action_zh": action_label(item.get("stage") or item.get("suggested_action"))["zh"],
+                "stage_reason": str(item.get("stage_reason") or ""),
                 "related_signals": [],
+                "companies": [],
+                "materials": [],
                 "news_count": 0,
             },
         )
         entry["material_value"] = max(entry["material_value"], score)
         if score >= entry["material_value"]:
-            entry["suggested_action"] = action_label(item.get("suggested_action"))["en"]
-            entry["suggested_action_zh"] = action_label(item.get("suggested_action"))["zh"]
+            entry["suggested_action"] = action_label(item.get("stage") or item.get("suggested_action"))["en"]
+            entry["suggested_action_zh"] = action_label(item.get("stage") or item.get("suggested_action"))["zh"]
+            entry["stage_reason"] = str(item.get("stage_reason") or entry.get("stage_reason") or "")
         entry["related_signals"].append(_related_signal(item))
+        entry["companies"].extend(item.get("companies_or_institutions", []) or [])
+        entry["materials"].extend(item.get("materials_involved", []) or [])
         entry["news_count"] += 1
 
     topics = list(topic_map.values())
     for topic in topics:
         topic["validation_priority"] = validation_priority(int(topic["material_value"] or 0))
         topic["related_signals"] = topic["related_signals"][:4]
+        topic["companies"] = _unique_strings(topic.get("companies", []))
+        topic["materials"] = _unique_strings(topic.get("materials", []))
     topics.sort(key=lambda row: (int(row["material_value"]), row["news_count"]), reverse=True)
     return topics
 
@@ -676,13 +707,142 @@ def build_opportunity_archive(
                 "validation_priority": topic["validation_priority"],
                 "suggested_action": topic["suggested_action"],
                 "suggested_action_zh": topic["suggested_action_zh"],
+                "stage_reason": topic.get("stage_reason", ""),
                 "related_signals": topic["related_signals"],
+                "companies": topic.get("companies", []),
+                "materials": topic.get("materials", []),
                 "news_count": topic["news_count"],
                 "first_seen": previous_topic.get("first_seen", current_date),
                 "updated_at": current_date,
             }
         )
     return {"updated_at": current_date, "topics": archived_topics}
+
+
+def _unique_strings(values: list[Any], limit: int = 8) -> list[str]:
+    seen = set()
+    result = []
+    for value in values:
+        text = str(value or "").strip()
+        if not text or text.casefold() in seen:
+            continue
+        seen.add(text.casefold())
+        result.append(text)
+        if len(result) >= limit:
+            break
+    return result
+
+
+def _topic_profile_from_current(topic: dict[str, Any], current_date: str) -> dict[str, Any]:
+    signals = topic.get("related_signals", []) if isinstance(topic.get("related_signals"), list) else []
+    return {
+        "id": re.sub(r"[^a-z0-9]+", "-", str(topic.get("topic", "")).casefold()).strip("-") or "opportunity",
+        "topic": topic.get("topic", "Emerging Material Opportunity"),
+        "domain": topic.get("domain", "Energy Systems"),
+        "first_seen": current_date,
+        "updated_at": current_date,
+        "current_stage": topic.get("suggested_action", "Technology Watch"),
+        "material_value": int(topic.get("material_value", 0) or 0),
+        "validation_priority": topic.get("validation_priority", "Low"),
+        "suggested_action": topic.get("suggested_action", "Technology Watch"),
+        "suggested_action_zh": topic.get("suggested_action_zh", "持续观察"),
+        "stage_reason": topic.get("stage_reason", ""),
+        "related_signals": signals[:6],
+        "companies": _unique_strings(topic.get("companies", [])),
+        "materials": _unique_strings(topic.get("materials", [])),
+        "news_count": int(topic.get("news_count", len(signals)) or 0),
+    }
+
+
+def _topic_profile_from_archive(topic: dict[str, Any], current_date: str) -> dict[str, Any]:
+    signals = topic.get("related_signals", []) if isinstance(topic.get("related_signals"), list) else []
+    first_seen = _iso_date(topic.get("first_seen"), current_date)
+    updated_at = _iso_date(topic.get("updated_at"), first_seen)
+    return {
+        "id": re.sub(r"[^a-z0-9]+", "-", str(topic.get("topic", "")).casefold()).strip("-") or "opportunity",
+        "topic": topic.get("topic", "Emerging Material Opportunity"),
+        "domain": topic.get("domain", "Energy Systems"),
+        "first_seen": first_seen,
+        "updated_at": updated_at,
+        "current_stage": topic.get("suggested_action", "Technology Watch"),
+        "material_value": int(topic.get("material_value", 0) or 0),
+        "validation_priority": topic.get("validation_priority", "Low"),
+        "suggested_action": topic.get("suggested_action", "Technology Watch"),
+        "suggested_action_zh": topic.get("suggested_action_zh", "持续观察"),
+        "stage_reason": topic.get("stage_reason", ""),
+        "related_signals": signals[:6],
+        "companies": _unique_strings(topic.get("companies", [])),
+        "materials": _unique_strings(topic.get("materials", [])),
+        "news_count": int(topic.get("news_count", len(signals)) or 0),
+    }
+
+
+def build_opportunity_library(
+    topics: list[dict[str, Any]],
+    existing_archive: dict[str, Any],
+    current_date: str,
+) -> list[dict[str, Any]]:
+    """Build the Bookshelf hierarchy: Domain -> Opportunity -> Profile."""
+    previous = existing_archive.get("topics", []) if isinstance(existing_archive, dict) else []
+    profiles: dict[str, dict[str, Any]] = {}
+
+    for archived in previous:
+        if isinstance(archived, dict):
+            profile = _topic_profile_from_archive(archived, current_date)
+            profiles[profile["topic"]] = profile
+
+    for topic in topics:
+        current = _topic_profile_from_current(topic, current_date)
+        previous_profile = profiles.get(current["topic"], {})
+        first_seen = previous_profile.get("first_seen", current["first_seen"])
+        merged_signals = list(current["related_signals"])
+        for signal in previous_profile.get("related_signals", []):
+            if isinstance(signal, dict) and signal.get("url") not in {item.get("url") for item in merged_signals}:
+                merged_signals.append(signal)
+        profiles[current["topic"]] = {
+            **previous_profile,
+            **current,
+            "first_seen": first_seen,
+            "updated_at": current["updated_at"],
+            "material_value": max(int(previous_profile.get("material_value", 0) or 0), current["material_value"]),
+            "related_signals": merged_signals[:6],
+            "news_count": max(int(previous_profile.get("news_count", 0) or 0), current["news_count"]),
+        }
+
+    by_domain: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for profile in profiles.values():
+        days = _days_since(str(profile.get("updated_at", "")), current_date)
+        profile["status"] = "Active" if days is None or days <= 30 else "Dormant"
+        profile["is_active"] = profile["status"] == "Active"
+        by_domain[str(profile.get("domain") or "Energy Systems")].append(profile)
+
+    library = []
+    for domain in OPPORTUNITY_DOMAINS:
+        opportunities = by_domain.get(domain["domain"], [])
+        opportunities.sort(
+            key=lambda item: (
+                item.get("status") == "Active",
+                int(item.get("material_value", 0) or 0),
+                str(item.get("updated_at", "")),
+            ),
+            reverse=True,
+        )
+        active = [item for item in opportunities if item["status"] == "Active"]
+        dormant = [item for item in opportunities if item["status"] == "Dormant"]
+        library.append(
+            {
+                "domain": domain["domain"],
+                "zh": domain["zh"],
+                "active_count": len(active),
+                "dormant_count": len(dormant),
+                "opportunities": active,
+                "dormant_opportunities": dormant,
+            }
+        )
+    first_active = next((row for row in library if row["active_count"] > 0), library[0] if library else None)
+    if first_active:
+        first_active["is_default_open"] = True
+    return library
 
 
 def build_company_intelligence(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -723,8 +883,12 @@ def build_future_radar(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         ("AI Hardware", ["ai hardware", "chip", "算力", "硬件"]),
         ("Autonomous Driving", ["autonomous", "adas", "自动驾驶", "智能驾驶"]),
         ("Smart Manufacturing", ["manufacturing", "制造", "3d printing", "增材"]),
-        ("Hydrogen Systems", ["hydrogen", "fuel cell", "氢能", "燃料电池"]),
+        ("New Energy Systems", ["hydrogen", "fuel cell", "氢能", "燃料电池", "energy storage", "v2g", "储能", "新能源系统"]),
         ("Advanced Sensing", ["sensor", "lidar", "infrared", "swir", "感知", "红外"]),
+        ("Automotive Profit Shift", ["profit", "margin", "price war", "盈利", "利润", "价格战", "降价"]),
+        ("OEM Strategy Transition", ["strategy", "restructure", "software-defined", "转型", "战略", "重组", "软件定义"]),
+        ("Supply Chain Migration", ["supply chain", "localization", "reshoring", "产业链", "供应链", "本地化", "迁移"]),
+        ("New Mobility Business Models", ["business model", "subscription", "robotaxi", "mobility service", "商业模式", "订阅", "出行服务"]),
     ]
     rows = []
     for category, keywords in rules:
@@ -740,6 +904,19 @@ def build_future_radar(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 }
             )
     rows.sort(key=lambda row: (row["avg_future_signal_score"], row["count"]), reverse=True)
+    if not rows and items:
+        drivers = Counter(str(item.get("technology_driver") or "其他") for item in items)
+        for driver, count in drivers.most_common(5):
+            matched = [item for item in items if str(item.get("technology_driver") or "其他") == driver]
+            rows.append(
+                {
+                    "category": driver,
+                    "count": count,
+                    "avg_future_signal_score": round(
+                        sum(int(item.get("future_signal_score", 0) or 0) for item in matched) / max(len(matched), 1)
+                    ),
+                }
+            )
     return rows[:7]
 
 
@@ -762,6 +939,44 @@ def build_validation_pool(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         groups.append({"action": action, "items": action_items, "count": len(action_items)})
         groups[-1].update(PIPELINE_META.get(action, {}))
         groups[-1]["has_new"] = bool(action_items)
+    return groups
+
+
+def build_palette_from_opportunity_library(
+    opportunity_library: list[dict[str, Any]],
+    current_date: str,
+) -> list[dict[str, Any]]:
+    """Build persistent Palette stages from long-term Opportunities."""
+    grouped: dict[str, list[dict[str, Any]]] = {status: [] for status in PIPELINE_ORDER}
+    for domain in opportunity_library:
+        for opportunity in list(domain.get("opportunities", [])) + list(domain.get("dormant_opportunities", [])):
+            action = str(opportunity.get("suggested_action") or opportunity.get("current_stage") or "Technology Watch")
+            pipeline = action if action in PIPELINE_ORDER else action_label(action)["pipeline"]
+            grouped.setdefault(pipeline, []).append(
+                {
+                    "title": opportunity.get("topic", "Unnamed Opportunity"),
+                    "domain": opportunity.get("domain", domain.get("domain", "")),
+                    "material_value": opportunity.get("material_value", 0),
+                    "updated_at": opportunity.get("updated_at", ""),
+                    "status": opportunity.get("status", "Active"),
+                    "is_new": opportunity.get("updated_at") == current_date,
+                }
+            )
+
+    groups = []
+    for action in PIPELINE_ORDER:
+        action_items = grouped.get(action, [])
+        action_items.sort(
+            key=lambda item: (
+                item.get("is_new"),
+                int(item.get("material_value", 0) or 0),
+                str(item.get("updated_at", "")),
+            ),
+            reverse=True,
+        )
+        groups.append({"action": action, "items": action_items, "count": len(action_items)})
+        groups[-1].update(PIPELINE_META.get(action, {}))
+        groups[-1]["has_new"] = any(item.get("is_new") for item in action_items)
     return groups
 
 
@@ -1017,10 +1232,50 @@ def _published_records(data: Any) -> list[dict[str, Any]]:
     return normalized
 
 
+def build_workspace_archive(
+    archive_data: Any,
+    current_date: str,
+    future_radar: list[dict[str, Any]],
+    research_insight_cards: list[dict[str, str]],
+    insights: list[dict[str, str]],
+) -> dict[str, Any]:
+    """Persist Dynamic Workspace snapshots for Archive Box."""
+    existing = archive_data.get("items", []) if isinstance(archive_data, dict) else []
+    records = [item for item in existing if isinstance(item, dict)]
+    snapshot = {
+        "date": current_date,
+        "window": [
+            {
+                "category": row.get("category", ""),
+                "count": row.get("count", 0),
+                "avg_future_signal_score": row.get("avg_future_signal_score", 0),
+            }
+            for row in future_radar[:7]
+        ],
+        "notebook": research_insight_cards,
+        "cat": [
+            {
+                "title": item.get("title", ""),
+                "why_read": item.get("why_read", ""),
+                "focus": item.get("focus", ""),
+                "reading_time": item.get("reading_time", ""),
+                "url": item.get("url", ""),
+            }
+            for item in insights[:2]
+        ],
+    }
+    by_date = {str(item.get("date")): item for item in records if item.get("date")}
+    by_date[current_date] = snapshot
+    items = sorted(by_date.values(), key=lambda item: str(item.get("date", "")), reverse=True)[:40]
+    return {"updated_at": current_date, "items": items}
+
+
 def collect_archive_data(
-    today_payload: dict[str, Any], published_data: Any
-) -> dict[str, list[dict[str, str]]]:
-    """Collect recent daily and monthly archive links from published records."""
+    today_payload: dict[str, Any],
+    published_data: Any,
+    workspace_archive: dict[str, Any] | None = None,
+) -> dict[str, list[dict[str, str]] | list[dict[str, Any]]]:
+    """Collect recent archive links and Dynamic Workspace snapshots."""
     today = today_payload.get("date") or datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
     dates = {today}
     months = {today[:7]}
@@ -1039,7 +1294,8 @@ def collect_archive_data(
         {"month": month, "href": f"monthly/{month}.html"}
         for month in sorted(months, reverse=True)[:12]
     ]
-    return {"daily": daily, "monthly": monthly}
+    workspace = workspace_archive.get("items", []) if isinstance(workspace_archive, dict) else []
+    return {"daily": daily, "monthly": monthly, "workspace": workspace[:12]}
 
 
 def _env() -> Environment:
@@ -1061,6 +1317,7 @@ def generate_index_page(
     validation_pool: list[dict[str, Any]],
     opportunity_domains: list[dict[str, Any]],
     opportunity_topics: list[dict[str, Any]],
+    opportunity_library: list[dict[str, Any]],
     emerging_topics: list[dict[str, Any]],
     company_intelligence: list[dict[str, Any]],
     patents_research: dict[str, list[dict[str, Any]]],
@@ -1085,6 +1342,7 @@ def generate_index_page(
         validation_pool=validation_pool,
         opportunity_domains=opportunity_domains,
         opportunity_topics=opportunity_topics,
+        opportunity_library=opportunity_library,
         emerging_topics=emerging_topics,
         company_intelligence=company_intelligence,
         patents_research=patents_research,
@@ -1194,6 +1452,7 @@ def main() -> None:
     published_data = load_json(PUBLISHED_URLS_PATH, {"published_urls": []})
     analyzed_items = _as_items(load_json(ANALYZED_NEWS_PATH, []))
     backlog_items = _as_items(load_json(BACKLOG_PATH, {"items": []}))
+    workspace_archive_data = load_json(WORKSPACE_ARCHIVE_PATH, {"items": []})
     insights = load_insights()
     today_items = _as_items(today_payload)
 
@@ -1208,18 +1467,27 @@ def main() -> None:
     opportunity_topics = build_opportunity_topics(display_items)
     opportunity_domains = build_opportunity_domains(display_items, opportunity_topics)
     current_date = today_payload.get("date") or datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+    opportunity_library = build_opportunity_library(opportunity_topics, existing_opportunities, current_date)
     emerging_topics = build_emerging_topics(opportunity_topics, existing_opportunities, current_date)
     opportunity_archive = build_opportunity_archive(opportunity_topics, existing_opportunities, current_date)
-    validation_pool = build_validation_pool(display_items)
     company_intelligence = build_company_intelligence(display_items)
     patents_research = build_patents_research(display_items)
     future_radar = build_future_radar(display_items)
+    validation_pool = build_palette_from_opportunity_library(opportunity_library, current_date)
     statistics = build_statistics(display_items, analyzed_items, backlog_items)
     insight = build_research_insight(display_items, statistics)
     research_insight_cards = build_research_insight_cards(display_items, statistics)
-    archives = collect_archive_data(today_payload, published_data)
+    workspace_archive = build_workspace_archive(
+        workspace_archive_data,
+        current_date,
+        future_radar,
+        research_insight_cards,
+        insights,
+    )
+    archives = collect_archive_data(today_payload, published_data, workspace_archive)
     save_json(statistics, STATISTICS_PATH)
     save_json(opportunity_archive, OPPORTUNITIES_PATH)
+    save_json(workspace_archive, WORKSPACE_ARCHIVE_PATH)
 
     env = _env()
     generate_index_page(
@@ -1230,6 +1498,7 @@ def main() -> None:
         validation_pool,
         opportunity_domains,
         opportunity_topics,
+        opportunity_library,
         emerging_topics,
         company_intelligence,
         patents_research,

@@ -1,61 +1,121 @@
 {
-  "updated_at": "2026-06-23",
+  "updated_at": "2026-06-24",
   "topics": [
     {
       "domain": "Thermal & Safety",
       "topic": "Battery Thermal Management Materials",
-      "material_value": 65,
-      "validation_priority": "Medium",
+      "material_value": 10,
+      "validation_priority": "Low",
       "suggested_action": "Technology Watch",
       "suggested_action_zh": "持续观察",
+      "stage_reason": "根据当前产业化、合作、验证和供应链信号进行生命周期阶段兜底判断。",
       "related_signals": [
         {
-          "title": "Behind the Scenes of a Technical Interview",
-          "url": "https://spectrum.ieee.org/tech-interview-prep",
+          "title": "This 1976 University Experiment Spun Up the U.S. Wind Industry",
+          "url": "https://spectrum.ieee.org/william-heronemus-wind-energy",
           "source": "IEEE Spectrum",
-          "published_date": "2026-06-18"
+          "published_date": "2026-06-15"
         },
         {
-          "title": "Stellantis rules out alternative powertrains for small-car platform",
-          "url": "https://www.electrive.com/2026/06/19/stellantis-rules-out-alternative-powertrains-for-small-car-platform/",
-          "source": "Electrive",
-          "published_date": "2026-06-19"
-        },
-        {
-          "title": "EU plans additional tariffs on Chinese PHEVs",
-          "url": "https://www.electrive.com/2026/06/19/eu-plans-additional-tariffs-on-chinese-phevs/",
-          "source": "Electrive",
-          "published_date": "2026-06-19"
-        },
-        {
-          "title": "EPICS in IEEE’s Awards Honor Outstanding Students and Faculty",
-          "url": "https://spectrum.ieee.org/epics-in-ieee",
+          "title": "Commemorating 70 Years of Artificial Intelligence",
+          "url": "https://spectrum.ieee.org/70-years-of-artificial-intelligence",
           "source": "IEEE Spectrum",
-          "published_date": "2026-06-11"
+          "published_date": "2026-06-23"
+        },
+        {
+          "title": "How is EMI testing evolving for wide-bandgap EV architectures?",
+          "url": "https://www.eeworldonline.com/how-is-emi-testing-evolving-for-wide-bandgap-ev-architectures",
+          "source": "Bing News",
+          "published_date": "2026-06-22"
         }
       ],
-      "news_count": 4,
+      "companies": [
+        "University of Massachusetts Amherst",
+        "Ford",
+        "US Windpower",
+        "National Renewable Energy Laboratory (NREL)",
+        "GE Vernova",
+        "Ming Yang Smart Energy Group",
+        "GM",
+        "IEEE"
+      ],
+      "materials": [
+        "玻璃纤维复合材料",
+        "钢",
+        "铸铁（卡车后轴）",
+        "铜（发电机绕组）",
+        "SiC",
+        "GaN"
+      ],
+      "news_count": 3,
       "first_seen": "2026-06-22",
-      "updated_at": "2026-06-23"
+      "updated_at": "2026-06-24"
+    },
+    {
+      "domain": "Manufacturing & Process",
+      "topic": "Emerging Material Opportunity",
+      "material_value": 10,
+      "validation_priority": "Low",
+      "suggested_action": "Technology Watch",
+      "suggested_action_zh": "持续观察",
+      "stage_reason": "根据当前产业化、合作、验证和供应链信号进行生命周期阶段兜底判断。",
+      "related_signals": [
+        {
+          "title": "ICCT rankings reveal EU’s bestselling commercial EV manufacturers",
+          "url": "https://www.electrive.com/2026/06/23/icct-rankings-reveal-eus-bestselling-commercial-ev-manufacturers",
+          "source": "Electrive",
+          "published_date": "2026-06-23"
+        },
+        {
+          "title": "‘Neue Klasse’ upgrades for BMW’s Leipzig plant",
+          "url": "https://www.electrive.com/2026/06/22/neue-klasse-upgrades-for-bmws-leipzig-plant",
+          "source": "Electrive",
+          "published_date": "2026-06-22"
+        }
+      ],
+      "companies": [
+        "Mercedes-Benz",
+        "GM",
+        "ICCT",
+        "BMW"
+      ],
+      "materials": [],
+      "news_count": 2,
+      "first_seen": "2026-06-24",
+      "updated_at": "2026-06-24"
     },
     {
       "domain": "Electronics & Power",
       "topic": "Advanced Packaging Materials",
-      "material_value": 20,
+      "material_value": 10,
       "validation_priority": "Low",
       "suggested_action": "Technology Watch",
       "suggested_action_zh": "持续观察",
+      "stage_reason": "根据当前产业化、合作、验证和供应链信号进行生命周期阶段兜底判断。",
       "related_signals": [
         {
-          "title": "Engineering Is Critical to Boosting Food Security",
-          "url": "https://spectrum.ieee.org/engineering-critical-food-security",
+          "title": "AI Is Learning to Read the Room",
+          "url": "https://spectrum.ieee.org/emotion-ai-context",
           "source": "IEEE Spectrum",
-          "published_date": "2026-06-16"
+          "published_date": "2026-06-23"
         }
+      ],
+      "companies": [
+        "GM",
+        "Ford",
+        "Neurologyca",
+        "MIT",
+        "Stanford",
+        "Cambridge"
+      ],
+      "materials": [
+        "轻量化材料",
+        "SiC",
+        "GaN"
       ],
       "news_count": 1,
       "first_seen": "2026-06-23",
-      "updated_at": "2026-06-23"
+      "updated_at": "2026-06-24"
     }
   ]
 }
