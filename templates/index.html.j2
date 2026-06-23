@@ -34,6 +34,7 @@
           <p class="eyebrow">{{ date }}</p>
           <h1 id="studio-title">AURA Studio</h1>
           <p>Researcher's Workspace</p>
+          <p class="studio-expansion">{{ brand_full_en }}</p>
         </div>
         <div class="studio-hint">Click objects in the room</div>
         <div class="studio-object-label" id="studioObjectLabel" aria-hidden="true"></div>
@@ -66,6 +67,11 @@
             <span class="archive-shape"><i></i></span>
             <strong>Archive Box</strong>
             <em>Archive</em>
+          </button>
+          <button class="desk-object desk-cat" type="button" data-studio-target="insights" aria-label="Open Weekly Insights">
+            <span class="cat-shape"><i></i><i></i></span>
+            <strong>Cat</strong>
+            <em>Weekly Insights</em>
           </button>
         </div>
       </section>
@@ -161,9 +167,9 @@
         </div>
         <div class="validation-pool">
           {% for group in validation_pool %}
-          <article>
+          <article style="--action-color: {{ group.color }}">
             <h3>{{ group.action }}</h3>
-            <span>{{ group.count }} 条</span>
+            <span>{% if group.has_new %}<i class="action-dot" aria-label="本周期有新增内容"></i>{% endif %}{{ group.meaning }} · {{ group.count }} 条</span>
             <ul>
               {% for item in group["items"][:4] %}
               <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></li>
@@ -178,8 +184,8 @@
 
       <section id="insights" class="opportunity-panel insights-panel studio-content-source">
         <div class="section-heading">
-          <p class="eyebrow">Insights</p>
-          <h2>Insights</h2>
+          <p class="eyebrow">Cat</p>
+          <h2>Weekly Insights</h2>
         </div>
         <div class="insights-grid">
           {% for article in insights %}
@@ -204,7 +210,7 @@
       <section id="archives" class="archive-grid studio-content-source">
         <div>
           <p class="eyebrow">Archive</p>
-          <h2>历史归档</h2>
+          <h2>Daily Archive</h2>
           <div class="archive-links">
             {% for item in archives.daily %}
             <a href="{{ item.href }}">{{ item.date }}</a>
@@ -213,7 +219,7 @@
         </div>
         <div>
           <p class="eyebrow">Monthly</p>
-          <h2>月度归档</h2>
+          <h2>Monthly Archive</h2>
           <div class="archive-links">
             {% for item in archives.monthly %}
             <a href="{{ item.href }}">{{ item.month }}</a>

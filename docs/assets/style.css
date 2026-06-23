@@ -229,6 +229,14 @@ a {
   margin: 16px 0 0;
 }
 
+.studio-copy .studio-expansion {
+  color: rgba(31, 41, 51, 0.58);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  margin-top: 8px;
+}
+
 .studio-hint {
   background: rgba(255,255,255,0.58);
   border: 1px solid rgba(229, 226, 218, 0.82);
@@ -743,6 +751,67 @@ a {
 .desk-archive:focus-visible .archive-shape::before,
 .desk-archive:active .archive-shape::before {
   transform: translateY(-7px) rotate(-4deg);
+}
+
+.desk-cat {
+  bottom: 16%;
+  left: 24%;
+  width: 150px;
+}
+
+.cat-shape {
+  background: transparent;
+  display: block;
+  height: 92px;
+  position: relative;
+  width: 142px;
+}
+
+.cat-shape::before {
+  background: #b8afa3;
+  border-radius: 50% 48% 46% 52%;
+  box-shadow: 0 18px 38px rgba(31, 41, 51, 0.08);
+  content: "";
+  height: 58px;
+  left: 28px;
+  position: absolute;
+  top: 24px;
+  width: 92px;
+}
+
+.cat-shape::after {
+  background: #d8cbb9;
+  border-radius: 50%;
+  content: "";
+  height: 36px;
+  left: 14px;
+  position: absolute;
+  top: 16px;
+  width: 42px;
+}
+
+.cat-shape i {
+  background: #b8afa3;
+  display: block;
+  position: absolute;
+}
+
+.cat-shape i:first-child {
+  border-radius: 999px;
+  height: 14px;
+  right: 12px;
+  top: 28px;
+  transform: rotate(-28deg);
+  width: 48px;
+}
+
+.cat-shape i:last-child {
+  background: rgba(31, 41, 51, 0.08);
+  border-radius: 50%;
+  bottom: 0;
+  height: 18px;
+  left: 24px;
+  width: 94px;
 }
 
 .narrow-page {
@@ -1422,6 +1491,16 @@ a {
 .validation-pool ul {
   margin: 10px 0 0;
   padding-left: 18px;
+}
+
+.action-dot {
+  background: var(--action-color, var(--green));
+  border-radius: 999px;
+  display: inline-block;
+  height: 8px;
+  margin-right: 7px;
+  vertical-align: 0.05em;
+  width: 8px;
 }
 
 .sidebar {

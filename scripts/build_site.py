@@ -114,23 +114,32 @@ RESEARCH_DIRECTIONS = [
     {"name": "低空飞行材料", "key": "low-altitude-materials", "keywords": ["evtol", "flying car", "低空", "飞行汽车", "航空"]},
 ]
 
-ACTION_ORDER = ["启动验证", "供应商调研", "持续跟踪", "联合开发", "前瞻储备", "暂不优先"]
+ACTION_ORDER = ["持续跟踪", "供应商调研", "联合开发", "启动验证", "前瞻储备", "暂不优先"]
 ACTION_LABELS = {
     "持续跟踪": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Technology Watch"},
     "供应商调研": {"en": "Supplier Research", "zh": "供应商调研", "pipeline": "Supplier Research"},
-    "启动验证": {"en": "Lab Evaluation", "zh": "实验验证", "pipeline": "Lab Evaluation"},
+    "启动验证": {"en": "Validation", "zh": "验证价值", "pipeline": "Validation"},
     "联合开发": {"en": "Joint Development", "zh": "联合开发", "pipeline": "Joint Development"},
     "前瞻储备": {"en": "Strategic Reserve", "zh": "战略储备", "pipeline": "Strategic Reserve"},
-    "暂不优先": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Early Exploration"},
+    "暂不优先": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Technology Watch"},
+    "Early Exploration": {"en": "Technology Watch", "zh": "持续观察", "pipeline": "Technology Watch"},
+    "Lab Evaluation": {"en": "Validation", "zh": "验证价值", "pipeline": "Validation"},
+    "Validation": {"en": "Validation", "zh": "验证价值", "pipeline": "Validation"},
 }
 PIPELINE_ORDER = [
-    "Early Exploration",
     "Technology Watch",
     "Supplier Research",
-    "Lab Evaluation",
     "Joint Development",
+    "Validation",
     "Strategic Reserve",
 ]
+PIPELINE_META = {
+    "Technology Watch": {"meaning": "发现机会", "color": "#6B8E6E"},
+    "Supplier Research": {"meaning": "寻找资源", "color": "#C8A45A"},
+    "Joint Development": {"meaning": "确定方案", "color": "#8D7AB8"},
+    "Validation": {"meaning": "验证价值", "color": "#C97B63"},
+    "Strategic Reserve": {"meaning": "形成储备", "color": "#4A6FA5"},
+}
 STRATEGIC_COMPANIES = [
     "Toyota",
     "Honda",
@@ -284,7 +293,7 @@ METRIC_EXPLANATIONS = {
     },
     "suggested_action": {
         "title": "Suggested Action",
-        "body": "Suggested Action 是给材料科室的下一步动作建议。Technology Watch 表示持续观察；Supplier Research 表示调研供应商和样件可得性；Lab Evaluation 表示可考虑实验验证；Joint Development 表示适合联合开发；Strategic Reserve 表示适合前瞻储备。",
+        "body": "Suggested Action 是材料机会生命周期的下一步动作。Technology Watch 表示发现机会；Supplier Research 表示寻找资源；Joint Development 表示确定方案；Validation 表示验证价值；Strategic Reserve 表示形成储备。",
     },
     "material_opportunity": {
         "title": "Material Opportunity",
@@ -751,6 +760,8 @@ def build_validation_pool(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
             reverse=True,
         )
         groups.append({"action": action, "items": action_items, "count": len(action_items)})
+        groups[-1].update(PIPELINE_META.get(action, {}))
+        groups[-1]["has_new"] = bool(action_items)
     return groups
 
 
@@ -839,22 +850,22 @@ def build_research_insight_cards(items: list[dict[str, Any]], statistics: dict[s
     """Build structured Research Insight blocks for the homepage."""
     if not items:
         return [
-            {"label": "What Changed", "text": "No publishable intelligence item is available today."},
-            {"label": "Why It Matters", "text": "AURA will not invent signals when source evidence is insufficient."},
-            {"label": "Material Opportunity", "text": "Keep watching the monthly candidate pool and strengthen authoritative sources."},
-            {"label": "Suggested Action", "text": "Technology Watch"},
+            {"label": "What Changed", "text": "今日暂无达到发布条件的情报信号。"},
+            {"label": "Why It Matters", "text": "当来源证据不足时，AURA 不会为了填充版面而生成判断。"},
+            {"label": "Material Opportunity", "text": "建议继续观察当月候选池，并优先补充高可信来源。"},
+            {"label": "Suggested Action", "text": "持续观察。"},
         ]
 
-    drivers = Counter(str(item.get("technology_driver") or "Other") for item in items)
+    drivers = Counter(str(item.get("technology_driver") or "其他") for item in items)
     top_driver = drivers.most_common(1)[0][0]
     top_item = max(items, key=lambda item: int(item.get("material_opportunity_score", 0) or 0))
     action = action_label(top_item.get("suggested_action"))
-    categories = " / ".join(list(statistics.get("category_counts", {}).keys())[:3]) or "current selected signals"
+    categories = "、".join(list(statistics.get("category_counts", {}).keys())[:3]) or "当前精选情报"
     return [
-        {"label": "What Changed", "text": f"Signals are concentrated in {categories}, with {top_driver} as the strongest technology driver."},
-        {"label": "Why It Matters", "text": str(top_item.get("why_it_matters") or top_item.get("impact_assessment") or "This signal may affect material selection and validation planning.")},
-        {"label": "Material Opportunity", "text": str(top_item.get("material_opportunity") or top_item.get("material_relevance") or "Material opportunity is still weak and should be watched conservatively.")},
-        {"label": "Suggested Action", "text": f"{action['en']} / {action['zh']}"},
+        {"label": "What Changed", "text": f"今日信号主要集中在{categories}方向，最明显的技术牵引来自{top_driver}。"},
+        {"label": "Why It Matters", "text": str(top_item.get("why_it_matters") or top_item.get("impact_assessment") or "该信号可能影响材料选择、供应链调研和后续验证安排。")},
+        {"label": "Material Opportunity", "text": str(top_item.get("material_opportunity") or top_item.get("material_relevance") or "材料机会仍需进一步核验，建议保守观察。")},
+        {"label": "Suggested Action", "text": f"建议进入“{action['zh']}”阶段。"},
     ]
 
 

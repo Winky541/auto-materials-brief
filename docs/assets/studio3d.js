@@ -256,6 +256,7 @@ archiveGroup.add(lid);
 addInteractive(archiveGroup, "archives", "Archive Box · Archive");
 
 catGroup = new THREE.Group();
+catGroup.userData = { target: "insights", name: "Cat · Weekly Insights", baseY: 0 };
 catGroup.position.set(0.28, 1.16, -0.2);
 catGroup.rotation.y = -0.18;
 scene.add(catGroup);
@@ -304,8 +305,9 @@ const catShadow = new THREE.Mesh(new THREE.CircleGeometry(0.48, 32), flatMateria
 catShadow.position.set(0.1, -0.085, 0.02);
 catShadow.rotation.x = -Math.PI / 2;
 catGroup.add(catShadow);
+addInteractive(catGroup, "insights", "Cat · Weekly Insights");
 
-const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup];
+const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup, catGroup];
 objectGroups.forEach((group) => {
   group.userData.baseY = group.position.y;
 });
