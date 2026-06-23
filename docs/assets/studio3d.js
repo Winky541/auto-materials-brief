@@ -258,54 +258,67 @@ addInteractive(archiveGroup, "archives", "Archive Box · Archive");
 
 catGroup = new THREE.Group();
 catGroup.userData = { target: "insights", name: "Cat · Weekly Insights", baseY: 0 };
-catGroup.position.set(-3.35, 0.14, 2.12);
-catGroup.rotation.y = 0.32;
-catGroup.scale.setScalar(0.74);
+catGroup.position.set(-1.55, 0.05, 2.08);
+catGroup.rotation.y = -0.12;
+catGroup.scale.setScalar(1.06);
 scene.add(catGroup);
 const catFur = material(0xb8afa3, 0.82);
 const catWarmFur = material(0xd8cbb9, 0.82);
 const catDark = material(0x4b423b, 0.76);
 catBody = new THREE.Mesh(new THREE.SphereGeometry(0.34, 24, 16), catFur);
-catBody.scale.set(1.45, 0.52, 0.72);
-catBody.position.set(0, 0.12, 0);
+catBody.scale.set(1.0, 1.16, 0.78);
+catBody.position.set(0, 0.45, 0);
 catBody.castShadow = true;
 catBody.receiveShadow = true;
 catGroup.add(catBody);
 catHead = new THREE.Mesh(new THREE.SphereGeometry(0.18, 20, 14), catWarmFur);
-catHead.scale.set(1.04, 0.92, 0.94);
-catHead.position.set(-0.43, 0.23, 0.03);
+catHead.scale.set(1.32, 1.18, 1.08);
+catHead.position.set(0, 0.88, 0.08);
 catHead.userData.baseY = catHead.position.y;
 catHead.castShadow = true;
 catGroup.add(catHead);
-[-0.52, -0.36].forEach((x, index) => {
-  const ear = new THREE.Mesh(new THREE.ConeGeometry(0.085, 0.18, 3), catFur);
-  ear.position.set(x, 0.42, 0.035 + (index ? 0.09 : -0.09));
-  ear.rotation.set(index ? 0.25 : -0.25, 0, Math.PI);
+[-0.16, 0.16].forEach((x, index) => {
+  const ear = new THREE.Mesh(new THREE.ConeGeometry(0.095, 0.24, 3), catFur);
+  ear.position.set(x, 1.08, 0.08);
+  ear.rotation.set(0, 0, index ? -0.24 : 0.24);
   ear.userData.baseRotation = ear.rotation.clone();
   ear.castShadow = true;
   catEars.push(ear);
   catGroup.add(ear);
 });
-[-0.49, -0.49].forEach((x, index) => {
-  const eye = new THREE.Mesh(new THREE.BoxGeometry(0.055, 0.006, 0.012), catDark);
-  eye.position.set(x, 0.25, index ? 0.105 : -0.045);
-  eye.rotation.x = index ? 0.18 : -0.18;
+[-0.07, 0.07].forEach((x) => {
+  const eye = new THREE.Mesh(new THREE.SphereGeometry(0.018, 10, 8), catDark);
+  eye.scale.set(1.0, 0.34, 0.55);
+  eye.position.set(x, 0.91, 0.265);
   catGroup.add(eye);
 });
-catTail = new THREE.Mesh(new THREE.TorusGeometry(0.22, 0.035, 10, 28, Math.PI * 1.25), catFur);
-catTail.position.set(0.43, 0.22, -0.02);
-catTail.rotation.set(1.16, 0.18, -0.42);
+const nose = new THREE.Mesh(new THREE.SphereGeometry(0.024, 10, 8), material(0xa98379, 0.72));
+nose.scale.set(1.0, 0.75, 0.5);
+nose.position.set(0, 0.86, 0.29);
+catGroup.add(nose);
+[-1, 1].forEach((side) => {
+  for (let i = 0; i < 3; i++) {
+    const whisker = new THREE.Mesh(new THREE.CylinderGeometry(0.004, 0.004, 0.25, 6), catDark);
+    whisker.position.set(side * 0.13, 0.84 - i * 0.035, 0.3);
+    whisker.rotation.set(Math.PI / 2, 0, side * (Math.PI / 2 + (i - 1) * 0.18));
+    catGroup.add(whisker);
+  }
+});
+catTail = new THREE.Mesh(new THREE.TorusGeometry(0.24, 0.035, 12, 34, Math.PI * 1.42), catFur);
+catTail.position.set(0.31, 0.5, -0.03);
+catTail.rotation.set(1.18, 0.05, -0.78);
 catTail.castShadow = true;
 catGroup.add(catTail);
-[-0.2, 0.18].forEach((x) => {
-  const paw = new THREE.Mesh(new THREE.SphereGeometry(0.07, 12, 8), catWarmFur);
-  paw.scale.set(1.4, 0.28, 0.72);
-  paw.position.set(x, -0.05, 0.22);
+[-0.12, 0.12].forEach((x) => {
+  const paw = new THREE.Mesh(new THREE.SphereGeometry(0.065, 12, 8), catWarmFur);
+  paw.scale.set(0.86, 0.42, 0.72);
+  paw.position.set(x, 0.14, 0.24);
   paw.castShadow = true;
   catGroup.add(paw);
 });
-const catShadow = new THREE.Mesh(new THREE.CircleGeometry(0.48, 32), flatMaterial(0x3a2f24, 0.10));
-catShadow.position.set(0.1, -0.085, 0.02);
+const catShadow = new THREE.Mesh(new THREE.CircleGeometry(0.44, 32), flatMaterial(0x3a2f24, 0.11));
+catShadow.position.set(0, 0.01, 0.03);
+catShadow.scale.set(1.22, 0.7, 1);
 catShadow.rotation.x = -Math.PI / 2;
 catGroup.add(catShadow);
 addInteractive(catGroup, "insights", "Cat · Weekly Insights");
@@ -370,16 +383,16 @@ function animate(time) {
     const breath = Math.sin(t * 1.55) * 0.026;
     const sleepyTwitch = Math.max(0, Math.sin(t * 2.65 - 0.7)) ** 5;
     const earTwitch = sleepyTwitch * 0.62 + (hovered === catGroup ? 0.28 : 0);
-    catBody.scale.set(1.45 + breath * 0.35, 0.52 + breath, 0.72);
+    catBody.scale.set(1.0 + breath * 0.18, 1.16 + breath, 0.78);
     catHead.position.y = catHead.userData.baseY + Math.sin(t * 1.2 + 0.4) * 0.012;
-    catTail.rotation.z = -0.42 + Math.sin(t * 1.05) * 0.11;
-    catTail.rotation.y = 0.18 + Math.sin(t * 0.75) * 0.04;
+    catTail.rotation.z = -0.78 + Math.sin(t * 1.05) * 0.13;
+    catTail.rotation.y = 0.05 + Math.sin(t * 0.75) * 0.045;
     catEars.forEach((ear, index) => {
       const base = ear.userData.baseRotation;
       ear.rotation.set(
-        base.x + earTwitch * (index ? 0.34 : -0.3),
+        base.x + earTwitch * (index ? 0.22 : -0.2),
         base.y + Math.sin(t * 4.2 + index) * 0.025,
-        base.z + earTwitch * (index ? -0.48 : 0.44)
+        base.z + earTwitch * (index ? -0.38 : 0.36)
       );
     });
   }

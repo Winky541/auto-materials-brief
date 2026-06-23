@@ -207,8 +207,8 @@ a {
 }
 
 .studio-copy {
-  max-width: 460px;
-  padding: 38px;
+  max-width: 390px;
+  padding: 44px 0 0 58px;
   pointer-events: none;
   position: relative;
   z-index: 4;
@@ -216,27 +216,53 @@ a {
 
 .studio-copy h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(54px, 8vw, 112px);
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 0.95;
+  line-height: 0.88;
   margin: 0;
 }
 
-.studio-copy p:not(.eyebrow) {
+.studio-wordmark span {
+  display: block;
+}
+
+.studio-wordmark span:first-child {
+  font-size: clamp(62px, 6.4vw, 96px);
+}
+
+.studio-wordmark span:last-child {
+  font-size: clamp(46px, 5vw, 72px);
+  margin-top: 8px;
+}
+
+.studio-copy .studio-role {
   color: var(--muted);
-  font-size: 18px;
-  margin: 16px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 26px 0 0;
 }
 
 .studio-copy .studio-expansion {
   color: rgba(31, 41, 51, 0.58);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 14px;
-  letter-spacing: 0.025em;
-  line-height: 1.35;
-  margin-top: 8px;
-  max-width: 360px;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  line-height: 1.28;
+  margin-top: 18px;
+  max-width: 330px;
+  padding-top: 14px;
+  position: relative;
+}
+
+.studio-copy .studio-expansion::before {
+  background: rgba(31, 41, 51, 0.18);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 88px;
 }
 
 .studio-hint {
@@ -1884,6 +1910,12 @@ a {
   padding: 24px;
 }
 
+.studio-content-source,
+.archive-grid.studio-content-source,
+.opportunity-panel.studio-content-source {
+  display: none;
+}
+
 .archive-links {
   display: flex;
   flex-wrap: wrap;
@@ -2191,16 +2223,31 @@ a {
     padding: 26px 22px;
   }
 
-  .studio-copy h1 {
-    font-size: 52px;
-  }
-
   .studio-hero.is-3d {
     min-height: 680px;
   }
 
   .studio-copy {
-    padding: 26px 22px;
+    max-width: 300px;
+    padding: 28px 24px;
+  }
+
+  .studio-wordmark span:first-child {
+    font-size: 58px;
+  }
+
+  .studio-wordmark span:last-child {
+    font-size: 44px;
+  }
+
+  .studio-copy .studio-role {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .studio-copy .studio-expansion {
+    font-size: 15px;
+    max-width: 260px;
   }
 
   .studio-object-label {
@@ -2245,4 +2292,10 @@ a {
   .news-card h3 {
     font-size: 23px;
   }
+}
+
+.studio-content-source,
+.archive-grid.studio-content-source,
+.opportunity-panel.studio-content-source {
+  display: none;
 }
