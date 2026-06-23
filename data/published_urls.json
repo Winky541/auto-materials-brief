@@ -174,6 +174,41 @@
       "published_date": "2026-06-13",
       "selected_date": "2026-06-22",
       "category": "学术论文"
+    },
+    {
+      "url": "https://spectrum.ieee.org/tech-interview-prep",
+      "title": "Behind the Scenes of a Technical Interview",
+      "published_date": "2026-06-18",
+      "selected_date": "2026-06-23",
+      "category": "电驱与电子材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/06/19/stellantis-rules-out-alternative-powertrains-for-small-car-platform/",
+      "title": "Stellantis rules out alternative powertrains for small-car platform",
+      "published_date": "2026-06-19",
+      "selected_date": "2026-06-23",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/06/19/eu-plans-additional-tariffs-on-chinese-phevs/",
+      "title": "EU plans additional tariffs on Chinese PHEVs",
+      "published_date": "2026-06-19",
+      "selected_date": "2026-06-23",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://spectrum.ieee.org/engineering-critical-food-security",
+      "title": "Engineering Is Critical to Boosting Food Security",
+      "published_date": "2026-06-16",
+      "selected_date": "2026-06-23",
+      "category": "企业技术动态"
+    },
+    {
+      "url": "https://spectrum.ieee.org/epics-in-ieee",
+      "title": "EPICS in IEEE’s Awards Honor Outstanding Students and Faculty",
+      "published_date": "2026-06-11",
+      "selected_date": "2026-06-23",
+      "category": "学术论文"
     }
   ]
 }
