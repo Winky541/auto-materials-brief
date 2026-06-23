@@ -207,7 +207,7 @@ a {
 }
 
 .studio-copy {
-  max-width: 720px;
+  max-width: 460px;
   padding: 38px;
   pointer-events: none;
   position: relative;
@@ -232,9 +232,11 @@ a {
 .studio-copy .studio-expansion {
   color: rgba(31, 41, 51, 0.58);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
-  letter-spacing: 0.04em;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  line-height: 1.35;
   margin-top: 8px;
+  max-width: 360px;
 }
 
 .studio-hint {
