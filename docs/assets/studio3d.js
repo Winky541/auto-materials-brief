@@ -28,6 +28,7 @@ const interactive = [];
 const outdoorFoliage = [];
 let catGroup;
 let catBody;
+let catHead;
 let catTail;
 const catEars = [];
 const pointer = new THREE.Vector2();
@@ -257,9 +258,9 @@ addInteractive(archiveGroup, "archives", "Archive Box · Archive");
 
 catGroup = new THREE.Group();
 catGroup.userData = { target: "insights", name: "Cat · Weekly Insights", baseY: 0 };
-catGroup.position.set(3.25, 0.18, -1.55);
-catGroup.rotation.y = -0.78;
-catGroup.scale.setScalar(0.72);
+catGroup.position.set(-3.35, 0.14, 2.12);
+catGroup.rotation.y = 0.32;
+catGroup.scale.setScalar(0.74);
 scene.add(catGroup);
 const catFur = material(0xb8afa3, 0.82);
 const catWarmFur = material(0xd8cbb9, 0.82);
@@ -270,9 +271,10 @@ catBody.position.set(0, 0.12, 0);
 catBody.castShadow = true;
 catBody.receiveShadow = true;
 catGroup.add(catBody);
-const catHead = new THREE.Mesh(new THREE.SphereGeometry(0.18, 20, 14), catWarmFur);
+catHead = new THREE.Mesh(new THREE.SphereGeometry(0.18, 20, 14), catWarmFur);
 catHead.scale.set(1.04, 0.92, 0.94);
 catHead.position.set(-0.43, 0.23, 0.03);
+catHead.userData.baseY = catHead.position.y;
 catHead.castShadow = true;
 catGroup.add(catHead);
 [-0.52, -0.36].forEach((x, index) => {
@@ -363,20 +365,23 @@ function animate(time) {
       const pulse = 1 + Math.sin(t * 0.6 + index) * 0.012;
       leaf.scale.set(base.x * pulse, base.y, base.z);
     });
-    if (catBody && catTail) {
-      catBody.scale.y = 0.52 + Math.sin(t * 1.2) * 0.012;
-      catTail.rotation.z = -0.42 + Math.sin(t * 0.8) * 0.045;
-      const sleepyTwitch = Math.max(0, Math.sin(t * 2.05 - 0.9)) ** 6;
-      const earTwitch = sleepyTwitch * 0.34 + (hovered === catGroup ? 0.18 : 0);
-      catEars.forEach((ear, index) => {
-        const base = ear.userData.baseRotation;
-        ear.rotation.set(
-          base.x + earTwitch * (index ? 0.18 : -0.16),
-          base.y,
-          base.z + earTwitch * (index ? -0.24 : 0.22)
-        );
-      });
-    }
+  }
+  if (catBody && catHead && catTail) {
+    const breath = Math.sin(t * 1.55) * 0.026;
+    const sleepyTwitch = Math.max(0, Math.sin(t * 2.65 - 0.7)) ** 5;
+    const earTwitch = sleepyTwitch * 0.62 + (hovered === catGroup ? 0.28 : 0);
+    catBody.scale.set(1.45 + breath * 0.35, 0.52 + breath, 0.72);
+    catHead.position.y = catHead.userData.baseY + Math.sin(t * 1.2 + 0.4) * 0.012;
+    catTail.rotation.z = -0.42 + Math.sin(t * 1.05) * 0.11;
+    catTail.rotation.y = 0.18 + Math.sin(t * 0.75) * 0.04;
+    catEars.forEach((ear, index) => {
+      const base = ear.userData.baseRotation;
+      ear.rotation.set(
+        base.x + earTwitch * (index ? 0.34 : -0.3),
+        base.y + Math.sin(t * 4.2 + index) * 0.025,
+        base.z + earTwitch * (index ? -0.48 : 0.44)
+      );
+    });
   }
   renderer.render(scene, camera);
   requestAnimationFrame(animate);
