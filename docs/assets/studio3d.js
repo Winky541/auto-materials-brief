@@ -401,11 +401,11 @@ createCapsulePerson({
   id: "gou-zhi",
   name: "苟智",
   image: "team-gou-zhi.png",
-  position: [0.9, 0.02, 1.88],
+  position: [0.38, 0.02, 1.72],
   rotationY: 0.14,
-  scale: 0.92,
-  width: 0.68,
-  height: 1.28,
+  scale: 1.18,
+  width: 0.82,
+  height: 1.52,
   baseColor: colors.blue,
 });
 
@@ -413,11 +413,11 @@ createCapsulePerson({
   id: "zhou-qiang",
   name: "周强",
   image: "team-zhou-qiang.png",
-  position: [1.55, 0.02, 1.93],
+  position: [1.2, 0.02, 1.78],
   rotationY: 0.02,
-  scale: 0.92,
-  width: 0.68,
-  height: 1.28,
+  scale: 1.2,
+  width: 0.82,
+  height: 1.52,
   baseColor: colors.green,
 });
 
@@ -425,11 +425,11 @@ createCapsulePerson({
   id: "liang-yunqi",
   name: "梁蕴祺",
   image: "team-liang-yunqi.png",
-  position: [2.22, 0.02, 1.88],
+  position: [2.04, 0.02, 1.72],
   rotationY: -0.1,
-  scale: 0.92,
-  width: 0.68,
-  height: 1.28,
+  scale: 1.18,
+  width: 0.82,
+  height: 1.52,
   baseColor: colors.clay,
 });
 
