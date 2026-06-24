@@ -328,7 +328,7 @@ function createCapsulePerson(options) {
   const group = new THREE.Group();
   group.userData = {
     target: `team:${options.id}`,
-    name: `${options.name} · Team Corner`,
+    name: options.name,
     baseY: 0,
   };
   group.position.set(...options.position);
@@ -348,14 +348,26 @@ function createCapsulePerson(options) {
   shadow.scale.set(1.25, 0.56, 1);
   group.add(shadow);
 
+  const chairMat = material(0xaa8b63, 0.7);
+  const chairSeat = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.22, 0.08, 22), chairMat);
+  chairSeat.scale.set(1.15, 1, 0.82);
+  chairSeat.position.set(0, 0.24, -0.055);
+  chairSeat.castShadow = true;
+  group.add(chairSeat);
+  const chairBack = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.46, 0.065), chairMat);
+  chairBack.position.set(0, 0.48, -0.22);
+  chairBack.rotation.x = -0.06;
+  chairBack.castShadow = true;
+  group.add(chairBack);
+
   const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.17, 0.42, 8, 18), shirtMat);
-  body.position.set(0, 0.46, 0);
+  body.position.set(0, 0.52, 0.035);
   body.scale.set(options.bodyScale?.[0] || 1, options.bodyScale?.[1] || 1, options.bodyScale?.[2] || 1);
   body.castShadow = true;
   group.add(body);
 
   const collarLeft = new THREE.Mesh(new THREE.ConeGeometry(0.055, 0.12, 3), material(0xffffff, 0.6));
-  collarLeft.position.set(-0.055, 0.63, 0.14);
+  collarLeft.position.set(-0.055, 0.69, 0.175);
   collarLeft.rotation.set(0.6, 0.2, -0.68);
   const collarRight = collarLeft.clone();
   collarRight.position.x = 0.055;
@@ -376,30 +388,30 @@ function createCapsulePerson(options) {
 
   const head = new THREE.Mesh(new THREE.SphereGeometry(0.18, 24, 18), skin);
   head.scale.set(options.faceScale?.[0] || 1, options.faceScale?.[1] || 1, options.faceScale?.[2] || 1);
-  head.position.set(0, 0.86, 0);
+  head.position.set(0, 0.94, 0.035);
   head.castShadow = true;
   group.add(head);
 
   const neck = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.06, 0.13, 14), skin);
-  neck.position.set(0, 0.69, 0);
+  neck.position.set(0, 0.76, 0.035);
   group.add(neck);
 
   const hairCap = new THREE.Mesh(new THREE.SphereGeometry(0.186, 22, 12), hairMat);
   hairCap.scale.set(options.hairScale?.[0] || 1.04, options.hairScale?.[1] || 0.56, options.hairScale?.[2] || 1.02);
-  hairCap.position.set(0, 0.985, -0.008);
+  hairCap.position.set(0, 1.065, 0.027);
   group.add(hairCap);
 
   if (options.hairStyle === "fringe") {
     [-0.09, -0.03, 0.035, 0.095].forEach((x, index) => {
       const bang = new THREE.Mesh(new THREE.ConeGeometry(0.04, 0.14 - index * 0.008, 3), hairMat);
-      bang.position.set(x, 0.91, 0.14);
+      bang.position.set(x, 0.99, 0.175);
       bang.rotation.set(0.72, 0, Math.PI + (index - 1.5) * 0.1);
       group.add(bang);
     });
   } else if (options.hairStyle === "short") {
     for (let i = 0; i < 8; i++) {
       const dot = new THREE.Mesh(new THREE.SphereGeometry(0.034, 8, 6), hairMat);
-      dot.position.set(-0.14 + i * 0.04, 1.035 + Math.sin(i) * 0.014, 0.07 + Math.cos(i) * 0.015);
+      dot.position.set(-0.14 + i * 0.04, 1.115 + Math.sin(i) * 0.014, 0.105 + Math.cos(i) * 0.015);
       dot.scale.set(1, 0.65, 0.8);
       group.add(dot);
     }
@@ -407,11 +419,11 @@ function createCapsulePerson(options) {
     [-0.12, -0.055, 0.055, 0.12].forEach((x, index) => {
       const wave = new THREE.Mesh(new THREE.SphereGeometry(0.075, 14, 10), hairMat);
       wave.scale.set(0.9, 0.6, 0.78);
-      wave.position.set(x, 0.985 + (index % 2) * 0.035, 0.1);
+      wave.position.set(x, 1.065 + (index % 2) * 0.035, 0.135);
       group.add(wave);
     });
     const parted = new THREE.Mesh(new THREE.BoxGeometry(0.018, 0.13, 0.025), material(0x5c4a43, 0.75));
-    parted.position.set(0.018, 1.0, 0.17);
+    parted.position.set(0.018, 1.08, 0.205);
     parted.rotation.z = -0.22;
     group.add(parted);
   }
@@ -419,23 +431,23 @@ function createCapsulePerson(options) {
   [-0.062, 0.062].forEach((x) => {
     const eye = new THREE.Mesh(new THREE.SphereGeometry(0.013, 10, 8), darkMat);
     eye.scale.set(1.2, 0.65, 0.55);
-    eye.position.set(x, 0.86, 0.17);
+    eye.position.set(x, 0.94, 0.205);
     group.add(eye);
   });
 
   const nose = new THREE.Mesh(new THREE.SphereGeometry(0.014, 8, 6), skin);
   nose.scale.set(0.65, 1.1, 0.8);
-  nose.position.set(0, 0.825, 0.184);
+  nose.position.set(0, 0.905, 0.219);
   group.add(nose);
 
   const mouth = new THREE.Mesh(new THREE.BoxGeometry(options.smile ? 0.07 : 0.05, 0.006, 0.01), material(0x9d6d68, 0.72));
-  mouth.position.set(0, 0.78, 0.181);
+  mouth.position.set(0, 0.86, 0.216);
   mouth.rotation.z = options.smile ? 0.02 : 0;
   group.add(mouth);
 
   [-0.2, 0.2].forEach((x, index) => {
     const arm = new THREE.Mesh(new THREE.CapsuleGeometry(0.035, 0.3, 6, 10), shirtMat);
-    arm.position.set(x, 0.48, 0.03);
+    arm.position.set(x, 0.54, 0.07);
     arm.rotation.z = index ? -0.38 : 0.38;
     arm.castShadow = true;
     group.add(arm);
@@ -445,34 +457,34 @@ function createCapsulePerson(options) {
   namePlate.position.set(0, 0.08, 0.24);
   group.add(namePlate);
 
-  addInteractive(group, `team:${options.id}`, `${options.name} · Team Corner`);
+  addInteractive(group, `team:${options.id}`, options.name);
   teamGroups.push(group);
   return group;
 }
 
 const teamCorner = new THREE.Group();
-teamCorner.position.set(4.05, 0.02, -1.55);
-teamCorner.rotation.y = -0.48;
+teamCorner.position.set(1.55, 0.02, 1.94);
+teamCorner.rotation.y = 0.02;
 scene.add(teamCorner);
 const teamRug = new THREE.Mesh(new THREE.CircleGeometry(0.86, 36), flatMaterial(0xc8a45a, 0.16));
-teamRug.scale.set(1.5, 0.52, 1);
+teamRug.scale.set(1.7, 0.58, 1);
 teamRug.rotation.x = -Math.PI / 2;
 teamRug.position.set(0, 0.012, 0.04);
 teamCorner.add(teamRug);
 const teamMarker = new THREE.Mesh(new THREE.BoxGeometry(1.52, 0.05, 0.07), material(0xd9c6a4, 0.7));
-teamMarker.position.set(0.05, 0.05, 0.45);
+teamMarker.position.set(0.05, 0.05, 0.34);
 teamCorner.add(teamMarker);
 const teamWallLabel = new THREE.Mesh(new THREE.BoxGeometry(1.05, 0.22, 0.035), material(0xf6f0e7, 0.76));
-teamWallLabel.position.set(0.08, 1.42, -0.37);
+teamWallLabel.position.set(0.08, 0.42, -0.37);
 teamWallLabel.rotation.x = -0.02;
 teamCorner.add(teamWallLabel);
 
 createCapsulePerson({
   id: "zhou-qiang",
   name: "周强",
-  position: [3.45, 0.02, -1.22],
-  rotationY: -0.34,
-  scale: 0.72,
+  position: [0.82, 0.02, 1.92],
+  rotationY: 0.16,
+  scale: 1.1,
   hairStyle: "fringe",
   faceScale: [0.9, 1.12, 0.96],
   bodyScale: [0.9, 1.02, 0.9],
@@ -483,9 +495,9 @@ createCapsulePerson({
 createCapsulePerson({
   id: "gou-zhi",
   name: "苟智",
-  position: [4.02, 0.02, -1.28],
-  rotationY: -0.4,
-  scale: 0.76,
+  position: [1.55, 0.02, 1.96],
+  rotationY: 0.04,
+  scale: 1.13,
   hairStyle: "short",
   faceScale: [1.13, 1.02, 1.0],
   bodyScale: [1.1, 1.04, 1],
@@ -498,9 +510,9 @@ createCapsulePerson({
 createCapsulePerson({
   id: "liang-yunqi",
   name: "梁蕴祺",
-  position: [4.58, 0.02, -1.22],
-  rotationY: -0.46,
-  scale: 0.74,
+  position: [2.3, 0.02, 1.92],
+  rotationY: -0.06,
+  scale: 1.1,
   hairStyle: "parted",
   faceScale: [0.92, 1.08, 0.96],
   bodyScale: [0.95, 1.04, 0.94],
