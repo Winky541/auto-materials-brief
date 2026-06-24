@@ -336,202 +336,67 @@ function createCapsulePerson(options) {
   group.scale.setScalar(options.scale || 1);
   scene.add(group);
 
-  const portraitCanvas = document.createElement("canvas");
-  portraitCanvas.width = 384;
-  portraitCanvas.height = 520;
-  const ctx = portraitCanvas.getContext("2d");
-  const portrait = options.portrait || {};
-  const skinColor = portrait.skin || "#e7c1ad";
-  const hairColor = portrait.hair || "#191715";
-  const shirtColor = portrait.shirt || "#f7f7f2";
-  const accentColor = portrait.accent || "#6b8e6e";
-  const suitColor = portrait.suit || null;
-
-  ctx.clearRect(0, 0, portraitCanvas.width, portraitCanvas.height);
-  ctx.save();
-  ctx.translate(192, 260);
-  ctx.shadowColor = "rgba(31, 41, 51, 0.08)";
-  ctx.shadowBlur = 18;
-  ctx.shadowOffsetY = 10;
-  ctx.fillStyle = "rgba(255, 252, 244, 0.88)";
-  ctx.beginPath();
-  ctx.roundRect(-118, -178, 236, 338, 60);
-  ctx.fill();
-  ctx.restore();
-
-  function ellipse(fill, x, y, rx, ry) {
-    ctx.fillStyle = fill;
-    ctx.beginPath();
-    ctx.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2);
-    ctx.fill();
-  }
-
-  function roundedRect(fill, x, y, w, h, r) {
-    ctx.fillStyle = fill;
-    ctx.beginPath();
-    ctx.roundRect(x, y, w, h, r);
-    ctx.fill();
-  }
-
-  function colorNumber(value, fallback) {
-    if (typeof value === "number") return value;
-    const parsed = Number.parseInt(String(value || "").replace("#", ""), 16);
-    return Number.isFinite(parsed) ? parsed : fallback;
-  }
-
-  roundedRect(suitColor || shirtColor, 104, 318, 176, 148, 52);
-  if (suitColor) {
-    ctx.fillStyle = "#f7f6f1";
-    ctx.beginPath();
-    ctx.moveTo(142, 322);
-    ctx.lineTo(192, 410);
-    ctx.lineTo(242, 322);
-    ctx.closePath();
-    ctx.fill();
-    ctx.fillStyle = portrait.tie || "#303766";
-    ctx.beginPath();
-    ctx.moveTo(184, 350);
-    ctx.lineTo(200, 350);
-    ctx.lineTo(208, 430);
-    ctx.lineTo(176, 430);
-    ctx.closePath();
-    ctx.fill();
-  } else {
-    ctx.fillStyle = "#ffffff";
-    ctx.beginPath();
-    ctx.moveTo(140, 324);
-    ctx.lineTo(190, 382);
-    ctx.lineTo(244, 324);
-    ctx.lineTo(238, 360);
-    ctx.lineTo(190, 402);
-    ctx.lineTo(146, 360);
-    ctx.closePath();
-    ctx.fill();
-    ellipse(accentColor, 192, 412, 9, 5);
-  }
-
-  ellipse(skinColor, 192, 246, portrait.faceRx || 76, portrait.faceRy || 92);
-  ellipse("rgba(196, 135, 114, 0.18)", 154, 268, 18, 8);
-  ellipse("rgba(196, 135, 114, 0.18)", 230, 268, 18, 8);
-
-  ctx.fillStyle = hairColor;
-  if (portrait.style === "short") {
-    ellipse(hairColor, 192, 166, 88, 46);
-    roundedRect(hairColor, 115, 174, 154, 48, 22);
-    for (let i = 0; i < 9; i++) ellipse(hairColor, 118 + i * 18, 194 + Math.sin(i) * 4, 16, 18);
-  } else if (portrait.style === "parted") {
-    ellipse(hairColor, 164, 168, 58, 44);
-    ellipse(hairColor, 218, 164, 62, 48);
-    roundedRect(hairColor, 112, 176, 160, 54, 28);
-    ctx.fillStyle = "#6d554c";
-    roundedRect(ctx.fillStyle, 190, 154, 10, 80, 5);
-    ellipse(hairColor, 214, 212, 28, 46);
-  } else {
-    ellipse(hairColor, 192, 168, 82, 46);
-    roundedRect(hairColor, 118, 178, 148, 50, 22);
-    for (let i = 0; i < 7; i++) {
-      ctx.fillStyle = hairColor;
-      ctx.beginPath();
-      const x = 132 + i * 19;
-      ctx.moveTo(x, 205);
-      ctx.lineTo(x + 18, 205);
-      ctx.lineTo(x + 8, 238 + (i % 2) * 8);
-      ctx.closePath();
-      ctx.fill();
-    }
-  }
-
-  ctx.strokeStyle = "rgba(31, 41, 51, 0.48)";
-  ctx.lineWidth = 6;
-  ctx.lineCap = "round";
-  const browOffset = portrait.style === "short" ? 3 : 0;
-  ctx.beginPath();
-  ctx.moveTo(147, 238 - browOffset);
-  ctx.lineTo(174, 234 - browOffset);
-  ctx.moveTo(210, 234 - browOffset);
-  ctx.lineTo(238, 238 - browOffset);
-  ctx.stroke();
-
-  ellipse("#1f2933", 160, 255, 7, portrait.style === "short" ? 5 : 6);
-  ellipse("#1f2933", 224, 255, 7, portrait.style === "short" ? 5 : 6);
-  ctx.strokeStyle = "rgba(126, 82, 68, 0.42)";
-  ctx.lineWidth = 4;
-  ctx.beginPath();
-  ctx.moveTo(193, 260);
-  ctx.quadraticCurveTo(185, 282, 196, 291);
-  ctx.stroke();
-  ctx.strokeStyle = portrait.smile ? "#9a6761" : "#8e625d";
-  ctx.lineWidth = 5;
-  ctx.beginPath();
-  if (portrait.smile) {
-    ctx.moveTo(168, 308);
-    ctx.quadraticCurveTo(192, 320, 216, 308);
-  } else {
-    ctx.moveTo(174, 310);
-    ctx.quadraticCurveTo(192, 314, 210, 310);
-  }
-  ctx.stroke();
-  ctx.clearRect(0, 326, 384, 194);
-
+  const accent = options.accent || colors.green;
+  const cardMat = new THREE.MeshStandardMaterial({
+    color: 0xf8f2e6,
+    roughness: 0.72,
+    metalness: 0.01,
+    transparent: true,
+    opacity: 0.96,
+  });
+  const silhouetteMat = material(options.silhouette || 0x6f7f6f, 0.74);
+  const bodyMat = material(options.bodyColor || 0xf7f7f2, 0.68);
+  const accentMat = material(accent, 0.62);
   const portraitChairMat = material(0xb99b70, 0.72);
+
   const portraitChairBack = new THREE.Mesh(new THREE.BoxGeometry(0.68, 0.54, 0.08), portraitChairMat);
   portraitChairBack.position.set(0, 0.55, -0.07);
   portraitChairBack.castShadow = true;
   group.add(portraitChairBack);
+
   const portraitSeat = new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.34, 0.08, 28), portraitChairMat);
   portraitSeat.position.set(0, 0.25, 0.03);
   portraitSeat.scale.set(1.08, 1, 0.62);
   portraitSeat.castShadow = true;
   group.add(portraitSeat);
 
-  const bodyColor = colorNumber(suitColor || shirtColor, 0xf7f7f2);
-  const bodyMat = material(bodyColor, 0.68);
-  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.19, 0.5, 10, 18), bodyMat);
-  body.position.set(0, 0.48, 0.045);
-  body.scale.set(portrait.style === "short" ? 1.08 : 0.96, 1.04, 0.7);
+  const card = new THREE.Mesh(new THREE.BoxGeometry(0.72, 0.88, 0.055), cardMat);
+  card.position.set(0, 0.78, 0.15);
+  card.castShadow = true;
+  card.receiveShadow = true;
+  group.add(card);
+
+  const band = new THREE.Mesh(new THREE.BoxGeometry(0.58, 0.045, 0.06), accentMat);
+  band.position.set(0, 0.42, 0.19);
+  band.castShadow = true;
+  group.add(band);
+
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.12, 22, 14), silhouetteMat);
+  head.scale.set(1, 1.08, 0.36);
+  head.position.set(0, 0.91, 0.21);
+  head.castShadow = true;
+  group.add(head);
+
+  const shoulders = new THREE.Mesh(new THREE.SphereGeometry(0.22, 24, 12), bodyMat);
+  shoulders.scale.set(1.36, 0.46, 0.28);
+  shoulders.position.set(0, 0.68, 0.21);
+  shoulders.castShadow = true;
+  group.add(shoulders);
+
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.16, 0.34, 8, 14), bodyMat);
+  body.position.set(0, 0.47, 0.12);
+  body.scale.set(0.92, 0.8, 0.52);
   body.castShadow = true;
   group.add(body);
 
-  const collarMat = material(0xffffff, 0.62);
-  const collarLeft = new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.14, 3), collarMat);
-  collarLeft.position.set(-0.075, 0.64, 0.18);
-  collarLeft.rotation.set(0.6, 0.2, -0.7);
-  const collarRight = collarLeft.clone();
-  collarRight.position.x = 0.075;
-  collarRight.rotation.z = 0.7;
-  group.add(collarLeft, collarRight);
-
-  if (suitColor) {
-    const tie = new THREE.Mesh(new THREE.ConeGeometry(0.045, 0.24, 4), material(colorNumber(portrait.tie, 0x303766), 0.7));
-    tie.position.set(0, 0.49, 0.19);
-    tie.rotation.x = Math.PI;
-    group.add(tie);
-  } else {
-    const badge = new THREE.Mesh(new THREE.SphereGeometry(0.025, 10, 8), material(colorNumber(accentColor, colors.green), 0.62));
-    badge.scale.set(1, 0.42, 1);
-    badge.position.set(0.08, 0.49, 0.2);
-    group.add(badge);
-  }
-
   [-0.23, 0.23].forEach((x, index) => {
     const arm = new THREE.Mesh(new THREE.CapsuleGeometry(0.038, 0.32, 6, 12), bodyMat);
-    arm.position.set(x, 0.48, 0.065);
+    arm.position.set(x, 0.48, 0.105);
     arm.rotation.z = index ? -0.36 : 0.36;
     arm.castShadow = true;
     group.add(arm);
   });
 
-  const texture = new THREE.CanvasTexture(portraitCanvas);
-  texture.colorSpace = THREE.SRGBColorSpace;
-  const portraitMat = new THREE.MeshBasicMaterial({
-    map: texture,
-    transparent: true,
-    side: THREE.DoubleSide,
-  });
-  const portraitPlane = new THREE.Mesh(new THREE.PlaneGeometry(0.86, 1.16), portraitMat);
-  portraitPlane.position.set(0, 0.83, 0.23);
-  portraitPlane.castShadow = true;
-  group.add(portraitPlane);
   const portraitShadow = new THREE.Mesh(new THREE.CircleGeometry(0.38, 30), flatMaterial(0x3a2f24, 0.1));
   portraitShadow.rotation.x = -Math.PI / 2;
   portraitShadow.position.set(0, 0.01, 0.03);
@@ -567,15 +432,9 @@ createCapsulePerson({
   position: [0.82, 0.02, 1.92],
   rotationY: 0.16,
   scale: 1.02,
-  portrait: {
-    style: "fringe",
-    skin: "#e3baa5",
-    hair: "#181615",
-    shirt: "#f7f7f2",
-    accent: "#6b8e6e",
-    faceRx: 70,
-    faceRy: 94,
-  },
+  accent: colors.green,
+  silhouette: 0x6b8e6e,
+  bodyColor: 0xf7f7f2,
 });
 
 createCapsulePerson({
@@ -584,18 +443,9 @@ createCapsulePerson({
   position: [1.55, 0.02, 1.96],
   rotationY: 0.04,
   scale: 1.06,
-  portrait: {
-    style: "short",
-    skin: "#e9c2b2",
-    hair: "#151414",
-    shirt: "#f7f6f1",
-    suit: "#1f2933",
-    tie: "#303766",
-    accent: "#4a6fa5",
-    faceRx: 84,
-    faceRy: 88,
-    smile: true,
-  },
+  accent: colors.blue,
+  silhouette: 0x4a6fa5,
+  bodyColor: 0x25313b,
 });
 
 createCapsulePerson({
@@ -604,15 +454,9 @@ createCapsulePerson({
   position: [2.3, 0.02, 1.92],
   rotationY: -0.06,
   scale: 1.03,
-  portrait: {
-    style: "parted",
-    skin: "#e5b9a5",
-    hair: "#191514",
-    shirt: "#f9f9f5",
-    accent: "#c97b63",
-    faceRx: 72,
-    faceRy: 92,
-  },
+  accent: colors.clay,
+  silhouette: 0xc97b63,
+  bodyColor: 0xf9f9f5,
 });
 
 const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup, catGroup, ...teamGroups];
