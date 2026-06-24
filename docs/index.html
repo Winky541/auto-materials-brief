@@ -555,11 +555,73 @@
         );
         if (!panel || !panelContent) return;
 
+        const teamProfiles = {
+          "zhou-qiang": {
+            name: "周强",
+            role: "Mentor / Research Guide",
+            years: "待补充",
+            expertise: "待补充：可记录其材料验证方法、技术路线判断和项目复盘经验。",
+            projects: "待补充：代表项目、关键验证任务、技术攻关记录。",
+            contributions: "待补充：对团队方法、材料机会识别和工程判断的长期贡献。",
+            message: "把经验留在工作室，让后来的人少走弯路。",
+            legacy: "代表项目：待补充。技术传承：材料机会识别、验证路径设计、工程化风险判断。"
+          },
+          "gou-zhi": {
+            name: "苟智",
+            role: "Research Member",
+            years: "待补充",
+            expertise: "待补充：可记录其材料方向、实验验证、供应链调研或数据分析能力。",
+            projects: "待补充：参与项目、阶段成果、协作记录。",
+            contributions: "待补充：对团队研究资料、项目推进和知识沉淀的贡献。",
+            message: "把每一次观察都整理成下一次判断的依据。"
+          },
+          "liang-yunqi": {
+            name: "梁蕴祺",
+            role: "Research Member",
+            years: "待补充",
+            expertise: "待补充：可记录其前瞻跟踪、材料机会分析、设计表达或技术整理方向。",
+            projects: "待补充：参与项目、专项研究、方法工具建设。",
+            contributions: "待补充：对团队记忆、趋势观察和研究表达的贡献。",
+            message: "让技术线索变成可以被继续推进的机会。"
+          }
+        };
+
+        const escapeHtml = (value) => String(value || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+
         const openPanel = (target) => {
           const source = sources.get(target);
           if (!source) return;
           panelContent.innerHTML = source.innerHTML;
           panel.dataset.source = target;
+          panel.classList.add("is-open");
+          panel.setAttribute("aria-hidden", "false");
+        };
+
+        const openProfile = (id) => {
+          const profile = teamProfiles[id];
+          if (!profile) return;
+          panelContent.innerHTML = `
+            <section class="team-profile-card">
+              <p class="eyebrow">Team Corner</p>
+              <h2>${escapeHtml(profile.name)}</h2>
+              <dl>
+                <div><dt>Name</dt><dd>${escapeHtml(profile.name)}</dd></div>
+                <div><dt>Role</dt><dd>${escapeHtml(profile.role)}</dd></div>
+                <div><dt>Years in Team</dt><dd>${escapeHtml(profile.years)}</dd></div>
+                <div><dt>Expertise</dt><dd>${escapeHtml(profile.expertise)}</dd></div>
+                <div><dt>Major Projects</dt><dd>${escapeHtml(profile.projects)}</dd></div>
+                <div><dt>Contributions</dt><dd>${escapeHtml(profile.contributions)}</dd></div>
+                <div><dt>Personal Message</dt><dd>${escapeHtml(profile.message)}</dd></div>
+                ${profile.legacy ? `<div class="legacy"><dt>Research Legacy</dt><dd>${escapeHtml(profile.legacy)}</dd></div>` : ""}
+              </dl>
+            </section>
+          `;
+          panel.dataset.source = `team-${id}`;
           panel.classList.add("is-open");
           panel.setAttribute("aria-hidden", "false");
         };
@@ -570,6 +632,7 @@
         };
 
         window.AURAStudioOpenPanel = openPanel;
+        window.AURAStudioOpenProfile = openProfile;
         document.querySelectorAll("[data-studio-target]").forEach((button) => {
           button.addEventListener("click", () => openPanel(button.dataset.studioTarget));
         });
@@ -579,7 +642,7 @@
         });
       })();
     </script>
-    <script type="module" src="assets/studio3d.js?v=20260623-cat-sleeping"></script>
+    <script type="module" src="assets/studio3d.js?v=20260624-team-corner"></script>
 <div class="metric-modal" id="metricModal" aria-hidden="true">
   <div class="metric-modal-backdrop" data-close-modal></div>
   <section class="metric-modal-panel" role="dialog" aria-modal="true" aria-labelledby="metricModalTitle">

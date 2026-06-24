@@ -31,6 +31,7 @@ let catBody;
 let catHead;
 let catTail;
 const catEars = [];
+const teamGroups = [];
 const pointer = new THREE.Vector2();
 const raycaster = new THREE.Raycaster();
 let hovered = null;
@@ -323,7 +324,191 @@ catShadow.rotation.x = -Math.PI / 2;
 catGroup.add(catShadow);
 addInteractive(catGroup, "insights", "Cat · Weekly Insights");
 
-const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup, catGroup];
+function createCapsulePerson(options) {
+  const group = new THREE.Group();
+  group.userData = {
+    target: `team:${options.id}`,
+    name: `${options.name} · Team Corner`,
+    baseY: 0,
+  };
+  group.position.set(...options.position);
+  group.rotation.y = options.rotationY || 0;
+  group.scale.setScalar(options.scale || 1);
+  scene.add(group);
+
+  const skin = material(options.skin || 0xe4bfa9, 0.72);
+  const hairMat = material(options.hair || 0x1d1b1c, 0.78);
+  const shirtMat = material(options.shirt || 0xf7f7f2, 0.66);
+  const accentMat = material(options.accent || colors.green, 0.62);
+  const darkMat = material(0x272322, 0.72);
+
+  const shadow = new THREE.Mesh(new THREE.CircleGeometry(0.32, 28), flatMaterial(0x3a2f24, 0.1));
+  shadow.rotation.x = -Math.PI / 2;
+  shadow.position.set(0, 0.01, 0);
+  shadow.scale.set(1.25, 0.56, 1);
+  group.add(shadow);
+
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.17, 0.42, 8, 18), shirtMat);
+  body.position.set(0, 0.46, 0);
+  body.scale.set(options.bodyScale?.[0] || 1, options.bodyScale?.[1] || 1, options.bodyScale?.[2] || 1);
+  body.castShadow = true;
+  group.add(body);
+
+  const collarLeft = new THREE.Mesh(new THREE.ConeGeometry(0.055, 0.12, 3), material(0xffffff, 0.6));
+  collarLeft.position.set(-0.055, 0.63, 0.14);
+  collarLeft.rotation.set(0.6, 0.2, -0.68);
+  const collarRight = collarLeft.clone();
+  collarRight.position.x = 0.055;
+  collarRight.rotation.z = 0.68;
+  group.add(collarLeft, collarRight);
+
+  if (options.tie) {
+    const tie = new THREE.Mesh(new THREE.ConeGeometry(0.045, 0.26, 4), material(options.tie, 0.7));
+    tie.position.set(0, 0.47, 0.17);
+    tie.rotation.x = Math.PI;
+    group.add(tie);
+  } else {
+    const badge = new THREE.Mesh(new THREE.SphereGeometry(0.025, 10, 8), accentMat);
+    badge.scale.set(1, 0.42, 1);
+    badge.position.set(0.08, 0.5, 0.17);
+    group.add(badge);
+  }
+
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.18, 24, 18), skin);
+  head.scale.set(options.faceScale?.[0] || 1, options.faceScale?.[1] || 1, options.faceScale?.[2] || 1);
+  head.position.set(0, 0.86, 0);
+  head.castShadow = true;
+  group.add(head);
+
+  const neck = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.06, 0.13, 14), skin);
+  neck.position.set(0, 0.69, 0);
+  group.add(neck);
+
+  const hairCap = new THREE.Mesh(new THREE.SphereGeometry(0.186, 22, 12), hairMat);
+  hairCap.scale.set(options.hairScale?.[0] || 1.04, options.hairScale?.[1] || 0.56, options.hairScale?.[2] || 1.02);
+  hairCap.position.set(0, 0.985, -0.008);
+  group.add(hairCap);
+
+  if (options.hairStyle === "fringe") {
+    [-0.09, -0.03, 0.035, 0.095].forEach((x, index) => {
+      const bang = new THREE.Mesh(new THREE.ConeGeometry(0.04, 0.14 - index * 0.008, 3), hairMat);
+      bang.position.set(x, 0.91, 0.14);
+      bang.rotation.set(0.72, 0, Math.PI + (index - 1.5) * 0.1);
+      group.add(bang);
+    });
+  } else if (options.hairStyle === "short") {
+    for (let i = 0; i < 8; i++) {
+      const dot = new THREE.Mesh(new THREE.SphereGeometry(0.034, 8, 6), hairMat);
+      dot.position.set(-0.14 + i * 0.04, 1.035 + Math.sin(i) * 0.014, 0.07 + Math.cos(i) * 0.015);
+      dot.scale.set(1, 0.65, 0.8);
+      group.add(dot);
+    }
+  } else {
+    [-0.12, -0.055, 0.055, 0.12].forEach((x, index) => {
+      const wave = new THREE.Mesh(new THREE.SphereGeometry(0.075, 14, 10), hairMat);
+      wave.scale.set(0.9, 0.6, 0.78);
+      wave.position.set(x, 0.985 + (index % 2) * 0.035, 0.1);
+      group.add(wave);
+    });
+    const parted = new THREE.Mesh(new THREE.BoxGeometry(0.018, 0.13, 0.025), material(0x5c4a43, 0.75));
+    parted.position.set(0.018, 1.0, 0.17);
+    parted.rotation.z = -0.22;
+    group.add(parted);
+  }
+
+  [-0.062, 0.062].forEach((x) => {
+    const eye = new THREE.Mesh(new THREE.SphereGeometry(0.013, 10, 8), darkMat);
+    eye.scale.set(1.2, 0.65, 0.55);
+    eye.position.set(x, 0.86, 0.17);
+    group.add(eye);
+  });
+
+  const nose = new THREE.Mesh(new THREE.SphereGeometry(0.014, 8, 6), skin);
+  nose.scale.set(0.65, 1.1, 0.8);
+  nose.position.set(0, 0.825, 0.184);
+  group.add(nose);
+
+  const mouth = new THREE.Mesh(new THREE.BoxGeometry(options.smile ? 0.07 : 0.05, 0.006, 0.01), material(0x9d6d68, 0.72));
+  mouth.position.set(0, 0.78, 0.181);
+  mouth.rotation.z = options.smile ? 0.02 : 0;
+  group.add(mouth);
+
+  [-0.2, 0.2].forEach((x, index) => {
+    const arm = new THREE.Mesh(new THREE.CapsuleGeometry(0.035, 0.3, 6, 10), shirtMat);
+    arm.position.set(x, 0.48, 0.03);
+    arm.rotation.z = index ? -0.38 : 0.38;
+    arm.castShadow = true;
+    group.add(arm);
+  });
+
+  const namePlate = new THREE.Mesh(new THREE.BoxGeometry(0.48, 0.055, 0.08), material(0xf7f1e6, 0.66));
+  namePlate.position.set(0, 0.08, 0.24);
+  group.add(namePlate);
+
+  addInteractive(group, `team:${options.id}`, `${options.name} · Team Corner`);
+  teamGroups.push(group);
+  return group;
+}
+
+const teamCorner = new THREE.Group();
+teamCorner.position.set(4.05, 0.02, -1.55);
+teamCorner.rotation.y = -0.48;
+scene.add(teamCorner);
+const teamRug = new THREE.Mesh(new THREE.CircleGeometry(0.86, 36), flatMaterial(0xc8a45a, 0.16));
+teamRug.scale.set(1.5, 0.52, 1);
+teamRug.rotation.x = -Math.PI / 2;
+teamRug.position.set(0, 0.012, 0.04);
+teamCorner.add(teamRug);
+const teamMarker = new THREE.Mesh(new THREE.BoxGeometry(1.52, 0.05, 0.07), material(0xd9c6a4, 0.7));
+teamMarker.position.set(0.05, 0.05, 0.45);
+teamCorner.add(teamMarker);
+const teamWallLabel = new THREE.Mesh(new THREE.BoxGeometry(1.05, 0.22, 0.035), material(0xf6f0e7, 0.76));
+teamWallLabel.position.set(0.08, 1.42, -0.37);
+teamWallLabel.rotation.x = -0.02;
+teamCorner.add(teamWallLabel);
+
+createCapsulePerson({
+  id: "zhou-qiang",
+  name: "周强",
+  position: [3.45, 0.02, -1.22],
+  rotationY: -0.34,
+  scale: 0.72,
+  hairStyle: "fringe",
+  faceScale: [0.9, 1.12, 0.96],
+  bodyScale: [0.9, 1.02, 0.9],
+  shirt: 0xf7f7f3,
+  accent: colors.green,
+});
+
+createCapsulePerson({
+  id: "gou-zhi",
+  name: "苟智",
+  position: [4.02, 0.02, -1.28],
+  rotationY: -0.4,
+  scale: 0.76,
+  hairStyle: "short",
+  faceScale: [1.13, 1.02, 1.0],
+  bodyScale: [1.1, 1.04, 1],
+  shirt: 0x1f2933,
+  tie: 0x303766,
+  accent: colors.blue,
+  smile: true,
+});
+
+createCapsulePerson({
+  id: "liang-yunqi",
+  name: "梁蕴祺",
+  position: [4.58, 0.02, -1.22],
+  rotationY: -0.46,
+  scale: 0.74,
+  hairStyle: "parted",
+  faceScale: [0.92, 1.08, 0.96],
+  bodyScale: [0.95, 1.04, 0.94],
+  shirt: 0xf9f9f5,
+  accent: colors.clay,
+});
+
+const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup, catGroup, ...teamGroups];
 objectGroups.forEach((group) => {
   group.userData.baseY = group.position.y;
 });
@@ -341,9 +526,21 @@ function pick(event, click = false) {
   pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
   raycaster.setFromCamera(pointer, camera);
   const hit = raycaster.intersectObjects(interactive, false)[0]?.object;
-  const group = hit ? objectGroups.find((item) => item.children.includes(hit)) : null;
+  const group = hit ? objectGroups.find((item) => {
+    let cursor = hit;
+    while (cursor) {
+      if (cursor === item) return true;
+      cursor = cursor.parent;
+    }
+    return false;
+  }) : null;
   if (click && group?.userData.target) {
-    window.AURAStudioOpenPanel?.(group.userData.target);
+    const target = group.userData.target;
+    if (String(target).startsWith("team:")) {
+      window.AURAStudioOpenProfile?.(String(target).slice(5));
+    } else {
+      window.AURAStudioOpenPanel?.(target);
+    }
   }
   if (hovered !== group) {
     hovered = group || null;
