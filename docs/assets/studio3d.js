@@ -49,6 +49,9 @@ const colors = {
   blue: 0x4a6fa5,
   graphite: 0x1f2933,
 };
+const rootPrefix = container.dataset.rootPrefix || ".";
+const assetPrefix = `${rootPrefix.replace(/\/$/, "")}/assets`;
+const textureLoader = new THREE.TextureLoader();
 
 function material(color, roughness = 0.62, metalness = 0.02) {
   return new THREE.MeshStandardMaterial({ color, roughness, metalness });
@@ -336,77 +339,45 @@ function createCapsulePerson(options) {
   group.scale.setScalar(options.scale || 1);
   scene.add(group);
 
-  const accent = options.accent || colors.green;
-  const cardMat = new THREE.MeshStandardMaterial({
-    color: 0xf8f2e6,
-    roughness: 0.72,
-    metalness: 0.01,
+  const height = options.height || 1.34;
+  const width = options.width || 0.74;
+  const baseColor = options.baseColor || colors.sand;
+  const texture = textureLoader.load(`${assetPrefix}/${options.image}`);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  const figurineMat = new THREE.MeshBasicMaterial({
+    map: texture,
     transparent: true,
-    opacity: 0.96,
+    alphaTest: 0.04,
+    side: THREE.DoubleSide,
   });
-  const silhouetteMat = material(options.silhouette || 0x6f7f6f, 0.74);
-  const bodyMat = material(options.bodyColor || 0xf7f7f2, 0.68);
-  const accentMat = material(accent, 0.62);
-  const portraitChairMat = material(0xb99b70, 0.72);
+  const figurine = new THREE.Mesh(new THREE.PlaneGeometry(width, height), figurineMat);
+  figurine.position.set(0, height / 2 + 0.03, 0.14);
+  figurine.castShadow = true;
+  group.add(figurine);
 
-  const portraitChairBack = new THREE.Mesh(new THREE.BoxGeometry(0.68, 0.54, 0.08), portraitChairMat);
-  portraitChairBack.position.set(0, 0.55, -0.07);
-  portraitChairBack.castShadow = true;
-  group.add(portraitChairBack);
+  const hitbox = new THREE.Mesh(
+    new THREE.BoxGeometry(width * 0.9, height * 0.92, 0.08),
+    new THREE.MeshBasicMaterial({ transparent: true, opacity: 0 })
+  );
+  hitbox.position.copy(figurine.position);
+  group.add(hitbox);
 
-  const portraitSeat = new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.34, 0.08, 28), portraitChairMat);
-  portraitSeat.position.set(0, 0.25, 0.03);
-  portraitSeat.scale.set(1.08, 1, 0.62);
-  portraitSeat.castShadow = true;
-  group.add(portraitSeat);
+  const base = new THREE.Mesh(new THREE.CylinderGeometry(0.27, 0.31, 0.055, 36), material(baseColor, 0.7));
+  base.scale.set(1.16, 1, 0.52);
+  base.position.set(0, 0.02, 0.08);
+  base.castShadow = true;
+  base.receiveShadow = true;
+  group.add(base);
 
-  const card = new THREE.Mesh(new THREE.BoxGeometry(0.72, 0.88, 0.055), cardMat);
-  card.position.set(0, 0.78, 0.15);
-  card.castShadow = true;
-  card.receiveShadow = true;
-  group.add(card);
-
-  const band = new THREE.Mesh(new THREE.BoxGeometry(0.58, 0.045, 0.06), accentMat);
-  band.position.set(0, 0.42, 0.19);
-  band.castShadow = true;
-  group.add(band);
-
-  const head = new THREE.Mesh(new THREE.SphereGeometry(0.12, 22, 14), silhouetteMat);
-  head.scale.set(1, 1.08, 0.36);
-  head.position.set(0, 0.91, 0.21);
-  head.castShadow = true;
-  group.add(head);
-
-  const shoulders = new THREE.Mesh(new THREE.SphereGeometry(0.22, 24, 12), bodyMat);
-  shoulders.scale.set(1.36, 0.46, 0.28);
-  shoulders.position.set(0, 0.68, 0.21);
-  shoulders.castShadow = true;
-  group.add(shoulders);
-
-  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.16, 0.34, 8, 14), bodyMat);
-  body.position.set(0, 0.47, 0.12);
-  body.scale.set(0.92, 0.8, 0.52);
-  body.castShadow = true;
-  group.add(body);
-
-  [-0.23, 0.23].forEach((x, index) => {
-    const arm = new THREE.Mesh(new THREE.CapsuleGeometry(0.038, 0.32, 6, 12), bodyMat);
-    arm.position.set(x, 0.48, 0.105);
-    arm.rotation.z = index ? -0.36 : 0.36;
-    arm.castShadow = true;
-    group.add(arm);
-  });
-
-  const portraitShadow = new THREE.Mesh(new THREE.CircleGeometry(0.38, 30), flatMaterial(0x3a2f24, 0.1));
-  portraitShadow.rotation.x = -Math.PI / 2;
-  portraitShadow.position.set(0, 0.01, 0.03);
-  portraitShadow.scale.set(1.3, 0.58, 1);
-  group.add(portraitShadow);
+  const figurineShadow = new THREE.Mesh(new THREE.CircleGeometry(0.38, 30), flatMaterial(0x3a2f24, 0.11));
+  figurineShadow.rotation.x = -Math.PI / 2;
+  figurineShadow.position.set(0, 0.008, 0.07);
+  figurineShadow.scale.set(1.25, 0.5, 1);
+  group.add(figurineShadow);
 
   addInteractive(group, `team:${options.id}`, options.name);
   teamGroups.push(group);
   return group;
-
 }
 
 const teamCorner = new THREE.Group();
@@ -427,36 +398,39 @@ teamWallLabel.rotation.x = -0.02;
 teamCorner.add(teamWallLabel);
 
 createCapsulePerson({
-  id: "zhou-qiang",
-  name: "周强",
-  position: [0.82, 0.02, 1.92],
-  rotationY: 0.16,
-  scale: 1.02,
-  accent: colors.green,
-  silhouette: 0x6b8e6e,
-  bodyColor: 0xf7f7f2,
+  id: "gou-zhi",
+  name: "苟智",
+  image: "team-gou-zhi.png",
+  position: [0.9, 0.02, 1.88],
+  rotationY: 0.14,
+  scale: 0.92,
+  width: 0.68,
+  height: 1.28,
+  baseColor: colors.blue,
 });
 
 createCapsulePerson({
-  id: "gou-zhi",
-  name: "苟智",
-  position: [1.55, 0.02, 1.96],
-  rotationY: 0.04,
-  scale: 1.06,
-  accent: colors.blue,
-  silhouette: 0x4a6fa5,
-  bodyColor: 0x25313b,
+  id: "zhou-qiang",
+  name: "周强",
+  image: "team-zhou-qiang.png",
+  position: [1.55, 0.02, 1.93],
+  rotationY: 0.02,
+  scale: 0.92,
+  width: 0.68,
+  height: 1.28,
+  baseColor: colors.green,
 });
 
 createCapsulePerson({
   id: "liang-yunqi",
   name: "梁蕴祺",
-  position: [2.3, 0.02, 1.92],
-  rotationY: -0.06,
-  scale: 1.03,
-  accent: colors.clay,
-  silhouette: 0xc97b63,
-  bodyColor: 0xf9f9f5,
+  image: "team-liang-yunqi.png",
+  position: [2.22, 0.02, 1.88],
+  rotationY: -0.1,
+  scale: 0.92,
+  width: 0.68,
+  height: 1.28,
+  baseColor: colors.clay,
 });
 
 const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup, catGroup, ...teamGroups];

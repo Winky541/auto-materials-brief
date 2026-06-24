@@ -347,13 +347,12 @@
         const teamProfiles = {
           "zhou-qiang": {
             name: "周强",
-            role: "Mentor / Research Guide",
+            role: "Research Member",
             years: "待补充",
-            expertise: "待补充：可记录其材料验证方法、技术路线判断和项目复盘经验。",
-            projects: "待补充：代表项目、关键验证任务、技术攻关记录。",
-            contributions: "待补充：对团队方法、材料机会识别和工程判断的长期贡献。",
-            message: "把经验留在工作室，让后来的人少走弯路。",
-            legacy: "代表项目：待补充。技术传承：材料机会识别、验证路径设计、工程化风险判断。"
+            expertise: "待补充：可记录其材料方向、实验验证、供应链调研或数据分析能力。",
+            projects: "待补充：参与项目、阶段成果、协作记录。",
+            contributions: "待补充：对团队研究资料、项目推进和知识沉淀的贡献。",
+            message: "把每一次观察都整理成下一次判断的依据。"
           },
           "gou-zhi": {
             name: "苟智",
@@ -406,7 +405,6 @@
                 <div><dt>Major Projects</dt><dd>${escapeHtml(profile.projects)}</dd></div>
                 <div><dt>Contributions</dt><dd>${escapeHtml(profile.contributions)}</dd></div>
                 <div><dt>Personal Message</dt><dd>${escapeHtml(profile.message)}</dd></div>
-                ${profile.legacy ? `<div class="legacy"><dt>Research Legacy</dt><dd>${escapeHtml(profile.legacy)}</dd></div>` : ""}
               </dl>
             </section>
           `;
@@ -431,7 +429,7 @@
         });
       })();
     </script>
-    <script type="module" src="{{ asset_prefix }}/studio3d.js?v=20260624-team-minimal"></script>
+    <script type="module" src="{{ asset_prefix }}/studio3d.js?v=20260624-team-npc"></script>
     {% include "_metric_modal.html.j2" %}
   </body>
 </html>
