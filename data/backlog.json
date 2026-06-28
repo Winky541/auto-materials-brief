@@ -1,136 +1,70 @@
 {
   "items": [
     {
-      "title": "Lightweight, Strong, and Resilient 3D Graphene Metamaterial via a Multi‐flow Assembly",
-      "published_date": "2026-06-27",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73453?af=R",
-      "summary": "Advanced Materials, Volume 38, Issue 36, 26 June 2026.",
-      "source": "Advanced Materials",
-      "collected_at": "2026-06-28T21:54:53+08:00",
-      "source_type": "journal_rss",
-      "source_group": "europe_us",
-      "source_score": 92,
-      "credibility_level": "high",
-      "original_source_preferred": true,
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "related_sources": [
-        {
-          "source": "Advanced Materials",
-          "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73453?af=R",
-          "published_date": "2026-06-27"
-        }
-      ],
-      "rule_score": 36,
-      "category": "学术论文",
-      "subcategory": "",
-      "detected_companies": [],
-      "detected_material_keywords": [
-        "lightweight",
-        "metamaterial"
-      ],
-      "why_it_matters": "该信息暂未显示明确的产业变化或材料导入信号，仅适合作为背景观察。",
-      "technology_driver": "其他",
-      "material_relevance": "材料相关性较弱，暂不优先。",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
-      "suggested_action": "Technology Watch",
-      "trend_potential": "不确定",
-      "future_signal": "未来信号不明确，建议等待更多原始来源或产业化证据。",
-      "future_signal_score": 31,
-      "material_opportunity_score": 35,
-      "material_validation_score": 35,
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "filter_reason": "source=23; automotive=0 (none); materials=8 (lightweight, metamaterial); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
-      "needs_ai_analysis": true,
-      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73453?af=R",
-      "normalized_title": "lightweight strong resilient 3d graphene metamaterial via multi flow assembly",
-      "event_id": "f43957e49630b460",
-      "final_score": 37,
-      "source_urls": [
-        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73453?af=R"
-      ],
-      "source_names": [
-        "Advanced Materials"
-      ]
-    },
-    {
-      "title": "Molecular Interfacial Engineering of Lithiophilic Protection Layer Realizing 600 Wh kg−1 Anode‐Free Lithium Metal Batteries",
+      "title": "26-06-26 为英伟达&宇树的人形机器人装上“眼睛”，这家深圳“小巨人”拿下数千万融资！ ◎ 视觉与力觉的“双向奔赴”。 △ 撰文：DONG 在6月初，NVIDIA在台北GTC大会上发布了NVIDIA Isaac GR00T参考⼈形机器⼈，在业内引起了不小的关注。 我们都知道这个参考设计的...",
       "published_date": "2026-06-26",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73830?af=R",
-      "summary": "Advanced Materials, EarlyView.",
-      "source": "Advanced Materials",
-      "collected_at": "2026-06-28T21:54:53+08:00",
-      "source_type": "journal_rss",
-      "source_group": "europe_us",
-      "source_score": 92,
-      "credibility_level": "high",
-      "original_source_preferred": true,
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
+      "url": "https://www.ne-time.cn/web/article/39027",
+      "summary": "",
+      "source": "NE时代",
+      "collected_at": "2026-06-28T23:31:34+08:00",
+      "source_type": "professional_media",
+      "source_group": "china",
+      "source_score": 72,
+      "credibility_level": "medium",
+      "original_source_preferred": false,
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
       "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
       "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
+        "future_signals"
       ],
       "related_sources": [
         {
-          "source": "Advanced Materials",
-          "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73830?af=R",
+          "source": "NE时代",
+          "url": "https://www.ne-time.cn/web/article/39027",
           "published_date": "2026-06-26"
         }
       ],
       "rule_score": 36,
-      "category": "电池与储能材料",
-      "subcategory": "负极材料",
+      "category": "未来趋势观察",
+      "subcategory": "",
       "detected_companies": [],
-      "detected_material_keywords": [
-        "anode",
-        "lithium metal"
-      ],
-      "why_it_matters": "该信息暂未显示明确的产业变化或材料导入信号，仅适合作为背景观察。",
-      "technology_driver": "其他",
-      "material_relevance": "材料相关性较弱，暂不优先。",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "材料相关性较弱，暂不优先。建议仅作为背景趋势观察，暂不进入样件验证或供应商调研。",
+      "detected_material_keywords": [],
+      "why_it_matters": "这条信息指向机器人与具身智能方向的变化，可能从技术演进进一步传导到材料选型、供应链调研和验证储备。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "该技术动向可能牵引轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料需求。当前材料验证分为 54，更适合作为前瞻储备或持续跟踪。",
       "suggested_action": "Technology Watch",
-      "trend_potential": "不确定",
-      "future_signal": "未来信号不明确，建议等待更多原始来源或产业化证据。",
-      "future_signal_score": 31,
-      "material_opportunity_score": 35,
-      "material_validation_score": 35,
+      "trend_potential": "高",
+      "future_signal": "机器人与具身智能呈现高潜力信号，需观察头部企业、量产节奏、政策标准和供应链投入是否继续强化。",
+      "future_signal_score": 65,
+      "material_opportunity_score": 30,
+      "material_validation_score": 30,
       "stage": "Technology Watch",
       "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "filter_reason": "source=23; automotive=0 (none); materials=8 (anode, lithium metal); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "filter_reason": "source=18; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=3 (发布); future=10 (NVIDIA, 人形机器人); current_month=5",
       "needs_ai_analysis": true,
-      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73830?af=R",
-      "normalized_title": "molecular interfacial engineering lithiophilic protection layer realizing 600 wh kg 1 anode free lithium metal batteries",
-      "event_id": "9eb2e9289cf2b47a",
-      "final_score": 37,
+      "canonical_url": "https://www.ne-time.cn/web/article/39027",
+      "normalized_title": "26 06 26 为英伟达 宇树的人形机器人装上 眼睛 这家深圳 小巨人 拿下数千万融资 视觉与力觉的 双向奔赴 撰文 dong 在6月初 nvidia在台北gtc大会上发布了nvidia isaac gr00t参考 形机器 在业内引起了不小的关注 我们都知道这个参考设计的",
+      "event_id": "503d7f085c8beade",
+      "final_score": 36,
+      "bookshelf_category": "Future Research Reserve",
       "source_urls": [
-        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73830?af=R"
+        "https://www.ne-time.cn/web/article/39027"
       ],
       "source_names": [
-        "Advanced Materials"
+        "NE时代"
       ]
     },
     {
-      "title": "Tesla plans another 1,000 hires in Grünheide",
+      "title": "VW board reportedly plans to close four German plants",
       "published_date": "2026-06-26",
-      "url": "https://www.electrive.com/2026/06/26/tesla-plans-another-1000-hires-in-grunheide",
-      "summary": "Tesla plans to significantly increase production at its Gigafactory Berlin-Brandenburg. From October, the plant in Grünheide aims to raise weekly output from the current 5,000 Model Y vehicles to 7,500 units. After recently adding 1,000 employees, the company now plans to hire another 1,000 to support the production ramp-up.",
+      "url": "https://www.electrive.com/2026/06/26/vw-board-reportedly-plans-to-close-four-german-plants",
+      "summary": "According to a report by Manager Magazin , Volkswagen is considering a far more extensive restructuring programme than previously reported. The German business magazine claims the company is planning to close its plants in Hanover, Zwickau and Emden, as well as Audi's factory in Neckarsulm. The report also states that Volkswagen could cut up to 100,000 jobs worldwide.",
       "source": "Electrive",
-      "collected_at": "2026-06-28T21:54:56+08:00",
+      "collected_at": "2026-06-28T23:30:07+08:00",
       "source_type": "rss",
       "source_group": "europe_us",
       "source_score": 78,
@@ -148,15 +82,15 @@
       "related_sources": [
         {
           "source": "Electrive",
-          "url": "https://www.electrive.com/2026/06/26/tesla-plans-another-1000-hires-in-grunheide",
+          "url": "https://www.electrive.com/2026/06/26/vw-board-reportedly-plans-to-close-four-german-plants",
           "published_date": "2026-06-26"
         }
       ],
-      "rule_score": 41,
+      "rule_score": 36,
       "category": "企业技术动态",
       "subcategory": "",
       "detected_companies": [
-        "Tesla"
+        "Volkswagen"
       ],
       "detected_material_keywords": [],
       "why_it_matters": "该信息暂未显示明确的产业变化或材料导入信号，仅适合作为背景观察。",
@@ -167,19 +101,20 @@
       "suggested_action": "Supplier Research",
       "trend_potential": "不确定",
       "future_signal": "未来信号不明确，建议等待更多原始来源或产业化证据。",
-      "future_signal_score": 30,
-      "material_opportunity_score": 34,
-      "material_validation_score": 34,
+      "future_signal_score": 28,
+      "material_opportunity_score": 32,
+      "material_validation_score": 32,
       "stage": "Supplier Research",
       "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：company。",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=5 (Tesla); industrial=6 (factory, plant); future=0 (none); current_month=5",
+      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=5 (Volkswagen); industrial=6 (factory, plant); future=0 (none); current_month=5",
       "needs_ai_analysis": true,
-      "canonical_url": "https://www.electrive.com/2026/06/26/tesla-plans-another-1000-hires-in-grunheide",
-      "normalized_title": "tesla plans another 1 000 hires grünheide",
-      "event_id": "abc5502d2269c1a4",
-      "final_score": 36,
+      "canonical_url": "https://www.electrive.com/2026/06/26/vw-board-reportedly-plans-to-close-four-german-plants",
+      "normalized_title": "vw board reportedly plans close four german plants",
+      "event_id": "cdccb09a62e52607",
+      "final_score": 34,
+      "bookshelf_category": "Polymer & Elastomer Materials",
       "source_urls": [
-        "https://www.electrive.com/2026/06/26/tesla-plans-another-1000-hires-in-grunheide"
+        "https://www.electrive.com/2026/06/26/vw-board-reportedly-plans-to-close-four-german-plants"
       ],
       "source_names": [
         "Electrive"
@@ -191,7 +126,7 @@
       "url": "https://www.electrive.com/2026/06/26/polestar-faces-us-sales-ban-for-new-models-from-2027",
       "summary": "Polestar will no longer be able to offer new vehicles in the US market starting from the 2027 model year. This follows a decision by the US Department of Commerce not to grant the electric vehicle manufacturer an exemption under the so-called Connected Vehicle Rule.",
       "source": "Electrive",
-      "collected_at": "2026-06-28T21:54:56+08:00",
+      "collected_at": "2026-06-28T23:30:07+08:00",
       "source_type": "rss",
       "source_group": "europe_us",
       "source_score": 78,
@@ -237,6 +172,7 @@
       "normalized_title": "polestar faces us sales ban new models from 2027",
       "event_id": "25e7d2c4a10b2785",
       "final_score": 33,
+      "bookshelf_category": "Polymer & Elastomer Materials",
       "source_urls": [
         "https://www.electrive.com/2026/06/26/polestar-faces-us-sales-ban-for-new-models-from-2027"
       ],

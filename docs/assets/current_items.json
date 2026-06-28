@@ -130,38 +130,6 @@
       ]
     },
     {
-      "title": "Previewing GPT-5.6 Sol: a next-generation model",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-      "source": "OpenAI Blog",
-      "published_date": "2026-06-26",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Stable Energy‐Level Regulation of NiOx for Efficient Deep‐Blue Perovskite LEDs",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73478?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-06-27",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
       "title": "Surface‐Functionalized LLZO‐Incorporated Multilayer Composite Solid Electrolytes for Dendrite Suppression and Efficient Ionic Conduction in Lithium–Metal Batteries",
       "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73879?af=R",
       "source": "Advanced Materials",
@@ -194,13 +162,13 @@
       ]
     },
     {
-      "title": "VW board reportedly plans to close four German plants",
-      "url": "https://www.electrive.com/2026/06/26/vw-board-reportedly-plans-to-close-four-german-plants",
-      "source": "Electrive",
-      "published_date": "2026-06-26",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
+      "title": "具身智能：汽车企业的“第二战场”",
+      "url": "https://finance.ifeng.com/c/8uI9OVpGeDO",
+      "source": "Bing News",
+      "published_date": "2026-06-27",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",
@@ -226,13 +194,45 @@
       ]
     },
     {
-      "title": "26-06-26 为英伟达&宇树的人形机器人装上“眼睛”，这家深圳“小巨人”拿下数千万融资！ ◎ 视觉与力觉的“双向奔赴”。 △ 撰文：DONG 在6月初，NVIDIA在台北GTC大会上发布了NVIDIA Isaac GR00T参考⼈形机器⼈，在业内引起了不小的关注。 我们都知道这个参考设计的...",
-      "url": "https://www.ne-time.cn/web/article/39027",
-      "source": "NE时代",
+      "title": "Lightweight, Strong, and Resilient 3D Graphene Metamaterial via a Multi‐flow Assembly",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73453?af=R",
+      "source": "Advanced Materials",
+      "published_date": "2026-06-27",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Molecular Interfacial Engineering of Lithiophilic Protection Layer Realizing 600 Wh kg−1 Anode‐Free Lithium Metal Batteries",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73830?af=R",
+      "source": "Advanced Materials",
       "published_date": "2026-06-26",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Tesla plans another 1,000 hires in Grünheide",
+      "url": "https://www.electrive.com/2026/06/26/tesla-plans-another-1000-hires-in-grunheide",
+      "source": "Electrive",
+      "published_date": "2026-06-26",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",

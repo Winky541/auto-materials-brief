@@ -27,6 +27,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = PROJECT_ROOT / "config.yaml"
 RAW_NEWS_PATH = PROJECT_ROOT / "data" / "news_raw.json"
 FILTERED_NEWS_PATH = PROJECT_ROOT / "data" / "news_filtered.json"
+FILTER_AUDIT_PATH = PROJECT_ROOT / "data" / "filter_audit.json"
 
 DEFAULT_MIN_RULE_SCORE = 35
 DEFAULT_MAX_FILTERED_NEWS = 20
@@ -856,7 +857,7 @@ def load_json(path: Path) -> list[dict[str, Any]]:
     return [item for item in data if isinstance(item, dict)]
 
 
-def save_json(items: list[dict[str, Any]], path: Path) -> None:
+def save_json(items: Any, path: Path) -> None:
     """Save UTF-8 JSON for downstream AI analysis."""
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as file:
@@ -1162,7 +1163,7 @@ def _is_similar_title(title_a: str, title_b: str, threshold: float) -> bool:
 
 def filter_and_rank_candidates(
     raw_items: list[dict[str, Any]], config: dict[str, Any]
-) -> list[dict[str, Any]]:
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     """Filter, score, deduplicate, and rank raw candidates."""
     limits = config.get("limits", {})
     timezone_name = config.get("timezone", "Asia/Shanghai")
@@ -1178,17 +1179,39 @@ def filter_and_rank_candidates(
     )
 
     valid_items: list[dict[str, Any]] = []
-    skipped_missing = 0
-    skipped_month = 0
-    skipped_low_score = 0
+    discarded_reasons = {
+        "duplicate_event": 0,
+        "duplicate_url": 0,
+        "old_news": 0,
+        "invalid_url": 0,
+        "aggregator_source": 0,
+        "low_material_relevance": 0,
+        "low_quality_source": 0,
+        "missing_date": 0,
+        "missing_source": 0,
+        "no_material_opportunity": 0,
+    }
 
     for raw_item in raw_items:
         title = str(raw_item.get("title") or "").strip()
         published_date = str(raw_item.get("published_date") or "").strip()
         url = _clean_url(raw_item.get("url"))
+        source = str(raw_item.get("source") or "").strip()
 
-        if not title or not published_date or not url or is_disallowed_final_url(url):
-            skipped_missing += 1
+        if not title:
+            discarded_reasons["no_material_opportunity"] += 1
+            continue
+        if not published_date:
+            discarded_reasons["missing_date"] += 1
+            continue
+        if not source:
+            discarded_reasons["missing_source"] += 1
+            continue
+        if not url:
+            discarded_reasons["invalid_url"] += 1
+            continue
+        if is_disallowed_final_url(url):
+            discarded_reasons["aggregator_source"] += 1
             continue
 
         item = deepcopy(raw_item)
@@ -1197,12 +1220,17 @@ def filter_and_rank_candidates(
         item["url"] = url
 
         if not is_allowed_date_for_item(item, timezone_name):
-            skipped_month += 1
+            discarded_reasons["old_news"] += 1
             continue
 
         rule_score, filter_reason = calculate_relevance_score(item)
         if rule_score < min_rule_score:
-            skipped_low_score += 1
+            if int(item.get("source_score", 0) or 0) < 40:
+                discarded_reasons["low_quality_source"] += 1
+            elif not detect_material_keywords(item) and not _matched_keywords(_text_for_item(item), FUTURE_INTELLIGENCE_KEYWORDS):
+                discarded_reasons["no_material_opportunity"] += 1
+            else:
+                discarded_reasons["low_material_relevance"] += 1
             continue
 
         item["rule_score"] = rule_score
@@ -1242,10 +1270,16 @@ def filter_and_rank_candidates(
         url = item.get("canonical_url") or item.get("url", "")
         title_key = item.get("_normalized_title", "")
         event_id = item.get("event_id", "")
-        if event_id in seen_events or url in seen_urls or any(
+        duplicate_title = any(
             _is_similar_title(title_key, seen_title, max_title_similarity)
             for seen_title in seen_titles
-        ):
+        )
+        if url in seen_urls:
+            discarded_reasons["duplicate_url"] += 1
+            skipped_duplicates += 1
+            continue
+        if event_id in seen_events or duplicate_title:
+            discarded_reasons["duplicate_event"] += 1
             skipped_duplicates += 1
             continue
 
@@ -1260,13 +1294,31 @@ def filter_and_rank_candidates(
             break
 
     logging.info("Raw candidates loaded: %s.", len(raw_items))
-    logging.info("Skipped missing title/date/url: %s.", skipped_missing)
-    logging.info("Skipped non-current-month items: %s.", skipped_month)
-    logging.info("Skipped below min_rule_score=%s: %s.", min_rule_score, skipped_low_score)
+    logging.info(
+        "Skipped missing title/date/url/source or aggregator items: %s.",
+        discarded_reasons["invalid_url"]
+        + discarded_reasons["aggregator_source"]
+        + discarded_reasons["missing_date"]
+        + discarded_reasons["missing_source"],
+    )
+    logging.info("Skipped non-current-month items: %s.", discarded_reasons["old_news"])
+    logging.info(
+        "Skipped below min_rule_score=%s: %s.",
+        min_rule_score,
+        discarded_reasons["low_material_relevance"]
+        + discarded_reasons["low_quality_source"]
+        + discarded_reasons["no_material_opportunity"],
+    )
     logging.info("Skipped duplicate URL/title items: %s.", skipped_duplicates)
     logging.info("Filtered candidates selected: %s.", len(deduplicated))
 
-    return deduplicated
+    audit = {
+        "generated_at": datetime.now(ZoneInfo(timezone_name)).isoformat(timespec="seconds"),
+        "raw_count": len(raw_items),
+        "filtered_count": len(deduplicated),
+        "discarded_reasons": discarded_reasons,
+    }
+    return deduplicated, audit
 
 
 def main() -> None:
@@ -1279,9 +1331,11 @@ def main() -> None:
 
     config = load_config()
     raw_items = load_json(RAW_NEWS_PATH)
-    filtered_items = filter_and_rank_candidates(raw_items, config)
+    filtered_items, audit = filter_and_rank_candidates(raw_items, config)
     save_json(filtered_items, FILTERED_NEWS_PATH)
+    save_json(audit, FILTER_AUDIT_PATH)
     logging.info("Saved filtered candidates to %s.", FILTERED_NEWS_PATH)
+    logging.info("Saved filter audit to %s.", FILTER_AUDIT_PATH)
 
 
 if __name__ == "__main__":

@@ -167,6 +167,27 @@
       "published_date": "2026-06-28",
       "selected_date": "2026-06-28",
       "category": "学术论文"
+    },
+    {
+      "url": "https://finance.ifeng.com/c/8uI9OVpGeDO",
+      "title": "具身智能：汽车企业的“第二战场”",
+      "published_date": "2026-06-27",
+      "selected_date": "2026-06-28",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73453?af=R",
+      "title": "Lightweight, Strong, and Resilient 3D Graphene Metamaterial via a Multi‐flow Assembly",
+      "published_date": "2026-06-27",
+      "selected_date": "2026-06-28",
+      "category": "学术论文"
+    },
+    {
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73830?af=R",
+      "title": "Molecular Interfacial Engineering of Lithiophilic Protection Layer Realizing 600 Wh kg−1 Anode‐Free Lithium Metal Batteries",
+      "published_date": "2026-06-26",
+      "selected_date": "2026-06-28",
+      "category": "电池与储能材料"
     }
   ]
 }

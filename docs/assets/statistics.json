@@ -1,33 +1,30 @@
 {
   "category_counts": {
     "汽车新材料": 10,
-    "未来趋势观察": 3,
-    "专利与论文": 2,
-    "学术论文": 1,
-    "电池与储能材料": 1,
-    "企业技术动态": 1,
+    "未来趋势观察": 4,
+    "企业技术动态": 2,
+    "专利与论文": 1,
     "其他": 1
   },
   "source_counts": {
     "Electrive": 7,
-    "Advanced Materials": 5,
+    "Advanced Materials": 4,
     "NE时代": 3,
     "IEEE Spectrum": 2,
-    "OpenAI Blog": 1,
-    "Nature Energy": 1
+    "Nature Energy": 1,
+    "Bing News": 1
   },
   "company_counts": {
     "Volkswagen": 3,
     "CATL": 1,
     "宁德时代": 1,
+    "特斯拉": 1,
     "Tesla": 1
   },
   "keyword_counts": {
     "battery": 4,
     "lithium metal": 3,
     "anode": 2,
-    "PE": 2,
-    "PA": 2,
     "composite": 2,
     "fast charging": 1,
     "recycling": 1,

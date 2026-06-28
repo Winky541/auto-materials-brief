@@ -800,8 +800,13 @@ def build_bookshelf_library(items: list[dict[str, Any]]) -> list[dict[str, Any]]
             domain_name = "Future Research Reserve"
         rows[domain_name]["items"].append(
             {
+                "event_id": str(item.get("event_id") or ""),
+                "canonical_url": str(item.get("canonical_url") or item.get("url") or ""),
+                "normalized_title": str(item.get("normalized_title") or ""),
                 "title": str(item.get("title") or "Untitled"),
                 "source": str(item.get("source") or "Unknown Source"),
+                "source_names": item.get("source_names", []) or [],
+                "source_urls": item.get("source_urls", []) or [],
                 "published_date": str(item.get("published_date") or ""),
                 "url": str(item.get("url") or ""),
                 "link_label": link_label_for_item(item),
@@ -1398,15 +1403,23 @@ def build_research_insight(items: list[dict[str, Any]], statistics: dict[str, di
     )
     top_score = int(top_opportunity.get("material_opportunity_score", top_opportunity.get("material_validation_score", 0)) or 0)
 
+    material_terms = keywords or _unique_strings(
+        [
+            keyword
+            for item in items
+            for keyword in (item.get("materials_involved") or item.get("detected_material_keywords") or [])
+        ],
+        limit=6,
+    )
     sentences: list[str] = []
     if categories:
-        sentences.append(f"今日最重要的产业变化集中在{'、'.join(categories)}方向，汽车产业与新能源汽车链条仍是主要观察重心。")
-    sentences.append(f"今日最明显的技术牵引来自{top_driver}，需要判断它是否会继续传导为结构、热管理、电池、感知或封装材料需求。")
-    sentences.append(f"材料机会最突出的线索是“{top_opportunity.get('title', '未命名情报')}”，Material Opportunity Score 为 {top_score}，建议结合原文判断是否进入验证或供应商调研。")
-    if keywords:
-        sentences.append(f"高频材料关键词包括{'、'.join(keywords)}，可作为今日样件验证、技术储备或竞品跟踪的入口。")
+        sentences.append(f"本期变化主要集中在{'、'.join(categories)}，其中与汽车和新能源链条相关的材料信号仍应优先看。")
+    sentences.append(f"最明显的技术牵引来自{top_driver}，需要判断它是否会转化为结构轻量化、热管理、电池体系、感知器件或封装材料需求。")
+    sentences.append(f"最值得先读的材料线索是“{top_opportunity.get('title', '未命名情报')}”，它更适合作为供应商调研、样件验证或中长期储备的入口，而不是普通新闻浏览。")
+    if material_terms:
+        sentences.append(f"本期可重点留意{'、'.join(material_terms[:6])}等材料方向。")
     if companies:
-        sentences.append(f"涉及企业/机构以{'、'.join(companies)}等为主，后续应重点跟踪其量产、合作、专利、标准化或供应链变化。")
+        sentences.append(f"涉及企业/机构以{'、'.join(companies)}等为主，后续重点看其量产、合作、专利、标准化或供应链变化。")
 
     return "".join(sentences[:5])
 
@@ -1422,12 +1435,27 @@ def build_research_insight_cards(items: list[dict[str, Any]], statistics: dict[s
 
     drivers = Counter(str(item.get("technology_driver") or "其他") for item in items)
     top_driver = drivers.most_common(1)[0][0]
-    top_item = max(items, key=lambda item: int(item.get("material_opportunity_score", 0) or 0))
+    top_items = sorted(items, key=lambda item: int(item.get("material_opportunity_score", 0) or 0), reverse=True)
+    top_item = top_items[0]
     categories = "、".join(list(statistics.get("category_counts", {}).keys())[:3]) or "当前精选情报"
+    material_terms = _unique_strings(
+        [
+            str(keyword)
+            for item in top_items[:5]
+            for keyword in (item.get("materials_involved") or item.get("detected_material_keywords") or [])
+            if keyword
+        ],
+        limit=8,
+    )
+    opportunity_text = str(top_item.get("material_opportunity") or top_item.get("material_relevance") or "").strip()
+    if material_terms:
+        opportunity_text = f"优先关注{'、'.join(material_terms)}。{opportunity_text or '这些方向可能进入供应商调研、样件验证或前瞻储备。'}"
+    elif not opportunity_text:
+        opportunity_text = "材料机会仍需进一步核验，建议保守观察。"
     return [
-        {"label": "What Changed", "text": f"今日信号主要集中在{categories}方向，最明显的技术牵引来自{top_driver}。"},
-        {"label": "Why It Matters", "text": str(top_item.get("why_it_matters") or top_item.get("impact_assessment") or "该信号可能影响材料选择、供应链调研和后续验证安排。")},
-        {"label": "Material Opportunity", "text": str(top_item.get("material_opportunity") or top_item.get("material_relevance") or "材料机会仍需进一步核验，建议保守观察。")},
+        {"label": "What Changed", "text": f"本期高价值信号集中在{categories}，技术牵引以{top_driver}最突出。"},
+        {"label": "Why It Matters", "text": str(top_item.get("why_it_matters") or top_item.get("impact_assessment") or "这些变化可能影响材料选型、供应链调研和后续验证节奏。")},
+        {"label": "Material Opportunity", "text": opportunity_text},
     ]
 
 
@@ -1579,6 +1607,78 @@ def _published_records(data: Any) -> list[dict[str, Any]]:
     return normalized
 
 
+def _archive_event_key(item: dict[str, Any]) -> str:
+    """Return a stable event key for archive de-duplication."""
+    if item.get("event_id"):
+        return f"event:{item['event_id']}"
+    url = str(item.get("canonical_url") or item.get("url") or "").strip().lower().rstrip("/")
+    if url:
+        return f"url:{url}"
+    title = re.sub(r"[^\w\u4e00-\u9fff]+", " ", str(item.get("normalized_title") or item.get("title") or "").casefold())
+    title = re.sub(r"\s+", " ", title).strip()
+    return f"title:{title}" if title else ""
+
+
+def _dedupe_bookshelf_domains_for_archive(domains: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Remove duplicate archived events while preserving Bookshelf domain groups."""
+    seen: set[str] = set()
+    cleaned_domains: list[dict[str, Any]] = []
+    for domain in domains:
+        if not isinstance(domain, dict):
+            continue
+        cleaned_items = []
+        for item in domain.get("items", []) or []:
+            if not isinstance(item, dict):
+                continue
+            key = _archive_event_key(item)
+            if key and key in seen:
+                continue
+            if key:
+                seen.add(key)
+            cleaned_items.append(item)
+        if cleaned_items:
+            current = dict(domain)
+            current["items"] = cleaned_items
+            current["count"] = len(cleaned_items)
+            cleaned_domains.append(current)
+    return cleaned_domains
+
+
+def _dedupe_workspace_archive_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Deduplicate Bookshelf events across dated Archive snapshots, newest first."""
+    ordered = sorted(
+        [record for record in records if isinstance(record, dict) and record.get("date")],
+        key=lambda record: str(record.get("date", "")),
+        reverse=True,
+    )
+    seen: set[str] = set()
+    cleaned_records: list[dict[str, Any]] = []
+    for record in ordered:
+        current = dict(record)
+        cleaned_bookshelf = []
+        for domain in current.get("bookshelf", []) or []:
+            if not isinstance(domain, dict):
+                continue
+            kept_items = []
+            for item in domain.get("items", []) or []:
+                if not isinstance(item, dict):
+                    continue
+                key = _archive_event_key(item)
+                if key and key in seen:
+                    continue
+                if key:
+                    seen.add(key)
+                kept_items.append(item)
+            if kept_items:
+                cleaned_domain = dict(domain)
+                cleaned_domain["items"] = kept_items
+                cleaned_domain["count"] = len(kept_items)
+                cleaned_bookshelf.append(cleaned_domain)
+        current["bookshelf"] = cleaned_bookshelf
+        cleaned_records.append(current)
+    return cleaned_records
+
+
 def build_workspace_archive(
     archive_data: Any,
     current_date: str,
@@ -1615,7 +1715,7 @@ def build_workspace_archive(
             }
             for item in insights[:2]
         ],
-        "bookshelf": [
+        "bookshelf": _dedupe_bookshelf_domains_for_archive([
             {
                 "domain": domain.get("domain", ""),
                 "zh": domain.get("zh", ""),
@@ -1624,7 +1724,7 @@ def build_workspace_archive(
             }
             for domain in bookshelf_library
             if int(domain.get("count", 0) or 0) > 0
-        ],
+        ]),
         "palette": [
             {
                 "action": group.get("action", ""),
@@ -1638,7 +1738,7 @@ def build_workspace_archive(
     }
     by_date = {str(item.get("date")): item for item in records if item.get("date")}
     by_date[current_date] = snapshot
-    items = sorted(by_date.values(), key=lambda item: str(item.get("date", "")), reverse=True)[:40]
+    items = _dedupe_workspace_archive_records(list(by_date.values()))[:40]
     return {"updated_at": current_date, "items": items}
 
 

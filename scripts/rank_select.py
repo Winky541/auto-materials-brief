@@ -26,12 +26,15 @@ import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = PROJECT_ROOT / "config.yaml"
+RAW_NEWS_PATH = PROJECT_ROOT / "data" / "news_raw.json"
 ANALYZED_NEWS_PATH = PROJECT_ROOT / "data" / "news_analyzed.json"
 FILTERED_NEWS_PATH = PROJECT_ROOT / "data" / "news_filtered.json"
 TODAY_SELECTED_PATH = PROJECT_ROOT / "data" / "today_selected.json"
 BACKLOG_PATH = PROJECT_ROOT / "data" / "backlog.json"
 PUBLISHED_URLS_PATH = PROJECT_ROOT / "data" / "published_urls.json"
 PUBLISHED_EVENTS_PATH = PROJECT_ROOT / "data" / "published_events.json"
+FILTER_AUDIT_PATH = PROJECT_ROOT / "data" / "filter_audit.json"
+SELECTION_REPORT_PATH = PROJECT_ROOT / "data" / "selection_report.json"
 
 DEFAULT_DAILY_PUBLISH_MIN = 5
 DEFAULT_DAILY_PUBLISH_MAX = 10
@@ -44,6 +47,7 @@ DEFAULT_MAX_TITLE_SIMILARITY = 0.88
 DEFAULT_MIN_FINAL_SCORE = 35
 RELAXED_MIN_FINAL_SCORE = 25
 DEFAULT_RECENT_PRIORITY_DAYS = 14
+DEFAULT_EVENT_REPEAT_WINDOW_DAYS = 30
 REPOST_DOMAINS = {"yahoo.com", "msn.com", "aol.com"}
 AGGREGATOR_DOMAINS = {"bing.com", "google.com", "news.google.com"}
 CLUE_DOMAINS = {
@@ -159,6 +163,301 @@ TITLE_SUFFIX_PATTERN = re.compile(
     r"\s*[-_|]\s*(?:Yahoo|MSN|AOL|Reuters|Bloomberg|36Kr|36氪|盖世汽车|汽车之家|财联社|界面新闻|澎湃新闻|钛媒体)\s*$",
     re.IGNORECASE,
 )
+BOOKSHELF_CATEGORY_RULES = [
+    (
+        "Metal Materials",
+        [
+            "metal",
+            "steel",
+            "aluminum",
+            "aluminium",
+            "magnesium",
+            "titanium",
+            "copper",
+            "die casting",
+            "高强钢",
+            "热成形钢",
+            "铝合金",
+            "镁合金",
+            "钛合金",
+            "铜合金",
+            "压铸",
+            "金属连接",
+        ],
+    ),
+    (
+        "Polymer & Elastomer Materials",
+        [
+            "polymer",
+            "plastic",
+            "rubber",
+            "elastomer",
+            "pp",
+            "pe",
+            "abs",
+            "pc",
+            "pa",
+            "pom",
+            "pbt",
+            "pet",
+            "pps",
+            "peek",
+            "tpu",
+            "tpe",
+            "epdm",
+            "nbr",
+            "fkm",
+            "工程塑料",
+            "高分子",
+            "橡胶",
+            "硅橡胶",
+        ],
+    ),
+    (
+        "Composite Materials",
+        ["composite", "cfrp", "gfrp", "cfrtp", "gmt", "smc", "carbon fiber", "复合材料", "碳纤维", "玻璃纤维", "储氢复材"],
+    ),
+    (
+        "Functional Materials",
+        [
+            "swir",
+            "infrared",
+            "sensor",
+            "thermal interface",
+            "conductive",
+            "emi",
+            "piezoelectric",
+            "magnetic",
+            "flexible electronics",
+            "红外",
+            "传感",
+            "导热",
+            "导电",
+            "屏蔽",
+            "压电",
+            "磁性",
+            "柔性电子",
+            "电子皮肤",
+        ],
+    ),
+    (
+        "Energy Materials",
+        [
+            "battery",
+            "solid-state",
+            "sodium-ion",
+            "fuel cell",
+            "hydrogen",
+            "electrolyte",
+            "separator",
+            "cathode",
+            "anode",
+            "bipolar plate",
+            "电池",
+            "固态电池",
+            "钠离子",
+            "燃料电池",
+            "氢能",
+            "储氢",
+            "电解液",
+            "隔膜",
+            "正极",
+            "负极",
+            "热管理",
+        ],
+    ),
+    (
+        "Surface Engineering",
+        ["coating", "pvd", "cvd", "plating", "anodizing", "corrosion", "wear", "涂层", "电镀", "阳极氧化", "防腐", "耐磨", "自修复涂层"],
+    ),
+    (
+        "Sustainable Materials",
+        ["recycling", "recycled", "bio-based", "low-carbon", "sustainable", "pcr", "pir", "回收", "循环", "生物基", "低碳", "绿色"],
+    ),
+]
+MATERIAL_OPPORTUNITY_TERMS = [
+    "material",
+    "materials",
+    "battery",
+    "solid-state",
+    "sodium-ion",
+    "lithium metal",
+    "electrolyte",
+    "separator",
+    "cathode",
+    "anode",
+    "nanotube",
+    "graphene",
+    "metamaterial",
+    "composite",
+    "carbon fiber",
+    "polymer",
+    "plastic",
+    "rubber",
+    "coating",
+    "surface",
+    "thermal",
+    "fuel cell",
+    "hydrogen",
+    "recycling",
+    "additive",
+    "manufacturing",
+    "patent",
+    "paper",
+    "journal",
+    "standard",
+    "validation",
+    "supplier",
+    "sample",
+    "pilot",
+    "production",
+    "材料",
+    "电池",
+    "固态",
+    "钠离子",
+    "锂金属",
+    "电解质",
+    "电解液",
+    "隔膜",
+    "正极",
+    "负极",
+    "纳米管",
+    "石墨烯",
+    "超材料",
+    "复合材料",
+    "碳纤维",
+    "工程塑料",
+    "橡胶",
+    "涂层",
+    "表面",
+    "导热",
+    "燃料电池",
+    "氢能",
+    "回收",
+    "增材",
+    "专利",
+    "论文",
+    "标准",
+    "验证",
+    "供应商",
+    "送样",
+    "量产",
+]
+CORE_MATERIAL_TERMS = [
+    "battery",
+    "solid-state",
+    "sodium-ion",
+    "lithium metal",
+    "electrolyte",
+    "separator",
+    "cathode",
+    "anode",
+    "nanotube",
+    "graphene",
+    "metamaterial",
+    "composite",
+    "carbon fiber",
+    "polymer",
+    "plastic",
+    "rubber",
+    "coating",
+    "surface",
+    "thermal",
+    "fuel cell",
+    "hydrogen",
+    "recycling",
+    "additive",
+    "manufacturing",
+    "材料",
+    "电池",
+    "固态",
+    "钠离子",
+    "锂金属",
+    "电解质",
+    "电解液",
+    "隔膜",
+    "正极",
+    "负极",
+    "纳米管",
+    "石墨烯",
+    "超材料",
+    "复合材料",
+    "碳纤维",
+    "工程塑料",
+    "橡胶",
+    "涂层",
+    "表面",
+    "导热",
+    "燃料电池",
+    "氢能",
+    "回收",
+    "增材",
+]
+ACTION_SIGNAL_TERMS = [
+    "patent",
+    "paper",
+    "journal",
+    "standard",
+    "validation",
+    "supplier",
+    "sample",
+    "pilot",
+    "production",
+    "专利",
+    "论文",
+    "标准",
+    "验证",
+    "供应商",
+    "送样",
+    "量产",
+]
+FUTURE_VALUE_TERMS = [
+    "humanoid",
+    "embodied",
+    "robot",
+    "ai hardware",
+    "evtol",
+    "low altitude",
+    "automation",
+    "advanced manufacturing",
+    "fusion",
+    "space economy",
+    "brain-computer",
+    "具身智能",
+    "人形机器人",
+    "机器人",
+    "AI硬件",
+    "低空经济",
+    "飞行汽车",
+    "自动化",
+    "先进制造",
+    "核聚变",
+    "空间产业",
+    "脑机接口",
+]
+WEAK_CONTENT_TERMS = [
+    "hire",
+    "hires",
+    "hiring",
+    "job",
+    "jobs",
+    "career",
+    "bank",
+    "chief scientist",
+    "sales",
+    "deliveries",
+    "marketing",
+    "award",
+    "conference",
+    "charging station production",
+    "招聘",
+    "人事",
+    "销量",
+    "交付量",
+    "营销",
+    "获奖",
+    "会议",
+]
 
 
 def _int_0_100(value: Any, default: int = 0) -> int:
@@ -531,6 +830,101 @@ def event_id_for_item(item: dict[str, Any]) -> str:
     return hashlib.sha1(base.encode("utf-8")).hexdigest()[:16]
 
 
+def bookshelf_category_for_item(item: dict[str, Any]) -> str:
+    """Infer the material Bookshelf category without depending on site rendering."""
+    explicit = str(item.get("bookshelf_category") or "").strip()
+    if explicit:
+        return explicit
+    text = normalize_title(_combined_text(item))
+    for category, keywords in BOOKSHELF_CATEGORY_RULES:
+        for keyword in keywords:
+            normalized_keyword = normalize_title(keyword)
+            if not normalized_keyword:
+                continue
+            if re.fullmatch(r"[a-z0-9]{1,4}", normalized_keyword):
+                if re.search(rf"(?<![a-z0-9]){re.escape(normalized_keyword)}(?![a-z0-9])", text):
+                    return category
+                continue
+            if normalized_keyword in text:
+                return category
+    return "Future Research Reserve"
+
+
+def _contains_normalized_term(text: str, term: str) -> bool:
+    normalized = normalize_title(term)
+    if not normalized:
+        return False
+    if re.fullmatch(r"[a-z0-9]{1,4}", normalized):
+        return re.search(rf"(?<![a-z0-9]){re.escape(normalized)}(?![a-z0-9])", text) is not None
+    return normalized in text
+
+
+def material_opportunity_evidence_score(item: dict[str, Any]) -> int:
+    """Score whether an item contains actionable material-opportunity evidence."""
+    text = normalize_title(_combined_text(item))
+    score = 0
+    core_material_hits = [term for term in CORE_MATERIAL_TERMS if _contains_normalized_term(text, term)]
+    action_hits = [term for term in ACTION_SIGNAL_TERMS if _contains_normalized_term(text, term)]
+    future_hits = [term for term in FUTURE_VALUE_TERMS if _contains_normalized_term(text, term)]
+    weak_hits = [term for term in WEAK_CONTENT_TERMS if _contains_normalized_term(text, term)]
+    score += min(45, len(core_material_hits) * 8)
+    if core_material_hits:
+        score += min(18, len(action_hits) * 4)
+    score += min(20, len(future_hits) * 5)
+    if item.get("materials_involved") or item.get("detected_material_keywords"):
+        score += 20
+    if item.get("companies_or_institutions") or item.get("detected_companies"):
+        score += 6
+    if str(item.get("source_type") or "") in {"journal_rss", "government_policy", "company_news_page"}:
+        score += 8
+    if item.get("primary_flow") == "future_intelligence" and future_hits:
+        score += 8
+    if action_hits and not core_material_hits and not future_hits:
+        score -= 15
+    if weak_hits and not core_material_hits:
+        score -= 48
+    elif weak_hits:
+        score -= 22
+    return max(0, min(100, score))
+
+
+def material_opportunity_reason(item: dict[str, Any]) -> str:
+    """Explain material/future opportunity evidence for human review."""
+    text = normalize_title(_combined_text(item))
+    material_hits = [term for term in CORE_MATERIAL_TERMS if _contains_normalized_term(text, term)]
+    action_hits = [term for term in ACTION_SIGNAL_TERMS if _contains_normalized_term(text, term)]
+    future_hits = [term for term in FUTURE_VALUE_TERMS if _contains_normalized_term(text, term)]
+    weak_hits = [term for term in WEAK_CONTENT_TERMS if _contains_normalized_term(text, term)]
+    parts = []
+    if material_hits:
+        parts.append("材料机会信号：" + "、".join(material_hits[:5]))
+    if action_hits and material_hits:
+        parts.append("导入/验证信号：" + "、".join(action_hits[:4]))
+    if future_hits:
+        parts.append("未来产业牵引：" + "、".join(future_hits[:4]))
+    if item.get("stage") in {"Supplier Research", "Joint Development", "Validation", "Strategic Reserve"}:
+        parts.append(f"生命周期阶段：{item.get('stage')}")
+    if weak_hits and not material_hits:
+        parts.append("风险提示：该内容偏泛新闻，材料机会需要进一步核验")
+    return "；".join(parts) or "材料机会证据较弱，仅保留为背景观察。"
+
+
+def _event_date(event: dict[str, Any], key: str) -> date | None:
+    try:
+        return datetime.strptime(str(event.get(key) or ""), "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def _days_between(left: str | None, right: str | None) -> int | None:
+    try:
+        left_date = datetime.strptime(str(left or ""), "%Y-%m-%d").date()
+        right_date = datetime.strptime(str(right or ""), "%Y-%m-%d").date()
+    except ValueError:
+        return None
+    return abs((left_date - right_date).days)
+
+
 def priority_to_score(priority: str | None) -> int:
     """Map DeepSeek priority labels to ranking points."""
     return {"P0": 25, "P1": 18, "P2": 10, "P3": 4}.get(str(priority or "P3"), 4)
@@ -567,6 +961,7 @@ def calculate_final_score(item: dict[str, Any], seen_categories: set[str] | None
         item.get("material_opportunity_score", item.get("material_validation_score", fallback_material_validation_score(item)))
     )
     trend_score = _int_0_100(item.get("future_signal_score", trend_to_score(item.get("trend_potential"))))
+    evidence_score = material_opportunity_evidence_score(item)
 
     if raw_rule_score is None:
         rule_score = fallback_material_validation_score(item)
@@ -579,9 +974,16 @@ def calculate_final_score(item: dict[str, Any], seen_categories: set[str] | None
         + source_score * 0.15
         + priority_score * 0.15
         + confidence * 0.10
-        + material_score * 0.25
+        + material_score * 0.18
         + trend_score * 0.10
+        + evidence_score * 0.07
     )
+    if evidence_score < 20:
+        total -= 12
+    if item.get("primary_flow") == "material_intelligence" and evidence_score < 28:
+        total -= 8
+    if item.get("primary_flow") == "future_intelligence" and evidence_score < 25:
+        total -= 6
 
     if seen_categories is not None and item.get("category") in DIVERSITY_CATEGORIES and item.get("category") not in seen_categories:
         total += 3
@@ -690,6 +1092,7 @@ def cluster_events(items: list[dict[str, Any]], max_title_similarity: float) -> 
         primary["event_id"] = cluster["event_id"]
         primary["canonical_url"] = primary.get("canonical_url") or normalize_url(primary.get("url"))
         primary["normalized_title"] = cluster["normalized_title"]
+        primary["bookshelf_category"] = bookshelf_category_for_item(primary)
         primary["related_sources"] = related_sources
         primary["source_urls"] = sorted(url for url in cluster["source_urls"] if url)
         primary["source_names"] = sorted(name for name in cluster["source_names"] if name)
@@ -705,30 +1108,119 @@ def update_published_events(
 ) -> dict[str, list[dict[str, Any]]]:
     """Maintain event-level publication state and source accumulation."""
     events = _extract_published_events(events_data)
-    by_id = {str(event.get("event_id")): deepcopy(event) for event in events if event.get("event_id")}
-    selected_ids = {event_id_for_item(item) for item in selected_items}
+    by_id: dict[str, dict[str, Any]] = {}
+    for raw_event in events:
+        if not raw_event.get("event_id"):
+            continue
+        event = deepcopy(raw_event)
+        event.setdefault("source_urls", [])
+        event.setdefault("source_names", [])
+        event.setdefault("module_targets", [])
+        event.setdefault("topic_tags", [])
+        event.setdefault("material_opportunities", [])
+        event.setdefault("flow_type", event.get("primary_flow", ""))
+        event.setdefault("primary_flow", event.get("flow_type", ""))
+        event.setdefault("bookshelf_category", "")
+        event.setdefault("normalized_title", normalize_title(event.get("canonical_title")))
+        event["canonical_url"] = normalize_url(event.get("canonical_url"))
+        if not event.get("canonical_url") and event.get("source_urls"):
+            event["canonical_url"] = normalize_url(event["source_urls"][0])
+        if event.get("primary_flow") not in {"material_intelligence", "future_intelligence"}:
+            event["primary_flow"] = "material_intelligence"
+        if event.get("flow_type") not in {"material_intelligence", "future_intelligence"}:
+            event["flow_type"] = event["primary_flow"]
+        if not event.get("bookshelf_category"):
+            event["bookshelf_category"] = "Future Research Reserve"
+        if not event.get("module_targets"):
+            event["module_targets"] = (
+                ["future_signals", "weekly_insights"]
+                if event["primary_flow"] == "future_intelligence"
+                else ["today_key_insight", "bookshelf", "suggested_actions"]
+            )
+        by_id[str(event["event_id"])] = event
+    selected_signatures = []
+    for selected in selected_items:
+        selected_signatures.append(
+            {
+                "event_id": event_id_for_item(selected),
+                "url": normalize_url(selected.get("canonical_url") or selected.get("url")),
+                "title": normalize_title(selected.get("normalized_title") or selected.get("title")),
+            }
+        )
+
+    def existing_event_id_for(item_event_id: str, url: str, title: str) -> str | None:
+        for existing_id, event in by_id.items():
+            event_title = normalize_title(event.get("normalized_title") or event.get("canonical_title"))
+            event_urls = {
+                normalize_url(event.get("canonical_url")),
+                *[normalize_url(value) for value in (event.get("source_urls", []) or [])],
+            }
+            if item_event_id and item_event_id == existing_id:
+                return existing_id
+            if url and url in event_urls:
+                return existing_id
+            if title and event_title and title == event_title:
+                return existing_id
+            if title and event_title and _is_similar_title(title, event_title, DEFAULT_MAX_TITLE_SIMILARITY):
+                gap = _days_between(current_date, str(event.get("last_seen") or event.get("first_seen") or ""))
+                if gap is None or gap <= DEFAULT_EVENT_REPEAT_WINDOW_DAYS:
+                    return existing_id
+        return None
+
+    def is_selected_event(item_event_id: str, url: str, title: str) -> bool:
+        for selected in selected_signatures:
+            if item_event_id and item_event_id == selected["event_id"]:
+                return True
+            if url and url == selected["url"]:
+                return True
+            if title and selected["title"] and (
+                title == selected["title"] or _is_similar_title(title, selected["title"], DEFAULT_MAX_TITLE_SIMILARITY)
+            ):
+                return True
+        return False
+
     for item in candidates:
-        event_id = event_id_for_item(item)
+        canonical_url_value = normalize_url(item.get("canonical_url") or item.get("url"))
+        normalized_title_value = normalize_title(item.get("normalized_title") or item.get("title"))
+        raw_event_id = event_id_for_item(item)
+        event_id = existing_event_id_for(raw_event_id, canonical_url_value, normalized_title_value) or raw_event_id
+        source_urls = [canonical_url_value, *(item.get("source_urls", []) or [])]
+        source_names = [item.get("source"), *(item.get("source_names", []) or [])]
         event = by_id.setdefault(
             event_id,
             {
                 "event_id": event_id,
                 "canonical_title": item.get("title", ""),
-                "canonical_url": normalize_url(item.get("url")),
+                "canonical_url": canonical_url_value,
+                "normalized_title": normalized_title_value,
                 "first_seen": current_date,
                 "last_seen": current_date,
                 "source_urls": [],
                 "source_names": [],
+                "flow_type": item.get("flow_type", item.get("primary_flow", "")),
+                "primary_flow": item.get("primary_flow", item.get("flow_type", "")),
+                "bookshelf_category": item.get("bookshelf_category") or bookshelf_category_for_item(item),
+                "module_targets": list(item.get("module_targets", []) or []),
                 "topic_tags": [],
                 "material_opportunities": [],
                 "published": False,
             },
         )
         event["last_seen"] = current_date
-        for url in [normalize_url(item.get("url")), *(item.get("source_urls", []) or [])]:
-            if url and url not in event["source_urls"]:
-                event["source_urls"].append(url)
-        for name in [item.get("source"), *(item.get("source_names", []) or [])]:
+        event["flow_type"] = item.get("flow_type") or event.get("flow_type") or item.get("primary_flow", "")
+        event["primary_flow"] = item.get("primary_flow") or event.get("primary_flow") or event.get("flow_type", "")
+        event["bookshelf_category"] = item.get("bookshelf_category") or event.get("bookshelf_category") or bookshelf_category_for_item(item)
+        event["normalized_title"] = event.get("normalized_title") or normalized_title_value
+        if not event.get("module_targets"):
+            event["module_targets"] = list(item.get("module_targets", []) or [])
+        for target in item.get("module_targets", []) or []:
+            if target and target not in event["module_targets"]:
+                event["module_targets"].append(target)
+        for url in source_urls:
+            normalized = normalize_url(url)
+            if normalized and normalized not in event["source_urls"]:
+                event["source_urls"].append(normalized)
+        for name in source_names:
             name = str(name or "")
             if name and name not in event["source_names"]:
                 event["source_names"].append(name)
@@ -739,10 +1231,11 @@ def update_published_events(
         opportunity = str(item.get("material_opportunity") or item.get("material_relevance") or "")
         if opportunity and opportunity not in event["material_opportunities"]:
             event["material_opportunities"].append(opportunity)
-        if event_id in selected_ids:
+        if is_selected_event(raw_event_id, canonical_url_value, normalized_title_value):
             event["published"] = True
             event["canonical_title"] = item.get("title", event["canonical_title"])
-            event["canonical_url"] = normalize_url(item.get("url")) or event["canonical_url"]
+            event["canonical_url"] = canonical_url_value or event["canonical_url"]
+            event["normalized_title"] = normalized_title_value or event["normalized_title"]
 
     ordered = sorted(by_id.values(), key=lambda event: str(event.get("last_seen", "")), reverse=True)
     return {"events": ordered}
@@ -754,16 +1247,39 @@ def remove_published_event_items(
     current_date: str | None = None,
 ) -> tuple[list[dict[str, Any]], int]:
     """Remove candidates whose event has already been published before."""
-    published_ids = {
-        str(event.get("event_id"))
+    published_events = [
+        event
         for event in _extract_published_events(events_data)
-        if event.get("event_id") and event.get("published", True)
-        and (not current_date or event.get("last_seen") != current_date)
-    }
+        if event.get("published", True) and (not current_date or event.get("last_seen") != current_date)
+    ]
+
+    def is_published_match(item: dict[str, Any]) -> bool:
+        item_event_id = event_id_for_item(item)
+        item_url = normalize_url(item.get("canonical_url") or item.get("url"))
+        item_title = normalize_title(item.get("normalized_title") or item.get("title"))
+        for event in published_events:
+            event_id = str(event.get("event_id") or "")
+            event_title = normalize_title(event.get("normalized_title") or event.get("canonical_title"))
+            event_urls = {
+                normalize_url(event.get("canonical_url")),
+                *[normalize_url(url) for url in (event.get("source_urls", []) or [])],
+            }
+            if item_url and item_url in event_urls:
+                return True
+            if item_event_id and item_event_id == event_id:
+                return True
+            if item_title and event_title and item_title == event_title:
+                return True
+            if item_title and event_title and _is_similar_title(item_title, event_title, DEFAULT_MAX_TITLE_SIMILARITY):
+                gap = _days_between(current_date, str(event.get("last_seen") or event.get("first_seen") or ""))
+                if gap is None or gap <= DEFAULT_EVENT_REPEAT_WINDOW_DAYS:
+                    return True
+        return False
+
     remaining = []
     removed = 0
     for item in items:
-        if event_id_for_item(item) in published_ids:
+        if is_published_match(item):
             removed += 1
             continue
         remaining.append(item)
@@ -1120,6 +1636,119 @@ def update_published_urls(
     return {"published_urls": records}
 
 
+def _empty_discarded_reasons() -> dict[str, int]:
+    return {
+        "duplicate_event": 0,
+        "duplicate_url": 0,
+        "old_news": 0,
+        "invalid_url": 0,
+        "aggregator_source": 0,
+        "low_material_relevance": 0,
+        "low_quality_source": 0,
+        "missing_date": 0,
+        "missing_source": 0,
+        "no_material_opportunity": 0,
+    }
+
+
+def _merge_discarded_reasons(*payloads: Any) -> dict[str, int]:
+    merged = _empty_discarded_reasons()
+    for payload in payloads:
+        if not isinstance(payload, dict):
+            continue
+        reasons = payload.get("discarded_reasons", payload)
+        if not isinstance(reasons, dict):
+            continue
+        for key in merged:
+            try:
+                merged[key] += int(reasons.get(key, 0) or 0)
+            except (TypeError, ValueError):
+                continue
+    return merged
+
+
+def selected_reason_for_item(item: dict[str, Any]) -> str:
+    """Create a compact human-review reason for why an item entered the brief."""
+    reasons = []
+    flow = item.get("primary_flow")
+    score = int(item.get("final_score", 0) or 0)
+    source_score = int(item.get("source_score", 0) or 0)
+    material_score = int(item.get("material_opportunity_score", item.get("material_validation_score", 0)) or 0)
+    future_score = int(item.get("future_signal_score", 0) or 0)
+    evidence_score = material_opportunity_evidence_score(item)
+    if flow == "material_intelligence":
+        reasons.append("进入 Material Intelligence Flow")
+        if material_score:
+            reasons.append(f"材料机会分 {material_score}")
+    elif flow == "future_intelligence":
+        reasons.append("进入 Future Intelligence Flow")
+        if future_score:
+            reasons.append(f"未来信号分 {future_score}")
+    if source_score >= 70:
+        reasons.append("来源权重较高")
+    if item.get("stage") in {"Validation", "Joint Development", "Supplier Research", "启动验证", "联合开发", "供应商调研"}:
+        reasons.append(f"阶段信号为 {item.get('stage')}")
+    if evidence_score >= 45:
+        reasons.append(f"材料/未来机会证据较强（{evidence_score}）")
+    elif evidence_score >= 25:
+        reasons.append(f"材料/未来机会证据中等（{evidence_score}），需结合原文核验")
+    elif evidence_score < 25:
+        reasons.append(f"机会证据偏弱（{evidence_score}），仅作为低优先级观察")
+    if item.get("follow_up"):
+        reasons.append("标记为值得跟踪")
+    if score:
+        reasons.append(f"综合分 {score}")
+    return "；".join(reasons) or "满足本期筛选阈值并通过去重。"
+
+
+def dedupe_status_for_item(item: dict[str, Any]) -> str:
+    related_count = len(item.get("related_sources", []) or [])
+    source_url_count = len(item.get("source_urls", []) or [])
+    if related_count or source_url_count > 1:
+        return f"merged_sources:{max(related_count, source_url_count)}"
+    return "unique"
+
+
+def build_selection_report(
+    raw_count: int,
+    filtered_count: int,
+    today_payload: dict[str, Any],
+    filter_audit: Any,
+    rank_discarded_reasons: dict[str, int],
+    timezone_name: str,
+) -> dict[str, Any]:
+    """Build a backend-only quality review report for the current selection."""
+    selected_items = [item for item in today_payload.get("items", []) if isinstance(item, dict)]
+    discarded_reasons = _merge_discarded_reasons(filter_audit, rank_discarded_reasons)
+    return {
+        "generated_at": datetime.now(ZoneInfo(timezone_name)).isoformat(timespec="seconds"),
+        "raw_count": raw_count,
+        "filtered_count": filtered_count,
+        "selected_count": len(selected_items),
+        "material_count": sum(1 for item in selected_items if item.get("primary_flow") == "material_intelligence"),
+        "future_count": sum(1 for item in selected_items if item.get("primary_flow") == "future_intelligence"),
+        "weekly_insights_count": sum(1 for item in selected_items if "weekly_insights" in (item.get("module_targets", []) or [])),
+        "discarded_reasons": discarded_reasons,
+        "selected_items": [
+            {
+                "title": item.get("title", ""),
+                "source": item.get("source", ""),
+                "url": item.get("url", ""),
+                "flow_type": item.get("flow_type", item.get("primary_flow", "")),
+                "bookshelf_category": item.get("bookshelf_category") or bookshelf_category_for_item(item),
+                "score": int(item.get("final_score", 0) or 0),
+                "selected_reason": selected_reason_for_item(item),
+                "material_opportunity_reason": material_opportunity_reason(item),
+                "flow_reason": item.get("reason_for_flow", ""),
+                "stage": item.get("stage", ""),
+                "stage_reason": item.get("stage_reason", ""),
+                "dedupe_status": dedupe_status_for_item(item),
+            }
+            for item in selected_items
+        ],
+    }
+
+
 def _existing_today_selection(
     today_data: Any,
     today: str,
@@ -1245,9 +1874,13 @@ def main() -> None:
         allow_previous=True,
     )
     force_refresh = os.getenv("FORCE_REFRESH_TODAY", "").strip().lower() == "true"
+    raw_data = load_json(RAW_NEWS_PATH)
     analyzed_data = load_json(ANALYZED_NEWS_PATH)
     filtered_data = load_json(FILTERED_NEWS_PATH)
+    filter_audit = load_json(FILTER_AUDIT_PATH)
     published_events_data = load_json(PUBLISHED_EVENTS_PATH)
+    raw_count = len(raw_data) if isinstance(raw_data, list) else len(raw_data.get("items", [])) if isinstance(raw_data, dict) else 0
+    filtered_count = len(filtered_data) if isinstance(filtered_data, list) else len(filtered_data.get("items", [])) if isinstance(filtered_data, dict) else 0
     analyzed_items = enrich_with_filtered_metadata(
         [item for item in analyzed_data if isinstance(item, dict)],
         filtered_data,
@@ -1284,6 +1917,15 @@ def main() -> None:
                 today,
             )
             save_json(published_events_payload, PUBLISHED_EVENTS_PATH)
+            selection_report = build_selection_report(
+                raw_count,
+                filtered_count,
+                refreshed_today,
+                filter_audit,
+                _empty_discarded_reasons(),
+                timezone_name,
+            )
+            save_json(selection_report, SELECTION_REPORT_PATH)
             if refreshed_count:
                 save_json(refreshed_today, TODAY_SELECTED_PATH)
                 logging.info(
@@ -1319,6 +1961,9 @@ def main() -> None:
     logging.info("Already published items removed: %s.", removed_published)
     unpublished_items, removed_events = remove_published_event_items(unpublished_items, published_events_data, today)
     logging.info("Already published event items removed: %s.", removed_events)
+    rank_discarded_reasons = _empty_discarded_reasons()
+    rank_discarded_reasons["duplicate_url"] += removed_published
+    rank_discarded_reasons["duplicate_event"] += removed_events
 
     selected_items, backlog_candidates, selection_stats = select_today_items(unpublished_items, config)
     if not selected_items and merged_items:
@@ -1327,8 +1972,10 @@ def main() -> None:
         )
         retry_items, retry_removed_events = remove_published_event_items(merged_items, published_events_data, today)
         logging.info("Already published event items removed during retry: %s.", retry_removed_events)
+        rank_discarded_reasons["duplicate_event"] += retry_removed_events
         selected_items, backlog_candidates, selection_stats = select_today_items(retry_items, config)
     logging.info("Non-current-month or invalid items removed: %s.", selection_stats["removed_non_current"])
+    rank_discarded_reasons["old_news"] += selection_stats["removed_non_current"]
     logging.info("Candidates after deduplication: %s.", selection_stats["deduped_count"])
     logging.info("Today selected items: %s.", len(selected_items))
 
@@ -1417,10 +2064,20 @@ def main() -> None:
         save_json(backlog_payload, BACKLOG_PATH)
         save_json(published_payload, PUBLISHED_URLS_PATH)
         save_json(published_events_payload, PUBLISHED_EVENTS_PATH)
+    selection_report = build_selection_report(
+        raw_count,
+        filtered_count,
+        today_payload,
+        filter_audit,
+        rank_discarded_reasons,
+        timezone_name,
+    )
+    save_json(selection_report, SELECTION_REPORT_PATH)
 
     logging.info("Backlog size: %s.", len(_extract_backlog_items(backlog_payload)))
     logging.info("published_urls size: %s.", len(_extract_published_records(published_payload)))
     logging.info("published_events size: %s.", len(_extract_published_events(published_events_payload)))
+    logging.info("Saved selection report to %s.", SELECTION_REPORT_PATH)
     if save_today:
         logging.info("Saved today selection to %s.", TODAY_SELECTED_PATH)
     else:
