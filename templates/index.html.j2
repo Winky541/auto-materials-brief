@@ -142,86 +142,30 @@
           <details class="bookshelf-domain" {% if domain.is_default_open %}open{% endif %}>
             <summary>
               <span>
-                <strong>{{ domain.domain }}</strong>
+                <strong>{% if domain.count %}●{% else %}○{% endif %} {{ domain.domain }} ({{ domain.count }})</strong>
                 <em>{{ domain.zh }}</em>
                 {% if domain.description %}
                 <small>{{ domain.description }}</small>
                 {% endif %}
               </span>
-              <b>{{ domain.active_count }} Active{% if domain.dormant_count %} · {{ domain.dormant_count }} Dormant{% endif %}</b>
+              <b>{{ domain.count }} 本周期新增</b>
             </summary>
-            <div class="opportunity-books">
-              {% for opportunity in domain.opportunities %}
-              <details class="opportunity-book">
-                <summary>
-                  <span>{{ opportunity.topic }}</span>
-                  <b>{{ opportunity.current_stage }}</b>
-                </summary>
-                <div class="opportunity-profile">
-                  <dl>
-                    <div><dt>Domain</dt><dd>{{ opportunity.domain }}</dd></div>
-                    <div><dt>First Seen</dt><dd>{{ opportunity.first_seen }}</dd></div>
-                    <div><dt>Updated</dt><dd>{{ opportunity.updated_at }}</dd></div>
-                    <div><dt>Status</dt><dd>{{ opportunity.status }}</dd></div>
-                    <div><dt>Material Value <button class="info-button compact" type="button" data-metric="material_value" aria-label="查看Material Value说明">ⓘ</button></dt><dd>{{ opportunity.material_value }}</dd></div>
-                    <div><dt>Suggested Action <button class="info-button compact" type="button" data-metric="suggested_action" aria-label="查看Suggested Action说明">ⓘ</button></dt><dd>{{ opportunity.suggested_action }} / {{ opportunity.suggested_action_zh }}</dd></div>
-                  </dl>
-                  <div class="profile-tags">
-                    <strong>涉及企业</strong>
-                    {% for company in opportunity.companies %}
-                    <span>{{ company }}</span>
-                    {% else %}
-                    <span>待核验</span>
-                    {% endfor %}
-                  </div>
-                  <div class="profile-tags">
-                    <strong>涉及材料</strong>
-                    {% for material in opportunity.materials %}
-                    <span>{{ material }}</span>
-                    {% else %}
-                    <span>待识别</span>
-                    {% endfor %}
-                  </div>
-                  <div class="evidence-list">
-                    <strong>相关新闻 / 来源</strong>
-                    {% for signal in opportunity.related_signals %}
-                    <a href="{{ signal.url }}" target="_blank" rel="noopener noreferrer">
-                      <span>{{ signal.source }} · {{ signal.published_date }}</span>
-                      {{ signal.title }}
-                    </a>
-                    {% else %}
-                    <p>暂无新增证据来源。</p>
-                    {% endfor %}
-                  </div>
-                </div>
-              </details>
+            <div class="bookshelf-current-list">
+              {% for item in domain["items"] %}
+              <article class="bookshelf-current-item">
+                <h3>{{ item.title }}</h3>
+                <dl>
+                  <div><dt>来源</dt><dd>{{ item.source }}</dd></div>
+                  <div><dt>发布时间</dt><dd>{{ item.published_date }}</dd></div>
+                </dl>
+                {% if item.url %}
+                <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label }}</a>
+                {% endif %}
+              </article>
               {% else %}
-              <p class="empty-library">本周期暂无 Active Opportunity。</p>
+              <p class="empty-library">本周期暂无新增内容。</p>
               {% endfor %}
             </div>
-            {% if domain.dormant_opportunities %}
-            <details class="dormant-shelf">
-              <summary>Dormant Opportunities</summary>
-              <div class="opportunity-books">
-                {% for opportunity in domain.dormant_opportunities %}
-                <details class="opportunity-book is-dormant">
-                  <summary>
-                    <span>{{ opportunity.topic }}</span>
-                    <b>{{ opportunity.updated_at }}</b>
-                  </summary>
-                  <div class="opportunity-profile">
-                    <dl>
-                      <div><dt>First Seen</dt><dd>{{ opportunity.first_seen }}</dd></div>
-                      <div><dt>Updated</dt><dd>{{ opportunity.updated_at }}</dd></div>
-                      <div><dt>Material Value</dt><dd>{{ opportunity.material_value }}</dd></div>
-                      <div><dt>Suggested Action</dt><dd>{{ opportunity.suggested_action }}</dd></div>
-                    </dl>
-                  </div>
-                </details>
-                {% endfor %}
-              </div>
-            </details>
-            {% endif %}
           </details>
           {% endfor %}
         </div>
@@ -312,6 +256,17 @@
                 <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
                 {% else %}
                 <span>本周期暂无精选长读。</span>
+                {% endfor %}
+              </article>
+              <article>
+                <strong>Bookshelf / Material Opportunity Graph</strong>
+                {% for domain in cycle.bookshelf %}
+                <span>{{ domain.domain }} · {{ domain.count }} 条</span>
+                {% for item in domain["items"] %}
+                <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+                {% endfor %}
+                {% else %}
+                <span>本周期暂无材料机会入架。</span>
                 {% endfor %}
               </article>
             </div>

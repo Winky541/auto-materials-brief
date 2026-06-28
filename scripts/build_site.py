@@ -580,9 +580,17 @@ def domain_for_text(text: str) -> str:
     """Map combined text to one of the fixed opportunity domains."""
     folded = text.casefold()
     for domain in OPPORTUNITY_DOMAINS:
-        if any(keyword.casefold() in folded for keyword in domain["keywords"]):
+        if any(_keyword_matches(folded, keyword) for keyword in domain["keywords"]):
             return domain["domain"]
     return "Future Research Reserve"
+
+
+def _keyword_matches(folded_text: str, keyword: str) -> bool:
+    """Match material keywords while avoiding short-token false positives."""
+    folded_keyword = keyword.casefold()
+    if re.fullmatch(r"[a-z0-9]{1,4}", folded_keyword):
+        return re.search(rf"(?<![a-z0-9]){re.escape(folded_keyword)}(?![a-z0-9])", folded_text) is not None
+    return folded_keyword in folded_text
 
 
 def topic_for_item(item: dict[str, Any]) -> tuple[str, str]:
@@ -608,6 +616,61 @@ def _related_signal(item: dict[str, Any]) -> dict[str, str]:
         "source": str(item.get("source") or ""),
         "published_date": str(item.get("published_date") or ""),
     }
+
+
+def link_label_for_item(item: dict[str, Any]) -> str:
+    """Return a lightweight source action label for Bookshelf entries."""
+    text = " ".join(
+        str(item.get(key) or "")
+        for key in ("title", "category", "subcategory", "source", "source_type", "url")
+    ).casefold()
+    if "patent" in text or "专利" in text or "wipo" in text or "cnipa" in text:
+        return "查看专利"
+    if any(keyword in text for keyword in ("paper", "journal", "nature", "sae", "ieee", "arxiv", "论文", "学术")):
+        return "阅读全文"
+    if item.get("source_type") == "company_news_page" or any(company.casefold() in text for company in STRATEGIC_COMPANIES):
+        return "官方发布"
+    return "阅读原文"
+
+
+def build_bookshelf_library(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Build the current-cycle Bookshelf: material domain -> source list."""
+    rows = {
+        domain["domain"]: {
+            "domain": domain["domain"],
+            "zh": domain["zh"],
+            "description": domain.get("description", ""),
+            "items": [],
+            "count": 0,
+        }
+        for domain in OPPORTUNITY_DOMAINS
+    }
+    for item in items:
+        _, domain_name = topic_for_item(item)
+        if domain_name not in rows:
+            domain_name = "Future Research Reserve"
+        rows[domain_name]["items"].append(
+            {
+                "title": str(item.get("title") or "Untitled"),
+                "source": str(item.get("source") or "Unknown Source"),
+                "published_date": str(item.get("published_date") or ""),
+                "url": str(item.get("url") or ""),
+                "link_label": link_label_for_item(item),
+            }
+        )
+
+    library = []
+    for domain in OPPORTUNITY_DOMAINS:
+        row = rows[domain["domain"]]
+        row["items"].sort(key=lambda entry: entry.get("published_date", ""), reverse=True)
+        row["count"] = len(row["items"])
+        row["has_new"] = row["count"] > 0
+        library.append(row)
+
+    first_nonempty = next((row for row in library if row["count"] > 0), library[0] if library else None)
+    if first_nonempty:
+        first_nonempty["is_default_open"] = True
+    return library
 
 
 def _iso_date(value: Any, fallback: str = "") -> str:
@@ -676,7 +739,7 @@ def build_opportunity_domains(items: list[dict[str, Any]], topics: list[dict[str
         matched = [
             item
             for item in items
-            if any(keyword.casefold() in _item_text_for_tracks(item).casefold() for keyword in domain["keywords"])
+            if any(_keyword_matches(_item_text_for_tracks(item).casefold(), keyword) for keyword in domain["keywords"])
         ]
         summary.append(
             {
@@ -707,34 +770,23 @@ def build_emerging_topics(
 
 
 def build_opportunity_archive(
-    topics: list[dict[str, Any]],
-    existing_archive: dict[str, Any],
+    bookshelf_library: list[dict[str, Any]],
     current_date: str,
 ) -> dict[str, Any]:
-    """Build docs/assets/opportunities.json while preserving first_seen dates."""
-    previous = existing_archive.get("topics", []) if isinstance(existing_archive, dict) else []
-    previous_by_topic = {str(item.get("topic")): item for item in previous if isinstance(item, dict)}
-    archived_topics = []
-    for topic in topics:
-        previous_topic = previous_by_topic.get(topic["topic"], {})
-        archived_topics.append(
+    """Build docs/assets/opportunities.json as the current Bookshelf view."""
+    return {
+        "updated_at": current_date,
+        "domains": [
             {
-                "domain": topic["domain"],
-                "topic": topic["topic"],
-                "material_value": topic["material_value"],
-                "validation_priority": topic["validation_priority"],
-                "suggested_action": topic["suggested_action"],
-                "suggested_action_zh": topic["suggested_action_zh"],
-                "stage_reason": topic.get("stage_reason", ""),
-                "related_signals": topic["related_signals"],
-                "companies": topic.get("companies", []),
-                "materials": topic.get("materials", []),
-                "news_count": topic["news_count"],
-                "first_seen": previous_topic.get("first_seen", current_date),
-                "updated_at": current_date,
+                "domain": domain.get("domain", ""),
+                "zh": domain.get("zh", ""),
+                "description": domain.get("description", ""),
+                "count": int(domain.get("count", 0) or 0),
+                "items": domain.get("items", []),
             }
-        )
-    return {"updated_at": current_date, "topics": archived_topics}
+            for domain in bookshelf_library
+        ],
+    }
 
 
 def _unique_strings(values: list[Any], limit: int = 8) -> list[str]:
@@ -1257,6 +1309,7 @@ def build_workspace_archive(
     future_radar: list[dict[str, Any]],
     research_insight_cards: list[dict[str, str]],
     insights: list[dict[str, str]],
+    bookshelf_library: list[dict[str, Any]],
 ) -> dict[str, Any]:
     """Persist Dynamic Workspace snapshots for Archive Box."""
     existing = archive_data.get("items", []) if isinstance(archive_data, dict) else []
@@ -1281,6 +1334,16 @@ def build_workspace_archive(
                 "url": item.get("url", ""),
             }
             for item in insights[:2]
+        ],
+        "bookshelf": [
+            {
+                "domain": domain.get("domain", ""),
+                "zh": domain.get("zh", ""),
+                "count": int(domain.get("count", 0) or 0),
+                "items": domain.get("items", []),
+            }
+            for domain in bookshelf_library
+            if int(domain.get("count", 0) or 0) > 0
         ],
     }
     by_date = {str(item.get("date")): item for item in records if item.get("date")}
@@ -1497,9 +1560,10 @@ def main() -> None:
     opportunity_topics = build_opportunity_topics(display_items)
     opportunity_domains = build_opportunity_domains(display_items, opportunity_topics)
     current_date = today_payload.get("date") or datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
+    bookshelf_library = build_bookshelf_library(display_items)
     opportunity_library = build_opportunity_library(opportunity_topics, existing_opportunities, current_date)
     emerging_topics = build_emerging_topics(opportunity_topics, existing_opportunities, current_date)
-    opportunity_archive = build_opportunity_archive(opportunity_topics, existing_opportunities, current_date)
+    opportunity_archive = build_opportunity_archive(bookshelf_library, current_date)
     company_intelligence = build_company_intelligence(display_items)
     patents_research = build_patents_research(display_items)
     future_radar = build_future_radar(display_items)
@@ -1516,6 +1580,7 @@ def main() -> None:
             future_radar,
             research_insight_cards,
             insights,
+            bookshelf_library,
         )
     archives = collect_archive_data(today_payload, published_data, workspace_archive)
     save_json(statistics, STATISTICS_PATH)
@@ -1531,7 +1596,7 @@ def main() -> None:
         validation_pool,
         opportunity_domains,
         opportunity_topics,
-        opportunity_library,
+        bookshelf_library,
         emerging_topics,
         company_intelligence,
         patents_research,
