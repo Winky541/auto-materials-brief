@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ brand_en }} | {{ brand_cn }}</title>
+    <title>{{ brand_en }}</title>
     <link rel="stylesheet" href="/auto-materials-brief/assets/style.css">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="{{ root_prefix }}/index.html">
         <span>{{ brand_en }}</span>
-        <small>{{ brand_cn }}</small>
       </a>
       <nav class="top-nav">
         <span>Researcher's Workspace</span>
@@ -343,7 +342,6 @@
         <div class="team-room-inner">
           <div class="section-heading">
             <p class="eyebrow">Team Room</p>
-            <h2>团队记忆</h2>
           </div>
           <div class="team-room-scene" aria-label="Team members">
             <button class="team-room-member" type="button" data-team-profile="gou-zhi">
@@ -388,9 +386,9 @@
             name: "周强",
             status: "Former Member",
             role: "团队成员",
-            joined: "团队记忆",
+            joined: "过往成员",
             expertise: "材料研究、项目经验与技术传承",
-            experience: "曾参与团队研究工作，相关项目与贡献将以团队记忆的方式持续沉淀。"
+            experience: "曾参与团队研究工作，相关项目与贡献将持续沉淀。"
           },
           "gou-zhi": {
             name: "苟智",
@@ -406,7 +404,7 @@
             role: "团队成员",
             joined: "当前团队成员",
             expertise: "前瞻跟踪、材料机会分析与研究表达",
-            experience: "参与当前研究工作，将趋势观察、材料机会和方法工具整理为更清晰的团队记忆。"
+            experience: "参与当前研究工作，将趋势观察、材料机会和方法工具整理为更清晰的团队资料。"
           }
         };
 
@@ -469,7 +467,7 @@
         });
       })();
     </script>
-    <script type="module" src="{{ asset_prefix }}/studio3d.js?v=20260628-team-room-v2"></script>
+    <script type="module" src="{{ asset_prefix }}/studio3d.js?v=20260628-team-room-v3"></script>
     {% include "_metric_modal.html.j2" %}
   </body>
 </html>

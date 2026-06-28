@@ -137,7 +137,7 @@ mesh(new THREE.BoxGeometry(0.26, 1.25, 0.26), material(colors.darkWood, 0.7), [-
 mesh(new THREE.BoxGeometry(0.26, 1.25, 0.26), material(colors.darkWood, 0.7), [3.9, 0.22, 1.36]);
 
 const windowGroup = createGroup("future-signals", "Window · Future Signals");
-windowGroup.position.set(2.45, 2.9, -2.92);
+windowGroup.position.set(1.55, 2.9, -2.92);
 const outsideSky = new THREE.Mesh(new THREE.PlaneGeometry(2.18, 1.42), flatMaterial(0xbfd8df, 1));
 outsideSky.position.z = -0.085;
 windowGroup.add(outsideSky);
@@ -204,7 +204,7 @@ sunPatch.position.set(1.9, 0.012, -0.1);
 sunPatch.rotation.set(-Math.PI / 2, 0, -0.28);
 scene.add(sunPatch);
 const windowLight = new THREE.RectAreaLight(0xfff0d0, 2.6, 2.2, 1.35);
-windowLight.position.set(2.45, 2.65, -2.45);
+windowLight.position.set(1.55, 2.65, -2.45);
 windowLight.lookAt(0.6, 1.1, 0.8);
 scene.add(windowLight);
 
@@ -381,7 +381,7 @@ function createCapsulePerson(options) {
 }
 
 const teamRoomDoor = createGroup("team-room", "Team Room");
-teamRoomDoor.position.set(3.48, 1.28, -2.88);
+teamRoomDoor.position.set(3.62, 1.05, -2.88);
 teamRoomDoor.rotation.y = -0.035;
 const doorPanel = new THREE.Mesh(new THREE.BoxGeometry(1.02, 1.82, 0.08), material(0xd9c6a4, 0.66));
 doorPanel.position.set(0, 0, 0.04);
