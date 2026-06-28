@@ -34,6 +34,7 @@ BACKLOG_PATH = DATA_DIR / "backlog.json"
 INSIGHTS_PATH = DATA_DIR / "insights.json"
 STATISTICS_PATH = ASSETS_DIR / "statistics.json"
 OPPORTUNITIES_PATH = ASSETS_DIR / "opportunities.json"
+CURRENT_ITEMS_PATH = ASSETS_DIR / "current_items.json"
 WORKSPACE_ARCHIVE_PATH = DATA_DIR / "workspace_archive.json"
 METHODOLOGY_PATH = DOCS_DIR / "about-methodology.html"
 BRAND_EN = "AURA"
@@ -114,6 +115,79 @@ RESEARCH_DIRECTIONS = [
     {"name": "复合材料", "key": "composites", "keywords": ["复合材料", "碳纤维", "cfrp", "composite"]},
     {"name": "机器人材料", "key": "robotics-materials", "keywords": ["robot", "humanoid", "具身智能", "机器人"]},
     {"name": "低空飞行材料", "key": "low-altitude-materials", "keywords": ["evtol", "flying car", "低空", "飞行汽车", "航空"]},
+]
+
+MATERIAL_FLOW_KEYWORDS = [
+    "automotive material",
+    "汽车材料",
+    "新材料",
+    "new energy vehicle",
+    "新能源汽车",
+    "battery material",
+    "电池材料",
+    "metal",
+    "金属材料",
+    "polymer",
+    "高分子",
+    "engineering plastic",
+    "工程塑料",
+    "rubber",
+    "橡胶",
+    "composite",
+    "复合材料",
+    "surface engineering",
+    "表面工程",
+    "functional material",
+    "功能材料",
+    "supplier",
+    "供应商",
+    "patent",
+    "专利",
+    "paper",
+    "论文",
+    "journal",
+    "standard",
+    "标准",
+    "validation",
+    "验证",
+    "material_opportunity",
+    "material relevance",
+]
+
+FUTURE_FLOW_KEYWORDS = [
+    "ai",
+    "artificial intelligence",
+    "机器人",
+    "robot",
+    "humanoid",
+    "具身智能",
+    "embodied",
+    "低空经济",
+    "evtol",
+    "flying car",
+    "ai hardware",
+    "automation",
+    "自动化",
+    "advanced manufacturing",
+    "先进制造",
+    "energy revolution",
+    "能源革命",
+    "fusion",
+    "核聚变",
+    "space",
+    "空间产业",
+    "brain-computer",
+    "脑机接口",
+    "future career",
+    "未来职业",
+    "organization",
+    "组织变革",
+    "innovation",
+    "创新方法",
+    "first principles",
+    "第一性原理",
+    "business model",
+    "商业模式",
 ]
 
 ACTION_ORDER = ["持续跟踪", "供应商调研", "联合开发", "启动验证", "前瞻储备", "暂不优先"]
@@ -380,6 +454,11 @@ def load_insights(path: Path = INSIGHTS_PATH) -> list[dict[str, str]]:
                 "focus": str(item.get("focus") or "关注技术变化如何转化为材料需求。").strip(),
                 "reading_time": str(item.get("reading_time") or "约 10 分钟").strip(),
                 "url": url,
+                "flow_type": "future_intelligence",
+                "primary_flow": "future_intelligence",
+                "secondary_flow": "",
+                "reason_for_flow": "Curated long-form article for future trend reading.",
+                "module_targets": ["weekly_insights"],
             }
         )
     return normalized[:2]
@@ -409,6 +488,62 @@ def _combined_item_text(item: dict[str, Any]) -> str:
     for key in ("technology_driver", "material_relevance", "material_opportunity", "validation_opportunity", "future_signal"):
         values.append(str(item.get(key) or ""))
     return " ".join(values).casefold()
+
+
+def flow_tags_for_item(item: dict[str, Any]) -> dict[str, Any]:
+    """Classify one item into AURA's Material/Future intelligence flows."""
+    text = _combined_item_text(item)
+    source_type = str(item.get("source_type") or "").casefold()
+    original_category = str(item.get("category") or "")
+    material_score = int(item.get("material_opportunity_score", item.get("material_validation_score", 0)) or 0)
+    future_score = int(item.get("future_signal_score", 0) or 0)
+
+    material_hit = (
+        material_score > 0
+        or original_category in FOCUS_CATEGORY_ORDER
+        or source_type in {"company_news_page", "journal_rss", "government_policy"}
+        or any(_keyword_matches(text, keyword) for keyword in MATERIAL_FLOW_KEYWORDS)
+    )
+    future_hit = (
+        future_score > 0
+        or any(_keyword_matches(text, keyword) for keyword in FUTURE_FLOW_KEYWORDS)
+    )
+
+    if not material_hit and not future_hit:
+        material_hit = True
+
+    flows: list[str] = []
+    if material_hit:
+        flows.append("material_intelligence")
+    if future_hit:
+        flows.append("future_intelligence")
+
+    if material_hit and future_hit:
+        primary_flow = "material_intelligence" if material_score >= future_score else "future_intelligence"
+        secondary_flow = "future_intelligence" if primary_flow == "material_intelligence" else "material_intelligence"
+        reason = "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。"
+    elif material_hit:
+        primary_flow = "material_intelligence"
+        secondary_flow = ""
+        reason = "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。"
+    else:
+        primary_flow = "future_intelligence"
+        secondary_flow = ""
+        reason = "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。"
+
+    module_targets: list[str] = []
+    if "material_intelligence" in flows:
+        module_targets.extend(["today_key_insight", "bookshelf", "suggested_actions"])
+    if "future_intelligence" in flows:
+        module_targets.extend(["future_signals"])
+
+    return {
+        "flow_type": primary_flow,
+        "primary_flow": primary_flow,
+        "secondary_flow": secondary_flow,
+        "reason_for_flow": reason,
+        "module_targets": module_targets,
+    }
 
 
 def auto_category(item: dict[str, Any]) -> str:
@@ -561,6 +696,7 @@ def prepare_display_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         current["pipeline_status"] = action_meta["pipeline"]
         if current.get("trend_potential") not in {"高", "中", "低", "不确定"}:
             current["trend_potential"] = "不确定"
+        current.update(flow_tags_for_item(current))
         current["original_category"] = current.get("category", "")
         current["category"] = auto_category(current)
         current["source_tier"] = source_tier(current)
@@ -798,6 +934,27 @@ def build_opportunity_archive(
                 "items": domain.get("items", []),
             }
             for domain in bookshelf_library
+        ],
+    }
+
+
+def build_current_items_export(items: list[dict[str, Any]], current_date: str) -> dict[str, Any]:
+    """Export current-cycle items with flow assignment for verification/debugging."""
+    return {
+        "updated_at": current_date,
+        "items": [
+            {
+                "title": item.get("title", ""),
+                "url": item.get("url", ""),
+                "source": item.get("source", ""),
+                "published_date": item.get("published_date", ""),
+                "flow_type": item.get("flow_type", ""),
+                "primary_flow": item.get("primary_flow", ""),
+                "secondary_flow": item.get("secondary_flow", ""),
+                "reason_for_flow": item.get("reason_for_flow", ""),
+                "module_targets": item.get("module_targets", []),
+            }
+            for item in items
         ],
     }
 
@@ -1681,7 +1838,7 @@ def main() -> None:
     insights = load_insights()
     today_items = _as_items(today_payload)
     reset_archive = bool(today_payload.get("reset_archive"))
-    if reset_archive or not today_items:
+    if reset_archive:
         insights = []
 
     if not today_items and not reset_archive:
@@ -1690,22 +1847,32 @@ def main() -> None:
         return
 
     display_items = prepare_display_items(today_items)
-    category_sections = build_category_sections(display_items)
+    material_items = [
+        item
+        for item in display_items
+        if item.get("primary_flow") == "material_intelligence" or item.get("secondary_flow") == "material_intelligence"
+    ]
+    future_items = [
+        item
+        for item in display_items
+        if item.get("primary_flow") == "future_intelligence" or item.get("secondary_flow") == "future_intelligence"
+    ]
+    category_sections = build_category_sections(material_items)
     existing_opportunities = load_json(OPPORTUNITIES_PATH, {"topics": []})
-    opportunity_topics = build_opportunity_topics(display_items)
-    opportunity_domains = build_opportunity_domains(display_items, opportunity_topics)
+    opportunity_topics = build_opportunity_topics(material_items)
+    opportunity_domains = build_opportunity_domains(material_items, opportunity_topics)
     current_date = today_payload.get("date") or datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
-    bookshelf_library = build_bookshelf_library(display_items)
+    bookshelf_library = build_bookshelf_library(material_items)
     opportunity_library = build_opportunity_library(opportunity_topics, existing_opportunities, current_date)
     emerging_topics = build_emerging_topics(opportunity_topics, existing_opportunities, current_date)
     opportunity_archive = build_opportunity_archive(bookshelf_library, current_date)
-    company_intelligence = build_company_intelligence(display_items)
-    patents_research = build_patents_research(display_items)
-    future_radar = build_future_radar(display_items)
+    company_intelligence = build_company_intelligence(material_items)
+    patents_research = build_patents_research(material_items)
+    future_radar = build_future_radar(future_items)
     validation_pool = build_palette_from_opportunity_library(opportunity_library, current_date)
-    statistics = build_statistics(display_items, analyzed_items, backlog_items)
-    insight = build_research_insight(display_items, statistics)
-    research_insight_cards = build_research_insight_cards(display_items, statistics)
+    statistics = build_statistics(material_items, analyzed_items, backlog_items)
+    insight = build_research_insight(material_items, statistics)
+    research_insight_cards = build_research_insight_cards(material_items, statistics)
     if reset_archive:
         workspace_archive = {"updated_at": current_date, "items": []}
     else:
@@ -1721,6 +1888,7 @@ def main() -> None:
     archives = collect_archive_data(today_payload, published_data, workspace_archive)
     save_json(statistics, STATISTICS_PATH)
     save_json(opportunity_archive, OPPORTUNITIES_PATH)
+    save_json(build_current_items_export(display_items, current_date), CURRENT_ITEMS_PATH)
     save_json(workspace_archive, WORKSPACE_ARCHIVE_PATH)
 
     env = _env()

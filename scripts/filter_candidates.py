@@ -13,7 +13,7 @@ import logging
 import re
 import hashlib
 from copy import deepcopy
-from datetime import datetime
+from datetime import datetime, timedelta
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
@@ -32,6 +32,18 @@ DEFAULT_MIN_RULE_SCORE = 35
 DEFAULT_MAX_FILTERED_NEWS = 20
 DEFAULT_MAX_TITLE_SIMILARITY = 0.88
 REPOST_DOMAINS = {"yahoo.com", "msn.com", "aol.com"}
+AGGREGATOR_DOMAINS = {"bing.com", "google.com", "news.google.com"}
+CLUE_DOMAINS = {
+    "reddit.com",
+    "quora.com",
+    "medium.com",
+    "substack.com",
+    "toutiao.com",
+    "baijiahao.baidu.com",
+    "zhihu.com",
+    "mp.weixin.qq.com",
+}
+DISALLOWED_FINAL_DOMAINS = REPOST_DOMAINS | AGGREGATOR_DOMAINS | CLUE_DOMAINS
 TITLE_SUFFIX_PATTERN = re.compile(
     r"\s*[-_|]\s*(?:Yahoo|MSN|AOL|Reuters|Bloomberg|36Kr|36氪|盖世汽车|汽车之家|财联社|界面新闻|澎湃新闻|钛媒体)\s*$",
     re.IGNORECASE,
@@ -131,6 +143,111 @@ MATERIAL_TECH_KEYWORDS = [
     "低碳钢",
     "低碳铝",
 ]
+MATERIAL_TECH_KEYWORDS.extend(
+    [
+        "ultra-high-strength steel",
+        "hot stamping steel",
+        "die casting",
+        "integrated die casting",
+        "metal joining",
+        "PP",
+        "PE",
+        "ABS",
+        "PC",
+        "PA",
+        "POM",
+        "PBT",
+        "PET",
+        "PPS",
+        "PPA",
+        "PEI",
+        "LCP",
+        "PI",
+        "PEEK",
+        "TPU",
+        "TPE",
+        "EPDM",
+        "NBR",
+        "HNBR",
+        "FKM",
+        "silicone rubber",
+        "engineering plastics",
+        "high performance plastics",
+        "sealing material",
+        "vibration damping",
+        "foam material",
+        "NVH",
+        "SWIR",
+        "infrared",
+        "conductive material",
+        "EMI shielding",
+        "flexible electronics",
+        "electronic skin",
+        "thermal interface material",
+        "TIM",
+        "bipolar plate",
+        "electrolyzer",
+        "hydrogen storage",
+        "PIR",
+        "PCR",
+        "bio-based material",
+        "programmable material",
+        "adaptive material",
+        "AI for Materials",
+        "materials foundation model",
+        "space material",
+        "extreme environment material",
+        "超高强钢",
+        "热成形钢",
+        "铜合金",
+        "金属连接",
+        "一体化压铸",
+        "增材制造金属",
+        "工程塑料",
+        "高性能塑料",
+        "硅橡胶",
+        "密封材料",
+        "减振材料",
+        "发泡材料",
+        "NVH材料",
+        "红外",
+        "传感材料",
+        "导电材料",
+        "EMI屏蔽",
+        "柔性电子",
+        "电子皮肤",
+        "智能表面",
+        "热界面材料",
+        "TIM材料",
+        "储氢材料",
+        "双极板",
+        "电堆",
+        "电解槽",
+        "电池回收",
+        "防腐",
+        "耐磨",
+        "防污",
+        "防冰",
+        "低摩擦涂层",
+        "功能涂层",
+        "PCR",
+        "PIR",
+        "生物基材料",
+        "循环材料",
+        "可降解材料",
+        "可持续材料",
+        "4D打印",
+        "仿生材料",
+        "材料大模型",
+        "数字材料",
+        "量子材料",
+        "核聚变材料",
+        "空间材料",
+        "极端环境材料",
+        "可编程材料",
+        "自适应材料",
+    ]
+)
 
 COMPANY_KEYWORDS = [
     "Toyota",
@@ -202,8 +319,92 @@ INDUSTRIALIZATION_KEYWORDS = [
     "路线图",
     "装车",
 ]
+INDUSTRIALIZATION_KEYWORDS.extend(
+    [
+        "sampling",
+        "sample delivery",
+        "joint development",
+        "co-development",
+        "customer validation",
+        "vehicle-grade",
+        "automotive grade",
+        "reliability test",
+        "white paper",
+        "送样",
+        "验证",
+        "合作",
+        "联合开发",
+        "供应商",
+        "主机厂",
+        "试点",
+        "导入",
+        "扩产",
+        "白皮书",
+        "测试",
+        "客户验证",
+        "车规级",
+        "可靠性",
+    ]
+)
+
+FUTURE_INTELLIGENCE_KEYWORDS = [
+    "AI Agent",
+    "AI Hardware",
+    "humanoid robot",
+    "embodied AI",
+    "low-altitude economy",
+    "eVTOL",
+    "automation",
+    "advanced manufacturing",
+    "nuclear fusion",
+    "space economy",
+    "brain-computer interface",
+    "future of work",
+    "organization transformation",
+    "first principles",
+    "business model innovation",
+    "energy transition",
+    "robotics",
+    "OpenAI",
+    "NVIDIA",
+    "Tesla Optimus",
+    "Figure AI",
+    "具身智能",
+    "人形机器人",
+    "低空经济",
+    "飞行汽车",
+    "AI硬件",
+    "脑机接口",
+    "核聚变",
+    "空间产业",
+    "未来职业",
+    "组织变革",
+    "第一性原理",
+    "商业模式创新",
+    "能源革命",
+    "未来产业",
+    "innovation",
+    "创新",
+    "research",
+    "科学家",
+]
+FUTURE_SOURCE_KEYWORDS = [
+    "OpenAI",
+    "Anthropic",
+    "NVIDIA",
+    "Google Research",
+    "DeepMind",
+    "MIT Technology Review",
+    "Stanford HAI",
+    "麦肯锡",
+    "BCG",
+    "哈佛商业评论",
+    "晚点",
+    "远川",
+]
 
 CATEGORY_RULES: dict[str, list[str]] = {
+    "未来趋势观察": FUTURE_INTELLIGENCE_KEYWORDS,
     "专利情报": ["patent", "专利"],
     "政策法规与标准": ["standard", "regulation", "approval", "标准", "法规", "认证"],
     "学术论文": [
@@ -674,6 +875,55 @@ def is_current_month(date_value: str, timezone_name: str = "Asia/Shanghai") -> b
     return published.year == now.year and published.month == now.month
 
 
+def _domain(url: str | None) -> str:
+    return urlparse(str(url or "")).netloc.lower().removeprefix("www.")
+
+
+def _domain_matches(domain: str, candidates: set[str]) -> bool:
+    return any(domain == candidate or domain.endswith(f".{candidate}") for candidate in candidates)
+
+
+def is_disallowed_final_url(url: str | None) -> bool:
+    """Reject aggregator, repost, clue, and social writing domains as final links."""
+    return _domain_matches(_domain(url), DISALLOWED_FINAL_DOMAINS)
+
+
+def is_long_window_item(item: dict[str, Any]) -> bool:
+    """Papers, patents, and standards may use a 90-day freshness window."""
+    text = normalize_text(_text_for_item(item) + " " + str(item.get("source") or "") + " " + str(item.get("source_type") or ""))
+    return any(
+        keyword in text
+        for keyword in (
+            "paper",
+            "journal",
+            "patent",
+            "standard",
+            "nature",
+            "science",
+            "ieee",
+            "sae",
+            "wipo",
+            "cnipa",
+            "论文",
+            "期刊",
+            "专利",
+            "标准",
+        )
+    )
+
+
+def is_allowed_date_for_item(item: dict[str, Any], timezone_name: str = "Asia/Shanghai") -> bool:
+    """Prefer current month; allow 90 days for papers, patents, and standards."""
+    try:
+        published = datetime.strptime(str(item.get("published_date")), "%Y-%m-%d").date()
+    except ValueError:
+        return False
+    now = datetime.now(ZoneInfo(timezone_name)).date()
+    if is_long_window_item(item):
+        return now - timedelta(days=90) <= published <= now
+    return published.year == now.year and published.month == now.month
+
+
 def normalize_text(value: str | None) -> str:
     """Normalize text for matching and title similarity checks."""
     if not value:
@@ -706,6 +956,64 @@ def _clean_url(url: str | None) -> str:
             "",
         )
     )
+
+
+def attach_flow_fields(item: dict[str, Any]) -> dict[str, Any]:
+    """Attach AURA information-flow fields at candidate stage."""
+    text = _text_for_item(item)
+    material_direct = bool(
+        detect_material_keywords(item)
+        or detect_companies(item)
+        or str(item.get("source_type") or "") in {"company_news_page", "journal_rss", "government_policy"}
+    )
+    future_source = str(item.get("source_group") or "") == "future_intelligence" or bool(
+        _matched_keywords(str(item.get("source") or ""), FUTURE_SOURCE_KEYWORDS)
+    )
+    future_hit = bool(_matched_keywords(text, FUTURE_INTELLIGENCE_KEYWORDS)) or future_source
+    material_hit = material_direct
+    if not material_hit and not future_hit:
+        material_hit = True
+    material_score = int(item.get("material_opportunity_score", item.get("material_validation_score", 0)) or 0)
+    future_score = int(item.get("future_signal_score", 0) or 0)
+    if future_hit and not material_direct:
+        item["future_signal_score"] = max(future_score, 72 if future_source else 62)
+        item["material_opportunity_score"] = min(material_score, 30)
+        item["material_validation_score"] = min(int(item.get("material_validation_score", material_score) or 0), 30)
+        primary_flow = "future_intelligence"
+        secondary_flow = ""
+    elif material_hit and future_hit:
+        primary_flow = "material_intelligence" if material_score >= future_score else "future_intelligence"
+        secondary_flow = "future_intelligence" if primary_flow == "material_intelligence" else "material_intelligence"
+    elif future_hit:
+        primary_flow = "future_intelligence"
+        secondary_flow = ""
+    else:
+        primary_flow = "material_intelligence"
+        secondary_flow = ""
+    module_targets: list[str] = []
+    if primary_flow == "material_intelligence" or secondary_flow == "material_intelligence":
+        module_targets.extend(["today_key_insight", "bookshelf", "suggested_actions"])
+    if primary_flow == "future_intelligence" or secondary_flow == "future_intelligence":
+        module_targets.extend(["future_signals"])
+    item["flow_type"] = primary_flow
+    item["primary_flow"] = primary_flow
+    item["secondary_flow"] = secondary_flow
+    if primary_flow == "material_intelligence":
+        item["material_opportunity_score"] = max(
+            int(item.get("material_opportunity_score", 0) or 0),
+            min(100, int(item.get("future_signal_score", 0) or 0) + 1),
+        )
+        item["material_validation_score"] = max(
+            int(item.get("material_validation_score", 0) or 0),
+            item["material_opportunity_score"],
+        )
+    item["reason_for_flow"] = (
+        "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。"
+        if primary_flow == "material_intelligence"
+        else "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。"
+    )
+    item["module_targets"] = module_targets
+    return item
 
 
 def canonical_url(url: str | None) -> str:
@@ -756,6 +1064,8 @@ def _contains_keyword(text: str, keyword: str) -> bool:
     """Keyword matching helper for English and Chinese terms."""
     normalized = normalize_text(text)
     normalized_keyword = normalize_text(keyword)
+    if re.fullmatch(r"[a-z0-9]{1,4}", normalized_keyword):
+        return re.search(rf"(?<![a-z0-9]){re.escape(normalized_keyword)}(?![a-z0-9])", normalized) is not None
     return bool(normalized_keyword and normalized_keyword in normalized)
 
 
@@ -811,11 +1121,13 @@ def calculate_relevance_score(item: dict[str, Any]) -> tuple[int, str]:
     material_matches = _matched_keywords(text, MATERIAL_TECH_KEYWORDS)
     company_matches = detect_companies(item)
     industrial_matches = _matched_keywords(text, INDUSTRIALIZATION_KEYWORDS)
+    future_matches = _matched_keywords(text, FUTURE_INTELLIGENCE_KEYWORDS)
 
     automotive_points = min(20, len(automotive_matches) * 5)
     material_points = min(25, len(material_matches) * 4)
     company_points = min(15, len(company_matches) * 5)
     industrial_points = min(10, len(industrial_matches) * 3)
+    future_points = min(25, len(future_matches) * 5)
     current_month_points = 5
 
     total = min(
@@ -825,6 +1137,7 @@ def calculate_relevance_score(item: dict[str, Any]) -> tuple[int, str]:
         + material_points
         + company_points
         + industrial_points
+        + future_points
         + current_month_points,
     )
 
@@ -834,6 +1147,7 @@ def calculate_relevance_score(item: dict[str, Any]) -> tuple[int, str]:
         f"materials={material_points} ({', '.join(material_matches[:5]) or 'none'}); "
         f"companies={company_points} ({', '.join(company_matches[:4]) or 'none'}); "
         f"industrial={industrial_points} ({', '.join(industrial_matches[:4]) or 'none'}); "
+        f"future={future_points} ({', '.join(future_matches[:4]) or 'none'}); "
         f"current_month={current_month_points}"
     )
     return int(total), reason
@@ -873,18 +1187,18 @@ def filter_and_rank_candidates(
         published_date = str(raw_item.get("published_date") or "").strip()
         url = _clean_url(raw_item.get("url"))
 
-        if not title or not published_date or not url:
+        if not title or not published_date or not url or is_disallowed_final_url(url):
             skipped_missing += 1
-            continue
-
-        if not is_current_month(published_date, timezone_name):
-            skipped_month += 1
             continue
 
         item = deepcopy(raw_item)
         item["title"] = title
         item["published_date"] = published_date
         item["url"] = url
+
+        if not is_allowed_date_for_item(item, timezone_name):
+            skipped_month += 1
+            continue
 
         rule_score, filter_reason = calculate_relevance_score(item)
         if rule_score < min_rule_score:
@@ -900,6 +1214,7 @@ def filter_and_rank_candidates(
         lifecycle = infer_lifecycle_stage(item)
         item.update(lifecycle)
         item["suggested_action"] = item["stage"]
+        item = attach_flow_fields(item)
         item["filter_reason"] = filter_reason
         item["needs_ai_analysis"] = True
         item["canonical_url"] = canonical_url(url)

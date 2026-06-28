@@ -501,6 +501,358 @@ source_groups:
       credibility_level: medium
       original_source_preferred: false
 
+  material_level_1_official:
+    - name: 吉利汽车新闻中心
+      source_type: company_news_page
+      url: https://zgh.com/media-center/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: 长安汽车新闻中心
+      source_type: company_news_page
+      url: https://www.changan.com.cn/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: 广汽集团新闻中心
+      source_type: company_news_page
+      url: https://www.gac.com.cn/cn/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: 上汽集团新闻中心
+      source_type: company_news_page
+      url: https://www.saicmotor.com/chinese/xwzx/index.shtml
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: 奇瑞汽车新闻中心
+      source_type: company_news_page
+      url: https://www.chery.cn/brand/news/
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+    - name: 弗迪电池
+      source_type: company_news_page
+      url: https://www.findreams.com/news
+      source_score: 88
+      credibility_level: high
+      original_source_preferred: true
+    - name: Continental Newsroom
+      source_type: company_news_page
+      url: https://www.continental.com/en/press/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: ZF Newsroom
+      source_type: company_news_page
+      url: https://press.zf.com/press/en/releases/releases.html
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: Magna Newsroom
+      source_type: company_news_page
+      url: https://www.magna.com/company/newsroom
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: Covestro Newsroom
+      source_type: company_news_page
+      url: https://www.covestro.com/press
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: SABIC News
+      source_type: company_news_page
+      url: https://www.sabic.com/en/newsandmedia
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: DuPont News
+      source_type: company_news_page
+      url: https://www.dupont.com/news.html
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: 3M News
+      source_type: company_news_page
+      url: https://news.3m.com/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: Teijin News
+      source_type: company_news_page
+      url: https://www.teijin.com/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: Mitsubishi Chemical News
+      source_type: company_news_page
+      url: https://www.mcgc.com/english/news/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: Solvay News
+      source_type: company_news_page
+      url: https://www.solvay.com/en/press-release
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: Victrex News
+      source_type: company_news_page
+      url: https://www.victrex.com/en/news
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+    - name: Celanese News
+      source_type: company_news_page
+      url: https://www.celanese.com/news
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+
+  material_professional_media:
+    - name: 车云网
+      source_type: professional_media
+      url: https://www.cheyun.com/
+      source_score: 66
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 电动汽车百人会
+      source_type: professional_media
+      url: https://www.chinaev100.org/
+      source_score: 76
+      credibility_level: high
+      original_source_preferred: true
+    - name: 第一电动网
+      source_type: professional_media
+      url: https://www.d1ev.com/news
+      source_score: 70
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 汽车商业评论
+      source_type: professional_media
+      url: https://www.autobizreview.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 亿欧汽车
+      source_type: professional_media
+      url: https://www.iyiou.com/c/auto
+      source_score: 66
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 雷峰网汽车科技
+      source_type: professional_media
+      url: https://www.leiphone.com/category/transportation
+      source_score: 66
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 智驾网
+      source_type: professional_media
+      url: https://www.zhinengqiche.com/
+      source_score: 66
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 赛博汽车
+      source_type: professional_media
+      url: https://www.cyber-car.com/
+      source_score: 66
+      credibility_level: medium
+      original_source_preferred: false
+
+  material_energy_media:
+    - name: 储能与电力市场
+      source_type: professional_media
+      url: https://www.escn.com.cn/
+      source_score: 70
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 新能源产业家
+      source_type: professional_media
+      url: https://www.inengyuan.com/
+      source_score: 66
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 氢云链
+      source_type: professional_media
+      url: https://www.h2weilai.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 势银能链
+      source_type: professional_media
+      url: https://www.trendbank.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 中国氢能联盟
+      source_type: professional_media
+      url: https://h2cn.org.cn/
+      source_score: 76
+      credibility_level: high
+      original_source_preferred: true
+
+  material_manufacturing_media:
+    - name: DT新材料
+      source_type: professional_media
+      url: https://www.dtnewmaterials.com/
+      source_score: 70
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 材视界
+      source_type: professional_media
+      url: https://www.cailiaoshijie.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 中国复合材料学会
+      source_type: professional_media
+      url: https://www.cscomposites.org/
+      source_score: 78
+      credibility_level: high
+      original_source_preferred: true
+    - name: 中国塑料加工工业协会
+      source_type: professional_media
+      url: https://www.cppia.com.cn/
+      source_score: 78
+      credibility_level: high
+      original_source_preferred: true
+    - name: 中国橡胶工业协会
+      source_type: professional_media
+      url: https://www.cria.org.cn/
+      source_score: 78
+      credibility_level: high
+      original_source_preferred: true
+    - name: 中国胶粘剂和胶粘带工业协会
+      source_type: professional_media
+      url: https://www.cnaia.org/
+      source_score: 76
+      credibility_level: high
+      original_source_preferred: true
+    - name: 中国表面工程协会
+      source_type: professional_media
+      url: http://www.csea1991.org/
+      source_score: 76
+      credibility_level: high
+      original_source_preferred: true
+    - name: 粉体网
+      source_type: professional_media
+      url: https://www.cnpowder.com.cn/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+    - name: OFweek 新材料
+      source_type: professional_media
+      url: https://www.ofweek.com/newmaterial/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+    - name: OFweek 锂电
+      source_type: professional_media
+      url: https://libattery.ofweek.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 电子工程专辑
+      source_type: professional_media
+      url: https://www.eet-china.com/
+      source_score: 68
+      credibility_level: medium
+      original_source_preferred: false
+
+  future_intelligence:
+    - name: OpenAI Blog
+      source_type: rss
+      url: https://openai.com/news/rss.xml
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: Anthropic News
+      source_type: company_news_page
+      url: https://www.anthropic.com/news
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+    - name: NVIDIA Blog
+      source_type: rss
+      url: https://blogs.nvidia.com/feed/
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+    - name: Google Research Blog
+      source_type: rss
+      url: https://research.google/blog/rss/
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+    - name: DeepMind Blog
+      source_type: rss
+      url: https://deepmind.google/discover/blog/rss.xml
+      source_score: 84
+      credibility_level: high
+      original_source_preferred: true
+    - name: MIT Technology Review 中文版
+      source_type: professional_media
+      url: https://www.mittrchina.com/
+      source_score: 78
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 麦肯锡中国
+      source_type: professional_media
+      url: https://www.mckinsey.com.cn/
+      source_score: 78
+      credibility_level: high
+      original_source_preferred: true
+    - name: BCG 中国
+      source_type: professional_media
+      url: https://www.bcg.com/zh-cn/
+      source_score: 76
+      credibility_level: high
+      original_source_preferred: true
+    - name: 哈佛商业评论中文版
+      source_type: professional_media
+      url: https://www.hbrchina.org/
+      source_score: 74
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 晚点 LatePost
+      source_type: professional_media
+      url: https://www.latepost.com/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 远川研究所
+      source_type: professional_media
+      url: https://www.yuanchuan.cn/
+      source_score: 72
+      credibility_level: medium
+      original_source_preferred: false
+    - name: 民航局
+      source_type: government_policy
+      url: https://www.caac.gov.cn/XWZX/
+      source_score: 86
+      credibility_level: high
+      original_source_preferred: true
+    - name: 中国航空学会
+      source_type: professional_media
+      url: https://www.csaa.org.cn/
+      source_score: 78
+      credibility_level: high
+      original_source_preferred: true
+    - name: Stanford HAI
+      source_type: rss
+      url: https://hai.stanford.edu/news/rss.xml
+      source_score: 82
+      credibility_level: high
+      original_source_preferred: true
+    - name: Fraunhofer
+      source_type: rss
+      url: https://www.fraunhofer.de/en/rss/rss-press.rss
+      source_score: 82
+      credibility_level: high
+      original_source_preferred: true
+
   clue_platforms:
     - name: 今日头条
       source_type: clue_platform
@@ -531,48 +883,63 @@ source_groups:
       original_source_preferred: false
 
 bing_news_queries:
-  - query: automotive materials battery fast charging
-    source_group: future_trends
-    source_score: 62
-  - query: solid state battery Toyota Nissan Honda
-    source_group: future_trends
-    source_score: 65
-  - query: sodium ion battery vehicle
-    source_group: future_trends
-    source_score: 62
-  - query: carbon fiber automotive lightweight
-    source_group: future_trends
-    source_score: 62
-  - query: SiC GaN power semiconductor electric vehicle
-    source_group: future_trends
-    source_score: 65
-  - query: battery thermal management aerogel EV
-    source_group: future_trends
-    source_score: 62
-  - query: robotics humanoid robot embodied AI mobility
-    source_group: future_trends
-    source_score: 60
-  - query: eVTOL flying car low altitude economy
-    source_group: future_trends
-    source_score: 60
-  - query: smart manufacturing automotive materials
-    source_group: future_trends
-    source_score: 60
-  - query: future mobility autonomous driving vehicle sensor
-    source_group: future_trends
-    source_score: 60
-  - query: hydrogen mobility fuel cell vehicle
-    source_group: future_trends
-    source_score: 60
-  - query: 汽车 新材料 轻量化
-    source_group: future_trends
-    source_score: 60
-  - query: 汽车 固态电池 钠离子电池
-    source_group: future_trends
-    source_score: 60
-  - query: 低空经济 eVTOL 飞行汽车
-    source_group: future_trends
-    source_score: 58
-  - query: 人形机器人 具身智能 汽车 制造
-    source_group: future_trends
-    source_score: 58
+  - query: automotive materials validation supplier patent standard
+    source_group: material_intelligence
+    source_score: 52
+  - query: solid state battery electrolyte separator vehicle official
+    source_group: material_intelligence
+    source_score: 55
+  - query: sodium ion battery automotive mass production supplier
+    source_group: material_intelligence
+    source_score: 54
+  - query: CFRP GFRP CFRTP SMC GMT automotive lightweight
+    source_group: material_intelligence
+    source_score: 52
+  - query: PP PA PEEK TPU EPDM automotive materials
+    source_group: material_intelligence
+    source_score: 50
+  - query: SiC GaN power module packaging thermal interface automotive
+    source_group: material_intelligence
+    source_score: 54
+  - query: battery thermal management aerogel TIM EV
+    source_group: material_intelligence
+    source_score: 52
+  - query: hydrogen fuel cell bipolar plate storage tank automotive
+    source_group: material_intelligence
+    source_score: 52
+  - query: 汽车 新材料 量产 送样 验证 供应商
+    source_group: material_intelligence
+    source_score: 52
+  - query: 固态电池 钠离子电池 电池材料 专利 标准
+    source_group: material_intelligence
+    source_score: 54
+  - query: 工程塑料 橡胶 密封材料 汽车
+    source_group: material_intelligence
+    source_score: 50
+  - query: 复合材料 碳纤维 低空飞行器 储氢
+    source_group: material_intelligence
+    source_score: 50
+  - query: AI Agent AI Hardware robotics future industry
+    source_group: future_intelligence
+    source_score: 48
+  - query: humanoid robot embodied AI Tesla Optimus Figure AI
+    source_group: future_intelligence
+    source_score: 50
+  - query: eVTOL low-altitude economy flying car policy
+    source_group: future_intelligence
+    source_score: 48
+  - query: nuclear fusion space economy brain-computer interface
+    source_group: future_intelligence
+    source_score: 48
+  - query: organization transformation future of work first principles innovation
+    source_group: future_intelligence
+    source_score: 46
+  - query: 具身智能 人形机器人 AI硬件 未来产业
+    source_group: future_intelligence
+    source_score: 48
+  - query: 低空经济 飞行汽车 eVTOL 产业政策
+    source_group: future_intelligence
+    source_score: 48
+  - query: 核聚变 空间产业 脑机接口 未来职业
+    source_group: future_intelligence
+    source_score: 46

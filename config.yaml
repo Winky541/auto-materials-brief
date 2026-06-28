@@ -4,6 +4,10 @@ limits:
   max_ai_analysis: 8
   daily_publish_min: 5
   daily_publish_max: 10
+  material_publish_min: 5
+  material_publish_max: 10
+  future_publish_min: 3
+  future_publish_max: 5
   recent_priority_days: 14
   backlog_max_size: 300
   min_rule_score: 35

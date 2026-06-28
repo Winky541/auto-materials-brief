@@ -59,6 +59,7 @@ ORIGINAL_SOURCE_TYPES = {
     "government_policy",
 }
 REPOST_DOMAINS = ("msn.com", "aol.com", "yahoo.com")
+AGGREGATOR_DOMAINS = ("bing.com", "google.com", "news.google.com")
 CLUE_DOMAINS = (
     "toutiao.com",
     "baijiahao.baidu.com",
@@ -66,6 +67,7 @@ CLUE_DOMAINS = (
     "mp.weixin.qq.com",
     "weixin.qq.com",
 )
+DISALLOWED_FINAL_DOMAINS = REPOST_DOMAINS + AGGREGATOR_DOMAINS + CLUE_DOMAINS
 TRACKING_PARAMS_PREFIXES = ("utm_",)
 TRACKING_PARAMS = {
     "fbclid",
@@ -280,6 +282,11 @@ def _domain_matches(domain: str, candidates: tuple[str, ...]) -> bool:
     return any(domain == candidate or domain.endswith(f".{candidate}") for candidate in candidates)
 
 
+def is_disallowed_final_url(url: str | None) -> bool:
+    """Return True for aggregator, repost, or clue domains that must not be final links."""
+    return _domain_matches(_domain(url), DISALLOWED_FINAL_DOMAINS)
+
+
 def _score_cap(source_type: str, url: str | None, score: int) -> int:
     domain = _domain(url)
     if source_type == "clue_platform" or _domain_matches(domain, CLUE_DOMAINS):
@@ -309,7 +316,7 @@ def _credibility_level(source_type: str, url: str | None, configured: str | None
 def _original_preferred(source: dict[str, Any], url: str | None) -> bool:
     source_type = str(source.get("source_type") or "")
     domain = _domain(url)
-    if source_type == "clue_platform" or _domain_matches(domain, CLUE_DOMAINS + REPOST_DOMAINS):
+    if source_type == "clue_platform" or _domain_matches(domain, CLUE_DOMAINS + REPOST_DOMAINS + AGGREGATOR_DOMAINS):
         return False
     if "original_source_preferred" in source:
         return bool(source.get("original_source_preferred"))
@@ -322,18 +329,30 @@ def _base_fields(
     timezone_name: str,
 ) -> dict[str, Any]:
     source_type = str(source.get("source_type") or source.get("type") or "rss")
+    source_group = str(source.get("source_group") or "ungrouped")
+    primary_flow = "future_intelligence" if source_group == "future_intelligence" else "material_intelligence"
+    module_targets = (
+        ["future_signals"]
+        if primary_flow == "future_intelligence"
+        else ["today_key_insight", "bookshelf", "suggested_actions"]
+    )
     score = int(source.get("source_score", 0) or 0)
     score = _score_cap(source_type, url, score)
     return {
         "source": str(source.get("name") or "Unknown source"),
         "collected_at": datetime.now(ZoneInfo(timezone_name)).isoformat(timespec="seconds"),
         "source_type": source_type,
-        "source_group": str(source.get("source_group") or "ungrouped"),
+        "source_group": source_group,
         "source_score": score,
         "credibility_level": _credibility_level(
             source_type, url, source.get("credibility_level")
         ),
         "original_source_preferred": _original_preferred(source, url),
+        "flow_type": primary_flow,
+        "primary_flow": primary_flow,
+        "secondary_flow": "",
+        "reason_for_flow": "Initial source-group flow assignment before keyword filtering.",
+        "module_targets": module_targets,
         "related_sources": [],
     }
 
@@ -387,7 +406,7 @@ def fetch_rss_source(
         entry_url = clean_url(entry.get("link"), url)
         published_date = _entry_date(entry, timezone_name)
 
-        if not title or not entry_url or not published_date:
+        if not title or not entry_url or not published_date or is_disallowed_final_url(entry_url):
             skipped += 1
             continue
         if not is_allowed_date_for_source(published_date, source, timezone_name):
@@ -511,7 +530,7 @@ def fetch_html_source(
             title = " ".join(link_node.get_text(" ").split()) if link_node else ""
         published_date = _extract_date_from_element(candidate, date_selector, timezone_name)
 
-        if not title or not link or not published_date:
+        if not title or not link or not published_date or is_disallowed_final_url(link):
             skipped += 1
             continue
         if not is_allowed_date_for_source(published_date, source, timezone_name):
@@ -584,7 +603,7 @@ def fetch_bing_news_rss(
         entry_url = clean_url(entry.get("link"))
         published_date = _entry_date(entry, timezone_name)
 
-        if not title or not entry_url or not published_date:
+        if not title or not entry_url or not published_date or is_disallowed_final_url(entry_url):
             skipped += 1
             continue
         if not is_allowed_date_for_source(published_date, source_template, timezone_name):

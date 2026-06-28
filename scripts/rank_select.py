@@ -14,7 +14,7 @@ import os
 import re
 import hashlib
 from copy import deepcopy
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
@@ -35,11 +35,28 @@ PUBLISHED_EVENTS_PATH = PROJECT_ROOT / "data" / "published_events.json"
 
 DEFAULT_DAILY_PUBLISH_MIN = 5
 DEFAULT_DAILY_PUBLISH_MAX = 10
+DEFAULT_MATERIAL_PUBLISH_MIN = 5
+DEFAULT_MATERIAL_PUBLISH_MAX = 10
+DEFAULT_FUTURE_PUBLISH_MIN = 3
+DEFAULT_FUTURE_PUBLISH_MAX = 5
 DEFAULT_BACKLOG_MAX_SIZE = 300
 DEFAULT_MAX_TITLE_SIMILARITY = 0.88
 DEFAULT_MIN_FINAL_SCORE = 35
 RELAXED_MIN_FINAL_SCORE = 25
 DEFAULT_RECENT_PRIORITY_DAYS = 14
+REPOST_DOMAINS = {"yahoo.com", "msn.com", "aol.com"}
+AGGREGATOR_DOMAINS = {"bing.com", "google.com", "news.google.com"}
+CLUE_DOMAINS = {
+    "reddit.com",
+    "quora.com",
+    "medium.com",
+    "substack.com",
+    "toutiao.com",
+    "baijiahao.baidu.com",
+    "zhihu.com",
+    "mp.weixin.qq.com",
+}
+DISALLOWED_FINAL_DOMAINS = REPOST_DOMAINS | AGGREGATOR_DOMAINS | CLUE_DOMAINS
 REFRESH_ANALYSIS_FIELDS = [
     "summary",
     "technical_points",
@@ -66,6 +83,11 @@ REFRESH_ANALYSIS_FIELDS = [
     "stage",
     "stage_reason",
     "analysis_status",
+    "flow_type",
+    "primary_flow",
+    "secondary_flow",
+    "reason_for_flow",
+    "module_targets",
 ]
 
 DIVERSITY_CATEGORIES = [
@@ -226,6 +248,98 @@ def ensure_material_opportunity_fields(item: dict[str, Any]) -> dict[str, Any]:
     current["material_opportunity_score"] = _int_0_100(
         current.get("material_opportunity_score", current["material_validation_score"])
     )
+    current = ensure_flow_fields(current)
+    return current
+
+
+def ensure_flow_fields(item: dict[str, Any]) -> dict[str, Any]:
+    """Ensure AURA flow fields survive ranking even if AI output omitted them."""
+    current = deepcopy(item)
+    if current.get("primary_flow") in {"material_intelligence", "future_intelligence"}:
+        current.setdefault("flow_type", current["primary_flow"])
+        current.setdefault("secondary_flow", "")
+        current.setdefault("reason_for_flow", "")
+        current.setdefault("module_targets", [])
+        if current["primary_flow"] == "material_intelligence":
+            current["material_opportunity_score"] = max(
+                _int_0_100(current.get("material_opportunity_score", 0)),
+                min(100, _int_0_100(current.get("future_signal_score", 0)) + 1),
+            )
+            current["material_validation_score"] = max(
+                _int_0_100(current.get("material_validation_score", 0)),
+                current["material_opportunity_score"],
+            )
+        return current
+
+    material_score = _int_0_100(current.get("material_opportunity_score", current.get("material_validation_score", 0)))
+    future_score = _int_0_100(current.get("future_signal_score", 0))
+    text = normalize_title(_combined_text(current))
+    future_source = str(current.get("source_group") or "") == "future_intelligence" or any(
+        marker.casefold() in str(current.get("source") or "").casefold()
+        for marker in ("OpenAI", "Anthropic", "NVIDIA", "Google Research", "DeepMind", "MIT Technology Review", "Stanford HAI", "麦肯锡", "BCG", "哈佛商业评论", "晚点", "远川")
+    )
+    future_hit = any(
+        keyword in text
+        for keyword in (
+            "ai",
+            "robot",
+            "humanoid",
+            "evtol",
+            "automation",
+            "fusion",
+            "space",
+            "具身智能",
+            "人形机器人",
+            "低空经济",
+            "核聚变",
+            "空间产业",
+            "未来产业",
+            "innovation",
+            "创新",
+            "research",
+            "科学家",
+        )
+    ) or future_source
+    material_hit = material_score > 0 or bool(current.get("materials_involved") or current.get("detected_material_keywords"))
+    has_direct_material = bool(current.get("materials_involved") or current.get("detected_material_keywords"))
+    if future_hit and not has_direct_material:
+        primary = "future_intelligence"
+        secondary = ""
+        current["future_signal_score"] = max(future_score, 72 if future_source else 62)
+        current["material_opportunity_score"] = min(material_score, 30)
+        current["material_validation_score"] = min(_int_0_100(current.get("material_validation_score", material_score)), 30)
+    elif future_hit and material_hit:
+        primary = "material_intelligence" if material_score >= future_score else "future_intelligence"
+        secondary = "future_intelligence" if primary == "material_intelligence" else "material_intelligence"
+    elif future_hit:
+        primary = "future_intelligence"
+        secondary = ""
+    else:
+        primary = "material_intelligence"
+        secondary = ""
+    targets: list[str] = []
+    if primary == "material_intelligence" or secondary == "material_intelligence":
+        targets.extend(["today_key_insight", "bookshelf", "suggested_actions"])
+    if primary == "future_intelligence" or secondary == "future_intelligence":
+        targets.append("future_signals")
+    current["flow_type"] = primary
+    current["primary_flow"] = primary
+    current["secondary_flow"] = secondary
+    if primary == "material_intelligence":
+        current["material_opportunity_score"] = max(
+            _int_0_100(current.get("material_opportunity_score", 0)),
+            min(100, _int_0_100(current.get("future_signal_score", 0)) + 1),
+        )
+        current["material_validation_score"] = max(
+            _int_0_100(current.get("material_validation_score", 0)),
+            current["material_opportunity_score"],
+        )
+    current["reason_for_flow"] = (
+        "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。"
+        if primary == "material_intelligence"
+        else "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。"
+    )
+    current["module_targets"] = targets
     return current
 
 
@@ -238,6 +352,10 @@ def load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
             "limits": {
                 "daily_publish_min": DEFAULT_DAILY_PUBLISH_MIN,
                 "daily_publish_max": DEFAULT_DAILY_PUBLISH_MAX,
+                "material_publish_min": DEFAULT_MATERIAL_PUBLISH_MIN,
+                "material_publish_max": DEFAULT_MATERIAL_PUBLISH_MAX,
+                "future_publish_min": DEFAULT_FUTURE_PUBLISH_MIN,
+                "future_publish_max": DEFAULT_FUTURE_PUBLISH_MAX,
                 "backlog_max_size": DEFAULT_BACKLOG_MAX_SIZE,
                 "max_title_similarity": DEFAULT_MAX_TITLE_SIMILARITY,
             },
@@ -250,6 +368,10 @@ def load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
     config.setdefault("limits", {})
     config["limits"].setdefault("daily_publish_min", DEFAULT_DAILY_PUBLISH_MIN)
     config["limits"].setdefault("daily_publish_max", DEFAULT_DAILY_PUBLISH_MAX)
+    config["limits"].setdefault("material_publish_min", DEFAULT_MATERIAL_PUBLISH_MIN)
+    config["limits"].setdefault("material_publish_max", DEFAULT_MATERIAL_PUBLISH_MAX)
+    config["limits"].setdefault("future_publish_min", DEFAULT_FUTURE_PUBLISH_MIN)
+    config["limits"].setdefault("future_publish_max", DEFAULT_FUTURE_PUBLISH_MAX)
     config["limits"].setdefault("backlog_max_size", DEFAULT_BACKLOG_MAX_SIZE)
     config["limits"].setdefault("max_title_similarity", DEFAULT_MAX_TITLE_SIMILARITY)
     config["limits"].setdefault("recent_priority_days", DEFAULT_RECENT_PRIORITY_DAYS)
@@ -280,6 +402,54 @@ def is_current_month(date_value: str, timezone_name: str = "Asia/Shanghai") -> b
     except ValueError:
         return False
     now = datetime.now(ZoneInfo(timezone_name)).date()
+    return published.year == now.year and published.month == now.month
+
+
+def _domain(url: str | None) -> str:
+    return urlparse(str(url or "")).netloc.lower().removeprefix("www.")
+
+
+def _domain_matches(domain: str, candidates: set[str]) -> bool:
+    return any(domain == candidate or domain.endswith(f".{candidate}") for candidate in candidates)
+
+
+def is_disallowed_final_url(url: str | None) -> bool:
+    """Reject aggregator, repost, clue, and social writing domains as final links."""
+    return _domain_matches(_domain(url), DISALLOWED_FINAL_DOMAINS)
+
+
+def is_long_window_item(item: dict[str, Any]) -> bool:
+    text = normalize_title(_combined_text(item) + " " + str(item.get("source") or "") + " " + str(item.get("source_type") or ""))
+    return any(
+        keyword in text
+        for keyword in (
+            "paper",
+            "journal",
+            "patent",
+            "standard",
+            "nature",
+            "science",
+            "ieee",
+            "sae",
+            "wipo",
+            "cnipa",
+            "论文",
+            "期刊",
+            "专利",
+            "标准",
+        )
+    )
+
+
+def is_allowed_date_for_item(item: dict[str, Any], timezone_name: str = "Asia/Shanghai") -> bool:
+    """Prefer current month; allow 90 days for papers, patents, and standards."""
+    try:
+        published = datetime.strptime(str(item.get("published_date")), "%Y-%m-%d").date()
+    except ValueError:
+        return False
+    now = datetime.now(ZoneInfo(timezone_name)).date()
+    if is_long_window_item(item):
+        return now - timedelta(days=90) <= published <= now
     return published.year == now.year and published.month == now.month
 
 
@@ -581,12 +751,14 @@ def update_published_events(
 def remove_published_event_items(
     items: list[dict[str, Any]],
     events_data: Any,
+    current_date: str | None = None,
 ) -> tuple[list[dict[str, Any]], int]:
     """Remove candidates whose event has already been published before."""
     published_ids = {
         str(event.get("event_id"))
         for event in _extract_published_events(events_data)
         if event.get("event_id") and event.get("published", True)
+        and (not current_date or event.get("last_seen") != current_date)
     }
     remaining = []
     removed = 0
@@ -749,8 +921,9 @@ def _valid_item(item: dict[str, Any], timezone_name: str) -> bool:
     return bool(
         str(item.get("title") or "").strip()
         and normalize_url(item.get("url"))
+        and not is_disallowed_final_url(item.get("url"))
         and str(item.get("published_date") or "").strip()
-        and is_current_month(str(item.get("published_date")), timezone_name)
+        and is_allowed_date_for_item(item, timezone_name)
     )
 
 
@@ -761,7 +934,12 @@ def select_today_items(
     limits = config.get("limits", {})
     timezone_name = config.get("timezone", "Asia/Shanghai")
     daily_min = int(limits.get("daily_publish_min", DEFAULT_DAILY_PUBLISH_MIN))
+    material_min = int(limits.get("material_publish_min", DEFAULT_MATERIAL_PUBLISH_MIN))
+    material_max = int(limits.get("material_publish_max", DEFAULT_MATERIAL_PUBLISH_MAX))
+    future_min = int(limits.get("future_publish_min", DEFAULT_FUTURE_PUBLISH_MIN))
+    future_max = int(limits.get("future_publish_max", DEFAULT_FUTURE_PUBLISH_MAX))
     daily_max = int(limits.get("daily_publish_max", DEFAULT_DAILY_PUBLISH_MAX))
+    daily_max = max(daily_max, min(material_max, DEFAULT_MATERIAL_PUBLISH_MAX) + min(future_max, DEFAULT_FUTURE_PUBLISH_MAX))
     recent_days = int(limits.get("recent_priority_days", DEFAULT_RECENT_PRIORITY_DAYS))
     max_title_similarity = float(limits.get("max_title_similarity", DEFAULT_MAX_TITLE_SIMILARITY))
 
@@ -797,8 +975,21 @@ def select_today_items(
     selected_urls: set[str] = set()
     seen_categories: set[str] = set()
 
+    def flow_bucket(item: dict[str, Any]) -> str:
+        return "future_intelligence" if item.get("primary_flow") == "future_intelligence" else "material_intelligence"
+
+    def flow_count(flow: str) -> int:
+        return sum(1 for item in selected if flow_bucket(item) == flow)
+
+    def can_add_item(item: dict[str, Any]) -> bool:
+        flow = flow_bucket(item)
+        if flow == "future_intelligence":
+            return flow_count(flow) < future_max
+        return flow_count(flow) < material_max
+
     def add_item(item: dict[str, Any]) -> None:
         item = deepcopy(item)
+        item = ensure_flow_fields(item)
         item["final_score"] = calculate_final_score(item, seen_categories)
         selected.append(item)
         selected_urls.add(item["url"])
@@ -811,19 +1002,20 @@ def select_today_items(
         category_items = [
             item for item in strong_recent if item.get("category") == category and item.get("url") not in selected_urls
         ]
+        category_items = [item for item in category_items if can_add_item(item)]
         if category_items:
             add_item(category_items[0])
 
     for item in strong_recent:
         if len(selected) >= daily_max:
             break
-        if item.get("url") not in selected_urls:
+        if item.get("url") not in selected_urls and can_add_item(item):
             add_item(item)
 
     for item in strong_older:
         if len(selected) >= daily_max:
             break
-        if item.get("url") not in selected_urls:
+        if item.get("url") not in selected_urls and can_add_item(item):
             add_item(item)
 
     relaxed_used = 0
@@ -836,15 +1028,16 @@ def select_today_items(
         for item in relaxed_recent:
             if len(selected) >= daily_min or len(selected) >= daily_max:
                 break
-            if item.get("url") not in selected_urls:
+            if item.get("url") not in selected_urls and can_add_item(item):
                 add_item(item)
                 relaxed_used += 1
 
-    if len(selected) < daily_min:
+    if len(selected) < daily_min or flow_count("material_intelligence") < material_min or flow_count("future_intelligence") < future_min:
         logging.warning(
-            "Only %s items selected, below daily_publish_min=%s; not filling with low-quality old news.",
+            "Only %s items selected (material=%s, future=%s); not filling with low-quality old news.",
             len(selected),
-            daily_min,
+            flow_count("material_intelligence"),
+            flow_count("future_intelligence"),
         )
 
     selected.sort(
@@ -875,6 +1068,8 @@ def select_today_items(
         "recent_priority_days": recent_days,
         "strong_recent_candidates": len(strong_recent),
         "strong_older_candidates": len(strong_older),
+        "selected_material_intelligence": flow_count("material_intelligence"),
+        "selected_future_intelligence": flow_count("future_intelligence"),
     }
     return selected, backlog_candidates, stats
 
@@ -1057,6 +1252,9 @@ def main() -> None:
         [item for item in analyzed_data if isinstance(item, dict)],
         filtered_data,
     )
+    if not analyzed_items and isinstance(filtered_data, list):
+        logging.warning("news_analyzed.json has no items; using filtered candidates as conservative ranking input.")
+        analyzed_items = [ensure_material_opportunity_fields(item) for item in filtered_data if isinstance(item, dict)]
     success_items = _success_current_month_items(analyzed_items, timezone_name)
     if reusable_previous_selection:
         reusable_previous_selection, _ = refresh_existing_selection_with_success_analysis(
@@ -1119,7 +1317,7 @@ def main() -> None:
         _selection_url_set(existing_today),
     )
     logging.info("Already published items removed: %s.", removed_published)
-    unpublished_items, removed_events = remove_published_event_items(unpublished_items, published_events_data)
+    unpublished_items, removed_events = remove_published_event_items(unpublished_items, published_events_data, today)
     logging.info("Already published event items removed: %s.", removed_events)
 
     selected_items, backlog_candidates, selection_stats = select_today_items(unpublished_items, config)
@@ -1127,7 +1325,7 @@ def main() -> None:
         logging.warning(
             "No items selected after published URL filtering; retrying from analyzed/backlog candidates while preserving event filtering."
         )
-        retry_items, retry_removed_events = remove_published_event_items(merged_items, published_events_data)
+        retry_items, retry_removed_events = remove_published_event_items(merged_items, published_events_data, today)
         logging.info("Already published event items removed during retry: %s.", retry_removed_events)
         selected_items, backlog_candidates, selection_stats = select_today_items(retry_items, config)
     logging.info("Non-current-month or invalid items removed: %s.", selection_stats["removed_non_current"])
