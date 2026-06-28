@@ -171,50 +171,50 @@ OPPORTUNITY_DOMAINS = [
     {
         "domain": "Metal Materials",
         "zh": "金属材料",
-        "description": "高强钢、超高强钢、热成形钢、铝合金、镁合金、钛合金、铜合金、高导热金属、轻量化金属、金属连接技术、金属增材制造",
-        "keywords": ["metal", "金属", "steel", "钢", "高强钢", "超高强钢", "热成形钢", "aluminum", "aluminium", "铝合金", "magnesium", "镁合金", "titanium", "钛合金", "copper", "铜合金", "高导热金属", "轻量化金属", "金属连接", "焊接", "metal additive", "金属增材"],
+        "description": "高强钢、热成形钢、铝合金、镁合金、钛合金、铜合金、增材制造金属、连接技术",
+        "keywords": ["metal", "金属", "steel", "钢", "高强钢", "热成形钢", "aluminum", "aluminium", "铝合金", "magnesium", "镁合金", "titanium", "钛合金", "copper", "铜合金", "additive manufacturing metal", "metal additive", "增材制造金属", "金属增材", "joining", "connection", "连接技术", "金属连接", "焊接"],
     },
     {
-        "domain": "Polymer & Engineering Plastics",
-        "zh": "高分子与工程塑料",
-        "description": "PP、PE、ABS、PC、PA、POM、PBT、PET、PPO、PPS、PPA、PEI、LCP、PI、PEEK、TPU、TPE、高温工程塑料、连接器材料、机器人减重材料",
-        "keywords": ["polymer", "plastic", "engineering plastic", "高分子", "工程塑料", "pp", "pe", "abs", "pc", "pa", "pom", "pbt", "pet", "ppo", "pps", "ppa", "pei", "lcp", "pi", "peek", "tpu", "tpe", "高温工程塑料", "连接器材料", "机器人减重"],
+        "domain": "Polymer & Elastomer Materials",
+        "zh": "高分子与弹性体材料",
+        "description": "PP、PE、ABS、PC、PA、POM、PBT、PET、PPS、PEEK、LCP、PI、TPU、TPE、EPDM、NBR、HNBR、FKM、硅橡胶、机器人轻量化材料",
+        "keywords": ["polymer", "plastic", "engineering plastic", "elastomer", "rubber", "高分子", "工程塑料", "弹性体", "橡胶", "pp", "pe", "abs", "pc", "pa", "pom", "pbt", "pet", "pps", "peek", "lcp", "pi", "tpu", "tpe", "epdm", "nbr", "hnbr", "fkm", "silicone rubber", "硅橡胶", "机器人轻量化", "机器人减重"],
     },
     {
         "domain": "Composite Materials",
         "zh": "复合材料",
-        "description": "碳纤维、玻璃纤维、玄武岩纤维、SMC、GMT、CFRTP、热塑复材、天然纤维复材、低空飞行结构材料、氢气储罐复材",
-        "keywords": ["composite", "复合材料", "carbon fiber", "碳纤维", "glass fiber", "玻璃纤维", "basalt fiber", "玄武岩纤维", "smc", "gmt", "cfrp", "cfrtp", "热塑复材", "天然纤维", "低空飞行结构", "氢气储罐", "储氢瓶"],
+        "description": "CFRP、GFRP、CFRTP、GMT、SMC、天然纤维复材、低空飞行器复材、储氢复材",
+        "keywords": ["composite", "复合材料", "cfrp", "gfrp", "cfrtp", "gmt", "smc", "carbon fiber", "碳纤维", "glass fiber", "玻璃纤维", "natural fiber", "天然纤维", "低空飞行器复材", "低空飞行结构", "evtol composite", "储氢复材", "hydrogen storage composite", "氢气储罐", "储氢瓶"],
     },
     {
         "domain": "Functional Materials",
         "zh": "功能材料",
-        "description": "SWIR、红外、传感材料、导热材料、导电材料、EMI屏蔽、柔性电子、压电材料、磁性材料、光学材料、智能表面、电子皮肤",
-        "keywords": ["functional", "功能材料", "swir", "infrared", "红外", "sensor", "传感", "导热", "thermal", "导电", "emi", "屏蔽", "flexible electronics", "柔性电子", "piezoelectric", "压电", "magnetic", "磁性", "optical", "光学", "智能表面", "电子皮肤"],
+        "description": "SWIR、红外材料、导热材料、导电材料、EMI屏蔽、压电材料、磁性材料、柔性电子、电子皮肤、智能表面",
+        "keywords": ["functional", "功能材料", "swir", "infrared", "红外材料", "红外", "导热", "thermal", "导电", "conductive", "emi", "屏蔽", "piezoelectric", "压电", "magnetic", "磁性", "flexible electronics", "柔性电子", "electronic skin", "电子皮肤", "smart surface", "智能表面"],
     },
     {
         "domain": "Energy Materials",
         "zh": "能源材料",
-        "description": "锂离子电池、固态电池、钠离子电池、锂金属电池、燃料电池、氢能材料、储能材料、正极材料、负极材料、电解液、隔膜、双极板、热失控防护、电池结构材料",
-        "keywords": ["battery", "电池", "energy storage", "储能", "lithium-ion", "锂离子", "solid-state", "固态电池", "sodium-ion", "钠离子", "lithium metal", "锂金属", "fuel cell", "燃料电池", "hydrogen", "氢能", "正极", "负极", "electrolyte", "电解液", "电解质", "separator", "隔膜", "双极板", "thermal runaway", "热失控", "电池结构"],
+        "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
+        "keywords": ["battery", "电池", "energy storage", "储能", "lithium-ion", "锂离子", "solid-state", "固态电池", "sodium-ion", "钠离子", "fuel cell", "燃料电池", "hydrogen", "氢能", "hydrogen storage", "储氢", "electrolyzer", "电解槽", "battery recycling", "电池回收", "thermal management", "热管理材料", "热管理"],
     },
     {
         "domain": "Surface Engineering",
         "zh": "表面工程",
-        "description": "涂层、PVD、CVD、电镀、阳极氧化、耐磨、防腐、防冰、防污、自修复涂层、低摩擦表面、功能化表面",
-        "keywords": ["surface", "表面", "coating", "涂层", "pvd", "cvd", "plating", "电镀", "anodizing", "阳极氧化", "wear", "耐磨", "corrosion", "防腐", "anti-icing", "防冰", "防污", "self-healing coating", "自修复涂层", "低摩擦", "功能化表面"],
+        "description": "电镀、PVD、CVD、功能涂层、防腐涂层、耐磨涂层、防污涂层、自修复涂层",
+        "keywords": ["surface", "表面", "coating", "涂层", "functional coating", "功能涂层", "pvd", "cvd", "plating", "电镀", "corrosion coating", "防腐涂层", "anti-corrosion", "防腐", "wear coating", "耐磨涂层", "耐磨", "anti-fouling", "防污涂层", "防污", "self-healing coating", "自修复涂层"],
     },
     {
         "domain": "Sustainable Materials",
         "zh": "绿色材料",
-        "description": "PCR、PIR、生物基塑料、可降解材料、循环材料、低碳材料、绿色钢铁、绿色铝、ESG材料、碳足迹优化",
-        "keywords": ["sustainable", "绿色材料", "可持续", "pcr", "pir", "bio-based", "生物基", "biodegradable", "可降解", "recycling", "回收", "循环材料", "low-carbon", "低碳", "绿色钢铁", "绿色铝", "esg", "碳足迹"],
+        "description": "PCR塑料、生物基塑料、天然纤维、循环材料、低碳材料、绿色制造",
+        "keywords": ["sustainable", "绿色材料", "可持续", "pcr", "pcr plastic", "pcr塑料", "bio-based plastic", "生物基塑料", "生物基", "natural fiber", "天然纤维", "recycled material", "循环材料", "recycling", "回收", "low-carbon", "低碳材料", "低碳", "green manufacturing", "绿色制造"],
     },
     {
         "domain": "Future Research Reserve",
         "zh": "前沿研究储备",
-        "description": "机器人材料、具身智能材料、AI Hardware材料、先进封装材料、低空经济材料、eVTOL材料、超材料、仿生材料、4D打印材料、量子材料、智能材料、自修复材料、数字材料、AI for Materials、材料大模型、未来汽车材料、下一代制造技术、核聚变材料、空间材料、极端环境材料",
-        "keywords": ["robot", "机器人", "humanoid", "具身智能", "ai hardware", "ai硬件", "advanced packaging", "先进封装", "low altitude", "低空经济", "evtol", "flying car", "飞行汽车", "metamaterial", "超材料", "biomimetic", "仿生", "4d printing", "4d打印", "quantum", "量子", "smart material", "智能材料", "self-healing", "自修复", "digital material", "数字材料", "ai for materials", "材料大模型", "未来汽车材料", "下一代制造", "fusion", "核聚变", "space material", "空间材料", "extreme environment", "极端环境"],
+        "description": "超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料",
+        "keywords": ["metamaterial", "超材料", "4d printing", "4d打印", "programmable material", "programmable materials", "可编程材料", "self-healing", "自修复材料", "biomimetic", "仿生材料", "ai for materials", "材料大模型", "digital material", "数字材料", "brain-computer", "bci", "脑机接口材料", "quantum", "量子材料", "fusion", "核聚变材料", "space material", "空间材料"],
     },
 ]
 OPPORTUNITY_TOPIC_RULES = [
@@ -1258,7 +1258,7 @@ def build_research_insight_cards(items: list[dict[str, Any]], statistics: dict[s
     """Build structured Research Insight blocks for the homepage."""
     if not items:
         return [
-            {"label": "What Changed", "text": "今日暂无达到发布条件的情报信号。"},
+            {"label": "What Changed", "text": "暂无达到发布条件的情报信号。"},
             {"label": "Why It Matters", "text": "当来源证据不足时，AURA 不会为了填充版面而生成判断。"},
             {"label": "Material Opportunity", "text": "建议继续观察当月候选池，并优先补充高可信来源。"},
         ]
@@ -1681,6 +1681,8 @@ def main() -> None:
     insights = load_insights()
     today_items = _as_items(today_payload)
     reset_archive = bool(today_payload.get("reset_archive"))
+    if reset_archive or not today_items:
+        insights = []
 
     if not today_items and not reset_archive:
         logging.warning("today_selected.json has no items; preserving existing site files.")

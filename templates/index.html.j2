@@ -105,7 +105,7 @@
           </article>
           {% else %}
           <article>
-            <strong>暂无独立未来技术信号</strong>
+            <strong>本期暂无 Future Signals。</strong>
             <span>未来信号不足时，AURA 不会用普通新闻填充窗外世界。</span>
           </article>
           {% endfor %}
@@ -172,6 +172,7 @@
           <h2>Suggested Actions</h2>
         </div>
         <div class="validation-pool">
+          {% if validation_pool | selectattr("count") | list %}
           {% for group in validation_pool %}
           <article style="--action-color: {{ group.color }}">
             <h3>{{ group.action }}</h3>
@@ -194,6 +195,12 @@
             </div>
           </article>
           {% endfor %}
+          {% else %}
+          <article>
+            <h3>本期暂无可生成建议的有效信号。</h3>
+            <span>Palette 只在有足够证据时生成研发建议。</span>
+          </article>
+          {% endif %}
         </div>
       </section>
 
@@ -213,10 +220,9 @@
           </article>
           {% else %}
           <article>
-            <div class="insight-meta">内容池</div>
-            <h3>Insights 内容池尚未配置</h3>
-            <p><strong>为什么值得读：</strong>该模块用于沉淀帮助研发人员理解变化背后原因的深度文章。</p>
-            <p><strong>建议关注：</strong>后续可从本地 JSON 或自动化来源补充精选内容。</p>
+            <div class="insight-meta">Cat</div>
+            <h3>本期暂无 Weekly Insights。</h3>
+            <p>Weekly Insights 只展示本期确认过的深度阅读内容。</p>
           </article>
           {% endfor %}
         </div>

@@ -4,56 +4,56 @@
     {
       "domain": "Metal Materials",
       "zh": "金属材料",
-      "description": "高强钢、超高强钢、热成形钢、铝合金、镁合金、钛合金、铜合金、高导热金属、轻量化金属、金属连接技术、金属增材制造",
+      "description": "高强钢、热成形钢、铝合金、镁合金、钛合金、铜合金、增材制造金属、连接技术",
       "count": 0,
       "items": []
     },
     {
-      "domain": "Polymer & Engineering Plastics",
-      "zh": "高分子与工程塑料",
-      "description": "PP、PE、ABS、PC、PA、POM、PBT、PET、PPO、PPS、PPA、PEI、LCP、PI、PEEK、TPU、TPE、高温工程塑料、连接器材料、机器人减重材料",
+      "domain": "Polymer & Elastomer Materials",
+      "zh": "高分子与弹性体材料",
+      "description": "PP、PE、ABS、PC、PA、POM、PBT、PET、PPS、PEEK、LCP、PI、TPU、TPE、EPDM、NBR、HNBR、FKM、硅橡胶、机器人轻量化材料",
       "count": 0,
       "items": []
     },
     {
       "domain": "Composite Materials",
       "zh": "复合材料",
-      "description": "碳纤维、玻璃纤维、玄武岩纤维、SMC、GMT、CFRTP、热塑复材、天然纤维复材、低空飞行结构材料、氢气储罐复材",
+      "description": "CFRP、GFRP、CFRTP、GMT、SMC、天然纤维复材、低空飞行器复材、储氢复材",
       "count": 0,
       "items": []
     },
     {
       "domain": "Functional Materials",
       "zh": "功能材料",
-      "description": "SWIR、红外、传感材料、导热材料、导电材料、EMI屏蔽、柔性电子、压电材料、磁性材料、光学材料、智能表面、电子皮肤",
+      "description": "SWIR、红外材料、导热材料、导电材料、EMI屏蔽、压电材料、磁性材料、柔性电子、电子皮肤、智能表面",
       "count": 0,
       "items": []
     },
     {
       "domain": "Energy Materials",
       "zh": "能源材料",
-      "description": "锂离子电池、固态电池、钠离子电池、锂金属电池、燃料电池、氢能材料、储能材料、正极材料、负极材料、电解液、隔膜、双极板、热失控防护、电池结构材料",
+      "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
       "count": 0,
       "items": []
     },
     {
       "domain": "Surface Engineering",
       "zh": "表面工程",
-      "description": "涂层、PVD、CVD、电镀、阳极氧化、耐磨、防腐、防冰、防污、自修复涂层、低摩擦表面、功能化表面",
+      "description": "电镀、PVD、CVD、功能涂层、防腐涂层、耐磨涂层、防污涂层、自修复涂层",
       "count": 0,
       "items": []
     },
     {
       "domain": "Sustainable Materials",
       "zh": "绿色材料",
-      "description": "PCR、PIR、生物基塑料、可降解材料、循环材料、低碳材料、绿色钢铁、绿色铝、ESG材料、碳足迹优化",
+      "description": "PCR塑料、生物基塑料、天然纤维、循环材料、低碳材料、绿色制造",
       "count": 0,
       "items": []
     },
     {
       "domain": "Future Research Reserve",
       "zh": "前沿研究储备",
-      "description": "机器人材料、具身智能材料、AI Hardware材料、先进封装材料、低空经济材料、eVTOL材料、超材料、仿生材料、4D打印材料、量子材料、智能材料、自修复材料、数字材料、AI for Materials、材料大模型、未来汽车材料、下一代制造技术、核聚变材料、空间材料、极端环境材料",
+      "description": "超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料",
       "count": 0,
       "items": []
     }
