@@ -1948,6 +1948,84 @@ a {
   padding-left: 18px;
 }
 
+.future-signal-card {
+  display: grid;
+  gap: 10px;
+}
+
+.future-signal-card p {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.signal-sources,
+.palette-evidence {
+  display: grid;
+  gap: 8px;
+}
+
+.signal-sources a,
+.palette-evidence a {
+  align-items: center;
+  border: 1px solid rgba(229, 226, 218, 0.92);
+  border-radius: 999px;
+  color: var(--text);
+  display: inline-grid;
+  font-size: 12px;
+  justify-self: start;
+  padding: 7px 10px;
+}
+
+.palette-brief {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.palette-brief p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.palette-brief p strong,
+.palette-evidence > strong {
+  color: var(--text);
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.palette-evidence {
+  border-top: 1px solid rgba(229, 226, 218, 0.88);
+  margin-top: 14px;
+  padding-top: 12px;
+}
+
+.palette-evidence a {
+  border-radius: 12px;
+  justify-self: stretch;
+  line-height: 1.35;
+  padding: 9px 10px;
+}
+
+.palette-evidence a span {
+  color: var(--text);
+  font-size: 12px;
+}
+
+.palette-evidence a em,
+.palette-evidence > span {
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+}
+
 .action-dot {
   background: var(--action-color, var(--green));
   border-radius: 999px;

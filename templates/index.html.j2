@@ -93,14 +93,20 @@
         </div>
         <div class="hotspot-grid">
           {% for radar in future_radar %}
-          <article>
+          <article class="future-signal-card">
             <strong>{{ radar.category }}</strong>
-            <span>{{ radar.count }} 条 · Future Signal {{ radar.avg_future_signal_score }} <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+            <span>Future Signal {{ radar.avg_future_signal_score }} <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+            <p>{{ radar.summary }}</p>
+            <div class="signal-sources">
+              {% for source in radar.sources %}
+              <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.source }} · 阅读原文</a>
+              {% endfor %}
+            </div>
           </article>
           {% else %}
           <article>
             <strong>暂无独立未来技术信号</strong>
-            <span>未来技术模块只在能回答材料机会时展示</span>
+            <span>未来信号不足时，AURA 不会用普通新闻填充窗外世界。</span>
           </article>
           {% endfor %}
         </div>
@@ -116,17 +122,6 @@
           <article>
             <strong>{{ row.label }}</strong>
             <p>{{ row.text }}</p>
-          </article>
-          {% endfor %}
-        </div>
-        <div class="highlight-list">
-          {% for item in items[:5] %}
-          <article>
-            <span>{{ item.source }} · {{ item.published_date }}</span>
-            <h3><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h3>
-            <p>Material Opportunity <button class="info-button compact" type="button" data-metric="material_opportunity" aria-label="查看Material Opportunity说明">ⓘ</button>: {{ item.material_opportunity }}</p>
-            <strong>Suggested Action <button class="info-button compact" type="button" data-metric="suggested_action" aria-label="查看Suggested Action说明">ⓘ</button>: {{ item.suggested_action_en }} / {{ item.suggested_action_zh }}</strong>
-            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">阅读原文</a>
           </article>
           {% endfor %}
         </div>
@@ -180,17 +175,23 @@
           {% for group in validation_pool %}
           <article style="--action-color: {{ group.color }}">
             <h3>{{ group.action }}</h3>
-            <span>{% if group.has_new %}<i class="action-dot" aria-label="本周期有新增内容"></i>{% endif %}{{ group.meaning }} · {{ group.count }} 条</span>
-            <ul>
-              {% for item in group["items"][:4] %}
-              <li>
-                <strong>{{ item.title }}</strong>
-                <small>{{ item.domain }} · Material Value {{ item.material_value }}{% if item.is_new %} · 本周期更新{% endif %}</small>
-              </li>
+            <span>{% if group.has_new %}<i class="action-dot" aria-label="本周期有新增内容"></i>{% endif %}{{ group.meaning }} · {{ group.count }} 个机会</span>
+            <div class="palette-brief">
+              <p><strong>AI Insight</strong>{{ group.ai_insight }}</p>
+              <p><strong>Why Now</strong>{{ group.why_now }}</p>
+              <p><strong>Suggested Move</strong>{{ group.suggested_move }}</p>
+            </div>
+            <div class="palette-evidence">
+              <strong>Evidence</strong>
+              {% for source in group.evidence %}
+              <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
+                <span>{{ source.title }}</span>
+                <em>{{ source.source }} · 阅读来源</em>
+              </a>
               {% else %}
-              <li>暂无</li>
+              <span>暂无足够来源证据。</span>
               {% endfor %}
-            </ul>
+            </div>
           </article>
           {% endfor %}
         </div>
@@ -204,7 +205,7 @@
         <div class="insights-grid">
           {% for article in insights %}
           <article>
-            <div class="insight-meta">{{ article.reading_time }}</div>
+            <div class="insight-meta">{{ article.source }} · {{ article.reading_time }}</div>
             <h3><a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a></h3>
             <p><strong>为什么值得读：</strong>{{ article.why_read }}</p>
             <p><strong>建议关注：</strong>{{ article.focus }}</p>
@@ -239,7 +240,11 @@
               <article>
                 <strong>Window / Future Signals</strong>
                 {% for signal in cycle.window %}
-                <span>{{ signal.category }} · {{ signal.count }} · Future Signal {{ signal.avg_future_signal_score }}</span>
+                <span>{{ signal.category }} · Future Signal {{ signal.avg_future_signal_score }}</span>
+                <span>{{ signal.summary }}</span>
+                {% for source in signal.sources %}
+                <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.source }} · 阅读原文</a>
+                {% endfor %}
                 {% else %}
                 <span>本周期暂无未来信号。</span>
                 {% endfor %}
@@ -253,9 +258,20 @@
               <article>
                 <strong>Cat / Weekly Insights</strong>
                 {% for article in cycle.cat %}
-                <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
+                <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.source }} · {{ article.title }}</a>
                 {% else %}
                 <span>本周期暂无精选长读。</span>
+                {% endfor %}
+              </article>
+              <article>
+                <strong>Palette / Suggested Actions</strong>
+                {% for group in cycle.palette %}
+                <span>{{ group.action }}：{{ group.suggested_move }}</span>
+                {% for source in group.evidence %}
+                <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.source }} · {{ source.title }}</a>
+                {% endfor %}
+                {% else %}
+                <span>本周期暂无行动建议。</span>
                 {% endfor %}
               </article>
               <article>

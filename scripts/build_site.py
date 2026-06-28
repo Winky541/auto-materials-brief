@@ -13,6 +13,7 @@ from collections import Counter, defaultdict
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -374,6 +375,7 @@ def load_insights(path: Path = INSIGHTS_PATH) -> list[dict[str, str]]:
         normalized.append(
             {
                 "title": title,
+                "source": str(item.get("source") or source_name_from_url(url)).strip(),
                 "why_read": str(item.get("why_read") or "帮助理解变化背后的原因。").strip(),
                 "focus": str(item.get("focus") or "关注技术变化如何转化为材料需求。").strip(),
                 "reading_time": str(item.get("reading_time") or "约 10 分钟").strip(),
@@ -381,6 +383,17 @@ def load_insights(path: Path = INSIGHTS_PATH) -> list[dict[str, str]]:
             }
         )
     return normalized[:2]
+
+
+def source_name_from_url(url: str) -> str:
+    """Infer a readable source name for curated Future Flow links."""
+    host = urlparse(url).netloc.replace("www.", "")
+    if not host:
+        return "External Source"
+    parts = host.split(".")
+    if len(parts) >= 2:
+        return parts[-2].upper() if parts[-2].lower() in {"iea", "mit", "bcg"} else parts[-2].title()
+    return host
 
 
 def _combined_item_text(item: dict[str, Any]) -> str:
@@ -947,15 +960,18 @@ def build_patents_research(items: list[dict[str, Any]]) -> dict[str, list[dict[s
 
 
 def build_future_radar(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Build future technology radar as signal categories, not opportunity topics."""
+    """Build 3-5 Future Flow signals from broad future-change indicators."""
     rules = [
-        ("Humanoid Robotics", ["humanoid", "robot", "机器人", "具身"]),
-        ("Low-altitude Economy", ["evtol", "flying car", "低空", "飞行汽车"]),
-        ("AI Hardware", ["ai hardware", "chip", "算力", "硬件"]),
+        ("Robotics & Embodied AI", ["humanoid", "robot", "机器人", "具身", "embodied"]),
+        ("Low-altitude Economy", ["evtol", "flying car", "低空", "飞行汽车", "air mobility"]),
+        ("AI Agent & AI Hardware", ["ai agent", "ai hardware", "chip", "算力", "agent", "硬件"]),
         ("Autonomous Driving", ["autonomous", "adas", "自动驾驶", "智能驾驶"]),
-        ("Smart Manufacturing", ["manufacturing", "制造", "3d printing", "增材"]),
-        ("New Energy Systems", ["hydrogen", "fuel cell", "氢能", "燃料电池", "energy storage", "v2g", "储能", "新能源系统"]),
+        ("Advanced Manufacturing & Automation", ["manufacturing", "automation", "制造", "3d printing", "增材", "自动化"]),
+        ("Energy Revolution", ["hydrogen", "fuel cell", "氢能", "燃料电池", "energy storage", "v2g", "储能", "新能源系统"]),
         ("Advanced Sensing", ["sensor", "lidar", "infrared", "swir", "感知", "红外"]),
+        ("Fusion & Frontier Energy", ["fusion", "nuclear fusion", "聚变", "核聚变"]),
+        ("Brain-computer Interface", ["brain-computer", "bci", "脑机"]),
+        ("Space Industry", ["space", "satellite", "aerospace", "空间", "卫星", "航天"]),
         ("Automotive Profit Shift", ["profit", "margin", "price war", "盈利", "利润", "价格战", "降价"]),
         ("OEM Strategy Transition", ["strategy", "restructure", "software-defined", "转型", "战略", "重组", "软件定义"]),
         ("Supply Chain Migration", ["supply chain", "localization", "reshoring", "产业链", "供应链", "本地化", "迁移"]),
@@ -965,6 +981,11 @@ def build_future_radar(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     for category, keywords in rules:
         matched = [item for item in items if any(keyword.casefold() in _combined_item_text(item) for keyword in keywords)]
         if matched:
+            matched.sort(
+                key=lambda item: int(item.get("future_signal_score", item.get("final_score", 0)) or 0),
+                reverse=True,
+            )
+            top = matched[0]
             rows.append(
                 {
                     "category": category,
@@ -972,6 +993,9 @@ def build_future_radar(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     "avg_future_signal_score": round(
                         sum(int(item.get("future_signal_score", 0) or 0) for item in matched) / len(matched)
                     ),
+                    "summary": future_signal_summary(category, matched),
+                    "sources": [_source_evidence(item) for item in matched[:3] if item.get("url")],
+                    "signal": str(top.get("future_signal") or top.get("technology_driver") or category),
                 }
             )
     rows.sort(key=lambda row: (row["avg_future_signal_score"], row["count"]), reverse=True)
@@ -979,6 +1003,7 @@ def build_future_radar(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         drivers = Counter(str(item.get("technology_driver") or "其他") for item in items)
         for driver, count in drivers.most_common(5):
             matched = [item for item in items if str(item.get("technology_driver") or "其他") == driver]
+            matched.sort(key=lambda item: int(item.get("future_signal_score", 0) or 0), reverse=True)
             rows.append(
                 {
                     "category": driver,
@@ -986,9 +1011,32 @@ def build_future_radar(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
                     "avg_future_signal_score": round(
                         sum(int(item.get("future_signal_score", 0) or 0) for item in matched) / max(len(matched), 1)
                     ),
+                    "summary": future_signal_summary(driver, matched),
+                    "sources": [_source_evidence(item) for item in matched[:3] if item.get("url")],
+                    "signal": driver,
                 }
             )
-    return rows[:7]
+    return rows[:5]
+
+
+def _source_evidence(item: dict[str, Any]) -> dict[str, str]:
+    """Return a compact source record for signal/evidence links."""
+    return {
+        "title": str(item.get("title") or "Untitled"),
+        "source": str(item.get("source") or "Unknown Source"),
+        "url": str(item.get("url") or ""),
+        "published_date": str(item.get("published_date") or ""),
+        "link_label": link_label_for_item(item),
+    }
+
+
+def future_signal_summary(category: str, matched: list[dict[str, Any]]) -> str:
+    """Create a short researcher-facing signal explanation."""
+    top = matched[0] if matched else {}
+    reason = str(top.get("why_it_matters") or top.get("impact_assessment") or "").strip()
+    if reason:
+        return reason[:120] + ("..." if len(reason) > 120 else "")
+    return f"{category} 出现新的产业、技术或资源流向信号，适合用于判断未来研发关注边界。"
 
 
 def build_validation_pool(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1017,7 +1065,7 @@ def build_palette_from_opportunity_library(
     opportunity_library: list[dict[str, Any]],
     current_date: str,
 ) -> list[dict[str, Any]]:
-    """Build persistent Palette stages from long-term Opportunities."""
+    """Build Palette as lifecycle insight groups, not another article list."""
     grouped: dict[str, list[dict[str, Any]]] = {status: [] for status in PIPELINE_ORDER}
     for domain in opportunity_library:
         for opportunity in list(domain.get("opportunities", [])) + list(domain.get("dormant_opportunities", [])):
@@ -1031,6 +1079,8 @@ def build_palette_from_opportunity_library(
                     "updated_at": opportunity.get("updated_at", ""),
                     "status": opportunity.get("status", "Active"),
                     "is_new": opportunity.get("updated_at") == current_date,
+                    "related_signals": opportunity.get("related_signals", []),
+                    "stage_reason": opportunity.get("stage_reason", ""),
                 }
             )
 
@@ -1045,10 +1095,82 @@ def build_palette_from_opportunity_library(
             ),
             reverse=True,
         )
-        groups.append({"action": action, "items": action_items, "count": len(action_items)})
-        groups[-1].update(PIPELINE_META.get(action, {}))
-        groups[-1]["has_new"] = any(item.get("is_new") for item in action_items)
+        evidence = palette_evidence(action_items)
+        group = {
+            "action": action,
+            "items": action_items,
+            "count": len(action_items),
+            "ai_insight": palette_ai_insight(action, action_items),
+            "why_now": palette_why_now(action, action_items),
+            "evidence": evidence,
+            "suggested_move": palette_suggested_move(action, action_items),
+        }
+        group.update(PIPELINE_META.get(action, {}))
+        group["has_new"] = any(item.get("is_new") for item in action_items)
+        groups.append(group)
     return groups
+
+
+def palette_evidence(action_items: list[dict[str, Any]]) -> list[dict[str, str]]:
+    """Collect 2-3 source links supporting a Palette-stage insight."""
+    evidence: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for item in action_items:
+        for signal in item.get("related_signals", []) or []:
+            if not isinstance(signal, dict):
+                continue
+            url = str(signal.get("url") or "").strip()
+            title = str(signal.get("title") or "").strip()
+            if not url or url in seen:
+                continue
+            seen.add(url)
+            evidence.append(
+                {
+                    "title": title or str(item.get("title") or "Evidence"),
+                    "source": str(signal.get("source") or "Unknown Source"),
+                    "url": url,
+                    "link_label": "阅读来源",
+                }
+            )
+            if len(evidence) >= 3:
+                return evidence
+    return evidence
+
+
+def palette_ai_insight(action: str, action_items: list[dict[str, Any]]) -> str:
+    """Summarize what the stage means for material teams."""
+    if not action_items:
+        return "本周期暂无足够证据形成新的阶段判断。"
+    top = action_items[0]
+    domains = _unique_strings([item.get("domain") for item in action_items], limit=2)
+    domain_text = "、".join(domains) if domains else "材料机会"
+    return f"{domain_text}中已有{len(action_items)}个机会进入 {action}，其中“{top.get('title')}”最值得先看。"
+
+
+def palette_why_now(action: str, action_items: list[dict[str, Any]]) -> str:
+    """Explain the timing behind a Palette-stage insight."""
+    if not action_items:
+        return "等待更多企业、论文、专利或验证信号后再推进。"
+    reason = str(action_items[0].get("stage_reason") or "").strip()
+    if reason:
+        return reason
+    if any(item.get("is_new") for item in action_items):
+        return "本周期出现了新的来源证据，说明该方向值得重新评估成熟度与资源可得性。"
+    return "该方向已有持续证据积累，适合在周期复盘中保持关注。"
+
+
+def palette_suggested_move(action: str, action_items: list[dict[str, Any]]) -> str:
+    """Return the recommended material-team move for a lifecycle stage."""
+    if not action_items:
+        return "暂不新增动作，保持观察。"
+    moves = {
+        "Technology Watch": "建立观察清单，等待更强产业化或材料牵引信号。",
+        "Supplier Research": "锁定潜在供应商、研究机构或初创公司，准备初步调研。",
+        "Joint Development": "寻找可联合定义样件、工艺窗口或验证方案的合作对象。",
+        "Validation": "进入样件、可靠性、场景或客户验证准备。",
+        "Strategic Reserve": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+    }
+    return moves.get(action, "保持观察，等待下一轮信号。")
 
 
 def build_category_sections(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1139,19 +1261,16 @@ def build_research_insight_cards(items: list[dict[str, Any]], statistics: dict[s
             {"label": "What Changed", "text": "今日暂无达到发布条件的情报信号。"},
             {"label": "Why It Matters", "text": "当来源证据不足时，AURA 不会为了填充版面而生成判断。"},
             {"label": "Material Opportunity", "text": "建议继续观察当月候选池，并优先补充高可信来源。"},
-            {"label": "Suggested Action", "text": "持续观察。"},
         ]
 
     drivers = Counter(str(item.get("technology_driver") or "其他") for item in items)
     top_driver = drivers.most_common(1)[0][0]
     top_item = max(items, key=lambda item: int(item.get("material_opportunity_score", 0) or 0))
-    action = action_label(top_item.get("suggested_action"))
     categories = "、".join(list(statistics.get("category_counts", {}).keys())[:3]) or "当前精选情报"
     return [
         {"label": "What Changed", "text": f"今日信号主要集中在{categories}方向，最明显的技术牵引来自{top_driver}。"},
         {"label": "Why It Matters", "text": str(top_item.get("why_it_matters") or top_item.get("impact_assessment") or "该信号可能影响材料选择、供应链调研和后续验证安排。")},
         {"label": "Material Opportunity", "text": str(top_item.get("material_opportunity") or top_item.get("material_relevance") or "材料机会仍需进一步核验，建议保守观察。")},
-        {"label": "Suggested Action", "text": f"建议进入“{action['zh']}”阶段。"},
     ]
 
 
@@ -1310,6 +1429,7 @@ def build_workspace_archive(
     research_insight_cards: list[dict[str, str]],
     insights: list[dict[str, str]],
     bookshelf_library: list[dict[str, Any]],
+    validation_pool: list[dict[str, Any]],
 ) -> dict[str, Any]:
     """Persist Dynamic Workspace snapshots for Archive Box."""
     existing = archive_data.get("items", []) if isinstance(archive_data, dict) else []
@@ -1321,13 +1441,16 @@ def build_workspace_archive(
                 "category": row.get("category", ""),
                 "count": row.get("count", 0),
                 "avg_future_signal_score": row.get("avg_future_signal_score", 0),
+                "summary": row.get("summary", ""),
+                "sources": row.get("sources", []),
             }
-            for row in future_radar[:7]
+            for row in future_radar[:5]
         ],
         "notebook": research_insight_cards,
         "cat": [
             {
                 "title": item.get("title", ""),
+                "source": item.get("source", ""),
                 "why_read": item.get("why_read", ""),
                 "focus": item.get("focus", ""),
                 "reading_time": item.get("reading_time", ""),
@@ -1344,6 +1467,16 @@ def build_workspace_archive(
             }
             for domain in bookshelf_library
             if int(domain.get("count", 0) or 0) > 0
+        ],
+        "palette": [
+            {
+                "action": group.get("action", ""),
+                "ai_insight": group.get("ai_insight", ""),
+                "why_now": group.get("why_now", ""),
+                "suggested_move": group.get("suggested_move", ""),
+                "evidence": group.get("evidence", []),
+            }
+            for group in validation_pool
         ],
     }
     by_date = {str(item.get("date")): item for item in records if item.get("date")}
@@ -1581,6 +1714,7 @@ def main() -> None:
             research_insight_cards,
             insights,
             bookshelf_library,
+            validation_pool,
         )
     archives = collect_archive_data(today_payload, published_data, workspace_archive)
     save_json(statistics, STATISTICS_PATH)
