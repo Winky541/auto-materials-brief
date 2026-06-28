@@ -144,6 +144,9 @@
               <span>
                 <strong>{{ domain.domain }}</strong>
                 <em>{{ domain.zh }}</em>
+                {% if domain.description %}
+                <small>{{ domain.description }}</small>
+                {% endif %}
               </span>
               <b>{{ domain.active_count }} Active{% if domain.dormant_count %} · {{ domain.dormant_count }} Dormant{% endif %}</b>
             </summary>

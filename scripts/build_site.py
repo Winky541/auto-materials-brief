@@ -168,55 +168,68 @@ STRATEGIC_COMPANIES = [
 ]
 OPPORTUNITY_DOMAINS = [
     {
-        "domain": "Energy Systems",
-        "zh": "电池、储能、氢能与车网互动材料机会",
-        "keywords": ["battery", "电池", "储能", "钠离子", "固态", "电解质", "隔膜", "负极", "hydrogen", "燃料电池", "v2g"],
+        "domain": "Metal Materials",
+        "zh": "金属材料",
+        "description": "高强钢、超高强钢、热成形钢、铝合金、镁合金、钛合金、铜合金、高导热金属、轻量化金属、金属连接技术、金属增材制造",
+        "keywords": ["metal", "金属", "steel", "钢", "高强钢", "超高强钢", "热成形钢", "aluminum", "aluminium", "铝合金", "magnesium", "镁合金", "titanium", "钛合金", "copper", "铜合金", "高导热金属", "轻量化金属", "金属连接", "焊接", "metal additive", "金属增材"],
     },
     {
-        "domain": "Structural Materials",
-        "zh": "轻量化、复合材料、车身与飞行结构材料机会",
-        "keywords": ["lightweight", "轻量化", "铝合金", "镁合金", "高强钢", "composite", "复合材料", "碳纤维", "cfrp", "结构材料"],
+        "domain": "Polymer & Engineering Plastics",
+        "zh": "高分子与工程塑料",
+        "description": "PP、PE、ABS、PC、PA、POM、PBT、PET、PPO、PPS、PPA、PEI、LCP、PI、PEEK、TPU、TPE、高温工程塑料、连接器材料、机器人减重材料",
+        "keywords": ["polymer", "plastic", "engineering plastic", "高分子", "工程塑料", "pp", "pe", "abs", "pc", "pa", "pom", "pbt", "pet", "ppo", "pps", "ppa", "pei", "lcp", "pi", "peek", "tpu", "tpe", "高温工程塑料", "连接器材料", "机器人减重"],
     },
     {
-        "domain": "Thermal & Safety",
-        "zh": "热管理、阻燃、防火隔热与安全防护材料机会",
-        "keywords": ["thermal", "热管理", "导热", "气凝胶", "阻燃", "thermal runaway", "安全", "防火"],
+        "domain": "Composite Materials",
+        "zh": "复合材料",
+        "description": "碳纤维、玻璃纤维、玄武岩纤维、SMC、GMT、CFRTP、热塑复材、天然纤维复材、低空飞行结构材料、氢气储罐复材",
+        "keywords": ["composite", "复合材料", "carbon fiber", "碳纤维", "glass fiber", "玻璃纤维", "basalt fiber", "玄武岩纤维", "smc", "gmt", "cfrp", "cfrtp", "热塑复材", "天然纤维", "低空飞行结构", "氢气储罐", "储氢瓶"],
     },
     {
-        "domain": "Sensing & Functional Materials",
-        "zh": "传感、光学、红外、智能与功能材料机会",
-        "keywords": ["sensor", "传感", "optical", "lidar", "infrared", "红外", "swir", "感知", "functional", "柔性"],
+        "domain": "Functional Materials",
+        "zh": "功能材料",
+        "description": "SWIR、红外、传感材料、导热材料、导电材料、EMI屏蔽、柔性电子、压电材料、磁性材料、光学材料、智能表面、电子皮肤",
+        "keywords": ["functional", "功能材料", "swir", "infrared", "红外", "sensor", "传感", "导热", "thermal", "导电", "emi", "屏蔽", "flexible electronics", "柔性电子", "piezoelectric", "压电", "magnetic", "磁性", "optical", "光学", "智能表面", "电子皮肤"],
     },
     {
-        "domain": "Electronics & Power",
-        "zh": "SiC/GaN、封装、绝缘、功率模块与电驱材料机会",
-        "keywords": ["sic", "gan", "power semiconductor", "功率半导体", "封装", "绝缘", "银烧结", "电驱", "motor"],
+        "domain": "Energy Materials",
+        "zh": "能源材料",
+        "description": "锂离子电池、固态电池、钠离子电池、锂金属电池、燃料电池、氢能材料、储能材料、正极材料、负极材料、电解液、隔膜、双极板、热失控防护、电池结构材料",
+        "keywords": ["battery", "电池", "energy storage", "储能", "lithium-ion", "锂离子", "solid-state", "固态电池", "sodium-ion", "钠离子", "lithium metal", "锂金属", "fuel cell", "燃料电池", "hydrogen", "氢能", "正极", "负极", "electrolyte", "电解液", "电解质", "separator", "隔膜", "双极板", "thermal runaway", "热失控", "电池结构"],
     },
     {
-        "domain": "Manufacturing & Process",
-        "zh": "增材制造、连接、涂层、表面工程与工艺材料机会",
-        "keywords": ["manufacturing", "制造", "3d printing", "增材", "coating", "涂层", "焊接", "结构胶"],
+        "domain": "Surface Engineering",
+        "zh": "表面工程",
+        "description": "涂层、PVD、CVD、电镀、阳极氧化、耐磨、防腐、防冰、防污、自修复涂层、低摩擦表面、功能化表面",
+        "keywords": ["surface", "表面", "coating", "涂层", "pvd", "cvd", "plating", "电镀", "anodizing", "阳极氧化", "wear", "耐磨", "corrosion", "防腐", "anti-icing", "防冰", "防污", "self-healing coating", "自修复涂层", "低摩擦", "功能化表面"],
     },
     {
-        "domain": "Sustainability",
-        "zh": "回收、低碳、替代材料与循环材料机会",
-        "keywords": ["recycling", "回收", "低碳", "sustainable", "bio-based", "生物基", "替代", "循环"],
+        "domain": "Sustainable Materials",
+        "zh": "绿色材料",
+        "description": "PCR、PIR、生物基塑料、可降解材料、循环材料、低碳材料、绿色钢铁、绿色铝、ESG材料、碳足迹优化",
+        "keywords": ["sustainable", "绿色材料", "可持续", "pcr", "pir", "bio-based", "生物基", "biodegradable", "可降解", "recycling", "回收", "循环材料", "low-carbon", "低碳", "绿色钢铁", "绿色铝", "esg", "碳足迹"],
+    },
+    {
+        "domain": "Future Research Reserve",
+        "zh": "前沿研究储备",
+        "description": "机器人材料、具身智能材料、AI Hardware材料、先进封装材料、低空经济材料、eVTOL材料、超材料、仿生材料、4D打印材料、量子材料、智能材料、自修复材料、数字材料、AI for Materials、材料大模型、未来汽车材料、下一代制造技术、核聚变材料、空间材料、极端环境材料",
+        "keywords": ["robot", "机器人", "humanoid", "具身智能", "ai hardware", "ai硬件", "advanced packaging", "先进封装", "low altitude", "低空经济", "evtol", "flying car", "飞行汽车", "metamaterial", "超材料", "biomimetic", "仿生", "4d printing", "4d打印", "quantum", "量子", "smart material", "智能材料", "self-healing", "自修复", "digital material", "数字材料", "ai for materials", "材料大模型", "未来汽车材料", "下一代制造", "fusion", "核聚变", "space material", "空间材料", "extreme environment", "极端环境"],
     },
 ]
 OPPORTUNITY_TOPIC_RULES = [
-    ("Solid-State Electrolytes", "Energy Systems", ["solid-state", "固态", "electrolyte", "电解质"]),
-    ("Sodium-Ion Battery Materials", "Energy Systems", ["sodium-ion", "钠离子", "sodium battery"]),
-    ("Battery Thermal Management Materials", "Thermal & Safety", ["battery", "电池", "thermal", "热管理", "导热"]),
-    ("Thermal Runaway Protection", "Thermal & Safety", ["thermal runaway", "热失控", "阻燃", "防火"]),
-    ("Advanced Packaging Materials", "Electronics & Power", ["sic", "gan", "封装", "银烧结", "power module"]),
-    ("Power Semiconductor Substrates", "Electronics & Power", ["sic", "gan", "功率半导体", "substrate"]),
-    ("Robot Structural Materials", "Structural Materials", ["robot", "humanoid", "机器人", "具身", "结构材料"]),
-    ("Flexible Sensing Materials", "Sensing & Functional Materials", ["flexible", "柔性", "sensor", "传感"]),
-    ("Low-cost SWIR Materials", "Sensing & Functional Materials", ["swir", "infrared", "红外", "短波"]),
-    ("eVTOL Composites", "Structural Materials", ["evtol", "flying car", "低空", "飞行汽车", "carbon fiber", "碳纤维"]),
-    ("Advanced Coating Materials", "Manufacturing & Process", ["coating", "涂层", "surface", "表面"]),
-    ("Bio-based Interior Materials", "Sustainability", ["bio-based", "生物基", "interior", "内饰"]),
-    ("Recycling & Circular Battery Materials", "Sustainability", ["recycling", "回收", "battery", "电池"]),
+    ("Solid-State Electrolytes", "Energy Materials", ["solid-state", "固态", "electrolyte", "电解质"]),
+    ("Sodium-Ion Battery Materials", "Energy Materials", ["sodium-ion", "钠离子", "sodium battery"]),
+    ("Battery Thermal Management Materials", "Energy Materials", ["battery", "电池", "thermal", "热管理", "导热"]),
+    ("Thermal Runaway Protection", "Energy Materials", ["thermal runaway", "热失控", "阻燃", "防火"]),
+    ("Advanced Packaging Materials", "Future Research Reserve", ["sic", "gan", "封装", "银烧结", "power module"]),
+    ("Power Semiconductor Substrates", "Functional Materials", ["sic", "gan", "功率半导体", "substrate"]),
+    ("Robot Structural Materials", "Future Research Reserve", ["robot", "humanoid", "机器人", "具身", "结构材料"]),
+    ("Flexible Sensing Materials", "Functional Materials", ["flexible", "柔性", "sensor", "传感"]),
+    ("Low-cost SWIR Materials", "Functional Materials", ["swir", "infrared", "红外", "短波"]),
+    ("eVTOL Composites", "Composite Materials", ["evtol", "flying car", "低空", "飞行汽车", "carbon fiber", "碳纤维"]),
+    ("Advanced Coating Materials", "Surface Engineering", ["coating", "涂层", "surface", "表面"]),
+    ("Bio-based Interior Materials", "Sustainable Materials", ["bio-based", "生物基", "interior", "内饰"]),
+    ("Recycling & Circular Battery Materials", "Sustainable Materials", ["recycling", "回收", "battery", "电池"]),
 ]
 DEFAULT_OPPORTUNITY_FIELDS = {
     "why_it_matters": "信息不足，暂无法判断其产业或材料意义。",
@@ -569,7 +582,7 @@ def domain_for_text(text: str) -> str:
     for domain in OPPORTUNITY_DOMAINS:
         if any(keyword.casefold() in folded for keyword in domain["keywords"]):
             return domain["domain"]
-    return "Energy Systems"
+    return "Future Research Reserve"
 
 
 def topic_for_item(item: dict[str, Any]) -> tuple[str, str]:
@@ -660,11 +673,16 @@ def build_opportunity_domains(items: list[dict[str, Any]], topics: list[dict[str
     summary = []
     topic_counts = Counter(topic["domain"] for topic in topics)
     for domain in OPPORTUNITY_DOMAINS:
-        matched = [item for item in items if any(keyword.casefold() in _item_text_for_tracks(item) for keyword in domain["keywords"])]
+        matched = [
+            item
+            for item in items
+            if any(keyword.casefold() in _item_text_for_tracks(item).casefold() for keyword in domain["keywords"])
+        ]
         summary.append(
             {
                 "domain": domain["domain"],
                 "zh": domain["zh"],
+                "description": domain.get("description", ""),
                 "news_count": len(matched),
                 "topic_count": topic_counts.get(domain["domain"], 0),
             }
@@ -738,7 +756,7 @@ def _topic_profile_from_current(topic: dict[str, Any], current_date: str) -> dic
     return {
         "id": re.sub(r"[^a-z0-9]+", "-", str(topic.get("topic", "")).casefold()).strip("-") or "opportunity",
         "topic": topic.get("topic", "Emerging Material Opportunity"),
-        "domain": topic.get("domain", "Energy Systems"),
+        "domain": topic.get("domain", "Future Research Reserve"),
         "first_seen": current_date,
         "updated_at": current_date,
         "current_stage": topic.get("suggested_action", "Technology Watch"),
@@ -761,7 +779,7 @@ def _topic_profile_from_archive(topic: dict[str, Any], current_date: str) -> dic
     return {
         "id": re.sub(r"[^a-z0-9]+", "-", str(topic.get("topic", "")).casefold()).strip("-") or "opportunity",
         "topic": topic.get("topic", "Emerging Material Opportunity"),
-        "domain": topic.get("domain", "Energy Systems"),
+        "domain": topic.get("domain", "Future Research Reserve"),
         "first_seen": first_seen,
         "updated_at": updated_at,
         "current_stage": topic.get("suggested_action", "Technology Watch"),
@@ -814,7 +832,7 @@ def build_opportunity_library(
         days = _days_since(str(profile.get("updated_at", "")), current_date)
         profile["status"] = "Active" if days is None or days <= 30 else "Dormant"
         profile["is_active"] = profile["status"] == "Active"
-        by_domain[str(profile.get("domain") or "Energy Systems")].append(profile)
+        by_domain[str(profile.get("domain") or "Future Research Reserve")].append(profile)
 
     library = []
     for domain in OPPORTUNITY_DOMAINS:
@@ -833,6 +851,7 @@ def build_opportunity_library(
             {
                 "domain": domain["domain"],
                 "zh": domain["zh"],
+                "description": domain.get("description", ""),
                 "active_count": len(active),
                 "dormant_count": len(dormant),
                 "opportunities": active,

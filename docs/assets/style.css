@@ -1729,6 +1729,15 @@ a {
   margin-top: 4px;
 }
 
+.bookshelf-domain > summary small {
+  color: var(--muted);
+  display: block;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 7px;
+  max-width: 760px;
+}
+
 .bookshelf-domain > summary b {
   background: rgba(107, 142, 110, 0.11);
   border: 1px solid rgba(107, 142, 110, 0.22);
