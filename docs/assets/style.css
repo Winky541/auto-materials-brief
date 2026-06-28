@@ -444,6 +444,10 @@ a {
   margin: 0;
 }
 
+.team-profile-card dd:empty {
+  display: none;
+}
+
 .team-room-panel {
   background:
     linear-gradient(135deg, rgba(250, 248, 241, 0.9), rgba(244, 240, 232, 0.66)),
