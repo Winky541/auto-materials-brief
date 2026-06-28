@@ -370,6 +370,13 @@ a {
   gap: 18px;
 }
 
+.team-profile-head {
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+
 .team-profile-card h2 {
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
@@ -379,21 +386,43 @@ a {
   margin: 0;
 }
 
+.member-status {
+  border: 1px solid rgba(229, 226, 218, 0.9);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 7px 12px;
+}
+
+.member-status.is-active {
+  background: rgba(107, 142, 110, 0.12);
+  border-color: rgba(107, 142, 110, 0.28);
+  color: #4f7855;
+}
+
+.member-status.is-former {
+  background: rgba(176, 137, 104, 0.14);
+  border-color: rgba(176, 137, 104, 0.28);
+  color: #8a674a;
+}
+
 .team-profile-card dl {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   margin: 0;
 }
 
 .team-profile-card dl div {
   background:
-    linear-gradient(135deg, rgba(255,255,255,0.86), rgba(250,250,248,0.68)),
-    linear-gradient(90deg, rgba(107, 142, 110, 0.08), rgba(200, 164, 90, 0.08));
+    linear-gradient(135deg, rgba(255,255,255,0.9), rgba(250,250,248,0.74)),
+    linear-gradient(90deg, rgba(107, 142, 110, 0.06), rgba(200, 164, 90, 0.06));
   border: 1px solid rgba(229, 226, 218, 0.86);
-  border-radius: 14px;
+  border-radius: 16px;
   display: grid;
-  gap: 4px;
-  padding: 12px 14px;
+  gap: 7px;
+  padding: 14px 16px;
 }
 
 .team-profile-card dl div.legacy {
@@ -402,18 +431,119 @@ a {
 }
 
 .team-profile-card dt {
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .team-profile-card dd {
-  color: var(--text);
-  font-size: 14px;
+  color: var(--muted);
+  font-size: 15px;
   line-height: 1.7;
   margin: 0;
+}
+
+.team-room-panel {
+  background:
+    linear-gradient(135deg, rgba(250, 248, 241, 0.9), rgba(244, 240, 232, 0.66)),
+    radial-gradient(circle at 18% 88%, rgba(200, 164, 90, 0.12), transparent 32%),
+    radial-gradient(circle at 82% 24%, rgba(107, 142, 110, 0.1), transparent 30%);
+  border: 1px solid rgba(229, 226, 218, 0.88);
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.team-room-inner {
+  display: grid;
+  gap: 22px;
+}
+
+.team-room-scene {
+  align-items: end;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.48), rgba(255,255,255,0.16)),
+    linear-gradient(180deg, transparent 0 52%, rgba(216, 194, 166, 0.34) 52% 100%);
+  border: 1px solid rgba(229, 226, 218, 0.72);
+  border-radius: 20px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 330px;
+  padding: 26px 20px 22px;
+}
+
+.team-room-member {
+  appearance: none;
+  align-items: center;
+  align-self: end;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  font: inherit;
+  gap: 7px;
+  justify-items: center;
+  min-width: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.team-room-member::after {
+  background: rgba(31, 41, 51, 0.1);
+  border-radius: 999px;
+  bottom: 42px;
+  content: "";
+  filter: blur(8px);
+  height: 16px;
+  left: 18%;
+  position: absolute;
+  right: 18%;
+  z-index: 0;
+}
+
+.team-room-member:hover,
+.team-room-member:focus-visible {
+  filter: saturate(1.04);
+  transform: translateY(-6px);
+}
+
+.team-room-member img {
+  display: block;
+  filter: drop-shadow(0 14px 18px rgba(31, 41, 51, 0.16));
+  height: 220px;
+  object-fit: contain;
+  position: relative;
+  width: min(100%, 155px);
+  z-index: 1;
+}
+
+.team-room-member.is-center img {
+  height: 240px;
+  width: min(100%, 170px);
+}
+
+.team-room-member strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.team-room-member span {
+  border: 1px solid rgba(229, 226, 218, 0.86);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 9px;
+  position: relative;
+  z-index: 1;
 }
 
 .studio-content-source {
@@ -543,7 +673,8 @@ a {
 .notebook-shape,
 .bookshelf-shape,
 .palette-shape,
-.archive-shape {
+.archive-shape,
+.team-room-shape {
   background: rgba(255,255,255,0.66);
   border: 1px solid rgba(229, 226, 218, 0.95);
   box-shadow: 0 20px 44px rgba(31, 41, 51, 0.08);
@@ -830,6 +961,57 @@ a {
 .desk-archive:focus-visible .archive-shape::before,
 .desk-archive:active .archive-shape::before {
   transform: translateY(-7px) rotate(-4deg);
+}
+
+.desk-team-room {
+  right: 2%;
+  top: 20%;
+  width: 132px;
+}
+
+.team-room-shape {
+  background: linear-gradient(180deg, rgba(250, 248, 241, 0.9), rgba(217, 198, 164, 0.78));
+  border-radius: 16px 16px 4px 4px;
+  height: 148px;
+  width: 102px;
+}
+
+.team-room-shape::before {
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid rgba(176, 137, 104, 0.24);
+  border-radius: 8px;
+  content: "";
+  height: 34px;
+  left: 22px;
+  position: absolute;
+  top: 22px;
+  width: 58px;
+}
+
+.team-room-shape::after {
+  background: var(--sand);
+  border-radius: 999px;
+  content: "";
+  height: 9px;
+  position: absolute;
+  right: 18px;
+  top: 78px;
+  width: 9px;
+}
+
+.team-room-shape i {
+  background: rgba(31, 41, 51, 0.1);
+  border-radius: 999px;
+  bottom: 16px;
+  height: 6px;
+  left: 24px;
+  position: absolute;
+  right: 24px;
+}
+
+.desk-team-room:hover .team-room-shape,
+.desk-team-room:focus-visible .team-room-shape {
+  transform: translateY(-3px) rotate(-1deg);
 }
 
 .desk-cat {
@@ -2452,6 +2634,17 @@ a {
 
   .desk-archive {
     grid-column: 1 / -1;
+  }
+
+  .team-room-scene {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .team-room-member img,
+  .team-room-member.is-center img {
+    height: 210px;
+    width: min(100%, 160px);
   }
 
   .sidebar {

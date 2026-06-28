@@ -79,6 +79,11 @@
             <strong>Cat</strong>
             <em>Weekly Insights</em>
           </button>
+          <button class="desk-object desk-team-room" type="button" data-studio-target="team-room" aria-label="Open Team Room">
+            <span class="team-room-shape"><i></i></span>
+            <strong>Team Room</strong>
+            <em>Members</em>
+          </button>
         </div>
       </section>
 
@@ -333,6 +338,32 @@
         </div>
         {% endif %}
       </section>
+
+      <section id="team-room" class="team-room-panel studio-content-source">
+        <div class="team-room-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Team Room</p>
+            <h2>团队记忆</h2>
+          </div>
+          <div class="team-room-scene" aria-label="Team members">
+            <button class="team-room-member" type="button" data-team-profile="gou-zhi">
+              <img src="{{ asset_prefix }}/team-gou-zhi.png" alt="苟智">
+              <strong>苟智</strong>
+              <span>Active</span>
+            </button>
+            <button class="team-room-member is-center" type="button" data-team-profile="zhou-qiang">
+              <img src="{{ asset_prefix }}/team-zhou-qiang.png" alt="周强">
+              <strong>周强</strong>
+              <span>Former Member</span>
+            </button>
+            <button class="team-room-member" type="button" data-team-profile="liang-yunqi">
+              <img src="{{ asset_prefix }}/team-liang-yunqi.png" alt="梁蕴祺">
+              <strong>梁蕴祺</strong>
+              <span>Active</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -355,30 +386,27 @@
         const teamProfiles = {
           "zhou-qiang": {
             name: "周强",
-            role: "Research Member",
-            years: "待补充",
+            status: "Former Member",
+            role: "团队成员",
+            joined: "待补充",
             expertise: "待补充：可记录其材料方向、实验验证、供应链调研或数据分析能力。",
-            projects: "待补充：参与项目、阶段成果、协作记录。",
-            contributions: "待补充：对团队研究资料、项目推进和知识沉淀的贡献。",
-            message: "把每一次观察都整理成下一次判断的依据。"
+            experience: "待补充：参与项目、阶段成果、协作记录，以及对团队研究资料和知识沉淀的贡献。"
           },
           "gou-zhi": {
             name: "苟智",
-            role: "Research Member",
-            years: "待补充",
+            status: "Active",
+            role: "团队成员",
+            joined: "待补充",
             expertise: "待补充：可记录其材料方向、实验验证、供应链调研或数据分析能力。",
-            projects: "待补充：参与项目、阶段成果、协作记录。",
-            contributions: "待补充：对团队研究资料、项目推进和知识沉淀的贡献。",
-            message: "把每一次观察都整理成下一次判断的依据。"
+            experience: "待补充：参与项目、阶段成果、协作记录，以及对团队研究资料和知识沉淀的贡献。"
           },
           "liang-yunqi": {
             name: "梁蕴祺",
-            role: "Research Member",
-            years: "待补充",
+            status: "Active",
+            role: "团队成员",
+            joined: "待补充",
             expertise: "待补充：可记录其前瞻跟踪、材料机会分析、设计表达或技术整理方向。",
-            projects: "待补充：参与项目、专项研究、方法工具建设。",
-            contributions: "待补充：对团队记忆、趋势观察和研究表达的贡献。",
-            message: "让技术线索变成可以被继续推进的机会。"
+            experience: "待补充：参与项目、专项研究、方法工具建设，以及对团队记忆、趋势观察和研究表达的贡献。"
           }
         };
 
@@ -403,16 +431,16 @@
           if (!profile) return;
           panelContent.innerHTML = `
             <section class="team-profile-card">
-              <p class="eyebrow">Team Corner</p>
-              <h2>${escapeHtml(profile.name)}</h2>
+              <p class="eyebrow">Team Room</p>
+              <div class="team-profile-head">
+                <h2>${escapeHtml(profile.name)}</h2>
+                <span class="member-status ${profile.status === "Active" ? "is-active" : "is-former"}">${escapeHtml(profile.status)}</span>
+              </div>
               <dl>
-                <div><dt>Name</dt><dd>${escapeHtml(profile.name)}</dd></div>
-                <div><dt>Role</dt><dd>${escapeHtml(profile.role)}</dd></div>
-                <div><dt>Years in Team</dt><dd>${escapeHtml(profile.years)}</dd></div>
-                <div><dt>Expertise</dt><dd>${escapeHtml(profile.expertise)}</dd></div>
-                <div><dt>Major Projects</dt><dd>${escapeHtml(profile.projects)}</dd></div>
-                <div><dt>Contributions</dt><dd>${escapeHtml(profile.contributions)}</dd></div>
-                <div><dt>Personal Message</dt><dd>${escapeHtml(profile.message)}</dd></div>
+                <div><dt>团队角色</dt><dd>${escapeHtml(profile.role)}</dd></div>
+                <div><dt>加入时间</dt><dd>${escapeHtml(profile.joined)}</dd></div>
+                <div><dt>专业方向</dt><dd>${escapeHtml(profile.expertise)}</dd></div>
+                <div><dt>经历</dt><dd>${escapeHtml(profile.experience)}</dd></div>
               </dl>
             </section>
           `;
@@ -431,13 +459,17 @@
         document.querySelectorAll("[data-studio-target]").forEach((button) => {
           button.addEventListener("click", () => openPanel(button.dataset.studioTarget));
         });
+        document.addEventListener("click", (event) => {
+          const memberButton = event.target.closest("[data-team-profile]");
+          if (memberButton) openProfile(memberButton.dataset.teamProfile);
+        });
         document.querySelector("[data-close-studio-panel]")?.addEventListener("click", closePanel);
         document.addEventListener("keydown", (event) => {
           if (event.key === "Escape") closePanel();
         });
       })();
     </script>
-    <script type="module" src="{{ asset_prefix }}/studio3d.js?v=20260624-team-npc-large"></script>
+    <script type="module" src="{{ asset_prefix }}/studio3d.js?v=20260628-team-room"></script>
     {% include "_metric_modal.html.j2" %}
   </body>
 </html>

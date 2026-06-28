@@ -380,60 +380,31 @@ function createCapsulePerson(options) {
   return group;
 }
 
-const teamCorner = new THREE.Group();
-teamCorner.position.set(1.55, 0.02, 1.94);
-teamCorner.rotation.y = 0.02;
-scene.add(teamCorner);
-const teamRug = new THREE.Mesh(new THREE.CircleGeometry(0.86, 36), flatMaterial(0xc8a45a, 0.16));
-teamRug.scale.set(1.7, 0.58, 1);
-teamRug.rotation.x = -Math.PI / 2;
-teamRug.position.set(0, 0.012, 0.04);
-teamCorner.add(teamRug);
-const teamMarker = new THREE.Mesh(new THREE.BoxGeometry(1.52, 0.05, 0.07), material(0xd9c6a4, 0.7));
-teamMarker.position.set(0.05, 0.05, 0.34);
-teamCorner.add(teamMarker);
-const teamWallLabel = new THREE.Mesh(new THREE.BoxGeometry(1.05, 0.22, 0.035), material(0xf6f0e7, 0.76));
-teamWallLabel.position.set(0.08, 0.42, -0.37);
-teamWallLabel.rotation.x = -0.02;
-teamCorner.add(teamWallLabel);
+const teamRoomDoor = createGroup("team-room", "Team Room");
+teamRoomDoor.position.set(4.32, 1.24, -2.9);
+teamRoomDoor.rotation.y = -0.04;
+const doorPanel = new THREE.Mesh(new THREE.BoxGeometry(0.78, 1.55, 0.08), material(0xd9c6a4, 0.66));
+doorPanel.position.set(0, 0, 0.04);
+doorPanel.castShadow = true;
+doorPanel.receiveShadow = true;
+teamRoomDoor.add(doorPanel);
+const doorInset = new THREE.Mesh(new THREE.BoxGeometry(0.56, 1.18, 0.04), material(0xf7f1e8, 0.74));
+doorInset.position.set(0, 0.08, 0.095);
+teamRoomDoor.add(doorInset);
+const doorTop = new THREE.Mesh(new THREE.BoxGeometry(0.66, 0.05, 0.05), material(colors.darkWood, 0.7));
+doorTop.position.set(0, 0.78, 0.12);
+teamRoomDoor.add(doorTop);
+const doorHandle = new THREE.Mesh(new THREE.SphereGeometry(0.035, 16, 10), material(colors.sand, 0.38, 0.12));
+doorHandle.position.set(0.26, -0.05, 0.14);
+teamRoomDoor.add(doorHandle);
+const doorSign = new THREE.Mesh(new THREE.BoxGeometry(0.54, 0.16, 0.04), material(0xfaf8f1, 0.66));
+doorSign.position.set(0, 0.52, 0.13);
+teamRoomDoor.add(doorSign);
+const doorLight = createSoftBlob(0xc8a45a, 0, 0.52, 0.151, [0.34, 0.09], 0.2);
+teamRoomDoor.add(doorLight);
+addInteractive(teamRoomDoor, "team-room", "Team Room");
 
-createCapsulePerson({
-  id: "gou-zhi",
-  name: "苟智",
-  image: "team-gou-zhi.png",
-  position: [0.38, 0.02, 1.72],
-  rotationY: 0.14,
-  scale: 1.18,
-  width: 0.82,
-  height: 1.52,
-  baseColor: colors.blue,
-});
-
-createCapsulePerson({
-  id: "zhou-qiang",
-  name: "周强",
-  image: "team-zhou-qiang.png",
-  position: [1.2, 0.02, 1.78],
-  rotationY: 0.02,
-  scale: 1.2,
-  width: 0.82,
-  height: 1.52,
-  baseColor: colors.green,
-});
-
-createCapsulePerson({
-  id: "liang-yunqi",
-  name: "梁蕴祺",
-  image: "team-liang-yunqi.png",
-  position: [2.04, 0.02, 1.72],
-  rotationY: -0.1,
-  scale: 1.18,
-  width: 0.82,
-  height: 1.52,
-  baseColor: colors.clay,
-});
-
-const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup, catGroup, ...teamGroups];
+const objectGroups = [windowGroup, shelfGroup, notebookGroup, paletteGroup, archiveGroup, catGroup, teamRoomDoor];
 objectGroups.forEach((group) => {
   group.userData.baseY = group.position.y;
 });
