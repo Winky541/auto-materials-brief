@@ -11,9 +11,9 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xf7f4ee);
 
-const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
-camera.position.set(5.6, 3.4, 7.4);
-camera.lookAt(0, 1.35, 0);
+const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
+camera.position.set(6.15, 3.55, 8.15);
+camera.lookAt(0.15, 1.34, 0);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
 renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
@@ -381,26 +381,26 @@ function createCapsulePerson(options) {
 }
 
 const teamRoomDoor = createGroup("team-room", "Team Room");
-teamRoomDoor.position.set(4.32, 1.24, -2.9);
-teamRoomDoor.rotation.y = -0.04;
-const doorPanel = new THREE.Mesh(new THREE.BoxGeometry(0.78, 1.55, 0.08), material(0xd9c6a4, 0.66));
+teamRoomDoor.position.set(3.48, 1.28, -2.88);
+teamRoomDoor.rotation.y = -0.035;
+const doorPanel = new THREE.Mesh(new THREE.BoxGeometry(1.02, 1.82, 0.08), material(0xd9c6a4, 0.66));
 doorPanel.position.set(0, 0, 0.04);
 doorPanel.castShadow = true;
 doorPanel.receiveShadow = true;
 teamRoomDoor.add(doorPanel);
-const doorInset = new THREE.Mesh(new THREE.BoxGeometry(0.56, 1.18, 0.04), material(0xf7f1e8, 0.74));
-doorInset.position.set(0, 0.08, 0.095);
+const doorInset = new THREE.Mesh(new THREE.BoxGeometry(0.74, 1.38, 0.04), material(0xf7f1e8, 0.74));
+doorInset.position.set(0, 0.04, 0.095);
 teamRoomDoor.add(doorInset);
-const doorTop = new THREE.Mesh(new THREE.BoxGeometry(0.66, 0.05, 0.05), material(colors.darkWood, 0.7));
-doorTop.position.set(0, 0.78, 0.12);
+const doorTop = new THREE.Mesh(new THREE.BoxGeometry(0.86, 0.06, 0.05), material(colors.darkWood, 0.7));
+doorTop.position.set(0, 0.92, 0.12);
 teamRoomDoor.add(doorTop);
-const doorHandle = new THREE.Mesh(new THREE.SphereGeometry(0.035, 16, 10), material(colors.sand, 0.38, 0.12));
-doorHandle.position.set(0.26, -0.05, 0.14);
+const doorHandle = new THREE.Mesh(new THREE.SphereGeometry(0.045, 16, 10), material(colors.sand, 0.38, 0.12));
+doorHandle.position.set(0.34, -0.06, 0.14);
 teamRoomDoor.add(doorHandle);
-const doorSign = new THREE.Mesh(new THREE.BoxGeometry(0.54, 0.16, 0.04), material(0xfaf8f1, 0.66));
-doorSign.position.set(0, 0.52, 0.13);
+const doorSign = new THREE.Mesh(new THREE.BoxGeometry(0.68, 0.19, 0.04), material(0xfaf8f1, 0.66));
+doorSign.position.set(0, 0.62, 0.13);
 teamRoomDoor.add(doorSign);
-const doorLight = createSoftBlob(0xc8a45a, 0, 0.52, 0.151, [0.34, 0.09], 0.2);
+const doorLight = createSoftBlob(0xc8a45a, 0, 0.62, 0.151, [0.42, 0.11], 0.24);
 teamRoomDoor.add(doorLight);
 addInteractive(teamRoomDoor, "team-room", "Team Room");
 
