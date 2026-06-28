@@ -1276,6 +1276,16 @@ def collect_archive_data(
     workspace_archive: dict[str, Any] | None = None,
 ) -> dict[str, list[dict[str, str]] | list[dict[str, Any]]]:
     """Collect recent archive links and Dynamic Workspace snapshots."""
+    if today_payload.get("reset_archive"):
+        return {
+            "reset": True,
+            "message_en": today_payload.get("archive_message_en", "Archive is ready for new AURA records."),
+            "message_zh": today_payload.get("archive_message_zh", "归档已重置，等待新的 AURA 记录。"),
+            "daily": [],
+            "monthly": [],
+            "workspace": [],
+        }
+
     today = today_payload.get("date") or datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat()
     dates = {today}
     months = {today[:7]}
@@ -1455,8 +1465,9 @@ def main() -> None:
     workspace_archive_data = load_json(WORKSPACE_ARCHIVE_PATH, {"items": []})
     insights = load_insights()
     today_items = _as_items(today_payload)
+    reset_archive = bool(today_payload.get("reset_archive"))
 
-    if not today_items:
+    if not today_items and not reset_archive:
         logging.warning("today_selected.json has no items; preserving existing site files.")
         logging.warning("Skipping static site generation to avoid publishing an empty homepage.")
         return
@@ -1477,13 +1488,16 @@ def main() -> None:
     statistics = build_statistics(display_items, analyzed_items, backlog_items)
     insight = build_research_insight(display_items, statistics)
     research_insight_cards = build_research_insight_cards(display_items, statistics)
-    workspace_archive = build_workspace_archive(
-        workspace_archive_data,
-        current_date,
-        future_radar,
-        research_insight_cards,
-        insights,
-    )
+    if reset_archive:
+        workspace_archive = {"updated_at": current_date, "items": []}
+    else:
+        workspace_archive = build_workspace_archive(
+            workspace_archive_data,
+            current_date,
+            future_radar,
+            research_insight_cards,
+            insights,
+        )
     archives = collect_archive_data(today_payload, published_data, workspace_archive)
     save_json(statistics, STATISTICS_PATH)
     save_json(opportunity_archive, OPPORTUNITIES_PATH)
@@ -1509,13 +1523,16 @@ def main() -> None:
         research_insight_cards,
         archives,
     )
-    daily_path = generate_daily_page(env, today_payload, display_items, statistics, insight, archives)
-    monthly_path = generate_monthly_page(env, today_payload, display_items, statistics, archives)
     methodology_path = generate_methodology_page(env)
 
     logging.info("Generated docs/index.html.")
-    logging.info("Generated %s.", daily_path)
-    logging.info("Generated %s.", monthly_path)
+    if reset_archive:
+        logging.info("Archive reset mode enabled; skipped daily and monthly archive page generation.")
+    else:
+        daily_path = generate_daily_page(env, today_payload, display_items, statistics, insight, archives)
+        monthly_path = generate_monthly_page(env, today_payload, display_items, statistics, archives)
+        logging.info("Generated %s.", daily_path)
+        logging.info("Generated %s.", monthly_path)
     logging.info("Generated %s.", STATISTICS_PATH)
     logging.info("Generated %s.", OPPORTUNITIES_PATH)
     logging.info("Generated %s.", methodology_path)

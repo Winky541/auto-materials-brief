@@ -271,6 +271,13 @@
       </section>
 
       <section id="archives" class="archive-grid studio-content-source">
+        {% if archives.reset %}
+        <div class="workspace-history archive-reset-state">
+          <p class="eyebrow">Archive</p>
+          <h2>{{ archives.message_en }}</h2>
+          <p>{{ archives.message_zh }}</p>
+        </div>
+        {% else %}
         <div class="workspace-history">
           <p class="eyebrow">Dynamic Workspace</p>
           <h2>Workspace Archive</h2>
@@ -324,6 +331,7 @@
             {% endfor %}
           </div>
         </div>
+        {% endif %}
       </section>
     </main>
 
