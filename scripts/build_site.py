@@ -475,6 +475,81 @@ def source_name_from_url(url: str) -> str:
     return host
 
 
+def _safe_int(value: Any, default: int = 0) -> int:
+    """Convert numeric-ish values without breaking static generation."""
+    try:
+        return int(float(value))
+    except (TypeError, ValueError):
+        return default
+
+
+def build_dynamic_weekly_insights(future_items: list[dict[str, Any]]) -> list[dict[str, str]]:
+    """Build Weekly Insights from current real Future Flow items when no curated list exists."""
+    blocked_sources = ("bing news", "google news", "yahoo", "msn", "aol")
+    candidates: list[dict[str, Any]] = []
+
+    for item in future_items:
+        title = str(item.get("title") or "").strip()
+        url = str(item.get("url") or "").strip()
+        source = str(item.get("source") or source_name_from_url(url)).strip()
+        source_key = source.casefold()
+        source_type = str(item.get("source_type") or "").casefold()
+        if not title or not url:
+            continue
+        if source_type == "bing_news" or any(blocked in source_key for blocked in blocked_sources):
+            continue
+
+        future_score = _safe_int(item.get("future_signal_score"))
+        material_score = _safe_int(item.get("material_opportunity_score", item.get("material_validation_score")))
+        final_score = _safe_int(item.get("final_score"))
+        if future_score < 45 and material_score < 45:
+            continue
+
+        technology_driver = str(item.get("technology_driver") or "").strip()
+        material_opportunity = str(
+            item.get("material_opportunity")
+            or item.get("material_relevance")
+            or item.get("validation_opportunity")
+            or ""
+        ).strip()
+        why_it_matters = str(
+            item.get("why_it_matters")
+            or item.get("future_signal")
+            or item.get("impact_assessment")
+            or ""
+        ).strip()
+
+        if not why_it_matters:
+            why_it_matters = "这条内容体现了本期未来产业或研发组织正在变化的一个信号。"
+
+        focus_parts = []
+        if technology_driver and technology_driver not in {"其他", "unknown"}:
+            focus_parts.append(f"关注 {technology_driver} 是否继续形成产业信号")
+        if material_opportunity and "材料相关性较弱" not in material_opportunity:
+            focus_parts.append(material_opportunity)
+        focus = "；".join(focus_parts) or "关注该趋势是否继续影响研发组织、供应链和材料需求。"
+
+        candidates.append(
+            {
+                "title": title,
+                "source": source,
+                "why_read": why_it_matters,
+                "focus": focus,
+                "reading_time": "约 8 分钟",
+                "url": url,
+                "flow_type": "future_intelligence",
+                "primary_flow": "future_intelligence",
+                "secondary_flow": str(item.get("secondary_flow") or ""),
+                "reason_for_flow": str(item.get("reason_for_flow") or "Derived from current Future Flow items."),
+                "module_targets": ["weekly_insights"],
+                "_score": future_score * 2 + material_score + final_score,
+            }
+        )
+
+    candidates.sort(key=lambda item: item["_score"], reverse=True)
+    return [{key: value for key, value in item.items() if key != "_score"} for item in candidates[:2]]
+
+
 def _combined_item_text(item: dict[str, Any]) -> str:
     values: list[str] = [
         str(item.get("title") or ""),
@@ -1957,6 +2032,9 @@ def main() -> None:
         for item in display_items
         if item.get("primary_flow") == "future_intelligence" or item.get("secondary_flow") == "future_intelligence"
     ]
+    if not insights and not reset_archive:
+        primary_future_items = [item for item in future_items if item.get("primary_flow") == "future_intelligence"]
+        insights = build_dynamic_weekly_insights(primary_future_items or future_items)
     category_sections = build_category_sections(material_items)
     existing_opportunities = load_json(OPPORTUNITIES_PATH, {"topics": []})
     opportunity_topics = build_opportunity_topics(material_items)
