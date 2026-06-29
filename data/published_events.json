@@ -1,6 +1,246 @@
 {
   "events": [
     {
+      "event_id": "2c8fa1237221cfe6",
+      "canonical_title": "CATL joins OEMs to develop recyclable battery framework",
+      "canonical_url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
+      "normalized_title": "catl joins oems develop recyclable battery framework",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "source_urls": [
+        "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "政策法规与标准",
+        "储能"
+      ],
+      "material_opportunities": [
+        "可回收电池设计可能牵引以下材料方向：易剥离的粘结剂（如水性粘结剂）、可回收的隔膜涂层、无氟电解液、单一材料体系的正极（如LFP）、可拆解的结构胶。但当前阶段以标准制定为主，具体材料需求尚未明确。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "3a208eb96061cc6f",
+      "canonical_title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
+      "canonical_url": "https://arxiv.org/abs/2606.27929",
+      "normalized_title": "when multi robot systems meet agentic ai towards embodied collective intelligence",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27929"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "7ce362a250e553c6",
+      "canonical_title": "France opens third round of EV social leasing programme",
+      "canonical_url": "https://www.electrive.com/2026/06/29/france-opens-third-round-of-ev-social-leasing-programme",
+      "normalized_title": "france opens third round ev social leasing programme",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "source_urls": [
+        "https://www.electrive.com/2026/06/29/france-opens-third-round-of-ev-social-leasing-programme"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "50ce26cd0c389cd6",
+      "canonical_title": "The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries",
+      "canonical_url": "https://www.nature.com/articles/s41560-026-02087-6",
+      "normalized_title": "interplay between stack pressure mechanical expansion degradation pathways lithium ion batteries",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "source_urls": [
+        "https://www.nature.com/articles/s41560-026-02087-6"
+      ],
+      "source_names": [
+        "Nature Energy"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "锂离子电池",
+        "储能"
+      ],
+      "material_opportunities": [
+        "堆叠压力优化可能对电池模组中的缓冲材料、导热垫片、结构胶等提出新要求，但当前仍处于实验室研究阶段，材料机会尚不明确。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "2e1a2d02c59a0c62",
+      "canonical_title": "The Lab Mistake That Might Revolutionize Computing",
+      "canonical_url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+      "normalized_title": "lab mistake that might revolutionize computing",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "source_urls": [
+        "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "AI硬件"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "2168df903c9339e1",
+      "canonical_title": "Drifting in the Future: Stabilizing Path Following Drifting on High-Latency Vehicle Systems",
+      "canonical_url": "https://arxiv.org/abs/2606.27914",
+      "normalized_title": "drifting future stabilizing path following drifting high latency vehicle systems",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.27914"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "自动驾驶"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "6ceb1be78cf2591a",
+      "canonical_title": "São Paulo expands electric bus fleet with 500 new vehicles",
+      "canonical_url": "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles",
+      "normalized_title": "são paulo expands electric bus fleet 500 new vehicles",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "source_urls": [
+        "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "bde96b51daa465bf",
+      "canonical_title": "Mapping Europe’s AI Workforce Opportunity",
+      "canonical_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "normalized_title": "mapping europe s ai workforce opportunity",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "source_urls": [
+        "https://openai.com/index/mapping-ai-jobs-transition-eu"
+      ],
+      "source_names": [
+        "OpenAI Blog"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "4bcd0c77a5f90c10",
       "canonical_title": "This Senior Member Solves Complex Product Lifecycle Challenges",
       "canonical_url": "https://spectrum.ieee.org/product-lifecycle-ajay-prasad",

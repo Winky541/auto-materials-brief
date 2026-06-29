@@ -188,6 +188,48 @@
       "published_date": "2026-06-26",
       "selected_date": "2026-06-28",
       "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
+      "title": "CATL joins OEMs to develop recyclable battery framework",
+      "published_date": "2026-06-29",
+      "selected_date": "2026-06-30",
+      "category": "政策法规与标准"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41560-026-02087-6",
+      "title": "The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries",
+      "published_date": "2026-06-29",
+      "selected_date": "2026-06-30",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "title": "Mapping Europe’s AI Workforce Opportunity",
+      "published_date": "2026-06-29",
+      "selected_date": "2026-06-30",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.27929",
+      "title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
+      "published_date": "2026-06-29",
+      "selected_date": "2026-06-30",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles",
+      "title": "São Paulo expands electric bus fleet with 500 new vehicles",
+      "published_date": "2026-06-29",
+      "selected_date": "2026-06-30",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+      "title": "The Lab Mistake That Might Revolutionize Computing",
+      "published_date": "2026-06-29",
+      "selected_date": "2026-06-30",
+      "category": "未来趋势观察"
     }
   ]
 }

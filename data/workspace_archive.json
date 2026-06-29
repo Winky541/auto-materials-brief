@@ -1,6 +1,290 @@
 {
-  "updated_at": "2026-06-28",
+  "updated_at": "2026-06-30",
   "items": [
+    {
+      "date": "2026-06-30",
+      "window": [
+        {
+          "category": "OEM Strategy Transition",
+          "count": 2,
+          "avg_future_signal_score": 74,
+          "summary": "该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。",
+          "sources": [
+            {
+              "title": "CATL joins OEMs to develop recyclable battery framework",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
+              "published_date": "2026-06-29",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "Mapping Europe’s AI Workforce Opportunity",
+              "source": "OpenAI Blog",
+              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+              "published_date": "2026-06-29",
+              "link_label": "阅读原文"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 1,
+          "avg_future_signal_score": 72,
+          "summary": "该报告不涉及具体材料技术或产业变化，对材料研发人员无直接参考价值。",
+          "sources": [
+            {
+              "title": "Mapping Europe’s AI Workforce Opportunity",
+              "source": "OpenAI Blog",
+              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+              "published_date": "2026-06-29",
+              "link_label": "阅读原文"
+            }
+          ]
+        },
+        {
+          "category": "Energy Revolution",
+          "count": 2,
+          "avg_future_signal_score": 68,
+          "summary": "该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。",
+          "sources": [
+            {
+              "title": "CATL joins OEMs to develop recyclable battery framework",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
+              "published_date": "2026-06-29",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02087-6",
+              "published_date": "2026-06-29",
+              "link_label": "阅读全文"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 2,
+          "avg_future_signal_score": 51,
+          "summary": "该报告不涉及具体材料技术或产业变化，对材料研发人员无直接参考价值。",
+          "sources": [
+            {
+              "title": "Mapping Europe’s AI Workforce Opportunity",
+              "source": "OpenAI Blog",
+              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+              "published_date": "2026-06-29",
+              "link_label": "阅读原文"
+            },
+            {
+              "title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2606.27929",
+              "published_date": "2026-06-29",
+              "link_label": "阅读全文"
+            }
+          ]
+        },
+        {
+          "category": "AI Agent & AI Hardware",
+          "count": 2,
+          "avg_future_signal_score": 40,
+          "summary": "该技术可能颠覆AI硬件架构，降低功耗和散热需求，从而影响汽车电子系统的热管理和封装材料需求，但当前仍处于实验室阶段，材料机会不直接。",
+          "sources": [
+            {
+              "title": "The Lab Mistake That Might Revolutionize Computing",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+              "published_date": "2026-06-29",
+              "link_label": "阅读全文"
+            },
+            {
+              "title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2606.27929",
+              "published_date": "2026-06-29",
+              "link_label": "阅读全文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在汽车新材料、未来趋势观察，技术牵引以储能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注电池回收材料、正极材料（如NMC、LFP）、负极材料（石墨、硅碳）、电解液、隔膜、铜箔、铝箔、锂离子电池、电极材料。可回收电池设计可能牵引以下材料方向：易剥离的粘结剂（如水性粘结剂）、可回收的隔膜涂层、无氟电解液、单一材料体系的正极（如LFP）、可拆解的结构胶。但当前阶段以标准制定为主，具体材料需求尚未明确。"
+        }
+      ],
+      "cat": [],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 6,
+          "items": [
+            {
+              "event_id": "2c8fa1237221cfe6",
+              "canonical_url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
+              "normalized_title": "catl joins oems develop recyclable battery framework",
+              "title": "CATL joins OEMs to develop recyclable battery framework",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework"
+              ],
+              "published_date": "2026-06-29",
+              "url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
+              "link_label": "官方发布"
+            },
+            {
+              "event_id": "50ce26cd0c389cd6",
+              "canonical_url": "https://www.nature.com/articles/s41560-026-02087-6",
+              "normalized_title": "interplay between stack pressure mechanical expansion degradation pathways lithium ion batteries",
+              "title": "The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries",
+              "source": "Nature Energy",
+              "source_names": [
+                "Nature Energy"
+              ],
+              "source_urls": [
+                "https://www.nature.com/articles/s41560-026-02087-6"
+              ],
+              "published_date": "2026-06-29",
+              "url": "https://www.nature.com/articles/s41560-026-02087-6",
+              "link_label": "阅读全文"
+            },
+            {
+              "event_id": "bde96b51daa465bf",
+              "canonical_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+              "normalized_title": "mapping europe s ai workforce opportunity",
+              "title": "Mapping Europe’s AI Workforce Opportunity",
+              "source": "OpenAI Blog",
+              "source_names": [
+                "OpenAI Blog"
+              ],
+              "source_urls": [
+                "https://openai.com/index/mapping-ai-jobs-transition-eu"
+              ],
+              "published_date": "2026-06-29",
+              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+              "link_label": "阅读原文"
+            },
+            {
+              "event_id": "3a208eb96061cc6f",
+              "canonical_url": "https://arxiv.org/abs/2606.27929",
+              "normalized_title": "when multi robot systems meet agentic ai towards embodied collective intelligence",
+              "title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2606.27929"
+              ],
+              "published_date": "2026-06-29",
+              "url": "https://arxiv.org/abs/2606.27929",
+              "link_label": "阅读全文"
+            },
+            {
+              "event_id": "6ceb1be78cf2591a",
+              "canonical_url": "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles",
+              "normalized_title": "são paulo expands electric bus fleet 500 new vehicles",
+              "title": "São Paulo expands electric bus fleet with 500 new vehicles",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles"
+              ],
+              "published_date": "2026-06-29",
+              "url": "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles",
+              "link_label": "阅读原文"
+            },
+            {
+              "event_id": "2e1a2d02c59a0c62",
+              "canonical_url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+              "normalized_title": "lab mistake that might revolutionize computing",
+              "title": "The Lab Mistake That Might Revolutionize Computing",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips"
+              ],
+              "published_date": "2026-06-29",
+              "url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+              "link_label": "阅读全文"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有2个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：standard。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "CATL joins OEMs to develop recyclable battery framework",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02087-6",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Mapping Europe’s AI Workforce Opportunity",
+              "source": "OpenAI Blog",
+              "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-06-28",
       "window": [

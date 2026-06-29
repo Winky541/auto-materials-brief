@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-28",
+  "updated_at": "2026-06-30",
   "items": [
     {
-      "title": "Volkswagen ends charging station production",
-      "url": "https://www.electrive.com/2026/06/26/volkswagen-ends-charging-station-production",
+      "title": "CATL joins OEMs to develop recyclable battery framework",
+      "url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
       "source": "Electrive",
-      "published_date": "2026-06-26",
+      "published_date": "2026-06-29",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -18,138 +18,10 @@
       ]
     },
     {
-      "title": "PowerCo selects OCSiAl nanotubes for battery additives",
-      "url": "https://www.electrive.com/2026/06/26/powerco-selects-ocsial-nanotubes-for-battery-additives",
-      "source": "Electrive",
-      "published_date": "2026-06-26",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "CATL targets up to 20,000 vehicles with sodium-ion batteries",
-      "url": "https://www.electrive.com/2026/06/26/catl-targets-up-to-20000-vehicles-with-sodium-ion-batteries",
-      "source": "Electrive",
-      "published_date": "2026-06-26",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Neath Port Talbot launches UK’s first fully electric recycling fleet",
-      "url": "https://www.electrive.com/2026/06/26/neath-port-talbot-launches-uks-first-fully-electric-recycling-fleet",
-      "source": "Electrive",
-      "published_date": "2026-06-26",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "26-06-26 宁德时代押注银河通用：人形机器人开始补上“交付课” ◎ 人形机器人开始补上“交付课”。 人形机器人这两年不缺热闹。 融资、发布会、演示视频、商演现场，几乎每隔一段时间就能刷出新故事。但到了工厂里，客户不看热闹，客户只问几件事：能不能连续干活？坏了谁来修...",
-      "url": "https://www.ne-time.cn/web/article/39034",
-      "source": "NE时代",
-      "published_date": "2026-06-26",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "26-06-26 NE时代武慧：具身智能是汽车产业的新机会，但不是简单复制 ◎ 具身智能是汽车产业的新机会，但不是简单复制。 △ 撰文：NE时代◎武慧 汽车产业最近一年频繁转向具身智能。 主机厂在看，零部件企业在看，做电机、电驱、热管理、传感器和控制系统的企业也在看。 原因并...",
-      "url": "https://www.ne-time.cn/web/article/39032",
-      "source": "NE时代",
-      "published_date": "2026-06-26",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "This Senior Member Solves Complex Product Lifecycle Challenges",
-      "url": "https://spectrum.ieee.org/product-lifecycle-ajay-prasad",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-06-27",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Why Does a Bank Need a Chief Scientist?",
-      "url": "https://spectrum.ieee.org/capital-one-science-ai-finance-innovation",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-06-26",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Surface‐Functionalized LLZO‐Incorporated Multilayer Composite Solid Electrolytes for Dendrite Suppression and Efficient Ionic Conduction in Lithium–Metal Batteries",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73879?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-06-26",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Accessible solar tower power plant data to accelerate solar energy research",
-      "url": "https://www.nature.com/articles/s41560-026-02069-8",
+      "title": "The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries",
+      "url": "https://www.nature.com/articles/s41560-026-02087-6",
       "source": "Nature Energy",
-      "published_date": "2026-06-26",
+      "published_date": "2026-06-29",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -162,10 +34,10 @@
       ]
     },
     {
-      "title": "具身智能：汽车企业的“第二战场”",
-      "url": "https://finance.ifeng.com/c/8uI9OVpGeDO",
-      "source": "Bing News",
-      "published_date": "2026-06-27",
+      "title": "Mapping Europe’s AI Workforce Opportunity",
+      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "source": "OpenAI Blog",
+      "published_date": "2026-06-29",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -178,13 +50,13 @@
       ]
     },
     {
-      "title": "Inherent Microstructural Engineering: Tailoring Amorphous‐Nanocrystalline Composite Films via Ion Beam Technology for Long‐Cycle Lithium Metal Batteries",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73795?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-06-28",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
+      "title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
+      "url": "https://arxiv.org/abs/2606.27929",
+      "source": "arXiv",
+      "published_date": "2026-06-29",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",
@@ -194,45 +66,29 @@
       ]
     },
     {
-      "title": "Lightweight, Strong, and Resilient 3D Graphene Metamaterial via a Multi‐flow Assembly",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73453?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-06-27",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Molecular Interfacial Engineering of Lithiophilic Protection Layer Realizing 600 Wh kg−1 Anode‐Free Lithium Metal Batteries",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73830?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-06-26",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Tesla plans another 1,000 hires in Grünheide",
-      "url": "https://www.electrive.com/2026/06/26/tesla-plans-another-1000-hires-in-grunheide",
+      "title": "São Paulo expands electric bus fleet with 500 new vehicles",
+      "url": "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles",
       "source": "Electrive",
-      "published_date": "2026-06-26",
+      "published_date": "2026-06-29",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "The Lab Mistake That Might Revolutionize Computing",
+      "url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-06-29",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",
