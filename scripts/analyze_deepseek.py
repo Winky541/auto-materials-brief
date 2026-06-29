@@ -115,7 +115,7 @@ def load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
 
 
 def load_json(path: Path) -> list[dict[str, Any]]:
-    """Load a JSON list, returning an empty list when the file is absent."""
+    """Load JSON items, accepting either a list or an {"items": [...]} payload."""
     if not path.exists():
         logging.warning("JSON file not found: %s", path)
         return []
@@ -123,8 +123,11 @@ def load_json(path: Path) -> list[dict[str, Any]]:
     with path.open("r", encoding="utf-8") as file:
         data = json.load(file)
 
+    if isinstance(data, dict):
+        data = data.get("items", [])
+
     if not isinstance(data, list):
-        raise ValueError(f"Expected JSON list in {path}")
+        raise ValueError(f"Expected JSON list or object with items in {path}")
 
     return [item for item in data if isinstance(item, dict)]
 

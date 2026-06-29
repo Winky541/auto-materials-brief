@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T00:24:23+08:00",
+  "generated_at": "2026-06-30T00:53:39+08:00",
   "raw_count": 150,
   "filtered_count": 18,
   "selected_count": 15,
@@ -7,8 +7,8 @@
   "future_count": 5,
   "weekly_insights_count": 0,
   "discarded_reasons": {
-    "duplicate_event": 19,
-    "duplicate_url": 19,
+    "duplicate_event": 10,
+    "duplicate_url": 10,
     "old_news": 0,
     "invalid_url": 0,
     "aggregator_source": 0,
