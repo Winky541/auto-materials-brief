@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-30",
+  "updated_at": "2026-07-01",
   "domains": [
     {
       "domain": "Metal Materials",
@@ -33,102 +33,118 @@
       "domain": "Energy Materials",
       "zh": "能源材料",
       "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
-      "count": 6,
+      "count": 7,
       "items": [
         {
-          "event_id": "2c8fa1237221cfe6",
-          "canonical_url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
-          "normalized_title": "catl joins oems develop recyclable battery framework",
-          "title": "CATL joins OEMs to develop recyclable battery framework",
+          "event_id": "a8c0c7d9ec415cb5",
+          "canonical_url": "https://www.electrive.com/2026/07/01/stricter-ev-and-battery-standards-take-effect-in-china",
+          "normalized_title": "stricter ev battery standards take effect china",
+          "title": "Stricter EV and battery standards take effect in China",
           "source": "Electrive",
           "source_names": [
             "Electrive"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework"
+            "https://www.electrive.com/2026/07/01/stricter-ev-and-battery-standards-take-effect-in-china"
           ],
-          "published_date": "2026-06-29",
-          "url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
-          "link_label": "官方发布"
-        },
-        {
-          "event_id": "50ce26cd0c389cd6",
-          "canonical_url": "https://www.nature.com/articles/s41560-026-02087-6",
-          "normalized_title": "interplay between stack pressure mechanical expansion degradation pathways lithium ion batteries",
-          "title": "The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries",
-          "source": "Nature Energy",
-          "source_names": [
-            "Nature Energy"
-          ],
-          "source_urls": [
-            "https://www.nature.com/articles/s41560-026-02087-6"
-          ],
-          "published_date": "2026-06-29",
-          "url": "https://www.nature.com/articles/s41560-026-02087-6",
-          "link_label": "阅读全文"
-        },
-        {
-          "event_id": "bde96b51daa465bf",
-          "canonical_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-          "normalized_title": "mapping europe s ai workforce opportunity",
-          "title": "Mapping Europe’s AI Workforce Opportunity",
-          "source": "OpenAI Blog",
-          "source_names": [
-            "OpenAI Blog"
-          ],
-          "source_urls": [
-            "https://openai.com/index/mapping-ai-jobs-transition-eu"
-          ],
-          "published_date": "2026-06-29",
-          "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+          "published_date": "2026-07-01",
+          "url": "https://www.electrive.com/2026/07/01/stricter-ev-and-battery-standards-take-effect-in-china",
           "link_label": "阅读原文"
         },
         {
-          "event_id": "3a208eb96061cc6f",
-          "canonical_url": "https://arxiv.org/abs/2606.27929",
-          "normalized_title": "when multi robot systems meet agentic ai towards embodied collective intelligence",
-          "title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
+          "event_id": "ad4d62e91a697437",
+          "canonical_url": "https://www.electrive.com/2026/07/01/norways-ev-share-reaches-96-5-in-june",
+          "normalized_title": "norway s ev share reaches 96 5 june",
+          "title": "Norway’s EV share reaches 96.5% in June",
+          "source": "Electrive",
+          "source_names": [
+            "Electrive"
+          ],
+          "source_urls": [
+            "https://www.electrive.com/2026/07/01/norways-ev-share-reaches-96-5-in-june"
+          ],
+          "published_date": "2026-07-01",
+          "url": "https://www.electrive.com/2026/07/01/norways-ev-share-reaches-96-5-in-june",
+          "link_label": "阅读原文"
+        },
+        {
+          "event_id": "1857a1a3bf8ca5df",
+          "canonical_url": "https://arxiv.org/abs/2603.06866",
+          "normalized_title": "car cross vehicle kinodynamics adaptation via mobility representation",
+          "title": "CAR: Cross-Vehicle Kinodynamics Adaptation via Mobility Representation",
           "source": "arXiv",
           "source_names": [
             "arXiv"
           ],
           "source_urls": [
-            "https://arxiv.org/abs/2606.27929"
+            "https://arxiv.org/abs/2603.06866"
           ],
-          "published_date": "2026-06-29",
-          "url": "https://arxiv.org/abs/2606.27929",
+          "published_date": "2026-07-01",
+          "url": "https://arxiv.org/abs/2603.06866",
           "link_label": "阅读全文"
         },
         {
-          "event_id": "6ceb1be78cf2591a",
-          "canonical_url": "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles",
-          "normalized_title": "são paulo expands electric bus fleet 500 new vehicles",
-          "title": "São Paulo expands electric bus fleet with 500 new vehicles",
-          "source": "Electrive",
-          "source_names": [
-            "Electrive"
-          ],
-          "source_urls": [
-            "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles"
-          ],
-          "published_date": "2026-06-29",
-          "url": "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles",
-          "link_label": "阅读原文"
-        },
-        {
-          "event_id": "2e1a2d02c59a0c62",
-          "canonical_url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
-          "normalized_title": "lab mistake that might revolutionize computing",
-          "title": "The Lab Mistake That Might Revolutionize Computing",
+          "event_id": "142d393906c33359",
+          "canonical_url": "https://spectrum.ieee.org/orbital-data-center-hype",
+          "normalized_title": "orbital data center hype machine is already orbit",
+          "title": "The Orbital Data Center Hype Machine Is Already in Orbit",
           "source": "IEEE Spectrum",
           "source_names": [
             "IEEE Spectrum"
           ],
           "source_urls": [
-            "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips"
+            "https://spectrum.ieee.org/orbital-data-center-hype"
           ],
-          "published_date": "2026-06-29",
-          "url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
+          "published_date": "2026-07-01",
+          "url": "https://spectrum.ieee.org/orbital-data-center-hype",
+          "link_label": "阅读全文"
+        },
+        {
+          "event_id": "88dc02a5f6269dc0",
+          "canonical_url": "https://arxiv.org/abs/2606.31073",
+          "normalized_title": "multiuav plat llm oriented platform benchmark framework multi uav collaborative task planning",
+          "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
+          "source": "arXiv",
+          "source_names": [
+            "arXiv"
+          ],
+          "source_urls": [
+            "https://arxiv.org/abs/2606.31073"
+          ],
+          "published_date": "2026-07-01",
+          "url": "https://arxiv.org/abs/2606.31073",
+          "link_label": "阅读全文"
+        },
+        {
+          "event_id": "ebd80e3ffb7e67c0",
+          "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0458808EN/new-bmw-7-series-ramps-up-in-dingolfing:-progressive-luxury-meets-neue-klasse-technologies?showMedia=photo",
+          "normalized_title": "new bmw 7 series ramps up dingolfing progressive luxury meets neue klasse technologies wed jul 01 14 00 00 cest 2026 press release most comprehensive model update company history enters series production neue klasse innovations roll out across existing portfolio greater range faster charging bmw i7 high tech craftsmanship deliver maximum customisation exclusivity g70 lci g70 lci locations production plants sedan 7 series dingolfing",
+          "title": "New BMW 7 Series ramps up in Dingolfing: Progressive luxury meets Neue Klasse technologies Wed Jul 01 14:00:00 CEST 2026 Press Release Most comprehensive model update in company history enters series production – Neue Klasse innovations roll out across existing portfolio – Greater range and faster charging for the BMW i7 – High-tech and craftsmanship deliver maximum customisation and exclusivity G70 LCI · G70 · LCI · Locations · Production Plants · Sedan · 7 Series · Dingolfing",
+          "source": "BMW",
+          "source_names": [
+            "BMW"
+          ],
+          "source_urls": [
+            "https://www.press.bmwgroup.com/global/article/detail/T0458808EN/new-bmw-7-series-ramps-up-in-dingolfing:-progressive-luxury-meets-neue-klasse-technologies?showMedia=photo"
+          ],
+          "published_date": "2026-07-01",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0458808EN/new-bmw-7-series-ramps-up-in-dingolfing:-progressive-luxury-meets-neue-klasse-technologies?showMedia=photo",
+          "link_label": "官方发布"
+        },
+        {
+          "event_id": "c7fd439106f177ad",
+          "canonical_url": "https://arxiv.org/abs/2606.31037",
+          "normalized_title": "labimus simulation benchmark humanoid dexterous manipulation chemical laboratory",
+          "title": "Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory",
+          "source": "arXiv",
+          "source_names": [
+            "arXiv"
+          ],
+          "source_urls": [
+            "https://arxiv.org/abs/2606.31037"
+          ],
+          "published_date": "2026-07-01",
+          "url": "https://arxiv.org/abs/2606.31037",
           "link_label": "阅读全文"
         }
       ]
