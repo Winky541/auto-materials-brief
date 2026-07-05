@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ brand_en }}</title>
-    <link rel="stylesheet" href="/auto-materials-brief/assets/style.css">
+    <link rel="stylesheet" href="{{ asset_prefix }}/style.css">
   </head>
   <body>
     <header class="site-header">
@@ -12,223 +12,221 @@
         <span>{{ brand_en }}</span>
       </a>
       <nav class="top-nav">
-        <span>Researcher's Workspace</span>
+        <a href="#learning-start">Home</a>
+        <a href="#opportunity-graph">Material Library</a>
+        <a href="#future-signals">Future Signals</a>
+        <a href="#insights">Weekly Insights</a>
+        <a href="#archives">Archive</a>
+        <a href="#team-room">Team Room</a>
       </nav>
     </header>
 
-    <main class="page">
-      <section id="studio" class="studio-hero is-3d" aria-labelledby="studio-title">
-        <div
-          id="auraStudio3d"
-          class="studio-3d"
-          data-root-prefix="{{ root_prefix }}"
-          aria-label="AURA realistic 3D researcher's workspace"
-        >
-          <div class="studio-3d-loading">
-            <span>AURA Studio</span>
-            <small>Entering the researcher's workspace</small>
-          </div>
-        </div>
-        <div class="studio-copy">
+    <main class="page learning-home">
+      <section id="learning-start" class="learning-hero" aria-labelledby="learning-title">
+        <div class="learning-hero-copy">
           <p class="eyebrow">{{ date }}</p>
-          <h1 id="studio-title" class="studio-wordmark">
-            <span>AURA</span>
-            <span>Studio</span>
-          </h1>
-          <p class="studio-role">Researcher's Workspace</p>
-          <p class="studio-expansion">
-            Advanced Understanding<br>
-            of Research &amp; Applications
-          </p>
+          <h1 id="learning-title">AURA</h1>
+          <p class="learning-subtitle">Materials Intelligence &amp; Future Learning Platform</p>
+          <p class="learning-question">What would you like to explore today?</p>
         </div>
-        <div class="studio-hint">Click objects in the room</div>
-        <div class="studio-object-label" id="studioObjectLabel" aria-hidden="true"></div>
-        <div class="studio-panel" id="studioPanel" aria-live="polite" aria-hidden="true">
-          <button class="studio-panel-close" type="button" data-close-studio-panel aria-label="Close studio panel">×</button>
-          <div class="studio-panel-content" id="studioPanelContent"></div>
-        </div>
-        <div class="research-desk studio-fallback" aria-label="Researcher's desk fallback navigation">
-          <button class="desk-object desk-window" type="button" data-studio-target="future-signals" aria-label="Open Future Signals">
-            <span class="window-frame"><i></i><i></i></span>
-            <strong>Window</strong>
-            <em>Future Signals</em>
-          </button>
-          <button class="desk-object desk-notebook" type="button" data-studio-target="key-insight" aria-label="Open Today's Key Insight">
-            <span class="notebook-shape"><i></i></span>
-            <strong>Notebook</strong>
-            <em>Today's Key Insight</em>
-          </button>
-          <button class="desk-object desk-bookshelf" type="button" data-studio-target="opportunity-graph" aria-label="Open Material Opportunity Graph">
-            <span class="bookshelf-shape"><i></i><i></i><i></i><i></i></span>
-            <strong>Bookshelf</strong>
-            <em>Material Opportunity Graph</em>
-          </button>
-          <button class="desk-object desk-palette" type="button" data-studio-target="suggested-actions" aria-label="Open Suggested Actions">
-            <span class="palette-shape"><i></i><i></i><i></i><i></i></span>
-            <strong>Palette</strong>
-            <em>Suggested Actions</em>
-          </button>
-          <button class="desk-object desk-archive" type="button" data-studio-target="archives" aria-label="Open Archive">
-            <span class="archive-shape"><i></i></span>
-            <strong>Archive Box</strong>
-            <em>Archive</em>
-          </button>
-          <button class="desk-object desk-cat" type="button" data-studio-target="insights" aria-label="Open Weekly Insights">
-            <span class="cat-shape"><i></i><i></i></span>
-            <strong>Cat</strong>
-            <em>Weekly Insights</em>
-          </button>
-          <button class="desk-object desk-team-room" type="button" data-studio-target="team-room" aria-label="Open Team Room">
-            <span class="team-room-shape"><i></i></span>
-            <strong>Team Room</strong>
-            <em>Members</em>
-          </button>
+
+        <div class="learning-entry-grid" aria-label="AURA learning entries">
+          <a class="learning-entry-card is-opportunity" href="#discover-opportunities">
+            <span class="entry-icon" aria-hidden="true">01</span>
+            <strong>Discover Opportunities</strong>
+            <em>发现材料机会</em>
+            <small>Today's Key Insight / Material Library / Suggested Actions</small>
+          </a>
+          <a class="learning-entry-card is-future" href="#explore-future-trends">
+            <span class="entry-icon" aria-hidden="true">02</span>
+            <strong>Explore Future Trends</strong>
+            <em>了解未来趋势</em>
+            <small>Future Signals</small>
+          </a>
+          <a class="learning-entry-card is-thinking" href="#upgrade-your-thinking">
+            <span class="entry-icon" aria-hidden="true">03</span>
+            <strong>Upgrade Your Thinking</strong>
+            <em>拓展认知与思维</em>
+            <small>Weekly Insights</small>
+          </a>
+          <a class="learning-entry-card is-review" href="#review-knowledge">
+            <span class="entry-icon" aria-hidden="true">04</span>
+            <strong>Review Knowledge</strong>
+            <em>查看历史沉淀</em>
+            <small>Archive</small>
+          </a>
         </div>
       </section>
 
-      <section id="future-signals" class="opportunity-panel radar-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Window</p>
-          <h2>Future Signals</h2>
+      <section id="discover-opportunities" class="learning-module studio-content-source">
+        <div class="learning-module-heading">
+          <p class="eyebrow">01 Discover Opportunities</p>
+          <h2>发现材料机会</h2>
         </div>
-        <div class="hotspot-grid">
-          {% for radar in future_radar %}
-          <article class="future-signal-card">
-            <strong>{{ radar.category }}</strong>
-            <span>Future Signal {{ radar.avg_future_signal_score }} <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
-            <p>{{ radar.summary }}</p>
-            <div class="signal-sources">
-              {% for source in radar.sources %}
-              <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.source }} · 阅读原文</a>
-              {% endfor %}
-            </div>
-          </article>
-          {% else %}
-          <article>
-            <strong>本期暂无 Future Signals。</strong>
-            <span>未来信号不足时，AURA 不会用普通新闻填充窗外世界。</span>
-          </article>
-          {% endfor %}
-        </div>
+
+        <section id="key-insight" class="opportunity-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Today's Key Insight</p>
+            <h2>Today's Key Insight</h2>
+          </div>
+          <div class="insight-stack insight-panel">
+            {% for row in research_insight_cards %}
+            <article>
+              <strong>{{ row.label }}</strong>
+              <p>{{ row.text }}</p>
+            </article>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section id="opportunity-graph" class="opportunity-panel priority-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Material Library</p>
+            <h2>Material Library</h2>
+          </div>
+          <div class="material-course-grid" aria-label="Material Library categories">
+            {% for domain in opportunity_library %}
+            <details class="material-course-card" {% if domain.is_default_open %}open{% endif %}>
+              <summary>
+                <span class="course-card-main">
+                  <strong>{{ domain.domain }}</strong>
+                  <em>{{ domain.zh }}</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>{{ domain.count }}</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                {% for item in domain["items"] %}
+                <article class="material-course-item">
+                  <h3>{{ item.title }}</h3>
+                  <p>{{ item.brief }}</p>
+                  <div class="course-item-meta">
+                    <span>{{ item.source }}</span>
+                    <span>{{ item.published_date }}</span>
+                  </div>
+                  {% if item.url %}
+                  <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label }}</a>
+                  {% endif %}
+                </article>
+                {% else %}
+                <p class="empty-library">本周期暂无新增内容。</p>
+                {% endfor %}
+              </div>
+            </details>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section id="suggested-actions" class="opportunity-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Suggested Actions</p>
+            <h2>Suggested Actions</h2>
+          </div>
+          <div class="validation-pool">
+            {% if validation_pool | selectattr("count") | list %}
+            {% for group in validation_pool %}
+            <article style="--action-color: {{ group.color }}">
+              <h3>{{ group.action }}</h3>
+              <span>{% if group.has_new %}<i class="action-dot" aria-label="本周期有新增内容"></i>{% endif %}{{ group.meaning }} · {{ group.count }} 个机会</span>
+              <div class="palette-brief">
+                <p><strong>AI Insight</strong>{{ group.ai_insight }}</p>
+                <p><strong>Why Now</strong>{{ group.why_now }}</p>
+                <p><strong>Suggested Move</strong>{{ group.suggested_move }}</p>
+              </div>
+              <div class="palette-evidence">
+                <strong>Evidence</strong>
+                {% for source in group.evidence %}
+                <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
+                  <span>{{ source.title }}</span>
+                  <em>{{ source.source }} · 阅读来源</em>
+                </a>
+                {% else %}
+                <span>暂无足够来源证据。</span>
+                {% endfor %}
+              </div>
+            </article>
+            {% endfor %}
+            {% else %}
+            <article>
+              <h3>本期暂无可生成建议的有效信号。</h3>
+              <span>Palette 只在有足够证据时生成研发建议。</span>
+            </article>
+            {% endif %}
+          </div>
+        </section>
       </section>
 
-      <section id="key-insight" class="opportunity-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Notebook</p>
-          <h2>Today's Key Insight</h2>
+      <section id="explore-future-trends" class="learning-module studio-content-source">
+        <div class="learning-module-heading">
+          <p class="eyebrow">02 Explore Future Trends</p>
+          <h2>了解未来趋势</h2>
         </div>
-        <div class="insight-stack insight-panel">
-          {% for row in research_insight_cards %}
-          <article>
-            <strong>{{ row.label }}</strong>
-            <p>{{ row.text }}</p>
-          </article>
-          {% endfor %}
-        </div>
+        <section id="future-signals" class="opportunity-panel radar-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Future Signals</p>
+            <h2>Future Signals</h2>
+          </div>
+          <div class="hotspot-grid">
+            {% for radar in future_radar %}
+            <article class="future-signal-card">
+              <strong>{{ radar.category }}</strong>
+              <span>Future Signal {{ radar.avg_future_signal_score }} <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+              <p>{{ radar.summary }}</p>
+              <div class="signal-sources">
+                {% for source in radar.sources %}
+                <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.source }} · 阅读原文</a>
+                {% endfor %}
+              </div>
+            </article>
+            {% else %}
+            <article>
+              <strong>本期暂无 Future Signals。</strong>
+              <span>未来信号不足时，AURA 不会用普通新闻填充窗外世界。</span>
+            </article>
+            {% endfor %}
+          </div>
+        </section>
       </section>
 
-      <section id="opportunity-graph" class="opportunity-panel priority-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Bookshelf</p>
-          <h2>Material Opportunity Graph</h2>
+      <section id="upgrade-your-thinking" class="learning-module studio-content-source">
+        <div class="learning-module-heading">
+          <p class="eyebrow">03 Upgrade Your Thinking</p>
+          <h2>拓展认知与思维</h2>
         </div>
-        <div class="bookshelf-library" aria-label="Opportunity library">
-          {% for domain in opportunity_library %}
-          <details class="bookshelf-domain" {% if domain.is_default_open %}open{% endif %}>
-            <summary>
-              <span>
-                <strong>{% if domain.count %}●{% else %}○{% endif %} {{ domain.domain }} ({{ domain.count }})</strong>
-                <em>{{ domain.zh }}</em>
-                {% if domain.description %}
-                <small>{{ domain.description }}</small>
-                {% endif %}
-              </span>
-              <b>{{ domain.count }} 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              {% for item in domain["items"] %}
-              <article class="bookshelf-current-item">
-                <h3>{{ item.title }}</h3>
-                <dl>
-                  <div><dt>来源</dt><dd>{{ item.source }}</dd></div>
-                  <div><dt>发布时间</dt><dd>{{ item.published_date }}</dd></div>
-                </dl>
-                {% if item.url %}
-                <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label }}</a>
-                {% endif %}
-              </article>
-              {% else %}
-              <p class="empty-library">本周期暂无新增内容。</p>
-              {% endfor %}
-            </div>
-          </details>
-          {% endfor %}
-        </div>
+        <section id="insights" class="opportunity-panel insights-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Weekly Insights</p>
+            <h2>Weekly Insights</h2>
+          </div>
+          <div class="insights-grid">
+            {% for article in insights %}
+            <article>
+              <div class="insight-meta">{{ article.source }} · {{ article.reading_time }}</div>
+              <h3><a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a></h3>
+              <p><strong>推荐理由：</strong>{{ article.why_read }}</p>
+              <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">阅读全文</a>
+            </article>
+            {% else %}
+            <article>
+              <div class="insight-meta">Weekly Insights</div>
+              <h3>本期暂无 Weekly Insights。</h3>
+              <p>Weekly Insights 只展示本期确认过的深度阅读内容。</p>
+            </article>
+            {% endfor %}
+          </div>
+        </section>
       </section>
 
-      <section id="suggested-actions" class="opportunity-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Palette</p>
-          <h2>Suggested Actions</h2>
+      <section id="review-knowledge" class="learning-module studio-content-source">
+        <div class="learning-module-heading">
+          <p class="eyebrow">04 Review Knowledge</p>
+          <h2>查看历史沉淀</h2>
         </div>
-        <div class="validation-pool">
-          {% if validation_pool | selectattr("count") | list %}
-          {% for group in validation_pool %}
-          <article style="--action-color: {{ group.color }}">
-            <h3>{{ group.action }}</h3>
-            <span>{% if group.has_new %}<i class="action-dot" aria-label="本周期有新增内容"></i>{% endif %}{{ group.meaning }} · {{ group.count }} 个机会</span>
-            <div class="palette-brief">
-              <p><strong>AI Insight</strong>{{ group.ai_insight }}</p>
-              <p><strong>Why Now</strong>{{ group.why_now }}</p>
-              <p><strong>Suggested Move</strong>{{ group.suggested_move }}</p>
-            </div>
-            <div class="palette-evidence">
-              <strong>Evidence</strong>
-              {% for source in group.evidence %}
-              <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
-                <span>{{ source.title }}</span>
-                <em>{{ source.source }} · 阅读来源</em>
-              </a>
-              {% else %}
-              <span>暂无足够来源证据。</span>
-              {% endfor %}
-            </div>
-          </article>
-          {% endfor %}
-          {% else %}
-          <article>
-            <h3>本期暂无可生成建议的有效信号。</h3>
-            <span>Palette 只在有足够证据时生成研发建议。</span>
-          </article>
-          {% endif %}
-        </div>
-      </section>
 
-      <section id="insights" class="opportunity-panel insights-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Cat</p>
-          <h2>Weekly Insights</h2>
-        </div>
-        <div class="insights-grid">
-          {% for article in insights %}
-          <article>
-            <div class="insight-meta">{{ article.source }} · {{ article.reading_time }}</div>
-            <h3><a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a></h3>
-            <p><strong>为什么值得读：</strong>{{ article.why_read }}</p>
-            <p><strong>建议关注：</strong>{{ article.focus }}</p>
-            <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">阅读全文</a>
-          </article>
-          {% else %}
-          <article>
-            <div class="insight-meta">Cat</div>
-            <h3>本期暂无 Weekly Insights。</h3>
-            <p>Weekly Insights 只展示本期确认过的深度阅读内容。</p>
-          </article>
-          {% endfor %}
-        </div>
-      </section>
-
-      <section id="archives" class="archive-grid studio-content-source">
+      <section id="archives" class="archive-grid">
         {% if archives.reset %}
         <div class="workspace-history archive-reset-state">
           <p class="eyebrow">Archive</p>
@@ -237,14 +235,14 @@
         </div>
         {% else %}
         <div class="workspace-history">
-          <p class="eyebrow">Dynamic Workspace</p>
-          <h2>Workspace Archive</h2>
+          <p class="eyebrow">Research Briefs</p>
+          <h2>Latest Brief Archive</h2>
           {% for cycle in archives.workspace %}
           <details class="workspace-cycle" {% if loop.first %}open{% endif %}>
             <summary>{{ cycle.date }}</summary>
             <div class="workspace-cycle-grid">
               <article>
-                <strong>Window / Future Signals</strong>
+                <strong>Future Signals</strong>
                 {% for signal in cycle.window %}
                 <span>{{ signal.category }} · Future Signal {{ signal.avg_future_signal_score }}</span>
                 <span>{{ signal.summary }}</span>
@@ -256,13 +254,13 @@
                 {% endfor %}
               </article>
               <article>
-                <strong>Notebook / Today's Key Insight</strong>
+                <strong>Today's Key Insight</strong>
                 {% for row in cycle.notebook %}
                 <span>{{ row.label }}：{{ row.text }}</span>
                 {% endfor %}
               </article>
               <article>
-                <strong>Cat / Weekly Insights</strong>
+                <strong>Weekly Insights</strong>
                 {% for article in cycle.cat %}
                 <a href="{{ article.url }}" target="_blank" rel="noopener noreferrer">{{ article.source }} · {{ article.title }}</a>
                 {% else %}
@@ -270,7 +268,7 @@
                 {% endfor %}
               </article>
               <article>
-                <strong>Palette / Suggested Actions</strong>
+                <strong>Suggested Actions</strong>
                 {% for group in cycle.palette %}
                 <span>{{ group.action }}：{{ group.suggested_move }}</span>
                 {% for source in group.evidence %}
@@ -281,7 +279,7 @@
                 {% endfor %}
               </article>
               <article>
-                <strong>Bookshelf / Material Opportunity Graph</strong>
+                <strong>Material Library</strong>
                 {% for domain in cycle.bookshelf %}
                 <span>{{ domain.domain }} · {{ domain.count }} 条</span>
                 {% for item in domain["items"] %}
@@ -299,23 +297,29 @@
         </div>
         <div>
           <p class="eyebrow">Archive</p>
-          <h2>Daily Archive</h2>
-          <div class="archive-links">
-            {% for item in archives.daily %}
-            <a href="{{ item.href }}">{{ item.date }}</a>
-            {% endfor %}
-          </div>
-        </div>
-        <div>
-          <p class="eyebrow">Monthly</p>
-          <h2>Monthly Archive</h2>
-          <div class="archive-links">
-            {% for item in archives.monthly %}
-            <a href="{{ item.href }}">{{ item.month }}</a>
+          <h2>Browse by Date</h2>
+          <div class="archive-tree">
+            {% for year in archives.tree %}
+            <details class="archive-year" {% if loop.first %}open{% endif %}>
+              <summary>{{ year.year }}</summary>
+              {% for month in year.months %}
+              <details class="archive-month" {% if loop.first %}open{% endif %}>
+                <summary>{{ month.month }}</summary>
+                <div class="archive-links">
+                  {% for item in month.days %}
+                  <a href="{{ item.href }}">{{ item.date }}</a>
+                  {% endfor %}
+                </div>
+              </details>
+              {% endfor %}
+            </details>
+            {% else %}
+            <p class="empty-library">归档已重置，等待新的 AURA 记录。</p>
             {% endfor %}
           </div>
         </div>
         {% endif %}
+      </section>
       </section>
 
       <section id="team-room" class="team-room-panel studio-content-source">
@@ -352,102 +356,6 @@
     <script>
       window.AURA = { generatedAt: "{{ date }}" };
     </script>
-    <script>
-      (() => {
-        const panel = document.getElementById("studioPanel");
-        const panelContent = document.getElementById("studioPanelContent");
-        const sources = new Map(
-          [...document.querySelectorAll(".studio-content-source")].map((node) => [node.id, node])
-        );
-        if (!panel || !panelContent) return;
-
-        const teamProfiles = {
-          "zhou-qiang": {
-            name: "周强",
-            status: "Former Member",
-            role: "",
-            joined: "",
-            expertise: "",
-            experience: ""
-          },
-          "gou-zhi": {
-            name: "苟智",
-            status: "Active",
-            role: "",
-            joined: "",
-            expertise: "",
-            experience: ""
-          },
-          "liang-yunqi": {
-            name: "梁蕴祺",
-            status: "Active",
-            role: "",
-            joined: "",
-            expertise: "",
-            experience: ""
-          }
-        };
-
-        const escapeHtml = (value) => String(value || "")
-          .replaceAll("&", "&amp;")
-          .replaceAll("<", "&lt;")
-          .replaceAll(">", "&gt;")
-          .replaceAll('"', "&quot;")
-          .replaceAll("'", "&#039;");
-
-        const openPanel = (target) => {
-          const source = sources.get(target);
-          if (!source) return;
-          panelContent.innerHTML = source.innerHTML;
-          panel.dataset.source = target;
-          panel.classList.add("is-open");
-          panel.setAttribute("aria-hidden", "false");
-        };
-
-        const openProfile = (id) => {
-          const profile = teamProfiles[id];
-          if (!profile) return;
-          panelContent.innerHTML = `
-            <section class="team-profile-card">
-              <p class="eyebrow">Team Room</p>
-              <div class="team-profile-head">
-                <h2>${escapeHtml(profile.name)}</h2>
-                <span class="member-status ${profile.status === "Active" ? "is-active" : "is-former"}">${escapeHtml(profile.status)}</span>
-              </div>
-              <dl>
-                <div><dt>职位</dt><dd>${escapeHtml(profile.role)}</dd></div>
-                <div><dt>加入时间</dt><dd>${escapeHtml(profile.joined)}</dd></div>
-                <div><dt>专业方向</dt><dd>${escapeHtml(profile.expertise)}</dd></div>
-                <div><dt>经历</dt><dd>${escapeHtml(profile.experience)}</dd></div>
-              </dl>
-            </section>
-          `;
-          panel.dataset.source = `team-${id}`;
-          panel.classList.add("is-open");
-          panel.setAttribute("aria-hidden", "false");
-        };
-
-        const closePanel = () => {
-          panel.classList.remove("is-open");
-          panel.setAttribute("aria-hidden", "true");
-        };
-
-        window.AURAStudioOpenPanel = openPanel;
-        window.AURAStudioOpenProfile = openProfile;
-        document.querySelectorAll("[data-studio-target]").forEach((button) => {
-          button.addEventListener("click", () => openPanel(button.dataset.studioTarget));
-        });
-        document.addEventListener("click", (event) => {
-          const memberButton = event.target.closest("[data-team-profile]");
-          if (memberButton) openProfile(memberButton.dataset.teamProfile);
-        });
-        document.querySelector("[data-close-studio-panel]")?.addEventListener("click", closePanel);
-        document.addEventListener("keydown", (event) => {
-          if (event.key === "Escape") closePanel();
-        });
-      })();
-    </script>
-    <script type="module" src="{{ asset_prefix }}/studio3d.js?v=20260628-team-room-v3"></script>
     {% include "_metric_modal.html.j2" %}
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AURA</title>
-    <link rel="stylesheet" href="/auto-materials-brief/assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <header class="site-header">
@@ -12,431 +12,456 @@
         <span>AURA</span>
       </a>
       <nav class="top-nav">
-        <span>Researcher's Workspace</span>
+        <a href="#learning-start">Home</a>
+        <a href="#opportunity-graph">Material Library</a>
+        <a href="#future-signals">Future Signals</a>
+        <a href="#insights">Weekly Insights</a>
+        <a href="#archives">Archive</a>
+        <a href="#team-room">Team Room</a>
       </nav>
     </header>
 
-    <main class="page">
-      <section id="studio" class="studio-hero is-3d" aria-labelledby="studio-title">
-        <div
-          id="auraStudio3d"
-          class="studio-3d"
-          data-root-prefix="."
-          aria-label="AURA realistic 3D researcher's workspace"
-        >
-          <div class="studio-3d-loading">
-            <span>AURA Studio</span>
-            <small>Entering the researcher's workspace</small>
-          </div>
-        </div>
-        <div class="studio-copy">
+    <main class="page learning-home">
+      <section id="learning-start" class="learning-hero" aria-labelledby="learning-title">
+        <div class="learning-hero-copy">
           <p class="eyebrow">2026-06-30</p>
-          <h1 id="studio-title" class="studio-wordmark">
-            <span>AURA</span>
-            <span>Studio</span>
-          </h1>
-          <p class="studio-role">Researcher's Workspace</p>
-          <p class="studio-expansion">
-            Advanced Understanding<br>
-            of Research &amp; Applications
-          </p>
+          <h1 id="learning-title">AURA</h1>
+          <p class="learning-subtitle">Materials Intelligence &amp; Future Learning Platform</p>
+          <p class="learning-question">What would you like to explore today?</p>
         </div>
-        <div class="studio-hint">Click objects in the room</div>
-        <div class="studio-object-label" id="studioObjectLabel" aria-hidden="true"></div>
-        <div class="studio-panel" id="studioPanel" aria-live="polite" aria-hidden="true">
-          <button class="studio-panel-close" type="button" data-close-studio-panel aria-label="Close studio panel">×</button>
-          <div class="studio-panel-content" id="studioPanelContent"></div>
-        </div>
-        <div class="research-desk studio-fallback" aria-label="Researcher's desk fallback navigation">
-          <button class="desk-object desk-window" type="button" data-studio-target="future-signals" aria-label="Open Future Signals">
-            <span class="window-frame"><i></i><i></i></span>
-            <strong>Window</strong>
-            <em>Future Signals</em>
-          </button>
-          <button class="desk-object desk-notebook" type="button" data-studio-target="key-insight" aria-label="Open Today's Key Insight">
-            <span class="notebook-shape"><i></i></span>
-            <strong>Notebook</strong>
-            <em>Today's Key Insight</em>
-          </button>
-          <button class="desk-object desk-bookshelf" type="button" data-studio-target="opportunity-graph" aria-label="Open Material Opportunity Graph">
-            <span class="bookshelf-shape"><i></i><i></i><i></i><i></i></span>
-            <strong>Bookshelf</strong>
-            <em>Material Opportunity Graph</em>
-          </button>
-          <button class="desk-object desk-palette" type="button" data-studio-target="suggested-actions" aria-label="Open Suggested Actions">
-            <span class="palette-shape"><i></i><i></i><i></i><i></i></span>
-            <strong>Palette</strong>
-            <em>Suggested Actions</em>
-          </button>
-          <button class="desk-object desk-archive" type="button" data-studio-target="archives" aria-label="Open Archive">
-            <span class="archive-shape"><i></i></span>
-            <strong>Archive Box</strong>
-            <em>Archive</em>
-          </button>
-          <button class="desk-object desk-cat" type="button" data-studio-target="insights" aria-label="Open Weekly Insights">
-            <span class="cat-shape"><i></i><i></i></span>
-            <strong>Cat</strong>
-            <em>Weekly Insights</em>
-          </button>
-          <button class="desk-object desk-team-room" type="button" data-studio-target="team-room" aria-label="Open Team Room">
-            <span class="team-room-shape"><i></i></span>
-            <strong>Team Room</strong>
-            <em>Members</em>
-          </button>
+
+        <div class="learning-entry-grid" aria-label="AURA learning entries">
+          <a class="learning-entry-card is-opportunity" href="#discover-opportunities">
+            <span class="entry-icon" aria-hidden="true">01</span>
+            <strong>Discover Opportunities</strong>
+            <em>发现材料机会</em>
+            <small>Today's Key Insight / Material Library / Suggested Actions</small>
+          </a>
+          <a class="learning-entry-card is-future" href="#explore-future-trends">
+            <span class="entry-icon" aria-hidden="true">02</span>
+            <strong>Explore Future Trends</strong>
+            <em>了解未来趋势</em>
+            <small>Future Signals</small>
+          </a>
+          <a class="learning-entry-card is-thinking" href="#upgrade-your-thinking">
+            <span class="entry-icon" aria-hidden="true">03</span>
+            <strong>Upgrade Your Thinking</strong>
+            <em>拓展认知与思维</em>
+            <small>Weekly Insights</small>
+          </a>
+          <a class="learning-entry-card is-review" href="#review-knowledge">
+            <span class="entry-icon" aria-hidden="true">04</span>
+            <strong>Review Knowledge</strong>
+            <em>查看历史沉淀</em>
+            <small>Archive</small>
+          </a>
         </div>
       </section>
 
-      <section id="future-signals" class="opportunity-panel radar-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Window</p>
-          <h2>Future Signals</h2>
+      <section id="discover-opportunities" class="learning-module studio-content-source">
+        <div class="learning-module-heading">
+          <p class="eyebrow">01 Discover Opportunities</p>
+          <h2>发现材料机会</h2>
         </div>
-        <div class="hotspot-grid">
-          <article class="future-signal-card">
-            <strong>OEM Strategy Transition</strong>
-            <span>Future Signal 74 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
-            <p>该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</p>
-            <div class="signal-sources">
-              <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">Electrive · 阅读原文</a>
-              <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">OpenAI Blog · 阅读原文</a>
-            </div>
-          </article>
-          <article class="future-signal-card">
-            <strong>Advanced Manufacturing & Automation</strong>
-            <span>Future Signal 72 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
-            <p>该报告不涉及具体材料技术或产业变化，对材料研发人员无直接参考价值。</p>
-            <div class="signal-sources">
-              <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">OpenAI Blog · 阅读原文</a>
-            </div>
-          </article>
-          <article class="future-signal-card">
-            <strong>Energy Revolution</strong>
-            <span>Future Signal 68 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
-            <p>该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</p>
-            <div class="signal-sources">
-              <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">Electrive · 阅读原文</a>
-              <a href="https://www.nature.com/articles/s41560-026-02087-6" target="_blank" rel="noopener noreferrer">Nature Energy · 阅读原文</a>
-            </div>
-          </article>
-          <article class="future-signal-card">
-            <strong>Robotics & Embodied AI</strong>
-            <span>Future Signal 51 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
-            <p>该报告不涉及具体材料技术或产业变化，对材料研发人员无直接参考价值。</p>
-            <div class="signal-sources">
-              <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">OpenAI Blog · 阅读原文</a>
-              <a href="https://arxiv.org/abs/2606.27929" target="_blank" rel="noopener noreferrer">arXiv · 阅读原文</a>
-            </div>
-          </article>
-          <article class="future-signal-card">
-            <strong>AI Agent & AI Hardware</strong>
-            <span>Future Signal 40 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
-            <p>该技术可能颠覆AI硬件架构，降低功耗和散热需求，从而影响汽车电子系统的热管理和封装材料需求，但当前仍处于实验室阶段，材料机会不直接。</p>
-            <div class="signal-sources">
-              <a href="https://spectrum.ieee.org/artificial-neurons-on-silicon-chips" target="_blank" rel="noopener noreferrer">IEEE Spectrum · 阅读原文</a>
-              <a href="https://arxiv.org/abs/2606.27929" target="_blank" rel="noopener noreferrer">arXiv · 阅读原文</a>
-            </div>
-          </article>
-        </div>
+
+        <section id="key-insight" class="opportunity-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Today's Key Insight</p>
+            <h2>Today's Key Insight</h2>
+          </div>
+          <div class="insight-stack insight-panel">
+            <article>
+              <strong>What Changed</strong>
+              <p>本期高价值信号集中在汽车新材料、未来趋势观察，技术牵引以储能最突出。</p>
+            </article>
+            <article>
+              <strong>Why It Matters</strong>
+              <p>该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</p>
+            </article>
+            <article>
+              <strong>Material Opportunity</strong>
+              <p>优先关注电池回收材料、正极材料（如NMC、LFP）、负极材料（石墨、硅碳）、电解液、隔膜、铜箔、铝箔、锂离子电池、电极材料。可回收电池设计可能牵引以下材料方向：易剥离的粘结剂（如水性粘结剂）、可回收的隔膜涂层、无氟电解液、单一材料体系的正极（如LFP）、可拆解的结构胶。但当前阶段以标准制定为主，具体材料需求尚未明确。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="opportunity-graph" class="opportunity-panel priority-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Material Library</p>
+            <h2>Material Library</h2>
+          </div>
+          <div class="material-course-grid" aria-label="Material Library categories">
+            <details class="material-course-card" >
+              <summary>
+                <span class="course-card-main">
+                  <strong>Metal Materials</strong>
+                  <em>金属材料</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>0</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                <p class="empty-library">本周期暂无新增内容。</p>
+              </div>
+            </details>
+            <details class="material-course-card" >
+              <summary>
+                <span class="course-card-main">
+                  <strong>Polymer & Elastomer Materials</strong>
+                  <em>高分子与橡胶材料</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>0</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                <p class="empty-library">本周期暂无新增内容。</p>
+              </div>
+            </details>
+            <details class="material-course-card" >
+              <summary>
+                <span class="course-card-main">
+                  <strong>Composite Materials</strong>
+                  <em>复合材料</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>0</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                <p class="empty-library">本周期暂无新增内容。</p>
+              </div>
+            </details>
+            <details class="material-course-card" >
+              <summary>
+                <span class="course-card-main">
+                  <strong>Functional Materials</strong>
+                  <em>功能材料</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>0</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                <p class="empty-library">本周期暂无新增内容。</p>
+              </div>
+            </details>
+            <details class="material-course-card" open>
+              <summary>
+                <span class="course-card-main">
+                  <strong>Energy Materials</strong>
+                  <em>能源材料</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>6</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                <article class="material-course-item">
+                  <h3>CATL joins OEMs to develop recyclable battery framework</h3>
+                  <p>该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</p>
+                  <div class="course-item-meta">
+                    <span>Electrive</span>
+                    <span>2026-06-29</span>
+                  </div>
+                  <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">官方发布</a>
+                </article>
+                <article class="material-course-item">
+                  <h3>The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries</h3>
+                  <p>该研究从机械-电化学耦合角度优化电池寿命，可能引导电池包设计中对堆叠压力的精细化控制，进而影响电池封装材料和结构材料的选择。</p>
+                  <div class="course-item-meta">
+                    <span>Nature Energy</span>
+                    <span>2026-06-29</span>
+                  </div>
+                  <a href="https://www.nature.com/articles/s41560-026-02087-6" target="_blank" rel="noopener noreferrer">阅读论文</a>
+                </article>
+                <article class="material-course-item">
+                  <h3>Mapping Europe’s AI Workforce Opportunity</h3>
+                  <p>该报告不涉及具体材料技术或产业变化，对材料研发人员无直接参考价值。</p>
+                  <div class="course-item-meta">
+                    <span>OpenAI Blog</span>
+                    <span>2026-06-29</span>
+                  </div>
+                  <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">阅读原文</a>
+                </article>
+                <article class="material-course-item">
+                  <h3>When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence</h3>
+                  <p>该新闻释放了多机器人系统与AI融合的趋势信号，但未涉及具体材料需求，对材料研发人员直接价值有限。</p>
+                  <div class="course-item-meta">
+                    <span>arXiv</span>
+                    <span>2026-06-29</span>
+                  </div>
+                  <a href="https://arxiv.org/abs/2606.27929" target="_blank" rel="noopener noreferrer">阅读论文</a>
+                </article>
+                <article class="material-course-item">
+                  <h3>São Paulo expands electric bus fleet with 500 new vehicles</h3>
+                  <p>该新闻表明电动公交车市场持续扩张，可能间接带动电池材料需求，但缺乏具体技术信息，对材料研发的直接指导意义有限。</p>
+                  <div class="course-item-meta">
+                    <span>Electrive</span>
+                    <span>2026-06-29</span>
+                  </div>
+                  <a href="https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles" target="_blank" rel="noopener noreferrer">阅读原文</a>
+                </article>
+                <article class="material-course-item">
+                  <h3>The Lab Mistake That Might Revolutionize Computing</h3>
+                  <p>该技术可能颠覆AI硬件架构，降低功耗和散热需求，从而影响汽车电子系统的热管理和封装材料需求，但当前仍处于实验室阶段，材料机会不直接。</p>
+                  <div class="course-item-meta">
+                    <span>IEEE Spectrum</span>
+                    <span>2026-06-29</span>
+                  </div>
+                  <a href="https://spectrum.ieee.org/artificial-neurons-on-silicon-chips" target="_blank" rel="noopener noreferrer">阅读论文</a>
+                </article>
+              </div>
+            </details>
+            <details class="material-course-card" >
+              <summary>
+                <span class="course-card-main">
+                  <strong>Surface Engineering</strong>
+                  <em>表面工程</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>0</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                <p class="empty-library">本周期暂无新增内容。</p>
+              </div>
+            </details>
+            <details class="material-course-card" >
+              <summary>
+                <span class="course-card-main">
+                  <strong>Sustainable Materials</strong>
+                  <em>绿色材料</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>0</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                <p class="empty-library">本周期暂无新增内容。</p>
+              </div>
+            </details>
+            <details class="material-course-card" >
+              <summary>
+                <span class="course-card-main">
+                  <strong>Future Research Reserve</strong>
+                  <em>前沿研究储备</em>
+                </span>
+                <span class="course-card-meta">
+                  <b>0</b>
+                  <small>本期新增</small>
+                </span>
+                <span class="course-card-action">进入</span>
+              </summary>
+              <div class="material-course-list">
+                <p class="empty-library">本周期暂无新增内容。</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section id="suggested-actions" class="opportunity-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Suggested Actions</p>
+            <h2>Suggested Actions</h2>
+          </div>
+          <div class="validation-pool">
+            <article style="--action-color: #6B8E6E">
+              <h3>Technology Watch</h3>
+              <span>发现机会 · 0 个机会</span>
+              <div class="palette-brief">
+                <p><strong>AI Insight</strong>本周期暂无足够证据形成新的阶段判断。</p>
+                <p><strong>Why Now</strong>等待更多企业、论文、专利或验证信号后再推进。</p>
+                <p><strong>Suggested Move</strong>暂不新增动作，保持观察。</p>
+              </div>
+              <div class="palette-evidence">
+                <strong>Evidence</strong>
+                <span>暂无足够来源证据。</span>
+              </div>
+            </article>
+            <article style="--action-color: #C8A45A">
+              <h3>Supplier Research</h3>
+              <span>寻找资源 · 0 个机会</span>
+              <div class="palette-brief">
+                <p><strong>AI Insight</strong>本周期暂无足够证据形成新的阶段判断。</p>
+                <p><strong>Why Now</strong>等待更多企业、论文、专利或验证信号后再推进。</p>
+                <p><strong>Suggested Move</strong>暂不新增动作，保持观察。</p>
+              </div>
+              <div class="palette-evidence">
+                <strong>Evidence</strong>
+                <span>暂无足够来源证据。</span>
+              </div>
+            </article>
+            <article style="--action-color: #8D7AB8">
+              <h3>Joint Development</h3>
+              <span>确定方案 · 0 个机会</span>
+              <div class="palette-brief">
+                <p><strong>AI Insight</strong>本周期暂无足够证据形成新的阶段判断。</p>
+                <p><strong>Why Now</strong>等待更多企业、论文、专利或验证信号后再推进。</p>
+                <p><strong>Suggested Move</strong>暂不新增动作，保持观察。</p>
+              </div>
+              <div class="palette-evidence">
+                <strong>Evidence</strong>
+                <span>暂无足够来源证据。</span>
+              </div>
+            </article>
+            <article style="--action-color: #C97B63">
+              <h3>Validation</h3>
+              <span>验证价值 · 0 个机会</span>
+              <div class="palette-brief">
+                <p><strong>AI Insight</strong>本周期暂无足够证据形成新的阶段判断。</p>
+                <p><strong>Why Now</strong>等待更多企业、论文、专利或验证信号后再推进。</p>
+                <p><strong>Suggested Move</strong>暂不新增动作，保持观察。</p>
+              </div>
+              <div class="palette-evidence">
+                <strong>Evidence</strong>
+                <span>暂无足够来源证据。</span>
+              </div>
+            </article>
+            <article style="--action-color: #4A6FA5">
+              <h3>Strategic Reserve</h3>
+              <span><i class="action-dot" aria-label="本周期有新增内容"></i>形成储备 · 2 个机会</span>
+              <div class="palette-brief">
+                <p><strong>AI Insight</strong>Energy Materials中已有2个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。</p>
+                <p><strong>Why Now</strong>技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：standard。</p>
+                <p><strong>Suggested Move</strong>纳入中长期储备，定期复盘技术成熟度和供应链变化。</p>
+              </div>
+              <div class="palette-evidence">
+                <strong>Evidence</strong>
+                <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">
+                  <span>CATL joins OEMs to develop recyclable battery framework</span>
+                  <em>Electrive · 阅读来源</em>
+                </a>
+                <a href="https://www.nature.com/articles/s41560-026-02087-6" target="_blank" rel="noopener noreferrer">
+                  <span>The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries</span>
+                  <em>Nature Energy · 阅读来源</em>
+                </a>
+                <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">
+                  <span>Mapping Europe’s AI Workforce Opportunity</span>
+                  <em>OpenAI Blog · 阅读来源</em>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
       </section>
 
-      <section id="key-insight" class="opportunity-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Notebook</p>
-          <h2>Today's Key Insight</h2>
+      <section id="explore-future-trends" class="learning-module studio-content-source">
+        <div class="learning-module-heading">
+          <p class="eyebrow">02 Explore Future Trends</p>
+          <h2>了解未来趋势</h2>
         </div>
-        <div class="insight-stack insight-panel">
-          <article>
-            <strong>What Changed</strong>
-            <p>本期高价值信号集中在汽车新材料、未来趋势观察，技术牵引以储能最突出。</p>
-          </article>
-          <article>
-            <strong>Why It Matters</strong>
-            <p>该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</p>
-          </article>
-          <article>
-            <strong>Material Opportunity</strong>
-            <p>优先关注电池回收材料、正极材料（如NMC、LFP）、负极材料（石墨、硅碳）、电解液、隔膜、铜箔、铝箔、锂离子电池、电极材料。可回收电池设计可能牵引以下材料方向：易剥离的粘结剂（如水性粘结剂）、可回收的隔膜涂层、无氟电解液、单一材料体系的正极（如LFP）、可拆解的结构胶。但当前阶段以标准制定为主，具体材料需求尚未明确。</p>
-          </article>
-        </div>
+        <section id="future-signals" class="opportunity-panel radar-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Future Signals</p>
+            <h2>Future Signals</h2>
+          </div>
+          <div class="hotspot-grid">
+            <article class="future-signal-card">
+              <strong>OEM Strategy Transition</strong>
+              <span>Future Signal 74 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+              <p>该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</p>
+              <div class="signal-sources">
+                <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">Electrive · 阅读原文</a>
+                <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">OpenAI Blog · 阅读原文</a>
+              </div>
+            </article>
+            <article class="future-signal-card">
+              <strong>Advanced Manufacturing & Automation</strong>
+              <span>Future Signal 72 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+              <p>该报告不涉及具体材料技术或产业变化，对材料研发人员无直接参考价值。</p>
+              <div class="signal-sources">
+                <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">OpenAI Blog · 阅读原文</a>
+              </div>
+            </article>
+            <article class="future-signal-card">
+              <strong>Energy Revolution</strong>
+              <span>Future Signal 68 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+              <p>该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</p>
+              <div class="signal-sources">
+                <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">Electrive · 阅读原文</a>
+                <a href="https://www.nature.com/articles/s41560-026-02087-6" target="_blank" rel="noopener noreferrer">Nature Energy · 阅读原文</a>
+              </div>
+            </article>
+            <article class="future-signal-card">
+              <strong>Robotics & Embodied AI</strong>
+              <span>Future Signal 51 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+              <p>该报告不涉及具体材料技术或产业变化，对材料研发人员无直接参考价值。</p>
+              <div class="signal-sources">
+                <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">OpenAI Blog · 阅读原文</a>
+                <a href="https://arxiv.org/abs/2606.27929" target="_blank" rel="noopener noreferrer">arXiv · 阅读原文</a>
+              </div>
+            </article>
+            <article class="future-signal-card">
+              <strong>AI Agent & AI Hardware</strong>
+              <span>Future Signal 40 <button class="info-button compact" type="button" data-metric="future_signal_score" aria-label="查看Future Signal说明">ⓘ</button></span>
+              <p>该技术可能颠覆AI硬件架构，降低功耗和散热需求，从而影响汽车电子系统的热管理和封装材料需求，但当前仍处于实验室阶段，材料机会不直接。</p>
+              <div class="signal-sources">
+                <a href="https://spectrum.ieee.org/artificial-neurons-on-silicon-chips" target="_blank" rel="noopener noreferrer">IEEE Spectrum · 阅读原文</a>
+                <a href="https://arxiv.org/abs/2606.27929" target="_blank" rel="noopener noreferrer">arXiv · 阅读原文</a>
+              </div>
+            </article>
+          </div>
+        </section>
       </section>
 
-      <section id="opportunity-graph" class="opportunity-panel priority-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Bookshelf</p>
-          <h2>Material Opportunity Graph</h2>
+      <section id="upgrade-your-thinking" class="learning-module studio-content-source">
+        <div class="learning-module-heading">
+          <p class="eyebrow">03 Upgrade Your Thinking</p>
+          <h2>拓展认知与思维</h2>
         </div>
-        <div class="bookshelf-library" aria-label="Opportunity library">
-          <details class="bookshelf-domain" >
-            <summary>
-              <span>
-                <strong>○ Metal Materials (0)</strong>
-                <em>金属材料</em>
-                <small>高强钢、热成形钢、铝合金、镁合金、钛合金、铜合金、增材制造金属、连接技术</small>
-              </span>
-              <b>0 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              <p class="empty-library">本周期暂无新增内容。</p>
-            </div>
-          </details>
-          <details class="bookshelf-domain" >
-            <summary>
-              <span>
-                <strong>○ Polymer & Elastomer Materials (0)</strong>
-                <em>高分子与弹性体材料</em>
-                <small>PP、PE、ABS、PC、PA、POM、PBT、PET、PPS、PEEK、LCP、PI、TPU、TPE、EPDM、NBR、HNBR、FKM、硅橡胶、机器人轻量化材料</small>
-              </span>
-              <b>0 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              <p class="empty-library">本周期暂无新增内容。</p>
-            </div>
-          </details>
-          <details class="bookshelf-domain" >
-            <summary>
-              <span>
-                <strong>○ Composite Materials (0)</strong>
-                <em>复合材料</em>
-                <small>CFRP、GFRP、CFRTP、GMT、SMC、天然纤维复材、低空飞行器复材、储氢复材</small>
-              </span>
-              <b>0 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              <p class="empty-library">本周期暂无新增内容。</p>
-            </div>
-          </details>
-          <details class="bookshelf-domain" >
-            <summary>
-              <span>
-                <strong>○ Functional Materials (0)</strong>
-                <em>功能材料</em>
-                <small>SWIR、红外材料、导热材料、导电材料、EMI屏蔽、压电材料、磁性材料、柔性电子、电子皮肤、智能表面</small>
-              </span>
-              <b>0 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              <p class="empty-library">本周期暂无新增内容。</p>
-            </div>
-          </details>
-          <details class="bookshelf-domain" open>
-            <summary>
-              <span>
-                <strong>● Energy Materials (6)</strong>
-                <em>能源材料</em>
-                <small>锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料</small>
-              </span>
-              <b>6 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              <article class="bookshelf-current-item">
-                <h3>CATL joins OEMs to develop recyclable battery framework</h3>
-                <dl>
-                  <div><dt>来源</dt><dd>Electrive</dd></div>
-                  <div><dt>发布时间</dt><dd>2026-06-29</dd></div>
-                </dl>
-                <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">官方发布</a>
-              </article>
-              <article class="bookshelf-current-item">
-                <h3>The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries</h3>
-                <dl>
-                  <div><dt>来源</dt><dd>Nature Energy</dd></div>
-                  <div><dt>发布时间</dt><dd>2026-06-29</dd></div>
-                </dl>
-                <a href="https://www.nature.com/articles/s41560-026-02087-6" target="_blank" rel="noopener noreferrer">阅读全文</a>
-              </article>
-              <article class="bookshelf-current-item">
-                <h3>Mapping Europe’s AI Workforce Opportunity</h3>
-                <dl>
-                  <div><dt>来源</dt><dd>OpenAI Blog</dd></div>
-                  <div><dt>发布时间</dt><dd>2026-06-29</dd></div>
-                </dl>
-                <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">阅读原文</a>
-              </article>
-              <article class="bookshelf-current-item">
-                <h3>When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence</h3>
-                <dl>
-                  <div><dt>来源</dt><dd>arXiv</dd></div>
-                  <div><dt>发布时间</dt><dd>2026-06-29</dd></div>
-                </dl>
-                <a href="https://arxiv.org/abs/2606.27929" target="_blank" rel="noopener noreferrer">阅读全文</a>
-              </article>
-              <article class="bookshelf-current-item">
-                <h3>São Paulo expands electric bus fleet with 500 new vehicles</h3>
-                <dl>
-                  <div><dt>来源</dt><dd>Electrive</dd></div>
-                  <div><dt>发布时间</dt><dd>2026-06-29</dd></div>
-                </dl>
-                <a href="https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles" target="_blank" rel="noopener noreferrer">阅读原文</a>
-              </article>
-              <article class="bookshelf-current-item">
-                <h3>The Lab Mistake That Might Revolutionize Computing</h3>
-                <dl>
-                  <div><dt>来源</dt><dd>IEEE Spectrum</dd></div>
-                  <div><dt>发布时间</dt><dd>2026-06-29</dd></div>
-                </dl>
-                <a href="https://spectrum.ieee.org/artificial-neurons-on-silicon-chips" target="_blank" rel="noopener noreferrer">阅读全文</a>
-              </article>
-            </div>
-          </details>
-          <details class="bookshelf-domain" >
-            <summary>
-              <span>
-                <strong>○ Surface Engineering (0)</strong>
-                <em>表面工程</em>
-                <small>电镀、PVD、CVD、功能涂层、防腐涂层、耐磨涂层、防污涂层、自修复涂层</small>
-              </span>
-              <b>0 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              <p class="empty-library">本周期暂无新增内容。</p>
-            </div>
-          </details>
-          <details class="bookshelf-domain" >
-            <summary>
-              <span>
-                <strong>○ Sustainable Materials (0)</strong>
-                <em>绿色材料</em>
-                <small>PCR塑料、生物基塑料、天然纤维、循环材料、低碳材料、绿色制造</small>
-              </span>
-              <b>0 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              <p class="empty-library">本周期暂无新增内容。</p>
-            </div>
-          </details>
-          <details class="bookshelf-domain" >
-            <summary>
-              <span>
-                <strong>○ Future Research Reserve (0)</strong>
-                <em>前沿研究储备</em>
-                <small>超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料</small>
-              </span>
-              <b>0 本周期新增</b>
-            </summary>
-            <div class="bookshelf-current-list">
-              <p class="empty-library">本周期暂无新增内容。</p>
-            </div>
-          </details>
-        </div>
+        <section id="insights" class="opportunity-panel insights-panel">
+          <div class="section-heading">
+            <p class="eyebrow">Weekly Insights</p>
+            <h2>Weekly Insights</h2>
+          </div>
+          <div class="insights-grid">
+            <article>
+              <div class="insight-meta">OpenAI Blog · 约 8 分钟</div>
+              <h3><a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">Mapping Europe’s AI Workforce Opportunity</a></h3>
+              <p><strong>推荐理由：</strong>该报告不涉及具体材料技术或产业变化，对材料研发人员无直接参考价值。</p>
+              <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">阅读全文</a>
+            </article>
+            <article>
+              <div class="insight-meta">IEEE Spectrum · 约 8 分钟</div>
+              <h3><a href="https://spectrum.ieee.org/artificial-neurons-on-silicon-chips" target="_blank" rel="noopener noreferrer">The Lab Mistake That Might Revolutionize Computing</a></h3>
+              <p><strong>推荐理由：</strong>该技术可能颠覆AI硬件架构，降低功耗和散热需求，从而影响汽车电子系统的热管理和封装材料需求，但当前仍处于实验室阶段，材料机会不直接。</p>
+              <a href="https://spectrum.ieee.org/artificial-neurons-on-silicon-chips" target="_blank" rel="noopener noreferrer">阅读全文</a>
+            </article>
+          </div>
+        </section>
       </section>
 
-      <section id="suggested-actions" class="opportunity-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Palette</p>
-          <h2>Suggested Actions</h2>
+      <section id="review-knowledge" class="learning-module studio-content-source">
+        <div class="learning-module-heading">
+          <p class="eyebrow">04 Review Knowledge</p>
+          <h2>查看历史沉淀</h2>
         </div>
-        <div class="validation-pool">
-          <article style="--action-color: #6B8E6E">
-            <h3>Technology Watch</h3>
-            <span>发现机会 · 0 个机会</span>
-            <div class="palette-brief">
-              <p><strong>AI Insight</strong>本周期暂无足够证据形成新的阶段判断。</p>
-              <p><strong>Why Now</strong>等待更多企业、论文、专利或验证信号后再推进。</p>
-              <p><strong>Suggested Move</strong>暂不新增动作，保持观察。</p>
-            </div>
-            <div class="palette-evidence">
-              <strong>Evidence</strong>
-              <span>暂无足够来源证据。</span>
-            </div>
-          </article>
-          <article style="--action-color: #C8A45A">
-            <h3>Supplier Research</h3>
-            <span>寻找资源 · 0 个机会</span>
-            <div class="palette-brief">
-              <p><strong>AI Insight</strong>本周期暂无足够证据形成新的阶段判断。</p>
-              <p><strong>Why Now</strong>等待更多企业、论文、专利或验证信号后再推进。</p>
-              <p><strong>Suggested Move</strong>暂不新增动作，保持观察。</p>
-            </div>
-            <div class="palette-evidence">
-              <strong>Evidence</strong>
-              <span>暂无足够来源证据。</span>
-            </div>
-          </article>
-          <article style="--action-color: #8D7AB8">
-            <h3>Joint Development</h3>
-            <span>确定方案 · 0 个机会</span>
-            <div class="palette-brief">
-              <p><strong>AI Insight</strong>本周期暂无足够证据形成新的阶段判断。</p>
-              <p><strong>Why Now</strong>等待更多企业、论文、专利或验证信号后再推进。</p>
-              <p><strong>Suggested Move</strong>暂不新增动作，保持观察。</p>
-            </div>
-            <div class="palette-evidence">
-              <strong>Evidence</strong>
-              <span>暂无足够来源证据。</span>
-            </div>
-          </article>
-          <article style="--action-color: #C97B63">
-            <h3>Validation</h3>
-            <span>验证价值 · 0 个机会</span>
-            <div class="palette-brief">
-              <p><strong>AI Insight</strong>本周期暂无足够证据形成新的阶段判断。</p>
-              <p><strong>Why Now</strong>等待更多企业、论文、专利或验证信号后再推进。</p>
-              <p><strong>Suggested Move</strong>暂不新增动作，保持观察。</p>
-            </div>
-            <div class="palette-evidence">
-              <strong>Evidence</strong>
-              <span>暂无足够来源证据。</span>
-            </div>
-          </article>
-          <article style="--action-color: #4A6FA5">
-            <h3>Strategic Reserve</h3>
-            <span><i class="action-dot" aria-label="本周期有新增内容"></i>形成储备 · 2 个机会</span>
-            <div class="palette-brief">
-              <p><strong>AI Insight</strong>Energy Materials中已有2个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。</p>
-              <p><strong>Why Now</strong>技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：standard。</p>
-              <p><strong>Suggested Move</strong>纳入中长期储备，定期复盘技术成熟度和供应链变化。</p>
-            </div>
-            <div class="palette-evidence">
-              <strong>Evidence</strong>
-              <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">
-                <span>CATL joins OEMs to develop recyclable battery framework</span>
-                <em>Electrive · 阅读来源</em>
-              </a>
-              <a href="https://www.nature.com/articles/s41560-026-02087-6" target="_blank" rel="noopener noreferrer">
-                <span>The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries</span>
-                <em>Nature Energy · 阅读来源</em>
-              </a>
-              <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">
-                <span>Mapping Europe’s AI Workforce Opportunity</span>
-                <em>OpenAI Blog · 阅读来源</em>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
 
-      <section id="insights" class="opportunity-panel insights-panel studio-content-source">
-        <div class="section-heading">
-          <p class="eyebrow">Cat</p>
-          <h2>Weekly Insights</h2>
-        </div>
-        <div class="insights-grid">
-          <article>
-            <div class="insight-meta">NE时代 · 约 8 分钟</div>
-            <h3><a href="https://www.ne-time.cn/web/article/39034" target="_blank" rel="noopener noreferrer">26-06-26 宁德时代押注银河通用：人形机器人开始补上“交付课” ◎ 人形机器人开始补上“交付课”。 人形机器人这两年不缺热闹。 融资、发布会、演示视频、商演现场，几乎每隔一段时间就能刷出新故事。但到了工厂里，客户不看热闹，客户只问几件事：能不能连续干活？坏了谁来修...</a></h3>
-            <p><strong>为什么值得读：</strong>这条信息指向机器人与具身智能方向的变化，可能从技术演进进一步传导到材料选型、供应链调研和验证储备。</p>
-            <p><strong>建议关注：</strong>关注 机器人与具身智能 是否继续形成产业信号；潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。</p>
-            <a href="https://www.ne-time.cn/web/article/39034" target="_blank" rel="noopener noreferrer">阅读全文</a>
-          </article>
-          <article>
-            <div class="insight-meta">NE时代 · 约 8 分钟</div>
-            <h3><a href="https://www.ne-time.cn/web/article/39032" target="_blank" rel="noopener noreferrer">26-06-26 NE时代武慧：具身智能是汽车产业的新机会，但不是简单复制 ◎ 具身智能是汽车产业的新机会，但不是简单复制。 △ 撰文：NE时代◎武慧 汽车产业最近一年频繁转向具身智能。 主机厂在看，零部件企业在看，做电机、电驱、热管理、传感器和控制系统的企业也在看。 原因并...</a></h3>
-            <p><strong>为什么值得读：</strong>这条信息指向机器人与具身智能方向的变化，可能从技术演进进一步传导到材料选型、供应链调研和验证储备。</p>
-            <p><strong>建议关注：</strong>关注 机器人与具身智能 是否继续形成产业信号；潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。</p>
-            <a href="https://www.ne-time.cn/web/article/39032" target="_blank" rel="noopener noreferrer">阅读全文</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="archives" class="archive-grid studio-content-source">
+      <section id="archives" class="archive-grid">
         <div class="workspace-history">
-          <p class="eyebrow">Dynamic Workspace</p>
-          <h2>Workspace Archive</h2>
+          <p class="eyebrow">Research Briefs</p>
+          <h2>Latest Brief Archive</h2>
           <details class="workspace-cycle" open>
             <summary>2026-06-30</summary>
             <div class="workspace-cycle-grid">
               <article>
-                <strong>Window / Future Signals</strong>
+                <strong>Future Signals</strong>
                 <span>OEM Strategy Transition · Future Signal 74</span>
                 <span>该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</span>
                 <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">Electrive · 阅读原文</a>
@@ -458,17 +483,18 @@
                 <a href="https://arxiv.org/abs/2606.27929" target="_blank" rel="noopener noreferrer">arXiv · 阅读原文</a>
               </article>
               <article>
-                <strong>Notebook / Today's Key Insight</strong>
+                <strong>Today's Key Insight</strong>
                 <span>What Changed：本期高价值信号集中在汽车新材料、未来趋势观察，技术牵引以储能最突出。</span>
                 <span>Why It Matters：该新闻标志着头部电池企业和车企开始从设计源头推动电池回收，将直接影响未来电池材料的选择和供应链布局，研发人员需关注可回收性对材料性能的新要求。</span>
                 <span>Material Opportunity：优先关注电池回收材料、正极材料（如NMC、LFP）、负极材料（石墨、硅碳）、电解液、隔膜、铜箔、铝箔、锂离子电池、电极材料。可回收电池设计可能牵引以下材料方向：易剥离的粘结剂（如水性粘结剂）、可回收的隔膜涂层、无氟电解液、单一材料体系的正极（如LFP）、可拆解的结构胶。但当前阶段以标准制定为主，具体材料需求尚未明确。</span>
               </article>
               <article>
-                <strong>Cat / Weekly Insights</strong>
-                <span>本周期暂无精选长读。</span>
+                <strong>Weekly Insights</strong>
+                <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">OpenAI Blog · Mapping Europe’s AI Workforce Opportunity</a>
+                <a href="https://spectrum.ieee.org/artificial-neurons-on-silicon-chips" target="_blank" rel="noopener noreferrer">IEEE Spectrum · The Lab Mistake That Might Revolutionize Computing</a>
               </article>
               <article>
-                <strong>Palette / Suggested Actions</strong>
+                <strong>Suggested Actions</strong>
                 <span>Technology Watch：暂不新增动作，保持观察。</span>
                 <span>Supplier Research：暂不新增动作，保持观察。</span>
                 <span>Joint Development：暂不新增动作，保持观察。</span>
@@ -479,7 +505,7 @@
                 <a href="https://openai.com/index/mapping-ai-jobs-transition-eu" target="_blank" rel="noopener noreferrer">OpenAI Blog · Mapping Europe’s AI Workforce Opportunity</a>
               </article>
               <article>
-                <strong>Bookshelf / Material Opportunity Graph</strong>
+                <strong>Material Library</strong>
                 <span>Energy Materials · 6 条</span>
                 <a href="https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework" target="_blank" rel="noopener noreferrer">CATL joins OEMs to develop recyclable battery framework</a>
                 <a href="https://www.nature.com/articles/s41560-026-02087-6" target="_blank" rel="noopener noreferrer">The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries</a>
@@ -494,7 +520,7 @@
             <summary>2026-06-28</summary>
             <div class="workspace-cycle-grid">
               <article>
-                <strong>Window / Future Signals</strong>
+                <strong>Future Signals</strong>
                 <span>Space Industry · Future Signal 73</span>
                 <span>这条信息指向机器人与具身智能方向的变化，可能从技术演进进一步传导到材料选型、供应链调研和验证储备。</span>
                 <a href="https://spectrum.ieee.org/product-lifecycle-ajay-prasad" target="_blank" rel="noopener noreferrer">IEEE Spectrum · 阅读原文</a>
@@ -518,18 +544,18 @@
                 <a href="https://spectrum.ieee.org/capital-one-science-ai-finance-innovation" target="_blank" rel="noopener noreferrer">IEEE Spectrum · 阅读原文</a>
               </article>
               <article>
-                <strong>Notebook / Today's Key Insight</strong>
+                <strong>Today's Key Insight</strong>
                 <span>What Changed：本期高价值信号集中在汽车新材料、未来趋势观察、企业技术动态，技术牵引以其他最突出。</span>
                 <span>Why It Matters：这条信息指向电池与储能方向的变化，可能从技术演进进一步传导到材料选型、供应链调研和验证储备。</span>
                 <span>Material Opportunity：优先关注battery、fast charging、anode、recycling。潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。</span>
               </article>
               <article>
-                <strong>Cat / Weekly Insights</strong>
+                <strong>Weekly Insights</strong>
                 <a href="https://www.ne-time.cn/web/article/39034" target="_blank" rel="noopener noreferrer">NE时代 · 26-06-26 宁德时代押注银河通用：人形机器人开始补上“交付课” ◎ 人形机器人开始补上“交付课”。 人形机器人这两年不缺热闹。 融资、发布会、演示视频、商演现场，几乎每隔一段时间就能刷出新故事。但到了工厂里，客户不看热闹，客户只问几件事：能不能连续干活？坏了谁来修...</a>
                 <a href="https://www.ne-time.cn/web/article/39032" target="_blank" rel="noopener noreferrer">NE时代 · 26-06-26 NE时代武慧：具身智能是汽车产业的新机会，但不是简单复制 ◎ 具身智能是汽车产业的新机会，但不是简单复制。 △ 撰文：NE时代◎武慧 汽车产业最近一年频繁转向具身智能。 主机厂在看，零部件企业在看，做电机、电驱、热管理、传感器和控制系统的企业也在看。 原因并...</a>
               </article>
               <article>
-                <strong>Palette / Suggested Actions</strong>
+                <strong>Suggested Actions</strong>
                 <span>Technology Watch：建立观察清单，等待更强产业化或材料牵引信号。</span>
                 <a href="https://www.nature.com/articles/s41560-026-02069-8" target="_blank" rel="noopener noreferrer">Nature Energy · Accessible solar tower power plant data to accelerate solar energy research</a>
                 <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73453?af=R" target="_blank" rel="noopener noreferrer">Advanced Materials · Lightweight, Strong, and Resilient 3D Graphene Metamaterial via a Multi‐flow Assembly</a>
@@ -547,7 +573,7 @@
                 <a href="https://spectrum.ieee.org/product-lifecycle-ajay-prasad" target="_blank" rel="noopener noreferrer">IEEE Spectrum · This Senior Member Solves Complex Product Lifecycle Challenges</a>
               </article>
               <article>
-                <strong>Bookshelf / Material Opportunity Graph</strong>
+                <strong>Material Library</strong>
                 <span>Metal Materials · 1 条</span>
                 <a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73830?af=R" target="_blank" rel="noopener noreferrer">Molecular Interfacial Engineering of Lithiophilic Protection Layer Realizing 600 Wh kg−1 Anode‐Free Lithium Metal Batteries</a>
                 <span>Energy Materials · 10 条</span>
@@ -572,19 +598,21 @@
         </div>
         <div>
           <p class="eyebrow">Archive</p>
-          <h2>Daily Archive</h2>
-          <div class="archive-links">
-            <a href="daily/2026-06-30.html">2026-06-30</a>
-            <a href="daily/2026-06-28.html">2026-06-28</a>
+          <h2>Browse by Date</h2>
+          <div class="archive-tree">
+            <details class="archive-year" open>
+              <summary>2026</summary>
+              <details class="archive-month" open>
+                <summary>2026-06</summary>
+                <div class="archive-links">
+                  <a href="daily/2026-06-30.html">2026-06-30</a>
+                  <a href="daily/2026-06-28.html">2026-06-28</a>
+                </div>
+              </details>
+            </details>
           </div>
         </div>
-        <div>
-          <p class="eyebrow">Monthly</p>
-          <h2>Monthly Archive</h2>
-          <div class="archive-links">
-            <a href="monthly/2026-06.html">2026-06</a>
-          </div>
-        </div>
+      </section>
       </section>
 
       <section id="team-room" class="team-room-panel studio-content-source">
@@ -621,102 +649,6 @@
     <script>
       window.AURA = { generatedAt: "2026-06-30" };
     </script>
-    <script>
-      (() => {
-        const panel = document.getElementById("studioPanel");
-        const panelContent = document.getElementById("studioPanelContent");
-        const sources = new Map(
-          [...document.querySelectorAll(".studio-content-source")].map((node) => [node.id, node])
-        );
-        if (!panel || !panelContent) return;
-
-        const teamProfiles = {
-          "zhou-qiang": {
-            name: "周强",
-            status: "Former Member",
-            role: "",
-            joined: "",
-            expertise: "",
-            experience: ""
-          },
-          "gou-zhi": {
-            name: "苟智",
-            status: "Active",
-            role: "",
-            joined: "",
-            expertise: "",
-            experience: ""
-          },
-          "liang-yunqi": {
-            name: "梁蕴祺",
-            status: "Active",
-            role: "",
-            joined: "",
-            expertise: "",
-            experience: ""
-          }
-        };
-
-        const escapeHtml = (value) => String(value || "")
-          .replaceAll("&", "&amp;")
-          .replaceAll("<", "&lt;")
-          .replaceAll(">", "&gt;")
-          .replaceAll('"', "&quot;")
-          .replaceAll("'", "&#039;");
-
-        const openPanel = (target) => {
-          const source = sources.get(target);
-          if (!source) return;
-          panelContent.innerHTML = source.innerHTML;
-          panel.dataset.source = target;
-          panel.classList.add("is-open");
-          panel.setAttribute("aria-hidden", "false");
-        };
-
-        const openProfile = (id) => {
-          const profile = teamProfiles[id];
-          if (!profile) return;
-          panelContent.innerHTML = `
-            <section class="team-profile-card">
-              <p class="eyebrow">Team Room</p>
-              <div class="team-profile-head">
-                <h2>${escapeHtml(profile.name)}</h2>
-                <span class="member-status ${profile.status === "Active" ? "is-active" : "is-former"}">${escapeHtml(profile.status)}</span>
-              </div>
-              <dl>
-                <div><dt>职位</dt><dd>${escapeHtml(profile.role)}</dd></div>
-                <div><dt>加入时间</dt><dd>${escapeHtml(profile.joined)}</dd></div>
-                <div><dt>专业方向</dt><dd>${escapeHtml(profile.expertise)}</dd></div>
-                <div><dt>经历</dt><dd>${escapeHtml(profile.experience)}</dd></div>
-              </dl>
-            </section>
-          `;
-          panel.dataset.source = `team-${id}`;
-          panel.classList.add("is-open");
-          panel.setAttribute("aria-hidden", "false");
-        };
-
-        const closePanel = () => {
-          panel.classList.remove("is-open");
-          panel.setAttribute("aria-hidden", "true");
-        };
-
-        window.AURAStudioOpenPanel = openPanel;
-        window.AURAStudioOpenProfile = openProfile;
-        document.querySelectorAll("[data-studio-target]").forEach((button) => {
-          button.addEventListener("click", () => openPanel(button.dataset.studioTarget));
-        });
-        document.addEventListener("click", (event) => {
-          const memberButton = event.target.closest("[data-team-profile]");
-          if (memberButton) openProfile(memberButton.dataset.teamProfile);
-        });
-        document.querySelector("[data-close-studio-panel]")?.addEventListener("click", closePanel);
-        document.addEventListener("keydown", (event) => {
-          if (event.key === "Escape") closePanel();
-        });
-      })();
-    </script>
-    <script type="module" src="assets/studio3d.js?v=20260628-team-room-v3"></script>
 <div class="metric-modal" id="metricModal" aria-hidden="true">
   <div class="metric-modal-backdrop" data-close-modal></div>
   <section class="metric-modal-panel" role="dialog" aria-modal="true" aria-labelledby="metricModalTitle">

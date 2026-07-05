@@ -250,7 +250,7 @@ OPPORTUNITY_DOMAINS = [
     },
     {
         "domain": "Polymer & Elastomer Materials",
-        "zh": "高分子与弹性体材料",
+        "zh": "高分子与橡胶材料",
         "description": "PP、PE、ABS、PC、PA、POM、PBT、PET、PPS、PEEK、LCP、PI、TPU、TPE、EPDM、NBR、HNBR、FKM、硅橡胶、机器人轻量化材料",
         "keywords": ["polymer", "plastic", "engineering plastic", "elastomer", "rubber", "高分子", "工程塑料", "弹性体", "橡胶", "pp", "pe", "abs", "pc", "pa", "pom", "pbt", "pet", "pps", "peek", "lcp", "pi", "tpu", "tpe", "epdm", "nbr", "hnbr", "fkm", "silicone rubber", "硅橡胶", "机器人轻量化", "机器人减重"],
     },
@@ -851,10 +851,26 @@ def link_label_for_item(item: dict[str, Any]) -> str:
     if "patent" in text or "专利" in text or "wipo" in text or "cnipa" in text:
         return "查看专利"
     if any(keyword in text for keyword in ("paper", "journal", "nature", "sae", "ieee", "arxiv", "论文", "学术")):
-        return "阅读全文"
+        return "阅读论文"
     if item.get("source_type") == "company_news_page" or any(company.casefold() in text for company in STRATEGIC_COMPANIES):
         return "官方发布"
     return "阅读原文"
+
+
+def material_library_brief(item: dict[str, Any]) -> str:
+    """Return a compact DeepSeek-derived summary for Material Library cards."""
+    candidates = [
+        item.get("why_it_matters"),
+        item.get("material_opportunity"),
+        item.get("material_relevance"),
+        item.get("validation_opportunity"),
+        item.get("summary"),
+    ]
+    for value in candidates:
+        text = re.sub(r"\s+", " ", str(value or "")).strip()
+        if text and text not in {"材料相关性较弱，暂不优先。", "信息不足，暂无法判断其产业或材料意义。"}:
+            return text[:150] + ("..." if len(text) > 150 else "")
+    return "本条内容暂无简短概括，建议直接阅读原文核验。"
 
 
 def build_bookshelf_library(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -885,6 +901,7 @@ def build_bookshelf_library(items: list[dict[str, Any]]) -> list[dict[str, Any]]
                 "published_date": str(item.get("published_date") or ""),
                 "url": str(item.get("url") or ""),
                 "link_label": link_label_for_item(item),
+                "brief": material_library_brief(item),
             }
         )
 
@@ -1830,6 +1847,7 @@ def collect_archive_data(
             "message_zh": today_payload.get("archive_message_zh", "归档已重置，等待新的 AURA 记录。"),
             "daily": [],
             "monthly": [],
+            "tree": [],
             "workspace": [],
         }
 
@@ -1851,8 +1869,24 @@ def collect_archive_data(
         {"month": month, "href": f"monthly/{month}.html"}
         for month in sorted(months, reverse=True)[:12]
     ]
+    by_year: dict[str, dict[str, Any]] = {}
+    for item in daily:
+        date_text = item["date"]
+        year = date_text[:4]
+        month = date_text[:7]
+        year_node = by_year.setdefault(year, {"year": year, "months": {}})
+        month_node = year_node["months"].setdefault(month, {"month": month, "days": []})
+        month_node["days"].append(item)
+    archive_tree = []
+    for year in sorted(by_year.keys(), reverse=True):
+        year_node = by_year[year]
+        months_grouped = [
+            year_node["months"][month]
+            for month in sorted(year_node["months"].keys(), reverse=True)
+        ]
+        archive_tree.append({"year": year, "months": months_grouped})
     workspace = workspace_archive.get("items", []) if isinstance(workspace_archive, dict) else []
-    return {"daily": daily, "monthly": monthly, "workspace": workspace[:12]}
+    return {"daily": daily, "monthly": monthly, "tree": archive_tree, "workspace": workspace[:12]}
 
 
 def _env() -> Environment:
