@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-30",
+  "updated_at": "2026-07-01",
   "items": [
     {
-      "title": "CATL joins OEMs to develop recyclable battery framework",
-      "url": "https://www.electrive.com/2026/06/29/catl-joins-oems-to-develop-recyclable-battery-framework",
+      "title": "Stricter EV and battery standards take effect in China",
+      "url": "https://www.electrive.com/2026/07/01/stricter-ev-and-battery-standards-take-effect-in-china",
       "source": "Electrive",
-      "published_date": "2026-06-29",
+      "published_date": "2026-07-01",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "title": "The interplay between stack pressure, mechanical expansion and degradation pathways in lithium-ion batteries",
-      "url": "https://www.nature.com/articles/s41560-026-02087-6",
-      "source": "Nature Energy",
-      "published_date": "2026-06-29",
+      "title": "Norway’s EV share reaches 96.5% in June",
+      "url": "https://www.electrive.com/2026/07/01/norways-ev-share-reaches-96-5-in-june",
+      "source": "Electrive",
+      "published_date": "2026-07-01",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -34,26 +34,10 @@
       ]
     },
     {
-      "title": "Mapping Europe’s AI Workforce Opportunity",
-      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-      "source": "OpenAI Blog",
-      "published_date": "2026-06-29",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "When Multi-Robot Systems Meet Agentic AI:Towards Embodied Collective Intelligence",
-      "url": "https://arxiv.org/abs/2606.27929",
+      "title": "CAR: Cross-Vehicle Kinodynamics Adaptation via Mobility Representation",
+      "url": "https://arxiv.org/abs/2603.06866",
       "source": "arXiv",
-      "published_date": "2026-06-29",
+      "published_date": "2026-07-01",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -66,13 +50,13 @@
       ]
     },
     {
-      "title": "São Paulo expands electric bus fleet with 500 new vehicles",
-      "url": "https://www.electrive.com/2026/06/29/sao-paulo-expands-electric-bus-fleet-with-500-new-vehicles",
-      "source": "Electrive",
-      "published_date": "2026-06-29",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
+      "title": "The Orbital Data Center Hype Machine Is Already in Orbit",
+      "url": "https://spectrum.ieee.org/orbital-data-center-hype",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-07-01",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",
@@ -82,10 +66,42 @@
       ]
     },
     {
-      "title": "The Lab Mistake That Might Revolutionize Computing",
-      "url": "https://spectrum.ieee.org/artificial-neurons-on-silicon-chips",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-06-29",
+      "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
+      "url": "https://arxiv.org/abs/2606.31073",
+      "source": "arXiv",
+      "published_date": "2026-07-01",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "New BMW 7 Series ramps up in Dingolfing: Progressive luxury meets Neue Klasse technologies Wed Jul 01 14:00:00 CEST 2026 Press Release Most comprehensive model update in company history enters series production – Neue Klasse innovations roll out across existing portfolio – Greater range and faster charging for the BMW i7 – High-tech and craftsmanship deliver maximum customisation and exclusivity G70 LCI · G70 · LCI · Locations · Production Plants · Sedan · 7 Series · Dingolfing",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0458808EN/new-bmw-7-series-ramps-up-in-dingolfing:-progressive-luxury-meets-neue-klasse-technologies?showMedia=photo",
+      "source": "BMW",
+      "published_date": "2026-07-01",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory",
+      "url": "https://arxiv.org/abs/2606.31037",
+      "source": "arXiv",
+      "published_date": "2026-07-01",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
