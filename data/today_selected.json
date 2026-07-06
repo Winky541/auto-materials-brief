@@ -1,509 +1,58 @@
 {
-  "date": "2026-07-01",
-  "count": 7,
+  "date": "2026-07-06",
+  "count": 8,
   "items": [
     {
-      "title": "Stricter EV and battery standards take effect in China",
-      "source": "Electrive",
-      "published_date": "2026-07-01",
-      "url": "https://www.electrive.com/2026/07/01/stricter-ev-and-battery-standards-take-effect-in-china",
-      "category": "政策法规与标准",
-      "subcategory": "",
-      "summary": "2026年7月1日起，中国两项新的强制性安全标准生效，大幅提高了动力电池和电动汽车的安全要求。关键规定之一是电池系统不得再存在起火或爆炸风险。",
+      "title": "Bioinspired Ultrastretchable Aramid Triboelectric Aerogels for Intelligent Vehicle Seat",
+      "source": "Advanced Materials",
+      "published_date": "2026-07-03",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73549?af=R",
+      "category": "学术论文",
+      "subcategory": "气凝胶",
+      "summary": "该论文报道了一种受生物启发的超可拉伸芳纶摩擦电气凝胶，用于智能汽车座椅。材料兼具高弹性、耐久性和摩擦电性能，可实现自供电传感，适用于座椅压力分布监测、乘员识别等场景。研究展示了气凝胶在柔性电子和智能座舱中的应用潜力。",
       "technical_points": [
-        "新标准要求电池系统在热失控、过充、短路等极端条件下不引发火灾或爆炸。",
-        "可能涉及更严格的电池包热管理、电芯间隔热、泄压阀设计等要求。",
-        "标准可能推动电池包采用更高阻燃等级的材料和更有效的热隔离方案。",
-        "对电池模组和电池包的结构设计提出更高要求，可能促进新型防火材料的应用。"
+        "受生物结构启发设计超可拉伸芳纶气凝胶",
+        "气凝胶兼具高弹性、耐久性和摩擦电性能",
+        "可实现自供电压力传感，无需外部电源",
+        "适用于智能汽车座椅的乘员监测和舒适性调节",
+        "材料具有轻质、柔性、可拉伸特点"
       ],
       "materials_involved": [
-        "阻燃材料",
-        "热管理材料",
-        "隔热材料",
-        "防火涂层",
-        "气凝胶",
-        "陶瓷纤维",
-        "相变材料"
-      ],
-      "companies_or_institutions": [
-        "Aisin"
-      ],
-      "impact_assessment": "新标准将迫使电池和整车企业升级电池安全设计，推动高阻燃、高效热管理材料的研发和应用，可能加速相关材料的产业化进程。",
-      "research_value": "为材料研发人员指明了安全性能提升的具体方向，特别是阻燃和热管理材料的性能指标要求将更加明确。",
-      "industrial_maturity": "policy",
-      "priority": "P0",
-      "confidence": 90,
-      "follow_up": true,
-      "one_sentence": "中国实施更严格的电动汽车电池安全标准，禁止起火爆炸风险，将推动阻燃和热管理材料需求。",
-      "why_it_matters": "新标准直接对电池系统的安全性提出硬性要求，材料是满足标准的关键，研发人员需关注符合新标准的材料方案。",
-      "technology_driver": "储能",
-      "material_relevance": "阻燃材料、热管理材料、隔热材料、防火涂层",
-      "material_opportunity": "气凝胶、陶瓷纤维、相变材料、阻燃塑料（如PPS、PA66）、防火涂层、导热界面材料",
-      "validation_opportunity": "值得立即启动供应商调研，寻找已通过新标准测试的阻燃和隔热材料，并开展样件验证。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "高",
-      "future_signal": "政策强制力将加速电池安全材料的技术迭代和产业化，形成明确的市场需求。",
-      "future_signal_score": 85,
-      "material_opportunity_score": 90,
-      "material_validation_score": 90,
-      "analysis_status": "success",
-      "rule_score": 52,
-      "source_score": 78,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=15 (EV, electric vehicle, vehicle); materials=4 (battery); companies=5 (Aisin); industrial=3 (standard); future=0 (none); current_month=5",
-      "stage": "Strategic Reserve",
-      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：standard。",
-      "canonical_url": "https://www.electrive.com/2026/07/01/stricter-ev-and-battery-standards-take-effect-in-china",
-      "normalized_title": "stricter ev battery standards take effect china",
-      "event_id": "a8c0c7d9ec415cb5",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 77,
-      "bookshelf_category": "Energy Materials",
-      "related_sources": [
-        {
-          "source": "Electrive",
-          "url": "https://www.electrive.com/2026/07/01/stricter-ev-and-battery-standards-take-effect-in-china",
-          "published_date": "2026-07-01"
-        }
-      ],
-      "source_urls": [
-        "https://www.electrive.com/2026/07/01/stricter-ev-and-battery-standards-take-effect-in-china"
-      ],
-      "source_names": [
-        "Electrive"
-      ],
-      "selected_at": "2026-07-01T20:27:53+08:00"
-    },
-    {
-      "title": "Norway’s EV share reaches 96.5% in June",
-      "source": "Electrive",
-      "published_date": "2026-07-01",
-      "url": "https://www.electrive.com/2026/07/01/norways-ev-share-reaches-96-5-in-june",
-      "category": "电池与储能材料",
-      "subcategory": "",
-      "summary": "2026年6月，挪威纯电动汽车注册量达18875辆，市场份额96.5%，上半年累计份额97.6%。全国电动车保有量突破100万辆。",
-      "technical_points": [
-        "纯电动汽车市场渗透率接近100%，燃油车基本退出",
-        "电动车保有量突破百万，充电基础设施和电网需配套升级",
-        "电池回收和梯次利用需求将快速增长"
-      ],
-      "materials_involved": [
-        "电池材料",
-        "回收材料"
-      ],
-      "companies_or_institutions": [],
-      "impact_assessment": "挪威作为电动汽车领先市场，其高渗透率将推动电池材料需求持续增长，并加速电池回收产业链成熟。",
-      "research_value": "为电池材料研发提供市场验证信号，但无具体技术细节，参考价值有限。",
-      "industrial_maturity": "market",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "挪威电动车市场份额达96.5%，保有量破百万，但无具体材料技术信息。",
-      "why_it_matters": "该新闻表明电动汽车市场已进入成熟期，但未涉及具体材料技术突破，对材料研发的直接指导意义有限。",
-      "technology_driver": "电池与储能",
-      "material_relevance": "电池材料、回收材料",
-      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "无具体材料验证机会，可关注后续电池回收政策和技术进展。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "电动汽车市场渗透率接近100%将推动电池回收和梯次利用产业链发展，但当前新闻未提供具体材料需求信号。",
-      "future_signal_score": 30,
-      "material_opportunity_score": 31,
-      "material_validation_score": 31,
-      "analysis_status": "success",
-      "rule_score": 49,
-      "source_score": 78,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=20 (EV, electric vehicle, vehicle, car); materials=4 (battery); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://www.electrive.com/2026/07/01/norways-ev-share-reaches-96-5-in-june",
-      "normalized_title": "norway s ev share reaches 96 5 june",
-      "event_id": "ad4d62e91a697437",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 50,
-      "bookshelf_category": "Energy Materials",
-      "related_sources": [
-        {
-          "source": "Electrive",
-          "url": "https://www.electrive.com/2026/07/01/norways-ev-share-reaches-96-5-in-june",
-          "published_date": "2026-07-01"
-        }
-      ],
-      "source_urls": [
-        "https://www.electrive.com/2026/07/01/norways-ev-share-reaches-96-5-in-june"
-      ],
-      "source_names": [
-        "Electrive"
-      ],
-      "selected_at": "2026-07-01T20:27:53+08:00"
-    },
-    {
-      "title": "CAR: Cross-Vehicle Kinodynamics Adaptation via Mobility Representation",
-      "source": "arXiv",
-      "published_date": "2026-07-01",
-      "url": "https://arxiv.org/abs/2603.06866",
-      "category": "其他",
-      "subcategory": "",
-      "summary": "该论文提出一种跨车辆运动动力学自适应框架（CAR），通过Transformer编码器和自适应层归一化将不同车辆（轮式、履带式）的轨迹和物理配置嵌入共享潜空间，实现仅用1分钟新数据即可快速迁移运动模型，在Verti-Bench仿真和真实环境中预测误差降低67.2%。",
-      "technical_points": [
-        "提出跨车辆运动动力学自适应框架（CAR），利用Transformer编码器与自适应层归一化构建共享运动潜空间",
-        "通过最近邻方法提取共性，实现快速运动动力学迁移，仅需1分钟新轨迹数据",
-        "在Verti-Bench仿真器（基于Chrono多物理引擎）和真实Verti-4-Wheeler平台上验证，预测误差降低67.2%",
-        "适用于轮式、履带式等多种车辆平台，无需大量平台特定数据"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [],
-      "impact_assessment": "该技术主要影响自动驾驶和机器人领域的运动控制算法，对汽车材料需求无直接牵引。",
-      "research_value": "对汽车材料研究员参考价值较低，属于算法层面创新，不涉及新材料或工艺。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": true,
-      "one_sentence": "CAR框架实现跨车辆运动动力学快速迁移，但属于算法研究，与材料无关。",
-      "why_it_matters": "该新闻不涉及材料技术，对材料研发无直接指导意义。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "无",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "无样件验证价值，不涉及材料供应商调研或前瞻储备。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "该新闻释放了跨平台运动模型迁移的技术趋势，但未涉及材料领域。",
-      "future_signal_score": 62,
-      "material_opportunity_score": 30,
-      "material_validation_score": 30,
-      "analysis_status": "success",
-      "rule_score": 40,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=15 (vehicle, car, mobility); materials=0 (none); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://arxiv.org/abs/2603.06866",
-      "normalized_title": "car cross vehicle kinodynamics adaptation via mobility representation",
-      "event_id": "1857a1a3bf8ca5df",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "future_signals"
-      ],
-      "final_score": 48,
-      "bookshelf_category": "Future Research Reserve",
-      "related_sources": [
-        {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2603.06866",
-          "published_date": "2026-07-01"
-        }
-      ],
-      "source_urls": [
-        "https://arxiv.org/abs/2603.06866"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "selected_at": "2026-07-01T20:27:53+08:00"
-    },
-    {
-      "title": "The Orbital Data Center Hype Machine Is Already in Orbit",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-07-01",
-      "url": "https://spectrum.ieee.org/orbital-data-center-hype",
-      "category": "未来趋势观察",
-      "subcategory": "热管理材料",
-      "summary": "文章分析了轨道数据中心（ODC）的可行性，指出SpaceX等公司提出的百万颗卫星级ODC星座在制造、发射和散热方面面临巨大挑战。例如，单颗Nvidia H100 GPU在太空需1.4平方米散热器，40kW机架需80平方米散热器。文章认为ODC在5-10年内难以与地面数据中心成本持平，但可能成为AI推理的补充方案。",
-      "technical_points": [
-        "轨道数据中心面临散热难题：单颗700W GPU需1.4平方米散热器，40kW机架需80平方米散热器。",
-        "SpaceX AI1卫星数据中心采用芯片无关载荷设计，但散热能力不足导致H100无法满功率运行。",
-        "百万颗卫星的制造和发射需数十年，远超当前产能。",
-        "轨道数据中心可能优先用于AI推理，而非训练，因训练对延迟和同步要求高。"
-      ],
-      "materials_involved": [
-        "热管理材料",
-        "散热器材料",
-        "辐射散热涂层"
-      ],
-      "companies_or_institutions": [
-        "SpaceX",
-        "Tesla",
-        "xAI",
-        "Starcloud",
-        "ABI Research"
-      ],
-      "impact_assessment": "对汽车产业链影响有限，但热管理技术（如高效散热器、辐射散热材料）可能间接受益于太空散热需求，未来可迁移至车载高功率电子散热。",
-      "research_value": "对汽车材料研究员参考价值较低，因轨道数据中心尚处概念阶段，材料需求不明确。但热管理材料（如轻质高效散热器、辐射散热涂层）可作为前瞻储备。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 70,
-      "follow_up": false,
-      "one_sentence": "轨道数据中心面临散热和产能挑战，热管理材料需求尚不明确，但可作为前瞻储备。",
-      "why_it_matters": "虽然轨道数据中心距离产业化遥远，但其极端散热需求可能催生新型热管理材料，这些材料未来或可应用于汽车高功率电子散热。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "热管理材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "无样件验证价值，距离量产太远，不建议供应商调研。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "轨道数据中心概念虽热，但技术瓶颈明显，短期内不会形成材料需求。",
-      "future_signal_score": 20,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 57,
-      "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=4 (thermal management); companies=5 (Tesla); industrial=3 (launch); future=15 (humanoid robot, NVIDIA, research); current_month=5",
-      "stage": "Supplier Research",
-      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：startup, company。",
-      "canonical_url": "https://spectrum.ieee.org/orbital-data-center-hype",
-      "normalized_title": "orbital data center hype machine is already orbit",
-      "event_id": "142d393906c33359",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ],
-      "final_score": 43,
-      "bookshelf_category": "Energy Materials",
-      "related_sources": [
-        {
-          "source": "IEEE Spectrum",
-          "url": "https://spectrum.ieee.org/orbital-data-center-hype",
-          "published_date": "2026-07-01"
-        }
-      ],
-      "source_urls": [
-        "https://spectrum.ieee.org/orbital-data-center-hype"
-      ],
-      "source_names": [
-        "IEEE Spectrum"
-      ],
-      "selected_at": "2026-07-01T20:27:53+08:00"
-    },
-    {
-      "title": "MultiUAV-Plat: An LLM-Oriented Platform, Benchmark and Framework for Multi-UAV Collaborative Task Planning",
-      "source": "arXiv",
-      "published_date": "2026-07-01",
-      "url": "https://arxiv.org/abs/2606.31073",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "该论文提出了MultiUAV-Plat，一个面向大语言模型的多无人机协同任务规划仿真平台与基准测试，包含75个任务会话、1500个自然语言任务和9396个验证检查。同时提出Agent4Drone框架，将多无人机行为结构化，在基准测试中任务通过率达57.9%，显著优于基线。该平台为研究LLM驱动的多无人机自主性提供了可复现的基础。",
-      "technical_points": [
-        "提出面向LLM的多无人机协同任务规划仿真平台MultiUAV-Plat，提供RESTful API和2D/3D可视化。",
-        "构建包含75个任务会话、1500个自然语言任务和9396个验证检查的基准测试。",
-        "提出Agent4Drone框架，将多无人机行为分为记忆、观察、任务理解、规划、执行和验证六个模块。",
-        "Agent4Drone在任务通过率（57.9%）、平均任务检查通过率（74.6%）和全局检查通过率（72.0%）上显著优于ReAct基线。"
-      ],
-      "materials_involved": [
-        "轻量化材料（如碳纤维复合材料）",
-        "电池材料（如高能量密度锂电池）",
-        "传感器材料（如激光雷达、摄像头用光学材料）"
+        "芳纶气凝胶",
+        "摩擦电材料",
+        "柔性传感材料"
       ],
       "companies_or_institutions": [
         "unknown"
       ],
-      "impact_assessment": "该技术推动多无人机协同任务规划智能化，可能促进无人机在物流、巡检、农业等领域的应用，进而带动对轻量化、长续航、高性能材料的需求。",
-      "research_value": "为汽车材料研究员提供无人机技术发展趋势参考，尤其是低空经济/eVTOL领域对材料轻量化和电池性能的要求。",
+      "impact_assessment": "该技术为智能座舱自供电传感提供了新材料方案，有望推动座椅智能化升级，提升乘员监测和舒适性调节能力。",
+      "research_value": "对汽车材料研究员而言，该论文展示了芳纶气凝胶在柔性传感和能量收集方面的创新应用，可作为前瞻技术储备参考。",
       "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 70,
-      "follow_up": true,
-      "one_sentence": "MultiUAV-Plat平台为LLM驱动的多无人机协同任务规划提供了标准化基准，推动无人机智能化发展。",
-      "why_it_matters": "该新闻展示了多无人机协同任务规划的技术进展，可能加速无人机在物流、巡检等场景的落地，进而牵引对轻量化、电池、传感材料的需求。",
-      "technology_driver": "低空经济/eVTOL",
-      "material_relevance": "轻量化复合材料、高能量密度电池材料、光学传感材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "该研究处于实验室仿真阶段，尚未涉及具体材料验证或供应链调研，距离量产较远。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "中",
-      "future_signal": "释放了LLM与无人机协同任务规划结合的技术趋势信号，未来可能推动无人机自主性提升，间接影响相关材料需求。",
-      "future_signal_score": 40,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 39,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=4 (lightweight); companies=0 (none); industrial=0 (none); future=5 (robotics); current_month=5",
-      "stage": "Validation",
-      "stage_reason": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：validation。",
-      "canonical_url": "https://arxiv.org/abs/2606.31073",
-      "normalized_title": "multiuav plat llm oriented platform benchmark framework multi uav collaborative task planning",
-      "event_id": "88dc02a5f6269dc0",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ],
-      "final_score": 43,
-      "bookshelf_category": "Energy Materials",
-      "related_sources": [
-        {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2606.31073",
-          "published_date": "2026-07-01"
-        }
-      ],
-      "source_urls": [
-        "https://arxiv.org/abs/2606.31073"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "selected_at": "2026-07-01T20:27:53+08:00"
-    },
-    {
-      "title": "New BMW 7 Series ramps up in Dingolfing: Progressive luxury meets Neue Klasse technologies Wed Jul 01 14:00:00 CEST 2026 Press Release Most comprehensive model update in company history enters series production – Neue Klasse innovations roll out across existing portfolio – Greater range and faster charging for the BMW i7 – High-tech and craftsmanship deliver maximum customisation and exclusivity G70 LCI · G70 · LCI · Locations · Production Plants · Sedan · 7 Series · Dingolfing",
-      "source": "BMW",
-      "published_date": "2026-07-01",
-      "url": "https://www.press.bmwgroup.com/global/article/detail/T0458808EN/new-bmw-7-series-ramps-up-in-dingolfing:-progressive-luxury-meets-neue-klasse-technologies?showMedia=photo",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "宝马宣布新一代7系在丁戈尔芬工厂投产，这是公司历史上最大规模的车型更新，融合了Neue Klasse技术。新BMW i7续航更长、充电更快，并强调高科技与手工工艺结合，提供高度定制化和独特性。该车型是G70 LCI改款，标志着Neue Klasse创新技术向现有产品组合的扩展。",
-      "technical_points": [
-        "Neue Klasse技术向现有车型平台扩展，非全新平台",
-        "BMW i7续航提升、充电速度加快",
-        "高度定制化与独特性，涉及高端内饰材料与工艺"
-      ],
-      "materials_involved": [
-        "高端内饰材料（如真皮、碳纤维、特殊织物）",
-        "电池材料（续航与快充相关）",
-        "轻量化材料（可能涉及铝、高强钢、碳纤维）"
-      ],
-      "companies_or_institutions": [
-        "BMW"
-      ],
-      "impact_assessment": "该新闻表明宝马正将Neue Klasse的电动化与智能化技术快速导入现有旗舰车型，可能推动高端电动车续航与充电性能的竞争，但对材料端的具体需求不明确。",
-      "research_value": "对材料研究员的参考价值有限，因为新闻未提供具体材料技术细节，仅提及性能提升和定制化。",
-      "industrial_maturity": "production",
-      "priority": "P3",
-      "confidence": 60,
-      "follow_up": false,
-      "one_sentence": "宝马新一代7系投产，融合Neue Klasse技术，但缺乏具体材料信息。",
-      "why_it_matters": "该新闻显示宝马加速技术下放，但未涉及新材料或工艺，对材料研发的直接指导意义较弱。",
-      "technology_driver": "未来交通",
-      "material_relevance": "材料相关性较弱，暂不优先。",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "信息不足，无法判断具体验证机会。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "宝马将Neue Klasse技术快速应用于现有车型，表明电动化与智能化技术正加速渗透高端市场。",
-      "future_signal_score": 40,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 40,
-      "source_score": 88,
-      "source_type": "company_news_page",
-      "filter_reason": "source=22; automotive=0 (none); materials=0 (none); companies=5 (BMW); industrial=3 (plant); future=5 (innovation); current_month=5",
-      "stage": "Supplier Research",
-      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：company。",
-      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0458808EN/new-bmw-7-series-ramps-up-in-dingolfing:-progressive-luxury-meets-neue-klasse-technologies?showMedia=photo",
-      "normalized_title": "new bmw 7 series ramps up dingolfing progressive luxury meets neue klasse technologies wed jul 01 14 00 00 cest 2026 press release most comprehensive model update company history enters series production neue klasse innovations roll out across existing portfolio greater range faster charging bmw i7 high tech craftsmanship deliver maximum customisation exclusivity g70 lci g70 lci locations production plants sedan 7 series dingolfing",
-      "event_id": "ebd80e3ffb7e67c0",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ],
-      "final_score": 41,
-      "bookshelf_category": "Future Research Reserve",
-      "related_sources": [
-        {
-          "source": "BMW",
-          "url": "https://www.press.bmwgroup.com/global/article/detail/T0458808EN/new-bmw-7-series-ramps-up-in-dingolfing:-progressive-luxury-meets-neue-klasse-technologies?showMedia=photo",
-          "published_date": "2026-07-01"
-        }
-      ],
-      "source_urls": [
-        "https://www.press.bmwgroup.com/global/article/detail/T0458808EN/new-bmw-7-series-ramps-up-in-dingolfing:-progressive-luxury-meets-neue-klasse-technologies?showMedia=photo"
-      ],
-      "source_names": [
-        "BMW"
-      ],
-      "selected_at": "2026-07-01T20:27:53+08:00"
-    },
-    {
-      "title": "Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory",
-      "source": "arXiv",
-      "published_date": "2026-07-01",
-      "url": "https://arxiv.org/abs/2606.31037",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "Labimus是首个针对有机化学实验室中类人灵巧操作的基准测试平台，通过真实到模拟建模重建了30多个功能资产，集成了关节仪器、粒子粉末物理和闭环读数，定义了六种原子操作和七步固体称量工作流程，并引入精度感知评估协议。测试三种策略发现，任务完成与实验有效性之间存在精度差距。",
-      "technical_points": [
-        "首个面向有机化学实验室的类人灵巧操作基准",
-        "真实到模拟建模重建30+功能资产",
-        "集成粒子粉末物理和闭环仪器读数",
-        "定义六种原子操作和七步固体称量工作流",
-        "精度感知评估协议揭示任务完成与实验有效性的差距"
-      ],
-      "materials_involved": [
-        "粒子粉末材料",
-        "实验室仪器材料"
-      ],
-      "companies_or_institutions": [],
-      "impact_assessment": "该技术主要影响实验室自动化领域，对汽车产业链的直接材料需求牵引较弱，但可能间接推动机器人灵巧操作技术在汽车制造（如精密装配、物料搬运）中的应用，进而对相关传感器、执行器材料提出要求。",
-      "research_value": "对汽车材料研究员参考价值有限，主要提供机器人操作精度与材料交互的仿真方法，但未涉及具体新材料或工艺。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
+      "priority": "P1",
       "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "Labimus基准测试揭示了类人机器人在实验室操作中的精度差距，但材料相关性较弱。",
-      "why_it_matters": "该新闻展示了机器人灵巧操作在精密场景中的挑战，但未直接牵引汽车材料需求，因此对材料研发人员关注度较低。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "无直接样件验证价值，不适合供应商调研或前瞻储备，距离量产太远。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "该新闻释放了机器人灵巧操作在精密实验室场景中的发展趋势，但对汽车材料领域信号较弱。",
-      "future_signal_score": 20,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
+      "follow_up": true,
+      "one_sentence": "受生物启发的超可拉伸芳纶摩擦电气凝胶可用于智能汽车座椅自供电传感。",
+      "why_it_matters": "该技术为智能座舱自供电传感提供了新材料路径，可能替代传统有线传感器，降低布线复杂度并提升座椅智能化水平。",
+      "technology_driver": "智能座舱",
+      "material_relevance": "柔性传感材料、自供电材料、气凝胶材料",
+      "material_opportunity": "芳纶气凝胶、摩擦电材料、柔性导电涂层",
+      "validation_opportunity": "目前处于实验室阶段，距离量产较远，但可作为前瞻储备，关注后续在柔性传感和能量收集方面的验证进展。",
+      "suggested_action": "前瞻储备",
+      "trend_potential": "中",
+      "future_signal": "该论文释放了智能座舱自供电传感材料向柔性、轻量化、生物启发方向发展的信号。",
+      "future_signal_score": 60,
+      "material_opportunity_score": 50,
+      "material_validation_score": 50,
       "analysis_status": "success",
-      "rule_score": 38,
-      "source_score": 82,
+      "rule_score": 37,
+      "source_score": 92,
       "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=3 (standard); future=10 (humanoid robot, automation); current_month=5",
-      "stage": "Strategic Reserve",
-      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：standard。",
-      "canonical_url": "https://arxiv.org/abs/2606.31037",
-      "normalized_title": "labimus simulation benchmark humanoid dexterous manipulation chemical laboratory",
-      "event_id": "c7fd439106f177ad",
+      "filter_reason": "source=23; automotive=5 (vehicle); materials=4 (aerogel); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73549?af=R",
+      "normalized_title": "bioinspired ultrastretchable aramid triboelectric aerogels intelligent vehicle seat",
+      "event_id": "cc7297f9d9ebde30",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -514,22 +63,544 @@
         "suggested_actions",
         "future_signals"
       ],
-      "final_score": 40,
+      "final_score": 63,
       "bookshelf_category": "Functional Materials",
       "related_sources": [
         {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2606.31037",
-          "published_date": "2026-07-01"
+          "source": "Advanced Materials",
+          "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73549?af=R",
+          "published_date": "2026-07-03"
         }
       ],
       "source_urls": [
-        "https://arxiv.org/abs/2606.31037"
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73549?af=R"
       ],
       "source_names": [
-        "arXiv"
+        "Advanced Materials"
       ],
-      "selected_at": "2026-07-01T20:27:53+08:00"
+      "selected_at": "2026-07-06T22:26:48+08:00"
+    },
+    {
+      "title": "A Metallic Element‐Free Halide‐Ion Battery Enabled by Dual‐halide Regulation in a Hydrogel Electrolyte",
+      "source": "Advanced Materials",
+      "published_date": "2026-07-03",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73524?af=R",
+      "category": "电池与储能材料",
+      "subcategory": "电解液",
+      "summary": "该研究提出了一种基于水凝胶电解质的双卤素调控策略，实现了无金属元素的卤化物离子电池。通过双卤素（如氯和碘）的协同作用，提高了电池的容量和循环稳定性。该电池完全不含金属元素，有望降低成本和环境负担。",
+      "technical_points": [
+        "采用水凝胶电解质，实现双卤素（Cl/I）调控",
+        "无金属元素设计，避免金属资源依赖",
+        "卤化物离子穿梭机制，提供高容量",
+        "水凝胶电解质提供机械柔性和离子传导"
+      ],
+      "materials_involved": [
+        "水凝胶电解质",
+        "卤化物（氯、碘）",
+        "无金属电极材料"
+      ],
+      "companies_or_institutions": [],
+      "impact_assessment": "该技术可能推动无金属电池的发展，对汽车动力电池的材料体系产生颠覆性影响，但目前处于实验室阶段，距离产业化较远。",
+      "research_value": "为电池材料研究提供了新方向，特别是无金属、低成本、环保的储能体系，但需关注其实际性能（能量密度、循环寿命）是否满足汽车应用。",
+      "industrial_maturity": "lab",
+      "priority": "P2",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "无金属卤化物离子电池通过水凝胶电解质实现双卤素调控，为低成本环保电池提供新思路。",
+      "why_it_matters": "该技术探索了无金属电池的可能性，可能减少对锂、钴等稀缺金属的依赖，对汽车电池材料供应链有长期战略意义。",
+      "technology_driver": "储能",
+      "material_relevance": "固态电解质、水凝胶电解质、卤化物材料",
+      "material_opportunity": "水凝胶电解质、卤化物电极材料",
+      "validation_opportunity": "目前处于实验室验证阶段，尚无样件或供应商信息，建议持续跟踪学术进展，暂不启动验证。",
+      "suggested_action": "持续跟踪",
+      "trend_potential": "中",
+      "future_signal": "释放了无金属电池技术路线的信号，可能成为未来低成本储能的重要方向。",
+      "future_signal_score": 50,
+      "material_opportunity_score": 51,
+      "material_validation_score": 51,
+      "analysis_status": "success",
+      "rule_score": 39,
+      "source_score": 92,
+      "source_type": "journal_rss",
+      "filter_reason": "source=23; automotive=0 (none); materials=8 (battery, electrolyte); companies=0 (none); industrial=3 (regulation); future=0 (none); current_month=5",
+      "stage": "Strategic Reserve",
+      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：regulation。",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73524?af=R",
+      "normalized_title": "metallic element free halide ion battery enabled by dual halide regulation hydrogel electrolyte",
+      "event_id": "a1244035778d657b",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 59,
+      "bookshelf_category": "Metal Materials",
+      "related_sources": [
+        {
+          "source": "Advanced Materials",
+          "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73524?af=R",
+          "published_date": "2026-07-03"
+        }
+      ],
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73524?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "selected_at": "2026-07-06T22:26:48+08:00"
+    },
+    {
+      "title": "Audi manager confirms A4 E-Tron for 2028 on new SSP Platform",
+      "source": "Electrive",
+      "published_date": "2026-07-06",
+      "url": "https://www.electrive.com/2026/07/06/audi-manager-confirms-a4-e-tron-for-2028-on-new-ssp-platform",
+      "category": "企业技术动态",
+      "subcategory": "",
+      "summary": "奥迪确认A4 e-tron将于2028年上市，基于大众集团全新SSP平台。该平台是大众集团未来高产量电动车型的基础，整合了MEB和PPE平台的优点，支持800V架构和更高集成度。",
+      "technical_points": [
+        "SSP平台是大众集团下一代纯电平台，支持800V高压架构",
+        "A4 e-tron定位中型电动轿车，2028年量产",
+        "SSP平台将整合MEB和PPE平台，实现更高集成度和成本效率",
+        "平台可能采用新一代电池系统（如统一电芯）和域控制电子电气架构"
+      ],
+      "materials_involved": [
+        "800V高压平台相关材料（如SiC功率模块、耐高压绝缘材料）",
+        "电池系统材料（如高镍正极、硅碳负极、固态电解质）",
+        "轻量化材料（如铝合金、高强钢、碳纤维复合材料）",
+        "热管理材料（如导热界面材料、相变材料）"
+      ],
+      "companies_or_institutions": [
+        "Audi",
+        "Volkswagen Group"
+      ],
+      "impact_assessment": "SSP平台作为大众集团未来核心平台，将推动800V高压、电池集成和轻量化技术的规模化应用，对供应链材料需求产生深远影响。",
+      "research_value": "为材料研发人员提供前瞻方向：关注SSP平台对高压绝缘、电池材料、轻量化结构件的需求，提前布局验证。",
+      "industrial_maturity": "pilot",
+      "priority": "P2",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "奥迪确认A4 e-tron将于2028年基于大众SSP平台量产，该平台将推动800V高压和电池材料需求。",
+      "why_it_matters": "SSP平台是大众集团下一代核心平台，其技术路线将直接定义未来5-10年材料需求方向，包括高压绝缘、电池材料和轻量化。",
+      "technology_driver": "未来交通",
+      "material_relevance": "高压绝缘材料、电池材料（高镍/硅碳/固态电解质）、轻量化材料（铝合金/高强钢/碳纤维）、热管理材料",
+      "material_opportunity": "SiC功率模块封装材料、耐高压绝缘材料、高能量密度电池材料（硅碳负极、固态电解质）、导热界面材料、碳纤维复合材料",
+      "validation_opportunity": "目前平台处于开发阶段，材料需求尚未明确，但可提前关注800V平台对绝缘和热管理材料的更高要求，适合前瞻储备，暂不急于样件验证。",
+      "suggested_action": "持续跟踪",
+      "trend_potential": "高",
+      "future_signal": "大众集团加速平台整合，SSP平台将成为未来电动化主力，释放出对高压、高集成度材料需求的明确信号。",
+      "future_signal_score": 70,
+      "material_opportunity_score": 71,
+      "material_validation_score": 71,
+      "analysis_status": "success",
+      "rule_score": 38,
+      "source_score": 78,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=5 (car); materials=0 (none); companies=5 (Volkswagen); industrial=3 (launch); future=0 (none); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://www.electrive.com/2026/07/06/audi-manager-confirms-a4-e-tron-for-2028-on-new-ssp-platform",
+      "normalized_title": "audi manager confirms a4 e tron 2028 new ssp platform",
+      "event_id": "0e4d8f54eac1a189",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 57,
+      "bookshelf_category": "Energy Materials",
+      "related_sources": [
+        {
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/07/06/audi-manager-confirms-a4-e-tron-for-2028-on-new-ssp-platform",
+          "published_date": "2026-07-06"
+        }
+      ],
+      "source_urls": [
+        "https://www.electrive.com/2026/07/06/audi-manager-confirms-a4-e-tron-for-2028-on-new-ssp-platform"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "selected_at": "2026-07-06T22:26:48+08:00"
+    },
+    {
+      "title": "‘Constant’ physical pressure could ‘double’ battery lifespan, new study finds",
+      "source": "Electrive",
+      "published_date": "2026-07-06",
+      "url": "https://www.electrive.com/2026/07/06/constant-physical-pressure-could-double-battery-lifespan-new-study-finds",
+      "category": "电池与储能材料",
+      "subcategory": "锂离子电池",
+      "summary": "剑桥大学领导的研究团队发现，对锂离子电池施加恒定物理压力可使其寿命延长一倍。该研究揭示了压力对电池内部结构稳定性的影响，可能为电池设计提供新思路。",
+      "technical_points": [
+        "恒定物理压力可抑制锂枝晶生长，减少电极开裂",
+        "压力有助于保持电极与电解液的紧密接触，降低界面阻抗",
+        "研究可能涉及压力对SEI膜形成和稳定性的影响"
+      ],
+      "materials_involved": [
+        "锂离子电池",
+        "电极材料",
+        "电解液",
+        "SEI膜"
+      ],
+      "companies_or_institutions": [
+        "University of Cambridge"
+      ],
+      "impact_assessment": "该发现可能推动电池包设计引入主动或被动压力管理机制，影响电池模组结构材料和封装材料的选择。",
+      "research_value": "为电池寿命优化提供了新的物理调控维度，值得关注压力对材料界面行为的影响。",
+      "industrial_maturity": "lab",
+      "priority": "P2",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "剑桥大学研究表明恒定物理压力可使锂离子电池寿命翻倍，为电池设计提供新方向。",
+      "why_it_matters": "电池寿命是电动汽车和储能系统的核心指标，该研究可能催生新的电池封装和压力管理技术，进而影响相关材料需求。",
+      "technology_driver": "储能",
+      "material_relevance": "可能牵引电池封装结构材料、压力传导材料、弹性缓冲材料等。",
+      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "目前处于实验室研究阶段，尚未涉及具体材料验证或供应商信息，建议持续跟踪后续产业化进展。",
+      "suggested_action": "持续跟踪",
+      "trend_potential": "中",
+      "future_signal": "释放了电池寿命优化从化学配方转向物理调控的信号，可能影响未来电池包设计范式。",
+      "future_signal_score": 60,
+      "material_opportunity_score": 61,
+      "material_validation_score": 61,
+      "analysis_status": "success",
+      "rule_score": 38,
+      "source_score": 78,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=8 (battery, lithium-ion); companies=0 (none); industrial=0 (none); future=5 (research); current_month=5",
+      "stage": "Supplier Research",
+      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：university。",
+      "canonical_url": "https://www.electrive.com/2026/07/06/constant-physical-pressure-could-double-battery-lifespan-new-study-finds",
+      "normalized_title": "constant physical pressure could double battery lifespan new study finds",
+      "event_id": "61cf1957317cbafd",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 55,
+      "bookshelf_category": "Energy Materials",
+      "related_sources": [
+        {
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/07/06/constant-physical-pressure-could-double-battery-lifespan-new-study-finds",
+          "published_date": "2026-07-06"
+        }
+      ],
+      "source_urls": [
+        "https://www.electrive.com/2026/07/06/constant-physical-pressure-could-double-battery-lifespan-new-study-finds"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "selected_at": "2026-07-06T22:26:48+08:00"
+    },
+    {
+      "title": "A Selective‐Transport Elastomeric Coating Regulating Hierarchical Solid Electrolyte Interphase for Low‐Temperature Lithium‐Metal Batteries",
+      "source": "Advanced Materials",
+      "published_date": "2026-07-03",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R",
+      "category": "电池与储能材料",
+      "subcategory": "电解液",
+      "summary": "该研究报道了一种选择性传输弹性体涂层，用于调控锂金属电池中分级固态电解质界面（SEI）的形成，旨在提升低温性能。涂层通过选择性传输锂离子并抑制副反应，构建稳定的SEI层，从而改善锂金属负极在低温下的循环稳定性和库仑效率。该工作发表于Advanced Materials，属于前沿学术研究。",
+      "technical_points": [
+        "开发了一种选择性传输弹性体涂层，可调控分级SEI结构",
+        "涂层促进锂离子均匀沉积，抑制枝晶生长",
+        "在低温条件下显著提升锂金属电池的循环寿命和库仑效率",
+        "通过界面工程实现稳定的固态电解质界面"
+      ],
+      "materials_involved": [
+        "弹性体涂层",
+        "固态电解质界面（SEI）",
+        "锂金属负极",
+        "电解液"
+      ],
+      "companies_or_institutions": [
+        "unknown"
+      ],
+      "impact_assessment": "该技术为锂金属电池低温应用提供了新思路，可能推动电动汽车在寒冷地区的电池性能提升，但尚处于实验室阶段，距离产业化较远。",
+      "research_value": "对电池材料研究员有参考价值，特别是界面涂层设计策略，但材料体系尚未明确，需进一步验证。",
+      "industrial_maturity": "lab",
+      "priority": "P2",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "Advanced Materials报道了一种选择性传输弹性体涂层，通过调控SEI提升锂金属电池低温性能。",
+      "why_it_matters": "该研究展示了通过界面涂层解决锂金属电池低温问题的潜力，可能引导未来电解液添加剂或涂层材料的开发方向，但当前材料细节不足，需持续跟踪。",
+      "technology_driver": "储能",
+      "material_relevance": "固态电解质、界面涂层材料、电解液添加剂",
+      "material_opportunity": "可能值得关注的材料包括弹性体涂层材料（如聚氨酯、聚硅氧烷等）和电解液添加剂，但论文中未明确具体化学成分，材料机会尚不明确。",
+      "validation_opportunity": "目前处于学术论文阶段，无样件或供应商信息，距离验证较远，建议持续跟踪后续研究进展。",
+      "suggested_action": "持续跟踪",
+      "trend_potential": "中",
+      "future_signal": "该研究释放了通过界面工程提升锂金属电池低温性能的技术信号，但材料体系未公开，产业化前景不明。",
+      "future_signal_score": 40,
+      "material_opportunity_score": 41,
+      "material_validation_score": 41,
+      "analysis_status": "success",
+      "rule_score": 40,
+      "source_score": 92,
+      "source_type": "journal_rss",
+      "filter_reason": "source=23; automotive=0 (none); materials=12 (electrolyte, lithium metal, coating); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R",
+      "normalized_title": "selective transport elastomeric coating regulating hierarchical solid electrolyte interphase low temperature lithium metal batteries",
+      "event_id": "fe7fe0cd3a8266eb",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 54,
+      "bookshelf_category": "Metal Materials",
+      "related_sources": [
+        {
+          "source": "Advanced Materials",
+          "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R",
+          "published_date": "2026-07-03"
+        }
+      ],
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "selected_at": "2026-07-06T22:26:48+08:00"
+    },
+    {
+      "title": "Nanoporous Carbon Coating of Separator Boosts Rate Capability of Cathodes in Lithium‐Ion Batteries",
+      "source": "Advanced Materials",
+      "published_date": "2026-07-04",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R",
+      "category": "电池与储能材料",
+      "subcategory": "锂离子电池",
+      "summary": "该研究在锂离子电池隔膜上涂覆纳米多孔碳涂层，旨在提升正极的倍率性能。通过优化涂层结构，改善离子传输和电子导电性，从而增强电池在高倍率下的容量保持。该技术可能为高功率电池应用提供新思路。",
+      "technical_points": [
+        "隔膜表面涂覆纳米多孔碳涂层",
+        "涂层提升正极倍率性能",
+        "改善离子传输和电子导电性",
+        "可能适用于高功率锂离子电池"
+      ],
+      "materials_involved": [
+        "纳米多孔碳",
+        "隔膜涂层",
+        "锂离子电池正极材料"
+      ],
+      "companies_or_institutions": [],
+      "impact_assessment": "该技术可能推动高功率锂离子电池的发展，对电动汽车快充性能有潜在影响。但尚处于实验室阶段，产业化距离较远。",
+      "research_value": "为隔膜改性提供新方向，可关注碳涂层工艺对电池性能的影响，但需进一步验证在真实电池体系中的效果。",
+      "industrial_maturity": "lab",
+      "priority": "P2",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "纳米多孔碳涂层隔膜提升锂离子电池正极倍率性能，但处于实验室阶段。",
+      "why_it_matters": "该技术可能为高功率电池提供新的隔膜改性方案，但材料相关性较弱，暂不优先。",
+      "technology_driver": "储能",
+      "material_relevance": "隔膜涂层材料、纳米多孔碳",
+      "material_opportunity": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "目前仅为学术论文，无产业化验证信息，距离量产较远，不建议立即启动验证。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "隔膜涂层技术持续演进，但该研究未提供明确产业化信号。",
+      "future_signal_score": 30,
+      "material_opportunity_score": 31,
+      "material_validation_score": 31,
+      "analysis_status": "success",
+      "rule_score": 44,
+      "source_score": 92,
+      "source_type": "journal_rss",
+      "filter_reason": "source=23; automotive=0 (none); materials=16 (lithium-ion, cathode, separator, coating); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R",
+      "normalized_title": "nanoporous carbon coating separator boosts rate capability cathodes lithium ion batteries",
+      "event_id": "182d3720dfaae1af",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 52,
+      "bookshelf_category": "Functional Materials",
+      "related_sources": [
+        {
+          "source": "Advanced Materials",
+          "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R",
+          "published_date": "2026-07-04"
+        }
+      ],
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "selected_at": "2026-07-06T22:26:48+08:00"
+    },
+    {
+      "title": "生成式AI在中国：2万亿美元的经济价值 如今，科技发展日新月异，生成式AI正在从热烈讨论走向应用落地。各大公司已不再追问何为生成式AI，而是希望了解如何提高部署该技术的投资回报率（ROI）。 点击此处前往报告页面 制胜中国新篇章 中国消费市场的真相 尽管消费者信心总体低迷，但中国庞大的消费市场仍然存在若干增长亮点。 全球灯塔网络今日再迎新：中国灯塔工厂的四大新貌 约60%的新晋灯塔工厂来自中国！ 出海：中国企业在全球不确定性下的战略选择 在全球化背景下，出海已经成为中国企业的战略必然。然而，全球经济不确定性、地缘波动以及国际市场复杂性，也让企业在出海过程中面临诸多挑战。 1 2 3 … 9 Next » Load More 最新洞见 智能体时代，企业组织运营模式四问 智能体AI绝不仅仅是工具层面的升级；它正在挑战企业组织赖以建立的运行规则。但是，这项技术用于不同的业务领域当中，实际表现参差不齐，也会在可靠性、监督、意外后果等方面引发和放大风险。企业领导者已经看到了智能体的潜力，也看到了挖掘价值的可能。 麦肯锡叶海：揭秘商业世界的“黑洞式”增长 所谓黑洞式增长，就是先在一个细分市场里建立稳固的领导地位，把低成本、高效率、可复制、带信用的硬核做成默认；然后把这套硬核复制到更多区域、更多客户群、更多产品线，规模在复制中自然放大，从而实现增长。 多智能体协同？先解决各说各话的数据困局 在智能体时代，底层数据能力正日益决定企业的竞争位置。尽管依托数据释放智能体价值的前景可期，许多企业仍难以搭建既便于智能体调用、又可合规治理的数据底座。如今，企业应把握这个推动数据变革的窗口期，为迈向智能体未来打好地基。 征程万里、风头正健 ：麦肯锡全球材料行业前瞻 近年来，在宏观周期变化、地缘影响深化的大背景下，全球材料行业整体呈现出三大趋势：其一、从过去跟风扩张、以量获利的低质量发展，转向秉承资本纪律、对低利润及产能过剩品类降低投入的高质量发展；其二、各国更加重视资源供应链的稳定性，优先保障优质稀缺资源，并积极提升战略自主性；其三、碳税、能控及环改压力使不少材料品类的利润受到压缩，绿色转型征程有所放缓。 更强大脑：AI时代的人类优势 ——麦肯锡健康促进研究院与世界经济论坛联合报告 在AI加速演进的当下，我们必须以同等的紧迫感与资源投入，锻造人类自身的能力。投资大脑资本，是通往更充实的人生、更具韧性的经济与更强健社会的必由之路。 代理式AI时代，银行业务须深度简化 银行面临一个不容忽视的现实问题：长远来看，当前的高收入将很难维系，转型调整势在必行。据麦肯锡《2025全球银行业年度报告》称，银行若不进行深度简化，到2030年，全球利润池中将有高达1700亿美元的利润蒸发。 深度简化，正成为这场转型之战的核心。 《2026麦肯锡中国汽车消费者洞察》——五大新趋势，展望中国车市“新十年” 今年的调研总结出中国汽车市场的五大关键趋势：内生需求基础稳固，市场迈入韧性增长新阶段；价格战反噬消费者信心，技术创新更获青睐；技术兑现能力重塑品牌格局，预示未来市场演进方向；补能体验实现质变，纯电出行成为消费者优选；智能驾驶与车载智能体正成为真正的“刚性配置”。 增长是企业的“头号战略”|叶海谈韧性增长系列文章 “韧性增长”这个词不讨巧，却准确。韧性不是姿态，也不是硬扛；它是结构性的品质：受力时不断裂，受挫后能校准，风向再变仍有回旋余地。企业亦然：增长让你走得快，韧性让你走得远，并保住选择空间。在当下的市场环境中，企业要解决的不是增长慢，而是增长失去筋骨。 AI转型宣言：领先者的12条法则 完整的重构能力体系，是每一次技术与AI转型的基石。建设速度可以加快，但基础功课无法跳过。当各项能力相互叠加，价值会产生复利，优势将持续自我强化，竞争差距也会随之拉大。这正是领先公司能够一次又一次超越同行的根本原因。 女性CEO制胜心法：不硬扛，不内耗，稳掌舵 在2025年发布的文章中，我们曾探讨新晋女性CEO如何依托人本管理，化解岗位冲突与多重挑战。本文将镜头拉长，聚焦任职成熟期的女性管理者，探究她们长久掌舵的底层逻辑。研究发现，能够长期保持高绩效的女性领导者，往往拥有一套独到的领导力架构，一组内化于心的坚定信念，能够指引决策、稳住身心，让个人与企业在高压环境下行稳致远。 逆势破局：私募股权公司如何优化退出前景 在市场愈发多变的当下，能否尽早、系统性的筹备资产出售，已成为私募股权机构确保投资收益及时、顺利落袋的关键。 在不确定时代重建增长逻辑——麦肯锡2026中国论坛 麦肯锡已走过百年历程，在一个世纪的演进中见证经济周期更迭、技术变革与全球格局重塑。当前，全球经济正进入低增长与高不确定性交织的新阶段，中国也由高速增长转向以结构优化与效率提升为核心的高质量发展路径。 CEO访谈 中信戴卡摩洛哥总裁巴德·拉穆迪：海外更需要中国的解决方案，而不只是中国的产品 本次访谈中，中信戴卡摩洛哥工厂总裁巴德·拉穆迪（Badr Lahmoudi）与麦肯锡全球董事合伙人侯文皓围绕着非洲首家“灯塔工厂”的建设与转型，探讨了其独特的成功要素，并分享了克服跨国运营挑战（人才、文化、供应链）的可复制经验，以及对非洲的工业企业和中国企业“出海”的关键启示。 从电动车到机器人：小鹏是如何做到的？——专访小鹏汽车副董事长兼联席总裁顾宏地 麦肯锡中国区主席倪以理访谈了小鹏汽车副董事长、联席总裁顾宏地。对话中，顾宏地系统梳理了中国电动车产业的演进逻辑、全球化布局、智能驾驶与AI战略，并对小鹏向机器人与具身智能延展的愿景展开深入探讨。 安捷伦科技全球副总裁曹伟胜：推进数字化运营是最值得做的无悔之举 本次访谈中，安捷伦科技全球仪器制造副总裁曹伟胜与麦肯锡全球董事合伙人侯文皓共同探讨了安捷伦智能制造转型之旅。曹伟胜分享了他的心得体会：强大的领导力、匹配的人才队伍与创新的技术，助力安捷伦将愿景蓝图转化为行动，最终实现产品交付与研发效率的双重提速。 麦肯锡故事 今年的“Values Day”，麦肯锡人讨论了这个主题...... 这一天，全球4.5万个麦肯锡人开展了一场超级“团建” 每年6月下旬的某个星期五，全球麦肯锡人就会迎来一个极为特殊的大日子——Values Day。 解码麦肯锡公益共创会：为儿童肿瘤患者点燃希望的曙光",
+      "source": "麦肯锡中国",
+      "published_date": "2026-07-02",
+      "url": "https://www.mckinsey.com.cn/%e7%94%9f%e6%88%90%e5%bc%8fai%e5%9c%a8%e4%b8%ad%e5%9b%bd%ef%bc%9a2%e4%b8%87%e4%ba%bf%e7%be%8e%e5%85%83%e7%9a%84%e7%bb%8f%e6%b5%8e%e4%bb%b7%e5%80%bc",
+      "category": "企业技术动态",
+      "subcategory": "",
+      "summary": "麦肯锡发布报告称生成式AI在中国可创造2万亿美元经济价值，并探讨AI应用落地、智能体时代、数据治理、材料行业趋势等。文章为综合性商业洞察，未涉及具体技术细节或材料信息。",
+      "technical_points": [
+        "生成式AI从讨论走向应用落地，企业关注投资回报率",
+        "智能体AI挑战企业组织运营模式，需解决数据困局",
+        "材料行业趋势：高质量发展、供应链稳定、绿色转型"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "麦肯锡"
+      ],
+      "impact_assessment": "对汽车产业链影响间接，AI技术可能推动智能制造和材料研发效率提升，但无直接材料需求牵引。",
+      "research_value": "对汽车材料研究员参考价值低，缺乏具体材料技术信息。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 80,
+      "follow_up": false,
+      "one_sentence": "麦肯锡报告称生成式AI在中国有巨大经济潜力，但无具体材料技术细节。",
+      "why_it_matters": "该新闻为宏观趋势报告，未提供具体材料技术信息，对研发人员直接参考价值有限。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "无具体材料验证机会。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "AI技术可能间接影响材料研发模式，但信号不明确。",
+      "future_signal_score": 72,
+      "material_opportunity_score": 5,
+      "material_validation_score": 5,
+      "analysis_status": "success",
+      "rule_score": 50,
+      "source_score": 78,
+      "source_type": "professional_media",
+      "filter_reason": "source=20; automotive=5 (汽车); materials=0 (none); companies=0 (none); industrial=10 (发布, 工厂, 投资, 可靠性); future=10 (具身智能, 创新); current_month=5",
+      "stage": "Validation",
+      "stage_reason": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：可靠性。",
+      "canonical_url": "https://www.mckinsey.com.cn/%e7%94%9f%e6%88%90%e5%bc%8fai%e5%9c%a8%e4%b8%ad%e5%9b%bd%ef%bc%9a2%e4%b8%87%e4%ba%bf%e7%be%8e%e5%85%83%e7%9a%84%e7%bb%8f%e6%b5%8e%e4%bb%b7%e5%80%bc",
+      "normalized_title": "生成式ai在中国 2万亿美元的经济价值 如今 科技发展日新月异 生成式ai正在从热烈讨论走向应用落地 各大公司已不再追问何为生成式ai 而是希望了解如何提高部署该技术的投资回报率 roi 点击此处前往报告页面 制胜中国新篇章 中国消费市场的真相 尽管消费者信心总体低迷 但中国庞大的消费市场仍然存在若干增长亮点 全球灯塔网络今日再迎新 中国灯塔工厂的四大新貌 约60 的新晋灯塔工厂来自中国 出海 中国企业在全球不确定性下的战略选择 在全球化背景下 出海已经成为中国企业的战略必然 然而 全球经济不确定性 地缘波动以及国际市场复杂性 也让企业在出海过程中面临诸多挑战 1 2 3 9 next load more 最新洞见 智能体时代 企业组织运营模式四问 智能体ai绝不仅仅是工具层面的升级 它正在挑战企业组织赖以建立的运行规则 但是 这项技术用于不同的业务领域当中 实际表现参差不齐 也会在可靠性 监督 意外后果等方面引发和放大风险 企业领导者已经看到了智能体的潜力 也看到了挖掘价值的可能 麦肯锡叶海 揭秘商业世界的 黑洞式 增长 所谓黑洞式增长 就是先在一个细分市场里建立稳固的领导地位 把低成本 高效率 可复制 带信用的硬核做成默认 然后把这套硬核复制到更多区域 更多客户群 更多产品线 规模在复制中自然放大 从而实现增长 多智能体协同 先解决各说各话的数据困局 在智能体时代 底层数据能力正日益决定企业的竞争位置 尽管依托数据释放智能体价值的前景可期 许多企业仍难以搭建既便于智能体调用 又可合规治理的数据底座 如今 企业应把握这个推动数据变革的窗口期 为迈向智能体未来打好地基 征程万里 风头正健 麦肯锡全球材料行业前瞻 近年来 在宏观周期变化 地缘影响深化的大背景下 全球材料行业整体呈现出三大趋势 其一 从过去跟风扩张 以量获利的低质量发展 转向秉承资本纪律 对低利润及产能过剩品类降低投入的高质量发展 其二 各国更加重视资源供应链的稳定性 优先保障优质稀缺资源 并积极提升战略自主性 其三 碳税 能控及环改压力使不少材料品类的利润受到压缩 绿色转型征程有所放缓 更强大脑 ai时代的人类优势 麦肯锡健康促进研究院与世界经济论坛联合报告 在ai加速演进的当下 我们必须以同等的紧迫感与资源投入 锻造人类自身的能力 投资大脑资本 是通往更充实的人生 更具韧性的经济与更强健社会的必由之路 代理式ai时代 银行业务须深度简化 银行面临一个不容忽视的现实问题 长远来看 当前的高收入将很难维系 转型调整势在必行 据麦肯锡 2025全球银行业年度报告 称 银行若不进行深度简化 到2030年 全球利润池中将有高达1700亿美元的利润蒸发 深度简化 正成为这场转型之战的核心 2026麦肯锡中国汽车消费者洞察 五大新趋势 展望中国车市 新十年 今年的调研总结出中国汽车市场的五大关键趋势 内生需求基础稳固 市场迈入韧性增长新阶段 价格战反噬消费者信心 技术创新更获青睐 技术兑现能力重塑品牌格局 预示未来市场演进方向 补能体验实现质变 纯电出行成为消费者优选 智能驾驶与车载智能体正成为真正的 刚性配置 增长是企业的 头号战略 叶海谈韧性增长系列文章 韧性增长 这个词不讨巧 却准确 韧性不是姿态 也不是硬扛 它是结构性的品质 受力时不断裂 受挫后能校准 风向再变仍有回旋余地 企业亦然 增长让你走得快 韧性让你走得远 并保住选择空间 在当下的市场环境中 企业要解决的不是增长慢 而是增长失去筋骨 ai转型宣言 领先者的12条法则 完整的重构能力体系 是每一次技术与ai转型的基石 建设速度可以加快 但基础功课无法跳过 当各项能力相互叠加 价值会产生复利 优势将持续自我强化 竞争差距也会随之拉大 这正是领先公司能够一次又一次超越同行的根本原因 女性ceo制胜心法 不硬扛 不内耗 稳掌舵 在2025年发布的文章中 我们曾探讨新晋女性ceo如何依托人本管理 化解岗位冲突与多重挑战 本文将镜头拉长 聚焦任职成熟期的女性管理者 探究她们长久掌舵的底层逻辑 研究发现 能够长期保持高绩效的女性领导者 往往拥有一套独到的领导力架构 一组内化于心的坚定信念 能够指引决策 稳住身心 让个人与企业在高压环境下行稳致远 逆势破局 私募股权公司如何优化退出前景 在市场愈发多变的当下 能否尽早 系统性的筹备资产出售 已成为私募股权机构确保投资收益及时 顺利落袋的关键 在不确定时代重建增长逻辑 麦肯锡2026中国论坛 麦肯锡已走过百年历程 在一个世纪的演进中见证经济周期更迭 技术变革与全球格局重塑 当前 全球经济正进入低增长与高不确定性交织的新阶段 中国也由高速增长转向以结构优化与效率提升为核心的高质量发展路径 ceo访谈 中信戴卡摩洛哥总裁巴德 拉穆迪 海外更需要中国的解决方案 而不只是中国的产品 本次访谈中 中信戴卡摩洛哥工厂总裁巴德 拉穆迪 badr lahmoudi 与麦肯锡全球董事合伙人侯文皓围绕着非洲首家 灯塔工厂 的建设与转型 探讨了其独特的成功要素 并分享了克服跨国运营挑战 人才 文化 供应链 的可复制经验 以及对非洲的工业企业和中国企业 出海 的关键启示 从电动车到机器人 小鹏是如何做到的 专访小鹏汽车副董事长兼联席总裁顾宏地 麦肯锡中国区主席倪以理访谈了小鹏汽车副董事长 联席总裁顾宏地 对话中 顾宏地系统梳理了中国电动车产业的演进逻辑 全球化布局 智能驾驶与ai战略 并对小鹏向机器人与具身智能延展的愿景展开深入探讨 安捷伦科技全球副总裁曹伟胜 推进数字化运营是最值得做的无悔之举 本次访谈中 安捷伦科技全球仪器制造副总裁曹伟胜与麦肯锡全球董事合伙人侯文皓共同探讨了安捷伦智能制造转型之旅 曹伟胜分享了他的心得体会 强大的领导力 匹配的人才队伍与创新的技术 助力安捷伦将愿景蓝图转化为行动 最终实现产品交付与研发效率的双重提速 麦肯锡故事 今年的 values day 麦肯锡人讨论了这个主题 这一天 全球4 5万个麦肯锡人开展了一场超级 团建 每年6月下旬的某个星期五 全球麦肯锡人就会迎来一个极为特殊的大日子 values day 解码麦肯锡公益共创会 为儿童肿瘤患者点燃希望的曙光",
+      "event_id": "631c3676732ce11a",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
+      "final_score": 45,
+      "bookshelf_category": "Sustainable Materials",
+      "related_sources": [
+        {
+          "source": "麦肯锡中国",
+          "url": "https://www.mckinsey.com.cn/%e7%94%9f%e6%88%90%e5%bc%8fai%e5%9c%a8%e4%b8%ad%e5%9b%bd%ef%bc%9a2%e4%b8%87%e4%ba%bf%e7%be%8e%e5%85%83%e7%9a%84%e7%bb%8f%e6%b5%8e%e4%bb%b7%e5%80%bc",
+          "published_date": "2026-07-02"
+        }
+      ],
+      "source_urls": [
+        "https://www.mckinsey.com.cn/%e7%94%9f%e6%88%90%e5%bc%8fai%e5%9c%a8%e4%b8%ad%e5%9b%bd%ef%bc%9a2%e4%b8%87%e4%ba%bf%e7%be%8e%e5%85%83%e7%9a%84%e7%bb%8f%e6%b5%8e%e4%bb%b7%e5%80%bc"
+      ],
+      "source_names": [
+        "麦肯锡中国"
+      ],
+      "selected_at": "2026-07-06T22:26:48+08:00"
+    },
+    {
+      "title": "21:22 安徽省委书记梁言顺调研核聚变能科技创新工作并主持召开座谈会 | 据合肥发布，7月6日上午，安徽省委书记梁言顺在合肥市调研核聚变能科技创新工作并主持召开座谈会，强调要认真贯彻习近平总书记关于科技创新的重要论述和考察安徽重要讲话",
+      "source": "第一财经",
+      "published_date": "2026-07-06",
+      "url": "https://www.yicai.com/brief/103262529.html",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "安徽省委书记梁言顺在合肥调研核聚变能科技创新工作并召开座谈会，强调贯彻习近平总书记关于科技创新的重要论述，推动核聚变能技术发展。此举表明地方政府对核聚变能的高度重视，可能加速相关技术研发和产业化进程。",
+      "technical_points": [
+        "核聚变能技术研发进展",
+        "地方政府政策支持与资源投入",
+        "核聚变能产业化前景"
+      ],
+      "materials_involved": [
+        "核聚变相关材料（如第一壁材料、超导材料、氚增殖材料等）"
+      ],
+      "companies_or_institutions": [
+        "unknown"
+      ],
+      "impact_assessment": "核聚变能作为未来清洁能源，其技术突破可能对汽车产业链的能源供应产生长远影响，但短期内对汽车材料研发无直接推动作用。",
+      "research_value": "对汽车材料研究员参考价值较低，核聚变材料与汽车材料应用场景差异大，但可关注超导材料等共性技术。",
+      "industrial_maturity": "policy",
+      "priority": "P3",
+      "confidence": 60,
+      "follow_up": false,
+      "one_sentence": "安徽省委书记调研核聚变能科技创新，释放政策支持信号，但材料相关性较弱。",
+      "why_it_matters": "核聚变能是未来能源方向，但当前与汽车材料研发关联度低，仅作为宏观趋势参考。",
+      "technology_driver": "其他",
+      "material_relevance": "材料相关性较弱，暂不优先。",
+      "material_opportunity": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "核聚变材料与汽车材料应用场景差异大，短期内无样件验证或供应商调研价值。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "地方政府对核聚变能的政策支持信号，但产业化路径漫长。",
+      "future_signal_score": 30,
+      "material_opportunity_score": 5,
+      "material_validation_score": 5,
+      "analysis_status": "success",
+      "rule_score": 36,
+      "source_score": 70,
+      "source_type": "professional_media",
+      "filter_reason": "source=18; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=3 (发布); future=10 (核聚变, 创新); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://www.yicai.com/brief/103262529.html",
+      "normalized_title": "21 22 安徽省委书记梁言顺调研核聚变能科技创新工作并主持召开座谈会 据合肥发布 7月6日上午 安徽省委书记梁言顺在合肥市调研核聚变能科技创新工作并主持召开座谈会 强调要认真贯彻习近平总书记关于科技创新的重要论述和考察安徽重要讲话",
+      "event_id": "24670feac5a22f01",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "final_score": 35,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "第一财经",
+          "url": "https://www.yicai.com/brief/103262529.html",
+          "published_date": "2026-07-06"
+        }
+      ],
+      "source_urls": [
+        "https://www.yicai.com/brief/103262529.html"
+      ],
+      "source_names": [
+        "第一财经"
+      ],
+      "selected_at": "2026-07-06T22:26:48+08:00"
     }
   ]
 }

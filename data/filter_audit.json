@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-01T20:26:52+08:00",
+  "generated_at": "2026-07-06T22:25:53+08:00",
   "raw_count": 150,
-  "filtered_count": 19,
+  "filtered_count": 12,
   "discarded_reasons": {
     "duplicate_event": 0,
     "duplicate_url": 0,
     "old_news": 0,
     "invalid_url": 0,
     "aggregator_source": 0,
-    "low_material_relevance": 28,
+    "low_material_relevance": 20,
     "low_quality_source": 0,
     "missing_date": 0,
     "missing_source": 0,
-    "no_material_opportunity": 103
+    "no_material_opportunity": 118
   }
 }

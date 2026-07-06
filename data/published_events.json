@@ -1,6 +1,253 @@
 {
   "events": [
     {
+      "event_id": "4d711c34f4fc5ba1",
+      "canonical_title": "IEEE’s Global Museum Brings Engineering History to You",
+      "canonical_url": "https://spectrum.ieee.org/ieees-global-museum-engineering-history",
+      "normalized_title": "ieee s global museum brings engineering history you",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieees-global-museum-engineering-history"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "红外/短波感知"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "182d3720dfaae1af",
+      "canonical_title": "Nanoporous Carbon Coating of Separator Boosts Rate Capability of Cathodes in Lithium‐Ion Batteries",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R",
+      "normalized_title": "nanoporous carbon coating separator boosts rate capability cathodes lithium ion batteries",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "锂离子电池",
+        "储能"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "fe7fe0cd3a8266eb",
+      "canonical_title": "A Selective‐Transport Elastomeric Coating Regulating Hierarchical Solid Electrolyte Interphase for Low‐Temperature Lithium‐Metal Batteries",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R",
+      "normalized_title": "selective transport elastomeric coating regulating hierarchical solid electrolyte interphase low temperature lithium metal batteries",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Metal Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "电解液",
+        "储能"
+      ],
+      "material_opportunities": [
+        "可能值得关注的材料包括弹性体涂层材料（如聚氨酯、聚硅氧烷等）和电解液添加剂，但论文中未明确具体化学成分，材料机会尚不明确。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "a1244035778d657b",
+      "canonical_title": "A Metallic Element‐Free Halide‐Ion Battery Enabled by Dual‐halide Regulation in a Hydrogel Electrolyte",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73524?af=R",
+      "normalized_title": "metallic element free halide ion battery enabled by dual halide regulation hydrogel electrolyte",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73524?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Metal Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "电解液",
+        "储能"
+      ],
+      "material_opportunities": [
+        "水凝胶电解质、卤化物电极材料"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "61cf1957317cbafd",
+      "canonical_title": "‘Constant’ physical pressure could ‘double’ battery lifespan, new study finds",
+      "canonical_url": "https://www.electrive.com/2026/07/06/constant-physical-pressure-could-double-battery-lifespan-new-study-finds",
+      "normalized_title": "constant physical pressure could double battery lifespan new study finds",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/06/constant-physical-pressure-could-double-battery-lifespan-new-study-finds"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "锂离子电池",
+        "储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "0e4d8f54eac1a189",
+      "canonical_title": "Audi manager confirms A4 E-Tron for 2028 on new SSP Platform",
+      "canonical_url": "https://www.electrive.com/2026/07/06/audi-manager-confirms-a4-e-tron-for-2028-on-new-ssp-platform",
+      "normalized_title": "audi manager confirms a4 e tron 2028 new ssp platform",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/06/audi-manager-confirms-a4-e-tron-for-2028-on-new-ssp-platform"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "SiC功率模块封装材料、耐高压绝缘材料、高能量密度电池材料（硅碳负极、固态电解质）、导热界面材料、碳纤维复合材料"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "cc7297f9d9ebde30",
+      "canonical_title": "Bioinspired Ultrastretchable Aramid Triboelectric Aerogels for Intelligent Vehicle Seat",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73549?af=R",
+      "normalized_title": "bioinspired ultrastretchable aramid triboelectric aerogels intelligent vehicle seat",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73549?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "气凝胶",
+        "智能座舱"
+      ],
+      "material_opportunities": [
+        "芳纶气凝胶、摩擦电材料、柔性导电涂层"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "24670feac5a22f01",
+      "canonical_title": "21:22 安徽省委书记梁言顺调研核聚变能科技创新工作并主持召开座谈会 | 据合肥发布，7月6日上午，安徽省委书记梁言顺在合肥市调研核聚变能科技创新工作并主持召开座谈会，强调要认真贯彻习近平总书记关于科技创新的重要论述和考察安徽重要讲话",
+      "canonical_url": "https://www.yicai.com/brief/103262529.html",
+      "normalized_title": "21 22 安徽省委书记梁言顺调研核聚变能科技创新工作并主持召开座谈会 据合肥发布 7月6日上午 安徽省委书记梁言顺在合肥市调研核聚变能科技创新工作并主持召开座谈会 强调要认真贯彻习近平总书记关于科技创新的重要论述和考察安徽重要讲话",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-07-06",
+      "source_urls": [
+        "https://www.yicai.com/brief/103262529.html"
+      ],
+      "source_names": [
+        "第一财经"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "142d393906c33359",
       "canonical_title": "The Orbital Data Center Hype Machine Is Already in Orbit",
       "canonical_url": "https://spectrum.ieee.org/orbital-data-center-hype",
