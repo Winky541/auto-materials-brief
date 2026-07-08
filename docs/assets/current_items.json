@@ -1,11 +1,59 @@
 {
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-08",
   "items": [
     {
-      "title": "Bioinspired Ultrastretchable Aramid Triboelectric Aerogels for Intelligent Vehicle Seat",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73549?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-07-03",
+      "title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
+      "url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+      "source": "Electrive",
+      "published_date": "2026-07-07",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "PET bottles could become battery graphite for EVs",
+      "url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
+      "source": "Electrive",
+      "published_date": "2026-07-07",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "McMurtry unveils production version of its electric racing car, Spéirling Pure",
+      "url": "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure",
+      "source": "Electrive",
+      "published_date": "2026-07-07",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
+      "url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
+      "source": "Electrive",
+      "published_date": "2026-07-07",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -18,10 +66,10 @@
       ]
     },
     {
-      "title": "A Metallic Element‐Free Halide‐Ion Battery Enabled by Dual‐halide Regulation in a Hydrogel Electrolyte",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73524?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-07-03",
+      "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
+      "url": "https://arxiv.org/abs/2607.05663",
+      "source": "arXiv",
+      "published_date": "2026-07-08",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -34,74 +82,10 @@
       ]
     },
     {
-      "title": "Audi manager confirms A4 E-Tron for 2028 on new SSP Platform",
-      "url": "https://www.electrive.com/2026/07/06/audi-manager-confirms-a4-e-tron-for-2028-on-new-ssp-platform",
-      "source": "Electrive",
-      "published_date": "2026-07-06",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "‘Constant’ physical pressure could ‘double’ battery lifespan, new study finds",
-      "url": "https://www.electrive.com/2026/07/06/constant-physical-pressure-could-double-battery-lifespan-new-study-finds",
-      "source": "Electrive",
-      "published_date": "2026-07-06",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "A Selective‐Transport Elastomeric Coating Regulating Hierarchical Solid Electrolyte Interphase for Low‐Temperature Lithium‐Metal Batteries",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-07-03",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Nanoporous Carbon Coating of Separator Boosts Rate Capability of Cathodes in Lithium‐Ion Batteries",
-      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R",
-      "source": "Advanced Materials",
-      "published_date": "2026-07-04",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "生成式AI在中国：2万亿美元的经济价值 如今，科技发展日新月异，生成式AI正在从热烈讨论走向应用落地。各大公司已不再追问何为生成式AI，而是希望了解如何提高部署该技术的投资回报率（ROI）。 点击此处前往报告页面 制胜中国新篇章 中国消费市场的真相 尽管消费者信心总体低迷，但中国庞大的消费市场仍然存在若干增长亮点。 全球灯塔网络今日再迎新：中国灯塔工厂的四大新貌 约60%的新晋灯塔工厂来自中国！ 出海：中国企业在全球不确定性下的战略选择 在全球化背景下，出海已经成为中国企业的战略必然。然而，全球经济不确定性、地缘波动以及国际市场复杂性，也让企业在出海过程中面临诸多挑战。 1 2 3 … 9 Next » Load More 最新洞见 智能体时代，企业组织运营模式四问 智能体AI绝不仅仅是工具层面的升级；它正在挑战企业组织赖以建立的运行规则。但是，这项技术用于不同的业务领域当中，实际表现参差不齐，也会在可靠性、监督、意外后果等方面引发和放大风险。企业领导者已经看到了智能体的潜力，也看到了挖掘价值的可能。 麦肯锡叶海：揭秘商业世界的“黑洞式”增长 所谓黑洞式增长，就是先在一个细分市场里建立稳固的领导地位，把低成本、高效率、可复制、带信用的硬核做成默认；然后把这套硬核复制到更多区域、更多客户群、更多产品线，规模在复制中自然放大，从而实现增长。 多智能体协同？先解决各说各话的数据困局 在智能体时代，底层数据能力正日益决定企业的竞争位置。尽管依托数据释放智能体价值的前景可期，许多企业仍难以搭建既便于智能体调用、又可合规治理的数据底座。如今，企业应把握这个推动数据变革的窗口期，为迈向智能体未来打好地基。 征程万里、风头正健 ：麦肯锡全球材料行业前瞻 近年来，在宏观周期变化、地缘影响深化的大背景下，全球材料行业整体呈现出三大趋势：其一、从过去跟风扩张、以量获利的低质量发展，转向秉承资本纪律、对低利润及产能过剩品类降低投入的高质量发展；其二、各国更加重视资源供应链的稳定性，优先保障优质稀缺资源，并积极提升战略自主性；其三、碳税、能控及环改压力使不少材料品类的利润受到压缩，绿色转型征程有所放缓。 更强大脑：AI时代的人类优势 ——麦肯锡健康促进研究院与世界经济论坛联合报告 在AI加速演进的当下，我们必须以同等的紧迫感与资源投入，锻造人类自身的能力。投资大脑资本，是通往更充实的人生、更具韧性的经济与更强健社会的必由之路。 代理式AI时代，银行业务须深度简化 银行面临一个不容忽视的现实问题：长远来看，当前的高收入将很难维系，转型调整势在必行。据麦肯锡《2025全球银行业年度报告》称，银行若不进行深度简化，到2030年，全球利润池中将有高达1700亿美元的利润蒸发。 深度简化，正成为这场转型之战的核心。 《2026麦肯锡中国汽车消费者洞察》——五大新趋势，展望中国车市“新十年” 今年的调研总结出中国汽车市场的五大关键趋势：内生需求基础稳固，市场迈入韧性增长新阶段；价格战反噬消费者信心，技术创新更获青睐；技术兑现能力重塑品牌格局，预示未来市场演进方向；补能体验实现质变，纯电出行成为消费者优选；智能驾驶与车载智能体正成为真正的“刚性配置”。 增长是企业的“头号战略”|叶海谈韧性增长系列文章 “韧性增长”这个词不讨巧，却准确。韧性不是姿态，也不是硬扛；它是结构性的品质：受力时不断裂，受挫后能校准，风向再变仍有回旋余地。企业亦然：增长让你走得快，韧性让你走得远，并保住选择空间。在当下的市场环境中，企业要解决的不是增长慢，而是增长失去筋骨。 AI转型宣言：领先者的12条法则 完整的重构能力体系，是每一次技术与AI转型的基石。建设速度可以加快，但基础功课无法跳过。当各项能力相互叠加，价值会产生复利，优势将持续自我强化，竞争差距也会随之拉大。这正是领先公司能够一次又一次超越同行的根本原因。 女性CEO制胜心法：不硬扛，不内耗，稳掌舵 在2025年发布的文章中，我们曾探讨新晋女性CEO如何依托人本管理，化解岗位冲突与多重挑战。本文将镜头拉长，聚焦任职成熟期的女性管理者，探究她们长久掌舵的底层逻辑。研究发现，能够长期保持高绩效的女性领导者，往往拥有一套独到的领导力架构，一组内化于心的坚定信念，能够指引决策、稳住身心，让个人与企业在高压环境下行稳致远。 逆势破局：私募股权公司如何优化退出前景 在市场愈发多变的当下，能否尽早、系统性的筹备资产出售，已成为私募股权机构确保投资收益及时、顺利落袋的关键。 在不确定时代重建增长逻辑——麦肯锡2026中国论坛 麦肯锡已走过百年历程，在一个世纪的演进中见证经济周期更迭、技术变革与全球格局重塑。当前，全球经济正进入低增长与高不确定性交织的新阶段，中国也由高速增长转向以结构优化与效率提升为核心的高质量发展路径。 CEO访谈 中信戴卡摩洛哥总裁巴德·拉穆迪：海外更需要中国的解决方案，而不只是中国的产品 本次访谈中，中信戴卡摩洛哥工厂总裁巴德·拉穆迪（Badr Lahmoudi）与麦肯锡全球董事合伙人侯文皓围绕着非洲首家“灯塔工厂”的建设与转型，探讨了其独特的成功要素，并分享了克服跨国运营挑战（人才、文化、供应链）的可复制经验，以及对非洲的工业企业和中国企业“出海”的关键启示。 从电动车到机器人：小鹏是如何做到的？——专访小鹏汽车副董事长兼联席总裁顾宏地 麦肯锡中国区主席倪以理访谈了小鹏汽车副董事长、联席总裁顾宏地。对话中，顾宏地系统梳理了中国电动车产业的演进逻辑、全球化布局、智能驾驶与AI战略，并对小鹏向机器人与具身智能延展的愿景展开深入探讨。 安捷伦科技全球副总裁曹伟胜：推进数字化运营是最值得做的无悔之举 本次访谈中，安捷伦科技全球仪器制造副总裁曹伟胜与麦肯锡全球董事合伙人侯文皓共同探讨了安捷伦智能制造转型之旅。曹伟胜分享了他的心得体会：强大的领导力、匹配的人才队伍与创新的技术，助力安捷伦将愿景蓝图转化为行动，最终实现产品交付与研发效率的双重提速。 麦肯锡故事 今年的“Values Day”，麦肯锡人讨论了这个主题...... 这一天，全球4.5万个麦肯锡人开展了一场超级“团建” 每年6月下旬的某个星期五，全球麦肯锡人就会迎来一个极为特殊的大日子——Values Day。 解码麦肯锡公益共创会：为儿童肿瘤患者点燃希望的曙光",
-      "url": "https://www.mckinsey.com.cn/%e7%94%9f%e6%88%90%e5%bc%8fai%e5%9c%a8%e4%b8%ad%e5%9b%bd%ef%bc%9a2%e4%b8%87%e4%ba%bf%e7%be%8e%e5%85%83%e7%9a%84%e7%bb%8f%e6%b5%8e%e4%bb%b7%e5%80%bc",
-      "source": "麦肯锡中国",
-      "published_date": "2026-07-02",
+      "title": "IEEE Honors Robotics Pioneer Toshio Fukuda",
+      "url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-07-08",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -114,10 +98,26 @@
       ]
     },
     {
-      "title": "21:22 安徽省委书记梁言顺调研核聚变能科技创新工作并主持召开座谈会 | 据合肥发布，7月6日上午，安徽省委书记梁言顺在合肥市调研核聚变能科技创新工作并主持召开座谈会，强调要认真贯彻习近平总书记关于科技创新的重要论述和考察安徽重要讲话",
-      "url": "https://www.yicai.com/brief/103262529.html",
-      "source": "第一财经",
-      "published_date": "2026-07-06",
+      "title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
+      "url": "https://arxiv.org/abs/2606.00552",
+      "source": "arXiv",
+      "published_date": "2026-07-08",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
+      "url": "https://arxiv.org/abs/2607.06337",
+      "source": "arXiv",
+      "published_date": "2026-07-08",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",

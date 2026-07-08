@@ -1,6 +1,374 @@
 {
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-08",
   "items": [
+    {
+      "date": "2026-07-08",
+      "window": [
+        {
+          "category": "Energy Revolution",
+          "count": 2,
+          "avg_future_signal_score": 72,
+          "summary": "8C快充是电池技术的重要突破，直接牵引高倍率负极、低阻抗隔膜、高效热管理材料等需求，为材料研发提供明确方向。",
+          "sources": [
+            {
+              "title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+              "published_date": "2026-07-07",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "PET bottles could become battery graphite for EVs",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
+              "published_date": "2026-07-07",
+              "link_label": "阅读原文"
+            }
+          ]
+        },
+        {
+          "category": "Supply Chain Migration",
+          "count": 3,
+          "avg_future_signal_score": 56,
+          "summary": "8C快充是电池技术的重要突破，直接牵引高倍率负极、低阻抗隔膜、高效热管理材料等需求，为材料研发提供明确方向。",
+          "sources": [
+            {
+              "title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+              "published_date": "2026-07-07",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
+              "published_date": "2026-07-07",
+              "link_label": "阅读原文"
+            },
+            {
+              "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.05663",
+              "published_date": "2026-07-08",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 3,
+          "avg_future_signal_score": 20,
+          "summary": "新闻为个人荣誉报道，未提供具体技术细节或产业化进展，对汽车材料研发的直接参考价值较低。",
+          "sources": [
+            {
+              "title": "IEEE Honors Robotics Pioneer Toshio Fukuda",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
+              "published_date": "2026-07-08",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2606.00552",
+              "published_date": "2026-07-08",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.06337",
+              "published_date": "2026-07-08",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Sensing",
+          "count": 3,
+          "avg_future_signal_score": 20,
+          "summary": "该技术提升了自动驾驶定位的鲁棒性，但主要依赖算法优化，未直接驱动材料需求变化。",
+          "sources": [
+            {
+              "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.05663",
+              "published_date": "2026-07-08",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2606.00552",
+              "published_date": "2026-07-08",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.06337",
+              "published_date": "2026-07-08",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Autonomous Driving",
+          "count": 1,
+          "avg_future_signal_score": 20,
+          "summary": "该技术提升了自动驾驶定位的鲁棒性，但主要依赖算法优化，未直接驱动材料需求变化。",
+          "sources": [
+            {
+              "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.05663",
+              "published_date": "2026-07-08",
+              "link_label": "阅读论文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在汽车新材料、未来趋势观察、电池与储能，技术牵引以机器人与具身智能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "8C快充是电池技术的重要突破，直接牵引高倍率负极、低阻抗隔膜、高效热管理材料等需求，为材料研发提供明确方向。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注高倍率负极材料（如硅碳或硬碳）、高电导率电解液、低阻抗隔膜、高效热管理材料（导热界面材料、相变材料）、PET塑料、合成石墨、锂离子电池负极材料、电池材料（正极、负极、电解液、隔膜）。高倍率硅碳负极、低阻抗隔膜、高电导率电解液、导热界面材料（如石墨烯、导热硅脂）、相变材料"
+        }
+      ],
+      "cat": [
+        {
+          "title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
+          "source": "Electrive",
+          "why_read": "该新闻表明Rivian生产进入稳定爬坡阶段，但未透露任何材料技术变化，因此对材料研发的直接意义有限。",
+          "focus": "关注该趋势是否继续影响研发组织、供应链和材料需求。",
+          "reading_time": "约 8 分钟",
+          "url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 7,
+          "items": [
+            {
+              "event_id": "9cbf2e3f0f8950b8",
+              "canonical_url": "https://arxiv.org/abs/2607.05663",
+              "normalized_title": "physics regularized machine learning proprioceptive vehicle localization using onboard sensors",
+              "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.05663"
+              ],
+              "published_date": "2026-07-08",
+              "url": "https://arxiv.org/abs/2607.05663",
+              "link_label": "阅读论文",
+              "brief": "该技术提升了自动驾驶定位的鲁棒性，但主要依赖算法优化，未直接驱动材料需求变化。"
+            },
+            {
+              "event_id": "a38a88e9852d047d",
+              "canonical_url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
+              "normalized_title": "ieee honors robotics pioneer toshio fukuda",
+              "title": "IEEE Honors Robotics Pioneer Toshio Fukuda",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/ieee-honors-toshio-fukuda"
+              ],
+              "published_date": "2026-07-08",
+              "url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
+              "link_label": "阅读论文",
+              "brief": "新闻为个人荣誉报道，未提供具体技术细节或产业化进展，对汽车材料研发的直接参考价值较低。"
+            },
+            {
+              "event_id": "254582bfa1a0a525",
+              "canonical_url": "https://arxiv.org/abs/2606.00552",
+              "normalized_title": "edge based qos aware adaptive task placement closed loop control multi robot systems",
+              "title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2606.00552"
+              ],
+              "published_date": "2026-07-08",
+              "url": "https://arxiv.org/abs/2606.00552",
+              "link_label": "阅读论文",
+              "brief": "该新闻主要涉及边缘计算和机器人控制算法，与材料研发关联弱，但可能间接影响对轻量化、散热材料的需求，不过当前阶段不显著。"
+            },
+            {
+              "event_id": "502ee056f034034b",
+              "canonical_url": "https://arxiv.org/abs/2607.06337",
+              "normalized_title": "orchardbench physically grounded gpu parallel apple orchard simulation benchmark agricultural robotics",
+              "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.06337"
+              ],
+              "published_date": "2026-07-08",
+              "url": "https://arxiv.org/abs/2607.06337",
+              "link_label": "阅读论文",
+              "brief": "该新闻主要涉及机器人仿真技术，未直接牵引新材料需求，但柔性体断裂建模可能间接启发材料测试仿真。"
+            },
+            {
+              "event_id": "c63ebcaa986f2c27",
+              "canonical_url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+              "normalized_title": "catl unveils 8c battery specifically light commercial electric vehicles",
+              "title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles"
+              ],
+              "published_date": "2026-07-07",
+              "url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+              "link_label": "官方发布",
+              "brief": "8C快充是电池技术的重要突破，直接牵引高倍率负极、低阻抗隔膜、高效热管理材料等需求，为材料研发提供明确方向。"
+            },
+            {
+              "event_id": "46fc97b91d590750",
+              "canonical_url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
+              "normalized_title": "pet bottles could become battery graphite evs",
+              "title": "PET bottles could become battery graphite for EVs",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs"
+              ],
+              "published_date": "2026-07-07",
+              "url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
+              "link_label": "阅读原文",
+              "brief": "该技术可能为锂离子电池负极材料提供新的可持续来源，同时缓解塑料污染问题，对电池材料供应链和环保技术演进有潜在影响。"
+            },
+            {
+              "event_id": "023fd467c27108a2",
+              "canonical_url": "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure",
+              "normalized_title": "mcmurtry unveils production version its electric racing car spéirling pure",
+              "title": "McMurtry unveils production version of its electric racing car, Spéirling Pure",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure"
+              ],
+              "published_date": "2026-07-07",
+              "url": "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure",
+              "link_label": "阅读原文",
+              "brief": "该新闻展示了电动赛车从原型到量产的进展，可能牵引高性能电池和电机材料的需求，但缺乏具体材料细节，对材料研发的直接指导意义有限。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "eb094340f281b78f",
+              "canonical_url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
+              "normalized_title": "rivian raises 2026 delivery forecasts after production exceeds expectations",
+              "title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations"
+              ],
+              "published_date": "2026-07-07",
+              "url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
+              "link_label": "阅读原文",
+              "brief": "该新闻表明Rivian生产进入稳定爬坡阶段，但未透露任何材料技术变化，因此对材料研发的直接意义有限。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Future Research Reserve中已有1个机会进入 Technology Watch，其中“Emerging Material Opportunity”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有2个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "PET bottles could become battery graphite for EVs",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.05663",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-06",
       "window": [

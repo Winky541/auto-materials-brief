@@ -335,6 +335,62 @@
       "published_date": "2026-07-06",
       "selected_date": "2026-07-06",
       "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+      "title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
+      "published_date": "2026-07-07",
+      "selected_date": "2026-07-08",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
+      "title": "PET bottles could become battery graphite for EVs",
+      "published_date": "2026-07-07",
+      "selected_date": "2026-07-08",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure",
+      "title": "McMurtry unveils production version of its electric racing car, Spéirling Pure",
+      "published_date": "2026-07-07",
+      "selected_date": "2026-07-08",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
+      "title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
+      "published_date": "2026-07-07",
+      "selected_date": "2026-07-08",
+      "category": "其他"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.05663",
+      "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
+      "published_date": "2026-07-08",
+      "selected_date": "2026-07-08",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
+      "title": "IEEE Honors Robotics Pioneer Toshio Fukuda",
+      "published_date": "2026-07-08",
+      "selected_date": "2026-07-08",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.00552",
+      "title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
+      "published_date": "2026-07-08",
+      "selected_date": "2026-07-08",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.06337",
+      "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
+      "published_date": "2026-07-08",
+      "selected_date": "2026-07-08",
+      "category": "未来趋势观察"
     }
   ]
 }

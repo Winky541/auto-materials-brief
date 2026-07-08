@@ -1,6 +1,248 @@
 {
   "events": [
     {
+      "event_id": "c63ebcaa986f2c27",
+      "canonical_title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
+      "canonical_url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+      "normalized_title": "catl unveils 8c battery specifically light commercial electric vehicles",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "快充技术",
+        "储能"
+      ],
+      "material_opportunities": [
+        "高倍率硅碳负极、低阻抗隔膜、高电导率电解液、导热界面材料（如石墨烯、导热硅脂）、相变材料"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "023fd467c27108a2",
+      "canonical_title": "McMurtry unveils production version of its electric racing car, Spéirling Pure",
+      "canonical_url": "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure",
+      "normalized_title": "mcmurtry unveils production version its electric racing car spéirling pure",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "46fc97b91d590750",
+      "canonical_title": "PET bottles could become battery graphite for EVs",
+      "canonical_url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
+      "normalized_title": "pet bottles could become battery graphite evs",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Polymer & Elastomer Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "锂离子电池",
+        "储能"
+      ],
+      "material_opportunities": [
+        "合成石墨、回收碳材料"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "a38a88e9852d047d",
+      "canonical_title": "IEEE Honors Robotics Pioneer Toshio Fukuda",
+      "canonical_url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
+      "normalized_title": "ieee honors robotics pioneer toshio fukuda",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-honors-toshio-fukuda"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "9cbf2e3f0f8950b8",
+      "canonical_title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
+      "canonical_url": "https://arxiv.org/abs/2607.05663",
+      "normalized_title": "physics regularized machine learning proprioceptive vehicle localization using onboard sensors",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.05663"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "自动驾驶"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "eb094340f281b78f",
+      "canonical_title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
+      "canonical_url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
+      "normalized_title": "rivian raises 2026 delivery forecasts after production exceeds expectations",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "254582bfa1a0a525",
+      "canonical_title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
+      "canonical_url": "https://arxiv.org/abs/2606.00552",
+      "normalized_title": "edge based qos aware adaptive task placement closed loop control multi robot systems",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.00552"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "502ee056f034034b",
+      "canonical_title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
+      "canonical_url": "https://arxiv.org/abs/2607.06337",
+      "normalized_title": "orchardbench physically grounded gpu parallel apple orchard simulation benchmark agricultural robotics",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-08",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.06337"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "4d711c34f4fc5ba1",
       "canonical_title": "IEEE’s Global Museum Brings Engineering History to You",
       "canonical_url": "https://spectrum.ieee.org/ieees-global-museum-engineering-history",
