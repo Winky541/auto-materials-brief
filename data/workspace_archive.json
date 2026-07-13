@@ -1,6 +1,312 @@
 {
-  "updated_at": "2026-07-08",
+  "updated_at": "2026-07-13",
   "items": [
+    {
+      "date": "2026-07-13",
+      "window": [
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 1,
+          "avg_future_signal_score": 62,
+          "summary": "该新闻显示特斯拉正在将资源从汽车制造转向机器人制造，可能影响未来汽车供应链和材料需求，但当前阶段对材料研发的直接牵引不明显。",
+          "sources": [
+            {
+              "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+              "published_date": "2026-07-13",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Space Industry",
+          "count": 1,
+          "avg_future_signal_score": 62,
+          "summary": "该新闻显示特斯拉正在将资源从汽车制造转向机器人制造，可能影响未来汽车供应链和材料需求，但当前阶段对材料研发的直接牵引不明显。",
+          "sources": [
+            {
+              "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+              "published_date": "2026-07-13",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 2,
+          "avg_future_signal_score": 46,
+          "summary": "该新闻显示特斯拉正在将资源从汽车制造转向机器人制造，可能影响未来汽车供应链和材料需求，但当前阶段对材料研发的直接牵引不明显。",
+          "sources": [
+            {
+              "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+              "published_date": "2026-07-13",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02105-7",
+              "published_date": "2026-07-10",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "OEM Strategy Transition",
+          "count": 3,
+          "avg_future_signal_score": 34,
+          "summary": "该新闻显示特斯拉正在将资源从汽车制造转向机器人制造，可能影响未来汽车供应链和材料需求，但当前阶段对材料研发的直接牵引不明显。",
+          "sources": [
+            {
+              "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+              "published_date": "2026-07-13",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "Managing the impacts of EU electric vehicle import tariffs",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02102-w",
+              "published_date": "2026-07-10",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "BMW falls below previous year’s battery-electric vehicle sales",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
+              "published_date": "2026-07-10",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Supply Chain Migration",
+          "count": 2,
+          "avg_future_signal_score": 25,
+          "summary": "关税政策可能改变全球电动汽车供应链布局，间接影响电池材料的需求区域和成本结构，但当前新闻无具体材料技术信息。",
+          "sources": [
+            {
+              "title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02105-7",
+              "published_date": "2026-07-10",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "BMW falls below previous year’s battery-electric vehicle sales",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
+              "published_date": "2026-07-10",
+              "link_label": "官方发布"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在汽车新材料、未来趋势观察，技术牵引以电池与储能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "电动汽车市场份额提升意味着动力电池及关键材料需求将持续扩大，材料研发需关注产能匹配和下一代技术储备。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注动力电池材料（正极、负极、电解液、隔膜）、电池热管理材料、轻量化材料、电池材料、电池、battery。潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+          "source": "InsideEVs",
+          "why_read": "该新闻显示特斯拉正在将资源从汽车制造转向机器人制造，可能影响未来汽车供应链和材料需求，但当前阶段对材料研发的直接牵引不明显。",
+          "focus": "关注 机器人与具身智能 是否继续形成产业信号；潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+          "reading_time": "约 8 分钟",
+          "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 6,
+          "items": [
+            {
+              "event_id": "7ac4dffd3b591356",
+              "canonical_url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
+              "normalized_title": "austria battery electric car registrations reach parity petrol vehicles",
+              "title": "Austria: Battery-electric car registrations reach parity with petrol vehicles",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles"
+              ],
+              "published_date": "2026-07-13",
+              "url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
+              "link_label": "阅读原文",
+              "brief": "电动汽车市场份额提升意味着动力电池及关键材料需求将持续扩大，材料研发需关注产能匹配和下一代技术储备。"
+            },
+            {
+              "event_id": "08f26204ee036910",
+              "canonical_url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+              "normalized_title": "see how tesla tore down model s factory build robots instead",
+              "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+              "source": "InsideEVs",
+              "source_names": [
+                "InsideEVs"
+              ],
+              "source_urls": [
+                "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown"
+              ],
+              "published_date": "2026-07-13",
+              "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+              "link_label": "官方发布",
+              "brief": "该新闻显示特斯拉正在将资源从汽车制造转向机器人制造，可能影响未来汽车供应链和材料需求，但当前阶段对材料研发的直接牵引不明显。"
+            },
+            {
+              "event_id": "30bffcb8cf19995d",
+              "canonical_url": "https://www.nature.com/articles/s41560-026-02102-w",
+              "normalized_title": "managing impacts eu electric vehicle import tariffs",
+              "title": "Managing the impacts of EU electric vehicle import tariffs",
+              "source": "Nature Energy",
+              "source_names": [
+                "Nature Energy"
+              ],
+              "source_urls": [
+                "https://www.nature.com/articles/s41560-026-02102-w"
+              ],
+              "published_date": "2026-07-10",
+              "url": "https://www.nature.com/articles/s41560-026-02102-w",
+              "link_label": "阅读论文",
+              "brief": "该新闻揭示了贸易政策对电动汽车市场的区域差异化影响，可能间接影响材料需求的地域分布，但未直接牵引材料技术变化。"
+            },
+            {
+              "event_id": "e5c8a25df068e017",
+              "canonical_url": "https://www.nature.com/articles/s41560-026-02105-7",
+              "normalized_title": "distributional impacts eu tariffs chinese electric vehicles across european markets",
+              "title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
+              "source": "Nature Energy",
+              "source_names": [
+                "Nature Energy"
+              ],
+              "source_urls": [
+                "https://www.nature.com/articles/s41560-026-02105-7"
+              ],
+              "published_date": "2026-07-10",
+              "url": "https://www.nature.com/articles/s41560-026-02105-7",
+              "link_label": "阅读论文",
+              "brief": "关税政策可能改变全球电动汽车供应链布局，间接影响电池材料的需求区域和成本结构，但当前新闻无具体材料技术信息。"
+            },
+            {
+              "event_id": "3495e84450427a6e",
+              "canonical_url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
+              "normalized_title": "bmw falls below previous year s battery electric vehicle sales",
+              "title": "BMW falls below previous year’s battery-electric vehicle sales",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales"
+              ],
+              "published_date": "2026-07-10",
+              "url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
+              "link_label": "官方发布",
+              "brief": "销量数据反映市场接受度和供应链压力，但无新材料技术信息，对材料研发直接指导意义弱。"
+            },
+            {
+              "event_id": "e5dedbd9ebdcd35d",
+              "canonical_url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
+              "normalized_title": "volkswagen group loses ground battery electric vehicle sales",
+              "title": "Volkswagen Group loses ground in battery-electric vehicle sales",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales"
+              ],
+              "published_date": "2026-07-10",
+              "url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
+              "link_label": "官方发布",
+              "brief": "销量数据反映市场趋势，但无具体材料技术信息，对研发人员直接指导意义有限。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Energy Materials中已有1个机会进入 Technology Watch，其中“Solid-State Electrolytes”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "Austria: Battery-electric car registrations reach parity with petrol vehicles",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Managing the impacts of EU electric vehicle import tariffs",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02102-w",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02105-7",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有1个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-08",
       "window": [

@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-07-08",
+  "updated_at": "2026-07-13",
   "items": [
     {
-      "title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
-      "url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+      "title": "Austria: Battery-electric car registrations reach parity with petrol vehicles",
+      "url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
       "source": "Electrive",
-      "published_date": "2026-07-07",
+      "published_date": "2026-07-13",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -18,10 +18,10 @@
       ]
     },
     {
-      "title": "PET bottles could become battery graphite for EVs",
-      "url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
-      "source": "Electrive",
-      "published_date": "2026-07-07",
+      "title": "Managing the impacts of EU electric vehicle import tariffs",
+      "url": "https://www.nature.com/articles/s41560-026-02102-w",
+      "source": "Nature Energy",
+      "published_date": "2026-07-10",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -34,10 +34,10 @@
       ]
     },
     {
-      "title": "McMurtry unveils production version of its electric racing car, Spéirling Pure",
-      "url": "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure",
-      "source": "Electrive",
-      "published_date": "2026-07-07",
+      "title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
+      "url": "https://www.nature.com/articles/s41560-026-02105-7",
+      "source": "Nature Energy",
+      "published_date": "2026-07-10",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -50,26 +50,10 @@
       ]
     },
     {
-      "title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
-      "url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
+      "title": "BMW falls below previous year’s battery-electric vehicle sales",
+      "url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
       "source": "Electrive",
-      "published_date": "2026-07-07",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
-      "url": "https://arxiv.org/abs/2607.05663",
-      "source": "arXiv",
-      "published_date": "2026-07-08",
+      "published_date": "2026-07-10",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -82,10 +66,10 @@
       ]
     },
     {
-      "title": "IEEE Honors Robotics Pioneer Toshio Fukuda",
-      "url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-07-08",
+      "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+      "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+      "source": "InsideEVs",
+      "published_date": "2026-07-13",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -98,29 +82,13 @@
       ]
     },
     {
-      "title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
-      "url": "https://arxiv.org/abs/2606.00552",
-      "source": "arXiv",
-      "published_date": "2026-07-08",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
-      "url": "https://arxiv.org/abs/2607.06337",
-      "source": "arXiv",
-      "published_date": "2026-07-08",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
+      "title": "Volkswagen Group loses ground in battery-electric vehicle sales",
+      "url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
+      "source": "Electrive",
+      "published_date": "2026-07-10",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",

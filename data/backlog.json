@@ -150,6 +150,80 @@
       "source_names": [
         "arXiv"
       ]
+    },
+    {
+      "title": "IEEE Remembers Pioneering Computer Scientist Peter G. Neumann",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-07-11",
+      "url": "https://spectrum.ieee.org/ieee-remembers-peter-g-neumann",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "IEEE Spectrum报道了计算机科学家Peter G. Neumann的逝世及其学术贡献。Neumann在系统安全、容错、风险分析等领域有开创性工作，包括可证明安全操作系统、入侵检测系统、CHERI硬件安全架构等。他长期倡导安全应内建于系统设计而非事后修补。",
+      "technical_points": [
+        "可证明安全操作系统（PSOS）项目，将安全设计融入初始架构",
+        "入侵检测专家系统（IDES），现代网络防御基础",
+        "CHERI硬件安全架构，正在商业化，影响下一代处理器",
+        "系统级风险思维，涵盖人因、治理、政策失败等",
+        "ACM Risks Forum，记录计算系统失败案例的学术档案"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "SRI International",
+        "Bell Labs",
+        "Harvard University",
+        "ACM",
+        "IEEE"
+      ],
+      "impact_assessment": "该新闻为人物纪念，不直接涉及汽车产业链或研发方向。",
+      "research_value": "对汽车材料研究员参考价值低，主要涉及计算机安全领域。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 90,
+      "follow_up": false,
+      "one_sentence": "计算机安全先驱Peter G. Neumann逝世，其系统安全理念对AI和自动驾驶有启示，但无直接材料需求。",
+      "why_it_matters": "Neumann的系统安全思想对自动驾驶、车联网等汽车智能化领域有间接影响，但新闻本身不涉及具体材料需求。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "无样件验证价值，不涉及材料供应商调研或前瞻储备。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "释放了系统安全设计理念持续受重视的信号，但对材料领域无直接趋势信号。",
+      "future_signal_score": 62,
+      "material_opportunity_score": 30,
+      "material_validation_score": 30,
+      "analysis_status": "success",
+      "rule_score": 40,
+      "source_score": 82,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=0 (none); future=15 (automation, innovation, research); current_month=5",
+      "stage": "Validation",
+      "stage_reason": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：reliability。",
+      "canonical_url": "https://spectrum.ieee.org/ieee-remembers-peter-g-neumann",
+      "normalized_title": "ieee remembers pioneering computer scientist peter g neumann",
+      "event_id": "b9c7aee8223daab0",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
+      "final_score": 28,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/ieee-remembers-peter-g-neumann",
+          "published_date": "2026-07-11"
+        }
+      ],
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-remembers-peter-g-neumann"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ]
     }
   ]
 }

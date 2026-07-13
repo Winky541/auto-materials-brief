@@ -391,6 +391,48 @@
       "published_date": "2026-07-08",
       "selected_date": "2026-07-08",
       "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
+      "title": "Austria: Battery-electric car registrations reach parity with petrol vehicles",
+      "published_date": "2026-07-13",
+      "selected_date": "2026-07-13",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41560-026-02102-w",
+      "title": "Managing the impacts of EU electric vehicle import tariffs",
+      "published_date": "2026-07-10",
+      "selected_date": "2026-07-13",
+      "category": "学术论文"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41560-026-02105-7",
+      "title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
+      "published_date": "2026-07-10",
+      "selected_date": "2026-07-13",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
+      "title": "BMW falls below previous year’s battery-electric vehicle sales",
+      "published_date": "2026-07-10",
+      "selected_date": "2026-07-13",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+      "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+      "published_date": "2026-07-13",
+      "selected_date": "2026-07-13",
+      "category": "企业技术动态"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
+      "title": "Volkswagen Group loses ground in battery-electric vehicle sales",
+      "published_date": "2026-07-10",
+      "selected_date": "2026-07-13",
+      "category": "电池与储能材料"
     }
   ]
 }

@@ -1,6 +1,240 @@
 {
   "events": [
     {
+      "event_id": "3495e84450427a6e",
+      "canonical_title": "BMW falls below previous year’s battery-electric vehicle sales",
+      "canonical_url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
+      "normalized_title": "bmw falls below previous year s battery electric vehicle sales",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "电池与储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "e5c8a25df068e017",
+      "canonical_title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
+      "canonical_url": "https://www.nature.com/articles/s41560-026-02105-7",
+      "normalized_title": "distributional impacts eu tariffs chinese electric vehicles across european markets",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "source_urls": [
+        "https://www.nature.com/articles/s41560-026-02105-7"
+      ],
+      "source_names": [
+        "Nature Energy"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "电池与储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "08f26204ee036910",
+      "canonical_title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+      "canonical_url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+      "normalized_title": "see how tesla tore down model s factory build robots instead",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "source_urls": [
+        "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown"
+      ],
+      "source_names": [
+        "InsideEVs"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "e5dedbd9ebdcd35d",
+      "canonical_title": "Volkswagen Group loses ground in battery-electric vehicle sales",
+      "canonical_url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
+      "normalized_title": "volkswagen group loses ground battery electric vehicle sales",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "电池与储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "c359fa54c6263c18",
+      "canonical_title": "T&E analysis: EU tariffs deter Western producers from China, but BYD and others gain ground",
+      "canonical_url": "https://www.electrive.com/2026/07/13/te-analysis-eu-tariffs-deter-western-producers-from-china-but-byd-and-others-gain-ground",
+      "normalized_title": "t e analysis eu tariffs deter western producers from china but byd others gain ground",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/13/te-analysis-eu-tariffs-deter-western-producers-from-china-but-byd-and-others-gain-ground"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "政策法规与标准",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "30bffcb8cf19995d",
+      "canonical_title": "Managing the impacts of EU electric vehicle import tariffs",
+      "canonical_url": "https://www.nature.com/articles/s41560-026-02102-w",
+      "normalized_title": "managing impacts eu electric vehicle import tariffs",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "source_urls": [
+        "https://www.nature.com/articles/s41560-026-02102-w"
+      ],
+      "source_names": [
+        "Nature Energy"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "电池与储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "b9c7aee8223daab0",
+      "canonical_title": "IEEE Remembers Pioneering Computer Scientist Peter G. Neumann",
+      "canonical_url": "https://spectrum.ieee.org/ieee-remembers-peter-g-neumann",
+      "normalized_title": "ieee remembers pioneering computer scientist peter g neumann",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-remembers-peter-g-neumann"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "7ac4dffd3b591356",
+      "canonical_title": "Austria: Battery-electric car registrations reach parity with petrol vehicles",
+      "canonical_url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
+      "normalized_title": "austria battery electric car registrations reach parity petrol vehicles",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "电池与储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "c63ebcaa986f2c27",
       "canonical_title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
       "canonical_url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",

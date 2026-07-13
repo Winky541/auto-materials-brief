@@ -1,46 +1,34 @@
 {
   "category_counts": {
     "汽车新材料": 6,
-    "未来趋势观察": 3,
-    "电池与储能": 1
+    "未来趋势观察": 3
   },
   "source_counts": {
-    "Electrive": 4,
-    "arXiv": 4,
-    "IEEE Spectrum": 2
+    "Electrive": 3,
+    "Nature Energy": 2,
+    "IEEE Spectrum": 2,
+    "InsideEVs": 1,
+    "arXiv": 1
   },
   "company_counts": {
-    "CATL（宁德时代）": 1,
-    "宾夕法尼亚州立大学": 1,
-    "McMurtry Automotive": 1,
-    "Rivian": 1,
+    "IEEE": 2,
+    "欧盟": 1,
+    "中国电动汽车制造商": 1,
+    "BMW": 1,
+    "Tesla": 1,
     "Volkswagen": 1,
-    "unknown": 1,
-    "Egypt-Japan University of Science and Technology": 1,
-    "Nagoya University": 1,
-    "University of Tokyo": 1,
-    "Waseda University": 1
+    "IEEE History Center": 1,
+    "IEEE Vehicular Technology Society": 1,
+    "IEEE Dielectrics and Electrical Insulation Society": 1,
+    "Nvidia": 1
   },
   "keyword_counts": {
-    "高倍率负极材料（如硅碳或硬碳）": 1,
-    "高电导率电解液": 1,
-    "低阻抗隔膜": 1,
-    "高效热管理材料（导热界面材料、相变材料）": 1,
-    "PET塑料": 1,
-    "合成石墨": 1,
-    "锂离子电池负极材料": 1,
-    "电池材料（正极、负极、电解液、隔膜）": 1,
-    "电机材料（永磁体、铜线、绝缘材料）": 1,
-    "扇风系统材料（轻质复合材料、高强合金）": 1,
-    "IMU传感器材料": 1,
-    "车载传感器材料": 1,
-    "模块化机器人连接机构材料（如轻质高强合金、工程塑料）": 1,
-    "微纳机器人用功能材料（如压电材料、形状记忆合金）": 1,
-    "摆动机器人用轻量化结构材料（如碳纤维复合材料）": 1,
-    "传感器与执行器材料（如压电陶瓷、电活性聚合物）": 1,
-    "PI（聚酰亚胺）": 1,
-    "木材（树枝断裂模量相关）": 1,
-    "茎绳材料（苹果连接）": 1,
-    "仿真中未明确提及具体工程材料": 1
+    "电池材料": 2,
+    "动力电池材料（正极、负极、电解液、隔膜）": 1,
+    "电池热管理材料": 1,
+    "轻量化材料": 1,
+    "电池": 1,
+    "battery": 1,
+    "PA": 1
   }
 }

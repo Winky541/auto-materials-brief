@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08",
+  "updated_at": "2026-07-13",
   "domains": [
     {
       "domain": "Metal Materials",
@@ -33,126 +33,109 @@
       "domain": "Energy Materials",
       "zh": "能源材料",
       "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
-      "count": 7,
+      "count": 6,
       "items": [
         {
-          "event_id": "9cbf2e3f0f8950b8",
-          "canonical_url": "https://arxiv.org/abs/2607.05663",
-          "normalized_title": "physics regularized machine learning proprioceptive vehicle localization using onboard sensors",
-          "title": "Physics-Regularized Machine Learning for Proprioceptive Vehicle Localization Using Onboard Sensors",
-          "source": "arXiv",
-          "source_names": [
-            "arXiv"
-          ],
-          "source_urls": [
-            "https://arxiv.org/abs/2607.05663"
-          ],
-          "published_date": "2026-07-08",
-          "url": "https://arxiv.org/abs/2607.05663",
-          "link_label": "阅读论文",
-          "brief": "该技术提升了自动驾驶定位的鲁棒性，但主要依赖算法优化，未直接驱动材料需求变化。"
-        },
-        {
-          "event_id": "a38a88e9852d047d",
-          "canonical_url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
-          "normalized_title": "ieee honors robotics pioneer toshio fukuda",
-          "title": "IEEE Honors Robotics Pioneer Toshio Fukuda",
-          "source": "IEEE Spectrum",
-          "source_names": [
-            "IEEE Spectrum"
-          ],
-          "source_urls": [
-            "https://spectrum.ieee.org/ieee-honors-toshio-fukuda"
-          ],
-          "published_date": "2026-07-08",
-          "url": "https://spectrum.ieee.org/ieee-honors-toshio-fukuda",
-          "link_label": "阅读论文",
-          "brief": "新闻为个人荣誉报道，未提供具体技术细节或产业化进展，对汽车材料研发的直接参考价值较低。"
-        },
-        {
-          "event_id": "254582bfa1a0a525",
-          "canonical_url": "https://arxiv.org/abs/2606.00552",
-          "normalized_title": "edge based qos aware adaptive task placement closed loop control multi robot systems",
-          "title": "Edge-Based QoS-Aware Adaptive Task Placement: A Closed-Loop Control in Multi-Robot Systems",
-          "source": "arXiv",
-          "source_names": [
-            "arXiv"
-          ],
-          "source_urls": [
-            "https://arxiv.org/abs/2606.00552"
-          ],
-          "published_date": "2026-07-08",
-          "url": "https://arxiv.org/abs/2606.00552",
-          "link_label": "阅读论文",
-          "brief": "该新闻主要涉及边缘计算和机器人控制算法，与材料研发关联弱，但可能间接影响对轻量化、散热材料的需求，不过当前阶段不显著。"
-        },
-        {
-          "event_id": "502ee056f034034b",
-          "canonical_url": "https://arxiv.org/abs/2607.06337",
-          "normalized_title": "orchardbench physically grounded gpu parallel apple orchard simulation benchmark agricultural robotics",
-          "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
-          "source": "arXiv",
-          "source_names": [
-            "arXiv"
-          ],
-          "source_urls": [
-            "https://arxiv.org/abs/2607.06337"
-          ],
-          "published_date": "2026-07-08",
-          "url": "https://arxiv.org/abs/2607.06337",
-          "link_label": "阅读论文",
-          "brief": "该新闻主要涉及机器人仿真技术，未直接牵引新材料需求，但柔性体断裂建模可能间接启发材料测试仿真。"
-        },
-        {
-          "event_id": "c63ebcaa986f2c27",
-          "canonical_url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
-          "normalized_title": "catl unveils 8c battery specifically light commercial electric vehicles",
-          "title": "CATL unveils 8C battery specifically for light commercial electric vehicles",
+          "event_id": "7ac4dffd3b591356",
+          "canonical_url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
+          "normalized_title": "austria battery electric car registrations reach parity petrol vehicles",
+          "title": "Austria: Battery-electric car registrations reach parity with petrol vehicles",
           "source": "Electrive",
           "source_names": [
             "Electrive"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles"
+            "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles"
           ],
-          "published_date": "2026-07-07",
-          "url": "https://www.electrive.com/2026/07/07/catl-unveils-8c-battery-specifically-for-light-commercial-electric-vehicles",
+          "published_date": "2026-07-13",
+          "url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
+          "link_label": "阅读原文",
+          "brief": "电动汽车市场份额提升意味着动力电池及关键材料需求将持续扩大，材料研发需关注产能匹配和下一代技术储备。"
+        },
+        {
+          "event_id": "08f26204ee036910",
+          "canonical_url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
+          "normalized_title": "see how tesla tore down model s factory build robots instead",
+          "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
+          "source": "InsideEVs",
+          "source_names": [
+            "InsideEVs"
+          ],
+          "source_urls": [
+            "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown"
+          ],
+          "published_date": "2026-07-13",
+          "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
           "link_label": "官方发布",
-          "brief": "8C快充是电池技术的重要突破，直接牵引高倍率负极、低阻抗隔膜、高效热管理材料等需求，为材料研发提供明确方向。"
+          "brief": "该新闻显示特斯拉正在将资源从汽车制造转向机器人制造，可能影响未来汽车供应链和材料需求，但当前阶段对材料研发的直接牵引不明显。"
         },
         {
-          "event_id": "46fc97b91d590750",
-          "canonical_url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
-          "normalized_title": "pet bottles could become battery graphite evs",
-          "title": "PET bottles could become battery graphite for EVs",
+          "event_id": "30bffcb8cf19995d",
+          "canonical_url": "https://www.nature.com/articles/s41560-026-02102-w",
+          "normalized_title": "managing impacts eu electric vehicle import tariffs",
+          "title": "Managing the impacts of EU electric vehicle import tariffs",
+          "source": "Nature Energy",
+          "source_names": [
+            "Nature Energy"
+          ],
+          "source_urls": [
+            "https://www.nature.com/articles/s41560-026-02102-w"
+          ],
+          "published_date": "2026-07-10",
+          "url": "https://www.nature.com/articles/s41560-026-02102-w",
+          "link_label": "阅读论文",
+          "brief": "该新闻揭示了贸易政策对电动汽车市场的区域差异化影响，可能间接影响材料需求的地域分布，但未直接牵引材料技术变化。"
+        },
+        {
+          "event_id": "e5c8a25df068e017",
+          "canonical_url": "https://www.nature.com/articles/s41560-026-02105-7",
+          "normalized_title": "distributional impacts eu tariffs chinese electric vehicles across european markets",
+          "title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
+          "source": "Nature Energy",
+          "source_names": [
+            "Nature Energy"
+          ],
+          "source_urls": [
+            "https://www.nature.com/articles/s41560-026-02105-7"
+          ],
+          "published_date": "2026-07-10",
+          "url": "https://www.nature.com/articles/s41560-026-02105-7",
+          "link_label": "阅读论文",
+          "brief": "关税政策可能改变全球电动汽车供应链布局，间接影响电池材料的需求区域和成本结构，但当前新闻无具体材料技术信息。"
+        },
+        {
+          "event_id": "3495e84450427a6e",
+          "canonical_url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
+          "normalized_title": "bmw falls below previous year s battery electric vehicle sales",
+          "title": "BMW falls below previous year’s battery-electric vehicle sales",
           "source": "Electrive",
           "source_names": [
             "Electrive"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs"
+            "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales"
           ],
-          "published_date": "2026-07-07",
-          "url": "https://www.electrive.com/2026/07/07/pet-bottles-could-become-battery-graphite-for-evs",
-          "link_label": "阅读原文",
-          "brief": "该技术可能为锂离子电池负极材料提供新的可持续来源，同时缓解塑料污染问题，对电池材料供应链和环保技术演进有潜在影响。"
+          "published_date": "2026-07-10",
+          "url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
+          "link_label": "官方发布",
+          "brief": "销量数据反映市场接受度和供应链压力，但无新材料技术信息，对材料研发直接指导意义弱。"
         },
         {
-          "event_id": "023fd467c27108a2",
-          "canonical_url": "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure",
-          "normalized_title": "mcmurtry unveils production version its electric racing car spéirling pure",
-          "title": "McMurtry unveils production version of its electric racing car, Spéirling Pure",
+          "event_id": "e5dedbd9ebdcd35d",
+          "canonical_url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
+          "normalized_title": "volkswagen group loses ground battery electric vehicle sales",
+          "title": "Volkswagen Group loses ground in battery-electric vehicle sales",
           "source": "Electrive",
           "source_names": [
             "Electrive"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure"
+            "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales"
           ],
-          "published_date": "2026-07-07",
-          "url": "https://www.electrive.com/2026/07/07/mcmurtry-unveils-production-version-of-its-electric-racing-car-speirling-pure",
-          "link_label": "阅读原文",
-          "brief": "该新闻展示了电动赛车从原型到量产的进展，可能牵引高性能电池和电机材料的需求，但缺乏具体材料细节，对材料研发的直接指导意义有限。"
+          "published_date": "2026-07-10",
+          "url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
+          "link_label": "官方发布",
+          "brief": "销量数据反映市场趋势，但无具体材料技术信息，对研发人员直接指导意义有限。"
         }
       ]
     },
@@ -174,26 +157,8 @@
       "domain": "Future Research Reserve",
       "zh": "前沿研究储备",
       "description": "超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料",
-      "count": 1,
-      "items": [
-        {
-          "event_id": "eb094340f281b78f",
-          "canonical_url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
-          "normalized_title": "rivian raises 2026 delivery forecasts after production exceeds expectations",
-          "title": "Rivian raises 2026 delivery forecasts after production exceeds expectations",
-          "source": "Electrive",
-          "source_names": [
-            "Electrive"
-          ],
-          "source_urls": [
-            "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations"
-          ],
-          "published_date": "2026-07-07",
-          "url": "https://www.electrive.com/2026/07/07/rivian-raises-2026-delivery-forecasts-after-production-exceeds-expectations",
-          "link_label": "阅读原文",
-          "brief": "该新闻表明Rivian生产进入稳定爬坡阶段，但未透露任何材料技术变化，因此对材料研发的直接意义有限。"
-        }
-      ]
+      "count": 0,
+      "items": []
     }
   ]
 }
