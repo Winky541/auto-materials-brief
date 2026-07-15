@@ -1,6 +1,287 @@
 {
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-07-15",
   "items": [
+    {
+      "date": "2026-07-15",
+      "window": [
+        {
+          "category": "Energy Revolution",
+          "count": 1,
+          "avg_future_signal_score": 60,
+          "summary": "高温燃料电池是氢能汽车的关键技术方向，电解质膜材料的突破直接影响系统效率和成本，铜离子交联策略可能提供新的材料解决方案。",
+          "sources": [
+            {
+              "title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02119-1",
+              "published_date": "2026-07-14",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该研究展示了AI与无人机蜂群融合的前沿方向，但未涉及具体材料需求，对材料研发人员直接参考价值有限。",
+          "sources": [
+            {
+              "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.09756",
+              "published_date": "2026-07-14",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Low-altitude Economy",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该研究展示了AI与无人机蜂群融合的前沿方向，但未涉及具体材料需求，对材料研发人员直接参考价值有限。",
+          "sources": [
+            {
+              "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.09756",
+              "published_date": "2026-07-14",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "AI Agent & AI Hardware",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该研究展示了AI与无人机蜂群融合的前沿方向，但未涉及具体材料需求，对材料研发人员直接参考价值有限。",
+          "sources": [
+            {
+              "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.09756",
+              "published_date": "2026-07-14",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Sensing",
+          "count": 2,
+          "avg_future_signal_score": 25,
+          "summary": "该研究展示了AI与无人机蜂群融合的前沿方向，但未涉及具体材料需求，对材料研发人员直接参考价值有限。",
+          "sources": [
+            {
+              "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.09756",
+              "published_date": "2026-07-14",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
+              "published_date": "2026-07-14",
+              "link_label": "阅读论文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在未来趋势观察、汽车新材料，技术牵引以自动驾驶最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "该新闻不涉及材料技术，对材料研发人员无直接关注价值。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注铜离子交联聚合物电解质膜、高温聚合物电解质膜、无具体材料信息、battery、光学材料、传感器材料、机载计算硬件材料（如散热材料、轻量化结构材料）、5G/6G通信模块材料（如高频基板、天线材料）。潜在材料机会包括传感材料、光学材料、封装材料、导热材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
+          "source": "Nature Energy",
+          "why_read": "高温燃料电池是氢能汽车的关键技术方向，电解质膜材料的突破直接影响系统效率和成本，铜离子交联策略可能提供新的材料解决方案。",
+          "focus": "关注 氢能 是否继续形成产业信号；铜离子交联聚合物电解质膜、高温聚合物电解质膜材料",
+          "reading_time": "约 8 分钟",
+          "url": "https://www.nature.com/articles/s41560-026-02119-1"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 4,
+          "items": [
+            {
+              "event_id": "80701af6a4565fec",
+              "canonical_url": "https://www.nature.com/articles/s41560-026-02119-1",
+              "normalized_title": "author correction thin membranes cu ion crosslinking high temperature polymer electrolyte membrane fuel cells",
+              "title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
+              "source": "Nature Energy",
+              "source_names": [
+                "Nature Energy"
+              ],
+              "source_urls": [
+                "https://www.nature.com/articles/s41560-026-02119-1"
+              ],
+              "published_date": "2026-07-14",
+              "url": "https://www.nature.com/articles/s41560-026-02119-1",
+              "link_label": "阅读论文",
+              "brief": "高温燃料电池是氢能汽车的关键技术方向，电解质膜材料的突破直接影响系统效率和成本，铜离子交联策略可能提供新的材料解决方案。"
+            },
+            {
+              "event_id": "0b3f0f0bcfd74ce4",
+              "canonical_url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
+              "normalized_title": "panasonic s pv 460 camcorder stabilized shaky videos",
+              "title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone"
+              ],
+              "published_date": "2026-07-14",
+              "url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
+              "link_label": "阅读论文",
+              "brief": "图像稳定技术已渗透至车载摄像头和自动驾驶感知系统，但其材料需求（如微型传感器封装、光学材料）并非当前汽车材料研发重点。"
+            },
+            {
+              "event_id": "6eca9f29d27e7d2a",
+              "canonical_url": "https://arxiv.org/abs/2607.10975",
+              "normalized_title": "real time rulebook aware nonlinear mpc autonomous driving priority biased tiered slacks",
+              "title": "Real-Time Rulebook-Aware Nonlinear MPC for Autonomous Driving with Priority-Biased Tiered Slacks",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.10975"
+              ],
+              "published_date": "2026-07-14",
+              "url": "https://arxiv.org/abs/2607.10975",
+              "link_label": "阅读论文",
+              "brief": "该新闻不涉及材料技术，对材料研发人员无直接关注价值。"
+            },
+            {
+              "event_id": "07142ce394407f66",
+              "canonical_url": "https://arxiv.org/abs/2607.09756",
+              "normalized_title": "llm centric agentic ai uav swarms architecture enabling technologies open problems",
+              "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.09756"
+              ],
+              "published_date": "2026-07-14",
+              "url": "https://arxiv.org/abs/2607.09756",
+              "link_label": "阅读论文",
+              "brief": "该研究展示了AI与无人机蜂群融合的前沿方向，但未涉及具体材料需求，对材料研发人员直接参考价值有限。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "3205dc2ad82b287a",
+              "canonical_url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
+              "normalized_title": "专利铸盾护创新 自立自强启新程 知识产权报 2026 07 15",
+              "title": "专利铸盾护创新 自立自强启新程（知识产权报） 2026-07-15",
+              "source": "CNIPA",
+              "source_names": [
+                "CNIPA"
+              ],
+              "source_urls": [
+                "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html"
+              ],
+              "published_date": "2026-07-15",
+              "url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
+              "link_label": "查看专利",
+              "brief": "该新闻为宏观政策宣传，未涉及具体技术或材料需求，对研发人员直接参考价值有限。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Energy Materials、Future Research Reserve中已有2个机会进入 Technology Watch，其中“Solid-State Electrolytes”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02119-1",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "专利铸盾护创新 自立自强启新程（知识产权报） 2026-07-15",
+              "source": "CNIPA",
+              "url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有1个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：regulation。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Real-Time Rulebook-Aware Nonlinear MPC for Autonomous Driving with Priority-Biased Tiered Slacks",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.10975",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.09756",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-13",
       "window": [

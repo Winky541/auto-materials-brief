@@ -433,6 +433,41 @@
       "published_date": "2026-07-10",
       "selected_date": "2026-07-13",
       "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41560-026-02119-1",
+      "title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
+      "published_date": "2026-07-14",
+      "selected_date": "2026-07-15",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
+      "title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
+      "published_date": "2026-07-14",
+      "selected_date": "2026-07-15",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
+      "title": "专利铸盾护创新 自立自强启新程（知识产权报） 2026-07-15",
+      "published_date": "2026-07-15",
+      "selected_date": "2026-07-15",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.10975",
+      "title": "Real-Time Rulebook-Aware Nonlinear MPC for Autonomous Driving with Priority-Biased Tiered Slacks",
+      "published_date": "2026-07-14",
+      "selected_date": "2026-07-15",
+      "category": "政策法规与标准"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.09756",
+      "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+      "published_date": "2026-07-14",
+      "selected_date": "2026-07-15",
+      "category": "未来趋势观察"
     }
   ]
 }

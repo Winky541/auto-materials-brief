@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-07-15",
   "domains": [
     {
       "domain": "Metal Materials",
@@ -33,109 +33,75 @@
       "domain": "Energy Materials",
       "zh": "能源材料",
       "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
-      "count": 6,
+      "count": 4,
       "items": [
         {
-          "event_id": "7ac4dffd3b591356",
-          "canonical_url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
-          "normalized_title": "austria battery electric car registrations reach parity petrol vehicles",
-          "title": "Austria: Battery-electric car registrations reach parity with petrol vehicles",
-          "source": "Electrive",
-          "source_names": [
-            "Electrive"
-          ],
-          "source_urls": [
-            "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles"
-          ],
-          "published_date": "2026-07-13",
-          "url": "https://www.electrive.com/2026/07/13/austria-battery-electric-car-registrations-reach-parity-with-petrol-vehicles",
-          "link_label": "阅读原文",
-          "brief": "电动汽车市场份额提升意味着动力电池及关键材料需求将持续扩大，材料研发需关注产能匹配和下一代技术储备。"
-        },
-        {
-          "event_id": "08f26204ee036910",
-          "canonical_url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
-          "normalized_title": "see how tesla tore down model s factory build robots instead",
-          "title": "See How Tesla Tore Down The Model S Factory To Build Robots Instead",
-          "source": "InsideEVs",
-          "source_names": [
-            "InsideEVs"
-          ],
-          "source_urls": [
-            "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown"
-          ],
-          "published_date": "2026-07-13",
-          "url": "https://insideevs.com/news/801412/tesla-model-s-model-x-factory-teardown",
-          "link_label": "官方发布",
-          "brief": "该新闻显示特斯拉正在将资源从汽车制造转向机器人制造，可能影响未来汽车供应链和材料需求，但当前阶段对材料研发的直接牵引不明显。"
-        },
-        {
-          "event_id": "30bffcb8cf19995d",
-          "canonical_url": "https://www.nature.com/articles/s41560-026-02102-w",
-          "normalized_title": "managing impacts eu electric vehicle import tariffs",
-          "title": "Managing the impacts of EU electric vehicle import tariffs",
+          "event_id": "80701af6a4565fec",
+          "canonical_url": "https://www.nature.com/articles/s41560-026-02119-1",
+          "normalized_title": "author correction thin membranes cu ion crosslinking high temperature polymer electrolyte membrane fuel cells",
+          "title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
           "source": "Nature Energy",
           "source_names": [
             "Nature Energy"
           ],
           "source_urls": [
-            "https://www.nature.com/articles/s41560-026-02102-w"
+            "https://www.nature.com/articles/s41560-026-02119-1"
           ],
-          "published_date": "2026-07-10",
-          "url": "https://www.nature.com/articles/s41560-026-02102-w",
+          "published_date": "2026-07-14",
+          "url": "https://www.nature.com/articles/s41560-026-02119-1",
           "link_label": "阅读论文",
-          "brief": "该新闻揭示了贸易政策对电动汽车市场的区域差异化影响，可能间接影响材料需求的地域分布，但未直接牵引材料技术变化。"
+          "brief": "高温燃料电池是氢能汽车的关键技术方向，电解质膜材料的突破直接影响系统效率和成本，铜离子交联策略可能提供新的材料解决方案。"
         },
         {
-          "event_id": "e5c8a25df068e017",
-          "canonical_url": "https://www.nature.com/articles/s41560-026-02105-7",
-          "normalized_title": "distributional impacts eu tariffs chinese electric vehicles across european markets",
-          "title": "Distributional impacts of EU tariffs on Chinese electric vehicles across European markets",
-          "source": "Nature Energy",
+          "event_id": "0b3f0f0bcfd74ce4",
+          "canonical_url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
+          "normalized_title": "panasonic s pv 460 camcorder stabilized shaky videos",
+          "title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
+          "source": "IEEE Spectrum",
           "source_names": [
-            "Nature Energy"
+            "IEEE Spectrum"
           ],
           "source_urls": [
-            "https://www.nature.com/articles/s41560-026-02105-7"
+            "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone"
           ],
-          "published_date": "2026-07-10",
-          "url": "https://www.nature.com/articles/s41560-026-02105-7",
+          "published_date": "2026-07-14",
+          "url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
           "link_label": "阅读论文",
-          "brief": "关税政策可能改变全球电动汽车供应链布局，间接影响电池材料的需求区域和成本结构，但当前新闻无具体材料技术信息。"
+          "brief": "图像稳定技术已渗透至车载摄像头和自动驾驶感知系统，但其材料需求（如微型传感器封装、光学材料）并非当前汽车材料研发重点。"
         },
         {
-          "event_id": "3495e84450427a6e",
-          "canonical_url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
-          "normalized_title": "bmw falls below previous year s battery electric vehicle sales",
-          "title": "BMW falls below previous year’s battery-electric vehicle sales",
-          "source": "Electrive",
+          "event_id": "6eca9f29d27e7d2a",
+          "canonical_url": "https://arxiv.org/abs/2607.10975",
+          "normalized_title": "real time rulebook aware nonlinear mpc autonomous driving priority biased tiered slacks",
+          "title": "Real-Time Rulebook-Aware Nonlinear MPC for Autonomous Driving with Priority-Biased Tiered Slacks",
+          "source": "arXiv",
           "source_names": [
-            "Electrive"
+            "arXiv"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales"
+            "https://arxiv.org/abs/2607.10975"
           ],
-          "published_date": "2026-07-10",
-          "url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",
-          "link_label": "官方发布",
-          "brief": "销量数据反映市场接受度和供应链压力，但无新材料技术信息，对材料研发直接指导意义弱。"
+          "published_date": "2026-07-14",
+          "url": "https://arxiv.org/abs/2607.10975",
+          "link_label": "阅读论文",
+          "brief": "该新闻不涉及材料技术，对材料研发人员无直接关注价值。"
         },
         {
-          "event_id": "e5dedbd9ebdcd35d",
-          "canonical_url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
-          "normalized_title": "volkswagen group loses ground battery electric vehicle sales",
-          "title": "Volkswagen Group loses ground in battery-electric vehicle sales",
-          "source": "Electrive",
+          "event_id": "07142ce394407f66",
+          "canonical_url": "https://arxiv.org/abs/2607.09756",
+          "normalized_title": "llm centric agentic ai uav swarms architecture enabling technologies open problems",
+          "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+          "source": "arXiv",
           "source_names": [
-            "Electrive"
+            "arXiv"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales"
+            "https://arxiv.org/abs/2607.09756"
           ],
-          "published_date": "2026-07-10",
-          "url": "https://www.electrive.com/2026/07/10/volkswagen-group-loses-ground-in-battery-electric-vehicle-sales",
-          "link_label": "官方发布",
-          "brief": "销量数据反映市场趋势，但无具体材料技术信息，对研发人员直接指导意义有限。"
+          "published_date": "2026-07-14",
+          "url": "https://arxiv.org/abs/2607.09756",
+          "link_label": "阅读论文",
+          "brief": "该研究展示了AI与无人机蜂群融合的前沿方向，但未涉及具体材料需求，对材料研发人员直接参考价值有限。"
         }
       ]
     },
@@ -157,8 +123,26 @@
       "domain": "Future Research Reserve",
       "zh": "前沿研究储备",
       "description": "超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料",
-      "count": 0,
-      "items": []
+      "count": 1,
+      "items": [
+        {
+          "event_id": "3205dc2ad82b287a",
+          "canonical_url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
+          "normalized_title": "专利铸盾护创新 自立自强启新程 知识产权报 2026 07 15",
+          "title": "专利铸盾护创新 自立自强启新程（知识产权报） 2026-07-15",
+          "source": "CNIPA",
+          "source_names": [
+            "CNIPA"
+          ],
+          "source_urls": [
+            "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html"
+          ],
+          "published_date": "2026-07-15",
+          "url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
+          "link_label": "查看专利",
+          "brief": "该新闻为宏观政策宣传，未涉及具体技术或材料需求，对研发人员直接参考价值有限。"
+        }
+      ]
     }
   ]
 }

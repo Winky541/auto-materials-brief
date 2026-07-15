@@ -1,6 +1,246 @@
 {
   "events": [
     {
+      "event_id": "0b3f0f0bcfd74ce4",
+      "canonical_title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
+      "canonical_url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
+      "normalized_title": "panasonic s pv 460 camcorder stabilized shaky videos",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "source_urls": [
+        "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "自动驾驶"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "41ebc5e17a098f68",
+      "canonical_title": "How I Turned AI to the Dark Side",
+      "canonical_url": "https://spectrum.ieee.org/jailbreaking-llms",
+      "normalized_title": "how i turned ai dark side",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "source_urls": [
+        "https://spectrum.ieee.org/jailbreaking-llms"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "fb22a993355191c4",
+      "canonical_title": "11:02 《中国汽车行业整车成本测算规则》团体标准正式发布 | 近日，由中国汽车工业协会牵头组织，国内18家主流整车企业共同参与编制的《中国汽车行业整车成本测算规则》团体标准正式发布。这是国内首套面向汽车整车领域的统一成本测",
+      "canonical_url": "https://www.yicai.com/brief/103275744.html",
+      "normalized_title": "11 02 中国汽车行业整车成本测算规则 团体标准正式发布 近日 由中国汽车工业协会牵头组织 国内18家主流整车企业共同参与编制的 中国汽车行业整车成本测算规则 团体标准正式发布 这是国内首套面向汽车整车领域的统一成本测",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "source_urls": [
+        "https://www.yicai.com/brief/103275744.html"
+      ],
+      "source_names": [
+        "第一财经"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "政策法规与标准",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "07142ce394407f66",
+      "canonical_title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+      "canonical_url": "https://arxiv.org/abs/2607.09756",
+      "normalized_title": "llm centric agentic ai uav swarms architecture enabling technologies open problems",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.09756"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能、低空经济/eVTOL、AI硬件"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "2f97cb2318b01793",
+      "canonical_title": "11:26 国家统计局：企业更加注重研发创新 持续加大专利、数据库等领域投资 | 国家统计局新闻发言人、国民经济综合统计司副司长王冠华在发布会上表示，上半年企业更加注重研发创新，持续加大专利、软件、数据库等领域投资。从占比看，知识产权产品投资",
+      "canonical_url": "https://www.yicai.com/brief/103275797.html",
+      "normalized_title": "11 26 国家统计局 企业更加注重研发创新 持续加大专利 数据库等领域投资 国家统计局新闻发言人 国民经济综合统计司副司长王冠华在发布会上表示 上半年企业更加注重研发创新 持续加大专利 软件 数据库等领域投资 从占比看 知识产权产品投资",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "source_urls": [
+        "https://www.yicai.com/brief/103275797.html"
+      ],
+      "source_names": [
+        "第一财经"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "80701af6a4565fec",
+      "canonical_title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
+      "canonical_url": "https://www.nature.com/articles/s41560-026-02119-1",
+      "normalized_title": "author correction thin membranes cu ion crosslinking high temperature polymer electrolyte membrane fuel cells",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "source_urls": [
+        "https://www.nature.com/articles/s41560-026-02119-1"
+      ],
+      "source_names": [
+        "Nature Energy"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Polymer & Elastomer Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "燃料电池",
+        "氢能"
+      ],
+      "material_opportunities": [
+        "铜离子交联聚合物电解质膜、高温聚合物电解质膜材料"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "6eca9f29d27e7d2a",
+      "canonical_title": "Real-Time Rulebook-Aware Nonlinear MPC for Autonomous Driving with Priority-Biased Tiered Slacks",
+      "canonical_url": "https://arxiv.org/abs/2607.10975",
+      "normalized_title": "real time rulebook aware nonlinear mpc autonomous driving priority biased tiered slacks",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.10975"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "政策法规与标准",
+        "自动驾驶"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括传感材料、光学材料、封装材料、导热材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "3205dc2ad82b287a",
+      "canonical_title": "专利铸盾护创新 自立自强启新程（知识产权报） 2026-07-15",
+      "canonical_url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
+      "normalized_title": "专利铸盾护创新 自立自强启新程 知识产权报 2026 07 15",
+      "first_seen": "2026-07-15",
+      "last_seen": "2026-07-15",
+      "source_urls": [
+        "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html"
+      ],
+      "source_names": [
+        "CNIPA"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "3495e84450427a6e",
       "canonical_title": "BMW falls below previous year’s battery-electric vehicle sales",
       "canonical_url": "https://www.electrive.com/2026/07/10/bmw-falls-below-previous-years-battery-electric-vehicle-sales",

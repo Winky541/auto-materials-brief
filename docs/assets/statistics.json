@@ -1,34 +1,37 @@
 {
   "category_counts": {
-    "汽车新材料": 6,
-    "未来趋势观察": 3
+    "未来趋势观察": 5,
+    "汽车新材料": 4
   },
   "source_counts": {
-    "Electrive": 3,
-    "Nature Energy": 2,
-    "IEEE Spectrum": 2,
-    "InsideEVs": 1,
-    "arXiv": 1
+    "IEEE Spectrum": 4,
+    "arXiv": 3,
+    "Nature Energy": 1,
+    "CNIPA": 1
   },
   "company_counts": {
     "IEEE": 2,
-    "欧盟": 1,
-    "中国电动汽车制造商": 1,
-    "BMW": 1,
-    "Tesla": 1,
-    "Volkswagen": 1,
+    "Panasonic": 1,
+    "国家知识产权局": 1,
+    "unknown": 1,
     "IEEE History Center": 1,
     "IEEE Vehicular Technology Society": 1,
     "IEEE Dielectrics and Electrical Insulation Society": 1,
-    "Nvidia": 1
+    "Nvidia": 1,
+    "Motorola": 1,
+    "Kodak": 1
   },
   "keyword_counts": {
-    "电池材料": 2,
-    "动力电池材料（正极、负极、电解液、隔膜）": 1,
-    "电池热管理材料": 1,
-    "轻量化材料": 1,
-    "电池": 1,
+    "铜离子交联聚合物电解质膜": 1,
+    "高温聚合物电解质膜": 1,
     "battery": 1,
+    "光学材料": 1,
+    "传感器材料": 1,
+    "无具体材料信息": 1,
+    "机载计算硬件材料（如散热材料、轻量化结构材料）": 1,
+    "5G/6G通信模块材料（如高频基板、天线材料）": 1,
+    "多模态传感器材料（如光学、红外、雷达传感材料）": 1,
+    "网络安全硬件材料（如加密芯片、防篡改封装）": 1,
     "PA": 1
   }
 }
