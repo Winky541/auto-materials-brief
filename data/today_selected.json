@@ -1,54 +1,352 @@
 {
-  "date": "2026-07-15",
-  "count": 5,
+  "date": "2026-07-20",
+  "count": 7,
   "items": [
     {
-      "title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
+      "title": "Challenges and trends in automotive battery recycling",
       "source": "Nature Energy",
-      "published_date": "2026-07-14",
-      "url": "https://www.nature.com/articles/s41560-026-02119-1",
-      "category": "电池与储能材料",
-      "subcategory": "燃料电池",
-      "summary": "Nature Energy发表了一篇作者更正，涉及高温聚合物电解质膜燃料电池中采用铜离子交联的薄膜。该技术旨在提升膜在高温下的稳定性和离子传导性，可能推动燃料电池在汽车等领域的应用。",
+      "published_date": "2026-07-17",
+      "url": "https://www.nature.com/articles/s41560-026-02092-9",
+      "category": "学术论文",
+      "subcategory": "回收",
+      "summary": "该综述论文评估了当前电动汽车电池回收方法，探讨了新兴化学体系（如固态电池、锂硫电池）对回收工艺的适配性，以及规模化循环利用面临的挑战。文章指出，现有回收技术（如火法、湿法）在处理新型电池材料时效率不足，需要开发针对性的分离与提纯工艺。",
       "technical_points": [
-        "铜离子交联用于高温聚合物电解质膜",
-        "薄膜设计以提升高温稳定性",
-        "可能改善离子传导性能",
-        "涉及燃料电池电解质膜材料创新"
+        "评估了火法、湿法、直接回收等主流回收方法对不同电池化学体系的适用性",
+        "分析了固态电解质、高镍正极、硅负极等新材料对回收流程的影响",
+        "提出了回收工艺与电池设计协同优化的必要性",
+        "讨论了回收经济性、物流网络和政策法规的制约因素"
       ],
       "materials_involved": [
-        "铜离子交联聚合物电解质膜",
-        "高温聚合物电解质膜"
+        "电池回收材料",
+        "固态电解质",
+        "高镍正极材料",
+        "硅负极材料",
+        "锂、钴、镍等关键金属"
       ],
-      "companies_or_institutions": [],
-      "impact_assessment": "该技术可能提升高温燃料电池的耐久性和性能，对氢燃料电池汽车的动力系统材料选择产生影响，尤其是电解质膜材料。",
-      "research_value": "为高温燃料电池电解质膜的材料设计提供新思路，铜离子交联策略值得关注。",
-      "industrial_maturity": "lab",
+      "companies_or_institutions": [
+        "Nature Energy"
+      ],
+      "impact_assessment": "该综述为汽车电池回收技术路线提供了系统性参考，推动行业从单一回收方法向材料适配性回收策略转变，对电池材料研发和供应链闭环具有指导意义。",
+      "research_value": "帮助材料研究人员了解不同电池材料在回收阶段的性能表现和工艺需求，为设计易回收电池材料提供依据。",
+      "industrial_maturity": "policy",
       "priority": "P1",
-      "confidence": 70,
+      "confidence": 85,
       "follow_up": true,
-      "one_sentence": "Nature Energy发表作者更正，涉及铜离子交联薄膜用于高温燃料电池电解质膜，可能推动燃料电池材料创新。",
-      "why_it_matters": "高温燃料电池是氢能汽车的关键技术方向，电解质膜材料的突破直接影响系统效率和成本，铜离子交联策略可能提供新的材料解决方案。",
-      "technology_driver": "氢能",
-      "material_relevance": "燃料电池电解质膜材料",
-      "material_opportunity": "铜离子交联聚合物电解质膜、高温聚合物电解质膜材料",
-      "validation_opportunity": "目前处于学术研究阶段，尚未有样件或供应商信息，建议持续跟踪相关论文和专利，待技术成熟度提升后再考虑验证。",
+      "one_sentence": "Nature Energy综述评估了电动汽车电池回收方法对新兴化学体系的适配性，强调回收工艺与材料设计协同。",
+      "why_it_matters": "随着电动汽车保有量增长，电池回收成为产业链闭环的关键环节，该综述为材料研发人员提供了回收视角的材料设计指导，有助于前瞻性布局易回收材料。",
+      "technology_driver": "储能",
+      "material_relevance": "回收材料、固态电解质、高镍正极、硅负极",
+      "material_opportunity": "可能值得关注的材料或工艺：直接回收工艺中的正极材料修复技术、固态电解质分离技术、硅负极回收工艺。这些技术尚处于实验室或中试阶段，但具有产业化潜力。",
+      "validation_opportunity": "目前回收技术多处于实验室或中试阶段，距离量产还有距离。建议持续跟踪直接回收工艺的进展，特别是针对固态电解质和硅负极的回收方法，可考虑与高校合作进行前瞻储备。",
       "suggested_action": "持续跟踪",
-      "trend_potential": "中",
-      "future_signal": "铜离子交联策略在燃料电池膜中的应用释放了新材料设计方向的信号，可能推动高温燃料电池的产业化。",
-      "future_signal_score": 60,
-      "material_opportunity_score": 50,
-      "material_validation_score": 50,
+      "trend_potential": "高",
+      "future_signal": "该新闻释放了电池回收技术向材料特异性方向发展的信号，未来回收工艺将与电池材料设计深度耦合，推动循环经济。",
+      "future_signal_score": 75,
+      "material_opportunity_score": 76,
+      "material_validation_score": 76,
       "analysis_status": "success",
-      "rule_score": 37,
+      "rule_score": 52,
       "source_score": 94,
       "source_type": "journal_rss",
-      "filter_reason": "source=24; automotive=0 (none); materials=8 (fuel cell, electrolyte); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "filter_reason": "source=24; automotive=15 (electric vehicle, vehicle, automotive); materials=8 (battery, recycling); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "stage": "Strategic Reserve",
+      "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+      "canonical_url": "https://www.nature.com/articles/s41560-026-02092-9",
+      "normalized_title": "challenges trends automotive battery recycling",
+      "event_id": "6efb41c12d7970c4",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 76,
+      "bookshelf_category": "Energy Materials",
+      "related_sources": [
+        {
+          "source": "Nature Energy",
+          "url": "https://www.nature.com/articles/s41560-026-02092-9",
+          "published_date": "2026-07-17"
+        }
+      ],
+      "source_urls": [
+        "https://www.nature.com/articles/s41560-026-02092-9"
+      ],
+      "source_names": [
+        "Nature Energy"
+      ],
+      "selected_at": "2026-07-20T12:40:21+08:00"
+    },
+    {
+      "title": "Mercedes confirms next-generation GLA for Rastatt plant",
+      "source": "Electrive",
+      "published_date": "2026-07-17",
+      "url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+      "category": "企业技术动态",
+      "subcategory": "",
+      "summary": "梅赛德斯-奔驰确认第三代GLA将在拉施塔特工厂生产，该车型将转向电动优先，纯电版2026年推出，混动版2027年推出。此举在成本削减背景下稳定了工厂生产。",
+      "technical_points": [
+        "第三代GLA将基于电动优先平台，纯电版2026年推出",
+        "混动版（插电式混合动力）2027年推出",
+        "生产保留在拉施塔特工厂，未转移至其他低成本地区"
+      ],
+      "materials_involved": [
+        "电池材料（锂、镍、钴、锰等）",
+        "轻量化材料（铝合金、高强钢、复合材料）",
+        "电驱动系统材料（铜、永磁体、绝缘材料）",
+        "热管理材料（导热胶、冷却液、相变材料）"
+      ],
+      "companies_or_institutions": [
+        "Mercedes-Benz"
+      ],
+      "impact_assessment": "该新闻表明奔驰加速紧凑型SUV电动化，可能带动电池、轻量化、热管理等材料需求，但具体技术细节未披露，影响有限。",
+      "research_value": "对材料研究员的参考价值中等，因缺乏具体材料规格和供应商信息，但可作为趋势参考。",
+      "industrial_maturity": "production",
+      "priority": "P2",
+      "confidence": 80,
+      "follow_up": true,
+      "one_sentence": "奔驰确认第三代GLA电动化转型，纯电版2026年推出，混动版2027年推出，生产保留在拉施塔特工厂。",
+      "why_it_matters": "该新闻显示奔驰在紧凑型SUV领域推进电动化，可能带动相关材料需求，但无具体技术细节，材料机会有限。",
+      "technology_driver": "未来交通",
+      "material_relevance": "电池材料、轻量化材料、热管理材料",
+      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "信息不足，无法判断样件验证或供应商调研机会。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "中",
+      "future_signal": "奔驰在成本削减背景下仍坚持电动化转型，释放了传统车企电动化决心信号。",
+      "future_signal_score": 60,
+      "material_opportunity_score": 61,
+      "material_validation_score": 61,
+      "analysis_status": "success",
+      "rule_score": 40,
+      "source_score": 78,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=4 (battery); companies=5 (Mercedes-Benz); industrial=6 (launch, plant); future=0 (none); current_month=5",
+      "stage": "Strategic Reserve",
+      "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+      "canonical_url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+      "normalized_title": "mercedes confirms next generation gla rastatt plant",
+      "event_id": "6389ddbf102b62d6",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 56,
+      "bookshelf_category": "Energy Materials",
+      "related_sources": [
+        {
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+          "published_date": "2026-07-17"
+        }
+      ],
+      "source_urls": [
+        "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "selected_at": "2026-07-20T12:40:21+08:00"
+    },
+    {
+      "title": "BMW launches vehicle configurator as a dialogue-based plugin in OpenAI’s ChatGPT. Fri Jul 17 10:00:00 CEST 2026 Press Release The new BMW plugin in ChatGPT for the first time enables AI-assisted, dialogue-based configuration of current BMW models. Custom vehicle configuration via text or voice input on smartphones and desktop computers. The development sees BMW add a new digital channel through which people can engage with the brand. Innovation · Corporate",
+      "source": "BMW",
+      "published_date": "2026-07-17",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "宝马在ChatGPT中推出基于对话的车辆配置插件，用户可通过文本或语音输入在智能手机和电脑上配置当前宝马车型。这是宝马首次实现AI辅助的对话式配置，新增了数字交互渠道。",
+      "technical_points": [
+        "基于OpenAI ChatGPT的对话式车辆配置插件",
+        "支持文本和语音输入",
+        "可配置当前宝马车型",
+        "适用于智能手机和桌面电脑"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "BMW",
+        "OpenAI"
+      ],
+      "impact_assessment": "该新闻主要涉及数字化交互和AI应用，对汽车产业链的材料研发方向影响较小。",
+      "research_value": "对汽车材料研究员的参考价值较低，因为不涉及新材料、新工艺或材料验证。",
+      "industrial_maturity": "market",
+      "priority": "P3",
+      "confidence": 90,
+      "follow_up": false,
+      "one_sentence": "宝马在ChatGPT中推出对话式车辆配置插件，但未涉及材料技术。",
+      "why_it_matters": "该新闻主要展示宝马在数字化客户交互方面的创新，不涉及材料技术演进或产业变化，因此对材料研发人员关注度低。",
+      "technology_driver": "其他",
+      "material_relevance": "材料相关性较弱，暂不优先。",
+      "material_opportunity": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "无样件验证价值，不适合供应商调研或前瞻储备。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "该新闻释放了汽车行业在AI对话式交互方面的趋势信号，但未涉及材料技术。",
+      "future_signal_score": 62,
+      "material_opportunity_score": 30,
+      "material_validation_score": 30,
+      "analysis_status": "success",
+      "rule_score": 50,
+      "source_score": 88,
+      "source_type": "company_news_page",
+      "filter_reason": "source=22; automotive=5 (vehicle); materials=0 (none); companies=5 (BMW); industrial=3 (launch); future=10 (OpenAI, innovation); current_month=5",
       "stage": "Technology Watch",
       "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://www.nature.com/articles/s41560-026-02119-1",
-      "normalized_title": "author correction thin membranes cu ion crosslinking high temperature polymer electrolyte membrane fuel cells",
-      "event_id": "80701af6a4565fec",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+      "normalized_title": "bmw launches vehicle configurator dialogue based plugin openai s chatgpt fri jul 17 10 00 00 cest 2026 press release new bmw plugin chatgpt first time enables ai assisted dialogue based configuration current bmw models custom vehicle configuration via text or voice input smartphones desktop computers development sees bmw add new digital channel through which people can engage brand innovation corporate",
+      "event_id": "c098e46a8e17426d",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
+      "final_score": 51,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "BMW",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+          "published_date": "2026-07-17"
+        }
+      ],
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "selected_at": "2026-07-20T12:40:21+08:00"
+    },
+    {
+      "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+      "source": "arXiv",
+      "published_date": "2026-07-20",
+      "url": "https://arxiv.org/abs/2512.21109",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "该论文提出在MuJoCo模型预测控制（MPC）中，用仿射空间网络（WASP）导数替代有限差分（FD）计算导数，实现2倍加速和更稳定性能。WASP通过重用先前导数信息加速迭代优化，在多种机器人任务中表现优于FD和随机采样规划器。开源实现已发布。",
+      "technical_points": [
+        "WASP导数替代有限差分，加速MPC计算",
+        "在MuJoCo MPC（MJPC）中实现2倍速度提升",
+        "在多种机器人构型上验证鲁棒性和效率",
+        "开源实现促进机器人控制研究"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [],
+      "impact_assessment": "该技术主要影响机器人控制算法效率，对汽车产业链的直接影响有限，但可能间接促进自动驾驶或机器人制造中的实时控制优化。",
+      "research_value": "对汽车材料研究员参考价值较低，因为不涉及材料本身。但若关注机器人制造或自动化产线，可了解控制算法进展。",
+      "industrial_maturity": "lab",
+      "priority": "P3",
+      "confidence": 90,
+      "follow_up": false,
+      "one_sentence": "WASP导数替代有限差分，使MuJoCo MPC计算加速2倍，提升机器人实时控制效率。",
+      "why_it_matters": "该技术提升机器人控制算法效率，可能间接影响汽车制造中的自动化系统，但材料相关性较弱。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "无材料验证机会，因为该技术为算法优化，不涉及新材料或工艺。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "机器人控制算法持续优化，但未释放材料相关趋势信号。",
+      "future_signal_score": 62,
+      "material_opportunity_score": 30,
+      "material_validation_score": 30,
+      "analysis_status": "success",
+      "rule_score": 38,
+      "source_score": 82,
+      "source_type": "journal_rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=3 (sampling); future=10 (robotics, research); current_month=5",
+      "stage": "Validation",
+      "stage_reason": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：reliability。",
+      "canonical_url": "https://arxiv.org/abs/2512.21109",
+      "normalized_title": "robust efficient mujoco based model predictive control via web affine spaces derivatives",
+      "event_id": "afea8ede2f738dd9",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
+      "final_score": 48,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2512.21109",
+          "published_date": "2026-07-20"
+        }
+      ],
+      "source_urls": [
+        "https://arxiv.org/abs/2512.21109"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "selected_at": "2026-07-20T12:40:21+08:00"
+    },
+    {
+      "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-07-18",
+      "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+      "category": "未来趋势观察",
+      "subcategory": "3D 打印",
+      "summary": "IEEE研究生会员Sarah Downs为NASA开发了一种无视觉的力控机器人装配算法，用于在轨卫星天线插入。该算法通过扭矩传感器感知力反馈，在零重力下完成插销任务，并计算反向推力抵消运动反作用力。她还在Texas A&M的RAD实验室继续研究大型卫星装配。",
+      "technical_points": [
+        "无视觉的力控机器人装配算法，解决太空中的插销问题",
+        "使用扭矩传感器感知力反馈，替代相机引导",
+        "在零重力下考虑机器人反作用扭矩，通过反向推力补偿",
+        "算法基于Denavit-Hartenberg参数，适用于不同机械臂"
+      ],
+      "materials_involved": [
+        "3D printing",
+        "PI"
+      ],
+      "companies_or_institutions": [
+        "NASA",
+        "Texas A&M University",
+        "University of Tulsa",
+        "IEEE"
+      ],
+      "impact_assessment": "该技术提升了太空机器人自主装配能力，可能推动卫星制造和维修的自动化，对汽车制造中的精密装配也有潜在借鉴意义。",
+      "research_value": "展示了力控装配在极端环境下的应用，对汽车自动化产线中的精密装配工艺有参考价值，但材料相关性较弱。",
+      "industrial_maturity": "lab",
+      "priority": "P3",
+      "confidence": 80,
+      "follow_up": false,
+      "one_sentence": "NASA研究生开发无视觉力控机器人算法，用于太空卫星天线装配。",
+      "why_it_matters": "该技术展示了力控装配在极端环境下的可行性，可能影响未来汽车制造中精密装配工艺的演进，但当前与材料需求直接关联弱。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "信息不足，未提及具体材料验证或供应商信息。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "太空机器人自主装配技术取得进展，但材料需求不明确。",
+      "future_signal_score": 20,
+      "material_opportunity_score": 10,
+      "material_validation_score": 10,
+      "analysis_status": "success",
+      "rule_score": 56,
+      "source_score": 82,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=5 (mobility); materials=8 (3D printing, PI); companies=0 (none); industrial=3 (launch); future=15 (automation, robotics, research); current_month=5",
+      "stage": "Joint Development",
+      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：sample, collaboration。",
+      "canonical_url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+      "normalized_title": "this graduate student equips nasa s robots assembly skills",
+      "event_id": "e470c41305a4181b",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -59,293 +357,148 @@
         "suggested_actions",
         "future_signals"
       ],
-      "final_score": 64,
-      "bookshelf_category": "Polymer & Elastomer Materials",
-      "related_sources": [
-        {
-          "source": "Nature Energy",
-          "url": "https://www.nature.com/articles/s41560-026-02119-1",
-          "published_date": "2026-07-14"
-        }
-      ],
-      "source_urls": [
-        "https://www.nature.com/articles/s41560-026-02119-1"
-      ],
-      "source_names": [
-        "Nature Energy"
-      ],
-      "selected_at": "2026-07-15T12:02:45+08:00"
-    },
-    {
-      "title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-07-14",
-      "url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "1988年松下PV-460摄像机首次集成光学图像稳定器，采用微型振动陀螺仪传感器与光轴校正机构，消除手持抖动。该技术获IEEE里程碑认证，现已成为相机、手机、无人机标配。",
-      "technical_points": [
-        "光学图像稳定器通过微型振动陀螺仪检测角速度，结合光轴校正机构补偿抖动",
-        "微型化低成本振动陀螺仪是核心突破，替代了当时昂贵的大型传感器",
-        "技术已广泛授权，成为消费电子成像设备标准功能"
-      ],
-      "materials_involved": [
-        "battery",
-        "光学材料",
-        "传感器材料"
-      ],
-      "companies_or_institutions": [
-        "Panasonic"
-      ],
-      "impact_assessment": "该技术虽非汽车直接相关，但图像稳定技术已应用于车载摄像头、自动驾驶感知系统，对提升成像质量有间接影响。",
-      "research_value": "对汽车材料研究员参考价值有限，但可关注微型传感器封装材料、光学组件材料的发展趋势。",
-      "industrial_maturity": "production",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": true,
-      "one_sentence": "松下PV-460摄像机光学图像稳定技术获IEEE里程碑认证，该技术已成为现代成像设备标配。",
-      "why_it_matters": "图像稳定技术已渗透至车载摄像头和自动驾驶感知系统，但其材料需求（如微型传感器封装、光学材料）并非当前汽车材料研发重点。",
-      "technology_driver": "自动驾驶",
-      "material_relevance": "光学材料、传感器封装材料",
-      "material_opportunity": "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "信息不足",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "图像稳定技术成熟，但未释放新的材料需求信号。",
-      "future_signal_score": 20,
-      "material_opportunity_score": 21,
-      "material_validation_score": 21,
-      "analysis_status": "success",
-      "rule_score": 50,
-      "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=4 (battery); companies=5 (Panasonic); industrial=6 (patent, standard); future=10 (innovation, research); current_month=5",
-      "stage": "Supplier Research",
-      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：company。",
-      "canonical_url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
-      "normalized_title": "panasonic s pv 460 camcorder stabilized shaky videos",
-      "event_id": "0b3f0f0bcfd74ce4",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 45,
+      "final_score": 44,
       "bookshelf_category": "Functional Materials",
       "related_sources": [
         {
           "source": "IEEE Spectrum",
-          "url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
-          "published_date": "2026-07-14"
+          "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+          "published_date": "2026-07-18"
         }
       ],
       "source_urls": [
-        "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone"
+        "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly"
       ],
       "source_names": [
         "IEEE Spectrum"
       ],
-      "selected_at": "2026-07-15T12:02:45+08:00"
+      "selected_at": "2026-07-20T12:40:21+08:00"
     },
     {
-      "title": "专利铸盾护创新 自立自强启新程（知识产权报） 2026-07-15",
-      "source": "CNIPA",
-      "published_date": "2026-07-15",
-      "url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
+      "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+      "source": "arXiv",
+      "published_date": "2026-07-20",
+      "url": "https://arxiv.org/abs/2607.16187",
       "category": "未来趋势观察",
       "subcategory": "",
-      "summary": "国家知识产权局发布文章，强调专利在保护创新、推动自立自强中的重要作用。文章可能涉及知识产权政策、专利战略等宏观内容，未提及具体技术或材料细节。",
+      "summary": "Handroid是一款桌面级双形态机器人，可在灵巧手和人形机器人之间重构。其27自由度机电本体既可配置为仿人手（20自由度），也可重组为带头部、手臂和腿的人形机器人（12自由度下肢）。平台支持遥操作、抓取、操作、行走及长时任务（重构、行走、对接、抓取）。论文验证了形态重构机器人的可行性。",
       "technical_points": [
-        "无具体技术要点"
+        "27自由度可重构机电本体，同时实现灵巧手和人形机器人两种形态",
+        "灵巧手形态20自由度，仿人运动学结构",
+        "人形形态12自由度下肢，支持行走和全身运动",
+        "统一控制与学习框架，支持遥操作、强化学习、关键帧部署",
+        "长时任务验证：形态重构、行走、对接、抓取"
       ],
       "materials_involved": [
-        "无具体材料信息"
+        "轻量化材料",
+        "高强结构材料",
+        "电机与传动材料",
+        "传感器材料"
       ],
       "companies_or_institutions": [
-        "国家知识产权局"
+        "未知（学术论文）"
       ],
-      "impact_assessment": "对汽车产业链或研发方向无直接影响。",
-      "research_value": "对汽车材料研究员的参考价值较低，缺乏技术细节。",
-      "industrial_maturity": "policy",
+      "impact_assessment": "该技术展示了形态重构机器人的潜力，未来可能应用于汽车制造中的柔性装配、检测等场景，但当前为桌面级，距离汽车产线应用较远。",
+      "research_value": "对汽车材料研究员参考价值有限，主要关注机器人本体轻量化和关节材料，但未提及具体材料细节。",
+      "industrial_maturity": "lab",
       "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "国家知识产权局发布专利保护政策文章，无具体技术或材料信息。",
-      "why_it_matters": "该新闻为宏观政策宣传，未涉及具体技术或材料需求，对研发人员直接参考价值有限。",
-      "technology_driver": "其他",
-      "material_relevance": "材料相关性较弱，暂不优先。",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "无样件验证价值，无需供应商调研，不适合前瞻储备。",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "Handroid实现桌面级双形态机器人重构，验证了灵巧手与人形机器人的统一平台。",
+      "why_it_matters": "该技术展示了机器人形态重构的可行性，未来可能推动汽车制造中柔性机器人的材料需求，但当前处于实验室阶段，材料牵引不明确。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化复合材料、高强结构材料、电机永磁材料、柔性传感材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "信息不足，未提及具体材料或工艺，无样件验证价值。",
       "suggested_action": "暂不优先",
-      "trend_potential": "不确定",
-      "future_signal": "释放了国家加强知识产权保护的信号，但未指向具体产业技术趋势。",
-      "future_signal_score": 10,
-      "material_opportunity_score": 33,
-      "material_validation_score": 33,
+      "trend_potential": "低",
+      "future_signal": "形态重构机器人是前沿方向，但当前技术成熟度低，材料需求不明确。",
+      "future_signal_score": 30,
+      "material_opportunity_score": 10,
+      "material_validation_score": 10,
       "analysis_status": "success",
-      "rule_score": 35,
-      "source_score": 86,
-      "source_type": "government_policy",
-      "filter_reason": "source=22; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=3 (专利); future=5 (创新); current_month=5",
+      "rule_score": 40,
+      "source_score": 82,
+      "source_type": "journal_rss",
+      "filter_reason": "source=20; automotive=5 (mobility); materials=0 (none); companies=0 (none); industrial=0 (none); future=10 (humanoid robot, robotics); current_month=5",
       "stage": "Technology Watch",
       "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
-      "normalized_title": "专利铸盾护创新 自立自强启新程 知识产权报 2026 07 15",
-      "event_id": "3205dc2ad82b287a",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "canonical_url": "https://arxiv.org/abs/2607.16187",
+      "normalized_title": "handroid bridging dexterous hand humanoid",
+      "event_id": "7fb2a2a4d90e1a68",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
       "module_targets": [
         "today_key_insight",
         "bookshelf",
         "suggested_actions",
         "future_signals"
       ],
-      "final_score": 43,
-      "bookshelf_category": "Future Research Reserve",
-      "related_sources": [
-        {
-          "source": "CNIPA",
-          "url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
-          "published_date": "2026-07-15"
-        }
-      ],
-      "source_urls": [
-        "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html"
-      ],
-      "source_names": [
-        "CNIPA"
-      ],
-      "selected_at": "2026-07-15T12:02:45+08:00"
-    },
-    {
-      "title": "Real-Time Rulebook-Aware Nonlinear MPC for Autonomous Driving with Priority-Biased Tiered Slacks",
-      "source": "arXiv",
-      "published_date": "2026-07-14",
-      "url": "https://arxiv.org/abs/2607.10975",
-      "category": "政策法规与标准",
-      "subcategory": "",
-      "summary": "本文提出一种加权分层松弛非线性模型预测控制器（W-SQP），用于自动驾驶运动规划，在实时求解中平衡安全、法规、舒适和效率。控制器将九种驾驶规则族编译为四层共享松弛非线性规划，使用CasADi和IPOPT在线求解，以10Hz频率重规划，并记录每周期规则残差。在Waymax中基于150个Waymo场景评估，结果表明该控制器在安全与法规合规方面与专家回放无系统性差距，但存在局部退化。该工作为可审计、优先级偏置、随时可用的NMPC原型。",
-      "technical_points": [
-        "提出加权分层松弛NMPC（W-SQP），将九种驾驶规则族编译为四层共享松弛非线性规划",
-        "控制器以10Hz重规划，求解时间限制90ms，中位求解时间28ms，最大104ms",
-        "在Waymax中基于150个Waymo场景评估，与反应式和提案-选择基线对比",
-        "引入日志独立评估协议，分离安全与法规合规性",
-        "W-SQP在安全与法规规则上与专家回放无系统性差距，但在高难度场景存在局部退化"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [],
-      "impact_assessment": "该研究主要影响自动驾驶运动规划算法领域，对汽车产业链中材料需求无直接牵引。",
-      "research_value": "对汽车材料研究员参考价值较低，因不涉及材料或工艺。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "一种用于自动驾驶的实时规则感知非线性MPC控制器，不涉及材料技术。",
-      "why_it_matters": "该新闻不涉及材料技术，对材料研发人员无直接关注价值。",
-      "technology_driver": "自动驾驶",
-      "material_relevance": "传感材料、光学材料、封装材料、导热材料",
-      "material_opportunity": "潜在材料机会包括传感材料、光学材料、封装材料、导热材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "无材料验证机会。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "自动驾驶运动规划算法向可审计、优先级偏置方向发展，但未释放材料相关信号。",
-      "future_signal_score": 10,
-      "material_opportunity_score": 64,
-      "material_validation_score": 64,
-      "analysis_status": "success",
-      "rule_score": 36,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=0 (none); industrial=6 (regulation, prototype); future=0 (none); current_month=5",
-      "stage": "Strategic Reserve",
-      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：regulation。",
-      "canonical_url": "https://arxiv.org/abs/2607.10975",
-      "normalized_title": "real time rulebook aware nonlinear mpc autonomous driving priority biased tiered slacks",
-      "event_id": "6eca9f29d27e7d2a",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 39,
+      "final_score": 42,
       "bookshelf_category": "Future Research Reserve",
       "related_sources": [
         {
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2607.10975",
-          "published_date": "2026-07-14"
+          "url": "https://arxiv.org/abs/2607.16187",
+          "published_date": "2026-07-20"
         }
       ],
       "source_urls": [
-        "https://arxiv.org/abs/2607.10975"
+        "https://arxiv.org/abs/2607.16187"
       ],
       "source_names": [
         "arXiv"
       ],
-      "selected_at": "2026-07-15T12:02:45+08:00"
+      "selected_at": "2026-07-20T12:40:21+08:00"
     },
     {
-      "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
+      "title": "MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation",
       "source": "arXiv",
-      "published_date": "2026-07-14",
-      "url": "https://arxiv.org/abs/2607.09756",
+      "published_date": "2026-07-20",
+      "url": "https://arxiv.org/abs/2607.15589",
       "category": "未来趋势观察",
       "subcategory": "",
-      "summary": "本文提出以LLM为中心的无人机蜂群智能体AI架构（LAUS），整合感知、记忆、推理规划与行动，实现自适应蜂群行为。综述了机载与边缘计算、5G/6G连接、多模态智能及网络安全等使能技术，分析了优先级操纵攻击等威胁，并指出抗幻觉推理、SWaP约束下的机载LLM部署等开放挑战。",
+      "summary": "本文提出MemoGuard，一种轻量级自适应运行时系统，用于在通信受限的机器人导航中验证情景记忆的有效性，防止因记忆陷阱导致的不安全行为。在基于图的走廊巡检模拟器中，相比仅相似性复用，MemoGuard将电池安全违规减少76.6%，同时将回退推理调用减少21.4%。在NVIDIA Jetson AGX Xavier上，每次试验可避免3.67秒和36.97焦耳的回退推理开销。",
       "technical_points": [
-        "提出LLM-Centric Agentic AI for UAV Swarms (LAUS)架构，实现闭环认知与自适应蜂群行为。",
-        "集成感知、记忆、推理/规划、行动模块，形成智能体闭环。",
-        "依赖机载与边缘计算、5G/6G连接、多模态智能等使能技术。",
-        "面临优先级操纵攻击（PMA）等新型安全威胁。",
-        "开放挑战包括抗幻觉推理、SWaP约束下的机载LLM部署、标准化安全基准。"
+        "提出记忆陷阱概念：高相似度但执行无效的情景记忆",
+        "设计轻量级运行时验证，检查拓扑、资源和结果契约",
+        "在NVIDIA Jetson AGX Xavier上验证，降低电池安全违规和能耗"
       ],
       "materials_involved": [
-        "机载计算硬件材料（如散热材料、轻量化结构材料）",
-        "5G/6G通信模块材料（如高频基板、天线材料）",
-        "多模态传感器材料（如光学、红外、雷达传感材料）",
-        "网络安全硬件材料（如加密芯片、防篡改封装）"
+        "电池",
+        "轻量化材料"
       ],
-      "companies_or_institutions": [
-        "unknown"
-      ],
-      "impact_assessment": "该技术推动无人机蜂群向自主智能演进，可能带动机载计算、通信、传感等硬件升级，间接牵引相关材料需求，但当前处于学术研究阶段，对汽车产业链直接影响有限。",
-      "research_value": "为汽车领域（如车联网、自动驾驶）的智能体架构提供参考，但材料相关性较弱，暂不优先。",
+      "companies_or_institutions": [],
+      "impact_assessment": "该技术通过优化机器人决策的能耗和安全性，间接推动对轻量化、高能量密度电池材料的需求，但非直接材料驱动。",
+      "research_value": "对汽车材料研究员参考价值有限，主要涉及机器人软件算法，材料相关性较弱。",
       "industrial_maturity": "lab",
       "priority": "P3",
-      "confidence": 60,
-      "follow_up": true,
-      "one_sentence": "本文提出LLM驱动的无人机蜂群智能体架构，综述使能技术与安全挑战，但材料相关性较弱。",
-      "why_it_matters": "该研究展示了AI与无人机蜂群融合的前沿方向，但未涉及具体材料需求，对材料研发人员直接参考价值有限。",
-      "technology_driver": "机器人与具身智能、低空经济/eVTOL、AI硬件",
-      "material_relevance": "轻量化复合材料、热管理材料、高频通信材料、传感材料",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "信息不足，无明确样件验证或供应商调研机会。",
+      "confidence": 80,
+      "follow_up": false,
+      "one_sentence": "MemoGuard通过验证情景记忆减少机器人导航中的电池安全违规和能耗。",
+      "why_it_matters": "该技术展示了在资源受限机器人中通过软件优化提升电池安全性和能效的潜力，但未直接涉及新材料或工艺，材料相关性较弱。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "电池材料、轻量化材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "信息不足，无明确材料验证机会。",
       "suggested_action": "暂不优先",
       "trend_potential": "低",
-      "future_signal": "释放了AI与无人机蜂群深度融合的技术趋势信号，但材料需求不明确。",
-      "future_signal_score": 30,
+      "future_signal": "机器人领域对能效和安全性的软件优化趋势，但未释放明确的材料需求信号。",
+      "future_signal_score": 20,
       "material_opportunity_score": 10,
       "material_validation_score": 10,
       "analysis_status": "success",
       "rule_score": 38,
       "source_score": 82,
       "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=0 (none); industrial=3 (standard); future=5 (research); current_month=5",
-      "stage": "Strategic Reserve",
-      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：standard。",
-      "canonical_url": "https://arxiv.org/abs/2607.09756",
-      "normalized_title": "llm centric agentic ai uav swarms architecture enabling technologies open problems",
-      "event_id": "07142ce394407f66",
+      "filter_reason": "source=20; automotive=0 (none); materials=8 (battery, lightweight); companies=0 (none); industrial=0 (none); future=5 (NVIDIA); current_month=5",
+      "stage": "Validation",
+      "stage_reason": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：validation。",
+      "canonical_url": "https://arxiv.org/abs/2607.15589",
+      "normalized_title": "memoguard adaptive runtime guarding against memory traps communication limited robot navigation",
+      "event_id": "a93a39b83e945ef9",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -356,22 +509,22 @@
         "suggested_actions",
         "future_signals"
       ],
-      "final_score": 38,
-      "bookshelf_category": "Functional Materials",
+      "final_score": 41,
+      "bookshelf_category": "Energy Materials",
       "related_sources": [
         {
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2607.09756",
-          "published_date": "2026-07-14"
+          "url": "https://arxiv.org/abs/2607.15589",
+          "published_date": "2026-07-20"
         }
       ],
       "source_urls": [
-        "https://arxiv.org/abs/2607.09756"
+        "https://arxiv.org/abs/2607.15589"
       ],
       "source_names": [
         "arXiv"
       ],
-      "selected_at": "2026-07-15T12:02:45+08:00"
+      "selected_at": "2026-07-20T12:40:21+08:00"
     }
   ]
 }

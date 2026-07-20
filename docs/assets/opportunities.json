@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-20",
   "domains": [
     {
       "domain": "Metal Materials",
@@ -33,75 +33,109 @@
       "domain": "Energy Materials",
       "zh": "能源材料",
       "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
-      "count": 4,
+      "count": 6,
       "items": [
         {
-          "event_id": "80701af6a4565fec",
-          "canonical_url": "https://www.nature.com/articles/s41560-026-02119-1",
-          "normalized_title": "author correction thin membranes cu ion crosslinking high temperature polymer electrolyte membrane fuel cells",
-          "title": "Author Correction: Thin membranes with Cu-ion crosslinking for high temperature polymer electrolyte membrane fuel cells",
-          "source": "Nature Energy",
+          "event_id": "afea8ede2f738dd9",
+          "canonical_url": "https://arxiv.org/abs/2512.21109",
+          "normalized_title": "robust efficient mujoco based model predictive control via web affine spaces derivatives",
+          "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+          "source": "arXiv",
           "source_names": [
-            "Nature Energy"
+            "arXiv"
           ],
           "source_urls": [
-            "https://www.nature.com/articles/s41560-026-02119-1"
+            "https://arxiv.org/abs/2512.21109"
           ],
-          "published_date": "2026-07-14",
-          "url": "https://www.nature.com/articles/s41560-026-02119-1",
+          "published_date": "2026-07-20",
+          "url": "https://arxiv.org/abs/2512.21109",
           "link_label": "阅读论文",
-          "brief": "高温燃料电池是氢能汽车的关键技术方向，电解质膜材料的突破直接影响系统效率和成本，铜离子交联策略可能提供新的材料解决方案。"
+          "brief": "该技术提升机器人控制算法效率，可能间接影响汽车制造中的自动化系统，但材料相关性较弱。"
         },
         {
-          "event_id": "0b3f0f0bcfd74ce4",
-          "canonical_url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
-          "normalized_title": "panasonic s pv 460 camcorder stabilized shaky videos",
-          "title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
+          "event_id": "7fb2a2a4d90e1a68",
+          "canonical_url": "https://arxiv.org/abs/2607.16187",
+          "normalized_title": "handroid bridging dexterous hand humanoid",
+          "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+          "source": "arXiv",
+          "source_names": [
+            "arXiv"
+          ],
+          "source_urls": [
+            "https://arxiv.org/abs/2607.16187"
+          ],
+          "published_date": "2026-07-20",
+          "url": "https://arxiv.org/abs/2607.16187",
+          "link_label": "阅读论文",
+          "brief": "该技术展示了机器人形态重构的可行性，未来可能推动汽车制造中柔性机器人的材料需求，但当前处于实验室阶段，材料牵引不明确。"
+        },
+        {
+          "event_id": "a93a39b83e945ef9",
+          "canonical_url": "https://arxiv.org/abs/2607.15589",
+          "normalized_title": "memoguard adaptive runtime guarding against memory traps communication limited robot navigation",
+          "title": "MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation",
+          "source": "arXiv",
+          "source_names": [
+            "arXiv"
+          ],
+          "source_urls": [
+            "https://arxiv.org/abs/2607.15589"
+          ],
+          "published_date": "2026-07-20",
+          "url": "https://arxiv.org/abs/2607.15589",
+          "link_label": "阅读论文",
+          "brief": "该技术展示了在资源受限机器人中通过软件优化提升电池安全性和能效的潜力，但未直接涉及新材料或工艺，材料相关性较弱。"
+        },
+        {
+          "event_id": "e470c41305a4181b",
+          "canonical_url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+          "normalized_title": "this graduate student equips nasa s robots assembly skills",
+          "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
           "source": "IEEE Spectrum",
           "source_names": [
             "IEEE Spectrum"
           ],
           "source_urls": [
-            "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone"
+            "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly"
           ],
-          "published_date": "2026-07-14",
-          "url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",
+          "published_date": "2026-07-18",
+          "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
           "link_label": "阅读论文",
-          "brief": "图像稳定技术已渗透至车载摄像头和自动驾驶感知系统，但其材料需求（如微型传感器封装、光学材料）并非当前汽车材料研发重点。"
+          "brief": "该技术展示了力控装配在极端环境下的可行性，可能影响未来汽车制造中精密装配工艺的演进，但当前与材料需求直接关联弱。"
         },
         {
-          "event_id": "6eca9f29d27e7d2a",
-          "canonical_url": "https://arxiv.org/abs/2607.10975",
-          "normalized_title": "real time rulebook aware nonlinear mpc autonomous driving priority biased tiered slacks",
-          "title": "Real-Time Rulebook-Aware Nonlinear MPC for Autonomous Driving with Priority-Biased Tiered Slacks",
-          "source": "arXiv",
+          "event_id": "6efb41c12d7970c4",
+          "canonical_url": "https://www.nature.com/articles/s41560-026-02092-9",
+          "normalized_title": "challenges trends automotive battery recycling",
+          "title": "Challenges and trends in automotive battery recycling",
+          "source": "Nature Energy",
           "source_names": [
-            "arXiv"
+            "Nature Energy"
           ],
           "source_urls": [
-            "https://arxiv.org/abs/2607.10975"
+            "https://www.nature.com/articles/s41560-026-02092-9"
           ],
-          "published_date": "2026-07-14",
-          "url": "https://arxiv.org/abs/2607.10975",
+          "published_date": "2026-07-17",
+          "url": "https://www.nature.com/articles/s41560-026-02092-9",
           "link_label": "阅读论文",
-          "brief": "该新闻不涉及材料技术，对材料研发人员无直接关注价值。"
+          "brief": "随着电动汽车保有量增长，电池回收成为产业链闭环的关键环节，该综述为材料研发人员提供了回收视角的材料设计指导，有助于前瞻性布局易回收材料。"
         },
         {
-          "event_id": "07142ce394407f66",
-          "canonical_url": "https://arxiv.org/abs/2607.09756",
-          "normalized_title": "llm centric agentic ai uav swarms architecture enabling technologies open problems",
-          "title": "LLM-Centric Agentic AI for UAV Swarms: Architecture, Enabling Technologies, and Open Problems",
-          "source": "arXiv",
+          "event_id": "6389ddbf102b62d6",
+          "canonical_url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+          "normalized_title": "mercedes confirms next generation gla rastatt plant",
+          "title": "Mercedes confirms next-generation GLA for Rastatt plant",
+          "source": "Electrive",
           "source_names": [
-            "arXiv"
+            "Electrive"
           ],
           "source_urls": [
-            "https://arxiv.org/abs/2607.09756"
+            "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant"
           ],
-          "published_date": "2026-07-14",
-          "url": "https://arxiv.org/abs/2607.09756",
-          "link_label": "阅读论文",
-          "brief": "该研究展示了AI与无人机蜂群融合的前沿方向，但未涉及具体材料需求，对材料研发人员直接参考价值有限。"
+          "published_date": "2026-07-17",
+          "url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+          "link_label": "阅读原文",
+          "brief": "该新闻显示奔驰在紧凑型SUV领域推进电动化，可能带动相关材料需求，但无具体技术细节，材料机会有限。"
         }
       ]
     },
@@ -126,21 +160,21 @@
       "count": 1,
       "items": [
         {
-          "event_id": "3205dc2ad82b287a",
-          "canonical_url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
-          "normalized_title": "专利铸盾护创新 自立自强启新程 知识产权报 2026 07 15",
-          "title": "专利铸盾护创新 自立自强启新程（知识产权报） 2026-07-15",
-          "source": "CNIPA",
+          "event_id": "c098e46a8e17426d",
+          "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+          "normalized_title": "bmw launches vehicle configurator dialogue based plugin openai s chatgpt fri jul 17 10 00 00 cest 2026 press release new bmw plugin chatgpt first time enables ai assisted dialogue based configuration current bmw models custom vehicle configuration via text or voice input smartphones desktop computers development sees bmw add new digital channel through which people can engage brand innovation corporate",
+          "title": "BMW launches vehicle configurator as a dialogue-based plugin in OpenAI’s ChatGPT. Fri Jul 17 10:00:00 CEST 2026 Press Release The new BMW plugin in ChatGPT for the first time enables AI-assisted, dialogue-based configuration of current BMW models. Custom vehicle configuration via text or voice input on smartphones and desktop computers. The development sees BMW add a new digital channel through which people can engage with the brand. Innovation · Corporate",
+          "source": "BMW",
           "source_names": [
-            "CNIPA"
+            "BMW"
           ],
           "source_urls": [
-            "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html"
+            "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo"
           ],
-          "published_date": "2026-07-15",
-          "url": "https://www.cnipa.gov.cn/art/2026/7/15/art_55_207188.html",
-          "link_label": "查看专利",
-          "brief": "该新闻为宏观政策宣传，未涉及具体技术或材料需求，对研发人员直接参考价值有限。"
+          "published_date": "2026-07-17",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+          "link_label": "官方发布",
+          "brief": "该新闻主要展示宝马在数字化客户交互方面的创新，不涉及材料技术演进或产业变化，因此对材料研发人员关注度低。"
         }
       ]
     }

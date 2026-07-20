@@ -1,6 +1,248 @@
 {
   "events": [
     {
+      "event_id": "e470c41305a4181b",
+      "canonical_title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
+      "canonical_url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+      "normalized_title": "this graduate student equips nasa s robots assembly skills",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "source_urls": [
+        "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "3D 打印",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "6efb41c12d7970c4",
+      "canonical_title": "Challenges and trends in automotive battery recycling",
+      "canonical_url": "https://www.nature.com/articles/s41560-026-02092-9",
+      "normalized_title": "challenges trends automotive battery recycling",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "source_urls": [
+        "https://www.nature.com/articles/s41560-026-02092-9"
+      ],
+      "source_names": [
+        "Nature Energy"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "回收",
+        "储能"
+      ],
+      "material_opportunities": [
+        "可能值得关注的材料或工艺：直接回收工艺中的正极材料修复技术、固态电解质分离技术、硅负极回收工艺。这些技术尚处于实验室或中试阶段，但具有产业化潜力。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "c098e46a8e17426d",
+      "canonical_title": "BMW launches vehicle configurator as a dialogue-based plugin in OpenAI’s ChatGPT. Fri Jul 17 10:00:00 CEST 2026 Press Release The new BMW plugin in ChatGPT for the first time enables AI-assisted, dialogue-based configuration of current BMW models. Custom vehicle configuration via text or voice input on smartphones and desktop computers. The development sees BMW add a new digital channel through which people can engage with the brand. Innovation · Corporate",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+      "normalized_title": "bmw launches vehicle configurator dialogue based plugin openai s chatgpt fri jul 17 10 00 00 cest 2026 press release new bmw plugin chatgpt first time enables ai assisted dialogue based configuration current bmw models custom vehicle configuration via text or voice input smartphones desktop computers development sees bmw add new digital channel through which people can engage brand innovation corporate",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "7fb2a2a4d90e1a68",
+      "canonical_title": "Handroid: Bridging Dexterous Hand and Humanoid",
+      "canonical_url": "https://arxiv.org/abs/2607.16187",
+      "normalized_title": "handroid bridging dexterous hand humanoid",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.16187"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "6389ddbf102b62d6",
+      "canonical_title": "Mercedes confirms next-generation GLA for Rastatt plant",
+      "canonical_url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+      "normalized_title": "mercedes confirms next generation gla rastatt plant",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "a93a39b83e945ef9",
+      "canonical_title": "MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation",
+      "canonical_url": "https://arxiv.org/abs/2607.15589",
+      "normalized_title": "memoguard adaptive runtime guarding against memory traps communication limited robot navigation",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.15589"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "afea8ede2f738dd9",
+      "canonical_title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+      "canonical_url": "https://arxiv.org/abs/2512.21109",
+      "normalized_title": "robust efficient mujoco based model predictive control via web affine spaces derivatives",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "source_urls": [
+        "https://arxiv.org/abs/2512.21109"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "5bdfb02b2769fe77",
+      "canonical_title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
+      "canonical_url": "https://arxiv.org/abs/2607.12659",
+      "normalized_title": "jetson pi towards onboard real time robot control via foresight aligned asynchronous inference",
+      "first_seen": "2026-07-20",
+      "last_seen": "2026-07-20",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.12659"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": false
+    },
+    {
       "event_id": "0b3f0f0bcfd74ce4",
       "canonical_title": "Panasonic’s PV-460 Camcorder Stabilized Shaky Videos",
       "canonical_url": "https://spectrum.ieee.org/panasonic-camcorder-ieee-milstone",

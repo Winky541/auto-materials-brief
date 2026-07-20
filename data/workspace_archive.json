@@ -1,6 +1,357 @@
 {
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-20",
   "items": [
+    {
+      "date": "2026-07-20",
+      "window": [
+        {
+          "category": "Energy Revolution",
+          "count": 1,
+          "avg_future_signal_score": 75,
+          "summary": "随着电动汽车保有量增长，电池回收成为产业链闭环的关键环节，该综述为材料研发人员提供了回收视角的材料设计指导，有助于前瞻性布局易回收材料。",
+          "sources": [
+            {
+              "title": "Challenges and trends in automotive battery recycling",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02092-9",
+              "published_date": "2026-07-17",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "OEM Strategy Transition",
+          "count": 2,
+          "avg_future_signal_score": 45,
+          "summary": "该新闻显示奔驰在紧凑型SUV领域推进电动化，可能带动相关材料需求，但无具体技术细节，材料机会有限。",
+          "sources": [
+            {
+              "title": "Mercedes confirms next-generation GLA for Rastatt plant",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+              "published_date": "2026-07-17",
+              "link_label": "阅读原文"
+            },
+            {
+              "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.16187",
+              "published_date": "2026-07-20",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Space Industry",
+          "count": 2,
+          "avg_future_signal_score": 41,
+          "summary": "该技术提升机器人控制算法效率，可能间接影响汽车制造中的自动化系统，但材料相关性较弱。",
+          "sources": [
+            {
+              "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2512.21109",
+              "published_date": "2026-07-20",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+              "published_date": "2026-07-18",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 4,
+          "avg_future_signal_score": 33,
+          "summary": "该技术提升机器人控制算法效率，可能间接影响汽车制造中的自动化系统，但材料相关性较弱。",
+          "sources": [
+            {
+              "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2512.21109",
+              "published_date": "2026-07-20",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.16187",
+              "published_date": "2026-07-20",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+              "published_date": "2026-07-18",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 1,
+          "avg_future_signal_score": 20,
+          "summary": "该技术展示了力控装配在极端环境下的可行性，可能影响未来汽车制造中精密装配工艺的演进，但当前与材料需求直接关联弱。",
+          "sources": [
+            {
+              "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+              "published_date": "2026-07-18",
+              "link_label": "阅读论文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在汽车新材料、未来趋势观察、企业技术动态，技术牵引以机器人与具身智能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "随着电动汽车保有量增长，电池回收成为产业链闭环的关键环节，该综述为材料研发人员提供了回收视角的材料设计指导，有助于前瞻性布局易回收材料。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注电池回收材料、固态电解质、高镍正极材料、硅负极材料、锂、钴、镍等关键金属、电池材料（锂、镍、钴、锰等）、轻量化材料（铝合金、高强钢、复合材料）、电驱动系统材料（铜、永磁体、绝缘材料）。可能值得关注的材料或工艺：直接回收工艺中的正极材料修复技术、固态电解质分离技术、硅负极回收工艺。这些技术尚处于实验室或中试阶段，但具有产业化潜力。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "BMW launches vehicle configurator as a dialogue-based plugin in OpenAI’s ChatGPT. Fri Jul 17 10:00:00 CEST 2026 Press Release The new BMW plugin in ChatGPT for the first time enables AI-assisted, dialogue-based configuration of current BMW models. Custom vehicle configuration via text or voice input on smartphones and desktop computers. The development sees BMW add a new digital channel through which people can engage with the brand. Innovation · Corporate",
+          "source": "BMW",
+          "why_read": "该新闻主要展示宝马在数字化客户交互方面的创新，不涉及材料技术演进或产业变化，因此对材料研发人员关注度低。",
+          "focus": "关注该趋势是否继续影响研发组织、供应链和材料需求。",
+          "reading_time": "约 8 分钟",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo"
+        },
+        {
+          "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+          "source": "arXiv",
+          "why_read": "该技术提升机器人控制算法效率，可能间接影响汽车制造中的自动化系统，但材料相关性较弱。",
+          "focus": "关注 机器人与具身智能 是否继续形成产业信号；潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+          "reading_time": "约 8 分钟",
+          "url": "https://arxiv.org/abs/2512.21109"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 6,
+          "items": [
+            {
+              "event_id": "afea8ede2f738dd9",
+              "canonical_url": "https://arxiv.org/abs/2512.21109",
+              "normalized_title": "robust efficient mujoco based model predictive control via web affine spaces derivatives",
+              "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2512.21109"
+              ],
+              "published_date": "2026-07-20",
+              "url": "https://arxiv.org/abs/2512.21109",
+              "link_label": "阅读论文",
+              "brief": "该技术提升机器人控制算法效率，可能间接影响汽车制造中的自动化系统，但材料相关性较弱。"
+            },
+            {
+              "event_id": "7fb2a2a4d90e1a68",
+              "canonical_url": "https://arxiv.org/abs/2607.16187",
+              "normalized_title": "handroid bridging dexterous hand humanoid",
+              "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.16187"
+              ],
+              "published_date": "2026-07-20",
+              "url": "https://arxiv.org/abs/2607.16187",
+              "link_label": "阅读论文",
+              "brief": "该技术展示了机器人形态重构的可行性，未来可能推动汽车制造中柔性机器人的材料需求，但当前处于实验室阶段，材料牵引不明确。"
+            },
+            {
+              "event_id": "a93a39b83e945ef9",
+              "canonical_url": "https://arxiv.org/abs/2607.15589",
+              "normalized_title": "memoguard adaptive runtime guarding against memory traps communication limited robot navigation",
+              "title": "MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.15589"
+              ],
+              "published_date": "2026-07-20",
+              "url": "https://arxiv.org/abs/2607.15589",
+              "link_label": "阅读论文",
+              "brief": "该技术展示了在资源受限机器人中通过软件优化提升电池安全性和能效的潜力，但未直接涉及新材料或工艺，材料相关性较弱。"
+            },
+            {
+              "event_id": "e470c41305a4181b",
+              "canonical_url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+              "normalized_title": "this graduate student equips nasa s robots assembly skills",
+              "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly"
+              ],
+              "published_date": "2026-07-18",
+              "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+              "link_label": "阅读论文",
+              "brief": "该技术展示了力控装配在极端环境下的可行性，可能影响未来汽车制造中精密装配工艺的演进，但当前与材料需求直接关联弱。"
+            },
+            {
+              "event_id": "6efb41c12d7970c4",
+              "canonical_url": "https://www.nature.com/articles/s41560-026-02092-9",
+              "normalized_title": "challenges trends automotive battery recycling",
+              "title": "Challenges and trends in automotive battery recycling",
+              "source": "Nature Energy",
+              "source_names": [
+                "Nature Energy"
+              ],
+              "source_urls": [
+                "https://www.nature.com/articles/s41560-026-02092-9"
+              ],
+              "published_date": "2026-07-17",
+              "url": "https://www.nature.com/articles/s41560-026-02092-9",
+              "link_label": "阅读论文",
+              "brief": "随着电动汽车保有量增长，电池回收成为产业链闭环的关键环节，该综述为材料研发人员提供了回收视角的材料设计指导，有助于前瞻性布局易回收材料。"
+            },
+            {
+              "event_id": "6389ddbf102b62d6",
+              "canonical_url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+              "normalized_title": "mercedes confirms next generation gla rastatt plant",
+              "title": "Mercedes confirms next-generation GLA for Rastatt plant",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant"
+              ],
+              "published_date": "2026-07-17",
+              "url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+              "link_label": "阅读原文",
+              "brief": "该新闻显示奔驰在紧凑型SUV领域推进电动化，可能带动相关材料需求，但无具体技术细节，材料机会有限。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "c098e46a8e17426d",
+              "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+              "normalized_title": "bmw launches vehicle configurator dialogue based plugin openai s chatgpt fri jul 17 10 00 00 cest 2026 press release new bmw plugin chatgpt first time enables ai assisted dialogue based configuration current bmw models custom vehicle configuration via text or voice input smartphones desktop computers development sees bmw add new digital channel through which people can engage brand innovation corporate",
+              "title": "BMW launches vehicle configurator as a dialogue-based plugin in OpenAI’s ChatGPT. Fri Jul 17 10:00:00 CEST 2026 Press Release The new BMW plugin in ChatGPT for the first time enables AI-assisted, dialogue-based configuration of current BMW models. Custom vehicle configuration via text or voice input on smartphones and desktop computers. The development sees BMW add a new digital channel through which people can engage with the brand. Innovation · Corporate",
+              "source": "BMW",
+              "source_names": [
+                "BMW"
+              ],
+              "source_urls": [
+                "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo"
+              ],
+              "published_date": "2026-07-17",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+              "link_label": "官方发布",
+              "brief": "该新闻主要展示宝马在数字化客户交互方面的创新，不涉及材料技术演进或产业变化，因此对材料研发人员关注度低。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Future Research Reserve中已有1个机会进入 Technology Watch，其中“Emerging Material Opportunity”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "BMW launches vehicle configurator as a dialogue-based plugin in OpenAI’s ChatGPT. Fri Jul 17 10:00:00 CEST 2026 Press Release The new BMW plugin in ChatGPT for the first time enables AI-assisted, dialogue-based configuration of current BMW models. Custom vehicle configuration via text or voice input on smartphones and desktop computers. The development sees BMW add a new digital channel through which people can engage with the brand. Innovation · Corporate",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "Energy Materials中已有1个机会进入 Validation，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：reliability。",
+          "suggested_move": "进入样件、可靠性、场景或客户验证准备。",
+          "evidence": [
+            {
+              "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2512.21109",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.16187",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有1个机会进入 Strategic Reserve，其中“Solid-State Electrolytes”最值得先看。",
+          "why_now": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "Challenges and trends in automotive battery recycling",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02092-9",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Mercedes confirms next-generation GLA for Rastatt plant",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-15",
       "window": [

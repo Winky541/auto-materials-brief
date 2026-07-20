@@ -468,6 +468,55 @@
       "published_date": "2026-07-14",
       "selected_date": "2026-07-15",
       "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41560-026-02092-9",
+      "title": "Challenges and trends in automotive battery recycling",
+      "published_date": "2026-07-17",
+      "selected_date": "2026-07-20",
+      "category": "学术论文"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+      "title": "Mercedes confirms next-generation GLA for Rastatt plant",
+      "published_date": "2026-07-17",
+      "selected_date": "2026-07-20",
+      "category": "企业技术动态"
+    },
+    {
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+      "title": "BMW launches vehicle configurator as a dialogue-based plugin in OpenAI’s ChatGPT. Fri Jul 17 10:00:00 CEST 2026 Press Release The new BMW plugin in ChatGPT for the first time enables AI-assisted, dialogue-based configuration of current BMW models. Custom vehicle configuration via text or voice input on smartphones and desktop computers. The development sees BMW add a new digital channel through which people can engage with the brand. Innovation · Corporate",
+      "published_date": "2026-07-17",
+      "selected_date": "2026-07-20",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2512.21109",
+      "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
+      "published_date": "2026-07-20",
+      "selected_date": "2026-07-20",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+      "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
+      "published_date": "2026-07-18",
+      "selected_date": "2026-07-20",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.16187",
+      "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+      "published_date": "2026-07-20",
+      "selected_date": "2026-07-20",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.15589",
+      "title": "MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation",
+      "published_date": "2026-07-20",
+      "selected_date": "2026-07-20",
+      "category": "未来趋势观察"
     }
   ]
 }
