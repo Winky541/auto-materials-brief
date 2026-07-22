@@ -1,27 +1,11 @@
 {
-  "updated_at": "2026-07-20",
+  "updated_at": "2026-07-22",
   "items": [
     {
-      "title": "Challenges and trends in automotive battery recycling",
-      "url": "https://www.nature.com/articles/s41560-026-02092-9",
-      "source": "Nature Energy",
-      "published_date": "2026-07-17",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Mercedes confirms next-generation GLA for Rastatt plant",
-      "url": "https://www.electrive.com/2026/07/17/mercedes-confirms-next-generation-gla-for-rastatt-plant",
+      "title": "Cylib acquires Bavarian EV battery recycling facility",
+      "url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
       "source": "Electrive",
-      "published_date": "2026-07-17",
+      "published_date": "2026-07-21",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -34,10 +18,26 @@
       ]
     },
     {
-      "title": "BMW launches vehicle configurator as a dialogue-based plugin in OpenAI’s ChatGPT. Fri Jul 17 10:00:00 CEST 2026 Press Release The new BMW plugin in ChatGPT for the first time enables AI-assisted, dialogue-based configuration of current BMW models. Custom vehicle configuration via text or voice input on smartphones and desktop computers. The development sees BMW add a new digital channel through which people can engage with the brand. Innovation · Corporate",
-      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459420EN/bmw-launches-vehicle-configurator-as-a-dialogue-based-plugin-in-openai’s-chatgpt?showMedia=photo",
+      "title": "Moto expands UK fast-charging at Exeter Hub",
+      "url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
+      "source": "Electrive",
+      "published_date": "2026-07-21",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
       "source": "BMW",
-      "published_date": "2026-07-17",
+      "published_date": "2026-07-21",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -50,10 +50,26 @@
       ]
     },
     {
-      "title": "Robust and Efficient MuJoCo-based Model Predictive Control via Web of Affine Spaces Derivatives",
-      "url": "https://arxiv.org/abs/2512.21109",
+      "title": "Built in Fort Worth: Wistron Opens Advanced Manufacturing Plant to Produce NVIDIA AI Systems",
+      "url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
+      "source": "NVIDIA Blog",
+      "published_date": "2026-07-22",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
+      "url": "https://arxiv.org/abs/2607.18950",
       "source": "arXiv",
-      "published_date": "2026-07-20",
+      "published_date": "2026-07-22",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -66,13 +82,13 @@
       ]
     },
     {
-      "title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
-      "url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",
+      "title": "IEEE Program Helps Girls In India See a Future In STEM",
+      "url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
       "source": "IEEE Spectrum",
-      "published_date": "2026-07-18",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
+      "published_date": "2026-07-21",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",
@@ -82,8 +98,8 @@
       ]
     },
     {
-      "title": "Handroid: Bridging Dexterous Hand and Humanoid",
-      "url": "https://arxiv.org/abs/2607.16187",
+      "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
+      "url": "https://arxiv.org/abs/2607.12659",
       "source": "arXiv",
       "published_date": "2026-07-20",
       "flow_type": "future_intelligence",
@@ -98,13 +114,13 @@
       ]
     },
     {
-      "title": "MemoGuard: An Adaptive Runtime for Guarding Against Memory Traps in Communication-Limited Robot Navigation",
-      "url": "https://arxiv.org/abs/2607.15589",
-      "source": "arXiv",
-      "published_date": "2026-07-20",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
+      "title": "Holiday travel with BMW and MINI electric vehicles: Arrive with even greater peace of mind. Tue Jul 21 08:30:00 CEST 2026 Press Release - Full price transparency, total control over costs and an expanded BMW Group Charging network make charging on the go even easier – especially when travelling long distances. - New features in the vehicle app and the vehicle itself provide clarity on the actual charging costs incurred. - The BMW Group Charging network already comprises 1.1 million charging points in Europe alone. J05 · U25 · i20 · U11 · U10 · NA5 · G65 · 3 Series · iX · Charging Infrastructure · Technology · BMW i · Aceman · iX3 · i5 · Cooper · i7",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
+      "source": "BMW",
+      "published_date": "2026-07-21",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",

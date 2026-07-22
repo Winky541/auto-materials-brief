@@ -1,6 +1,249 @@
 {
   "events": [
     {
+      "event_id": "319e65750e73751c",
+      "canonical_title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
+      "normalized_title": "bmw group plant landshut develops software humanoid robotics component production tue jul 21 09 00 00 cest 2026 press release focus software stack development linking data robotics applications component production project supported by partners from academia industry sites technology landshut production recycling",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Sustainable Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "回收",
+        "智能制造"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "4f4e95ea53981f81",
+      "canonical_title": "IEEE Program Helps Girls In India See a Future In STEM",
+      "canonical_url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
+      "normalized_title": "ieee program helps girls india see future stem",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-program-girls-india-stem"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "943ae396bfb96472",
+      "canonical_title": "Moto expands UK fast-charging at Exeter Hub",
+      "canonical_url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
+      "normalized_title": "moto expands uk fast charging at exeter hub",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "快充技术",
+        "储能"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "e128ed69aae4d2a5",
+      "canonical_title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
+      "canonical_url": "https://arxiv.org/abs/2607.18950",
+      "normalized_title": "design stability analysis underactuated hand passively rotating fingers",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.18950"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "368190b99c8e0339",
+      "canonical_title": "Holiday travel with BMW and MINI electric vehicles: Arrive with even greater peace of mind. Tue Jul 21 08:30:00 CEST 2026 Press Release - Full price transparency, total control over costs and an expanded BMW Group Charging network make charging on the go even easier – especially when travelling long distances. - New features in the vehicle app and the vehicle itself provide clarity on the actual charging costs incurred. - The BMW Group Charging network already comprises 1.1 million charging points in Europe alone. J05 · U25 · i20 · U11 · U10 · NA5 · G65 · 3 Series · iX · Charging Infrastructure · Technology · BMW i · Aceman · iX3 · i5 · Cooper · i7",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
+      "normalized_title": "holiday travel bmw mini electric vehicles arrive even greater peace mind tue jul 21 08 30 00 cest 2026 press release full price transparency total control over costs expanded bmw group charging network make charging go even easier especially when travelling long distances new features vehicle app vehicle itself provide clarity actual charging costs incurred bmw group charging network already comprises 1 1 million charging points europe alone j05 u25 i20 u11 u10 na5 g65 3 series ix charging infrastructure technology bmw i aceman ix3 i5 cooper i7",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "9bb0c3968afe0832",
+      "canonical_title": "Why AI Needs a “Genie Coefficient”",
+      "canonical_url": "https://spectrum.ieee.org/ai-agent-benchmark",
+      "normalized_title": "why ai needs genie coefficient",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "source_urls": [
+        "https://spectrum.ieee.org/ai-agent-benchmark"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "91a07cbb79d0f25f",
+      "canonical_title": "Cylib acquires Bavarian EV battery recycling facility",
+      "canonical_url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
+      "normalized_title": "cylib acquires bavarian ev battery recycling facility",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "回收",
+        "储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "cfa6a4794601d0fa",
+      "canonical_title": "Built in Fort Worth: Wistron Opens Advanced Manufacturing Plant to Produce NVIDIA AI Systems",
+      "canonical_url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
+      "normalized_title": "built fort worth wistron opens advanced manufacturing plant produce nvidia ai systems",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/wistron-manufacturing-texas"
+      ],
+      "source_names": [
+        "NVIDIA Blog"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Sustainable Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "AI硬件"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "e470c41305a4181b",
       "canonical_title": "This Graduate Student Equips NASA’s Robots With Assembly Skills",
       "canonical_url": "https://spectrum.ieee.org/graduate-student-nasas-robots-assembly",

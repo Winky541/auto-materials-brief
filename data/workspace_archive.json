@@ -1,6 +1,358 @@
 {
-  "updated_at": "2026-07-20",
+  "updated_at": "2026-07-22",
   "items": [
+    {
+      "date": "2026-07-22",
+      "window": [
+        {
+          "category": "Energy Revolution",
+          "count": 2,
+          "avg_future_signal_score": 50,
+          "summary": "电池回收产能扩张是产业链闭环的关键环节，可能推动回收材料（如再生锂、钴、镍）在电池中的使用比例提升，进而影响正极材料供应链。",
+          "sources": [
+            {
+              "title": "Cylib acquires Bavarian EV battery recycling facility",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
+              "published_date": "2026-07-21",
+              "link_label": "阅读原文"
+            },
+            {
+              "title": "Moto expands UK fast-charging at Exeter Hub",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
+              "published_date": "2026-07-21",
+              "link_label": "阅读原文"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 3,
+          "avg_future_signal_score": 30,
+          "summary": "该新闻主要涉及智能制造自动化，未直接牵引材料需求，对材料研发人员参考价值有限。",
+          "sources": [
+            {
+              "title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
+              "published_date": "2026-07-21",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "Built in Fort Worth: Wistron Opens Advanced Manufacturing Plant to Produce NVIDIA AI Systems",
+              "source": "NVIDIA Blog",
+              "url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
+              "published_date": "2026-07-22",
+              "link_label": "阅读原文"
+            },
+            {
+              "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.18950",
+              "published_date": "2026-07-22",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Space Industry",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该技术展示了机器人手爪的简化设计趋势，可能降低自动化成本，但未直接牵引材料需求，研发人员可关注其轻量化潜力。",
+          "sources": [
+            {
+              "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.18950",
+              "published_date": "2026-07-22",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "AI Agent & AI Hardware",
+          "count": 2,
+          "avg_future_signal_score": 25,
+          "summary": "该新闻表明AI基础设施制造向美国本土转移，可能影响全球供应链布局，但对汽车材料研发的直接牵引较弱。",
+          "sources": [
+            {
+              "title": "Built in Fort Worth: Wistron Opens Advanced Manufacturing Plant to Produce NVIDIA AI Systems",
+              "source": "NVIDIA Blog",
+              "url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
+              "published_date": "2026-07-22",
+              "link_label": "阅读原文"
+            },
+            {
+              "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.12659",
+              "published_date": "2026-07-20",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 4,
+          "avg_future_signal_score": 22,
+          "summary": "该新闻主要涉及智能制造自动化，未直接牵引材料需求，对材料研发人员参考价值有限。",
+          "sources": [
+            {
+              "title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
+              "published_date": "2026-07-21",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.18950",
+              "published_date": "2026-07-22",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.12659",
+              "published_date": "2026-07-20",
+              "link_label": "阅读论文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在汽车新材料、未来趋势观察、企业技术动态，技术牵引以机器人与具身智能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "电池回收产能扩张是产业链闭环的关键环节，可能推动回收材料（如再生锂、钴、镍）在电池中的使用比例提升，进而影响正极材料供应链。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注黑粉、锂、钴、镍、锰、石墨、快充技术、PE。潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+        }
+      ],
+      "cat": [],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 6,
+          "items": [
+            {
+              "event_id": "e128ed69aae4d2a5",
+              "canonical_url": "https://arxiv.org/abs/2607.18950",
+              "normalized_title": "design stability analysis underactuated hand passively rotating fingers",
+              "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.18950"
+              ],
+              "published_date": "2026-07-22",
+              "url": "https://arxiv.org/abs/2607.18950",
+              "link_label": "阅读论文",
+              "brief": "该技术展示了机器人手爪的简化设计趋势，可能降低自动化成本，但未直接牵引材料需求，研发人员可关注其轻量化潜力。"
+            },
+            {
+              "event_id": "91a07cbb79d0f25f",
+              "canonical_url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
+              "normalized_title": "cylib acquires bavarian ev battery recycling facility",
+              "title": "Cylib acquires Bavarian EV battery recycling facility",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility"
+              ],
+              "published_date": "2026-07-21",
+              "url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
+              "link_label": "阅读原文",
+              "brief": "电池回收产能扩张是产业链闭环的关键环节，可能推动回收材料（如再生锂、钴、镍）在电池中的使用比例提升，进而影响正极材料供应链。"
+            },
+            {
+              "event_id": "943ae396bfb96472",
+              "canonical_url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
+              "normalized_title": "moto expands uk fast charging at exeter hub",
+              "title": "Moto expands UK fast-charging at Exeter Hub",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub"
+              ],
+              "published_date": "2026-07-21",
+              "url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
+              "link_label": "阅读原文",
+              "brief": "超快充基础设施的扩张将间接推动高功率充电相关材料（如耐高温、高导电材料）的需求，但新闻未提供具体材料信息。"
+            },
+            {
+              "event_id": "319e65750e73751c",
+              "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
+              "normalized_title": "bmw group plant landshut develops software humanoid robotics component production tue jul 21 09 00 00 cest 2026 press release focus software stack development linking data robotics applications component production project supported by partners from academia industry sites technology landshut production recycling",
+              "title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
+              "source": "BMW",
+              "source_names": [
+                "BMW"
+              ],
+              "source_urls": [
+                "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo"
+              ],
+              "published_date": "2026-07-21",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
+              "link_label": "官方发布",
+              "brief": "该新闻主要涉及智能制造自动化，未直接牵引材料需求，对材料研发人员参考价值有限。"
+            },
+            {
+              "event_id": "4f4e95ea53981f81",
+              "canonical_url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
+              "normalized_title": "ieee program helps girls india see future stem",
+              "title": "IEEE Program Helps Girls In India See a Future In STEM",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/ieee-program-girls-india-stem"
+              ],
+              "published_date": "2026-07-21",
+              "url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
+              "link_label": "阅读论文",
+              "brief": "该新闻与汽车材料研发无直接关联，不产生材料需求或技术演进信号。"
+            },
+            {
+              "event_id": "5bdfb02b2769fe77",
+              "canonical_url": "https://arxiv.org/abs/2607.12659",
+              "normalized_title": "jetson pi towards onboard real time robot control via foresight aligned asynchronous inference",
+              "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.12659"
+              ],
+              "published_date": "2026-07-20",
+              "url": "https://arxiv.org/abs/2607.12659",
+              "link_label": "阅读论文",
+              "brief": "该技术展示了边缘AI在机器人控制中的潜力，但未涉及材料创新，对材料研发的直接牵引较弱。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 2,
+          "items": [
+            {
+              "event_id": "cfa6a4794601d0fa",
+              "canonical_url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
+              "normalized_title": "built fort worth wistron opens advanced manufacturing plant produce nvidia ai systems",
+              "title": "Built in Fort Worth: Wistron Opens Advanced Manufacturing Plant to Produce NVIDIA AI Systems",
+              "source": "NVIDIA Blog",
+              "source_names": [
+                "NVIDIA Blog"
+              ],
+              "source_urls": [
+                "https://blogs.nvidia.com/blog/wistron-manufacturing-texas"
+              ],
+              "published_date": "2026-07-22",
+              "url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
+              "link_label": "阅读原文",
+              "brief": "该新闻表明AI基础设施制造向美国本土转移，可能影响全球供应链布局，但对汽车材料研发的直接牵引较弱。"
+            },
+            {
+              "event_id": "368190b99c8e0339",
+              "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
+              "normalized_title": "holiday travel bmw mini electric vehicles arrive even greater peace mind tue jul 21 08 30 00 cest 2026 press release full price transparency total control over costs expanded bmw group charging network make charging go even easier especially when travelling long distances new features vehicle app vehicle itself provide clarity actual charging costs incurred bmw group charging network already comprises 1 1 million charging points europe alone j05 u25 i20 u11 u10 na5 g65 3 series ix charging infrastructure technology bmw i aceman ix3 i5 cooper i7",
+              "title": "Holiday travel with BMW and MINI electric vehicles: Arrive with even greater peace of mind. Tue Jul 21 08:30:00 CEST 2026 Press Release - Full price transparency, total control over costs and an expanded BMW Group Charging network make charging on the go even easier – especially when travelling long distances. - New features in the vehicle app and the vehicle itself provide clarity on the actual charging costs incurred. - The BMW Group Charging network already comprises 1.1 million charging points in Europe alone. J05 · U25 · i20 · U11 · U10 · NA5 · G65 · 3 Series · iX · Charging Infrastructure · Technology · BMW i · Aceman · iX3 · i5 · Cooper · i7",
+              "source": "BMW",
+              "source_names": [
+                "BMW"
+              ],
+              "source_urls": [
+                "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo"
+              ],
+              "published_date": "2026-07-21",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
+              "link_label": "官方发布",
+              "brief": "这条新闻主要关于充电基础设施和用户体验，不涉及材料技术演进或产业变化，因此对材料研发人员关注度低。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Energy Materials、Future Research Reserve中已有3个机会进入 Technology Watch，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "Moto expands UK fast-charging at Exeter Hub",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.18950",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "Energy Materials中已有1个机会进入 Supplier Research，其中“Solid-State Electrolytes”最值得先看。",
+          "why_now": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：company。",
+          "suggested_move": "锁定潜在供应商、研究机构或初创公司，准备初步调研。",
+          "evidence": [
+            {
+              "title": "Cylib acquires Bavarian EV battery recycling facility",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        }
+      ]
+    },
     {
       "date": "2026-07-20",
       "window": [
