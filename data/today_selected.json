@@ -1,283 +1,135 @@
 {
-  "date": "2026-07-22",
-  "count": 8,
+  "date": "2026-07-27",
+  "count": 5,
   "items": [
     {
-      "title": "Cylib acquires Bavarian EV battery recycling facility",
-      "source": "Electrive",
-      "published_date": "2026-07-21",
-      "url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
-      "category": "电池与储能材料",
-      "subcategory": "回收",
-      "summary": "德国电池回收商Cylib收购了巴伐利亚州一座年处理能力达1万吨退役电动汽车电池的机械处理设施。该设施将为Cylib正在多尔马根建设的湿法冶金回收厂供应黑粉。",
-      "technical_points": [
-        "机械预处理设施年处理能力1万吨退役电池",
-        "产出黑粉（含锂、钴、镍等有价金属）",
-        "黑粉将作为湿法冶金回收厂的原料",
-        "湿法冶金厂在建中，预计提升回收率"
-      ],
-      "materials_involved": [
-        "黑粉",
-        "锂",
-        "钴",
-        "镍",
-        "锰",
-        "石墨"
-      ],
-      "companies_or_institutions": [
-        "Cylib"
-      ],
-      "impact_assessment": "该收购扩大了Cylib的电池回收产能，有助于建立从退役电池到黑粉再到再生材料的闭环供应链，对降低电池原材料对外依赖、减少环境影响具有积极意义。",
-      "research_value": "为电池回收材料（如黑粉成分优化、湿法冶金工艺）提供研究参考，但新闻本身未涉及具体材料技术细节。",
-      "industrial_maturity": "production",
-      "priority": "P2",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "Cylib收购巴伐利亚电池回收设施，年处理1万吨退役电池，为湿法冶金厂供应黑粉。",
-      "why_it_matters": "电池回收产能扩张是产业链闭环的关键环节，可能推动回收材料（如再生锂、钴、镍）在电池中的使用比例提升，进而影响正极材料供应链。",
-      "technology_driver": "储能",
-      "material_relevance": "回收材料（再生锂、钴、镍、石墨）",
-      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "新闻未提供具体材料成分或工艺参数，暂无直接验证价值。可关注后续黑粉成分数据及湿法冶金厂投产后的材料回收率。",
-      "suggested_action": "持续跟踪",
-      "trend_potential": "中",
-      "future_signal": "欧洲电池回收产能加速扩张，退役电池处理能力提升将推动再生材料标准化和规模化应用。",
-      "future_signal_score": 60,
-      "material_opportunity_score": 61,
-      "material_validation_score": 61,
-      "analysis_status": "success",
-      "rule_score": 41,
-      "source_score": 78,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=5 (EV); materials=8 (battery, recycling); companies=0 (none); industrial=3 (plant); future=0 (none); current_month=5",
-      "stage": "Supplier Research",
-      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：company。",
-      "canonical_url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
-      "normalized_title": "cylib acquires bavarian ev battery recycling facility",
-      "event_id": "91a07cbb79d0f25f",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 61,
-      "bookshelf_category": "Energy Materials",
-      "related_sources": [
-        {
-          "source": "Electrive",
-          "url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
-          "published_date": "2026-07-21"
-        }
-      ],
-      "source_urls": [
-        "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility"
-      ],
-      "source_names": [
-        "Electrive"
-      ],
-      "selected_at": "2026-07-22T12:21:43+08:00"
-    },
-    {
-      "title": "Moto expands UK fast-charging at Exeter Hub",
-      "source": "Electrive",
-      "published_date": "2026-07-21",
-      "url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
-      "category": "电池与储能材料",
-      "subcategory": "快充技术",
-      "summary": "英国Moto Hospitality在埃克塞特服务区启用了新的超快充电枢纽，充电功率高达400kW，成为英国最大的电动汽车充电站。该枢纽同时支持电动卡车充电，显著提升了现有充电基础设施。",
-      "technical_points": [
-        "充电功率达400kW，属于超快充级别",
-        "同时支持电动乘用车和卡车充电",
-        "该站点成为英国最大充电枢纽"
-      ],
-      "materials_involved": [
-        "快充技术"
-      ],
-      "companies_or_institutions": [
-        "Moto Hospitality"
-      ],
-      "impact_assessment": "该新闻表明超快充基础设施正在加速部署，可能推动对高功率充电相关材料的需求，如大功率充电枪、线缆、热管理材料等。",
-      "research_value": "对材料研究员的参考价值有限，因为新闻未涉及具体材料技术细节，但可作为市场趋势参考。",
-      "industrial_maturity": "market",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": true,
-      "one_sentence": "Moto在英国启用400kW超快充枢纽，成为全国最大充电站。",
-      "why_it_matters": "超快充基础设施的扩张将间接推动高功率充电相关材料（如耐高温、高导电材料）的需求，但新闻未提供具体材料信息。",
-      "technology_driver": "储能",
-      "material_relevance": "热管理材料、高导电材料、耐高温材料",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "信息不足，无法判断具体材料验证机会。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "中",
-      "future_signal": "超快充基础设施的规模化部署是未来趋势，但当前新闻未涉及材料层面的突破。",
-      "future_signal_score": 40,
-      "material_opportunity_score": 41,
-      "material_validation_score": 41,
-      "analysis_status": "success",
-      "rule_score": 47,
-      "source_score": 78,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=15 (electric vehicle, vehicle, car); materials=4 (fast charging); companies=0 (none); industrial=3 (launch); future=0 (none); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
-      "normalized_title": "moto expands uk fast charging at exeter hub",
-      "event_id": "943ae396bfb96472",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 48,
-      "bookshelf_category": "Energy Materials",
-      "related_sources": [
-        {
-          "source": "Electrive",
-          "url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
-          "published_date": "2026-07-21"
-        }
-      ],
-      "source_urls": [
-        "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub"
-      ],
-      "source_names": [
-        "Electrive"
-      ],
-      "selected_at": "2026-07-22T12:21:43+08:00"
-    },
-    {
-      "title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
-      "source": "BMW",
-      "published_date": "2026-07-21",
-      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
-      "category": "未来趋势观察",
-      "subcategory": "回收",
-      "summary": "宝马集团兰茨胡特工厂正在开发用于零部件生产中的人形机器人软件栈，重点整合数据、机器人技术和应用。该项目得到学术界和工业界合作伙伴支持，旨在提升零部件生产的自动化和灵活性。新闻提及回收子类别，但内容未涉及具体材料或回收技术细节。",
-      "technical_points": [
-        "开发人形机器人软件栈，用于零部件生产",
-        "整合数据、机器人和应用层",
-        "项目有学术和工业合作伙伴支持"
-      ],
-      "materials_involved": [
-        "回收材料（子类别提及，但无具体信息）"
-      ],
-      "companies_or_institutions": [
-        "BMW"
-      ],
-      "impact_assessment": "该动向可能推动汽车零部件生产向柔性自动化发展，但当前阶段对材料需求影响不直接。",
-      "research_value": "对材料研究员的参考价值较低，因新闻未涉及新材料、新工艺或材料验证。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "宝马开发人形机器人软件用于零部件生产，但未涉及具体材料技术。",
-      "why_it_matters": "该新闻主要涉及智能制造自动化，未直接牵引材料需求，对材料研发人员参考价值有限。",
-      "technology_driver": "智能制造",
-      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "无明确样件验证或供应商调研机会。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "释放了汽车制造向人形机器人自动化发展的趋势信号，但材料层面信号弱。",
-      "future_signal_score": 30,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 49,
-      "source_score": 88,
-      "source_type": "company_news_page",
-      "filter_reason": "source=22; automotive=0 (none); materials=4 (recycling); companies=5 (BMW); industrial=3 (plant); future=10 (humanoid robot, robotics); current_month=5",
-      "stage": "Strategic Reserve",
-      "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
-      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
-      "normalized_title": "bmw group plant landshut develops software humanoid robotics component production tue jul 21 09 00 00 cest 2026 press release focus software stack development linking data robotics applications component production project supported by partners from academia industry sites technology landshut production recycling",
-      "event_id": "319e65750e73751c",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ],
-      "final_score": 47,
-      "bookshelf_category": "Sustainable Materials",
-      "related_sources": [
-        {
-          "source": "BMW",
-          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
-          "published_date": "2026-07-21"
-        }
-      ],
-      "source_urls": [
-        "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo"
-      ],
-      "source_names": [
-        "BMW"
-      ],
-      "selected_at": "2026-07-22T12:21:43+08:00"
-    },
-    {
-      "title": "Built in Fort Worth: Wistron Opens Advanced Manufacturing Plant to Produce NVIDIA AI Systems",
-      "source": "NVIDIA Blog",
-      "published_date": "2026-07-22",
-      "url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
+      "title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
+      "source": "arXiv",
+      "published_date": "2026-07-27",
+      "url": "https://arxiv.org/abs/2607.14021",
       "category": "未来趋势观察",
       "subcategory": "",
-      "summary": "纬创在德克萨斯州沃斯堡开设其首个美国制造工厂，占地324,000平方英尺，生产用于AI系统的超级芯片。该工厂将制造NVIDIA AI基础设施的核心组件，标志着AI硬件制造向美国本土转移的重要一步。",
+      "summary": "该论文提出工业灵巧操作基准（IDB），包含模仿数据中心线缆管理、汽车线束和齿轮箱装配的基准板。采用端到端多模态模仿学习框架（DAG-ROS）和多模态扩散策略（AG-iDP3），融合RGB图像、点云、关节位置和腕部力/力矩数据。在数据中心线缆操作任务中，最佳配置（多视图RGB+R3M编码器+扩散策略）达到78%的抓取和插入成功率，远超单相机RGB基线（36%）。每个配置仅需约100次遥操作演示。",
       "technical_points": [
-        "纬创在美新建工厂生产AI超级芯片",
-        "工厂为绿色field建设，面积324,000平方英尺",
-        "产品用于NVIDIA AI系统"
+        "提出工业灵巧操作基准（IDB），包含数据中心线缆管理、汽车线束和齿轮箱装配任务。",
+        "开发端到端多模态模仿学习框架DAG-ROS和多模态扩散策略AG-iDP3。",
+        "融合RGB图像、点云、关节位置和腕部力/力矩数据。",
+        "在数据中心线缆操作任务中，最佳配置达到78%成功率，仅需100次演示。"
       ],
       "materials_involved": [
-        "半导体封装材料",
-        "散热材料",
-        "高可靠性电子材料"
+        "线缆材料（如铜、铝、绝缘材料）",
+        "连接器材料（如金属、塑料）",
+        "齿轮箱材料（如钢、铝合金、复合材料）",
+        "力/力矩传感器材料（如应变片、压电材料）"
       ],
       "companies_or_institutions": [
-        "Wistron",
-        "NVIDIA"
+        "arXiv（预印本平台）"
       ],
-      "impact_assessment": "对汽车产业链影响间接，但AI算力基础设施的本地化生产可能加速自动驾驶和智能座舱技术的研发与部署，间接推动相关电子材料需求。",
-      "research_value": "对汽车材料研究员参考价值有限，主要关注AI硬件制造趋势，但可关注散热和封装材料在汽车电子中的应用。",
-      "industrial_maturity": "production",
-      "priority": "P2",
+      "impact_assessment": "该技术可能推动汽车线束和齿轮箱装配的自动化，减少人工依赖，提高生产效率和一致性。对汽车制造中的精密装配环节有潜在影响。",
+      "research_value": "对汽车材料研究员而言，该技术本身不直接涉及新材料，但自动化装配对材料的可加工性、一致性和连接可靠性提出更高要求，可能间接影响材料选择。",
+      "industrial_maturity": "lab",
+      "priority": "P3",
       "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "纬创在美开设工厂生产NVIDIA AI超级芯片，推动AI硬件本地化制造。",
-      "why_it_matters": "该新闻表明AI基础设施制造向美国本土转移，可能影响全球供应链布局，但对汽车材料研发的直接牵引较弱。",
-      "technology_driver": "AI硬件",
-      "material_relevance": "散热材料、半导体封装材料",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "无直接样件验证价值，可关注AI芯片散热材料在汽车电子中的间接应用，但非当前重点。",
+      "follow_up": true,
+      "one_sentence": "工业灵巧操作基准通过多模态学习提升线缆和齿轮箱装配自动化，但材料相关性较弱。",
+      "why_it_matters": "该技术展示了机器人自动化在精密装配中的潜力，可能改变汽车制造中人工密集的线束和齿轮箱装配流程，但对材料研发的直接牵引有限。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "该技术处于实验室阶段，距离量产较远，且未明确提及新材料需求，不建议当前启动材料验证或供应商调研。",
       "suggested_action": "暂不优先",
       "trend_potential": "低",
-      "future_signal": "AI硬件制造本土化趋势，但未涉及新材料或工艺突破。",
+      "future_signal": "该技术释放了工业灵巧操作向端到端学习发展的信号，但材料需求不明确。",
       "future_signal_score": 30,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
+      "material_opportunity_score": 31,
+      "material_validation_score": 31,
+      "analysis_status": "success",
+      "rule_score": 45,
+      "source_score": 82,
+      "source_type": "journal_rss",
+      "filter_reason": "source=20; automotive=5 (automotive); materials=0 (none); companies=0 (none); industrial=0 (none); future=15 (automation, robotics, research); current_month=5",
+      "stage": "Strategic Reserve",
+      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：policy。",
+      "canonical_url": "https://arxiv.org/abs/2607.14021",
+      "normalized_title": "industrial dexterity benchmark hardware software benchmarking platform industrial dexterous manipulation",
+      "event_id": "dfb8f9d2bf5b768a",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 46,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2607.14021",
+          "published_date": "2026-07-27"
+        }
+      ],
+      "source_urls": [
+        "https://arxiv.org/abs/2607.14021"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "selected_at": "2026-07-27T12:42:46+08:00"
+    },
+    {
+      "title": "CALB under pressure over GAC Aion S battery issues",
+      "source": "Electrive",
+      "published_date": "2026-07-23",
+      "url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+      "category": "电池与储能材料",
+      "subcategory": "",
+      "summary": "广汽埃安Aion S电动车因LFP电池问题出现高里程车辆故障，供应商中创新航（CALB）面临压力。双方通过延长保修和额外服务应对。",
+      "technical_points": [
+        "LFP电池在高里程下出现性能衰退或故障",
+        "问题集中在高里程车辆，可能涉及电池一致性或老化机制",
+        "供应商CALB与主机厂GAC Aion联合采取售后措施"
+      ],
+      "materials_involved": [
+        "LFP正极材料",
+        "电解液",
+        "隔膜",
+        "电池管理系统相关材料"
+      ],
+      "companies_or_institutions": [
+        "CALB（中创新航）",
+        "GAC Aion（广汽埃安）"
+      ],
+      "impact_assessment": "该事件可能推动LFP电池寿命和可靠性改进，影响正极材料掺杂、电解液添加剂及电池包热管理设计。",
+      "research_value": "对LFP电池老化机理和材料优化有参考价值，但无具体技术细节，研究价值有限。",
+      "industrial_maturity": "production",
+      "priority": "P3",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "广汽埃安Aion S因LFP电池问题引发关注，供应商CALB面临压力，但无具体材料技术细节。",
+      "why_it_matters": "该新闻反映LFP电池在高里程下的可靠性挑战，可能促使材料改进，但缺乏具体技术信息，对材料研发的直接指导意义有限。",
+      "technology_driver": "储能",
+      "material_relevance": "LFP正极材料、电解液添加剂、隔膜涂层",
+      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "信息不足，无法判断样件验证或供应商调研价值。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "LFP电池在高里程场景下的可靠性问题可能成为行业关注点，但当前新闻未提供技术细节或材料需求信号。",
+      "future_signal_score": 30,
+      "material_opportunity_score": 20,
+      "material_validation_score": 20,
       "analysis_status": "success",
       "rule_score": 39,
-      "source_score": 84,
+      "source_score": 78,
       "source_type": "rss",
-      "filter_reason": "source=21; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=3 (plant); future=10 (advanced manufacturing, NVIDIA); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
-      "normalized_title": "built fort worth wistron opens advanced manufacturing plant produce nvidia ai systems",
-      "event_id": "cfa6a4794601d0fa",
+      "filter_reason": "source=20; automotive=10 (vehicle, car); materials=4 (battery); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "stage": "Supplier Research",
+      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：supplier。",
+      "canonical_url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+      "normalized_title": "calb under pressure over gac aion s battery issues",
+      "event_id": "aefbe128d4e2e20c",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -289,146 +141,141 @@
         "future_signals"
       ],
       "final_score": 45,
-      "bookshelf_category": "Sustainable Materials",
+      "bookshelf_category": "Energy Materials",
       "related_sources": [
         {
-          "source": "NVIDIA Blog",
-          "url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
-          "published_date": "2026-07-22"
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+          "published_date": "2026-07-23"
         }
       ],
       "source_urls": [
-        "https://blogs.nvidia.com/blog/wistron-manufacturing-texas"
+        "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues"
       ],
       "source_names": [
-        "NVIDIA Blog"
+        "Electrive"
       ],
-      "selected_at": "2026-07-22T12:21:43+08:00"
+      "selected_at": "2026-07-27T12:42:46+08:00"
     },
     {
-      "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
-      "source": "arXiv",
-      "published_date": "2026-07-22",
-      "url": "https://arxiv.org/abs/2607.18950",
+      "title": "Tesla to train Optimus with employees at Grünheide plant",
+      "source": "Electrive",
+      "published_date": "2026-07-23",
+      "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
       "category": "未来趋势观察",
       "subcategory": "",
-      "summary": "本文提出一种欠驱动机器人手指的创新设计，通过被动旋转关节和差动机构实现空间抓取，简化了机械复杂度并降低了成本。实验验证了圆柱、球形、平行和包络抓取能力，适用于农业、物流、辅助技术和垃圾分类等场景。未来将聚焦自动化驱动和控制策略优化。",
+      "summary": "特斯拉将利用其Grünheide工厂的员工来训练其人形机器人Optimus，通过记录装配工作中的运动模式。同时，特斯拉正在扩大其在罗伊特林根的机器人业务，开发用于大规模制造机器人的组件和生产工艺。",
       "technical_points": [
-        "欠驱动手指设计，仅两个指节，通过被动旋转关节实现空间运动",
-        "差动机构将单一驱动力矩分配到多个手指，实现自适应协调抓取",
-        "基于接触力引起的指根关节力矩建立稳定性判据",
-        "实验验证了圆柱、球形、平行和包络抓取能力"
+        "通过人类演示学习运动模式，用于人形机器人训练",
+        "在汽车工厂中部署机器人进行实际任务学习",
+        "开发大规模制造机器人的组件和生产工艺"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "Tesla"
+      ],
+      "impact_assessment": "特斯拉将人形机器人引入汽车工厂，可能推动机器人制造工艺和材料需求，但当前阶段主要关注运动学习和制造工艺开发，材料需求尚不明确。",
+      "research_value": "对汽车材料研究员而言，当前新闻未涉及具体材料，但长期看，人形机器人量产可能带来轻量化、传感、驱动等材料需求，目前信息不足。",
+      "industrial_maturity": "pilot",
+      "priority": "P3",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "特斯拉利用工厂员工训练人形机器人Optimus，并扩大机器人制造业务。",
+      "why_it_matters": "特斯拉将人形机器人引入汽车制造场景，可能推动机器人量产技术，但当前阶段材料需求不明确，需关注后续具体材料选择。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化复合材料、传感材料、驱动材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "当前新闻未提及具体材料或验证需求，建议持续跟踪特斯拉机器人量产进展，待具体材料需求明确后再评估验证机会。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "中",
+      "future_signal": "特斯拉将人形机器人从概念推向工厂实际应用，释放了机器人产业化加速的信号，但材料需求尚未显现。",
+      "future_signal_score": 62,
+      "material_opportunity_score": 20,
+      "material_validation_score": 20,
+      "analysis_status": "success",
+      "rule_score": 48,
+      "source_score": 78,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=5 (Tesla); industrial=3 (plant); future=10 (humanoid robot, robotics); current_month=5",
+      "stage": "Supplier Research",
+      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：company。",
+      "canonical_url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+      "normalized_title": "tesla train optimus employees at grünheide plant",
+      "event_id": "15bc2ede5e099d98",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
+      "final_score": 45,
+      "bookshelf_category": "Functional Materials",
+      "related_sources": [
+        {
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+          "published_date": "2026-07-23"
+        }
+      ],
+      "source_urls": [
+        "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "selected_at": "2026-07-27T12:42:46+08:00"
+    },
+    {
+      "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+      "source": "arXiv",
+      "published_date": "2026-07-27",
+      "url": "https://arxiv.org/abs/2606.03159",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "NVIDIA提出OmniDreams，一个基于Cosmos扩散模型实时生成动作条件视频的生成式世界模型，用于自动驾驶闭环仿真。通过21k小时驾驶场景训练，可合成极端天气等长尾场景，并与Alpamayo 1策略模型和AlpaSim编排器集成。初步结果显示，基于OmniDreams的世界-动作模型在NuRec数据集上超越VLA模型，参数仅为其1/5。",
+      "technical_points": [
+        "基于Cosmos扩散模型进行中训练和后训练，实现实时生成动作条件视频",
+        "闭环仿真中，策略模型动作动态更新模拟器状态并影响下一帧传感器观测",
+        "可合成传统仿真难以捕捉的极端天气和不可预测动态行为",
+        "世界-动作模型在NuRec数据集上性能超越VLA模型，参数减少80%"
       ],
       "materials_involved": [
-        "欠驱动机构",
-        "被动旋转关节",
-        "差动机构"
+        "传感器材料（摄像头、激光雷达、雷达等）",
+        "计算硬件材料（GPU、AI芯片封装材料）",
+        "热管理材料（高功率计算散热）"
       ],
-      "companies_or_institutions": [],
-      "impact_assessment": "该技术可降低机器人手爪的机械复杂度和成本，推动其在农业、物流等领域的应用，但对汽车产业链直接影响有限，可能间接影响汽车制造中的自动化装配环节。",
-      "research_value": "对汽车材料研究员参考价值较低，因未涉及新材料或工艺，但可关注其轻量化设计思路。",
+      "companies_or_institutions": [
+        "NVIDIA"
+      ],
+      "impact_assessment": "该技术将加速自动驾驶仿真测试，减少对真实路测的依赖，可能推动传感器和计算硬件需求升级，但对材料需求间接。",
+      "research_value": "对材料研究员参考价值有限，主要涉及计算硬件和传感器材料，但未提及具体新材料或工艺。",
       "industrial_maturity": "lab",
       "priority": "P3",
       "confidence": 80,
       "follow_up": true,
-      "one_sentence": "欠驱动机器人手指设计通过被动旋转和差动机构实现低成本自适应抓取。",
-      "why_it_matters": "该技术展示了机器人手爪的简化设计趋势，可能降低自动化成本，但未直接牵引材料需求，研发人员可关注其轻量化潜力。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "轻量化复合材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "信息不足，未涉及具体材料或工艺验证。",
+      "one_sentence": "NVIDIA提出实时生成式世界模型OmniDreams，用于自动驾驶闭环仿真，可合成极端天气等长尾场景。",
+      "why_it_matters": "该技术提升了自动驾驶仿真能力，但材料相关性较弱，主要影响计算和传感器硬件，不直接牵引新材料需求。",
+      "technology_driver": "自动驾驶",
+      "material_relevance": "光学材料、红外探测材料、封装材料、热管理材料",
+      "material_opportunity": "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "无直接样件验证价值，不涉及新材料或工艺，不适合供应商调研或前瞻储备。",
       "suggested_action": "暂不优先",
       "trend_potential": "低",
-      "future_signal": "欠驱动和被动机构在机器人抓取中的应用趋势，但材料需求不明确。",
+      "future_signal": "生成式AI在自动驾驶仿真中的应用趋势，但材料需求不明确。",
       "future_signal_score": 30,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
+      "material_opportunity_score": 31,
+      "material_validation_score": 31,
       "analysis_status": "success",
-      "rule_score": 43,
+      "rule_score": 40,
       "source_score": 82,
       "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=5 (mobility); materials=0 (none); companies=0 (none); industrial=3 (prototype); future=10 (robotics, research); current_month=5",
-      "stage": "Validation",
-      "stage_reason": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：validated。",
-      "canonical_url": "https://arxiv.org/abs/2607.18950",
-      "normalized_title": "design stability analysis underactuated hand passively rotating fingers",
-      "event_id": "e128ed69aae4d2a5",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ],
-      "final_score": 42,
-      "bookshelf_category": "Future Research Reserve",
-      "related_sources": [
-        {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2607.18950",
-          "published_date": "2026-07-22"
-        }
-      ],
-      "source_urls": [
-        "https://arxiv.org/abs/2607.18950"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "selected_at": "2026-07-22T12:21:43+08:00"
-    },
-    {
-      "title": "IEEE Program Helps Girls In India See a Future In STEM",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-07-21",
-      "url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "IEEE通过WiSE项目在印度农村地区为女孩提供STEM教育，包括动手拆装、机器人搭建等实践课程，并邀请女性榜样分享经验。项目旨在提高女孩在科学、技术、工程和数学领域的参与度，但未涉及具体材料技术或汽车产业链。",
-      "technical_points": [
-        "STEM教育推广项目，无具体技术细节",
-        "涉及机器人搭建、生物发光实验等基础科学活动",
-        "项目已结束，但框架被其他地区采用"
-      ],
-      "materials_involved": [
-        "PE"
-      ],
-      "companies_or_institutions": [
-        "IEEE",
-        "IBM Watson Research Center",
-        "Indian Institute of Technology Bombay"
-      ],
-      "impact_assessment": "对汽车产业链或研发方向无直接影响。",
-      "research_value": "对汽车材料研究员的参考价值较低，属于社会教育类新闻。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "IEEE在印度农村推广STEM教育，不涉及汽车材料技术。",
-      "why_it_matters": "该新闻与汽车材料研发无直接关联，不产生材料需求或技术演进信号。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "无样件验证价值，不适合供应商调研或前瞻储备。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "该新闻释放了STEM教育推广的社会信号，但未涉及产业技术趋势。",
-      "future_signal_score": 10,
-      "material_opportunity_score": 11,
-      "material_validation_score": 11,
-      "analysis_status": "success",
-      "rule_score": 47,
-      "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=4 (PE); companies=0 (none); industrial=3 (launch); future=10 (AI Hardware, research); current_month=5",
-      "stage": "Validation",
-      "stage_reason": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：test。",
-      "canonical_url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
-      "normalized_title": "ieee program helps girls india see future stem",
-      "event_id": "4f4e95ea53981f81",
+      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=0 (none); industrial=0 (none); future=10 (NVIDIA, research); current_month=5",
+      "stage": "Strategic Reserve",
+      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：policy。",
+      "canonical_url": "https://arxiv.org/abs/2606.03159",
+      "normalized_title": "nvidia omnidreams real time generative world model closed loop autonomous vehicle simulation",
+      "event_id": "c75a60b70f6371ca",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "",
@@ -438,144 +285,68 @@
         "bookshelf",
         "suggested_actions"
       ],
-      "final_score": 41,
-      "bookshelf_category": "Future Research Reserve",
-      "related_sources": [
-        {
-          "source": "IEEE Spectrum",
-          "url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
-          "published_date": "2026-07-21"
-        }
-      ],
-      "source_urls": [
-        "https://spectrum.ieee.org/ieee-program-girls-india-stem"
-      ],
-      "source_names": [
-        "IEEE Spectrum"
-      ],
-      "selected_at": "2026-07-22T12:21:43+08:00"
-    },
-    {
-      "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
-      "source": "arXiv",
-      "published_date": "2026-07-20",
-      "url": "https://arxiv.org/abs/2607.12659",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "该论文提出Jetson-PI方法，用于在低功耗边缘设备（如Jetson Orin）上高效部署视觉-语言-动作（VLA）模型。通过异步推理、未来校正模块和置信度调度优化，显著提升控制频率（相比PyTorch提升8.66倍）和任务成功率。涉及轻量化模型和系统级加速技术。",
-      "technical_points": [
-        "异步推理并行化动作执行与后续推理，减少延迟",
-        "轻量级未来校正模块预测未来环境表征，解决感知-执行错位",
-        "基于置信度的调度优化平衡VLM与动作专家调用",
-        "系统级加速：CUDA图复用、GPU驻留中间缓冲、流展开"
-      ],
-      "materials_involved": [
-        "轻量化模型",
-        "边缘计算硬件"
-      ],
-      "companies_or_institutions": [
-        "北京大学（PKU-SEC-Lab）"
-      ],
-      "impact_assessment": "该技术推动VLA模型在机器人、自动驾驶等实时控制场景的边缘部署，降低对高算力硬件的依赖，可能促进低功耗计算平台在汽车领域的应用。",
-      "research_value": "对汽车材料研究员参考价值有限，主要涉及算法和系统优化，未直接牵引新材料需求。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "Jetson-PI通过异步推理和轻量化模块，实现边缘设备上VLA模型的高效实时控制。",
-      "why_it_matters": "该技术展示了边缘AI在机器人控制中的潜力，但未涉及材料创新，对材料研发的直接牵引较弱。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "信息不足，未涉及材料验证或供应商信息。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "边缘AI实时控制技术进展，但未释放材料相关信号。",
-      "future_signal_score": 20,
-      "material_opportunity_score": 5,
-      "material_validation_score": 5,
-      "analysis_status": "success",
-      "rule_score": 38,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=8 (lightweight, PI); companies=0 (none); industrial=0 (none); future=5 (NVIDIA); current_month=5",
-      "stage": "Strategic Reserve",
-      "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
-      "canonical_url": "https://arxiv.org/abs/2607.12659",
-      "normalized_title": "jetson pi towards onboard real time robot control via foresight aligned asynchronous inference",
-      "event_id": "5bdfb02b2769fe77",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ],
-      "final_score": 41,
-      "bookshelf_category": "Future Research Reserve",
+      "final_score": 44,
+      "bookshelf_category": "Functional Materials",
       "related_sources": [
         {
           "source": "arXiv",
-          "url": "https://arxiv.org/abs/2607.12659",
-          "published_date": "2026-07-20"
+          "url": "https://arxiv.org/abs/2606.03159",
+          "published_date": "2026-07-27"
         }
       ],
       "source_urls": [
-        "https://arxiv.org/abs/2607.12659"
+        "https://arxiv.org/abs/2606.03159"
       ],
       "source_names": [
         "arXiv"
       ],
-      "selected_at": "2026-07-22T12:21:43+08:00"
+      "selected_at": "2026-07-27T12:42:46+08:00"
     },
     {
-      "title": "Holiday travel with BMW and MINI electric vehicles: Arrive with even greater peace of mind. Tue Jul 21 08:30:00 CEST 2026 Press Release - Full price transparency, total control over costs and an expanded BMW Group Charging network make charging on the go even easier – especially when travelling long distances. - New features in the vehicle app and the vehicle itself provide clarity on the actual charging costs incurred. - The BMW Group Charging network already comprises 1.1 million charging points in Europe alone. J05 · U25 · i20 · U11 · U10 · NA5 · G65 · 3 Series · iX · Charging Infrastructure · Technology · BMW i · Aceman · iX3 · i5 · Cooper · i7",
-      "source": "BMW",
-      "published_date": "2026-07-21",
-      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
+      "title": "Porsche appoints new production chief, reportedly puts more EV projects on hold",
+      "source": "Electrive",
+      "published_date": "2026-07-23",
+      "url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
       "category": "其他",
       "subcategory": "",
-      "summary": "宝马集团宣布其充电网络在欧洲已拥有110万个充电点，并推出新功能提升充电成本透明度，旨在让电动车长途旅行更安心。新闻主要涉及充电基础设施和车辆应用更新，未提及具体材料或工艺。",
+      "summary": "保时捷任命Christian Friedl为生产董事会成员，9月1日上任，接替Albrecht Reimold。同时据报道，CEO Michael Leiters正在降低新电动汽车项目的优先级。",
       "technical_points": [
-        "宝马集团充电网络在欧洲扩展至110万个充电点",
-        "车辆应用和车辆本身新增功能，清晰显示实际充电成本",
-        "强调长途旅行充电便利性和成本透明度"
+        "保时捷调整生产管理层",
+        "电动汽车项目优先级降低",
+        "可能影响未来电动车型开发节奏"
       ],
       "materials_involved": [],
       "companies_or_institutions": [
-        "BMW"
+        "Porsche"
       ],
-      "impact_assessment": "该新闻主要影响电动车充电体验和用户信心，对汽车产业链的材料研发方向无直接推动作用。",
-      "research_value": "对汽车材料研究员的参考价值较低，因为未涉及新材料、新工艺或材料需求。",
-      "industrial_maturity": "market",
+      "impact_assessment": "保时捷放缓电动化可能减少对电池、电驱动等材料的需求，但传统燃油车及混动项目材料需求维持。",
+      "research_value": "对材料研究员的参考价值较低，因无具体技术或材料信息。",
+      "industrial_maturity": "unknown",
       "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "宝马扩大欧洲充电网络并提升充电成本透明度，但未涉及材料技术。",
-      "why_it_matters": "这条新闻主要关于充电基础设施和用户体验，不涉及材料技术演进或产业变化，因此对材料研发人员关注度低。",
+      "confidence": 80,
+      "follow_up": true,
+      "one_sentence": "保时捷任命新生产负责人并放缓电动项目，材料相关性弱。",
+      "why_it_matters": "保时捷作为高端车企，其电动化节奏调整可能影响供应链材料需求预期，但当前新闻无具体材料信息。",
       "technology_driver": "其他",
       "material_relevance": "材料相关性较弱，暂不优先。",
       "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "无样件验证价值，无需供应商调研，不适合前瞻储备。",
+      "validation_opportunity": "无具体材料或技术细节，不具备验证价值。",
       "suggested_action": "暂不优先",
       "trend_potential": "低",
-      "future_signal": "释放了宝马持续投资充电基础设施的信号，但未涉及材料技术趋势。",
-      "future_signal_score": 10,
-      "material_opportunity_score": 36,
-      "material_validation_score": 36,
+      "future_signal": "保时捷电动化战略调整可能反映高端市场对电动化速度的重新评估，但信号强度有限。",
+      "future_signal_score": 20,
+      "material_opportunity_score": 21,
+      "material_validation_score": 21,
       "analysis_status": "success",
-      "rule_score": 42,
-      "source_score": 88,
-      "source_type": "company_news_page",
-      "filter_reason": "source=22; automotive=10 (electric vehicle, vehicle); materials=0 (none); companies=5 (BMW); industrial=0 (none); future=0 (none); current_month=5",
+      "rule_score": 40,
+      "source_score": 78,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=15 (EV, electric vehicle, vehicle); materials=0 (none); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
       "stage": "Technology Watch",
       "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
-      "normalized_title": "holiday travel bmw mini electric vehicles arrive even greater peace mind tue jul 21 08 30 00 cest 2026 press release full price transparency total control over costs expanded bmw group charging network make charging go even easier especially when travelling long distances new features vehicle app vehicle itself provide clarity actual charging costs incurred bmw group charging network already comprises 1 1 million charging points europe alone j05 u25 i20 u11 u10 na5 g65 3 series ix charging infrastructure technology bmw i aceman ix3 i5 cooper i7",
-      "event_id": "368190b99c8e0339",
+      "canonical_url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
+      "normalized_title": "porsche appoints new production chief reportedly puts more ev projects hold",
+      "event_id": "9ea78482680dec26",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "",
@@ -585,22 +356,22 @@
         "bookshelf",
         "suggested_actions"
       ],
-      "final_score": 36,
-      "bookshelf_category": "Future Research Reserve",
+      "final_score": 32,
+      "bookshelf_category": "Energy Materials",
       "related_sources": [
         {
-          "source": "BMW",
-          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
-          "published_date": "2026-07-21"
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
+          "published_date": "2026-07-23"
         }
       ],
       "source_urls": [
-        "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo"
+        "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold"
       ],
       "source_names": [
-        "BMW"
+        "Electrive"
       ],
-      "selected_at": "2026-07-22T12:21:43+08:00"
+      "selected_at": "2026-07-27T12:42:46+08:00"
     }
   ]
 }

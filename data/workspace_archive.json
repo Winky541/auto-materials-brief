@@ -1,6 +1,288 @@
 {
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-27",
   "items": [
+    {
+      "date": "2026-07-27",
+      "window": [
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 1,
+          "avg_future_signal_score": 62,
+          "summary": "特斯拉将人形机器人引入汽车制造场景，可能推动机器人量产技术，但当前阶段材料需求不明确，需关注后续具体材料选择。",
+          "sources": [
+            {
+              "title": "Tesla to train Optimus with employees at Grünheide plant",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+              "published_date": "2026-07-23",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 2,
+          "avg_future_signal_score": 46,
+          "summary": "特斯拉将人形机器人引入汽车制造场景，可能推动机器人量产技术，但当前阶段材料需求不明确，需关注后续具体材料选择。",
+          "sources": [
+            {
+              "title": "Tesla to train Optimus with employees at Grünheide plant",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+              "published_date": "2026-07-23",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.14021",
+              "published_date": "2026-07-27",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "AI Agent & AI Hardware",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该技术提升了自动驾驶仿真能力，但材料相关性较弱，主要影响计算和传感器硬件，不直接牵引新材料需求。",
+          "sources": [
+            {
+              "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2606.03159",
+              "published_date": "2026-07-27",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Autonomous Driving",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该技术提升了自动驾驶仿真能力，但材料相关性较弱，主要影响计算和传感器硬件，不直接牵引新材料需求。",
+          "sources": [
+            {
+              "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2606.03159",
+              "published_date": "2026-07-27",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Energy Revolution",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该新闻反映LFP电池在高里程下的可靠性挑战，可能促使材料改进，但缺乏具体技术信息，对材料研发的直接指导意义有限。",
+          "sources": [
+            {
+              "title": "CALB under pressure over GAC Aion S battery issues",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+              "published_date": "2026-07-23",
+              "link_label": "阅读原文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在未来趋势观察、汽车新材料，技术牵引以机器人与具身智能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "该技术展示了机器人自动化在精密装配中的潜力，可能改变汽车制造中人工密集的线束和齿轮箱装配流程，但对材料研发的直接牵引有限。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注线缆材料（如铜、铝、绝缘材料）、连接器材料（如金属、塑料）、齿轮箱材料（如钢、铝合金、复合材料）、力/力矩传感器材料（如应变片、压电材料）、传感器材料（摄像头、激光雷达、雷达等）、计算硬件材料（GPU、AI芯片封装材料）、热管理材料（高功率计算散热）、LFP正极材料。潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "Tesla to train Optimus with employees at Grünheide plant",
+          "source": "Electrive",
+          "why_read": "特斯拉将人形机器人引入汽车制造场景，可能推动机器人量产技术，但当前阶段材料需求不明确，需关注后续具体材料选择。",
+          "focus": "关注 机器人与具身智能 是否继续形成产业信号；潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+          "reading_time": "约 8 分钟",
+          "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 4,
+          "items": [
+            {
+              "event_id": "dfb8f9d2bf5b768a",
+              "canonical_url": "https://arxiv.org/abs/2607.14021",
+              "normalized_title": "industrial dexterity benchmark hardware software benchmarking platform industrial dexterous manipulation",
+              "title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.14021"
+              ],
+              "published_date": "2026-07-27",
+              "url": "https://arxiv.org/abs/2607.14021",
+              "link_label": "阅读论文",
+              "brief": "该技术展示了机器人自动化在精密装配中的潜力，可能改变汽车制造中人工密集的线束和齿轮箱装配流程，但对材料研发的直接牵引有限。"
+            },
+            {
+              "event_id": "c75a60b70f6371ca",
+              "canonical_url": "https://arxiv.org/abs/2606.03159",
+              "normalized_title": "nvidia omnidreams real time generative world model closed loop autonomous vehicle simulation",
+              "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2606.03159"
+              ],
+              "published_date": "2026-07-27",
+              "url": "https://arxiv.org/abs/2606.03159",
+              "link_label": "阅读论文",
+              "brief": "该技术提升了自动驾驶仿真能力，但材料相关性较弱，主要影响计算和传感器硬件，不直接牵引新材料需求。"
+            },
+            {
+              "event_id": "aefbe128d4e2e20c",
+              "canonical_url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+              "normalized_title": "calb under pressure over gac aion s battery issues",
+              "title": "CALB under pressure over GAC Aion S battery issues",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues"
+              ],
+              "published_date": "2026-07-23",
+              "url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+              "link_label": "阅读原文",
+              "brief": "该新闻反映LFP电池在高里程下的可靠性挑战，可能促使材料改进，但缺乏具体技术信息，对材料研发的直接指导意义有限。"
+            },
+            {
+              "event_id": "15bc2ede5e099d98",
+              "canonical_url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+              "normalized_title": "tesla train optimus employees at grünheide plant",
+              "title": "Tesla to train Optimus with employees at Grünheide plant",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide"
+              ],
+              "published_date": "2026-07-23",
+              "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+              "link_label": "官方发布",
+              "brief": "特斯拉将人形机器人引入汽车制造场景，可能推动机器人量产技术，但当前阶段材料需求不明确，需关注后续具体材料选择。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "9ea78482680dec26",
+              "canonical_url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
+              "normalized_title": "porsche appoints new production chief reportedly puts more ev projects hold",
+              "title": "Porsche appoints new production chief, reportedly puts more EV projects on hold",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold"
+              ],
+              "published_date": "2026-07-23",
+              "url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
+              "link_label": "阅读原文",
+              "brief": "保时捷作为高端车企，其电动化节奏调整可能影响供应链材料需求预期，但当前新闻无具体材料信息。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Future Research Reserve中已有1个机会进入 Technology Watch，其中“Emerging Material Opportunity”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "Porsche appoints new production chief, reportedly puts more EV projects on hold",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "Energy Materials中已有1个机会进入 Supplier Research，其中“Solid-State Electrolytes”最值得先看。",
+          "why_now": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：supplier。",
+          "suggested_move": "锁定潜在供应商、研究机构或初创公司，准备初步调研。",
+          "evidence": [
+            {
+              "title": "CALB under pressure over GAC Aion S battery issues",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有1个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：policy。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.14021",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Tesla to train Optimus with employees at Grünheide plant",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2606.03159",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-22",
       "window": [

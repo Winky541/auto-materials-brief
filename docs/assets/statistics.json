@@ -1,46 +1,37 @@
 {
   "category_counts": {
-    "汽车新材料": 6,
     "未来趋势观察": 5,
-    "企业技术动态": 1
+    "汽车新材料": 4
   },
   "source_counts": {
-    "IEEE Spectrum": 4,
     "arXiv": 3,
-    "Electrive": 2,
-    "BMW": 2,
-    "NVIDIA Blog": 1
+    "Electrive": 3,
+    "IEEE Spectrum": 3
   },
   "company_counts": {
-    "IEEE": 3,
-    "BMW": 2,
-    "Cylib": 1,
-    "Moto Hospitality": 1,
-    "Wistron": 1,
+    "IEEE": 2,
+    "arXiv（预印本平台）": 1,
+    "CALB（中创新航）": 1,
+    "GAC Aion（广汽埃安）": 1,
+    "Tesla": 1,
     "NVIDIA": 1,
-    "IBM Watson Research Center": 1,
-    "Indian Institute of Technology Bombay": 1,
-    "北京大学（PKU-SEC-Lab）": 1,
-    "IEEE History Center": 1
+    "Porsche": 1,
+    "IEEE History Center": 1,
+    "IEEE Vehicular Technology Society": 1,
+    "IEEE Dielectrics and Electrical Insulation Society": 1
   },
   "keyword_counts": {
-    "黑粉": 1,
-    "锂": 1,
-    "钴": 1,
-    "镍": 1,
-    "锰": 1,
-    "石墨": 1,
-    "快充技术": 1,
-    "回收材料（子类别提及，但无具体信息）": 1,
-    "半导体封装材料": 1,
-    "散热材料": 1,
-    "高可靠性电子材料": 1,
-    "欠驱动机构": 1,
-    "被动旋转关节": 1,
-    "差动机构": 1,
-    "PE": 1,
-    "轻量化模型": 1,
-    "边缘计算硬件": 1,
+    "线缆材料（如铜、铝、绝缘材料）": 1,
+    "连接器材料（如金属、塑料）": 1,
+    "齿轮箱材料（如钢、铝合金、复合材料）": 1,
+    "力/力矩传感器材料（如应变片、压电材料）": 1,
+    "LFP正极材料": 1,
+    "电解液": 1,
+    "隔膜": 1,
+    "电池管理系统相关材料": 1,
+    "传感器材料（摄像头、激光雷达、雷达等）": 1,
+    "计算硬件材料（GPU、AI芯片封装材料）": 1,
+    "热管理材料（高功率计算散热）": 1,
     "PA": 1
   }
 }

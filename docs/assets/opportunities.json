@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-27",
   "domains": [
     {
       "domain": "Metal Materials",
@@ -33,109 +33,75 @@
       "domain": "Energy Materials",
       "zh": "能源材料",
       "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
-      "count": 6,
+      "count": 4,
       "items": [
         {
-          "event_id": "e128ed69aae4d2a5",
-          "canonical_url": "https://arxiv.org/abs/2607.18950",
-          "normalized_title": "design stability analysis underactuated hand passively rotating fingers",
-          "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
+          "event_id": "dfb8f9d2bf5b768a",
+          "canonical_url": "https://arxiv.org/abs/2607.14021",
+          "normalized_title": "industrial dexterity benchmark hardware software benchmarking platform industrial dexterous manipulation",
+          "title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
           "source": "arXiv",
           "source_names": [
             "arXiv"
           ],
           "source_urls": [
-            "https://arxiv.org/abs/2607.18950"
+            "https://arxiv.org/abs/2607.14021"
           ],
-          "published_date": "2026-07-22",
-          "url": "https://arxiv.org/abs/2607.18950",
+          "published_date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2607.14021",
           "link_label": "阅读论文",
-          "brief": "该技术展示了机器人手爪的简化设计趋势，可能降低自动化成本，但未直接牵引材料需求，研发人员可关注其轻量化潜力。"
+          "brief": "该技术展示了机器人自动化在精密装配中的潜力，可能改变汽车制造中人工密集的线束和齿轮箱装配流程，但对材料研发的直接牵引有限。"
         },
         {
-          "event_id": "91a07cbb79d0f25f",
-          "canonical_url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
-          "normalized_title": "cylib acquires bavarian ev battery recycling facility",
-          "title": "Cylib acquires Bavarian EV battery recycling facility",
+          "event_id": "c75a60b70f6371ca",
+          "canonical_url": "https://arxiv.org/abs/2606.03159",
+          "normalized_title": "nvidia omnidreams real time generative world model closed loop autonomous vehicle simulation",
+          "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+          "source": "arXiv",
+          "source_names": [
+            "arXiv"
+          ],
+          "source_urls": [
+            "https://arxiv.org/abs/2606.03159"
+          ],
+          "published_date": "2026-07-27",
+          "url": "https://arxiv.org/abs/2606.03159",
+          "link_label": "阅读论文",
+          "brief": "该技术提升了自动驾驶仿真能力，但材料相关性较弱，主要影响计算和传感器硬件，不直接牵引新材料需求。"
+        },
+        {
+          "event_id": "aefbe128d4e2e20c",
+          "canonical_url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+          "normalized_title": "calb under pressure over gac aion s battery issues",
+          "title": "CALB under pressure over GAC Aion S battery issues",
           "source": "Electrive",
           "source_names": [
             "Electrive"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility"
+            "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues"
           ],
-          "published_date": "2026-07-21",
-          "url": "https://www.electrive.com/2026/07/21/cylib-acquires-bavarian-ev-battery-recycling-facility",
+          "published_date": "2026-07-23",
+          "url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
           "link_label": "阅读原文",
-          "brief": "电池回收产能扩张是产业链闭环的关键环节，可能推动回收材料（如再生锂、钴、镍）在电池中的使用比例提升，进而影响正极材料供应链。"
+          "brief": "该新闻反映LFP电池在高里程下的可靠性挑战，可能促使材料改进，但缺乏具体技术信息，对材料研发的直接指导意义有限。"
         },
         {
-          "event_id": "943ae396bfb96472",
-          "canonical_url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
-          "normalized_title": "moto expands uk fast charging at exeter hub",
-          "title": "Moto expands UK fast-charging at Exeter Hub",
+          "event_id": "15bc2ede5e099d98",
+          "canonical_url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+          "normalized_title": "tesla train optimus employees at grünheide plant",
+          "title": "Tesla to train Optimus with employees at Grünheide plant",
           "source": "Electrive",
           "source_names": [
             "Electrive"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub"
+            "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide"
           ],
-          "published_date": "2026-07-21",
-          "url": "https://www.electrive.com/2026/07/21/moto-expands-fast-charging-capacity-at-exeter-charging-hub",
-          "link_label": "阅读原文",
-          "brief": "超快充基础设施的扩张将间接推动高功率充电相关材料（如耐高温、高导电材料）的需求，但新闻未提供具体材料信息。"
-        },
-        {
-          "event_id": "319e65750e73751c",
-          "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
-          "normalized_title": "bmw group plant landshut develops software humanoid robotics component production tue jul 21 09 00 00 cest 2026 press release focus software stack development linking data robotics applications component production project supported by partners from academia industry sites technology landshut production recycling",
-          "title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
-          "source": "BMW",
-          "source_names": [
-            "BMW"
-          ],
-          "source_urls": [
-            "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo"
-          ],
-          "published_date": "2026-07-21",
-          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
+          "published_date": "2026-07-23",
+          "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
           "link_label": "官方发布",
-          "brief": "该新闻主要涉及智能制造自动化，未直接牵引材料需求，对材料研发人员参考价值有限。"
-        },
-        {
-          "event_id": "4f4e95ea53981f81",
-          "canonical_url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
-          "normalized_title": "ieee program helps girls india see future stem",
-          "title": "IEEE Program Helps Girls In India See a Future In STEM",
-          "source": "IEEE Spectrum",
-          "source_names": [
-            "IEEE Spectrum"
-          ],
-          "source_urls": [
-            "https://spectrum.ieee.org/ieee-program-girls-india-stem"
-          ],
-          "published_date": "2026-07-21",
-          "url": "https://spectrum.ieee.org/ieee-program-girls-india-stem",
-          "link_label": "阅读论文",
-          "brief": "该新闻与汽车材料研发无直接关联，不产生材料需求或技术演进信号。"
-        },
-        {
-          "event_id": "5bdfb02b2769fe77",
-          "canonical_url": "https://arxiv.org/abs/2607.12659",
-          "normalized_title": "jetson pi towards onboard real time robot control via foresight aligned asynchronous inference",
-          "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
-          "source": "arXiv",
-          "source_names": [
-            "arXiv"
-          ],
-          "source_urls": [
-            "https://arxiv.org/abs/2607.12659"
-          ],
-          "published_date": "2026-07-20",
-          "url": "https://arxiv.org/abs/2607.12659",
-          "link_label": "阅读论文",
-          "brief": "该技术展示了边缘AI在机器人控制中的潜力，但未涉及材料创新，对材料研发的直接牵引较弱。"
+          "brief": "特斯拉将人形机器人引入汽车制造场景，可能推动机器人量产技术，但当前阶段材料需求不明确，需关注后续具体材料选择。"
         }
       ]
     },
@@ -157,41 +123,24 @@
       "domain": "Future Research Reserve",
       "zh": "前沿研究储备",
       "description": "超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料",
-      "count": 2,
+      "count": 1,
       "items": [
         {
-          "event_id": "cfa6a4794601d0fa",
-          "canonical_url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
-          "normalized_title": "built fort worth wistron opens advanced manufacturing plant produce nvidia ai systems",
-          "title": "Built in Fort Worth: Wistron Opens Advanced Manufacturing Plant to Produce NVIDIA AI Systems",
-          "source": "NVIDIA Blog",
+          "event_id": "9ea78482680dec26",
+          "canonical_url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
+          "normalized_title": "porsche appoints new production chief reportedly puts more ev projects hold",
+          "title": "Porsche appoints new production chief, reportedly puts more EV projects on hold",
+          "source": "Electrive",
           "source_names": [
-            "NVIDIA Blog"
+            "Electrive"
           ],
           "source_urls": [
-            "https://blogs.nvidia.com/blog/wistron-manufacturing-texas"
+            "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold"
           ],
-          "published_date": "2026-07-22",
-          "url": "https://blogs.nvidia.com/blog/wistron-manufacturing-texas",
+          "published_date": "2026-07-23",
+          "url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
           "link_label": "阅读原文",
-          "brief": "该新闻表明AI基础设施制造向美国本土转移，可能影响全球供应链布局，但对汽车材料研发的直接牵引较弱。"
-        },
-        {
-          "event_id": "368190b99c8e0339",
-          "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
-          "normalized_title": "holiday travel bmw mini electric vehicles arrive even greater peace mind tue jul 21 08 30 00 cest 2026 press release full price transparency total control over costs expanded bmw group charging network make charging go even easier especially when travelling long distances new features vehicle app vehicle itself provide clarity actual charging costs incurred bmw group charging network already comprises 1 1 million charging points europe alone j05 u25 i20 u11 u10 na5 g65 3 series ix charging infrastructure technology bmw i aceman ix3 i5 cooper i7",
-          "title": "Holiday travel with BMW and MINI electric vehicles: Arrive with even greater peace of mind. Tue Jul 21 08:30:00 CEST 2026 Press Release - Full price transparency, total control over costs and an expanded BMW Group Charging network make charging on the go even easier – especially when travelling long distances. - New features in the vehicle app and the vehicle itself provide clarity on the actual charging costs incurred. - The BMW Group Charging network already comprises 1.1 million charging points in Europe alone. J05 · U25 · i20 · U11 · U10 · NA5 · G65 · 3 Series · iX · Charging Infrastructure · Technology · BMW i · Aceman · iX3 · i5 · Cooper · i7",
-          "source": "BMW",
-          "source_names": [
-            "BMW"
-          ],
-          "source_urls": [
-            "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo"
-          ],
-          "published_date": "2026-07-21",
-          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459456EN/holiday-travel-with-bmw-and-mini-electric-vehicles:-arrive-with-even-greater-peace-of-mind?showMedia=photo",
-          "link_label": "官方发布",
-          "brief": "这条新闻主要关于充电基础设施和用户体验，不涉及材料技术演进或产业变化，因此对材料研发人员关注度低。"
+          "brief": "保时捷作为高端车企，其电动化节奏调整可能影响供应链材料需求预期，但当前新闻无具体材料信息。"
         }
       ]
     }

@@ -1,6 +1,239 @@
 {
   "events": [
     {
+      "event_id": "9bb0c3968afe0832",
+      "canonical_title": "Why AI Needs a “Genie Coefficient”",
+      "canonical_url": "https://spectrum.ieee.org/ai-agent-benchmark",
+      "normalized_title": "why ai needs genie coefficient",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-27",
+      "source_urls": [
+        "https://spectrum.ieee.org/ai-agent-benchmark"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "15bc2ede5e099d98",
+      "canonical_title": "Tesla to train Optimus with employees at Grünheide plant",
+      "canonical_url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+      "normalized_title": "tesla train optimus employees at grünheide plant",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "dfb8f9d2bf5b768a",
+      "canonical_title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
+      "canonical_url": "https://arxiv.org/abs/2607.14021",
+      "normalized_title": "industrial dexterity benchmark hardware software benchmarking platform industrial dexterous manipulation",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.14021"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "29b08ccf53a4a733",
+      "canonical_title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
+      "canonical_url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+      "normalized_title": "2022 ieee president k j ray liu honored his leadership",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-president-ray-liu-award"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "c75a60b70f6371ca",
+      "canonical_title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+      "canonical_url": "https://arxiv.org/abs/2606.03159",
+      "normalized_title": "nvidia omnidreams real time generative world model closed loop autonomous vehicle simulation",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.03159"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "自动驾驶"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "3525bb852f44d3c7",
+      "canonical_title": "Spain approves Auto+ EV subsidy scheme through 2030",
+      "canonical_url": "https://www.electrive.com/2026/07/24/spain-approves-auto-ev-subsidy-scheme-through-2030",
+      "normalized_title": "spain approves auto ev subsidy scheme through 2030",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/24/spain-approves-auto-ev-subsidy-scheme-through-2030"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "9ea78482680dec26",
+      "canonical_title": "Porsche appoints new production chief, reportedly puts more EV projects on hold",
+      "canonical_url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
+      "normalized_title": "porsche appoints new production chief reportedly puts more ev projects hold",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "aefbe128d4e2e20c",
+      "canonical_title": "CALB under pressure over GAC Aion S battery issues",
+      "canonical_url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+      "normalized_title": "calb under pressure over gac aion s battery issues",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "319e65750e73751c",
       "canonical_title": "BMW Group Plant Landshut develops software for humanoid robotics in component production. Tue Jul 21 09:00:00 CEST 2026 Press Release +++ Focus on software stack development, linking data, robotics and applications in component production +++ Project supported by partners from academia and industry +++ Sites · Technology · Landshut · Production, Recycling",
       "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459467EN/bmw-group-plant-landshut-develops-software-for-humanoid-robotics-in-component-production?showMedia=photo",
@@ -152,34 +385,6 @@
         "材料相关性较弱，暂不优先。"
       ],
       "published": true
-    },
-    {
-      "event_id": "9bb0c3968afe0832",
-      "canonical_title": "Why AI Needs a “Genie Coefficient”",
-      "canonical_url": "https://spectrum.ieee.org/ai-agent-benchmark",
-      "normalized_title": "why ai needs genie coefficient",
-      "first_seen": "2026-07-22",
-      "last_seen": "2026-07-22",
-      "source_urls": [
-        "https://spectrum.ieee.org/ai-agent-benchmark"
-      ],
-      "source_names": [
-        "IEEE Spectrum"
-      ],
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "bookshelf_category": "Future Research Reserve",
-      "module_targets": [
-        "future_signals"
-      ],
-      "topic_tags": [
-        "未来趋势观察",
-        "其他"
-      ],
-      "material_opportunities": [
-        "材料相关性较弱，暂不优先。"
-      ],
-      "published": false
     },
     {
       "event_id": "91a07cbb79d0f25f",

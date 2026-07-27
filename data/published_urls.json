@@ -573,6 +573,41 @@
       "published_date": "2026-07-21",
       "selected_date": "2026-07-22",
       "category": "其他"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.14021",
+      "title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
+      "published_date": "2026-07-27",
+      "selected_date": "2026-07-27",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
+      "title": "CALB under pressure over GAC Aion S battery issues",
+      "published_date": "2026-07-23",
+      "selected_date": "2026-07-27",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+      "title": "Tesla to train Optimus with employees at Grünheide plant",
+      "published_date": "2026-07-23",
+      "selected_date": "2026-07-27",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.03159",
+      "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+      "published_date": "2026-07-27",
+      "selected_date": "2026-07-27",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
+      "title": "Porsche appoints new production chief, reportedly puts more EV projects on hold",
+      "published_date": "2026-07-23",
+      "selected_date": "2026-07-27",
+      "category": "其他"
     }
   ]
 }
