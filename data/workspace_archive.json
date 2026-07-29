@@ -1,6 +1,295 @@
 {
-  "updated_at": "2026-07-27",
+  "updated_at": "2026-07-29",
   "items": [
+    {
+      "date": "2026-07-29",
+      "window": [
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 1,
+          "avg_future_signal_score": 75,
+          "summary": "CTP技术量产意味着电池包结构简化，对结构胶、导热材料和绝缘材料的需求将发生变化，材料研发人员需关注适配CTP的新材料方案。",
+          "sources": [
+            {
+              "title": "BMW to launch series production of iX5 batteries in December",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
+              "published_date": "2026-07-28",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 1,
+          "avg_future_signal_score": 62,
+          "summary": "该技术推动机器人具身认知发展，可能间接影响汽车人机交互和自动驾驶感知，但当前不直接产生材料需求。",
+          "sources": [
+            {
+              "title": "Towards Embodied Cognition in Robots via Spatially Grounded Synthetic Worlds",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2505.14366",
+              "published_date": "2026-07-29",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Space Industry",
+          "count": 1,
+          "avg_future_signal_score": 62,
+          "summary": "该技术推动机器人具身认知发展，可能间接影响汽车人机交互和自动驾驶感知，但当前不直接产生材料需求。",
+          "sources": [
+            {
+              "title": "Towards Embodied Cognition in Robots via Spatially Grounded Synthetic Worlds",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2505.14366",
+              "published_date": "2026-07-29",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Supply Chain Migration",
+          "count": 1,
+          "avg_future_signal_score": 20,
+          "summary": "该新闻表明宝马Neue Klasse平台量产加速，但未透露材料创新，研发人员需关注后续技术细节披露。",
+          "sources": [
+            {
+              "title": "Ramp-up in record time: BMW Group Plant Debrecen produces 50,000th BMW iX3 28.07.2026 Press Release - Major milestone for BMW Group Plant Debrecen - Fastest ramp-up of a new BMW Group plant. - Strong demand for the BMW iX3, the first model of the Neue Klasse - Intensive collaboration across the production network NA5 · Technology · BMW i · iX3 · BMW · Production, Recycling · Production · Industry 4.0",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
+              "published_date": "2026-07-28",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Autonomous Driving",
+          "count": 1,
+          "avg_future_signal_score": 10,
+          "summary": "该新闻展示了自动驾驶规划算法在极限场景下的进展，但未涉及材料需求或工艺变化，因此对材料研发人员关注度低。",
+          "sources": [
+            {
+              "title": "SGTP: Sampling-based Game-Theoretic Planning for Real-Time Multi-Vehicle Autonomous Racing",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.25388",
+              "published_date": "2026-07-29",
+              "link_label": "阅读论文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在未来趋势观察、汽车新材料、企业技术动态，技术牵引以其他最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "CTP技术量产意味着电池包结构简化，对结构胶、导热材料和绝缘材料的需求将发生变化，材料研发人员需关注适配CTP的新材料方案。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注电池材料、cell-to-pack相关结构材料、回收材料（仅关键词，无具体信息）。结构胶（用于CTP电池包粘接）、导热界面材料（用于电芯与冷板间导热）、绝缘涂层或薄膜（用于电芯间绝缘）。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "“BMW ART CARS – 20 ARTISTS, 50 YEARS OF INNOVATION. REUNITED AT BMW WELT”: Exhibition opens in Munich. 28.07.2026 Press Release +++ All 20 BMW Art Cars gathered in one place for the first time +++ Free exhibition from 29 July to 31 August 2026 at BMW Welt +++ Highlight: Olafur Eliasson‘s „BMW H2R Project“ +++ Digital experience with a treasure hunt and the Artlas App +++ Art Car · Corporate · Cultural Engagement",
+          "source": "BMW",
+          "why_read": "该新闻为文化营销活动，不涉及产业变化、技术演进或材料需求，研发人员无需关注。",
+          "focus": "关注该趋势是否继续影响研发组织、供应链和材料需求。",
+          "reading_time": "约 8 分钟",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo"
+        },
+        {
+          "title": "Towards Embodied Cognition in Robots via Spatially Grounded Synthetic Worlds",
+          "source": "arXiv",
+          "why_read": "该技术推动机器人具身认知发展，可能间接影响汽车人机交互和自动驾驶感知，但当前不直接产生材料需求。",
+          "focus": "关注 机器人与具身智能 是否继续形成产业信号；潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+          "reading_time": "约 8 分钟",
+          "url": "https://arxiv.org/abs/2505.14366"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 2,
+          "items": [
+            {
+              "event_id": "c32f9cf11f81526b",
+              "canonical_url": "https://arxiv.org/abs/2505.14366",
+              "normalized_title": "towards embodied cognition robots via spatially grounded synthetic worlds",
+              "title": "Towards Embodied Cognition in Robots via Spatially Grounded Synthetic Worlds",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2505.14366"
+              ],
+              "published_date": "2026-07-29",
+              "url": "https://arxiv.org/abs/2505.14366",
+              "link_label": "阅读论文",
+              "brief": "该技术推动机器人具身认知发展，可能间接影响汽车人机交互和自动驾驶感知，但当前不直接产生材料需求。"
+            },
+            {
+              "event_id": "4868ee011c51c85a",
+              "canonical_url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
+              "normalized_title": "bmw launch series production ix5 batteries december",
+              "title": "BMW to launch series production of iX5 batteries in December",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december"
+              ],
+              "published_date": "2026-07-28",
+              "url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
+              "link_label": "官方发布",
+              "brief": "CTP技术量产意味着电池包结构简化，对结构胶、导热材料和绝缘材料的需求将发生变化，材料研发人员需关注适配CTP的新材料方案。"
+            }
+          ]
+        },
+        {
+          "domain": "Sustainable Materials",
+          "zh": "绿色材料",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "1691e48d5d62a6ca",
+              "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
+              "normalized_title": "ramp up record time bmw group plant debrecen produces 50 000th bmw ix3 28 07 2026 press release major milestone bmw group plant debrecen fastest ramp up new bmw group plant strong demand bmw ix3 first model neue klasse intensive collaboration across production network na5 technology bmw i ix3 bmw production recycling production industry 4 0",
+              "title": "Ramp-up in record time: BMW Group Plant Debrecen produces 50,000th BMW iX3 28.07.2026 Press Release - Major milestone for BMW Group Plant Debrecen - Fastest ramp-up of a new BMW Group plant. - Strong demand for the BMW iX3, the first model of the Neue Klasse - Intensive collaboration across the production network NA5 · Technology · BMW i · iX3 · BMW · Production, Recycling · Production · Industry 4.0",
+              "source": "BMW",
+              "source_names": [
+                "BMW"
+              ],
+              "source_urls": [
+                "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo"
+              ],
+              "published_date": "2026-07-28",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
+              "link_label": "官方发布",
+              "brief": "该新闻表明宝马Neue Klasse平台量产加速，但未透露材料创新，研发人员需关注后续技术细节披露。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 2,
+          "items": [
+            {
+              "event_id": "ff4ce185e9c84882",
+              "canonical_url": "https://arxiv.org/abs/2607.25388",
+              "normalized_title": "sgtp sampling based game theoretic planning real time multi vehicle autonomous racing",
+              "title": "SGTP: Sampling-based Game-Theoretic Planning for Real-Time Multi-Vehicle Autonomous Racing",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2607.25388"
+              ],
+              "published_date": "2026-07-29",
+              "url": "https://arxiv.org/abs/2607.25388",
+              "link_label": "阅读论文",
+              "brief": "该新闻展示了自动驾驶规划算法在极限场景下的进展，但未涉及材料需求或工艺变化，因此对材料研发人员关注度低。"
+            },
+            {
+              "event_id": "2272c742bb15d2a9",
+              "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
+              "normalized_title": "bmw art cars 20 artists 50 years innovation reunited at bmw welt exhibition opens munich 28 07 2026 press release all 20 bmw art cars gathered one place first time free exhibition from 29 july 31 august 2026 at bmw welt highlight olafur eliasson s bmw h2r project digital experience treasure hunt artlas app art car corporate cultural engagement",
+              "title": "“BMW ART CARS – 20 ARTISTS, 50 YEARS OF INNOVATION. REUNITED AT BMW WELT”: Exhibition opens in Munich. 28.07.2026 Press Release +++ All 20 BMW Art Cars gathered in one place for the first time +++ Free exhibition from 29 July to 31 August 2026 at BMW Welt +++ Highlight: Olafur Eliasson‘s „BMW H2R Project“ +++ Digital experience with a treasure hunt and the Artlas App +++ Art Car · Corporate · Cultural Engagement",
+              "source": "BMW",
+              "source_names": [
+                "BMW"
+              ],
+              "source_urls": [
+                "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo"
+              ],
+              "published_date": "2026-07-28",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
+              "link_label": "官方发布",
+              "brief": "该新闻为文化营销活动，不涉及产业变化、技术演进或材料需求，研发人员无需关注。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "Future Research Reserve、Sustainable Materials中已有2个机会进入 Joint Development，其中“Emerging Material Opportunity”最值得先看。",
+          "why_now": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：sample, sampling。",
+          "suggested_move": "寻找可联合定义样件、工艺窗口或验证方案的合作对象。",
+          "evidence": [
+            {
+              "title": "“BMW ART CARS – 20 ARTISTS, 50 YEARS OF INNOVATION. REUNITED AT BMW WELT”: Exhibition opens in Munich. 28.07.2026 Press Release +++ All 20 BMW Art Cars gathered in one place for the first time +++ Free exhibition from 29 July to 31 August 2026 at BMW Welt +++ Highlight: Olafur Eliasson‘s „BMW H2R Project“ +++ Digital experience with a treasure hunt and the Artlas App +++ Art Car · Corporate · Cultural Engagement",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "SGTP: Sampling-based Game-Theoretic Planning for Real-Time Multi-Vehicle Autonomous Racing",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2607.25388",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Ramp-up in record time: BMW Group Plant Debrecen produces 50,000th BMW iX3 28.07.2026 Press Release - Major milestone for BMW Group Plant Debrecen - Fastest ramp-up of a new BMW Group plant. - Strong demand for the BMW iX3, the first model of the Neue Klasse - Intensive collaboration across the production network NA5 · Technology · BMW i · iX3 · BMW · Production, Recycling · Production · Industry 4.0",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有1个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "BMW to launch series production of iX5 batteries in December",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Towards Embodied Cognition in Robots via Spatially Grounded Synthetic Worlds",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2505.14366",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-27",
       "window": [

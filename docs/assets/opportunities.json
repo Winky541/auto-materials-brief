@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27",
+  "updated_at": "2026-07-29",
   "domains": [
     {
       "domain": "Metal Materials",
@@ -33,75 +33,41 @@
       "domain": "Energy Materials",
       "zh": "能源材料",
       "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
-      "count": 4,
+      "count": 2,
       "items": [
         {
-          "event_id": "dfb8f9d2bf5b768a",
-          "canonical_url": "https://arxiv.org/abs/2607.14021",
-          "normalized_title": "industrial dexterity benchmark hardware software benchmarking platform industrial dexterous manipulation",
-          "title": "Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation",
+          "event_id": "c32f9cf11f81526b",
+          "canonical_url": "https://arxiv.org/abs/2505.14366",
+          "normalized_title": "towards embodied cognition robots via spatially grounded synthetic worlds",
+          "title": "Towards Embodied Cognition in Robots via Spatially Grounded Synthetic Worlds",
           "source": "arXiv",
           "source_names": [
             "arXiv"
           ],
           "source_urls": [
-            "https://arxiv.org/abs/2607.14021"
+            "https://arxiv.org/abs/2505.14366"
           ],
-          "published_date": "2026-07-27",
-          "url": "https://arxiv.org/abs/2607.14021",
+          "published_date": "2026-07-29",
+          "url": "https://arxiv.org/abs/2505.14366",
           "link_label": "阅读论文",
-          "brief": "该技术展示了机器人自动化在精密装配中的潜力，可能改变汽车制造中人工密集的线束和齿轮箱装配流程，但对材料研发的直接牵引有限。"
+          "brief": "该技术推动机器人具身认知发展，可能间接影响汽车人机交互和自动驾驶感知，但当前不直接产生材料需求。"
         },
         {
-          "event_id": "c75a60b70f6371ca",
-          "canonical_url": "https://arxiv.org/abs/2606.03159",
-          "normalized_title": "nvidia omnidreams real time generative world model closed loop autonomous vehicle simulation",
-          "title": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
-          "source": "arXiv",
-          "source_names": [
-            "arXiv"
-          ],
-          "source_urls": [
-            "https://arxiv.org/abs/2606.03159"
-          ],
-          "published_date": "2026-07-27",
-          "url": "https://arxiv.org/abs/2606.03159",
-          "link_label": "阅读论文",
-          "brief": "该技术提升了自动驾驶仿真能力，但材料相关性较弱，主要影响计算和传感器硬件，不直接牵引新材料需求。"
-        },
-        {
-          "event_id": "aefbe128d4e2e20c",
-          "canonical_url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
-          "normalized_title": "calb under pressure over gac aion s battery issues",
-          "title": "CALB under pressure over GAC Aion S battery issues",
+          "event_id": "4868ee011c51c85a",
+          "canonical_url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
+          "normalized_title": "bmw launch series production ix5 batteries december",
+          "title": "BMW to launch series production of iX5 batteries in December",
           "source": "Electrive",
           "source_names": [
             "Electrive"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues"
+            "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december"
           ],
-          "published_date": "2026-07-23",
-          "url": "https://www.electrive.com/2026/07/23/calb-under-pressure-over-gac-aion-s-battery-issues",
-          "link_label": "阅读原文",
-          "brief": "该新闻反映LFP电池在高里程下的可靠性挑战，可能促使材料改进，但缺乏具体技术信息，对材料研发的直接指导意义有限。"
-        },
-        {
-          "event_id": "15bc2ede5e099d98",
-          "canonical_url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
-          "normalized_title": "tesla train optimus employees at grünheide plant",
-          "title": "Tesla to train Optimus with employees at Grünheide plant",
-          "source": "Electrive",
-          "source_names": [
-            "Electrive"
-          ],
-          "source_urls": [
-            "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide"
-          ],
-          "published_date": "2026-07-23",
-          "url": "https://www.electrive.com/2026/07/22/my-colleague-the-robot-optimus-learns-from-tesla-employees-in-grunheide",
+          "published_date": "2026-07-28",
+          "url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
           "link_label": "官方发布",
-          "brief": "特斯拉将人形机器人引入汽车制造场景，可能推动机器人量产技术，但当前阶段材料需求不明确，需关注后续具体材料选择。"
+          "brief": "CTP技术量产意味着电池包结构简化，对结构胶、导热材料和绝缘材料的需求将发生变化，材料研发人员需关注适配CTP的新材料方案。"
         }
       ]
     },
@@ -116,31 +82,66 @@
       "domain": "Sustainable Materials",
       "zh": "绿色材料",
       "description": "PCR塑料、生物基塑料、天然纤维、循环材料、低碳材料、绿色制造",
-      "count": 0,
-      "items": []
+      "count": 1,
+      "items": [
+        {
+          "event_id": "1691e48d5d62a6ca",
+          "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
+          "normalized_title": "ramp up record time bmw group plant debrecen produces 50 000th bmw ix3 28 07 2026 press release major milestone bmw group plant debrecen fastest ramp up new bmw group plant strong demand bmw ix3 first model neue klasse intensive collaboration across production network na5 technology bmw i ix3 bmw production recycling production industry 4 0",
+          "title": "Ramp-up in record time: BMW Group Plant Debrecen produces 50,000th BMW iX3 28.07.2026 Press Release - Major milestone for BMW Group Plant Debrecen - Fastest ramp-up of a new BMW Group plant. - Strong demand for the BMW iX3, the first model of the Neue Klasse - Intensive collaboration across the production network NA5 · Technology · BMW i · iX3 · BMW · Production, Recycling · Production · Industry 4.0",
+          "source": "BMW",
+          "source_names": [
+            "BMW"
+          ],
+          "source_urls": [
+            "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo"
+          ],
+          "published_date": "2026-07-28",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
+          "link_label": "官方发布",
+          "brief": "该新闻表明宝马Neue Klasse平台量产加速，但未透露材料创新，研发人员需关注后续技术细节披露。"
+        }
+      ]
     },
     {
       "domain": "Future Research Reserve",
       "zh": "前沿研究储备",
       "description": "超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料",
-      "count": 1,
+      "count": 2,
       "items": [
         {
-          "event_id": "9ea78482680dec26",
-          "canonical_url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
-          "normalized_title": "porsche appoints new production chief reportedly puts more ev projects hold",
-          "title": "Porsche appoints new production chief, reportedly puts more EV projects on hold",
-          "source": "Electrive",
+          "event_id": "ff4ce185e9c84882",
+          "canonical_url": "https://arxiv.org/abs/2607.25388",
+          "normalized_title": "sgtp sampling based game theoretic planning real time multi vehicle autonomous racing",
+          "title": "SGTP: Sampling-based Game-Theoretic Planning for Real-Time Multi-Vehicle Autonomous Racing",
+          "source": "arXiv",
           "source_names": [
-            "Electrive"
+            "arXiv"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold"
+            "https://arxiv.org/abs/2607.25388"
           ],
-          "published_date": "2026-07-23",
-          "url": "https://www.electrive.com/2026/07/23/porsche-appoints-new-production-chief-reportedly-puts-more-ev-projects-on-hold",
-          "link_label": "阅读原文",
-          "brief": "保时捷作为高端车企，其电动化节奏调整可能影响供应链材料需求预期，但当前新闻无具体材料信息。"
+          "published_date": "2026-07-29",
+          "url": "https://arxiv.org/abs/2607.25388",
+          "link_label": "阅读论文",
+          "brief": "该新闻展示了自动驾驶规划算法在极限场景下的进展，但未涉及材料需求或工艺变化，因此对材料研发人员关注度低。"
+        },
+        {
+          "event_id": "2272c742bb15d2a9",
+          "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
+          "normalized_title": "bmw art cars 20 artists 50 years innovation reunited at bmw welt exhibition opens munich 28 07 2026 press release all 20 bmw art cars gathered one place first time free exhibition from 29 july 31 august 2026 at bmw welt highlight olafur eliasson s bmw h2r project digital experience treasure hunt artlas app art car corporate cultural engagement",
+          "title": "“BMW ART CARS – 20 ARTISTS, 50 YEARS OF INNOVATION. REUNITED AT BMW WELT”: Exhibition opens in Munich. 28.07.2026 Press Release +++ All 20 BMW Art Cars gathered in one place for the first time +++ Free exhibition from 29 July to 31 August 2026 at BMW Welt +++ Highlight: Olafur Eliasson‘s „BMW H2R Project“ +++ Digital experience with a treasure hunt and the Artlas App +++ Art Car · Corporate · Cultural Engagement",
+          "source": "BMW",
+          "source_names": [
+            "BMW"
+          ],
+          "source_urls": [
+            "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo"
+          ],
+          "published_date": "2026-07-28",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
+          "link_label": "官方发布",
+          "brief": "该新闻为文化营销活动，不涉及产业变化、技术演进或材料需求，研发人员无需关注。"
         }
       ]
     }

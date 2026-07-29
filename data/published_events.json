@@ -1,6 +1,241 @@
 {
   "events": [
     {
+      "event_id": "2272c742bb15d2a9",
+      "canonical_title": "“BMW ART CARS – 20 ARTISTS, 50 YEARS OF INNOVATION. REUNITED AT BMW WELT”: Exhibition opens in Munich. 28.07.2026 Press Release +++ All 20 BMW Art Cars gathered in one place for the first time +++ Free exhibition from 29 July to 31 August 2026 at BMW Welt +++ Highlight: Olafur Eliasson‘s „BMW H2R Project“ +++ Digital experience with a treasure hunt and the Artlas App +++ Art Car · Corporate · Cultural Engagement",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
+      "normalized_title": "bmw art cars 20 artists 50 years innovation reunited at bmw welt exhibition opens munich 28 07 2026 press release all 20 bmw art cars gathered one place first time free exhibition from 29 july 31 august 2026 at bmw welt highlight olafur eliasson s bmw h2r project digital experience treasure hunt artlas app art car corporate cultural engagement",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "c32f9cf11f81526b",
+      "canonical_title": "Towards Embodied Cognition in Robots via Spatially Grounded Synthetic Worlds",
+      "canonical_url": "https://arxiv.org/abs/2505.14366",
+      "normalized_title": "towards embodied cognition robots via spatially grounded synthetic worlds",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "source_urls": [
+        "https://arxiv.org/abs/2505.14366"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "4868ee011c51c85a",
+      "canonical_title": "BMW to launch series production of iX5 batteries in December",
+      "canonical_url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
+      "normalized_title": "bmw launch series production ix5 batteries december",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "智能制造"
+      ],
+      "material_opportunities": [
+        "结构胶（用于CTP电池包粘接）、导热界面材料（用于电芯与冷板间导热）、绝缘涂层或薄膜（用于电芯间绝缘）。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "b5bf7d72cf7b3abd",
+      "canonical_title": "Australia allocates AU$30 million for ‘smarter grid’ projects – including electromobility",
+      "canonical_url": "https://www.electrive.com/2026/07/27/australia-allocates-au30-million-for-smarter-grid-projects-including-electromobility",
+      "normalized_title": "australia allocates au 30 million smarter grid projects including electromobility",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/27/australia-allocates-au30-million-for-smarter-grid-projects-including-electromobility"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "1691e48d5d62a6ca",
+      "canonical_title": "Ramp-up in record time: BMW Group Plant Debrecen produces 50,000th BMW iX3 28.07.2026 Press Release - Major milestone for BMW Group Plant Debrecen - Fastest ramp-up of a new BMW Group plant. - Strong demand for the BMW iX3, the first model of the Neue Klasse - Intensive collaboration across the production network NA5 · Technology · BMW i · iX3 · BMW · Production, Recycling · Production · Industry 4.0",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
+      "normalized_title": "ramp up record time bmw group plant debrecen produces 50 000th bmw ix3 28 07 2026 press release major milestone bmw group plant debrecen fastest ramp up new bmw group plant strong demand bmw ix3 first model neue klasse intensive collaboration across production network na5 technology bmw i ix3 bmw production recycling production industry 4 0",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Sustainable Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "可持续与循环材料",
+        "回收",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "ff4ce185e9c84882",
+      "canonical_title": "SGTP: Sampling-based Game-Theoretic Planning for Real-Time Multi-Vehicle Autonomous Racing",
+      "canonical_url": "https://arxiv.org/abs/2607.25388",
+      "normalized_title": "sgtp sampling based game theoretic planning real time multi vehicle autonomous racing",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.25388"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "自动驾驶"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "bb90b059b60872f7",
+      "canonical_title": "BYD's First Kei Car Takes The Fight To Toyota's Home Turf",
+      "canonical_url": "https://insideevs.com/news/803000/bya-racco-ev-kei-car-japan",
+      "normalized_title": "byd s first kei car takes fight toyota s home turf",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "source_urls": [
+        "https://insideevs.com/news/803000/bya-racco-ev-kei-car-japan"
+      ],
+      "source_names": [
+        "InsideEVs"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "ba04350af75c7882",
+      "canonical_title": "Hyundai and Kia consolidate smart and bidirectional charging under new brand",
+      "canonical_url": "https://www.electrive.com/2026/07/27/hyundai-and-kia-consolidate-smart-and-bidirectional-charging-under-new-brand",
+      "normalized_title": "hyundai kia consolidate smart bidirectional charging under new brand",
+      "first_seen": "2026-07-29",
+      "last_seen": "2026-07-29",
+      "source_urls": [
+        "https://www.electrive.com/2026/07/27/hyundai-and-kia-consolidate-smart-and-bidirectional-charging-under-new-brand"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
       "event_id": "9bb0c3968afe0832",
       "canonical_title": "Why AI Needs a “Genie Coefficient”",
       "canonical_url": "https://spectrum.ieee.org/ai-agent-benchmark",
