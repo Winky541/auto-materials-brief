@@ -1,6 +1,304 @@
 {
-  "updated_at": "2026-07-29",
+  "updated_at": "2026-08-03",
   "items": [
+    {
+      "date": "2026-08-03",
+      "window": [
+        {
+          "category": "Supply Chain Migration",
+          "count": 1,
+          "avg_future_signal_score": 62,
+          "summary": "该新闻反映了车企在东南亚市场布局电动车型的趋势，但未涉及具体材料技术，对材料研发的直接牵引有限。",
+          "sources": [
+            {
+              "title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+              "published_date": "2026-08-03",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Energy Revolution",
+          "count": 1,
+          "avg_future_signal_score": 50,
+          "summary": "该研究可能改变电池材料研发中的电化学测试解读方式，对多孔电极材料的设计和评估有指导意义，但材料需求牵引不直接。",
+          "sources": [
+            {
+              "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02118-2",
+              "published_date": "2026-07-31",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Fusion & Frontier Energy",
+          "count": 1,
+          "avg_future_signal_score": 50,
+          "summary": "该研究可能改变电池材料研发中的电化学测试解读方式，对多孔电极材料的设计和评估有指导意义，但材料需求牵引不直接。",
+          "sources": [
+            {
+              "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02118-2",
+              "published_date": "2026-07-31",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "AI Agent & AI Hardware",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该新闻释放了环境感知技术发展的信号，可能影响未来汽车智能座舱和健康监测功能，但当前无具体材料需求牵引，研发人员可暂不关注。",
+          "sources": [
+            {
+              "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+              "published_date": "2026-07-25",
+              "link_label": "查看专利"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Sensing",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该新闻释放了环境感知技术发展的信号，可能影响未来汽车智能座舱和健康监测功能，但当前无具体材料需求牵引，研发人员可暂不关注。",
+          "sources": [
+            {
+              "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+              "published_date": "2026-07-25",
+              "link_label": "查看专利"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在未来趋势观察、专利与论文、汽车新材料，技术牵引以其他最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "该新闻释放了环境感知技术发展的信号，可能影响未来汽车智能座舱和健康监测功能，但当前无具体材料需求牵引，研发人员可暂不关注。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注半导体材料（硅基）、无线传感相关材料（如天线材料、射频材料）、健康监测设备用柔性电子材料（潜在）、锂离子电池正极材料、电解液、多孔电极材料、磁性材料（如氧化铁粉末）、纸基材料。材料相关性较弱，暂不优先。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+          "source": "Nature Energy",
+          "why_read": "该研究可能改变电池材料研发中的电化学测试解读方式，对多孔电极材料的设计和评估有指导意义，但材料需求牵引不直接。",
+          "focus": "关注 储能 是否继续形成产业信号；潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+          "reading_time": "约 8 分钟",
+          "url": "https://www.nature.com/articles/s41560-026-02118-2"
+        },
+        {
+          "title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
+          "source": "IEEE Spectrum",
+          "why_read": "该新闻未涉及汽车材料技术或产业变化，对研发人员无直接参考价值。",
+          "focus": "关注该趋势是否继续影响研发组织、供应链和材料需求。",
+          "reading_time": "约 8 分钟",
+          "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Metal Materials",
+          "zh": "金属材料",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "6c9a4e89e1d89434",
+              "canonical_url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+              "normalized_title": "this hi fi tape recorder changed radio forever",
+              "title": "This Hi-Fi Tape Recorder Changed Radio Forever",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/magnetophon-laugh-track"
+              ],
+              "published_date": "2026-08-02",
+              "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+              "link_label": "查看专利",
+              "brief": "该新闻为历史回顾，无当前产业变化或技术演进，对汽车材料研发无直接牵引作用。"
+            }
+          ]
+        },
+        {
+          "domain": "Functional Materials",
+          "zh": "功能材料",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "29b08ccf53a4a733",
+              "canonical_url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+              "normalized_title": "2022 ieee president k j ray liu honored his leadership",
+              "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/ieee-president-ray-liu-award"
+              ],
+              "published_date": "2026-07-25",
+              "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+              "link_label": "查看专利",
+              "brief": "该新闻释放了环境感知技术发展的信号，可能影响未来汽车智能座舱和健康监测功能，但当前无具体材料需求牵引，研发人员可暂不关注。"
+            }
+          ]
+        },
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 2,
+          "items": [
+            {
+              "event_id": "7ce7f943a8f418cb",
+              "canonical_url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+              "normalized_title": "hyundai unveils neira electric mpv indonesia",
+              "title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia"
+              ],
+              "published_date": "2026-08-03",
+              "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+              "link_label": "官方发布",
+              "brief": "该新闻反映了车企在东南亚市场布局电动车型的趋势，但未涉及具体材料技术，对材料研发的直接牵引有限。"
+            },
+            {
+              "event_id": "e2170b877502238e",
+              "canonical_url": "https://www.nature.com/articles/s41560-026-02118-2",
+              "normalized_title": "diffusion like overpotentials from non diffusion mechanisms battery particles",
+              "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+              "source": "Nature Energy",
+              "source_names": [
+                "Nature Energy"
+              ],
+              "source_urls": [
+                "https://www.nature.com/articles/s41560-026-02118-2"
+              ],
+              "published_date": "2026-07-31",
+              "url": "https://www.nature.com/articles/s41560-026-02118-2",
+              "link_label": "阅读论文",
+              "brief": "该研究可能改变电池材料研发中的电化学测试解读方式，对多孔电极材料的设计和评估有指导意义，但材料需求牵引不直接。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "a0a76514c9e6229a",
+              "canonical_url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
+              "normalized_title": "siobahn day grady wants everyone be ai literate",
+              "title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu"
+              ],
+              "published_date": "2026-07-29",
+              "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
+              "link_label": "查看专利",
+              "brief": "该新闻未涉及汽车材料技术或产业变化，对研发人员无直接参考价值。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Energy Materials中已有1个机会进入 Technology Watch，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "Functional Materials、Metal Materials中已有2个机会进入 Supplier Research，其中“Flexible Sensing Materials”最值得先看。",
+          "why_now": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：startup, research institute, university, company。",
+          "suggested_move": "锁定潜在供应商、研究机构或初创公司，准备初步调研。",
+          "evidence": [
+            {
+              "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "This Hi-Fi Tape Recorder Changed Radio Forever",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "Future Research Reserve中已有1个机会进入 Joint Development，其中“Emerging Material Opportunity”最值得先看。",
+          "why_now": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：collaboration, partnership。",
+          "suggested_move": "寻找可联合定义样件、工艺窗口或验证方案的合作对象。",
+          "evidence": [
+            {
+              "title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有1个机会进入 Strategic Reserve，其中“Solid-State Electrolytes”最值得先看。",
+          "why_now": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+              "source": "Nature Energy",
+              "url": "https://www.nature.com/articles/s41560-026-02118-2",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-07-29",
       "window": [

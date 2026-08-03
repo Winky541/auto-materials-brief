@@ -1,6 +1,241 @@
 {
   "events": [
     {
+      "event_id": "29b08ccf53a4a733",
+      "canonical_title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
+      "canonical_url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+      "normalized_title": "2022 ieee president k j ray liu honored his leadership",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-08-03",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-president-ray-liu-award"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "其他",
+        "智能座舱"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "a0a76514c9e6229a",
+      "canonical_title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
+      "canonical_url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
+      "normalized_title": "siobahn day grady wants everyone be ai literate",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "source_urls": [
+        "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "e2170b877502238e",
+      "canonical_title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+      "canonical_url": "https://www.nature.com/articles/s41560-026-02118-2",
+      "normalized_title": "diffusion like overpotentials from non diffusion mechanisms battery particles",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "source_urls": [
+        "https://www.nature.com/articles/s41560-026-02118-2"
+      ],
+      "source_names": [
+        "Nature Energy"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "锂离子电池",
+        "储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "6c9a4e89e1d89434",
+      "canonical_title": "This Hi-Fi Tape Recorder Changed Radio Forever",
+      "canonical_url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+      "normalized_title": "this hi fi tape recorder changed radio forever",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "source_urls": [
+        "https://spectrum.ieee.org/magnetophon-laugh-track"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "8712aed873febd79",
+      "canonical_title": "IEEE Publishing Ethics Team Upholds Research Integrity",
+      "canonical_url": "https://spectrum.ieee.org/ieee-publishing-ethics-research-integrity",
+      "normalized_title": "ieee publishing ethics team upholds research integrity",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-publishing-ethics-research-integrity"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "75fa70fe03e6c696",
+      "canonical_title": "AI Is Hyper-Scaling Digital Inequality",
+      "canonical_url": "https://spectrum.ieee.org/ai-digital-divide",
+      "normalized_title": "ai is hyper scaling digital inequality",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "source_urls": [
+        "https://spectrum.ieee.org/ai-digital-divide"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "906892cdce1443bf",
+      "canonical_title": "Fridays With Bob",
+      "canonical_url": "https://spectrum.ieee.org/risk",
+      "normalized_title": "fridays bob",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "source_urls": [
+        "https://spectrum.ieee.org/risk"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "7ce7f943a8f418cb",
+      "canonical_title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
+      "canonical_url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+      "normalized_title": "hyundai unveils neira electric mpv indonesia",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "source_urls": [
+        "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "企业技术动态",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "2272c742bb15d2a9",
       "canonical_title": "“BMW ART CARS – 20 ARTISTS, 50 YEARS OF INNOVATION. REUNITED AT BMW WELT”: Exhibition opens in Munich. 28.07.2026 Press Release +++ All 20 BMW Art Cars gathered in one place for the first time +++ Free exhibition from 29 July to 31 August 2026 at BMW Welt +++ Highlight: Olafur Eliasson‘s „BMW H2R Project“ +++ Digital experience with a treasure hunt and the Artlas App +++ Art Car · Corporate · Cultural Engagement",
       "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
@@ -320,36 +555,6 @@
         "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
       ],
       "published": true
-    },
-    {
-      "event_id": "29b08ccf53a4a733",
-      "canonical_title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
-      "canonical_url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
-      "normalized_title": "2022 ieee president k j ray liu honored his leadership",
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-07-27",
-      "source_urls": [
-        "https://spectrum.ieee.org/ieee-president-ray-liu-award"
-      ],
-      "source_names": [
-        "IEEE Spectrum"
-      ],
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "bookshelf_category": "Future Research Reserve",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "topic_tags": [
-        "学术论文",
-        "其他"
-      ],
-      "material_opportunities": [
-        "材料相关性较弱，暂不优先。"
-      ],
-      "published": false
     },
     {
       "event_id": "c75a60b70f6371ca",

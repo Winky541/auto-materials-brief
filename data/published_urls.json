@@ -643,6 +643,41 @@
       "published_date": "2026-07-29",
       "selected_date": "2026-07-29",
       "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41560-026-02118-2",
+      "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+      "published_date": "2026-07-31",
+      "selected_date": "2026-08-03",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+      "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
+      "published_date": "2026-07-25",
+      "selected_date": "2026-08-03",
+      "category": "学术论文"
+    },
+    {
+      "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+      "title": "This Hi-Fi Tape Recorder Changed Radio Forever",
+      "published_date": "2026-08-02",
+      "selected_date": "2026-08-03",
+      "category": "学术论文"
+    },
+    {
+      "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+      "title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
+      "published_date": "2026-08-03",
+      "selected_date": "2026-08-03",
+      "category": "企业技术动态"
+    },
+    {
+      "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
+      "title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
+      "published_date": "2026-07-29",
+      "selected_date": "2026-08-03",
+      "category": "未来趋势观察"
     }
   ]
 }

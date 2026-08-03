@@ -1,128 +1,141 @@
 {
-  "date": "2026-07-29",
+  "date": "2026-08-03",
   "count": 5,
   "items": [
     {
-      "title": "BMW to launch series production of iX5 batteries in December",
-      "source": "Electrive",
-      "published_date": "2026-07-28",
-      "url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
-      "category": "企业技术动态",
-      "subcategory": "",
-      "summary": "宝马位于美国南卡罗来纳州伍德拉夫的新工厂将于12月开始为iX5 eSUV批量生产高压电池。该电池组装工厂采用人工智能、数字孪生和电芯到电池包（cell-to-pack）技术。",
+      "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+      "source": "Nature Energy",
+      "published_date": "2026-07-31",
+      "url": "https://www.nature.com/articles/s41560-026-02118-2",
+      "category": "电池与储能材料",
+      "subcategory": "锂离子电池",
+      "summary": "该研究发表于Nature Energy，指出锂离子电池电极的低频电化学响应通常被解释为固态锂扩散的特征，但作者发现多孔正极颗粒中的电解液渗透可产生类似的扩散行为，且与体相扩散无关。这一发现挑战了传统阻抗谱解析方法，对电池材料表征和性能评估具有重要影响。",
       "technical_points": [
-        "采用cell-to-pack（CTP）技术，取消模组，提升体积利用率",
-        "部署人工智能和数字孪生技术优化生产流程",
-        "高压电池系统，适配iX5 eSUV车型"
+        "低频电化学响应可能由电解液渗透而非固态扩散引起",
+        "多孔正极颗粒中的电解液渗透产生类扩散过电位",
+        "传统阻抗谱解析可能高估扩散系数或误判机理",
+        "研究基于实验和建模结合，揭示非扩散机制",
+        "对电池材料的多孔结构设计和表征方法提出新要求"
       ],
       "materials_involved": [
-        "电池材料",
-        "cell-to-pack相关结构材料"
+        "锂离子电池正极材料",
+        "电解液",
+        "多孔电极材料"
       ],
-      "companies_or_institutions": [
-        "BMW"
-      ],
-      "impact_assessment": "宝马iX5电池量产标志着CTP技术在高端SUV上的应用加速，可能推动电池包结构件、热管理材料和轻量化材料的进一步需求。",
-      "research_value": "对电池材料研究员而言，CTP技术对结构胶、导热界面材料、绝缘材料等提出新要求，值得关注。",
-      "industrial_maturity": "production",
-      "priority": "P1",
+      "companies_or_institutions": [],
+      "impact_assessment": "该研究可能影响电池材料研发中的电化学表征方法，尤其是对多孔电极材料的扩散系数评估。对汽车动力电池的寿命预测和性能优化有潜在影响，但属于基础研究层面，距离产业化应用较远。",
+      "research_value": "为电池材料研究员提供了新的视角，提醒在分析电化学数据时需考虑电解液渗透等非扩散机制，有助于更准确地评估材料性能，对材料设计和表征方法有参考价值。",
+      "industrial_maturity": "lab",
+      "priority": "P2",
       "confidence": 80,
       "follow_up": true,
-      "one_sentence": "宝马iX5电池将于12月量产，采用CTP技术，工厂部署AI和数字孪生。",
-      "why_it_matters": "CTP技术量产意味着电池包结构简化，对结构胶、导热材料和绝缘材料的需求将发生变化，材料研发人员需关注适配CTP的新材料方案。",
-      "technology_driver": "智能制造",
-      "material_relevance": "结构胶、导热界面材料、绝缘材料、轻量化复合材料",
-      "material_opportunity": "结构胶（用于CTP电池包粘接）、导热界面材料（用于电芯与冷板间导热）、绝缘涂层或薄膜（用于电芯间绝缘）。",
-      "validation_opportunity": "可关注CTP电池包用结构胶和导热材料的供应商动态，评估是否有样件验证机会。",
+      "one_sentence": "Nature Energy研究揭示多孔正极中电解液渗透可产生类扩散响应，影响电池材料电化学表征准确性。",
+      "why_it_matters": "该研究可能改变电池材料研发中的电化学测试解读方式，对多孔电极材料的设计和评估有指导意义，但材料需求牵引不直接。",
+      "technology_driver": "储能",
+      "material_relevance": "多孔电极材料、电解液",
+      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "该研究属于基础机理研究，不直接涉及新材料验证或供应商调研，但可能影响未来电极材料的设计方向，适合长期跟踪。",
       "suggested_action": "持续跟踪",
-      "trend_potential": "高",
-      "future_signal": "CTP技术从概念走向量产，将带动电池包结构材料和热管理材料的迭代升级。",
-      "future_signal_score": 75,
-      "material_opportunity_score": 76,
-      "material_validation_score": 76,
+      "trend_potential": "中",
+      "future_signal": "电池电化学表征方法可能面临更新，多孔电极设计需考虑电解液渗透影响，但产业化信号不强。",
+      "future_signal_score": 50,
+      "material_opportunity_score": 30,
+      "material_validation_score": 30,
       "analysis_status": "success",
-      "rule_score": 40,
-      "source_score": 78,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=4 (battery); companies=5 (BMW); industrial=6 (launch, plant); future=0 (none); current_month=5",
+      "rule_score": 45,
+      "source_score": 94,
+      "source_type": "journal_rss",
+      "filter_reason": "source=24; automotive=0 (none); materials=16 (battery, lithium-ion, electrolyte, cathode); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
       "stage": "Strategic Reserve",
       "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
-      "canonical_url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
-      "normalized_title": "bmw launch series production ix5 batteries december",
-      "event_id": "4868ee011c51c85a",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "canonical_url": "https://www.nature.com/articles/s41560-026-02118-2",
+      "normalized_title": "diffusion like overpotentials from non diffusion mechanisms battery particles",
+      "event_id": "e2170b877502238e",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
       "module_targets": [
         "today_key_insight",
         "bookshelf",
-        "suggested_actions"
+        "suggested_actions",
+        "future_signals"
       ],
-      "final_score": 66,
-      "bookshelf_category": "Functional Materials",
+      "final_score": 59,
+      "bookshelf_category": "Energy Materials",
       "related_sources": [
         {
-          "source": "Electrive",
-          "url": "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december",
-          "published_date": "2026-07-28"
+          "source": "Nature Energy",
+          "url": "https://www.nature.com/articles/s41560-026-02118-2",
+          "published_date": "2026-07-31"
         }
       ],
       "source_urls": [
-        "https://www.electrive.com/2026/07/28/bmw-to-launch-series-production-of-ix5-batteries-in-december"
+        "https://www.nature.com/articles/s41560-026-02118-2"
       ],
       "source_names": [
-        "Electrive"
+        "Nature Energy"
       ],
-      "selected_at": "2026-07-29T12:09:00+08:00"
+      "selected_at": "2026-08-03T12:35:15+08:00"
     },
     {
-      "title": "Ramp-up in record time: BMW Group Plant Debrecen produces 50,000th BMW iX3 28.07.2026 Press Release - Major milestone for BMW Group Plant Debrecen - Fastest ramp-up of a new BMW Group plant. - Strong demand for the BMW iX3, the first model of the Neue Klasse - Intensive collaboration across the production network NA5 · Technology · BMW i · iX3 · BMW · Production, Recycling · Production · Industry 4.0",
-      "source": "BMW",
-      "published_date": "2026-07-28",
-      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
-      "category": "可持续与循环材料",
-      "subcategory": "回收",
-      "summary": "宝马集团德布勒森工厂在创纪录时间内生产了第5万辆宝马iX3，这是Neue Klasse平台的首款车型。新闻强调快速产能爬坡和工厂协作，但未提供具体材料或工艺细节。提及回收关键词，但无具体内容。",
+      "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-07-25",
+      "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+      "category": "学术论文",
+      "subcategory": "",
+      "summary": "IEEE前主席K.J. Ray Liu因其领导力获Haraden Pratt奖。他早年受台湾半导体产业政策影响进入电气工程领域，后赴美深造，在信号处理、VLSI及环境感知技术方面取得成就。他创立Origin Wireless公司，开发基于Wi-Fi的无线感知技术，用于室内追踪和健康监测。担任IEEE主席期间，他推动区域重组、增加奖金额度及财务透明化。",
       "technical_points": [
-        "宝马德布勒森工厂实现最快产能爬坡",
-        "第5万辆宝马iX3下线，Neue Klasse平台首款车型",
-        "强调生产网络协作，但无具体技术细节"
+        "时间反演信号处理技术可提升信噪比四倍，用于无线通信和感知。",
+        "环境感知技术利用Wi-Fi无线电波实现无穿戴设备的人体活动、呼吸、心跳监测。",
+        "VLSI信号处理是数字信号处理与硬件实现的交叉领域，支撑现代电子设备。",
+        "IEEE区域重组反映全球会员分布变化，亚洲会员占比增至40%。"
       ],
       "materials_involved": [
-        "回收材料（仅关键词，无具体信息）"
+        "半导体材料（硅基）",
+        "无线传感相关材料（如天线材料、射频材料）",
+        "健康监测设备用柔性电子材料（潜在）"
       ],
       "companies_or_institutions": [
-        "BMW"
+        "IEEE",
+        "Origin Wireless",
+        "ADT",
+        "台湾大学",
+        "密歇根大学",
+        "加州大学洛杉矶分校",
+        "马里兰大学",
+        "台湾工业技术研究院",
+        "台积电"
       ],
-      "impact_assessment": "该新闻主要展示宝马的制造能力和市场成功，对材料研发的直接牵引有限。回收关键词暗示可持续方向，但缺乏具体材料需求。",
-      "research_value": "对材料研究员的参考价值较低，因为无新材料、新工艺或验证信息。",
-      "industrial_maturity": "production",
+      "impact_assessment": "该新闻主要涉及IEEE组织治理和信号处理技术，对汽车产业链的直接技术影响有限。但环境感知技术可应用于智能座舱、驾驶员监测等场景，间接推动相关传感器和材料需求。",
+      "research_value": "对汽车材料研究员而言，参考价值较低，主要在于环境感知技术可能带动传感器材料、天线材料等需求，但当前无具体材料细节。",
+      "industrial_maturity": "unknown",
       "priority": "P3",
       "confidence": 80,
       "follow_up": false,
-      "one_sentence": "宝马德布勒森工厂生产第5万辆iX3，但无材料技术细节，材料相关性弱。",
-      "why_it_matters": "该新闻表明宝马Neue Klasse平台量产加速，但未透露材料创新，研发人员需关注后续技术细节披露。",
-      "technology_driver": "其他",
-      "material_relevance": "材料相关性较弱，暂不优先。",
+      "one_sentence": "IEEE前主席获领导力奖，其环境感知技术或可启发汽车智能座舱应用，但材料相关性弱。",
+      "why_it_matters": "该新闻释放了环境感知技术发展的信号，可能影响未来汽车智能座舱和健康监测功能，但当前无具体材料需求牵引，研发人员可暂不关注。",
+      "technology_driver": "智能座舱",
+      "material_relevance": "传感材料、天线材料",
       "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "无具体材料信息，无法判断验证机会。",
+      "validation_opportunity": "信息不足，无明确样件验证或供应商调研价值。",
       "suggested_action": "暂不优先",
       "trend_potential": "低",
-      "future_signal": "宝马快速产能爬坡可能预示Neue Klasse平台供应链成熟，但材料信号不明确。",
-      "future_signal_score": 20,
-      "material_opportunity_score": 21,
-      "material_validation_score": 21,
+      "future_signal": "环境感知技术可能成为智能座舱的潜在方向，但距离材料需求明确化尚远。",
+      "future_signal_score": 30,
+      "material_opportunity_score": 31,
+      "material_validation_score": 31,
       "analysis_status": "success",
-      "rule_score": 39,
-      "source_score": 88,
-      "source_type": "company_news_page",
-      "filter_reason": "source=22; automotive=0 (none); materials=4 (recycling); companies=5 (BMW); industrial=3 (plant); future=0 (none); current_month=5",
-      "stage": "Joint Development",
-      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：collaboration。",
-      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
-      "normalized_title": "ramp up record time bmw group plant debrecen produces 50 000th bmw ix3 28 07 2026 press release major milestone bmw group plant debrecen fastest ramp up new bmw group plant strong demand bmw ix3 first model neue klasse intensive collaboration across production network na5 technology bmw i ix3 bmw production recycling production industry 4 0",
-      "event_id": "1691e48d5d62a6ca",
+      "rule_score": 41,
+      "source_score": 82,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=6 (launch, patent); future=10 (innovation, research); current_month=5",
+      "stage": "Supplier Research",
+      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：startup, research institute, university, company。",
+      "canonical_url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+      "normalized_title": "2022 ieee president k j ray liu honored his leadership",
+      "event_id": "29b08ccf53a4a733",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "",
@@ -133,201 +146,79 @@
         "suggested_actions"
       ],
       "final_score": 47,
-      "bookshelf_category": "Sustainable Materials",
-      "related_sources": [
-        {
-          "source": "BMW",
-          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo",
-          "published_date": "2026-07-28"
-        }
-      ],
-      "source_urls": [
-        "https://www.press.bmwgroup.com/global/article/detail/T0459620EN/ramp-up-in-record-time:-bmw-group-plant-debrecen-produces-50-000th-bmw-ix3?showMedia=photo"
-      ],
-      "source_names": [
-        "BMW"
-      ],
-      "selected_at": "2026-07-29T12:09:00+08:00"
-    },
-    {
-      "title": "“BMW ART CARS – 20 ARTISTS, 50 YEARS OF INNOVATION. REUNITED AT BMW WELT”: Exhibition opens in Munich. 28.07.2026 Press Release +++ All 20 BMW Art Cars gathered in one place for the first time +++ Free exhibition from 29 July to 31 August 2026 at BMW Welt +++ Highlight: Olafur Eliasson‘s „BMW H2R Project“ +++ Digital experience with a treasure hunt and the Artlas App +++ Art Car · Corporate · Cultural Engagement",
-      "source": "BMW",
-      "published_date": "2026-07-28",
-      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "宝马在慕尼黑宝马世界举办艺术车展览，首次汇集全部20辆宝马艺术车，展期为2026年7月29日至8月31日。亮点包括奥拉维尔·埃利亚松的“BMW H2R项目”。展览还提供数字体验，如寻宝游戏和Artlas应用。该新闻主要涉及艺术与文化，无技术细节。",
-      "technical_points": [],
-      "materials_involved": [],
-      "companies_or_institutions": [
-        "BMW"
-      ],
-      "impact_assessment": "该新闻为艺术展览活动，对汽车产业链或研发方向无直接影响。",
-      "research_value": "对汽车材料研究员的参考价值极低，不涉及材料技术。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 100,
-      "follow_up": false,
-      "one_sentence": "宝马举办艺术车展览，无技术或材料相关内容。",
-      "why_it_matters": "该新闻为文化营销活动，不涉及产业变化、技术演进或材料需求，研发人员无需关注。",
-      "technology_driver": "其他",
-      "material_relevance": "材料相关性较弱，暂不优先。",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "无样件验证价值，无需供应商调研，不适合前瞻储备。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "无产业或技术趋势信号。",
-      "future_signal_score": 62,
-      "material_opportunity_score": 30,
-      "material_validation_score": 30,
-      "analysis_status": "success",
-      "rule_score": 42,
-      "source_score": 88,
-      "source_type": "company_news_page",
-      "filter_reason": "source=22; automotive=5 (car); materials=0 (none); companies=5 (BMW); industrial=0 (none); future=5 (innovation); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
-      "normalized_title": "bmw art cars 20 artists 50 years innovation reunited at bmw welt exhibition opens munich 28 07 2026 press release all 20 bmw art cars gathered one place first time free exhibition from 29 july 31 august 2026 at bmw welt highlight olafur eliasson s bmw h2r project digital experience treasure hunt artlas app art car corporate cultural engagement",
-      "event_id": "2272c742bb15d2a9",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "future_signals"
-      ],
-      "final_score": 43,
-      "bookshelf_category": "Future Research Reserve",
-      "related_sources": [
-        {
-          "source": "BMW",
-          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo",
-          "published_date": "2026-07-28"
-        }
-      ],
-      "source_urls": [
-        "https://www.press.bmwgroup.com/global/article/detail/T0459616EN/“bmw-art-cars-–-20-artists-50-years-of-innovation-reunited-at-bmw-welt”:-exhibition-opens-in-munich?showMedia=photo"
-      ],
-      "source_names": [
-        "BMW"
-      ],
-      "selected_at": "2026-07-29T12:09:00+08:00"
-    },
-    {
-      "title": "Towards Embodied Cognition in Robots via Spatially Grounded Synthetic Worlds",
-      "source": "arXiv",
-      "published_date": "2026-07-29",
-      "url": "https://arxiv.org/abs/2505.14366",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "该论文提出了一种通过合成数据集训练视觉语言模型实现视觉视角转换的框架，用于提升机器人具身认知能力。数据集在NVIDIA Omniverse中生成，包含RGB图像、自然语言描述和物体位姿的4x4变换矩阵，当前聚焦Z轴距离推理，未来扩展至6自由度。数据集已公开。",
-      "technical_points": [
-        "使用合成数据训练视觉语言模型实现视觉视角转换",
-        "数据集包含RGB图像、语言描述和物体位姿矩阵",
-        "当前聚焦Z轴距离推理，未来扩展至6自由度",
-        "基于NVIDIA Omniverse生成合成场景",
-        "旨在提升人机交互中的空间理解能力"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [],
-      "impact_assessment": "该技术主要影响机器人感知与交互算法，对汽车产业链的直接材料需求牵引较弱，但可能间接推动车载传感器、计算硬件的发展。",
-      "research_value": "对汽车材料研究员的参考价值较低，因为不涉及具体材料或工艺。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "通过合成数据训练机器人空间认知能力，为具身智能奠定基础。",
-      "why_it_matters": "该技术推动机器人具身认知发展，可能间接影响汽车人机交互和自动驾驶感知，但当前不直接产生材料需求。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "信息不足，无明确材料验证机会。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "释放了通过合成数据提升机器人空间认知的趋势信号，但材料层面信号弱。",
-      "future_signal_score": 62,
-      "material_opportunity_score": 5,
-      "material_validation_score": 5,
-      "analysis_status": "success",
-      "rule_score": 40,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=0 (none); future=15 (embodied AI, NVIDIA, research); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://arxiv.org/abs/2505.14366",
-      "normalized_title": "towards embodied cognition robots via spatially grounded synthetic worlds",
-      "event_id": "c32f9cf11f81526b",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "future_signals"
-      ],
-      "final_score": 43,
       "bookshelf_category": "Functional Materials",
       "related_sources": [
         {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2505.14366",
-          "published_date": "2026-07-29"
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
+          "published_date": "2026-07-25"
         }
       ],
       "source_urls": [
-        "https://arxiv.org/abs/2505.14366"
+        "https://spectrum.ieee.org/ieee-president-ray-liu-award"
       ],
       "source_names": [
-        "arXiv"
+        "IEEE Spectrum"
       ],
-      "selected_at": "2026-07-29T12:09:00+08:00"
+      "selected_at": "2026-08-03T12:35:15+08:00"
     },
     {
-      "title": "SGTP: Sampling-based Game-Theoretic Planning for Real-Time Multi-Vehicle Autonomous Racing",
-      "source": "arXiv",
-      "published_date": "2026-07-29",
-      "url": "https://arxiv.org/abs/2607.25388",
-      "category": "未来趋势观察",
+      "title": "This Hi-Fi Tape Recorder Changed Radio Forever",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-08-02",
+      "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+      "category": "学术论文",
       "subcategory": "",
-      "summary": "arXiv:2607.25388v1 提出了一种基于采样的博弈论规划框架（SGTP），用于实时多车自动驾驶赛车。该框架结合博弈论推理与GPU加速的采样和动力学推演，通过博弈感知成本排序轨迹，并施加赛道边界和动态避碰约束，实现安全策略切换。仿真显示在挑战性赛道上胜率95.24%，任务完成率99.35%，平均计算时间0.095秒，支持最多10个智能体。代码和基准已开源。",
+      "summary": "本文回顾了Magnetophon磁带录音机的历史，从1935年柏林广播展首次亮相，到二战后被美军工程师Jack Mullin带回美国，再到Bing Crosby投资Ampex推动商业化，最终意外催生了笑声音轨。文章详细描述了磁带的发明、AC偏置技术、以及3M公司参与磁带开发等关键节点，展示了录音技术从实验室走向大众市场的历程。",
       "technical_points": [
-        "结合博弈论推理与GPU加速采样，实现实时多车竞速规划",
-        "通过博弈感知成本函数排序轨迹，生成多样化竞争行为",
-        "显式施加赛道边界和动态避碰约束，确保安全策略切换",
-        "仿真胜率95.24%，任务完成率99.35%，平均计算时间0.095秒",
-        "支持最多10个智能体的大规模场景，代码和基准开源"
+        "Magnetophon是AEG开发的卷对卷磁带录音机，采用I.G. Farben（现BASF）生产的磁带。",
+        "Fritz Pfleumer发明了在纸带上涂覆金属粉末的录音方法，并申请了专利。",
+        "1938年的K4型号引入AC偏置技术，消除了磁记录的嘶嘶声和失真，提高了保真度。",
+        "磁带可剪切编辑、可擦除重录，优于当时的钢丝录音。",
+        "战后Ampex和3M合作开发美国版磁带录音机，推动了磁带技术的商业化。"
       ],
-      "materials_involved": [],
-      "companies_or_institutions": [],
-      "impact_assessment": "该技术提升了自动驾驶赛车规划的实时性和策略多样性，可能推动自动驾驶算法在极限工况下的应用，但对汽车材料研发无直接牵引。",
-      "research_value": "对汽车材料研究员参考价值较低，因为该研究聚焦算法和计算，不涉及新材料、新工艺或材料验证。",
-      "industrial_maturity": "lab",
+      "materials_involved": [
+        "磁性材料（如氧化铁粉末）",
+        "纸基材料",
+        "塑料基材（后期磁带）",
+        "粘合剂（用于涂覆磁性粉末）"
+      ],
+      "companies_or_institutions": [
+        "AEG",
+        "I.G. Farben (BASF)",
+        "Ampex",
+        "3M",
+        "Jack Mullin",
+        "Bing Crosby"
+      ],
+      "impact_assessment": "该新闻为历史回顾，对当前汽车产业链无直接影响。但磁带技术中的磁性材料、涂布工艺等原理，可能对汽车电子中的磁性传感器、数据存储等有间接参考价值，但关联性较弱。",
+      "research_value": "对汽车材料研究员而言，本文主要提供历史背景，无直接材料研发参考价值。但可了解磁性材料在录音领域的应用演变，对理解磁性材料特性有一定帮助。",
+      "industrial_maturity": "unknown",
       "priority": "P3",
-      "confidence": 90,
+      "confidence": 80,
       "follow_up": false,
-      "one_sentence": "SGTP提出一种实时多车自动驾驶赛车规划框架，结合博弈论与GPU加速，仿真性能优异，但材料相关性弱。",
-      "why_it_matters": "该新闻展示了自动驾驶规划算法在极限场景下的进展，但未涉及材料需求或工艺变化，因此对材料研发人员关注度低。",
-      "technology_driver": "自动驾驶",
-      "material_relevance": "材料相关性较弱，暂不优先。",
+      "one_sentence": "Magnetophon磁带录音机的历史回顾，涉及磁性材料与涂布工艺，但属历史事件，对汽车材料研发无直接指导意义。",
+      "why_it_matters": "该新闻为历史回顾，无当前产业变化或技术演进，对汽车材料研发无直接牵引作用。",
+      "technology_driver": "其他",
+      "material_relevance": "磁性材料（如氧化铁）",
       "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "信息不足，无材料验证机会。",
+      "validation_opportunity": "无样件验证价值，距离汽车材料应用太远，不建议供应商调研。",
       "suggested_action": "暂不优先",
       "trend_potential": "低",
-      "future_signal": "自动驾驶规划算法向博弈论和GPU加速方向发展，但未释放材料相关信号。",
+      "future_signal": "无未来产业信号，仅为历史回顾。",
       "future_signal_score": 10,
-      "material_opportunity_score": 34,
-      "material_validation_score": 34,
+      "material_opportunity_score": 11,
+      "material_validation_score": 11,
       "analysis_status": "success",
-      "rule_score": 38,
+      "rule_score": 44,
       "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=0 (none); industrial=3 (sampling); future=5 (research); current_month=5",
-      "stage": "Joint Development",
-      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：sample, sampling。",
-      "canonical_url": "https://arxiv.org/abs/2607.25388",
-      "normalized_title": "sgtp sampling based game theoretic planning real time multi vehicle autonomous racing",
-      "event_id": "ff4ce185e9c84882",
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=5 (BASF); industrial=9 (launch, patent, approval); future=5 (research); current_month=5",
+      "stage": "Supplier Research",
+      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：university, company。",
+      "canonical_url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+      "normalized_title": "this hi fi tape recorder changed radio forever",
+      "event_id": "6c9a4e89e1d89434",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "",
@@ -337,22 +228,171 @@
         "bookshelf",
         "suggested_actions"
       ],
+      "final_score": 40,
+      "bookshelf_category": "Functional Materials",
+      "related_sources": [
+        {
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
+          "published_date": "2026-08-02"
+        }
+      ],
+      "source_urls": [
+        "https://spectrum.ieee.org/magnetophon-laugh-track"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "selected_at": "2026-08-03T12:35:15+08:00"
+    },
+    {
+      "title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
+      "source": "Electrive",
+      "published_date": "2026-08-03",
+      "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+      "category": "企业技术动态",
+      "subcategory": "",
+      "summary": "现代汽车和起亚在2026年印尼国际车展上宣布将推出电动七座车型。现代将把在印度销售的Carens Clavis EV以Carens EV名义引入，而起亚则推出全新车型Neira。该新闻聚焦于车型发布计划，未提及具体技术细节或材料信息。",
+      "technical_points": [
+        "现代和起亚计划在印尼推出电动七座MPV车型，其中起亚推出全新车型Neira。",
+        "现代将引入已在印度市场销售的Carens EV，表明其平台和供应链的复用。",
+        "新闻未提供电池、电机、平台架构等具体技术参数。",
+        "印尼市场对电动MPV的需求可能推动本地化生产，但新闻未提及本地化细节。"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "Hyundai",
+        "Kia"
+      ],
+      "impact_assessment": "该新闻表明现代起亚集团在东南亚市场扩展电动MPV产品线，可能带动当地电动车零部件供应链发展，但具体材料需求尚不明确。",
+      "research_value": "对材料研究员而言，该新闻缺乏具体技术细节，材料需求不明确，参考价值有限。",
+      "industrial_maturity": "market",
+      "priority": "P3",
+      "confidence": 70,
+      "follow_up": false,
+      "one_sentence": "现代起亚在印尼推出电动MPV，但缺乏技术细节，材料相关性较弱。",
+      "why_it_matters": "该新闻反映了车企在东南亚市场布局电动车型的趋势，但未涉及具体材料技术，对材料研发的直接牵引有限。",
+      "technology_driver": "未来交通",
+      "material_relevance": "未知",
+      "material_opportunity": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "信息不足，无法判断样件验证或供应商调研价值。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "该新闻释放了现代起亚在东南亚电动化布局的信号，但技术信号弱。",
+      "future_signal_score": 62,
+      "material_opportunity_score": 10,
+      "material_validation_score": 10,
+      "analysis_status": "success",
+      "rule_score": 38,
+      "source_score": 78,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=5 (EV); materials=0 (none); companies=5 (Hyundai); industrial=3 (launch); future=0 (none); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+      "normalized_title": "hyundai unveils neira electric mpv indonesia",
+      "event_id": "7ce7f943a8f418cb",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
       "final_score": 34,
+      "bookshelf_category": "Energy Materials",
+      "related_sources": [
+        {
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
+          "published_date": "2026-08-03"
+        }
+      ],
+      "source_urls": [
+        "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "selected_at": "2026-08-03T12:35:15+08:00"
+    },
+    {
+      "title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-07-29",
+      "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "美国北卡罗来纳中央大学（NCCU）副教授Siobahn Day Grady于2025年1月创办了首个非裔美国人大学（HBCU）人工智能研究所（IAIER），旨在推动跨学科AI素养教育。该研究所获得Google.org 100万美元资助，已培训2800余人，并与IBM、OpenAI等合作。文章强调AI教育普及、跨学科应用及资金挑战，但未涉及具体技术细节或材料需求。",
+      "technical_points": [
+        "AI素养教育普及，跨学科课程设计",
+        "AI研究所运营模式与产业合作",
+        "AI在社会科学、医疗、信息科学等领域的应用",
+        "AI教育框架构建与推广"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "North Carolina Central University (NCCU)",
+        "Google.org",
+        "IBM",
+        "OpenAI",
+        "Deloitte",
+        "FICO",
+        "Anthropic",
+        "Howard University",
+        "National Science Foundation"
+      ],
+      "impact_assessment": "该新闻主要涉及AI教育领域，对汽车产业链的直接技术影响有限。但AI素养提升可能间接促进汽车行业智能化发展，如自动驾驶、智能座舱等领域的AI应用。然而，新闻中未提及具体汽车相关技术或材料需求。",
+      "research_value": "对汽车材料研究员而言，本文无直接参考价值。AI教育虽可能影响未来人才技能，但未涉及材料研发、工艺或供应链。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 90,
+      "follow_up": false,
+      "one_sentence": "AI教育普及新闻，与汽车材料无关，暂不优先。",
+      "why_it_matters": "该新闻未涉及汽车材料技术或产业变化，对研发人员无直接参考价值。",
+      "technology_driver": "其他",
+      "material_relevance": "无",
+      "material_opportunity": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "无样件验证价值，无供应商调研必要，距离量产遥远。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "AI教育普及趋势，但未释放汽车材料相关信号。",
+      "future_signal_score": 62,
+      "material_opportunity_score": 30,
+      "material_validation_score": 30,
+      "analysis_status": "success",
+      "rule_score": 46,
+      "source_score": 82,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=0 (none); industrial=6 (launch, investment); future=10 (OpenAI, research); current_month=5",
+      "stage": "Joint Development",
+      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：collaboration, partnership。",
+      "canonical_url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
+      "normalized_title": "siobahn day grady wants everyone be ai literate",
+      "event_id": "a0a76514c9e6229a",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
+      "final_score": 30,
       "bookshelf_category": "Future Research Reserve",
       "related_sources": [
         {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2607.25388",
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
           "published_date": "2026-07-29"
         }
       ],
       "source_urls": [
-        "https://arxiv.org/abs/2607.25388"
+        "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu"
       ],
       "source_names": [
-        "arXiv"
+        "IEEE Spectrum"
       ],
-      "selected_at": "2026-07-29T12:09:00+08:00"
+      "selected_at": "2026-08-03T12:35:15+08:00"
     }
   ]
 }

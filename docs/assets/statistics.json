@@ -1,31 +1,39 @@
 {
   "category_counts": {
-    "未来趋势观察": 5,
-    "汽车新材料": 2,
-    "企业技术动态": 2
+    "未来趋势观察": 6,
+    "专利与论文": 3,
+    "汽车新材料": 1,
+    "学术论文": 1
   },
   "source_counts": {
-    "arXiv": 3,
-    "IEEE Spectrum": 3,
-    "BMW": 2,
-    "Electrive": 1
+    "IEEE Spectrum": 8,
+    "Nature Energy": 1,
+    "Electrive": 1,
+    "arXiv": 1
   },
   "company_counts": {
-    "BMW": 3,
-    "IEEE": 2,
-    "IEEE History Center": 1,
-    "IEEE Vehicular Technology Society": 1,
-    "IEEE Dielectrics and Electrical Insulation Society": 1,
-    "Nvidia": 1,
-    "Motorola": 1,
-    "Kodak": 1,
-    "General Electric": 1,
-    "Westinghouse": 1
+    "IEEE": 4,
+    "OpenAI": 2,
+    "Anthropic": 2,
+    "Origin Wireless": 1,
+    "ADT": 1,
+    "台湾大学": 1,
+    "密歇根大学": 1,
+    "加州大学洛杉矶分校": 1,
+    "马里兰大学": 1,
+    "台湾工业技术研究院": 1
   },
   "keyword_counts": {
-    "电池材料": 1,
-    "cell-to-pack相关结构材料": 1,
-    "回收材料（仅关键词，无具体信息）": 1,
+    "锂离子电池正极材料": 1,
+    "电解液": 1,
+    "多孔电极材料": 1,
+    "半导体材料（硅基）": 1,
+    "无线传感相关材料（如天线材料、射频材料）": 1,
+    "健康监测设备用柔性电子材料（潜在）": 1,
+    "磁性材料（如氧化铁粉末）": 1,
+    "纸基材料": 1,
+    "塑料基材（后期磁带）": 1,
+    "粘合剂（用于涂覆磁性粉末）": 1,
     "PA": 1
   }
 }

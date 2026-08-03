@@ -228,6 +228,79 @@
       ]
     },
     {
+      "title": "IEEE Publishing Ethics Team Upholds Research Integrity",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-07-31",
+      "url": "https://spectrum.ieee.org/ieee-publishing-ethics-research-integrity",
+      "category": "学术论文",
+      "subcategory": "",
+      "summary": "IEEE出版伦理团队在2025年处理了591起学术不端投诉，同比增长56%。团队引入STM Integrity Hub工具，包括Clear Skies Papermill Alarm、PubPeer集成和重复投稿检测器，以在投稿阶段识别问题稿件。同时，团队参与会议出版质量审查，去年建议撤稿超过1700篇问题会议论文。案例涉及作者署名不端和伪造审稿人，推动政策更新。",
+      "technical_points": [
+        "IEEE在2024年试点将STM Integrity Hub工具集成到IEEE Access的同行评审流程中，包括Clear Skies Papermill Alarm、PubPeer数据库集成和重复投稿检测器。",
+        "IEEE计划在2025年底前将所有期刊纳入Integrity Hub筛查。",
+        "IEEE参与会议出版质量特别委员会，使用Problematic Paper Screener识别问题论文，去年建议撤稿超过1700篇。",
+        "案例研究显示，IEEE更新了PSPB政策8.2.4，以澄清材料重用和共同作者署名的裁决流程。",
+        "案例研究显示，使用筛查工具发现伪造审稿人，导致编辑被禁止在IEEE发表和担任编辑职务。"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "IEEE",
+        "STM Integrity Hub",
+        "PubPeer",
+        "Clear Skies"
+      ],
+      "impact_assessment": "该新闻主要涉及学术出版伦理和检测工具，与汽车产业链或研发方向无直接关联。",
+      "research_value": "对汽车材料研究员而言，该新闻无直接参考价值，但可能间接影响学术论文发表环境。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 90,
+      "follow_up": false,
+      "one_sentence": "IEEE加强出版伦理管理，引入检测工具处理学术不端，但该新闻与汽车材料研发无关。",
+      "why_it_matters": "该新闻不涉及材料技术或产业变化，对研发人员无直接意义。",
+      "technology_driver": "其他",
+      "material_relevance": "无",
+      "material_opportunity": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "无样件验证价值，无需供应商调研，不适合前瞻储备。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "学术出版界加强诚信管理，但未释放材料相关产业信号。",
+      "future_signal_score": 62,
+      "material_opportunity_score": 30,
+      "material_validation_score": 30,
+      "analysis_status": "success",
+      "rule_score": 43,
+      "source_score": 82,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=5 (Aisin); industrial=3 (standard); future=10 (innovation, research); current_month=5",
+      "stage": "Joint Development",
+      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：collaboration。",
+      "canonical_url": "https://spectrum.ieee.org/ieee-publishing-ethics-research-integrity",
+      "normalized_title": "ieee publishing ethics team upholds research integrity",
+      "event_id": "8712aed873febd79",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
+      "final_score": 28,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/ieee-publishing-ethics-research-integrity",
+          "published_date": "2026-07-31"
+        }
+      ],
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-publishing-ethics-research-integrity"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ]
+    },
+    {
       "title": "IEEE Remembers Pioneering Computer Scientist Peter G. Neumann",
       "source": "IEEE Spectrum",
       "published_date": "2026-07-11",
@@ -296,6 +369,78 @@
       ],
       "source_urls": [
         "https://spectrum.ieee.org/ieee-remembers-peter-g-neumann"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ]
+    },
+    {
+      "title": "Fridays With Bob",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-08-01",
+      "url": "https://spectrum.ieee.org/risk",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "本文是IEEE Spectrum编辑对资深作者Robert N. Charette的纪念性回顾，讲述其25年职业生涯中关于软件风险、STEM危机等文章的贡献。文章聚焦软件工程失败、自动化悖论及电子健康记录等话题，未涉及具体材料技术或汽车产业。",
+      "technical_points": [
+        "软件项目失败的风险管理方法论",
+        "自动化悖论对cyberphysical系统的影响",
+        "STEM教育危机的社会性讨论",
+        "电子健康记录系统的复杂性分析"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "IEEE Spectrum",
+        "Robert N. Charette"
+      ],
+      "impact_assessment": "对汽车产业链或研发方向无直接影响，属于软件工程与科技社会评论范畴。",
+      "research_value": "对汽车材料研究员参考价值极低，不涉及材料需求或技术演进。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 90,
+      "follow_up": false,
+      "one_sentence": "一篇关于软件风险专家的纪念文章，与汽车材料无关。",
+      "why_it_matters": "该新闻为人物纪念性内容，不涉及产业变化、技术演进或材料需求，因此对研发人员无直接关注价值。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "无",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "无样件验证价值，不值得供应商调研，不适合前瞻储备，距离量产极远。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "不确定",
+      "future_signal": "释放了科技媒体对软件风险与自动化社会影响的关注信号，但与材料产业无关。",
+      "future_signal_score": 10,
+      "material_opportunity_score": 55,
+      "material_validation_score": 55,
+      "analysis_status": "success",
+      "rule_score": 40,
+      "source_score": 82,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=5 (EV); materials=0 (none); companies=5 (Aisin); industrial=0 (none); future=5 (automation); current_month=5",
+      "stage": "Supplier Research",
+      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：university。",
+      "canonical_url": "https://spectrum.ieee.org/risk",
+      "normalized_title": "fridays bob",
+      "event_id": "906892cdce1443bf",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 26,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/risk",
+          "published_date": "2026-08-01"
+        }
+      ],
+      "source_urls": [
+        "https://spectrum.ieee.org/risk"
       ],
       "source_names": [
         "IEEE Spectrum"
