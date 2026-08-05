@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-05",
   "items": [
     {
-      "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
-      "url": "https://www.nature.com/articles/s41560-026-02118-2",
-      "source": "Nature Energy",
-      "published_date": "2026-07-31",
+      "title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+      "url": "https://arxiv.org/abs/2608.02080",
+      "source": "arXiv",
+      "published_date": "2026-08-04",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -18,42 +18,10 @@
       ]
     },
     {
-      "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
-      "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-07-25",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "This Hi-Fi Tape Recorder Changed Radio Forever",
-      "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-08-02",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
-      "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
-      "source": "Electrive",
-      "published_date": "2026-08-03",
+      "title": "TS-MAMP: A Remanufactured Agricultural Robot Powered by Second-Life EV Components and NMS-Free On-Device Weed Detection",
+      "url": "https://arxiv.org/abs/2608.02270",
+      "source": "arXiv",
+      "published_date": "2026-08-04",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -66,10 +34,42 @@
       ]
     },
     {
-      "title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
-      "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-07-29",
+      "title": "RADAR Perception for Dynamic Obstacle Avoidance onboard small-scale Quadrotor UAVs",
+      "url": "https://arxiv.org/abs/2608.01855",
+      "source": "arXiv",
+      "published_date": "2026-08-04",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+      "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+      "source": "NVIDIA Blog",
+      "published_date": "2026-08-05",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+      "url": "https://arxiv.org/abs/2608.00625",
+      "source": "arXiv",
+      "published_date": "2026-08-04",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",

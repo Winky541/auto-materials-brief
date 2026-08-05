@@ -1,6 +1,248 @@
 {
   "events": [
     {
+      "event_id": "0735e0e97cc74ff1",
+      "canonical_title": "TS-MAMP: A Remanufactured Agricultural Robot Powered by Second-Life EV Components and NMS-Free On-Device Weed Detection",
+      "canonical_url": "https://arxiv.org/abs/2608.02270",
+      "normalized_title": "ts mamp remanufactured agricultural robot powered by second life ev components nms free device weed detection",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.02270"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "4b16496585831935",
+      "canonical_title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+      "canonical_url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+      "normalized_title": "nvidia joins nsf state regional ai hubs program expand ai research education across us",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program"
+      ],
+      "source_names": [
+        "NVIDIA Blog"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "AI硬件"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "00603bd0e57fd4e7",
+      "canonical_title": "The System That Turned Paper Charts Into Digital Medical Records",
+      "canonical_url": "https://spectrum.ieee.org/ieee-milestone-digital-medical-records",
+      "normalized_title": "system that turned paper charts into digital medical records",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-milestone-digital-medical-records"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "9b578a62d496e5c5",
+      "canonical_title": "RADAR Perception for Dynamic Obstacle Avoidance onboard small-scale Quadrotor UAVs",
+      "canonical_url": "https://arxiv.org/abs/2608.01855",
+      "normalized_title": "radar perception dynamic obstacle avoidance onboard small scale quadrotor uavs",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.01855"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "轻量化与结构材料",
+        "低空经济/eVTOL"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "b6b97d21426870cf",
+      "canonical_title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+      "canonical_url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+      "normalized_title": "nvidia alpamayo 2 super frontier open model robotaxis autonomous vehicles now available commercial use",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available"
+      ],
+      "source_names": [
+        "NVIDIA Blog"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "自动驾驶"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "f39929b8e71fb059",
+      "canonical_title": "CAAT: Contact-Aware Attention Scaling and Tactile Masking for Data-Efficient Contact-Rich Manipulation",
+      "canonical_url": "https://arxiv.org/abs/2608.01102",
+      "normalized_title": "caat contact aware attention scaling tactile masking data efficient contact rich manipulation",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.01102"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Composite Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "政策法规与标准",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "99c5eab07404007b",
+      "canonical_title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+      "canonical_url": "https://arxiv.org/abs/2608.02080",
+      "normalized_title": "toward geometry scalable whole body touch humanoids 3d printed conformal eit skin",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.02080"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Polymer & Elastomer Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "先进制造工艺",
+        "3D 打印",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "导电TPU、柔性导电复合材料、3D打印导电油墨；材料相关性中等，可关注但暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "c43fc4c5fe11f971",
+      "canonical_title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+      "canonical_url": "https://arxiv.org/abs/2608.00625",
+      "normalized_title": "learning based motion planning dynamic environments from foundational algorithms emerging paradigms",
+      "first_seen": "2026-08-05",
+      "last_seen": "2026-08-05",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.00625"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "自动驾驶、机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "29b08ccf53a4a733",
       "canonical_title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
       "canonical_url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",

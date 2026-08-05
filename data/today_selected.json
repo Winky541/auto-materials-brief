@@ -1,56 +1,56 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-05",
   "count": 5,
   "items": [
     {
-      "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
-      "source": "Nature Energy",
-      "published_date": "2026-07-31",
-      "url": "https://www.nature.com/articles/s41560-026-02118-2",
-      "category": "电池与储能材料",
-      "subcategory": "锂离子电池",
-      "summary": "该研究发表于Nature Energy，指出锂离子电池电极的低频电化学响应通常被解释为固态锂扩散的特征，但作者发现多孔正极颗粒中的电解液渗透可产生类似的扩散行为，且与体相扩散无关。这一发现挑战了传统阻抗谱解析方法，对电池材料表征和性能评估具有重要影响。",
+      "title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+      "source": "arXiv",
+      "published_date": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.02080",
+      "category": "先进制造工艺",
+      "subcategory": "3D 打印",
+      "summary": "该研究提出一种基于3D打印的共形电阻抗断层扫描（EIT）触觉皮肤，用于人形机器人全身触觉感知。通过柔性导电TPU层和导电贴片实现接触定位，采用一步高斯-牛顿求解器重建。平面、曲面及类iCub面部原型验证了可行性，曲面传感器平均定位误差6毫米。该工艺可适应不同几何形状，减少定制化设计负担，为大规模触觉覆盖提供新途径。",
       "technical_points": [
-        "低频电化学响应可能由电解液渗透而非固态扩散引起",
-        "多孔正极颗粒中的电解液渗透产生类扩散过电位",
-        "传统阻抗谱解析可能高估扩散系数或误判机理",
-        "研究基于实验和建模结合，揭示非扩散机制",
-        "对电池材料的多孔结构设计和表征方法提出新要求"
+        "采用3D打印工艺制造共形EIT触觉皮肤，实现几何可扩展的全身触觉传感。",
+        "柔性导电TPU层作为连续传感域，导电贴片增强接触耦合，提高灵敏度。",
+        "使用一步高斯-牛顿EIT求解器重建接触位置，无需监督后处理。",
+        "在平面、U形曲面和类iCub面部形状上验证了接触定位，曲面平均误差6毫米。",
+        "多孔导电TPU结构在保持可打印性的同时提升传感性能。"
       ],
       "materials_involved": [
-        "锂离子电池正极材料",
-        "电解液",
-        "多孔电极材料"
+        "导电TPU（热塑性聚氨酯）",
+        "导电贴片材料（低电阻）",
+        "3D打印耗材（柔性导电材料）"
       ],
       "companies_or_institutions": [],
-      "impact_assessment": "该研究可能影响电池材料研发中的电化学表征方法，尤其是对多孔电极材料的扩散系数评估。对汽车动力电池的寿命预测和性能优化有潜在影响，但属于基础研究层面，距离产业化应用较远。",
-      "research_value": "为电池材料研究员提供了新的视角，提醒在分析电化学数据时需考虑电解液渗透等非扩散机制，有助于更准确地评估材料性能，对材料设计和表征方法有参考价值。",
+      "impact_assessment": "该技术可能推动人形机器人触觉皮肤的规模化制造，对汽车智能座舱、人机交互界面（如方向盘、座椅）的触觉传感有潜在应用价值。3D打印工艺可降低定制成本，促进柔性电子与汽车内饰集成。",
+      "research_value": "为汽车材料研究员提供柔性导电材料（如导电TPU）在传感领域的应用案例，可探索其在智能表面、安全监测等场景的可行性。",
       "industrial_maturity": "lab",
       "priority": "P2",
-      "confidence": 80,
+      "confidence": 70,
       "follow_up": true,
-      "one_sentence": "Nature Energy研究揭示多孔正极中电解液渗透可产生类扩散响应，影响电池材料电化学表征准确性。",
-      "why_it_matters": "该研究可能改变电池材料研发中的电化学测试解读方式，对多孔电极材料的设计和评估有指导意义，但材料需求牵引不直接。",
-      "technology_driver": "储能",
-      "material_relevance": "多孔电极材料、电解液",
-      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "该研究属于基础机理研究，不直接涉及新材料验证或供应商调研，但可能影响未来电极材料的设计方向，适合长期跟踪。",
-      "suggested_action": "持续跟踪",
+      "one_sentence": "3D打印共形EIT触觉皮肤实现人形机器人全身触觉，导电TPU材料是关键。",
+      "why_it_matters": "该技术展示了导电TPU在柔性触觉传感中的新应用，可能牵引汽车内饰智能表面材料需求，值得关注材料验证和供应链机会。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "柔性传感材料、导电弹性体、3D打印材料",
+      "material_opportunity": "导电TPU、柔性导电复合材料、3D打印导电油墨；材料相关性中等，可关注但暂不优先。",
+      "validation_opportunity": "可考虑对导电TPU材料进行样品验证，评估其在汽车触觉表面的适用性；但距离量产较远，建议前瞻储备。",
+      "suggested_action": "前瞻储备",
       "trend_potential": "中",
-      "future_signal": "电池电化学表征方法可能面临更新，多孔电极设计需考虑电解液渗透影响，但产业化信号不强。",
-      "future_signal_score": 50,
-      "material_opportunity_score": 30,
-      "material_validation_score": 30,
+      "future_signal": "人形机器人触觉传感向大面积、低成本、几何自适应方向发展，柔性导电材料需求将增加。",
+      "future_signal_score": 60,
+      "material_opportunity_score": 50,
+      "material_validation_score": 50,
       "analysis_status": "success",
-      "rule_score": 45,
-      "source_score": 94,
+      "rule_score": 36,
+      "source_score": 82,
       "source_type": "journal_rss",
-      "filter_reason": "source=24; automotive=0 (none); materials=16 (battery, lithium-ion, electrolyte, cathode); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "filter_reason": "source=20; automotive=0 (none); materials=8 (additive manufacturing, TPU); companies=0 (none); industrial=3 (prototype); future=0 (none); current_month=5",
       "stage": "Strategic Reserve",
       "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
-      "canonical_url": "https://www.nature.com/articles/s41560-026-02118-2",
-      "normalized_title": "diffusion like overpotentials from non diffusion mechanisms battery particles",
-      "event_id": "e2170b877502238e",
+      "canonical_url": "https://arxiv.org/abs/2608.02080",
+      "normalized_title": "toward geometry scalable whole body touch humanoids 3d printed conformal eit skin",
+      "event_id": "99c5eab07404007b",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -61,315 +61,292 @@
         "suggested_actions",
         "future_signals"
       ],
-      "final_score": 59,
+      "final_score": 58,
+      "bookshelf_category": "Polymer & Elastomer Materials",
+      "related_sources": [
+        {
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.02080",
+          "published_date": "2026-08-04"
+        }
+      ],
+      "source_urls": [
+        "https://arxiv.org/abs/2608.02080"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "selected_at": "2026-08-05T12:05:43+08:00"
+    },
+    {
+      "title": "TS-MAMP: A Remanufactured Agricultural Robot Powered by Second-Life EV Components and NMS-Free On-Device Weed Detection",
+      "source": "arXiv",
+      "published_date": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.02270",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "本文提出TS-MAMP，一种基于3R循环经济原则的再制造农业机器人平台。它利用退役低速电动汽车的48V无刷直流轮毂电机和铅酸电池模块（健康状态60%-80%），通过主动均衡控制，将动力总成和底盘成本降低约60%。该平台采用伸缩套筒模块化设计，可承载200公斤，轮距可调，并搭载无NMS的YOLOv10n检测器，在Jetson Nano上实现实时杂草检测。研究展示了退役EV部件在农业机器人中的再利用潜力。",
+      "technical_points": [
+        "退役48V无刷直流轮毂电机通过反电动势匹配进行配对使用。",
+        "铅酸电池模块筛选健康状态60%-80%，并主动均衡至模块间电压偏差100mV以内。",
+        "伸缩套筒模块化底盘，静态负载≥200kg，轮距1200-2000mm可调，模块更换≤5分钟。",
+        "无NMS的YOLOv10n检测器，在Wanxi Crop-Weed数据集上达到80.87% mAP@0.5，通过FP16 TensorRT部署于Jetson Nano。"
+      ],
+      "materials_involved": [
+        "铅酸电池",
+        "铜（电机绕组）",
+        "钢（底盘）",
+        "铝（结构件）",
+        "塑料（外壳）"
+      ],
+      "companies_or_institutions": [],
+      "impact_assessment": "该研究展示了退役电动汽车部件在非汽车领域的再利用，可能推动汽车回收产业链的升级，促进电池和电机回收技术的标准化，但短期内对汽车材料研发的直接牵引有限。",
+      "research_value": "对汽车材料研究员的参考价值在于退役电池和电机的筛选、评估和再利用工艺，可能涉及电池材料（如铅酸、锂电）的回收和再生技术，但当前研究未涉及新材料开发。",
+      "industrial_maturity": "lab",
+      "priority": "P3",
+      "confidence": 80,
+      "follow_up": false,
+      "one_sentence": "退役EV部件再制造农业机器人，材料相关性较弱，暂不优先。",
+      "why_it_matters": "该新闻反映了退役电动汽车部件的循环利用趋势，可能影响未来汽车回收和材料再利用的产业方向，但当前技术细节未涉及新材料需求，对材料研发的直接价值有限。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "回收材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "信息不足，未提供具体材料验证需求，距离材料导入和验证较远。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "退役EV部件再利用可能推动循环经济，但材料创新需求不明显。",
+      "future_signal_score": 30,
+      "material_opportunity_score": 20,
+      "material_validation_score": 20,
+      "analysis_status": "success",
+      "rule_score": 49,
+      "source_score": 82,
+      "source_type": "journal_rss",
+      "filter_reason": "source=20; automotive=15 (EV, electric vehicle, vehicle); materials=4 (battery); companies=0 (none); industrial=0 (none); future=5 (automation); current_month=5",
+      "stage": "Joint Development",
+      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：sample。",
+      "canonical_url": "https://arxiv.org/abs/2608.02270",
+      "normalized_title": "ts mamp remanufactured agricultural robot powered by second life ev components nms free device weed detection",
+      "event_id": "0735e0e97cc74ff1",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "final_score": 47,
       "bookshelf_category": "Energy Materials",
       "related_sources": [
         {
-          "source": "Nature Energy",
-          "url": "https://www.nature.com/articles/s41560-026-02118-2",
-          "published_date": "2026-07-31"
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.02270",
+          "published_date": "2026-08-04"
         }
       ],
       "source_urls": [
-        "https://www.nature.com/articles/s41560-026-02118-2"
+        "https://arxiv.org/abs/2608.02270"
       ],
       "source_names": [
-        "Nature Energy"
+        "arXiv"
       ],
-      "selected_at": "2026-08-03T12:35:15+08:00"
+      "selected_at": "2026-08-05T12:05:43+08:00"
     },
     {
-      "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-07-25",
-      "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
-      "category": "学术论文",
+      "title": "RADAR Perception for Dynamic Obstacle Avoidance onboard small-scale Quadrotor UAVs",
+      "source": "arXiv",
+      "published_date": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.01855",
+      "category": "轻量化与结构材料",
       "subcategory": "",
-      "summary": "IEEE前主席K.J. Ray Liu因其领导力获Haraden Pratt奖。他早年受台湾半导体产业政策影响进入电气工程领域，后赴美深造，在信号处理、VLSI及环境感知技术方面取得成就。他创立Origin Wireless公司，开发基于Wi-Fi的无线感知技术，用于室内追踪和健康监测。担任IEEE主席期间，他推动区域重组、增加奖金额度及财务透明化。",
+      "summary": "本文提出首个基于毫米波雷达的小型无人机快速动态避障系统，结合交互多模型跟踪器和控制障碍函数控制器，在树莓派4B上实现端到端延迟约14毫秒。实验涵盖不同物体尺寸、光照和烟雾条件，位置误差小于0.15米。该系统展示了雷达感知在无人机避障中的实时可行性，为低空飞行器的感知与控制系统提供了新方案。",
       "technical_points": [
-        "时间反演信号处理技术可提升信噪比四倍，用于无线通信和感知。",
-        "环境感知技术利用Wi-Fi无线电波实现无穿戴设备的人体活动、呼吸、心跳监测。",
-        "VLSI信号处理是数字信号处理与硬件实现的交叉领域，支撑现代电子设备。",
-        "IEEE区域重组反映全球会员分布变化，亚洲会员占比增至40%。"
+        "首次将毫米波雷达用于小型无人机快速动态避障，实现端到端延迟约14毫秒。",
+        "推导了感知距离、相对速度和控制延迟之间的延迟与空间界限，给出成功避障的充分条件。",
+        "采用交互多模型跟踪器进行轻量级目标跟踪，结合控制障碍函数直接输出规避加速度。",
+        "在300次实验中，x、y、z方向位置误差分别小于0.15米、0.93米和0.87米，烟雾条件下90次实验表现类似。",
+        "在树莓派4B上实现实时运行，并公开代码和390次投掷的完整数据集。"
       ],
       "materials_involved": [
-        "半导体材料（硅基）",
-        "无线传感相关材料（如天线材料、射频材料）",
-        "健康监测设备用柔性电子材料（潜在）"
+        "轻量化材料",
+        "PI（聚酰亚胺）"
       ],
-      "companies_or_institutions": [
-        "IEEE",
-        "Origin Wireless",
-        "ADT",
-        "台湾大学",
-        "密歇根大学",
-        "加州大学洛杉矶分校",
-        "马里兰大学",
-        "台湾工业技术研究院",
-        "台积电"
-      ],
-      "impact_assessment": "该新闻主要涉及IEEE组织治理和信号处理技术，对汽车产业链的直接技术影响有限。但环境感知技术可应用于智能座舱、驾驶员监测等场景，间接推动相关传感器和材料需求。",
-      "research_value": "对汽车材料研究员而言，参考价值较低，主要在于环境感知技术可能带动传感器材料、天线材料等需求，但当前无具体材料细节。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "IEEE前主席获领导力奖，其环境感知技术或可启发汽车智能座舱应用，但材料相关性弱。",
-      "why_it_matters": "该新闻释放了环境感知技术发展的信号，可能影响未来汽车智能座舱和健康监测功能，但当前无具体材料需求牵引，研发人员可暂不关注。",
-      "technology_driver": "智能座舱",
-      "material_relevance": "传感材料、天线材料",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "信息不足，无明确样件验证或供应商调研价值。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "环境感知技术可能成为智能座舱的潜在方向，但距离材料需求明确化尚远。",
-      "future_signal_score": 30,
-      "material_opportunity_score": 31,
-      "material_validation_score": 31,
-      "analysis_status": "success",
-      "rule_score": 41,
-      "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=6 (launch, patent); future=10 (innovation, research); current_month=5",
-      "stage": "Supplier Research",
-      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：startup, research institute, university, company。",
-      "canonical_url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
-      "normalized_title": "2022 ieee president k j ray liu honored his leadership",
-      "event_id": "29b08ccf53a4a733",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 47,
-      "bookshelf_category": "Functional Materials",
-      "related_sources": [
-        {
-          "source": "IEEE Spectrum",
-          "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
-          "published_date": "2026-07-25"
-        }
-      ],
-      "source_urls": [
-        "https://spectrum.ieee.org/ieee-president-ray-liu-award"
-      ],
-      "source_names": [
-        "IEEE Spectrum"
-      ],
-      "selected_at": "2026-08-03T12:35:15+08:00"
-    },
-    {
-      "title": "This Hi-Fi Tape Recorder Changed Radio Forever",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-08-02",
-      "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
-      "category": "学术论文",
-      "subcategory": "",
-      "summary": "本文回顾了Magnetophon磁带录音机的历史，从1935年柏林广播展首次亮相，到二战后被美军工程师Jack Mullin带回美国，再到Bing Crosby投资Ampex推动商业化，最终意外催生了笑声音轨。文章详细描述了磁带的发明、AC偏置技术、以及3M公司参与磁带开发等关键节点，展示了录音技术从实验室走向大众市场的历程。",
-      "technical_points": [
-        "Magnetophon是AEG开发的卷对卷磁带录音机，采用I.G. Farben（现BASF）生产的磁带。",
-        "Fritz Pfleumer发明了在纸带上涂覆金属粉末的录音方法，并申请了专利。",
-        "1938年的K4型号引入AC偏置技术，消除了磁记录的嘶嘶声和失真，提高了保真度。",
-        "磁带可剪切编辑、可擦除重录，优于当时的钢丝录音。",
-        "战后Ampex和3M合作开发美国版磁带录音机，推动了磁带技术的商业化。"
-      ],
-      "materials_involved": [
-        "磁性材料（如氧化铁粉末）",
-        "纸基材料",
-        "塑料基材（后期磁带）",
-        "粘合剂（用于涂覆磁性粉末）"
-      ],
-      "companies_or_institutions": [
-        "AEG",
-        "I.G. Farben (BASF)",
-        "Ampex",
-        "3M",
-        "Jack Mullin",
-        "Bing Crosby"
-      ],
-      "impact_assessment": "该新闻为历史回顾，对当前汽车产业链无直接影响。但磁带技术中的磁性材料、涂布工艺等原理，可能对汽车电子中的磁性传感器、数据存储等有间接参考价值，但关联性较弱。",
-      "research_value": "对汽车材料研究员而言，本文主要提供历史背景，无直接材料研发参考价值。但可了解磁性材料在录音领域的应用演变，对理解磁性材料特性有一定帮助。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "Magnetophon磁带录音机的历史回顾，涉及磁性材料与涂布工艺，但属历史事件，对汽车材料研发无直接指导意义。",
-      "why_it_matters": "该新闻为历史回顾，无当前产业变化或技术演进，对汽车材料研发无直接牵引作用。",
-      "technology_driver": "其他",
-      "material_relevance": "磁性材料（如氧化铁）",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "无样件验证价值，距离汽车材料应用太远，不建议供应商调研。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "无未来产业信号，仅为历史回顾。",
-      "future_signal_score": 10,
-      "material_opportunity_score": 11,
-      "material_validation_score": 11,
-      "analysis_status": "success",
-      "rule_score": 44,
-      "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=5 (BASF); industrial=9 (launch, patent, approval); future=5 (research); current_month=5",
-      "stage": "Supplier Research",
-      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：university, company。",
-      "canonical_url": "https://spectrum.ieee.org/magnetophon-laugh-track",
-      "normalized_title": "this hi fi tape recorder changed radio forever",
-      "event_id": "6c9a4e89e1d89434",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 40,
-      "bookshelf_category": "Functional Materials",
-      "related_sources": [
-        {
-          "source": "IEEE Spectrum",
-          "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
-          "published_date": "2026-08-02"
-        }
-      ],
-      "source_urls": [
-        "https://spectrum.ieee.org/magnetophon-laugh-track"
-      ],
-      "source_names": [
-        "IEEE Spectrum"
-      ],
-      "selected_at": "2026-08-03T12:35:15+08:00"
-    },
-    {
-      "title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
-      "source": "Electrive",
-      "published_date": "2026-08-03",
-      "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
-      "category": "企业技术动态",
-      "subcategory": "",
-      "summary": "现代汽车和起亚在2026年印尼国际车展上宣布将推出电动七座车型。现代将把在印度销售的Carens Clavis EV以Carens EV名义引入，而起亚则推出全新车型Neira。该新闻聚焦于车型发布计划，未提及具体技术细节或材料信息。",
-      "technical_points": [
-        "现代和起亚计划在印尼推出电动七座MPV车型，其中起亚推出全新车型Neira。",
-        "现代将引入已在印度市场销售的Carens EV，表明其平台和供应链的复用。",
-        "新闻未提供电池、电机、平台架构等具体技术参数。",
-        "印尼市场对电动MPV的需求可能推动本地化生产，但新闻未提及本地化细节。"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [
-        "Hyundai",
-        "Kia"
-      ],
-      "impact_assessment": "该新闻表明现代起亚集团在东南亚市场扩展电动MPV产品线，可能带动当地电动车零部件供应链发展，但具体材料需求尚不明确。",
-      "research_value": "对材料研究员而言，该新闻缺乏具体技术细节，材料需求不明确，参考价值有限。",
-      "industrial_maturity": "market",
+      "companies_or_institutions": [],
+      "impact_assessment": "该技术对低空经济/eVTOL和无人机物流的感知系统有潜在影响，可能推动雷达传感器在小型飞行器上的集成，进而对轻量化结构材料和电子封装材料提出需求。",
+      "research_value": "对汽车材料研究员而言，该技术展示了雷达感知在小型平台上的可行性，可能间接影响未来自动驾驶或低空飞行器的传感器集成设计，但直接材料关联较弱。",
+      "industrial_maturity": "lab",
       "priority": "P3",
       "confidence": 70,
       "follow_up": false,
-      "one_sentence": "现代起亚在印尼推出电动MPV，但缺乏技术细节，材料相关性较弱。",
-      "why_it_matters": "该新闻反映了车企在东南亚市场布局电动车型的趋势，但未涉及具体材料技术，对材料研发的直接牵引有限。",
-      "technology_driver": "未来交通",
-      "material_relevance": "未知",
+      "one_sentence": "毫米波雷达感知系统在小型无人机上实现快速避障，但材料相关性较弱。",
+      "why_it_matters": "该技术展示了雷达感知在小型无人机上的实时可行性，可能推动低空飞行器传感器集成，但当前阶段对材料需求牵引不明显。",
+      "technology_driver": "低空经济/eVTOL",
+      "material_relevance": "轻量化复合材料、电子封装材料",
       "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "信息不足，无法判断样件验证或供应商调研价值。",
+      "validation_opportunity": "信息不足，当前为实验室阶段，距离量产较远，暂不建议启动验证或供应商调研。",
       "suggested_action": "暂不优先",
       "trend_potential": "低",
-      "future_signal": "该新闻释放了现代起亚在东南亚电动化布局的信号，但技术信号弱。",
+      "future_signal": "该新闻释放了雷达感知在小型无人机上实时应用的信号，可能推动低空飞行器感知系统发展，但材料需求信号较弱。",
+      "future_signal_score": 40,
+      "material_opportunity_score": 20,
+      "material_validation_score": 20,
+      "analysis_status": "success",
+      "rule_score": 38,
+      "source_score": 82,
+      "source_type": "journal_rss",
+      "filter_reason": "source=20; automotive=5 (vehicle); materials=8 (lightweight, PI); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://arxiv.org/abs/2608.01855",
+      "normalized_title": "radar perception dynamic obstacle avoidance onboard small scale quadrotor uavs",
+      "event_id": "9b578a62d496e5c5",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "final_score": 46,
+      "bookshelf_category": "Functional Materials",
+      "related_sources": [
+        {
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.01855",
+          "published_date": "2026-08-04"
+        }
+      ],
+      "source_urls": [
+        "https://arxiv.org/abs/2608.01855"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "selected_at": "2026-08-05T12:05:43+08:00"
+    },
+    {
+      "title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+      "source": "NVIDIA Blog",
+      "published_date": "2026-08-05",
+      "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "NVIDIA宣布参与美国国家科学基金会（NSF）的州及区域人工智能基础设施中心项目，该项目旨在扩大美国各地AI研究和教育所需的高级计算、数据、软件和专业知识的使用。该计划与“创世纪任务”目标一致，将支持州及多州团体建设AI基础设施。NVIDIA将提供技术支持和专业知识，帮助建立区域AI中心，促进AI创新和人才培养。",
+      "technical_points": [
+        "NVIDIA参与NSF区域AI中心项目，提供计算资源和专业知识。",
+        "项目旨在扩大AI研究和教育的基础设施，包括计算、数据、软件。",
+        "支持州及多州团体建设AI中心，促进区域AI生态发展。",
+        "与“创世纪任务”相关，可能涉及AI驱动的科研和产业应用。",
+        "NVIDIA的参与可能推动AI硬件和软件在教育和研究领域的部署。"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [
+        "NVIDIA",
+        "美国国家科学基金会（NSF）"
+      ],
+      "impact_assessment": "该新闻主要涉及AI基础设施和教育，对汽车产业链的直接材料需求影响有限。但AI在汽车研发、制造和自动驾驶中的应用可能间接推动对高性能计算硬件（如GPU）的需求，进而影响相关电子材料（如封装材料、散热材料）的需求。然而，新闻未提供具体技术细节，材料关联性较弱。",
+      "research_value": "对汽车材料研究员而言，该新闻的参考价值较低。它不涉及具体材料、工艺或验证机会，主要属于政策与生态建设层面。研究员可关注AI在材料模拟和研发中的应用，但新闻本身未提供直接材料线索。",
+      "industrial_maturity": "policy",
+      "priority": "P3",
+      "confidence": 70,
+      "follow_up": false,
+      "one_sentence": "NVIDIA参与NSF区域AI中心项目，旨在扩大AI基础设施，但对汽车材料领域直接关联较弱。",
+      "why_it_matters": "该新闻反映了AI基础设施的扩展趋势，可能间接影响汽车智能化发展，但未直接牵引具体材料需求，因此对材料研发人员关注度较低。",
+      "technology_driver": "AI硬件",
+      "material_relevance": "材料相关性较弱，暂不优先。",
+      "material_opportunity": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "信息不足，无明确样件验证或供应商调研机会。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "该新闻释放了美国在AI基础设施方面的政策推动信号，可能促进AI在科研和产业中的应用，但对材料需求的牵引尚不明确。",
+      "future_signal_score": 72,
+      "material_opportunity_score": 10,
+      "material_validation_score": 10,
+      "analysis_status": "success",
+      "rule_score": 39,
+      "source_score": 84,
+      "source_type": "rss",
+      "filter_reason": "source=21; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=3 (launch); future=10 (NVIDIA, research); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+      "normalized_title": "nvidia joins nsf state regional ai hubs program expand ai research education across us",
+      "event_id": "4b16496585831935",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
+      "module_targets": [
+        "future_signals"
+      ],
+      "final_score": 43,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "NVIDIA Blog",
+          "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+          "published_date": "2026-08-05"
+        }
+      ],
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program"
+      ],
+      "source_names": [
+        "NVIDIA Blog"
+      ],
+      "selected_at": "2026-08-05T12:05:43+08:00"
+    },
+    {
+      "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+      "source": "arXiv",
+      "published_date": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.00625",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "本文是arXiv上的一篇综述，系统回顾了2015至2025年间动态环境下的运动规划方法，重点分析学习型算法如何与经典规划方法结合。文章提出按学习角色分类的框架，涵盖直接策略学习、学习增强经典规划、混合规划及训练增强方法，并讨论了感知表示、预测不确定性、交互建模、安全约束等关键因素。最后指出仿真到现实迁移、安全可认证规划、密集人群导航等未来挑战。",
+      "technical_points": [
+        "提出按学习角色分类的规划方法框架，包括直接策略学习、学习增强经典规划、混合规划等。",
+        "系统分析感知表示、预测不确定性、交互建模、安全约束等对学习型规划的影响。",
+        "综述了2015至2025年间代表性工作，涵盖自动驾驶、服务机器人、多机器人系统等应用。",
+        "指出仿真到现实迁移、安全可认证规划、密集人群导航等开放挑战。",
+        "强调感知与规划耦合、具身智能等未来方向。"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [],
+      "impact_assessment": "该综述聚焦算法层面，未涉及具体材料需求，对汽车产业链的直接影响有限，但可能间接影响自动驾驶和机器人系统的硬件需求，如传感器和计算平台。",
+      "research_value": "对汽车材料研究员而言，本文参考价值较低，主要提供技术趋势背景，不直接指向材料研发方向。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 80,
+      "follow_up": false,
+      "one_sentence": "一篇关于动态环境学习型运动规划的综述，算法导向，材料相关性弱。",
+      "why_it_matters": "该新闻属于算法综述，未涉及材料需求，对材料研发人员无直接指导意义。",
+      "technology_driver": "自动驾驶、机器人与具身智能",
+      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "无样件验证价值，无需供应商调研，距离量产太远，不建议前瞻储备。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "该综述反映了运动规划算法向学习型发展的趋势，但未释放材料需求信号。",
       "future_signal_score": 62,
       "material_opportunity_score": 10,
       "material_validation_score": 10,
       "analysis_status": "success",
-      "rule_score": 38,
-      "source_score": 78,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=5 (EV); materials=0 (none); companies=5 (Hyundai); industrial=3 (launch); future=0 (none); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
-      "normalized_title": "hyundai unveils neira electric mpv indonesia",
-      "event_id": "7ce7f943a8f418cb",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "future_signals"
-      ],
-      "final_score": 34,
-      "bookshelf_category": "Energy Materials",
-      "related_sources": [
-        {
-          "source": "Electrive",
-          "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
-          "published_date": "2026-08-03"
-        }
-      ],
-      "source_urls": [
-        "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia"
-      ],
-      "source_names": [
-        "Electrive"
-      ],
-      "selected_at": "2026-08-03T12:35:15+08:00"
-    },
-    {
-      "title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-07-29",
-      "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "美国北卡罗来纳中央大学（NCCU）副教授Siobahn Day Grady于2025年1月创办了首个非裔美国人大学（HBCU）人工智能研究所（IAIER），旨在推动跨学科AI素养教育。该研究所获得Google.org 100万美元资助，已培训2800余人，并与IBM、OpenAI等合作。文章强调AI教育普及、跨学科应用及资金挑战，但未涉及具体技术细节或材料需求。",
-      "technical_points": [
-        "AI素养教育普及，跨学科课程设计",
-        "AI研究所运营模式与产业合作",
-        "AI在社会科学、医疗、信息科学等领域的应用",
-        "AI教育框架构建与推广"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [
-        "North Carolina Central University (NCCU)",
-        "Google.org",
-        "IBM",
-        "OpenAI",
-        "Deloitte",
-        "FICO",
-        "Anthropic",
-        "Howard University",
-        "National Science Foundation"
-      ],
-      "impact_assessment": "该新闻主要涉及AI教育领域，对汽车产业链的直接技术影响有限。但AI素养提升可能间接促进汽车行业智能化发展，如自动驾驶、智能座舱等领域的AI应用。然而，新闻中未提及具体汽车相关技术或材料需求。",
-      "research_value": "对汽车材料研究员而言，本文无直接参考价值。AI教育虽可能影响未来人才技能，但未涉及材料研发、工艺或供应链。",
-      "industrial_maturity": "unknown",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "AI教育普及新闻，与汽车材料无关，暂不优先。",
-      "why_it_matters": "该新闻未涉及汽车材料技术或产业变化，对研发人员无直接参考价值。",
-      "technology_driver": "其他",
-      "material_relevance": "无",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "无样件验证价值，无供应商调研必要，距离量产遥远。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "AI教育普及趋势，但未释放汽车材料相关信号。",
-      "future_signal_score": 62,
-      "material_opportunity_score": 30,
-      "material_validation_score": 30,
-      "analysis_status": "success",
-      "rule_score": 46,
+      "rule_score": 35,
       "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=0 (none); industrial=6 (launch, investment); future=10 (OpenAI, research); current_month=5",
+      "source_type": "journal_rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=0 (none); future=10 (embodied AI, robotics); current_month=5",
       "stage": "Joint Development",
-      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：collaboration, partnership。",
-      "canonical_url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
-      "normalized_title": "siobahn day grady wants everyone be ai literate",
-      "event_id": "a0a76514c9e6229a",
+      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：collaboration。",
+      "canonical_url": "https://arxiv.org/abs/2608.00625",
+      "normalized_title": "learning based motion planning dynamic environments from foundational algorithms emerging paradigms",
+      "event_id": "c43fc4c5fe11f971",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "",
@@ -377,22 +354,22 @@
       "module_targets": [
         "future_signals"
       ],
-      "final_score": 30,
-      "bookshelf_category": "Future Research Reserve",
+      "final_score": 42,
+      "bookshelf_category": "Functional Materials",
       "related_sources": [
         {
-          "source": "IEEE Spectrum",
-          "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
-          "published_date": "2026-07-29"
+          "source": "arXiv",
+          "url": "https://arxiv.org/abs/2608.00625",
+          "published_date": "2026-08-04"
         }
       ],
       "source_urls": [
-        "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu"
+        "https://arxiv.org/abs/2608.00625"
       ],
       "source_names": [
-        "IEEE Spectrum"
+        "arXiv"
       ],
-      "selected_at": "2026-08-03T12:35:15+08:00"
+      "selected_at": "2026-08-05T12:05:43+08:00"
     }
   ]
 }

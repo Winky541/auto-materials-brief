@@ -1,6 +1,317 @@
 {
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-05",
   "items": [
+    {
+      "date": "2026-08-05",
+      "window": [
+        {
+          "category": "AI Agent & AI Hardware",
+          "count": 1,
+          "avg_future_signal_score": 72,
+          "summary": "该新闻反映了AI基础设施的扩展趋势，可能间接影响汽车智能化发展，但未直接牵引具体材料需求，因此对材料研发人员关注度较低。",
+          "sources": [
+            {
+              "title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+              "source": "NVIDIA Blog",
+              "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+              "published_date": "2026-08-05",
+              "link_label": "阅读原文"
+            }
+          ]
+        },
+        {
+          "category": "Autonomous Driving",
+          "count": 1,
+          "avg_future_signal_score": 62,
+          "summary": "该新闻属于算法综述，未涉及材料需求，对材料研发人员无直接指导意义。",
+          "sources": [
+            {
+              "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.00625",
+              "published_date": "2026-08-04",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Supply Chain Migration",
+          "count": 1,
+          "avg_future_signal_score": 62,
+          "summary": "该新闻属于算法综述，未涉及材料需求，对材料研发人员无直接指导意义。",
+          "sources": [
+            {
+              "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.00625",
+              "published_date": "2026-08-04",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Sensing",
+          "count": 3,
+          "avg_future_signal_score": 54,
+          "summary": "该新闻属于算法综述，未涉及材料需求，对材料研发人员无直接指导意义。",
+          "sources": [
+            {
+              "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.00625",
+              "published_date": "2026-08-04",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.02080",
+              "published_date": "2026-08-04",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "RADAR Perception for Dynamic Obstacle Avoidance onboard small-scale Quadrotor UAVs",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.01855",
+              "published_date": "2026-08-04",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 3,
+          "avg_future_signal_score": 51,
+          "summary": "该新闻属于算法综述，未涉及材料需求，对材料研发人员无直接指导意义。",
+          "sources": [
+            {
+              "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.00625",
+              "published_date": "2026-08-04",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.02080",
+              "published_date": "2026-08-04",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "TS-MAMP: A Remanufactured Agricultural Robot Powered by Second-Life EV Components and NMS-Free On-Device Weed Detection",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.02270",
+              "published_date": "2026-08-04",
+              "link_label": "阅读论文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在未来趋势观察、汽车新材料、学术论文，技术牵引以机器人与具身智能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "该技术展示了导电TPU在柔性触觉传感中的新应用，可能牵引汽车内饰智能表面材料需求，值得关注材料验证和供应链机会。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注导电TPU（热塑性聚氨酯）、导电贴片材料（低电阻）、3D打印耗材（柔性导电材料）、铅酸电池、铜（电机绕组）、钢（底盘）、铝（结构件）、塑料（外壳）。导电TPU、柔性导电复合材料、3D打印导电油墨；材料相关性中等，可关注但暂不优先。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+          "source": "arXiv",
+          "why_read": "该技术展示了导电TPU在柔性触觉传感中的新应用，可能牵引汽车内饰智能表面材料需求，值得关注材料验证和供应链机会。",
+          "focus": "关注 机器人与具身智能 是否继续形成产业信号；导电TPU、柔性导电复合材料、3D打印导电油墨；材料相关性中等，可关注但暂不优先。",
+          "reading_time": "约 8 分钟",
+          "url": "https://arxiv.org/abs/2608.02080"
+        },
+        {
+          "title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+          "source": "NVIDIA Blog",
+          "why_read": "该新闻反映了AI基础设施的扩展趋势，可能间接影响汽车智能化发展，但未直接牵引具体材料需求，因此对材料研发人员关注度较低。",
+          "focus": "关注 AI硬件 是否继续形成产业信号",
+          "reading_time": "约 8 分钟",
+          "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 2,
+          "items": [
+            {
+              "event_id": "0735e0e97cc74ff1",
+              "canonical_url": "https://arxiv.org/abs/2608.02270",
+              "normalized_title": "ts mamp remanufactured agricultural robot powered by second life ev components nms free device weed detection",
+              "title": "TS-MAMP: A Remanufactured Agricultural Robot Powered by Second-Life EV Components and NMS-Free On-Device Weed Detection",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2608.02270"
+              ],
+              "published_date": "2026-08-04",
+              "url": "https://arxiv.org/abs/2608.02270",
+              "link_label": "阅读论文",
+              "brief": "该新闻反映了退役电动汽车部件的循环利用趋势，可能影响未来汽车回收和材料再利用的产业方向，但当前技术细节未涉及新材料需求，对材料研发的直接价值有限。"
+            },
+            {
+              "event_id": "c43fc4c5fe11f971",
+              "canonical_url": "https://arxiv.org/abs/2608.00625",
+              "normalized_title": "learning based motion planning dynamic environments from foundational algorithms emerging paradigms",
+              "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2608.00625"
+              ],
+              "published_date": "2026-08-04",
+              "url": "https://arxiv.org/abs/2608.00625",
+              "link_label": "阅读论文",
+              "brief": "该新闻属于算法综述，未涉及材料需求，对材料研发人员无直接指导意义。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 3,
+          "items": [
+            {
+              "event_id": "4b16496585831935",
+              "canonical_url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+              "normalized_title": "nvidia joins nsf state regional ai hubs program expand ai research education across us",
+              "title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+              "source": "NVIDIA Blog",
+              "source_names": [
+                "NVIDIA Blog"
+              ],
+              "source_urls": [
+                "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program"
+              ],
+              "published_date": "2026-08-05",
+              "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+              "link_label": "阅读原文",
+              "brief": "该新闻反映了AI基础设施的扩展趋势，可能间接影响汽车智能化发展，但未直接牵引具体材料需求，因此对材料研发人员关注度较低。"
+            },
+            {
+              "event_id": "99c5eab07404007b",
+              "canonical_url": "https://arxiv.org/abs/2608.02080",
+              "normalized_title": "toward geometry scalable whole body touch humanoids 3d printed conformal eit skin",
+              "title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2608.02080"
+              ],
+              "published_date": "2026-08-04",
+              "url": "https://arxiv.org/abs/2608.02080",
+              "link_label": "阅读论文",
+              "brief": "该技术展示了导电TPU在柔性触觉传感中的新应用，可能牵引汽车内饰智能表面材料需求，值得关注材料验证和供应链机会。"
+            },
+            {
+              "event_id": "9b578a62d496e5c5",
+              "canonical_url": "https://arxiv.org/abs/2608.01855",
+              "normalized_title": "radar perception dynamic obstacle avoidance onboard small scale quadrotor uavs",
+              "title": "RADAR Perception for Dynamic Obstacle Avoidance onboard small-scale Quadrotor UAVs",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2608.01855"
+              ],
+              "published_date": "2026-08-04",
+              "url": "https://arxiv.org/abs/2608.01855",
+              "link_label": "阅读论文",
+              "brief": "该技术展示了雷达感知在小型无人机上的实时可行性，可能推动低空飞行器传感器集成，但当前阶段对材料需求牵引不明显。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Future Research Reserve中已有2个机会进入 Technology Watch，其中“Advanced Packaging Materials”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "RADAR Perception for Dynamic Obstacle Avoidance onboard small-scale Quadrotor UAVs",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.01855",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+              "source": "NVIDIA Blog",
+              "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "Energy Materials中已有1个机会进入 Joint Development，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：sample。",
+          "suggested_move": "寻找可联合定义样件、工艺窗口或验证方案的合作对象。",
+          "evidence": [
+            {
+              "title": "TS-MAMP: A Remanufactured Agricultural Robot Powered by Second-Life EV Components and NMS-Free On-Device Weed Detection",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.02270",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.00625",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Future Research Reserve中已有1个机会进入 Strategic Reserve，其中“Robot Structural Materials”最值得先看。",
+          "why_now": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.02080",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-08-03",
       "window": [

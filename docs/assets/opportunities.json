@@ -1,30 +1,12 @@
 {
-  "updated_at": "2026-08-03",
+  "updated_at": "2026-08-05",
   "domains": [
     {
       "domain": "Metal Materials",
       "zh": "金属材料",
       "description": "高强钢、热成形钢、铝合金、镁合金、钛合金、铜合金、增材制造金属、连接技术",
-      "count": 1,
-      "items": [
-        {
-          "event_id": "6c9a4e89e1d89434",
-          "canonical_url": "https://spectrum.ieee.org/magnetophon-laugh-track",
-          "normalized_title": "this hi fi tape recorder changed radio forever",
-          "title": "This Hi-Fi Tape Recorder Changed Radio Forever",
-          "source": "IEEE Spectrum",
-          "source_names": [
-            "IEEE Spectrum"
-          ],
-          "source_urls": [
-            "https://spectrum.ieee.org/magnetophon-laugh-track"
-          ],
-          "published_date": "2026-08-02",
-          "url": "https://spectrum.ieee.org/magnetophon-laugh-track",
-          "link_label": "查看专利",
-          "brief": "该新闻为历史回顾，无当前产业变化或技术演进，对汽车材料研发无直接牵引作用。"
-        }
-      ]
+      "count": 0,
+      "items": []
     },
     {
       "domain": "Polymer & Elastomer Materials",
@@ -44,26 +26,8 @@
       "domain": "Functional Materials",
       "zh": "功能材料",
       "description": "SWIR、红外材料、导热材料、导电材料、EMI屏蔽、压电材料、磁性材料、柔性电子、电子皮肤、智能表面",
-      "count": 1,
-      "items": [
-        {
-          "event_id": "29b08ccf53a4a733",
-          "canonical_url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
-          "normalized_title": "2022 ieee president k j ray liu honored his leadership",
-          "title": "2022 IEEE President K.J. Ray Liu Honored for His Leadership",
-          "source": "IEEE Spectrum",
-          "source_names": [
-            "IEEE Spectrum"
-          ],
-          "source_urls": [
-            "https://spectrum.ieee.org/ieee-president-ray-liu-award"
-          ],
-          "published_date": "2026-07-25",
-          "url": "https://spectrum.ieee.org/ieee-president-ray-liu-award",
-          "link_label": "查看专利",
-          "brief": "该新闻释放了环境感知技术发展的信号，可能影响未来汽车智能座舱和健康监测功能，但当前无具体材料需求牵引，研发人员可暂不关注。"
-        }
-      ]
+      "count": 0,
+      "items": []
     },
     {
       "domain": "Energy Materials",
@@ -72,38 +36,38 @@
       "count": 2,
       "items": [
         {
-          "event_id": "7ce7f943a8f418cb",
-          "canonical_url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
-          "normalized_title": "hyundai unveils neira electric mpv indonesia",
-          "title": "Hyundai unveils ‘Neira’ electric MPV for Indonesia",
-          "source": "Electrive",
+          "event_id": "0735e0e97cc74ff1",
+          "canonical_url": "https://arxiv.org/abs/2608.02270",
+          "normalized_title": "ts mamp remanufactured agricultural robot powered by second life ev components nms free device weed detection",
+          "title": "TS-MAMP: A Remanufactured Agricultural Robot Powered by Second-Life EV Components and NMS-Free On-Device Weed Detection",
+          "source": "arXiv",
           "source_names": [
-            "Electrive"
+            "arXiv"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia"
+            "https://arxiv.org/abs/2608.02270"
           ],
-          "published_date": "2026-08-03",
-          "url": "https://www.electrive.com/2026/08/03/hyundai-unveils-neira-electric-mpv-for-indonesia",
-          "link_label": "官方发布",
-          "brief": "该新闻反映了车企在东南亚市场布局电动车型的趋势，但未涉及具体材料技术，对材料研发的直接牵引有限。"
+          "published_date": "2026-08-04",
+          "url": "https://arxiv.org/abs/2608.02270",
+          "link_label": "阅读论文",
+          "brief": "该新闻反映了退役电动汽车部件的循环利用趋势，可能影响未来汽车回收和材料再利用的产业方向，但当前技术细节未涉及新材料需求，对材料研发的直接价值有限。"
         },
         {
-          "event_id": "e2170b877502238e",
-          "canonical_url": "https://www.nature.com/articles/s41560-026-02118-2",
-          "normalized_title": "diffusion like overpotentials from non diffusion mechanisms battery particles",
-          "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
-          "source": "Nature Energy",
+          "event_id": "c43fc4c5fe11f971",
+          "canonical_url": "https://arxiv.org/abs/2608.00625",
+          "normalized_title": "learning based motion planning dynamic environments from foundational algorithms emerging paradigms",
+          "title": "Learning-Based Motion Planning for Dynamic Environments: From Foundational Algorithms to Emerging Paradigms",
+          "source": "arXiv",
           "source_names": [
-            "Nature Energy"
+            "arXiv"
           ],
           "source_urls": [
-            "https://www.nature.com/articles/s41560-026-02118-2"
+            "https://arxiv.org/abs/2608.00625"
           ],
-          "published_date": "2026-07-31",
-          "url": "https://www.nature.com/articles/s41560-026-02118-2",
+          "published_date": "2026-08-04",
+          "url": "https://arxiv.org/abs/2608.00625",
           "link_label": "阅读论文",
-          "brief": "该研究可能改变电池材料研发中的电化学测试解读方式，对多孔电极材料的设计和评估有指导意义，但材料需求牵引不直接。"
+          "brief": "该新闻属于算法综述，未涉及材料需求，对材料研发人员无直接指导意义。"
         }
       ]
     },
@@ -125,24 +89,58 @@
       "domain": "Future Research Reserve",
       "zh": "前沿研究储备",
       "description": "超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料",
-      "count": 1,
+      "count": 3,
       "items": [
         {
-          "event_id": "a0a76514c9e6229a",
-          "canonical_url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
-          "normalized_title": "siobahn day grady wants everyone be ai literate",
-          "title": "Siobahn Day Grady Wants Everyone to Be AI Literate",
-          "source": "IEEE Spectrum",
+          "event_id": "4b16496585831935",
+          "canonical_url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+          "normalized_title": "nvidia joins nsf state regional ai hubs program expand ai research education across us",
+          "title": "NVIDIA Joins NSF State and Regional AI Hubs Program to Expand AI Research and Education Across the US",
+          "source": "NVIDIA Blog",
           "source_names": [
-            "IEEE Spectrum"
+            "NVIDIA Blog"
           ],
           "source_urls": [
-            "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu"
+            "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program"
           ],
-          "published_date": "2026-07-29",
-          "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
-          "link_label": "查看专利",
-          "brief": "该新闻未涉及汽车材料技术或产业变化，对研发人员无直接参考价值。"
+          "published_date": "2026-08-05",
+          "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+          "link_label": "阅读原文",
+          "brief": "该新闻反映了AI基础设施的扩展趋势，可能间接影响汽车智能化发展，但未直接牵引具体材料需求，因此对材料研发人员关注度较低。"
+        },
+        {
+          "event_id": "99c5eab07404007b",
+          "canonical_url": "https://arxiv.org/abs/2608.02080",
+          "normalized_title": "toward geometry scalable whole body touch humanoids 3d printed conformal eit skin",
+          "title": "Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin",
+          "source": "arXiv",
+          "source_names": [
+            "arXiv"
+          ],
+          "source_urls": [
+            "https://arxiv.org/abs/2608.02080"
+          ],
+          "published_date": "2026-08-04",
+          "url": "https://arxiv.org/abs/2608.02080",
+          "link_label": "阅读论文",
+          "brief": "该技术展示了导电TPU在柔性触觉传感中的新应用，可能牵引汽车内饰智能表面材料需求，值得关注材料验证和供应链机会。"
+        },
+        {
+          "event_id": "9b578a62d496e5c5",
+          "canonical_url": "https://arxiv.org/abs/2608.01855",
+          "normalized_title": "radar perception dynamic obstacle avoidance onboard small scale quadrotor uavs",
+          "title": "RADAR Perception for Dynamic Obstacle Avoidance onboard small-scale Quadrotor UAVs",
+          "source": "arXiv",
+          "source_names": [
+            "arXiv"
+          ],
+          "source_urls": [
+            "https://arxiv.org/abs/2608.01855"
+          ],
+          "published_date": "2026-08-04",
+          "url": "https://arxiv.org/abs/2608.01855",
+          "link_label": "阅读论文",
+          "brief": "该技术展示了雷达感知在小型无人机上的实时可行性，可能推动低空飞行器传感器集成，但当前阶段对材料需求牵引不明显。"
         }
       ]
     }
