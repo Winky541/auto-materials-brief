@@ -1,6 +1,251 @@
 {
   "events": [
     {
+      "event_id": "182d3720dfaae1af",
+      "canonical_title": "Nanoporous Carbon Coating of Separator Boosts Rate Capability of Cathodes in Lithium‐Ion Batteries",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R",
+      "normalized_title": "nanoporous carbon coating separator boosts rate capability cathodes lithium ion batteries",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-08-10",
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "锂离子电池",
+        "储能"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。",
+        "纳米多孔碳涂层材料，可能涉及碳材料分散浆料、涂布工艺；但信息不足，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "fe7fe0cd3a8266eb",
+      "canonical_title": "A Selective‐Transport Elastomeric Coating Regulating Hierarchical Solid Electrolyte Interphase for Low‐Temperature Lithium‐Metal Batteries",
+      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R",
+      "normalized_title": "selective transport elastomeric coating regulating hierarchical solid electrolyte interphase low temperature lithium metal batteries",
+      "first_seen": "2026-07-06",
+      "last_seen": "2026-08-10",
+      "source_urls": [
+        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R"
+      ],
+      "source_names": [
+        "Advanced Materials"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Metal Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "电解液",
+        "储能"
+      ],
+      "material_opportunities": [
+        "可能值得关注的材料包括弹性体涂层材料（如聚氨酯、聚硅氧烷等）和电解液添加剂，但论文中未明确具体化学成分，材料机会尚不明确。",
+        "可能涉及弹性体涂层材料（如聚氨酯、硅橡胶等）、电解液添加剂、锂金属负极表面处理工艺。但具体材料未明确，需进一步获取原文。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "202873714205750a",
+      "canonical_title": "Cars Communicating Badly Is an Already-Solved Problem",
+      "canonical_url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
+      "normalized_title": "cars communicating badly is already solved problem",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "source_urls": [
+        "https://spectrum.ieee.org/v2x-technology-5g-open-ran"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "车路协同"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "f1f89470f9185ea6",
+      "canonical_title": "BYD files six more solid-state battery patents",
+      "canonical_url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
+      "normalized_title": "byd files six more solid state battery patents",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "source_urls": [
+        "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "固态电池",
+        "储能"
+      ],
+      "material_opportunities": [
+        "固态电解质材料（如硫化物、氧化物）、双电解质体系中的新型材料、界面涂层材料、电极-电解质接触优化用材料。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "e0fe48ccb77182cc",
+      "canonical_title": "Report: Volkswagen Group to partner with JSW for EV production in India",
+      "canonical_url": "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india",
+      "normalized_title": "report volkswagen group partner jsw ev production india",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "source_urls": [
+        "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "b5f805f8fa70ce15",
+      "canonical_title": "BMW sparks criticism with in-car Spider-Man advertising",
+      "canonical_url": "https://www.electrive.com/2026/08/07/bmw-sparks-criticism-with-in-car-spider-man-advertising",
+      "normalized_title": "bmw sparks criticism car spider man advertising",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "source_urls": [
+        "https://www.electrive.com/2026/08/07/bmw-sparks-criticism-with-in-car-spider-man-advertising"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Surface Engineering",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "6e5d244e04caf9ce",
+      "canonical_title": "CATL Expands Its Lead in the Global Battery Market",
+      "canonical_url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
+      "normalized_title": "catl expands its lead global battery market",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "source_urls": [
+        "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "c4289d3fdf7f8692",
+      "canonical_title": "Clemson's Solar-Powered EV Project Looks Like A Cardboard Shoe. But It's A Lot More Clever Than It Looks",
+      "canonical_url": "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev",
+      "normalized_title": "clemson s solar powered ev project looks like cardboard shoe but it s lot more clever than it looks",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "source_urls": [
+        "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev"
+      ],
+      "source_names": [
+        "InsideEVs"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Sustainable Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "其他",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "0735e0e97cc74ff1",
       "canonical_title": "TS-MAMP: A Remanufactured Agricultural Robot Powered by Second-Life EV Components and NMS-Free On-Device Weed Detection",
       "canonical_url": "https://arxiv.org/abs/2608.02270",
@@ -2117,68 +2362,6 @@
         "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
       ],
       "published": false
-    },
-    {
-      "event_id": "182d3720dfaae1af",
-      "canonical_title": "Nanoporous Carbon Coating of Separator Boosts Rate Capability of Cathodes in Lithium‐Ion Batteries",
-      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R",
-      "normalized_title": "nanoporous carbon coating separator boosts rate capability cathodes lithium ion batteries",
-      "first_seen": "2026-07-06",
-      "last_seen": "2026-07-06",
-      "source_urls": [
-        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R"
-      ],
-      "source_names": [
-        "Advanced Materials"
-      ],
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "bookshelf_category": "Functional Materials",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "topic_tags": [
-        "电池与储能材料",
-        "锂离子电池",
-        "储能"
-      ],
-      "material_opportunities": [
-        "材料相关性较弱，暂不优先。"
-      ],
-      "published": true
-    },
-    {
-      "event_id": "fe7fe0cd3a8266eb",
-      "canonical_title": "A Selective‐Transport Elastomeric Coating Regulating Hierarchical Solid Electrolyte Interphase for Low‐Temperature Lithium‐Metal Batteries",
-      "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R",
-      "normalized_title": "selective transport elastomeric coating regulating hierarchical solid electrolyte interphase low temperature lithium metal batteries",
-      "first_seen": "2026-07-06",
-      "last_seen": "2026-07-06",
-      "source_urls": [
-        "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73917?af=R"
-      ],
-      "source_names": [
-        "Advanced Materials"
-      ],
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "bookshelf_category": "Metal Materials",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "topic_tags": [
-        "电池与储能材料",
-        "电解液",
-        "储能"
-      ],
-      "material_opportunities": [
-        "可能值得关注的材料包括弹性体涂层材料（如聚氨酯、聚硅氧烷等）和电解液添加剂，但论文中未明确具体化学成分，材料机会尚不明确。"
-      ],
-      "published": true
     },
     {
       "event_id": "a1244035778d657b",

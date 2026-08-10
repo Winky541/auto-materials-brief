@@ -713,6 +713,55 @@
       "published_date": "2026-08-04",
       "selected_date": "2026-08-05",
       "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
+      "title": "BYD files six more solid-state battery patents",
+      "published_date": "2026-08-07",
+      "selected_date": "2026-08-10",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
+      "title": "Cars Communicating Badly Is an Already-Solved Problem",
+      "published_date": "2026-08-07",
+      "selected_date": "2026-08-10",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+      "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+      "published_date": "2026-08-04",
+      "selected_date": "2026-08-10",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.01102",
+      "title": "CAAT: Contact-Aware Attention Scaling and Tactile Masking for Data-Efficient Contact-Rich Manipulation",
+      "published_date": "2026-08-04",
+      "selected_date": "2026-08-10",
+      "category": "政策法规与标准"
+    },
+    {
+      "url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
+      "title": "CATL Expands Its Lead in the Global Battery Market",
+      "published_date": "2026-08-07",
+      "selected_date": "2026-08-10",
+      "category": "电池与储能材料"
+    },
+    {
+      "url": "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev",
+      "title": "Clemson's Solar-Powered EV Project Looks Like A Cardboard Shoe. But It's A Lot More Clever Than It Looks",
+      "published_date": "2026-08-07",
+      "selected_date": "2026-08-10",
+      "category": "其他"
+    },
+    {
+      "url": "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india",
+      "title": "Report: Volkswagen Group to partner with JSW for EV production in India",
+      "published_date": "2026-08-08",
+      "selected_date": "2026-08-10",
+      "category": "其他"
     }
   ]
 }

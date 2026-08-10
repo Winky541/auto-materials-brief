@@ -1,40 +1,43 @@
 {
   "category_counts": {
-    "未来趋势观察": 7,
-    "汽车新材料": 4,
-    "学术论文": 2,
-    "政策法规与标准": 1
+    "汽车新材料": 6,
+    "未来趋势观察": 6,
+    "学术论文": 2
   },
   "source_counts": {
-    "arXiv": 6,
-    "IEEE Spectrum": 6,
-    "NVIDIA Blog": 2
+    "IEEE Spectrum": 7,
+    "Electrive": 3,
+    "arXiv": 2,
+    "NVIDIA Blog": 1,
+    "InsideEVs": 1
   },
   "company_counts": {
     "IEEE": 4,
-    "NVIDIA": 2,
-    "美国国家科学基金会（NSF）": 1,
-    "Lockheed Martin": 1,
-    "El Camino Hospital": 1,
-    "Mayo Clinic": 1,
-    "Technicon": 1,
-    "Battelle": 1,
-    "IEEE History Center": 1,
-    "IEEE Vehicular Technology Society": 1
+    "BYD": 1,
+    "Tesla": 1,
+    "Waymo": 1,
+    "Zoox": 1,
+    "Cruise": 1,
+    "Institute of Science Tokyo": 1,
+    "O-RAN Alliance": 1,
+    "3GPP": 1,
+    "NVIDIA": 1
   },
   "keyword_counts": {
-    "轻量化材料": 2,
-    "导电TPU（热塑性聚氨酯）": 1,
-    "导电贴片材料（低电阻）": 1,
-    "3D打印耗材（柔性导电材料）": 1,
-    "铅酸电池": 1,
-    "铜（电机绕组）": 1,
-    "钢（底盘）": 1,
-    "铝（结构件）": 1,
-    "塑料（外壳）": 1,
-    "PI（聚酰亚胺）": 1,
+    "固态电解质": 1,
+    "双电解质材料": 1,
+    "电极材料": 1,
+    "界面材料": 1,
+    "毫米波通信相关材料（如天线材料、射频前端材料）": 1,
+    "车规级通信模块材料（如PCB基板、封装材料）": 1,
+    "传感器材料（如摄像头、雷达材料）": 1,
     "信息不足": 1,
+    "轻量化材料": 1,
     "聚酰亚胺（PI）": 1,
+    "battery": 1,
+    "太阳能电池材料": 1,
+    "轻量化复合材料": 1,
+    "能量存储材料": 1,
     "PA": 1
   }
 }

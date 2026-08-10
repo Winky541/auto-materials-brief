@@ -1,6 +1,313 @@
 {
-  "updated_at": "2026-08-05",
+  "updated_at": "2026-08-10",
   "items": [
+    {
+      "date": "2026-08-10",
+      "window": [
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 1,
+          "avg_future_signal_score": 80,
+          "summary": "固态电池是下一代电池技术关键，比亚迪专利进展显示其产业化提速，将带动固态电解质等材料需求，对材料研发具有指导意义。",
+          "sources": [
+            {
+              "title": "BYD files six more solid-state battery patents",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
+              "published_date": "2026-08-07",
+              "link_label": "查看专利"
+            }
+          ]
+        },
+        {
+          "category": "Energy Revolution",
+          "count": 2,
+          "avg_future_signal_score": 55,
+          "summary": "固态电池是下一代电池技术关键，比亚迪专利进展显示其产业化提速，将带动固态电解质等材料需求，对材料研发具有指导意义。",
+          "sources": [
+            {
+              "title": "BYD files six more solid-state battery patents",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
+              "published_date": "2026-08-07",
+              "link_label": "查看专利"
+            },
+            {
+              "title": "CATL Expands Its Lead in the Global Battery Market",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
+              "published_date": "2026-08-07",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "AI Agent & AI Hardware",
+          "count": 2,
+          "avg_future_signal_score": 40,
+          "summary": "该新闻展示了V2X通信技术的新方向，可能影响未来汽车通信架构，但材料关联度低，暂不构成材料研发的紧迫需求。",
+          "sources": [
+            {
+              "title": "Cars Communicating Badly Is an Already-Solved Problem",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
+              "published_date": "2026-08-07",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+              "source": "NVIDIA Blog",
+              "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+              "published_date": "2026-08-04",
+              "link_label": "阅读原文"
+            }
+          ]
+        },
+        {
+          "category": "Autonomous Driving",
+          "count": 1,
+          "avg_future_signal_score": 40,
+          "summary": "该新闻代表自动驾驶算法进步，可能间接推动车载计算硬件升级，但未直接牵引材料需求，材料团队可保持关注。",
+          "sources": [
+            {
+              "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+              "source": "NVIDIA Blog",
+              "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+              "published_date": "2026-08-04",
+              "link_label": "阅读原文"
+            }
+          ]
+        },
+        {
+          "category": "OEM Strategy Transition",
+          "count": 1,
+          "avg_future_signal_score": 40,
+          "summary": "该新闻可能影响大众在印度的供应链布局，但未涉及具体材料技术，研发人员需关注后续进展。",
+          "sources": [
+            {
+              "title": "Report: Volkswagen Group to partner with JSW for EV production in India",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india",
+              "published_date": "2026-08-08",
+              "link_label": "官方发布"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在汽车新材料、未来趋势观察、学术论文，技术牵引以储能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "固态电池是下一代电池技术关键，比亚迪专利进展显示其产业化提速，将带动固态电解质等材料需求，对材料研发具有指导意义。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注固态电解质、双电解质材料、电极材料、界面材料、毫米波通信相关材料（如天线材料、射频前端材料）、车规级通信模块材料（如PCB基板、封装材料）、传感器材料（如摄像头、雷达材料）、信息不足。固态电解质材料（如硫化物、氧化物）、双电解质体系中的新型材料、界面涂层材料、电极-电解质接触优化用材料。"
+        }
+      ],
+      "cat": [],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 6,
+          "items": [
+            {
+              "event_id": "e0fe48ccb77182cc",
+              "canonical_url": "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india",
+              "normalized_title": "report volkswagen group partner jsw ev production india",
+              "title": "Report: Volkswagen Group to partner with JSW for EV production in India",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india"
+              ],
+              "published_date": "2026-08-08",
+              "url": "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india",
+              "link_label": "官方发布",
+              "brief": "该新闻可能影响大众在印度的供应链布局，但未涉及具体材料技术，研发人员需关注后续进展。"
+            },
+            {
+              "event_id": "f1f89470f9185ea6",
+              "canonical_url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
+              "normalized_title": "byd files six more solid state battery patents",
+              "title": "BYD files six more solid-state battery patents",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents"
+              ],
+              "published_date": "2026-08-07",
+              "url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
+              "link_label": "查看专利",
+              "brief": "固态电池是下一代电池技术关键，比亚迪专利进展显示其产业化提速，将带动固态电解质等材料需求，对材料研发具有指导意义。"
+            },
+            {
+              "event_id": "202873714205750a",
+              "canonical_url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
+              "normalized_title": "cars communicating badly is already solved problem",
+              "title": "Cars Communicating Badly Is an Already-Solved Problem",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/v2x-technology-5g-open-ran"
+              ],
+              "published_date": "2026-08-07",
+              "url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
+              "link_label": "阅读论文",
+              "brief": "该新闻展示了V2X通信技术的新方向，可能影响未来汽车通信架构，但材料关联度低，暂不构成材料研发的紧迫需求。"
+            },
+            {
+              "event_id": "6e5d244e04caf9ce",
+              "canonical_url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
+              "normalized_title": "catl expands its lead global battery market",
+              "title": "CATL Expands Its Lead in the Global Battery Market",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market"
+              ],
+              "published_date": "2026-08-07",
+              "url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
+              "link_label": "官方发布",
+              "brief": "市场增长可能带动电池材料需求，但新闻未提供具体材料信息，研发人员应关注后续技术动态。"
+            },
+            {
+              "event_id": "c4289d3fdf7f8692",
+              "canonical_url": "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev",
+              "normalized_title": "clemson s solar powered ev project looks like cardboard shoe but it s lot more clever than it looks",
+              "title": "Clemson's Solar-Powered EV Project Looks Like A Cardboard Shoe. But It's A Lot More Clever Than It Looks",
+              "source": "InsideEVs",
+              "source_names": [
+                "InsideEVs"
+              ],
+              "source_urls": [
+                "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev"
+              ],
+              "published_date": "2026-08-07",
+              "url": "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev",
+              "link_label": "官方发布",
+              "brief": "该新闻虽为概念项目，但反映了汽车行业对能量自给自足和太阳能集成的探索趋势，可能间接推动轻量化和太阳能材料需求。"
+            },
+            {
+              "event_id": "b6b97d21426870cf",
+              "canonical_url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+              "normalized_title": "nvidia alpamayo 2 super frontier open model robotaxis autonomous vehicles now available commercial use",
+              "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+              "source": "NVIDIA Blog",
+              "source_names": [
+                "NVIDIA Blog"
+              ],
+              "source_urls": [
+                "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available"
+              ],
+              "published_date": "2026-08-04",
+              "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+              "link_label": "阅读原文",
+              "brief": "该新闻代表自动驾驶算法进步，可能间接推动车载计算硬件升级，但未直接牵引材料需求，材料团队可保持关注。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "f39929b8e71fb059",
+              "canonical_url": "https://arxiv.org/abs/2608.01102",
+              "normalized_title": "caat contact aware attention scaling tactile masking data efficient contact rich manipulation",
+              "title": "CAAT: Contact-Aware Attention Scaling and Tactile Masking for Data-Efficient Contact-Rich Manipulation",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2608.01102"
+              ],
+              "published_date": "2026-08-04",
+              "url": "https://arxiv.org/abs/2608.01102",
+              "link_label": "阅读论文",
+              "brief": "该技术推动机器人操作智能化，可能间接影响汽车制造中的自动化设备升级，但当前不直接产生材料需求，材料团队可保持关注。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "Energy Materials中已有2个机会进入 Joint Development，其中“Solid-State Electrolytes”最值得先看。",
+          "why_now": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：pilot production。",
+          "suggested_move": "寻找可联合定义样件、工艺窗口或验证方案的合作对象。",
+          "evidence": [
+            {
+              "title": "BYD files six more solid-state battery patents",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "CATL Expands Its Lead in the Global Battery Market",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "Cars Communicating Badly Is an Already-Solved Problem",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Future Research Reserve中已有1个机会进入 Strategic Reserve，其中“Robot Structural Materials”最值得先看。",
+          "why_now": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：standard, policy。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "CAAT: Contact-Aware Attention Scaling and Tactile Masking for Data-Efficient Contact-Rich Manipulation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.01102",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-08-05",
       "window": [
