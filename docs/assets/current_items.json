@@ -1,27 +1,11 @@
 {
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-08-12",
   "items": [
     {
-      "title": "BYD files six more solid-state battery patents",
-      "url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
-      "source": "Electrive",
-      "published_date": "2026-08-07",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Cars Communicating Badly Is an Already-Solved Problem",
-      "url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
+      "title": "Zap Rocks. Add Water. Get Clean Hydrogen",
+      "url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
       "source": "IEEE Spectrum",
-      "published_date": "2026-08-07",
+      "published_date": "2026-08-11",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
@@ -34,77 +18,93 @@
       ]
     },
     {
-      "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
-      "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
-      "source": "NVIDIA Blog",
-      "published_date": "2026-08-04",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "CAAT: Contact-Aware Attention Scaling and Tactile Masking for Data-Efficient Contact-Rich Manipulation",
-      "url": "https://arxiv.org/abs/2608.01102",
+      "title": "EsaacSim: A Multimodal Event Camera Add-on for NVIDIA Isaac Sim",
+      "url": "https://arxiv.org/abs/2608.08522",
       "source": "arXiv",
-      "published_date": "2026-08-04",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "CATL Expands Its Lead in the Global Battery Market",
-      "url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
-      "source": "Electrive",
-      "published_date": "2026-08-07",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Clemson's Solar-Powered EV Project Looks Like A Cardboard Shoe. But It's A Lot More Clever Than It Looks",
-      "url": "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev",
-      "source": "InsideEVs",
-      "published_date": "2026-08-07",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Report: Volkswagen Group to partner with JSW for EV production in India",
-      "url": "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india",
-      "source": "Electrive",
-      "published_date": "2026-08-08",
+      "published_date": "2026-08-11",
       "flow_type": "material_intelligence",
       "primary_flow": "material_intelligence",
       "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Multi-modal Interactive Control of Robotic Arm based on Offline Large Language Models",
+      "url": "https://arxiv.org/abs/2608.08183",
+      "source": "arXiv",
+      "published_date": "2026-08-11",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "PhysX-CoT: Structured Physical Reasoning from a Single Image to Simulation-Ready 3D Assets",
+      "url": "https://arxiv.org/abs/2608.08053",
+      "source": "arXiv",
+      "published_date": "2026-08-11",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Knowledge-Distilled End-to-End Reinforcement Learning for Smooth 6-DOF Thrust Control and Rapid Adaptation to Ocean Currents in Remotely Operated Vehicles",
+      "url": "https://arxiv.org/abs/2608.08598",
+      "source": "arXiv",
+      "published_date": "2026-08-11",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "11:10 浙江：到2027年脑机接口未来产业营收超过50亿元 | 浙江省人民政府办公厅印发《关于推进脑机接口产学研联动的若干措施》。其中提到，到2027年，企业主导的产学研联动机制有效运行，脑机接口核心软硬件自主创新能力大幅提",
+      "url": "https://www.yicai.com/brief/103314798.html",
+      "source": "第一财经",
+      "published_date": "2026-08-12",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Curriculum Generation under Structured Parametric Environments for Robust Navigation Policies",
+      "url": "https://arxiv.org/abs/2608.08545",
+      "source": "arXiv",
+      "published_date": "2026-08-11",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",

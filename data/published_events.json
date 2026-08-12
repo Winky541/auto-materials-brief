@@ -1,6 +1,238 @@
 {
   "events": [
     {
+      "event_id": "a1252910d987ca0a",
+      "canonical_title": "Zap Rocks. Add Water. Get Clean Hydrogen",
+      "canonical_url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
+      "normalized_title": "zap rocks add water get clean hydrogen",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "source_urls": [
+        "https://spectrum.ieee.org/stimulated-geologic-hydrogen"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "燃料电池",
+        "氢能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "0830901b9799e442",
+      "canonical_title": "EsaacSim: A Multimodal Event Camera Add-on for NVIDIA Isaac Sim",
+      "canonical_url": "https://arxiv.org/abs/2608.08522",
+      "normalized_title": "esaacsim multimodal event camera add nvidia isaac sim",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.08522"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "e8a8060f5b8a276d",
+      "canonical_title": "IEEE Engineering Summit Supports Bhutan’s Digital Transformation",
+      "canonical_url": "https://spectrum.ieee.org/ieee-summit-bhutan-digital-transformation",
+      "normalized_title": "ieee engineering summit supports bhutan s digital transformation",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-summit-bhutan-digital-transformation"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "学术论文",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "a22ab94c200efbfe",
+      "canonical_title": "11:10 浙江：到2027年脑机接口未来产业营收超过50亿元 | 浙江省人民政府办公厅印发《关于推进脑机接口产学研联动的若干措施》。其中提到，到2027年，企业主导的产学研联动机制有效运行，脑机接口核心软硬件自主创新能力大幅提",
+      "canonical_url": "https://www.yicai.com/brief/103314798.html",
+      "normalized_title": "11 10 浙江 到2027年脑机接口未来产业营收超过50亿元 浙江省人民政府办公厅印发 关于推进脑机接口产学研联动的若干措施 其中提到 到2027年 企业主导的产学研联动机制有效运行 脑机接口核心软硬件自主创新能力大幅提",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "source_urls": [
+        "https://www.yicai.com/brief/103314798.html"
+      ],
+      "source_names": [
+        "第一财经"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "23a41fe2257234c8",
+      "canonical_title": "Curriculum Generation under Structured Parametric Environments for Robust Navigation Policies",
+      "canonical_url": "https://arxiv.org/abs/2608.08545",
+      "normalized_title": "curriculum generation under structured parametric environments robust navigation policies",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.08545"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "自动驾驶"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "32ae679cad485b32",
+      "canonical_title": "PhysX-CoT: Structured Physical Reasoning from a Single Image to Simulation-Ready 3D Assets",
+      "canonical_url": "https://arxiv.org/abs/2608.08053",
+      "normalized_title": "physx cot structured physical reasoning from single image simulation ready 3d assets",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.08053"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "2b842a5b00d08e6b",
+      "canonical_title": "Multi-modal Interactive Control of Robotic Arm based on Offline Large Language Models",
+      "canonical_url": "https://arxiv.org/abs/2608.08183",
+      "normalized_title": "multi modal interactive control robotic arm based offline large language models",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.08183"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "29b2365f45e5b142",
+      "canonical_title": "Knowledge-Distilled End-to-End Reinforcement Learning for Smooth 6-DOF Thrust Control and Rapid Adaptation to Ocean Currents in Remotely Operated Vehicles",
+      "canonical_url": "https://arxiv.org/abs/2608.08598",
+      "normalized_title": "knowledge distilled end end reinforcement learning smooth 6 dof thrust control rapid adaptation ocean currents remotely operated vehicles",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.08598"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "182d3720dfaae1af",
       "canonical_title": "Nanoporous Carbon Coating of Separator Boosts Rate Capability of Cathodes in Lithium‐Ion Batteries",
       "canonical_url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.73871?af=R",

@@ -762,6 +762,55 @@
       "published_date": "2026-08-08",
       "selected_date": "2026-08-10",
       "category": "其他"
+    },
+    {
+      "url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
+      "title": "Zap Rocks. Add Water. Get Clean Hydrogen",
+      "published_date": "2026-08-11",
+      "selected_date": "2026-08-12",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.08522",
+      "title": "EsaacSim: A Multimodal Event Camera Add-on for NVIDIA Isaac Sim",
+      "published_date": "2026-08-11",
+      "selected_date": "2026-08-12",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.08183",
+      "title": "Multi-modal Interactive Control of Robotic Arm based on Offline Large Language Models",
+      "published_date": "2026-08-11",
+      "selected_date": "2026-08-12",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.08053",
+      "title": "PhysX-CoT: Structured Physical Reasoning from a Single Image to Simulation-Ready 3D Assets",
+      "published_date": "2026-08-11",
+      "selected_date": "2026-08-12",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.08598",
+      "title": "Knowledge-Distilled End-to-End Reinforcement Learning for Smooth 6-DOF Thrust Control and Rapid Adaptation to Ocean Currents in Remotely Operated Vehicles",
+      "published_date": "2026-08-11",
+      "selected_date": "2026-08-12",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://www.yicai.com/brief/103314798.html",
+      "title": "11:10 浙江：到2027年脑机接口未来产业营收超过50亿元 | 浙江省人民政府办公厅印发《关于推进脑机接口产学研联动的若干措施》。其中提到，到2027年，企业主导的产学研联动机制有效运行，脑机接口核心软硬件自主创新能力大幅提",
+      "published_date": "2026-08-12",
+      "selected_date": "2026-08-12",
+      "category": "未来趋势观察"
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.08545",
+      "title": "Curriculum Generation under Structured Parametric Environments for Robust Navigation Policies",
+      "published_date": "2026-08-11",
+      "selected_date": "2026-08-12",
+      "category": "未来趋势观察"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-08-12",
   "domains": [
     {
       "domain": "Metal Materials",
@@ -33,109 +33,75 @@
       "domain": "Energy Materials",
       "zh": "能源材料",
       "description": "锂离子电池、固态电池、钠离子电池、燃料电池、氢能材料、储氢材料、电解槽材料、电池回收、热管理材料",
-      "count": 6,
+      "count": 4,
       "items": [
         {
-          "event_id": "e0fe48ccb77182cc",
-          "canonical_url": "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india",
-          "normalized_title": "report volkswagen group partner jsw ev production india",
-          "title": "Report: Volkswagen Group to partner with JSW for EV production in India",
-          "source": "Electrive",
-          "source_names": [
-            "Electrive"
-          ],
-          "source_urls": [
-            "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india"
-          ],
-          "published_date": "2026-08-08",
-          "url": "https://www.electrive.com/2026/08/08/report-volkswagen-group-to-partner-with-jsw-for-ev-production-in-india",
-          "link_label": "官方发布",
-          "brief": "该新闻可能影响大众在印度的供应链布局，但未涉及具体材料技术，研发人员需关注后续进展。"
-        },
-        {
-          "event_id": "f1f89470f9185ea6",
-          "canonical_url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
-          "normalized_title": "byd files six more solid state battery patents",
-          "title": "BYD files six more solid-state battery patents",
-          "source": "Electrive",
-          "source_names": [
-            "Electrive"
-          ],
-          "source_urls": [
-            "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents"
-          ],
-          "published_date": "2026-08-07",
-          "url": "https://www.electrive.com/2026/08/07/byd-files-six-more-solid-state-battery-patents",
-          "link_label": "查看专利",
-          "brief": "固态电池是下一代电池技术关键，比亚迪专利进展显示其产业化提速，将带动固态电解质等材料需求，对材料研发具有指导意义。"
-        },
-        {
-          "event_id": "202873714205750a",
-          "canonical_url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
-          "normalized_title": "cars communicating badly is already solved problem",
-          "title": "Cars Communicating Badly Is an Already-Solved Problem",
+          "event_id": "a1252910d987ca0a",
+          "canonical_url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
+          "normalized_title": "zap rocks add water get clean hydrogen",
+          "title": "Zap Rocks. Add Water. Get Clean Hydrogen",
           "source": "IEEE Spectrum",
           "source_names": [
             "IEEE Spectrum"
           ],
           "source_urls": [
-            "https://spectrum.ieee.org/v2x-technology-5g-open-ran"
+            "https://spectrum.ieee.org/stimulated-geologic-hydrogen"
           ],
-          "published_date": "2026-08-07",
-          "url": "https://spectrum.ieee.org/v2x-technology-5g-open-ran",
+          "published_date": "2026-08-11",
+          "url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
           "link_label": "阅读论文",
-          "brief": "该新闻展示了V2X通信技术的新方向，可能影响未来汽车通信架构，但材料关联度低，暂不构成材料研发的紧迫需求。"
+          "brief": "该技术可能开辟新的氢能来源，但当前材料需求与汽车直接关联弱，需长期跟踪。"
         },
         {
-          "event_id": "6e5d244e04caf9ce",
-          "canonical_url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
-          "normalized_title": "catl expands its lead global battery market",
-          "title": "CATL Expands Its Lead in the Global Battery Market",
-          "source": "Electrive",
+          "event_id": "0830901b9799e442",
+          "canonical_url": "https://arxiv.org/abs/2608.08522",
+          "normalized_title": "esaacsim multimodal event camera add nvidia isaac sim",
+          "title": "EsaacSim: A Multimodal Event Camera Add-on for NVIDIA Isaac Sim",
+          "source": "arXiv",
           "source_names": [
-            "Electrive"
+            "arXiv"
           ],
           "source_urls": [
-            "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market"
+            "https://arxiv.org/abs/2608.08522"
           ],
-          "published_date": "2026-08-07",
-          "url": "https://www.electrive.com/2026/08/07/catl-expands-its-lead-in-the-global-battery-market",
-          "link_label": "官方发布",
-          "brief": "市场增长可能带动电池材料需求，但新闻未提供具体材料信息，研发人员应关注后续技术动态。"
+          "published_date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.08522",
+          "link_label": "阅读论文",
+          "brief": "该新闻代表事件相机仿真工具的发展，可能促进自动驾驶感知技术演进，但当前不直接驱动材料需求，材料研发人员可暂不关注。"
         },
         {
-          "event_id": "c4289d3fdf7f8692",
-          "canonical_url": "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev",
-          "normalized_title": "clemson s solar powered ev project looks like cardboard shoe but it s lot more clever than it looks",
-          "title": "Clemson's Solar-Powered EV Project Looks Like A Cardboard Shoe. But It's A Lot More Clever Than It Looks",
-          "source": "InsideEVs",
+          "event_id": "2b842a5b00d08e6b",
+          "canonical_url": "https://arxiv.org/abs/2608.08183",
+          "normalized_title": "multi modal interactive control robotic arm based offline large language models",
+          "title": "Multi-modal Interactive Control of Robotic Arm based on Offline Large Language Models",
+          "source": "arXiv",
           "source_names": [
-            "InsideEVs"
+            "arXiv"
           ],
           "source_urls": [
-            "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev"
+            "https://arxiv.org/abs/2608.08183"
           ],
-          "published_date": "2026-08-07",
-          "url": "https://insideevs.com/news/804099/clemson-bmw-energy-positive-ev",
-          "link_label": "官方发布",
-          "brief": "该新闻虽为概念项目，但反映了汽车行业对能量自给自足和太阳能集成的探索趋势，可能间接推动轻量化和太阳能材料需求。"
+          "published_date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.08183",
+          "link_label": "阅读论文",
+          "brief": "该技术代表机器人控制智能化趋势，可能影响汽车制造自动化，但当前阶段不直接产生材料需求，材料团队可保持关注。"
         },
         {
-          "event_id": "b6b97d21426870cf",
-          "canonical_url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
-          "normalized_title": "nvidia alpamayo 2 super frontier open model robotaxis autonomous vehicles now available commercial use",
-          "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
-          "source": "NVIDIA Blog",
+          "event_id": "32ae679cad485b32",
+          "canonical_url": "https://arxiv.org/abs/2608.08053",
+          "normalized_title": "physx cot structured physical reasoning from single image simulation ready 3d assets",
+          "title": "PhysX-CoT: Structured Physical Reasoning from a Single Image to Simulation-Ready 3D Assets",
+          "source": "arXiv",
           "source_names": [
-            "NVIDIA Blog"
+            "arXiv"
           ],
           "source_urls": [
-            "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available"
+            "https://arxiv.org/abs/2608.08053"
           ],
-          "published_date": "2026-08-04",
-          "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
-          "link_label": "阅读原文",
-          "brief": "该新闻代表自动驾驶算法进步，可能间接推动车载计算硬件升级，但未直接牵引材料需求，材料团队可保持关注。"
+          "published_date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.08053",
+          "link_label": "阅读论文",
+          "brief": "该技术可能推动汽车研发中的虚拟仿真和数字孪生应用，但未直接涉及材料需求或工艺变化，因此对材料研发人员关注度有限。"
         }
       ]
     },
@@ -157,24 +123,58 @@
       "domain": "Future Research Reserve",
       "zh": "前沿研究储备",
       "description": "超材料、4D打印、Programmable Materials、自修复材料、仿生材料、AI for Materials、材料大模型、数字材料、脑机接口材料、量子材料、核聚变材料、空间材料",
-      "count": 1,
+      "count": 3,
       "items": [
         {
-          "event_id": "f39929b8e71fb059",
-          "canonical_url": "https://arxiv.org/abs/2608.01102",
-          "normalized_title": "caat contact aware attention scaling tactile masking data efficient contact rich manipulation",
-          "title": "CAAT: Contact-Aware Attention Scaling and Tactile Masking for Data-Efficient Contact-Rich Manipulation",
+          "event_id": "a22ab94c200efbfe",
+          "canonical_url": "https://www.yicai.com/brief/103314798.html",
+          "normalized_title": "11 10 浙江 到2027年脑机接口未来产业营收超过50亿元 浙江省人民政府办公厅印发 关于推进脑机接口产学研联动的若干措施 其中提到 到2027年 企业主导的产学研联动机制有效运行 脑机接口核心软硬件自主创新能力大幅提",
+          "title": "11:10 浙江：到2027年脑机接口未来产业营收超过50亿元 | 浙江省人民政府办公厅印发《关于推进脑机接口产学研联动的若干措施》。其中提到，到2027年，企业主导的产学研联动机制有效运行，脑机接口核心软硬件自主创新能力大幅提",
+          "source": "第一财经",
+          "source_names": [
+            "第一财经"
+          ],
+          "source_urls": [
+            "https://www.yicai.com/brief/103314798.html"
+          ],
+          "published_date": "2026-08-12",
+          "url": "https://www.yicai.com/brief/103314798.html",
+          "link_label": "阅读原文",
+          "brief": "该政策释放了脑机接口产业化的信号，可能带动新型材料需求，但当前与汽车材料研发关联度低，仅作为前瞻趋势参考。"
+        },
+        {
+          "event_id": "29b2365f45e5b142",
+          "canonical_url": "https://arxiv.org/abs/2608.08598",
+          "normalized_title": "knowledge distilled end end reinforcement learning smooth 6 dof thrust control rapid adaptation ocean currents remotely operated vehicles",
+          "title": "Knowledge-Distilled End-to-End Reinforcement Learning for Smooth 6-DOF Thrust Control and Rapid Adaptation to Ocean Currents in Remotely Operated Vehicles",
           "source": "arXiv",
           "source_names": [
             "arXiv"
           ],
           "source_urls": [
-            "https://arxiv.org/abs/2608.01102"
+            "https://arxiv.org/abs/2608.08598"
           ],
-          "published_date": "2026-08-04",
-          "url": "https://arxiv.org/abs/2608.01102",
+          "published_date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.08598",
           "link_label": "阅读论文",
-          "brief": "该技术推动机器人操作智能化，可能间接影响汽车制造中的自动化设备升级，但当前不直接产生材料需求，材料团队可保持关注。"
+          "brief": "该技术属于控制算法领域，不直接涉及材料创新，但可能对智能控制硬件提出新需求，间接影响材料选择，目前材料机会不明显。"
+        },
+        {
+          "event_id": "23a41fe2257234c8",
+          "canonical_url": "https://arxiv.org/abs/2608.08545",
+          "normalized_title": "curriculum generation under structured parametric environments robust navigation policies",
+          "title": "Curriculum Generation under Structured Parametric Environments for Robust Navigation Policies",
+          "source": "arXiv",
+          "source_names": [
+            "arXiv"
+          ],
+          "source_urls": [
+            "https://arxiv.org/abs/2608.08545"
+          ],
+          "published_date": "2026-08-11",
+          "url": "https://arxiv.org/abs/2608.08545",
+          "link_label": "阅读论文",
+          "brief": "该新闻属于算法研究，未牵引材料需求，对材料研发人员关注度低。"
         }
       ]
     }
