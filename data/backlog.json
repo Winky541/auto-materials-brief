@@ -78,6 +78,75 @@
       ]
     },
     {
+      "title": "France introduces incentive scheme for used EVs",
+      "source": "Electrive",
+      "published_date": "2026-08-14",
+      "url": "https://www.electrive.com/2026/08/14/france-introduces-incentive-scheme-for-used-evs",
+      "category": "其他",
+      "subcategory": "",
+      "summary": "法国宣布自9月起对二手电动汽车的购买和租赁提供财政支持，但补贴力度有限，目前通过CEE系统每辆车仅约337欧元。相比之下，医护人员购买二手电动汽车可获得更高补贴。该政策旨在促进二手电动车市场发展，但具体技术细节未披露。",
+      "technical_points": [
+        "法国推出二手电动汽车购买和租赁激励计划，自9月生效。",
+        "补贴通过CEE系统发放，目前每辆车约337欧元，金额有限。",
+        "医护人员购买二手电动车可享受更高补贴，但具体金额未说明。",
+        "政策未涉及具体技术参数或材料要求。"
+      ],
+      "materials_involved": [],
+      "companies_or_institutions": [],
+      "impact_assessment": "该政策可能促进二手电动车市场流通，但补贴力度较小，对新车市场影响有限。对产业链的直接影响不明确，可能间接推动电池回收和再利用需求，但当前信息不足。",
+      "research_value": "对材料研究员的参考价值较低，因为未涉及具体材料技术或工艺。但可关注二手电动车市场增长对电池回收材料的需求趋势。",
+      "industrial_maturity": "policy",
+      "priority": "P3",
+      "confidence": 70,
+      "follow_up": false,
+      "one_sentence": "法国推出二手电动车补贴政策，但补贴金额低，材料相关性弱。",
+      "why_it_matters": "该政策可能刺激二手电动车市场，但未涉及具体技术或材料，对研发人员直接价值有限。不过，二手市场增长可能间接影响电池回收和再利用材料需求。",
+      "technology_driver": "其他",
+      "material_relevance": "电池回收材料",
+      "material_opportunity": "材料相关性较弱，暂不优先。",
+      "validation_opportunity": "信息不足，无明确样件验证或供应商调研机会。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "政策推动二手电动车市场，可能间接促进电池回收产业，但当前信号较弱。",
+      "future_signal_score": 30,
+      "material_opportunity_score": 31,
+      "material_validation_score": 31,
+      "analysis_status": "success",
+      "rule_score": 40,
+      "source_score": 78,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=15 (EV, electric vehicle, vehicle); materials=0 (none); companies=0 (none); industrial=0 (none); future=0 (none); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://www.electrive.com/2026/08/14/france-introduces-incentive-scheme-for-used-evs",
+      "normalized_title": "france introduces incentive scheme used evs",
+      "event_id": "6f0135d0b5b9e2e8",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 33,
+      "bookshelf_category": "Energy Materials",
+      "related_sources": [
+        {
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/08/14/france-introduces-incentive-scheme-for-used-evs",
+          "published_date": "2026-08-14"
+        }
+      ],
+      "source_urls": [
+        "https://www.electrive.com/2026/08/14/france-introduces-incentive-scheme-for-used-evs"
+      ],
+      "source_names": [
+        "Electrive"
+      ]
+    },
+    {
       "title": "IEEE’s Global Museum Brings Engineering History to You",
       "source": "IEEE Spectrum",
       "published_date": "2026-07-04",

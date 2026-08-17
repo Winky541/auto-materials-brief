@@ -1,433 +1,58 @@
 {
-  "date": "2026-08-12",
-  "count": 7,
+  "date": "2026-08-17",
+  "count": 5,
   "items": [
     {
-      "title": "Zap Rocks. Add Water. Get Clean Hydrogen",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-08-11",
-      "url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
+      "title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
+      "source": "BMW",
+      "published_date": "2026-08-10",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
       "category": "未来趋势观察",
-      "subcategory": "燃料电池",
-      "summary": "美国初创公司Eden GeoPower开发电脉冲岩石压裂技术，通过地下电极放电产生等离子体冲击波，在铁矿石中制造裂缝，注入水后与铁反应生成氢气，即刺激地质氢。该技术已在科罗拉多州硬岩中验证，渗透率提升十倍，并计划与氢能公司合作进行现场试验。其他企业如GeoKiln、Vema、Koloma探索加热、催化剂、CO2注入等方法。ARPA-E资助2000万美元支持16个团队。该技术有望实现低成本零碳氢能，但尚处早期。",
+      "subcategory": "回收",
+      "summary": "宝马集团主导的Car2Car研究项目验证了报废汽车到新车的高质量材料闭环在工业规模上的可行性，重点针对钢、铝和铜。通过优化处理和分选条件，Car2Car材料比例从6%提升至51%。该项目为车辆回收提供了重要数据基础，展示了循环经济在汽车制造中的潜力。",
       "technical_points": [
-        "电脉冲压裂：利用Marx发生器产生高压脉冲，在岩石中形成等离子体通道，产生冲击波致裂，提高渗透率。",
-        "刺激地质氢：向铁矿石注水，氧化铁释放氢气，裂缝增加水与铁接触面积。",
-        "脉冲功率技术：相比直流电，脉冲功率能有效压裂硬岩，实验室中氢气产量提高4倍。",
-        "多种刺激方法：包括加热（GeoKiln）、催化剂（Vema）、CO2注入（Koloma）等，可能需组合使用。",
-        "ARPA-E资助：2024年投入2000万美元支持16个团队研究刺激地质氢。"
+        "Car2Car项目验证了报废汽车材料闭环的工业可行性。",
+        "重点材料为钢、铝和铜，通过扩展处理和分选条件提高回收比例。",
+        "Car2Car比例从6%提升至51%，表明分选和加工技术显著提升。",
+        "项目为车辆回收提供了数据基础，可能推动回收标准和工艺优化。"
       ],
       "materials_involved": [
-        "铁矿石",
-        "电极材料（铜）",
-        "催化剂（金属或化学盐）",
-        "盐酸（用于清理裂缝）",
-        "二氧化碳（用于微蚀刻）"
+        "钢",
+        "铝",
+        "铜",
+        "回收材料"
       ],
       "companies_or_institutions": [
-        "Eden GeoPower",
-        "ARPA-E",
-        "GeoKiln",
-        "Vema Hydrogen",
-        "Koloma",
-        "Hydroma",
-        "Texas A&M University",
-        "University of Colorado Boulder"
+        "BMW"
       ],
-      "impact_assessment": "刺激地质氢技术若成熟，可能为汽车提供低成本零碳氢源，影响燃料电池汽车产业链。但当前处于早期，对汽车材料直接影响有限，需关注后续进展。",
-      "research_value": "对汽车材料研究员而言，该技术涉及地下反应，材料需求主要在电极、催化剂、耐腐蚀材料等，但距离汽车应用较远，参考价值中等。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 70,
+      "impact_assessment": "该研究可能推动汽车回收产业链升级，提高再生材料在汽车制造中的使用比例，影响原材料采购和供应链设计，促进循环经济相关技术和标准发展。",
+      "research_value": "为材料研究员提供回收材料性能、分选工艺和闭环应用的数据参考，有助于评估再生材料在汽车部件中的适用性。",
+      "industrial_maturity": "pilot",
+      "priority": "P1",
+      "confidence": 75,
       "follow_up": true,
-      "one_sentence": "电脉冲压裂技术刺激地下铁矿石产氢，尚处实验室阶段，材料机会有限。",
-      "why_it_matters": "该技术可能开辟新的氢能来源，但当前材料需求与汽车直接关联弱，需长期跟踪。",
-      "technology_driver": "氢能",
-      "material_relevance": "电极材料、催化剂、耐腐蚀材料",
-      "material_opportunity": "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "该技术处于实验室阶段，无样件验证价值，距离量产遥远，不建议供应商调研。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "中",
-      "future_signal": "刺激地质氢作为新兴氢能路线，可能改变氢能供应格局，但技术成熟度低。",
-      "future_signal_score": 40,
-      "material_opportunity_score": 41,
-      "material_validation_score": 41,
+      "one_sentence": "宝马Car2Car项目证明报废车材料闭环在工业规模上可行，钢铝铜回收比例大幅提升，为汽车回收材料应用提供数据支撑。",
+      "why_it_matters": "该新闻表明汽车材料回收技术取得重要进展，可能改变原材料供应格局，推动再生材料在汽车制造中的规模化应用，对材料研发和供应链策略有直接影响。",
+      "technology_driver": "循环经济",
+      "material_relevance": "回收材料（钢、铝、铜）",
+      "material_opportunity": "回收钢、回收铝、回收铜；可能涉及分选和提纯工艺相关材料，但具体材料需求不明确。",
+      "validation_opportunity": "有验证价值，可调研回收材料的性能数据，评估在汽车部件中的适用性；适合供应商调研和前瞻储备，但距离具体材料导入尚需更多数据。",
+      "suggested_action": "持续跟踪",
+      "trend_potential": "高",
+      "future_signal": "汽车行业向循环经济转型，回收材料比例提升可能成为趋势，影响材料供应链和设计规范。",
+      "future_signal_score": 80,
+      "material_opportunity_score": 60,
+      "material_validation_score": 60,
       "analysis_status": "success",
-      "rule_score": 47,
-      "source_score": 82,
-      "source_type": "rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=8 (fuel cell, electrolyzer); companies=0 (none); industrial=9 (commercialization, plant, patent); future=5 (research); current_month=5",
-      "stage": "Validation",
-      "stage_reason": "出现测试、认证、可靠性或客户场景验证信号，说明机会已进入价值验证阶段。 命中信号：testing, test。",
-      "canonical_url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
-      "normalized_title": "zap rocks add water get clean hydrogen",
-      "event_id": "a1252910d987ca0a",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 50,
-      "bookshelf_category": "Energy Materials",
-      "related_sources": [
-        {
-          "source": "IEEE Spectrum",
-          "url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
-          "published_date": "2026-08-11"
-        }
-      ],
-      "source_urls": [
-        "https://spectrum.ieee.org/stimulated-geologic-hydrogen"
-      ],
-      "source_names": [
-        "IEEE Spectrum"
-      ],
-      "selected_at": "2026-08-12T11:27:13+08:00"
-    },
-    {
-      "title": "EsaacSim: A Multimodal Event Camera Add-on for NVIDIA Isaac Sim",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "url": "https://arxiv.org/abs/2608.08522",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "本文介绍EsaacSim，一个用于NVIDIA Isaac Sim的多模态事件相机插件，支持灰度与Bayer RGGB事件生成，提供RGB、APS、事件、深度和IMU同步输出，并通过ROS2接口集成。该框架支持多种分辨率，采用运动引导帧间隙合成策略提升时间分辨率，在RTX 4060 GPU上实现240-960Hz有效事件率，生成事件流仅需6.98-29.16ms，额外显存小于400MB。实验验证了多模态同步仿真性能，并发布了早期版本。",
-      "technical_points": [
-        "事件相机仿真插件，支持灰度与Bayer RGGB事件生成",
-        "多模态同步输出：RGB、APS、事件、深度、IMU，通过ROS2接口",
-        "运动引导帧间隙合成策略，提升有效时间分辨率至960Hz",
-        "高效性能：事件生成耗时6.98-29.16ms，额外显存<400MB",
-        "支持五种事件相机分辨率，在线仿真与合成数据生成"
-      ],
-      "materials_involved": [
-        "事件相机传感器",
-        "Bayer RGGB滤色阵列",
-        "CMOS图像传感器",
-        "光学材料（潜在）",
-        "硅基半导体材料（潜在）"
-      ],
-      "companies_or_institutions": [
-        "NVIDIA",
-        "arXiv"
-      ],
-      "impact_assessment": "该技术推动事件相机在机器人仿真中的应用，可能加速自动驾驶和机器人感知系统的开发。对汽车产业链而言，事件相机作为新型传感器，有望提升自动驾驶在高速动态场景下的感知能力，但当前主要影响仿真工具链，对材料需求间接。",
-      "research_value": "对汽车材料研究员而言，该新闻主要涉及传感器仿真，材料相关性较弱。但事件相机若量产，可能带动光学材料、封装材料、半导体材料的需求，目前处于早期阶段，参考价值有限。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "EsaacSim是NVIDIA Isaac Sim的事件相机仿真插件，提升机器人感知仿真能力，但材料相关性较弱。",
-      "why_it_matters": "该新闻代表事件相机仿真工具的发展，可能促进自动驾驶感知技术演进，但当前不直接驱动材料需求，材料研发人员可暂不关注。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "光学材料、半导体材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "信息不足，无明确样件验证价值，距离量产较远，不建议供应商调研。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "事件相机仿真工具的出现可能推动事件相机在机器人领域的应用，但尚未形成明确材料需求信号。",
-      "future_signal_score": 30,
-      "material_opportunity_score": 31,
-      "material_validation_score": 31,
-      "analysis_status": "success",
-      "rule_score": 40,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=0 (none); future=15 (robotics, NVIDIA, research); current_month=5",
-      "stage": "Strategic Reserve",
-      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：strategy。",
-      "canonical_url": "https://arxiv.org/abs/2608.08522",
-      "normalized_title": "esaacsim multimodal event camera add nvidia isaac sim",
-      "event_id": "0830901b9799e442",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions"
-      ],
-      "final_score": 45,
-      "bookshelf_category": "Functional Materials",
-      "related_sources": [
-        {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2608.08522",
-          "published_date": "2026-08-11"
-        }
-      ],
-      "source_urls": [
-        "https://arxiv.org/abs/2608.08522"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "selected_at": "2026-08-12T11:27:13+08:00"
-    },
-    {
-      "title": "Multi-modal Interactive Control of Robotic Arm based on Offline Large Language Models",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "url": "https://arxiv.org/abs/2608.08183",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "该论文提出了一种基于离线大语言模型的多模态交互控制机械臂算法，名为“Socratic Models-ChatGLM”。该算法利用本地部署的开源大模型，通过PyBullet平台实现机械臂的文本-图像多模态交互控制，并具备处理复杂长时程任务的能力。研究旨在降低AI服务成本，推动具身智能在机器人领域的应用。",
-      "technical_points": [
-        "基于离线大语言模型实现多模态交互控制",
-        "提出Socratic Models-ChatGLM算法",
-        "在PyBullet平台上进行机械臂仿真",
-        "支持文本-图像集成的多步长任务",
-        "强调低成本、稳定免费的AI服务"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [],
-      "impact_assessment": "该技术属于具身智能和机器人控制领域，可能推动汽车制造中机械臂的智能化升级，但短期内对汽车材料需求影响有限。长期看，若机械臂广泛应用，可能对轻量化材料、传感器材料等产生间接需求。",
-      "research_value": "对汽车材料研究员而言，该论文主要提供技术趋势参考，不直接涉及材料研发。但可关注机器人轻量化、传感器集成等带来的材料机会。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "基于离线大语言模型的机械臂控制算法，属于具身智能前沿研究，材料相关性较弱。",
-      "why_it_matters": "该技术代表机器人控制智能化趋势，可能影响汽车制造自动化，但当前阶段不直接产生材料需求，材料团队可保持关注。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "轻量化复合材料、传感材料",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "该研究处于实验室仿真阶段，距离实际应用较远，暂无样件验证价值，不建议供应商调研。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "中",
-      "future_signal": "具身智能与机器人控制技术持续发展，未来可能带动相关材料需求，但当前信号较弱。",
-      "future_signal_score": 62,
-      "material_opportunity_score": 20,
-      "material_validation_score": 20,
-      "analysis_status": "success",
-      "rule_score": 35,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=0 (none); future=10 (AI Agent, embodied AI); current_month=5",
+      "rule_score": 41,
+      "source_score": 88,
+      "source_type": "company_news_page",
+      "filter_reason": "source=22; automotive=5 (vehicle); materials=4 (recycling); companies=0 (none); industrial=0 (none); future=5 (research); current_month=5",
       "stage": "Technology Watch",
       "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://arxiv.org/abs/2608.08183",
-      "normalized_title": "multi modal interactive control robotic arm based offline large language models",
-      "event_id": "2b842a5b00d08e6b",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "future_signals"
-      ],
-      "final_score": 44,
-      "bookshelf_category": "Functional Materials",
-      "related_sources": [
-        {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2608.08183",
-          "published_date": "2026-08-11"
-        }
-      ],
-      "source_urls": [
-        "https://arxiv.org/abs/2608.08183"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "selected_at": "2026-08-12T11:27:13+08:00"
-    },
-    {
-      "title": "PhysX-CoT: Structured Physical Reasoning from a Single Image to Simulation-Ready 3D Assets",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "url": "https://arxiv.org/abs/2608.08053",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "本文提出PhysX-CoT，一种从单张图像生成仿真就绪3D资产的显式结构化物理推理方法。该方法将图像到3D资产生成分解为有序的、机器可解析的部分级状态轨迹，包括分解、2D/3D定位、关系、粗略几何和表面线索，并分别监督、用于条件化几何和作为奖励目标。通过因子化几何和CoT对齐的GRPO优化，PhysX-CoT在统一协议下优于基线，生成的资产在Unreal Engine 5中具有高有效性。",
-      "technical_points": [
-        "提出显式结构化物理推理过程，将图像到3D资产生成分解为有序的部分级状态轨迹",
-        "几何因子化：3D框承载放置，局部编码承载形状",
-        "CoT对齐的GRPO优化解析有效性、定位、几何、放置和物理一致性",
-        "在统一协议下重训所有基线，PhysX-CoT在几何、尺度和物理属性指标上优于全任务基线",
-        "在Unreal Engine 5中生成的资产解析、碰撞和铰接有效性高"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [],
-      "impact_assessment": "该技术主要影响机器人、具身智能和仿真领域，可能加速数字孪生和虚拟测试在汽车研发中的应用，但对汽车材料产业链的直接牵引较弱。",
-      "research_value": "对汽车材料研究员而言，该技术可能间接影响材料仿真和虚拟验证流程，但无直接材料需求牵引。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "PhysX-CoT提出从单图生成仿真3D资产的新方法，但材料相关性较弱，暂不优先。",
-      "why_it_matters": "该技术可能推动汽车研发中的虚拟仿真和数字孪生应用，但未直接涉及材料需求或工艺变化，因此对材料研发人员关注度有限。",
-      "technology_driver": "机器人与具身智能",
-      "material_relevance": "无直接材料牵引",
-      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
-      "validation_opportunity": "无样件验证价值，距离材料导入和供应商调研较远，不适合前瞻储备。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "该技术释放了AI在仿真资产生成方面的进展，但未涉及材料产业变化，未来信号较弱。",
-      "future_signal_score": 62,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 35,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=0 (none); future=10 (embodied AI, robotics); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://arxiv.org/abs/2608.08053",
-      "normalized_title": "physx cot structured physical reasoning from single image simulation ready 3d assets",
-      "event_id": "32ae679cad485b32",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "future_signals"
-      ],
-      "final_score": 43,
-      "bookshelf_category": "Future Research Reserve",
-      "related_sources": [
-        {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2608.08053",
-          "published_date": "2026-08-11"
-        }
-      ],
-      "source_urls": [
-        "https://arxiv.org/abs/2608.08053"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "selected_at": "2026-08-12T11:27:13+08:00"
-    },
-    {
-      "title": "Knowledge-Distilled End-to-End Reinforcement Learning for Smooth 6-DOF Thrust Control and Rapid Adaptation to Ocean Currents in Remotely Operated Vehicles",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "url": "https://arxiv.org/abs/2608.08598",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "本文提出一种基于知识蒸馏的端到端强化学习框架TSRCA-PPO，用于遥控潜水器（ROV）的六自由度推力控制。该方法通过两阶段蒸馏学习，结合奖励函数设计和特权多编码器架构，实现了在洋流扰动下的低稳态误差、快速瞬态响应、节能和平滑推力输出。仿真结果表明，TSRCA-PPO在稳态位置误差、姿态误差、稳定时间、能量指数和推力平滑指数上分别降至传统级联P-PID控制器的42.7%、76.5%、10.6%、93.5%和15.9%。",
-      "technical_points": [
-        "提出TSRCA-PPO方法，采用两阶段知识蒸馏框架学习近最优控制策略。",
-        "核心创新在于奖励函数设计和特权多编码器架构。",
-        "仿真验证了该方法在洋流扰动下优于传统级联P-PID控制器。",
-        "实现了低稳态误差、快速瞬态响应、节能和平滑推力输出的统一控制。"
-      ],
-      "materials_involved": [],
-      "companies_or_institutions": [],
-      "impact_assessment": "该研究主要针对水下机器人控制算法，对汽车产业链的直接材料需求影响较小。但控制算法和强化学习技术可能间接影响自动驾驶或智能控制领域，进而对传感器、执行器等硬件提出新要求，但材料相关性较弱。",
-      "research_value": "对汽车材料研究员而言，该论文主要涉及控制算法，不涉及具体材料或工艺，参考价值有限。但可关注其算法优化思路是否应用于汽车智能控制，从而间接影响材料需求。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 80,
-      "follow_up": false,
-      "one_sentence": "该论文提出一种用于水下机器人控制的新型强化学习算法，但材料相关性较弱，暂不优先。",
-      "why_it_matters": "该技术属于控制算法领域，不直接涉及材料创新，但可能对智能控制硬件提出新需求，间接影响材料选择，目前材料机会不明显。",
-      "technology_driver": "其他",
-      "material_relevance": "无明确材料方向",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "该研究处于仿真阶段，无样件验证价值，距离量产较远，不建议供应商调研。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "该新闻释放了强化学习在水下机器人控制中的应用趋势，但未涉及材料领域，未来产业影响力有限。",
-      "future_signal_score": 62,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
-      "analysis_status": "success",
-      "rule_score": 35,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=5 (vehicle); materials=0 (none); companies=0 (none); industrial=0 (none); future=5 (innovation); current_month=5",
-      "stage": "Strategic Reserve",
-      "stage_reason": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：strategy, policy。",
-      "canonical_url": "https://arxiv.org/abs/2608.08598",
-      "normalized_title": "knowledge distilled end end reinforcement learning smooth 6 dof thrust control rapid adaptation ocean currents remotely operated vehicles",
-      "event_id": "29b2365f45e5b142",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "",
-      "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
-      "module_targets": [
-        "future_signals"
-      ],
-      "final_score": 42,
-      "bookshelf_category": "Functional Materials",
-      "related_sources": [
-        {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2608.08598",
-          "published_date": "2026-08-11"
-        }
-      ],
-      "source_urls": [
-        "https://arxiv.org/abs/2608.08598"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "selected_at": "2026-08-12T11:27:13+08:00"
-    },
-    {
-      "title": "11:10 浙江：到2027年脑机接口未来产业营收超过50亿元 | 浙江省人民政府办公厅印发《关于推进脑机接口产学研联动的若干措施》。其中提到，到2027年，企业主导的产学研联动机制有效运行，脑机接口核心软硬件自主创新能力大幅提",
-      "source": "第一财经",
-      "published_date": "2026-08-12",
-      "url": "https://www.yicai.com/brief/103314798.html",
-      "category": "未来趋势观察",
-      "subcategory": "",
-      "summary": "浙江省人民政府办公厅印发《关于推进脑机接口产学研联动的若干措施》，提出到2027年脑机接口未来产业营收超过50亿元，并强调企业主导的产学研联动机制有效运行，核心软硬件自主创新能力大幅提升。该政策旨在推动脑机接口技术从实验室走向产业化，涉及电极、芯片、算法、信号处理等关键环节，可能带动新型材料在生物相容性、导电性、柔性等方面的需求。",
-      "technical_points": [
-        "脑机接口核心软硬件自主创新能力提升，涉及电极、芯片、信号采集与处理技术。",
-        "产学研联动机制强调企业主导，加速技术从实验室到产业转化。",
-        "政策目标设定产业营收规模，表明政府推动产业化的决心。",
-        "脑机接口技术可能涉及柔性电极、生物相容性封装、高导电材料等。",
-        "政策可能引导材料供应商进入脑机接口供应链，形成新的材料验证机会。"
-      ],
-      "materials_involved": [
-        "柔性电极材料（如导电聚合物、碳纳米管、石墨烯）",
-        "生物相容性封装材料（如聚酰亚胺、Parylene、硅胶）",
-        "高导电金属（如金、铂、铱氧化物）",
-        "半导体材料（用于脑机接口芯片）",
-        "信号传输材料（如低噪声电缆）"
-      ],
-      "companies_or_institutions": [
-        "浙江省人民政府办公厅",
-        "脑机接口相关企业（未具体提及）"
-      ],
-      "impact_assessment": "对汽车产业链影响有限，但脑机接口技术可能在未来智能座舱、驾驶员状态监测等场景中应用，牵引柔性传感材料、生物相容性材料等需求。短期内对汽车材料研发影响较小。",
-      "research_value": "对汽车材料研究员参考价值中等，可关注柔性传感材料、生物相容性材料在车载健康监测中的潜在应用，但当前阶段与汽车核心材料关联度低。",
-      "industrial_maturity": "policy",
-      "priority": "P3",
-      "confidence": 70,
-      "follow_up": false,
-      "one_sentence": "浙江发布脑机接口产业政策，目标2027年营收超50亿，但材料相关性较弱，暂不优先。",
-      "why_it_matters": "该政策释放了脑机接口产业化的信号，可能带动新型材料需求，但当前与汽车材料研发关联度低，仅作为前瞻趋势参考。",
-      "technology_driver": "其他",
-      "material_relevance": "柔性传感材料、生物相容性材料",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "脑机接口技术尚处于政策推动阶段，距离汽车应用较远，暂无样件验证价值，不建议供应商调研。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "政策推动脑机接口产业化，可能带动生物相容性材料、柔性电子材料发展，但短期对汽车材料影响有限。",
-      "future_signal_score": 40,
-      "material_opportunity_score": 20,
-      "material_validation_score": 20,
-      "analysis_status": "success",
-      "rule_score": 38,
-      "source_score": 70,
-      "source_type": "professional_media",
-      "filter_reason": "source=18; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=0 (none); future=15 (脑机接口, 未来产业, 创新); current_month=5",
-      "stage": "Technology Watch",
-      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
-      "canonical_url": "https://www.yicai.com/brief/103314798.html",
-      "normalized_title": "11 10 浙江 到2027年脑机接口未来产业营收超过50亿元 浙江省人民政府办公厅印发 关于推进脑机接口产学研联动的若干措施 其中提到 到2027年 企业主导的产学研联动机制有效运行 脑机接口核心软硬件自主创新能力大幅提",
-      "event_id": "a22ab94c200efbfe",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+      "normalized_title": "from end life vehicles new cars car2car research project demonstrates feasibility high quality material loops industrial scale mon aug 10 11 00 00 cest 2026 press release research project highlights potential high quality material loops particularly steel aluminium copper car2car rate increases from six 51 percent under expanded processing sorting conditions results provide important data basis vehicle recycling circular economy corporate production recycling sustainability recycling",
+      "event_id": "89494d4b47d84094",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -438,90 +63,343 @@
         "suggested_actions",
         "future_signals"
       ],
-      "final_score": 41,
-      "bookshelf_category": "Functional Materials",
+      "final_score": 65,
+      "bookshelf_category": "Metal Materials",
       "related_sources": [
         {
-          "source": "第一财经",
-          "url": "https://www.yicai.com/brief/103314798.html",
+          "source": "BMW",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+          "published_date": "2026-08-10"
+        }
+      ],
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "selected_at": "2026-08-17T10:24:45+08:00"
+    },
+    {
+      "title": "BMW Announces Monterey Car Week 2026 Program: Premieres of the BMW M Concept Neue Klasse and Vision BMW ALPINA, BMW M3 Milestones, and a New Chapter of “Kith for BMW” Wed Aug 12 12:00:00 CEST 2026 Press Release • The future of BMW M performance: The all-electric BMW M Concept Neue Klasse previews the next era of BMW M with advanced vehicle control, M-specific Neue Klasse technology, and a four-electric-motor performance concept. • A new era for BMW ALPINA: The distinctive design study translates the tradition of speed, comfort, and refinement into a modern design characterized by subtle craftsmanship, advanced technology, and sophisticated high-performance ... BMW M Cars · M3",
+      "source": "BMW",
+      "published_date": "2026-08-12",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
+      "category": "其他",
+      "subcategory": "",
+      "summary": "宝马宣布2026年蒙特雷汽车周活动，将全球首发BMW M Concept Neue Klasse和Vision BMW ALPINA设计研究。M Concept Neue Klasse展示了宝马M的未来，采用四电机纯电驱动和先进的车辆控制技术。Vision BMW ALPINA则将ALPINA传统与现代设计融合，强调精致工艺和先进技术。此外，活动还包括BMW M3里程碑展示和Kith联名新篇章。这些发布体现了宝马在电动化、高性能和个性化方面的战略方向。",
+      "technical_points": [
+        "BMW M Concept Neue Klasse采用四电机纯电驱动，实现先进车辆控制。",
+        "M-specific Neue Klasse技术平台，可能包含新型电池和电驱系统。",
+        "Vision BMW ALPINA设计研究，融合传统与未来设计，可能采用轻量化材料。",
+        "BMW M3里程碑展示，可能涉及经典车型的复刻或技术回顾。",
+        "Kith联名新篇章，可能涉及个性化定制和特殊涂装。"
+      ],
+      "materials_involved": [
+        "四电机驱动系统相关材料",
+        "高性能电池材料",
+        "轻量化材料（如碳纤维、铝合金）",
+        "先进涂层和表面处理材料"
+      ],
+      "companies_or_institutions": [
+        "BMW",
+        "BMW M",
+        "BMW ALPINA"
+      ],
+      "impact_assessment": "宝马在电动化高性能领域的布局将推动电机、电池、轻量化材料的需求，可能影响供应链和材料验证方向。",
+      "research_value": "对材料研究员而言，四电机驱动和Neue Klasse平台可能带来新型电机材料、电池材料、热管理材料等验证机会。",
+      "industrial_maturity": "unknown",
+      "priority": "P2",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "宝马发布四电机纯电M概念车和ALPINA设计研究，预示高性能电动车材料需求。",
+      "why_it_matters": "宝马M概念车采用四电机和先进控制，可能牵引高性能电机材料、电池材料和轻量化材料需求。",
+      "technology_driver": "未来交通",
+      "material_relevance": "高性能电机材料、电池材料、轻量化复合材料、热管理材料",
+      "material_opportunity": "可能涉及高功率密度电机用硅钢、永磁材料，高能量密度电池用硅碳负极、固态电解质，以及碳纤维复合材料用于轻量化。",
+      "validation_opportunity": "目前处于概念阶段，距离量产尚远，但可关注宝马后续技术细节发布，进行前瞻储备和供应商调研。",
+      "suggested_action": "前瞻储备",
+      "trend_potential": "高",
+      "future_signal": "宝马加速电动化高性能车布局，预示未来对高性能材料的需求增长。",
+      "future_signal_score": 75,
+      "material_opportunity_score": 76,
+      "material_validation_score": 76,
+      "analysis_status": "success",
+      "rule_score": 42,
+      "source_score": 88,
+      "source_type": "company_news_page",
+      "filter_reason": "source=22; automotive=10 (vehicle, car); materials=0 (none); companies=5 (BMW); industrial=0 (none); future=0 (none); current_month=5",
+      "stage": "Technology Watch",
+      "stage_reason": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
+      "normalized_title": "bmw announces monterey car week 2026 program premieres bmw m concept neue klasse vision bmw alpina bmw m3 milestones new chapter kith bmw wed aug 12 12 00 00 cest 2026 press release future bmw m performance all electric bmw m concept neue klasse previews next era bmw m advanced vehicle control m specific neue klasse technology four electric motor performance concept new era bmw alpina distinctive design study translates tradition speed comfort refinement into modern design characterized by subtle craftsmanship advanced technology sophisticated high performance bmw m cars m3",
+      "event_id": "1020ce0d75df2326",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 62,
+      "bookshelf_category": "Energy Materials",
+      "related_sources": [
+        {
+          "source": "BMW",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
           "published_date": "2026-08-12"
         }
       ],
       "source_urls": [
-        "https://www.yicai.com/brief/103314798.html"
+        "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo"
       ],
       "source_names": [
-        "第一财经"
+        "BMW"
       ],
-      "selected_at": "2026-08-12T11:27:13+08:00"
+      "selected_at": "2026-08-17T10:24:45+08:00"
     },
     {
-      "title": "Curriculum Generation under Structured Parametric Environments for Robust Navigation Policies",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "url": "https://arxiv.org/abs/2608.08545",
-      "category": "未来趋势观察",
+      "title": "GM and LGES ramp up cell production in Ohio again",
+      "source": "Electrive",
+      "published_date": "2026-08-13",
+      "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+      "category": "电池与储能材料",
       "subcategory": "",
-      "summary": "本文提出一种基于结构化参数环境的课程生成框架，用于提升自动驾驶导航策略的鲁棒性。通过单向梯度优化自动调整环境参数（如转弯率、摩擦、坡度等），并引入分布偏移正则化以改善多模态观测下的表征学习。在Car Racing和Bipedal Walker两个连续控制环境中，该方法优于多种基线，包括自步强化学习和逆课程学习。该研究属于算法层面，未涉及具体材料应用。",
+      "summary": "通用汽车与LG能源解决方案在暂停约七个月后，重启美国俄亥俄州合资工厂的电池电芯生产。下周起，该工厂将再次为通用电动汽车制造电芯。同时，双方正将其他美国产能更多转向固定式储能系统。此举表明北美电池供应链正在调整，电芯生产与储能应用并重。",
       "technical_points": [
-        "提出基于重参数化的课程生成框架，利用单向梯度优化自动调整连续环境参数。",
-        "引入分布偏移正则化目标，改善图像和标量多模态观测下的潜在表征学习。",
-        "在Car Racing和Bipedal Walker环境中验证，性能优于SPRL、ALP-GMM等基线。",
-        "消融实验显示重参数化机制的有效性，辅助正则化收益依赖环境。"
+        "重启俄亥俄州合资工厂的电芯生产，产能爬坡中。",
+        "部分美国产能转向固定式储能系统，可能涉及电池设计或系统集成调整。",
+        "生产暂停七个月后恢复，可能涉及产线维护、工艺优化或供应链调整。",
+        "电芯生产与储能应用并行，可能影响电池化学体系或封装形式。"
       ],
-      "materials_involved": [],
-      "companies_or_institutions": [],
-      "impact_assessment": "该研究属于自动驾驶算法领域，可能间接影响未来车辆对传感器、计算硬件的要求，但未直接涉及材料需求。短期内对汽车材料研发方向无显著影响。",
-      "research_value": "对材料研究员参考价值有限，主要作为AI算法趋势参考，不涉及具体材料导入或验证。",
-      "industrial_maturity": "lab",
-      "priority": "P3",
-      "confidence": 90,
-      "follow_up": false,
-      "one_sentence": "一项关于自动驾驶导航策略的课程学习算法研究，不涉及具体材料需求。",
-      "why_it_matters": "该新闻属于算法研究，未牵引材料需求，对材料研发人员关注度低。",
-      "technology_driver": "自动驾驶",
-      "material_relevance": "无",
-      "material_opportunity": "材料相关性较弱，暂不优先。",
-      "validation_opportunity": "无样件验证价值，不适合供应商调研或前瞻储备，距离量产太远。",
-      "suggested_action": "暂不优先",
-      "trend_potential": "低",
-      "future_signal": "该新闻释放了自动驾驶算法向更鲁棒导航发展的信号，但未涉及材料技术演进。",
-      "future_signal_score": 62,
-      "material_opportunity_score": 10,
-      "material_validation_score": 10,
+      "materials_involved": [
+        "电池电芯",
+        "储能系统相关材料"
+      ],
+      "companies_or_institutions": [
+        "GM",
+        "LG Energy Solution"
+      ],
+      "impact_assessment": "该新闻表明北美电池产能正在重新配置，电芯生产恢复可能带动上游材料需求，但具体材料细节未披露。对汽车产业链而言，电池供应稳定性提升，但储能转向可能影响电池材料配比。",
+      "research_value": "对材料研究员而言，该新闻提供了电池产能动态信息，但缺乏具体材料技术细节，参考价值有限。可关注后续是否涉及新化学体系或材料供应商变化。",
+      "industrial_maturity": "production",
+      "priority": "P2",
+      "confidence": 70,
+      "follow_up": true,
+      "one_sentence": "通用与LG能源重启俄亥俄电芯生产，部分产能转向储能，电池材料需求或调整。",
+      "why_it_matters": "该新闻反映电池产能布局变化，可能影响上游材料采购策略，但未透露具体材料技术，研发人员需关注后续技术细节。",
+      "technology_driver": "储能",
+      "material_relevance": "电池材料（正极、负极、电解液、隔膜等）",
+      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "信息不足，无法判断具体材料验证机会。建议持续跟踪后续技术公告或供应链动态。",
+      "suggested_action": "持续跟踪",
+      "trend_potential": "中",
+      "future_signal": "电池产能向储能倾斜可能推动储能专用电池材料需求，但当前信号较弱。",
+      "future_signal_score": 50,
+      "material_opportunity_score": 30,
+      "material_validation_score": 30,
       "analysis_status": "success",
-      "rule_score": 38,
-      "source_score": 82,
-      "source_type": "journal_rss",
-      "filter_reason": "source=20; automotive=5 (car); materials=0 (none); companies=0 (none); industrial=3 (sampling); future=5 (OpenAI); current_month=5",
-      "stage": "Joint Development",
-      "stage_reason": "已出现送样、联合开发、Pilot、OEM 合作、定点或供货信号，应进入方案确定阶段。 命中信号：sample, sampling。",
-      "canonical_url": "https://arxiv.org/abs/2608.08545",
-      "normalized_title": "curriculum generation under structured parametric environments robust navigation policies",
-      "event_id": "23a41fe2257234c8",
+      "rule_score": 47,
+      "source_score": 78,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=10 (electric vehicle, vehicle); materials=4 (battery); companies=5 (GM); industrial=3 (plant); future=0 (none); current_month=5",
+      "stage": "Strategic Reserve",
+      "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+      "canonical_url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+      "normalized_title": "gm lges ramp up cell production ohio again",
+      "event_id": "2215a4f159c4a236",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
-      "secondary_flow": "",
+      "secondary_flow": "material_intelligence",
       "reason_for_flow": "内容主要用于理解未来趋势、产业变化、技术范式或组织方法变化。",
       "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
         "future_signals"
       ],
-      "final_score": 37,
-      "bookshelf_category": "Functional Materials",
+      "final_score": 53,
+      "bookshelf_category": "Energy Materials",
       "related_sources": [
         {
-          "source": "arXiv",
-          "url": "https://arxiv.org/abs/2608.08545",
-          "published_date": "2026-08-11"
+          "source": "Electrive",
+          "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+          "published_date": "2026-08-13"
         }
       ],
       "source_urls": [
-        "https://arxiv.org/abs/2608.08545"
+        "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again"
       ],
       "source_names": [
-        "arXiv"
+        "Electrive"
       ],
-      "selected_at": "2026-08-12T11:27:13+08:00"
+      "selected_at": "2026-08-17T10:24:45+08:00"
+    },
+    {
+      "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+      "source": "InsideEVs",
+      "published_date": "2026-08-13",
+      "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+      "category": "电池与储能材料",
+      "subcategory": "",
+      "summary": "通用汽车与LG新能源合资的Ultium Cells工厂在俄亥俄州沃伦市因电动汽车需求下滑于2026年初停产七个月后，现已恢复电池生产。该工厂主要生产NCMA（镍钴锰铝）四元锂电池，为通用多款电动车型提供动力电池。此次复产标志着通用汽车在调整库存和需求预期后，重新启动关键电池供应链，以支持其电动化战略。",
+      "technical_points": [
+        "Ultium Cells工厂恢复生产，涉及NCMA四元锂电池的制造。",
+        "NCMA正极材料通过铝掺杂提升热稳定性和循环寿命。",
+        "电池生产重启可能涉及产线调试和工艺优化。",
+        "需求波动导致停产，复产反映市场供需调整。",
+        "该工厂为通用汽车与LG新能源的合资项目，体现供应链合作模式。"
+      ],
+      "materials_involved": [
+        "NCMA正极材料",
+        "镍",
+        "钴",
+        "锰",
+        "铝",
+        "电解液",
+        "隔膜",
+        "负极材料"
+      ],
+      "companies_or_institutions": [
+        "GM",
+        "LG新能源",
+        "Ultium Cells"
+      ],
+      "impact_assessment": "该复产事件表明电动汽车电池供应链正在根据市场需求进行调整，可能影响电池材料的采购节奏和价格。对汽车产业链而言，电池产能的恢复有助于稳定供应，但需求不确定性仍存。",
+      "research_value": "对材料研究员而言，该新闻提供了电池材料（如NCMA）在量产中的实际应用信息，但缺乏具体技术细节，参考价值有限。",
+      "industrial_maturity": "production",
+      "priority": "P2",
+      "confidence": 70,
+      "follow_up": false,
+      "one_sentence": "通用与LG的俄亥俄电池工厂复产，但材料细节有限，暂不优先。",
+      "why_it_matters": "电池工厂复产可能影响电池材料需求，但新闻未提供新材料或工艺细节，对研发牵引力弱。",
+      "technology_driver": "储能",
+      "material_relevance": "电池材料（正极、负极、电解液等）",
+      "material_opportunity": "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "信息不足，无明确样件验证或供应商调研机会。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "电池产能随需求波动，供应链调整可能影响材料采购，但非技术突破信号。",
+      "future_signal_score": 30,
+      "material_opportunity_score": 31,
+      "material_validation_score": 31,
+      "analysis_status": "success",
+      "rule_score": 40,
+      "source_score": 70,
+      "source_type": "rss",
+      "filter_reason": "source=18; automotive=5 (EV); materials=4 (battery); companies=5 (GM); industrial=3 (factory); future=0 (none); current_month=5",
+      "stage": "Strategic Reserve",
+      "stage_reason": "材料机会分较高，但尚未出现送样、合作或验证证据，适合先进入战略储备。",
+      "canonical_url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+      "normalized_title": "gm lg restart ev battery production ohio after seven month shutdown",
+      "event_id": "7dbf33ce486538ee",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 47,
+      "bookshelf_category": "Energy Materials",
+      "related_sources": [
+        {
+          "source": "InsideEVs",
+          "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+          "published_date": "2026-08-13"
+        }
+      ],
+      "source_urls": [
+        "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio"
+      ],
+      "source_names": [
+        "InsideEVs"
+      ],
+      "selected_at": "2026-08-17T10:24:45+08:00"
+    },
+    {
+      "title": "Digital Signal Processing Pioneer Bede Liu Dies At 91",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-08-15",
+      "url": "https://spectrum.ieee.org/digital-signal-processing",
+      "category": "未来趋势观察",
+      "subcategory": "",
+      "summary": "IEEE Spectrum报道数字信号处理先驱Bede Liu去世，享年91岁。他长期在普林斯顿大学任教，研究推动了从模拟到数字信号处理的转变，奠定了现代通信、多媒体和消费电子技术的基础。他的工作涉及低功耗数字信号处理器、数字水印等，对移动通信、图像视频处理等领域有深远影响。",
+      "technical_points": [
+        "数字信号处理算法与低复杂度实现技术",
+        "低功耗数字信号处理器设计",
+        "数字水印与媒体完整性技术",
+        "并行处理硬件架构",
+        "信号滤波与压缩方法"
+      ],
+      "materials_involved": [
+        "半导体材料",
+        "低功耗芯片相关材料"
+      ],
+      "companies_or_institutions": [
+        "IEEE",
+        "普林斯顿大学",
+        "贝尔实验室",
+        "Google",
+        "IBM"
+      ],
+      "impact_assessment": "该新闻为人物讣告，技术内容为历史贡献，不直接涉及当前汽车产业链的研发方向。但数字信号处理技术是汽车电子（如ADAS、车载通信）的基础，其演进可能间接影响相关芯片和材料需求。",
+      "research_value": "对汽车材料研究员参考价值有限，主要提供技术背景，不涉及具体材料或工艺。",
+      "industrial_maturity": "unknown",
+      "priority": "P3",
+      "confidence": 90,
+      "follow_up": false,
+      "one_sentence": "数字信号处理先驱Bede Liu去世，其历史贡献虽影响深远，但新闻本身不涉及具体材料技术，材料相关性较弱。",
+      "why_it_matters": "该新闻为人物讣告，技术内容为历史贡献，不直接涉及当前汽车产业链的研发方向。但数字信号处理技术是汽车电子（如ADAS、车载通信）的基础，其演进可能间接影响相关芯片和材料需求。",
+      "technology_driver": "机器人与具身智能",
+      "material_relevance": "轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料",
+      "material_opportunity": "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+      "validation_opportunity": "无样件验证价值，无需供应商调研，不适合前瞻储备，距离量产太远。",
+      "suggested_action": "暂不优先",
+      "trend_potential": "低",
+      "future_signal": "该新闻释放了数字信号处理技术基础性贡献的信号，但无新材料或工艺牵引，未来产业影响力有限。",
+      "future_signal_score": 20,
+      "material_opportunity_score": 21,
+      "material_validation_score": 21,
+      "analysis_status": "success",
+      "rule_score": 46,
+      "source_score": 82,
+      "source_type": "rss",
+      "filter_reason": "source=20; automotive=0 (none); materials=0 (none); companies=0 (none); industrial=6 (patent, standard); future=15 (automation, innovation, research); current_month=5",
+      "stage": "Supplier Research",
+      "stage_reason": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：university, company。",
+      "canonical_url": "https://spectrum.ieee.org/digital-signal-processing",
+      "normalized_title": "digital signal processing pioneer bede liu dies at 91",
+      "event_id": "e8f0eda3dc259077",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "",
+      "reason_for_flow": "内容直接关联材料机会、供应商、验证、专利、论文、标准或汽车材料应用。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "final_score": 43,
+      "bookshelf_category": "Future Research Reserve",
+      "related_sources": [
+        {
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/digital-signal-processing",
+          "published_date": "2026-08-15"
+        }
+      ],
+      "source_urls": [
+        "https://spectrum.ieee.org/digital-signal-processing"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "selected_at": "2026-08-17T10:24:45+08:00"
     }
   ]
 }

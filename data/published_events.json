@@ -6,7 +6,7 @@
       "canonical_url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
       "normalized_title": "zap rocks add water get clean hydrogen",
       "first_seen": "2026-08-12",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-17",
       "source_urls": [
         "https://spectrum.ieee.org/stimulated-geologic-hydrogen"
       ],
@@ -28,6 +28,217 @@
       ],
       "material_opportunities": [
         "潜在材料机会包括光学材料、红外探测材料、封装材料、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "2215a4f159c4a236",
+      "canonical_title": "GM and LGES ramp up cell production in Ohio again",
+      "canonical_url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+      "normalized_title": "gm lges ramp up cell production ohio again",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "source_urls": [
+        "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "e8f0eda3dc259077",
+      "canonical_title": "Digital Signal Processing Pioneer Bede Liu Dies At 91",
+      "canonical_url": "https://spectrum.ieee.org/digital-signal-processing",
+      "normalized_title": "digital signal processing pioneer bede liu dies at 91",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "source_urls": [
+        "https://spectrum.ieee.org/digital-signal-processing"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "1020ce0d75df2326",
+      "canonical_title": "BMW Announces Monterey Car Week 2026 Program: Premieres of the BMW M Concept Neue Klasse and Vision BMW ALPINA, BMW M3 Milestones, and a New Chapter of “Kith for BMW” Wed Aug 12 12:00:00 CEST 2026 Press Release • The future of BMW M performance: The all-electric BMW M Concept Neue Klasse previews the next era of BMW M with advanced vehicle control, M-specific Neue Klasse technology, and a four-electric-motor performance concept. • A new era for BMW ALPINA: The distinctive design study translates the tradition of speed, comfort, and refinement into a modern design characterized by subtle craftsmanship, advanced technology, and sophisticated high-performance ... BMW M Cars · M3",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
+      "normalized_title": "bmw announces monterey car week 2026 program premieres bmw m concept neue klasse vision bmw alpina bmw m3 milestones new chapter kith bmw wed aug 12 12 00 00 cest 2026 press release future bmw m performance all electric bmw m concept neue klasse previews next era bmw m advanced vehicle control m specific neue klasse technology four electric motor performance concept new era bmw alpina distinctive design study translates tradition speed comfort refinement into modern design characterized by subtle craftsmanship advanced technology sophisticated high performance bmw m cars m3",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他",
+        "未来交通"
+      ],
+      "material_opportunities": [
+        "可能涉及高功率密度电机用硅钢、永磁材料，高能量密度电池用硅碳负极、固态电解质，以及碳纤维复合材料用于轻量化。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "89494d4b47d84094",
+      "canonical_title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
+      "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+      "normalized_title": "from end life vehicles new cars car2car research project demonstrates feasibility high quality material loops industrial scale mon aug 10 11 00 00 cest 2026 press release research project highlights potential high quality material loops particularly steel aluminium copper car2car rate increases from six 51 percent under expanded processing sorting conditions results provide important data basis vehicle recycling circular economy corporate production recycling sustainability recycling",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "source_urls": [
+        "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale"
+      ],
+      "source_names": [
+        "BMW"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Metal Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "回收",
+        "循环经济"
+      ],
+      "material_opportunities": [
+        "回收钢、回收铝、回收铜；可能涉及分选和提纯工艺相关材料，但具体材料需求不明确。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "6f0135d0b5b9e2e8",
+      "canonical_title": "France introduces incentive scheme for used EVs",
+      "canonical_url": "https://www.electrive.com/2026/08/14/france-introduces-incentive-scheme-for-used-evs",
+      "normalized_title": "france introduces incentive scheme used evs",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "source_urls": [
+        "https://www.electrive.com/2026/08/14/france-introduces-incentive-scheme-for-used-evs"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "77afda5f23d675e2",
+      "canonical_title": "China’s EV exports continue to rise in July",
+      "canonical_url": "https://www.electrive.com/2026/08/13/chinas-ev-exports-continue-to-rise-in-july",
+      "normalized_title": "china s ev exports continue rise july",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "source_urls": [
+        "https://www.electrive.com/2026/08/13/chinas-ev-exports-continue-to-rise-in-july"
+      ],
+      "source_names": [
+        "Electrive"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "7dbf33ce486538ee",
+      "canonical_title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+      "canonical_url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+      "normalized_title": "gm lg restart ev battery production ohio after seven month shutdown",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "source_urls": [
+        "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio"
+      ],
+      "source_names": [
+        "InsideEVs"
+      ],
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "bookshelf_category": "Energy Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions"
+      ],
+      "topic_tags": [
+        "电池与储能材料",
+        "储能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
       ],
       "published": true
     },

@@ -1,6 +1,331 @@
 {
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-08-17",
   "items": [
+    {
+      "date": "2026-08-17",
+      "window": [
+        {
+          "category": "OEM Strategy Transition",
+          "count": 3,
+          "avg_future_signal_score": 62,
+          "summary": "该新闻表明汽车材料回收技术取得重要进展，可能改变原材料供应格局，推动再生材料在汽车制造中的规模化应用，对材料研发和供应链策略有直接影响。",
+          "sources": [
+            {
+              "title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+              "published_date": "2026-08-10",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "BMW Announces Monterey Car Week 2026 Program: Premieres of the BMW M Concept Neue Klasse and Vision BMW ALPINA, BMW M3 Milestones, and a New Chapter of “Kith for BMW” Wed Aug 12 12:00:00 CEST 2026 Press Release • The future of BMW M performance: The all-electric BMW M Concept Neue Klasse previews the next era of BMW M with advanced vehicle control, M-specific Neue Klasse technology, and a four-electric-motor performance concept. • A new era for BMW ALPINA: The distinctive design study translates the tradition of speed, comfort, and refinement into a modern design characterized by subtle craftsmanship, advanced technology, and sophisticated high-performance ... BMW M Cars · M3",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
+              "published_date": "2026-08-12",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+              "published_date": "2026-08-13",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 3,
+          "avg_future_signal_score": 53,
+          "summary": "该新闻表明汽车材料回收技术取得重要进展，可能改变原材料供应格局，推动再生材料在汽车制造中的规模化应用，对材料研发和供应链策略有直接影响。",
+          "sources": [
+            {
+              "title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+              "published_date": "2026-08-10",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "GM and LGES ramp up cell production in Ohio again",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+              "published_date": "2026-08-13",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+              "published_date": "2026-08-13",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Supply Chain Migration",
+          "count": 3,
+          "avg_future_signal_score": 53,
+          "summary": "该新闻表明汽车材料回收技术取得重要进展，可能改变原材料供应格局，推动再生材料在汽车制造中的规模化应用，对材料研发和供应链策略有直接影响。",
+          "sources": [
+            {
+              "title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+              "published_date": "2026-08-10",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "GM and LGES ramp up cell production in Ohio again",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+              "published_date": "2026-08-13",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+              "published_date": "2026-08-13",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Energy Revolution",
+          "count": 2,
+          "avg_future_signal_score": 40,
+          "summary": "该新闻反映电池产能布局变化，可能影响上游材料采购策略，但未透露具体材料技术，研发人员需关注后续技术细节。",
+          "sources": [
+            {
+              "title": "GM and LGES ramp up cell production in Ohio again",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+              "published_date": "2026-08-13",
+              "link_label": "官方发布"
+            },
+            {
+              "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+              "published_date": "2026-08-13",
+              "link_label": "官方发布"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 1,
+          "avg_future_signal_score": 20,
+          "summary": "该新闻为人物讣告，技术内容为历史贡献，不直接涉及当前汽车产业链的研发方向。但数字信号处理技术是汽车电子（如ADAS、车载通信）的基础，其演进可能间接影响相关芯片和材料需求。",
+          "sources": [
+            {
+              "title": "Digital Signal Processing Pioneer Bede Liu Dies At 91",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/digital-signal-processing",
+              "published_date": "2026-08-15",
+              "link_label": "阅读论文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在未来趋势观察、汽车新材料、学术论文，技术牵引以储能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "宝马M概念车采用四电机和先进控制，可能牵引高性能电机材料、电池材料和轻量化材料需求。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注四电机驱动系统相关材料、高性能电池材料、轻量化材料（如碳纤维、铝合金）、先进涂层和表面处理材料、钢、铝、铜、回收材料。可能涉及高功率密度电机用硅钢、永磁材料，高能量密度电池用硅碳负极、固态电解质，以及碳纤维复合材料用于轻量化。"
+        }
+      ],
+      "cat": [
+        {
+          "title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
+          "source": "BMW",
+          "why_read": "该新闻表明汽车材料回收技术取得重要进展，可能改变原材料供应格局，推动再生材料在汽车制造中的规模化应用，对材料研发和供应链策略有直接影响。",
+          "focus": "关注 循环经济 是否继续形成产业信号；回收钢、回收铝、回收铜；可能涉及分选和提纯工艺相关材料，但具体材料需求不明确。",
+          "reading_time": "约 8 分钟",
+          "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale"
+        },
+        {
+          "title": "GM and LGES ramp up cell production in Ohio again",
+          "source": "Electrive",
+          "why_read": "该新闻反映电池产能布局变化，可能影响上游材料采购策略，但未透露具体材料技术，研发人员需关注后续技术细节。",
+          "focus": "关注 储能 是否继续形成产业信号；潜在材料机会包括正负极材料、电解质、隔膜、集流体、热管理材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。",
+          "reading_time": "约 8 分钟",
+          "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again"
+        }
+      ],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 4,
+          "items": [
+            {
+              "event_id": "e8f0eda3dc259077",
+              "canonical_url": "https://spectrum.ieee.org/digital-signal-processing",
+              "normalized_title": "digital signal processing pioneer bede liu dies at 91",
+              "title": "Digital Signal Processing Pioneer Bede Liu Dies At 91",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/digital-signal-processing"
+              ],
+              "published_date": "2026-08-15",
+              "url": "https://spectrum.ieee.org/digital-signal-processing",
+              "link_label": "阅读论文",
+              "brief": "该新闻为人物讣告，技术内容为历史贡献，不直接涉及当前汽车产业链的研发方向。但数字信号处理技术是汽车电子（如ADAS、车载通信）的基础，其演进可能间接影响相关芯片和材料需求。"
+            },
+            {
+              "event_id": "2215a4f159c4a236",
+              "canonical_url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+              "normalized_title": "gm lges ramp up cell production ohio again",
+              "title": "GM and LGES ramp up cell production in Ohio again",
+              "source": "Electrive",
+              "source_names": [
+                "Electrive"
+              ],
+              "source_urls": [
+                "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again"
+              ],
+              "published_date": "2026-08-13",
+              "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+              "link_label": "官方发布",
+              "brief": "该新闻反映电池产能布局变化，可能影响上游材料采购策略，但未透露具体材料技术，研发人员需关注后续技术细节。"
+            },
+            {
+              "event_id": "7dbf33ce486538ee",
+              "canonical_url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+              "normalized_title": "gm lg restart ev battery production ohio after seven month shutdown",
+              "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+              "source": "InsideEVs",
+              "source_names": [
+                "InsideEVs"
+              ],
+              "source_urls": [
+                "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio"
+              ],
+              "published_date": "2026-08-13",
+              "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+              "link_label": "官方发布",
+              "brief": "电池工厂复产可能影响电池材料需求，但新闻未提供新材料或工艺细节，对研发牵引力弱。"
+            },
+            {
+              "event_id": "1020ce0d75df2326",
+              "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
+              "normalized_title": "bmw announces monterey car week 2026 program premieres bmw m concept neue klasse vision bmw alpina bmw m3 milestones new chapter kith bmw wed aug 12 12 00 00 cest 2026 press release future bmw m performance all electric bmw m concept neue klasse previews next era bmw m advanced vehicle control m specific neue klasse technology four electric motor performance concept new era bmw alpina distinctive design study translates tradition speed comfort refinement into modern design characterized by subtle craftsmanship advanced technology sophisticated high performance bmw m cars m3",
+              "title": "BMW Announces Monterey Car Week 2026 Program: Premieres of the BMW M Concept Neue Klasse and Vision BMW ALPINA, BMW M3 Milestones, and a New Chapter of “Kith for BMW” Wed Aug 12 12:00:00 CEST 2026 Press Release • The future of BMW M performance: The all-electric BMW M Concept Neue Klasse previews the next era of BMW M with advanced vehicle control, M-specific Neue Klasse technology, and a four-electric-motor performance concept. • A new era for BMW ALPINA: The distinctive design study translates the tradition of speed, comfort, and refinement into a modern design characterized by subtle craftsmanship, advanced technology, and sophisticated high-performance ... BMW M Cars · M3",
+              "source": "BMW",
+              "source_names": [
+                "BMW"
+              ],
+              "source_urls": [
+                "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo"
+              ],
+              "published_date": "2026-08-12",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
+              "link_label": "官方发布",
+              "brief": "宝马M概念车采用四电机和先进控制，可能牵引高性能电机材料、电池材料和轻量化材料需求。"
+            }
+          ]
+        },
+        {
+          "domain": "Sustainable Materials",
+          "zh": "绿色材料",
+          "count": 1,
+          "items": [
+            {
+              "event_id": "89494d4b47d84094",
+              "canonical_url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+              "normalized_title": "from end life vehicles new cars car2car research project demonstrates feasibility high quality material loops industrial scale mon aug 10 11 00 00 cest 2026 press release research project highlights potential high quality material loops particularly steel aluminium copper car2car rate increases from six 51 percent under expanded processing sorting conditions results provide important data basis vehicle recycling circular economy corporate production recycling sustainability recycling",
+              "title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
+              "source": "BMW",
+              "source_names": [
+                "BMW"
+              ],
+              "source_urls": [
+                "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale"
+              ],
+              "published_date": "2026-08-10",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+              "link_label": "官方发布",
+              "brief": "该新闻表明汽车材料回收技术取得重要进展，可能改变原材料供应格局，推动再生材料在汽车制造中的规模化应用，对材料研发和供应链策略有直接影响。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Energy Materials、Sustainable Materials中已有2个机会进入 Technology Watch，其中“Solid-State Electrolytes”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "BMW Announces Monterey Car Week 2026 Program: Premieres of the BMW M Concept Neue Klasse and Vision BMW ALPINA, BMW M3 Milestones, and a New Chapter of “Kith for BMW” Wed Aug 12 12:00:00 CEST 2026 Press Release • The future of BMW M performance: The all-electric BMW M Concept Neue Klasse previews the next era of BMW M with advanced vehicle control, M-specific Neue Klasse technology, and a four-electric-motor performance concept. • A new era for BMW ALPINA: The distinctive design study translates the tradition of speed, comfort, and refinement into a modern design characterized by subtle craftsmanship, advanced technology, and sophisticated high-performance ... BMW M Cars · M3",
+              "source": "BMW",
+              "url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "GM and LGES ramp up cell production in Ohio again",
+              "source": "Electrive",
+              "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+              "source": "InsideEVs",
+              "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "Energy Materials中已有1个机会进入 Supplier Research，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：university, company。",
+          "suggested_move": "锁定潜在供应商、研究机构或初创公司，准备初步调研。",
+          "evidence": [
+            {
+              "title": "Digital Signal Processing Pioneer Bede Liu Dies At 91",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/digital-signal-processing",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        }
+      ]
+    },
     {
       "date": "2026-08-12",
       "window": [

@@ -1,43 +1,11 @@
 {
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-08-17",
   "items": [
     {
-      "title": "Zap Rocks. Add Water. Get Clean Hydrogen",
-      "url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
-      "source": "IEEE Spectrum",
-      "published_date": "2026-08-11",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "EsaacSim: A Multimodal Event Camera Add-on for NVIDIA Isaac Sim",
-      "url": "https://arxiv.org/abs/2608.08522",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Multi-modal Interactive Control of Robotic Arm based on Offline Large Language Models",
-      "url": "https://arxiv.org/abs/2608.08183",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
+      "title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
+      "source": "BMW",
+      "published_date": "2026-08-10",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -50,42 +18,26 @@
       ]
     },
     {
-      "title": "PhysX-CoT: Structured Physical Reasoning from a Single Image to Simulation-Ready 3D Assets",
-      "url": "https://arxiv.org/abs/2608.08053",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Knowledge-Distilled End-to-End Reinforcement Learning for Smooth 6-DOF Thrust Control and Rapid Adaptation to Ocean Currents in Remotely Operated Vehicles",
-      "url": "https://arxiv.org/abs/2608.08598",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "11:10 浙江：到2027年脑机接口未来产业营收超过50亿元 | 浙江省人民政府办公厅印发《关于推进脑机接口产学研联动的若干措施》。其中提到，到2027年，企业主导的产学研联动机制有效运行，脑机接口核心软硬件自主创新能力大幅提",
-      "url": "https://www.yicai.com/brief/103314798.html",
-      "source": "第一财经",
+      "title": "BMW Announces Monterey Car Week 2026 Program: Premieres of the BMW M Concept Neue Klasse and Vision BMW ALPINA, BMW M3 Milestones, and a New Chapter of “Kith for BMW” Wed Aug 12 12:00:00 CEST 2026 Press Release • The future of BMW M performance: The all-electric BMW M Concept Neue Klasse previews the next era of BMW M with advanced vehicle control, M-specific Neue Klasse technology, and a four-electric-motor performance concept. • A new era for BMW ALPINA: The distinctive design study translates the tradition of speed, comfort, and refinement into a modern design characterized by subtle craftsmanship, advanced technology, and sophisticated high-performance ... BMW M Cars · M3",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
+      "source": "BMW",
       "published_date": "2026-08-12",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "GM and LGES ramp up cell production in Ohio again",
+      "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
+      "source": "Electrive",
+      "published_date": "2026-08-13",
       "flow_type": "future_intelligence",
       "primary_flow": "future_intelligence",
       "secondary_flow": "material_intelligence",
@@ -98,13 +50,29 @@
       ]
     },
     {
-      "title": "Curriculum Generation under Structured Parametric Environments for Robust Navigation Policies",
-      "url": "https://arxiv.org/abs/2608.08545",
-      "source": "arXiv",
-      "published_date": "2026-08-11",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
+      "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
+      "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
+      "source": "InsideEVs",
+      "published_date": "2026-08-13",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Digital Signal Processing Pioneer Bede Liu Dies At 91",
+      "url": "https://spectrum.ieee.org/digital-signal-processing",
+      "source": "IEEE Spectrum",
+      "published_date": "2026-08-15",
+      "flow_type": "material_intelligence",
+      "primary_flow": "material_intelligence",
+      "secondary_flow": "future_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",
