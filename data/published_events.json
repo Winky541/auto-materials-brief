@@ -1,6 +1,220 @@
 {
   "events": [
     {
+      "event_id": "bdaee2a8b90a1021",
+      "canonical_title": "IEEE Presidents’ Scholarship Honors Teen Innovators",
+      "canonical_url": "https://spectrum.ieee.org/ieee-presidents-scholarship-2026",
+      "normalized_title": "ieee presidents scholarship honors teen innovators",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "source_urls": [
+        "https://spectrum.ieee.org/ieee-presidents-scholarship-2026"
+      ],
+      "source_names": [
+        "IEEE Spectrum"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "气动人工肌肉（如硅胶、弹性体）、3D打印材料（如PLA、尼龙）、EEG干电极材料（如导电聚合物）可能值得关注，但尚处实验室阶段，材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "d3fbab176642807b",
+      "canonical_title": "EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints",
+      "canonical_url": "https://arxiv.org/abs/2608.15502",
+      "normalized_title": "ecovla energy efficient device edge co inference vision language action models under real time constraints",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.15502"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "38cec76b6756504d",
+      "canonical_title": "August 19, 2026 Healthcare Teijin Signs Technical Advisory Agreement with Professor Dario Campana, a World-renowned Authority in CAR-T Cell Therapy Research[Teijin,Teijin Regenet] (PDF: 355.9 KB)",
+      "canonical_url": "https://www.teijin.com/news/2026/08/19/20260819_01.pdf",
+      "normalized_title": "august 19 2026 healthcare teijin signs technical advisory agreement professor dario campana world renowned authority car t cell therapy research teijin teijin regenet pdf 355 9 kb",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "source_urls": [
+        "https://www.teijin.com/news/2026/08/19/20260819_01.pdf"
+      ],
+      "source_names": [
+        "Teijin News"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "1fca424b9c2c10e8",
+      "canonical_title": "Trade News | August 18, 2026 BASF Opens Global Diaper and Superabsorbents Performance Lab in Mumbai to Strengthen Customer-centric Innovation in Hygiene Solutions BASF has officially inaugurated its new Performance Lab for diapers and superabsorbents (SAP) in Mumbai on August 18, 2026, which will provide technical and application services to superabsorbent customers globally. The new lab of BASF’s Hygiene Solutions business has been established in less than a year and is part of BASF’s Innovation Campus Asia Pacific in Mumbai, BASF’s second largest R&D site in Asia Pacific established in 2017 under BASF Chemicals India Private Limited. Read more",
+      "canonical_url": "https://www.basf.com/global/en/media/news-releases/2026/08/p-26-151",
+      "normalized_title": "trade news august 18 2026 basf opens global diaper superabsorbents performance lab mumbai strengthen customer centric innovation hygiene solutions basf has officially inaugurated its new performance lab diapers superabsorbents sap mumbai august 18 2026 which will provide technical application services superabsorbent customers globally new lab basf s hygiene solutions business has been established less than year is part basf s innovation campus asia pacific mumbai basf s second largest r d site asia pacific established 2017 under basf chemicals india private limited read more",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "source_urls": [
+        "https://www.basf.com/global/en/media/news-releases/2026/08/p-26-151"
+      ],
+      "source_names": [
+        "BASF"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "99904fc62fd146a5",
+      "canonical_title": "ForceU-VLA: A Force-Aware Vision-Language-Action Model for Embodied Ultrasound Scanning",
+      "canonical_url": "https://arxiv.org/abs/2608.15009",
+      "normalized_title": "forceu vla force aware vision language action model embodied ultrasound scanning",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.15009"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "政策法规与标准",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
+      "event_id": "748794417dcda65c",
+      "canonical_title": "Strengthening democratic oversight in national security",
+      "canonical_url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+      "normalized_title": "strengthening democratic oversight national security",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "source_urls": [
+        "https://openai.com/index/strengthening-democratic-oversight-in-national-security"
+      ],
+      "source_names": [
+        "OpenAI Blog"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Future Research Reserve",
+      "module_targets": [
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "其他"
+      ],
+      "material_opportunities": [
+        "材料相关性较弱，暂不优先。"
+      ],
+      "published": false
+    },
+    {
+      "event_id": "cc3ef0a3996a64bb",
+      "canonical_title": "Co-design of Neural and Muscle Network based on Embodied Perceptron Representation",
+      "canonical_url": "https://arxiv.org/abs/2608.16555",
+      "normalized_title": "co design neural muscle network based embodied perceptron representation",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.16555"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "bookshelf_category": "Functional Materials",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ],
+      "topic_tags": [
+        "未来趋势观察",
+        "机器人与具身智能"
+      ],
+      "material_opportunities": [
+        "潜在材料机会包括轻量化结构材料、减速器材料、柔性传感材料、导热材料、电池材料。可结合样件可得性、供应商成熟度和内部项目需求决定是否进入验证。"
+      ],
+      "published": true
+    },
+    {
       "event_id": "a1252910d987ca0a",
       "canonical_title": "Zap Rocks. Add Water. Get Clean Hydrogen",
       "canonical_url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",

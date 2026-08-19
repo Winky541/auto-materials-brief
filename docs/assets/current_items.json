@@ -1,78 +1,78 @@
 {
-  "updated_at": "2026-08-17",
+  "updated_at": "2026-08-19",
   "items": [
     {
-      "title": "From end-of-life vehicles to new cars: Car2Car research project demonstrates feasibility of high-quality material loops on an industrial scale Mon Aug 10 11:00:00 CEST 2026 Press Release +++ Research project highlights potential of high-quality material loops, particularly for steel, aluminium and copper +++ Car2Car rate increases from six to 51 percent under expanded processing and sorting conditions +++ Results provide important data basis for vehicle recycling +++ Circular Economy · Corporate · Production, Recycling · Sustainability · Recycling",
-      "url": "https://www.press.bmwgroup.com/global/article/detail/T0459996EN/from-end-of-life-vehicles-to-new-cars:-car2car-research-project-demonstrates-feasibility-of-high-quality-material-loops-on-an-industrial-scale",
-      "source": "BMW",
-      "published_date": "2026-08-10",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "BMW Announces Monterey Car Week 2026 Program: Premieres of the BMW M Concept Neue Klasse and Vision BMW ALPINA, BMW M3 Milestones, and a New Chapter of “Kith for BMW” Wed Aug 12 12:00:00 CEST 2026 Press Release • The future of BMW M performance: The all-electric BMW M Concept Neue Klasse previews the next era of BMW M with advanced vehicle control, M-specific Neue Klasse technology, and a four-electric-motor performance concept. • A new era for BMW ALPINA: The distinctive design study translates the tradition of speed, comfort, and refinement into a modern design characterized by subtle craftsmanship, advanced technology, and sophisticated high-performance ... BMW M Cars · M3",
-      "url": "https://www.press.bmwgroup.com/global/article/detail/T0460052EN/bmw-announces-monterey-car-week-2026-program:-premieres-of-the-bmw-m-concept-neue-klasse-and-vision-bmw-alpina-bmw-m3-milestones-and-a-new-chapter-of-“kith-for-bmw”?showMedia=photo",
-      "source": "BMW",
-      "published_date": "2026-08-12",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "GM and LGES ramp up cell production in Ohio again",
-      "url": "https://www.electrive.com/2026/08/13/gm-and-lges-ramp-up-cell-production-in-ohio-again",
-      "source": "Electrive",
-      "published_date": "2026-08-13",
-      "flow_type": "future_intelligence",
-      "primary_flow": "future_intelligence",
-      "secondary_flow": "material_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "GM And LG Restart EV Battery Production In Ohio After Seven-Month Shutdown",
-      "url": "https://insideevs.com/news/804775/gm-lg-ultium-cells-production-restart-ohio",
-      "source": "InsideEVs",
-      "published_date": "2026-08-13",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
-      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
-      "module_targets": [
-        "today_key_insight",
-        "bookshelf",
-        "suggested_actions",
-        "future_signals"
-      ]
-    },
-    {
-      "title": "Digital Signal Processing Pioneer Bede Liu Dies At 91",
-      "url": "https://spectrum.ieee.org/digital-signal-processing",
+      "title": "IEEE Presidents’ Scholarship Honors Teen Innovators",
+      "url": "https://spectrum.ieee.org/ieee-presidents-scholarship-2026",
       "source": "IEEE Spectrum",
-      "published_date": "2026-08-15",
-      "flow_type": "material_intelligence",
-      "primary_flow": "material_intelligence",
-      "secondary_flow": "future_intelligence",
+      "published_date": "2026-08-18",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Co-design of Neural and Muscle Network based on Embodied Perceptron Representation",
+      "url": "https://arxiv.org/abs/2608.16555",
+      "source": "arXiv",
+      "published_date": "2026-08-18",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints",
+      "url": "https://arxiv.org/abs/2608.15502",
+      "source": "arXiv",
+      "published_date": "2026-08-18",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "Trade News | August 18, 2026 BASF Opens Global Diaper and Superabsorbents Performance Lab in Mumbai to Strengthen Customer-centric Innovation in Hygiene Solutions BASF has officially inaugurated its new Performance Lab for diapers and superabsorbents (SAP) in Mumbai on August 18, 2026, which will provide technical and application services to superabsorbent customers globally. The new lab of BASF’s Hygiene Solutions business has been established in less than a year and is part of BASF’s Innovation Campus Asia Pacific in Mumbai, BASF’s second largest R&D site in Asia Pacific established in 2017 under BASF Chemicals India Private Limited. Read more",
+      "url": "https://www.basf.com/global/en/media/news-releases/2026/08/p-26-151",
+      "source": "BASF",
+      "published_date": "2026-08-18",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
+      "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
+      "module_targets": [
+        "today_key_insight",
+        "bookshelf",
+        "suggested_actions",
+        "future_signals"
+      ]
+    },
+    {
+      "title": "ForceU-VLA: A Force-Aware Vision-Language-Action Model for Embodied Ultrasound Scanning",
+      "url": "https://arxiv.org/abs/2608.15009",
+      "source": "arXiv",
+      "published_date": "2026-08-18",
+      "flow_type": "future_intelligence",
+      "primary_flow": "future_intelligence",
+      "secondary_flow": "material_intelligence",
       "reason_for_flow": "内容同时包含材料机会和未来趋势信号，按分值更高的一侧确定主信息流。",
       "module_targets": [
         "today_key_insight",

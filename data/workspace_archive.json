@@ -1,6 +1,293 @@
 {
-  "updated_at": "2026-08-17",
+  "updated_at": "2026-08-19",
   "items": [
+    {
+      "date": "2026-08-19",
+      "window": [
+        {
+          "category": "Advanced Sensing",
+          "count": 2,
+          "avg_future_signal_score": 35,
+          "summary": "该研究代表具身智能技术演进方向，未来可能牵引人工肌肉等新材料需求，但当前距离材料导入尚远。",
+          "sources": [
+            {
+              "title": "Co-design of Neural and Muscle Network based on Embodied Perceptron Representation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.16555",
+              "published_date": "2026-08-18",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "ForceU-VLA: A Force-Aware Vision-Language-Action Model for Embodied Ultrasound Scanning",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.15009",
+              "published_date": "2026-08-18",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Robotics & Embodied AI",
+          "count": 4,
+          "avg_future_signal_score": 32,
+          "summary": "该研究代表具身智能技术演进方向，未来可能牵引人工肌肉等新材料需求，但当前距离材料导入尚远。",
+          "sources": [
+            {
+              "title": "Co-design of Neural and Muscle Network based on Embodied Perceptron Representation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.16555",
+              "published_date": "2026-08-18",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "IEEE Presidents’ Scholarship Honors Teen Innovators",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ieee-presidents-scholarship-2026",
+              "published_date": "2026-08-18",
+              "link_label": "阅读论文"
+            },
+            {
+              "title": "EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.15502",
+              "published_date": "2026-08-18",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "AI Agent & AI Hardware",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "该技术动向反映了VLA模型在边缘部署的能效挑战，可能间接影响车载计算架构，但当前未牵引具体材料需求，因此对材料研发的直接意义有限。",
+          "sources": [
+            {
+              "title": "EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.15502",
+              "published_date": "2026-08-18",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Advanced Manufacturing & Automation",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "尽管是学生项目，但展示了低成本气动人工肌肉和3D打印在可穿戴设备中的应用，可能预示未来机器人轻量化趋势，值得关注材料验证。",
+          "sources": [
+            {
+              "title": "IEEE Presidents’ Scholarship Honors Teen Innovators",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ieee-presidents-scholarship-2026",
+              "published_date": "2026-08-18",
+              "link_label": "阅读论文"
+            }
+          ]
+        },
+        {
+          "category": "Brain-computer Interface",
+          "count": 1,
+          "avg_future_signal_score": 30,
+          "summary": "尽管是学生项目，但展示了低成本气动人工肌肉和3D打印在可穿戴设备中的应用，可能预示未来机器人轻量化趋势，值得关注材料验证。",
+          "sources": [
+            {
+              "title": "IEEE Presidents’ Scholarship Honors Teen Innovators",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ieee-presidents-scholarship-2026",
+              "published_date": "2026-08-18",
+              "link_label": "阅读论文"
+            }
+          ]
+        }
+      ],
+      "notebook": [
+        {
+          "label": "What Changed",
+          "text": "本期高价值信号集中在未来趋势观察、汽车新材料、学术论文，技术牵引以机器人与具身智能最突出。"
+        },
+        {
+          "label": "Why It Matters",
+          "text": "尽管是学生项目，但展示了低成本气动人工肌肉和3D打印在可穿戴设备中的应用，可能预示未来机器人轻量化趋势，值得关注材料验证。"
+        },
+        {
+          "label": "Material Opportunity",
+          "text": "优先关注气动人工肌肉、3D打印材料、EEG电极材料、轻量化结构材料、肌肉骨骼机器人相关材料、人工肌肉材料、柔性驱动材料、轻量化（关键词）。气动人工肌肉（如硅胶、弹性体）、3D打印材料（如PLA、尼龙）、EEG干电极材料（如导电聚合物）可能值得关注，但尚处实验室阶段，材料相关性较弱，暂不优先。"
+        }
+      ],
+      "cat": [],
+      "bookshelf": [
+        {
+          "domain": "Energy Materials",
+          "zh": "能源材料",
+          "count": 3,
+          "items": [
+            {
+              "event_id": "cc3ef0a3996a64bb",
+              "canonical_url": "https://arxiv.org/abs/2608.16555",
+              "normalized_title": "co design neural muscle network based embodied perceptron representation",
+              "title": "Co-design of Neural and Muscle Network based on Embodied Perceptron Representation",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2608.16555"
+              ],
+              "published_date": "2026-08-18",
+              "url": "https://arxiv.org/abs/2608.16555",
+              "link_label": "阅读论文",
+              "brief": "该研究代表具身智能技术演进方向，未来可能牵引人工肌肉等新材料需求，但当前距离材料导入尚远。"
+            },
+            {
+              "event_id": "d3fbab176642807b",
+              "canonical_url": "https://arxiv.org/abs/2608.15502",
+              "normalized_title": "ecovla energy efficient device edge co inference vision language action models under real time constraints",
+              "title": "EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2608.15502"
+              ],
+              "published_date": "2026-08-18",
+              "url": "https://arxiv.org/abs/2608.15502",
+              "link_label": "阅读论文",
+              "brief": "该技术动向反映了VLA模型在边缘部署的能效挑战，可能间接影响车载计算架构，但当前未牵引具体材料需求，因此对材料研发的直接意义有限。"
+            },
+            {
+              "event_id": "99904fc62fd146a5",
+              "canonical_url": "https://arxiv.org/abs/2608.15009",
+              "normalized_title": "forceu vla force aware vision language action model embodied ultrasound scanning",
+              "title": "ForceU-VLA: A Force-Aware Vision-Language-Action Model for Embodied Ultrasound Scanning",
+              "source": "arXiv",
+              "source_names": [
+                "arXiv"
+              ],
+              "source_urls": [
+                "https://arxiv.org/abs/2608.15009"
+              ],
+              "published_date": "2026-08-18",
+              "url": "https://arxiv.org/abs/2608.15009",
+              "link_label": "阅读论文",
+              "brief": "该新闻展示了具身智能在医疗领域的进展，但未涉及具体材料创新，对汽车材料研发的牵引作用有限。"
+            }
+          ]
+        },
+        {
+          "domain": "Future Research Reserve",
+          "zh": "前沿研究储备",
+          "count": 2,
+          "items": [
+            {
+              "event_id": "bdaee2a8b90a1021",
+              "canonical_url": "https://spectrum.ieee.org/ieee-presidents-scholarship-2026",
+              "normalized_title": "ieee presidents scholarship honors teen innovators",
+              "title": "IEEE Presidents’ Scholarship Honors Teen Innovators",
+              "source": "IEEE Spectrum",
+              "source_names": [
+                "IEEE Spectrum"
+              ],
+              "source_urls": [
+                "https://spectrum.ieee.org/ieee-presidents-scholarship-2026"
+              ],
+              "published_date": "2026-08-18",
+              "url": "https://spectrum.ieee.org/ieee-presidents-scholarship-2026",
+              "link_label": "阅读论文",
+              "brief": "尽管是学生项目，但展示了低成本气动人工肌肉和3D打印在可穿戴设备中的应用，可能预示未来机器人轻量化趋势，值得关注材料验证。"
+            },
+            {
+              "event_id": "1fca424b9c2c10e8",
+              "canonical_url": "https://www.basf.com/global/en/media/news-releases/2026/08/p-26-151",
+              "normalized_title": "trade news august 18 2026 basf opens global diaper superabsorbents performance lab mumbai strengthen customer centric innovation hygiene solutions basf has officially inaugurated its new performance lab diapers superabsorbents sap mumbai august 18 2026 which will provide technical application services superabsorbent customers globally new lab basf s hygiene solutions business has been established less than year is part basf s innovation campus asia pacific mumbai basf s second largest r d site asia pacific established 2017 under basf chemicals india private limited read more",
+              "title": "Trade News | August 18, 2026 BASF Opens Global Diaper and Superabsorbents Performance Lab in Mumbai to Strengthen Customer-centric Innovation in Hygiene Solutions BASF has officially inaugurated its new Performance Lab for diapers and superabsorbents (SAP) in Mumbai on August 18, 2026, which will provide technical and application services to superabsorbent customers globally. The new lab of BASF’s Hygiene Solutions business has been established in less than a year and is part of BASF’s Innovation Campus Asia Pacific in Mumbai, BASF’s second largest R&D site in Asia Pacific established in 2017 under BASF Chemicals India Private Limited. Read more",
+              "source": "BASF",
+              "source_names": [
+                "BASF"
+              ],
+              "source_urls": [
+                "https://www.basf.com/global/en/media/news-releases/2026/08/p-26-151"
+              ],
+              "published_date": "2026-08-18",
+              "url": "https://www.basf.com/global/en/media/news-releases/2026/08/p-26-151",
+              "link_label": "官方发布",
+              "brief": "该新闻主要涉及卫生用品领域，与汽车材料研发关联度低，但可能反映巴斯夫在聚合物应用方面的技术积累，对汽车非织造材料或吸音材料有潜在参考，但当前不明确。"
+            }
+          ]
+        }
+      ],
+      "palette": [
+        {
+          "action": "Technology Watch",
+          "ai_insight": "Future Research Reserve中已有1个机会进入 Technology Watch，其中“超吸收聚合物（Sap） Materials”最值得先看。",
+          "why_now": "出现新技术、新材料、新工艺、新趋势或新应用信号，当前以发现机会和观察为主。",
+          "suggested_move": "建立观察清单，等待更强产业化或材料牵引信号。",
+          "evidence": [
+            {
+              "title": "Trade News | August 18, 2026 BASF Opens Global Diaper and Superabsorbents Performance Lab in Mumbai to Strengthen Customer-centric Innovation in Hygiene Solutions BASF has officially inaugurated its new Performance Lab for diapers and superabsorbents (SAP) in Mumbai on August 18, 2026, which will provide technical and application services to superabsorbent customers globally. The new lab of BASF’s Hygiene Solutions business has been established in less than a year and is part of BASF’s Innovation Campus Asia Pacific in Mumbai, BASF’s second largest R&D site in Asia Pacific established in 2017 under BASF Chemicals India Private Limited. Read more",
+              "source": "BASF",
+              "url": "https://www.basf.com/global/en/media/news-releases/2026/08/p-26-151",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Supplier Research",
+          "ai_insight": "Future Research Reserve中已有1个机会进入 Supplier Research，其中“Robot Structural Materials”最值得先看。",
+          "why_now": "主要价值在于识别供应商、初创公司、研究机构或产业链玩家，适合寻找资源。 命中信号：university。",
+          "suggested_move": "锁定潜在供应商、研究机构或初创公司，准备初步调研。",
+          "evidence": [
+            {
+              "title": "IEEE Presidents’ Scholarship Honors Teen Innovators",
+              "source": "IEEE Spectrum",
+              "url": "https://spectrum.ieee.org/ieee-presidents-scholarship-2026",
+              "link_label": "阅读来源"
+            }
+          ]
+        },
+        {
+          "action": "Joint Development",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Validation",
+          "ai_insight": "本周期暂无足够证据形成新的阶段判断。",
+          "why_now": "等待更多企业、论文、专利或验证信号后再推进。",
+          "suggested_move": "暂不新增动作，保持观察。",
+          "evidence": []
+        },
+        {
+          "action": "Strategic Reserve",
+          "ai_insight": "Energy Materials中已有1个机会进入 Strategic Reserve，其中“Battery Thermal Management Materials”最值得先看。",
+          "why_now": "技术已有战略价值但导入节奏较长，适合形成长期储备。 命中信号：policy。",
+          "suggested_move": "纳入中长期储备，定期复盘技术成熟度和供应链变化。",
+          "evidence": [
+            {
+              "title": "Co-design of Neural and Muscle Network based on Embodied Perceptron Representation",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.16555",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "EcoVLA: Energy-Efficient Device-Edge Co-Inference for Vision-Language-Action Models under Real-Time Constraints",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.15502",
+              "link_label": "阅读来源"
+            },
+            {
+              "title": "ForceU-VLA: A Force-Aware Vision-Language-Action Model for Embodied Ultrasound Scanning",
+              "source": "arXiv",
+              "url": "https://arxiv.org/abs/2608.15009",
+              "link_label": "阅读来源"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-08-17",
       "window": [
